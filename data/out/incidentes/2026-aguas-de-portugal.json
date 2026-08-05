@@ -21,15 +21,21 @@
     },
     {
       "data": "2026-08-04",
+      "fonte": 3,
+      "texto": "Apura-se que o ataque atingiu os sistemas de informação de todo o grupo, paralisando os canais de serviço e a gestão administrativa. Os sistemas críticos mantiveram-se operacionais.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2026-08-04",
       "fonte": 2,
       "texto": "A Polícia Judiciária e o Centro Nacional de Cibersegurança acompanham a investigação.",
       "tipo": "regulador"
     },
     {
-      "data": "2026-08-04",
-      "fonte": 3,
-      "texto": "Apura-se que o ataque atingiu os sistemas de informação de todo o grupo, paralisando os canais de serviço e a gestão administrativa. Os sistemas críticos mantiveram-se operacionais.",
-      "tipo": "divulgacao"
+      "data": "2026-08-05",
+      "fonte": 4,
+      "texto": "O grupo declara não haver evidências de acesso não autorizado a dados pessoais de clientes ou colaboradores, nem sinais de divulgação ou exfiltração. A recuperação decorre por fases, com alguns serviços já operacionais e outros ainda condicionados.",
+      "tipo": "comunicado"
     },
     {
       "data": "2026-08-05",
@@ -39,9 +45,9 @@
     }
   ],
   "dados_pessoais": {
-    "afetados": null,
+    "afetados": false,
     "categorias": [],
-    "nota": "Não há informação pública sobre comprometimento de dados pessoais. A investigação decorria à data desta revisão.",
+    "nota": "O grupo declarou não haver evidências de acesso não autorizado a dados pessoais de clientes ou colaboradores, nem sinais identificados de acesso, divulgação ou exfiltração associados ao ciberataque. É uma declaração da entidade num caso ainda em investigação, e não uma conclusão de autoridade.",
     "titulares_declarados": null
   },
   "data": {
@@ -51,9 +57,15 @@
     "precisao": "semana"
   },
   "disputas": [],
-  "entidades_afetadas": ["aguas-de-portugal"],
+  "entidades_afetadas": [
+    "aguas-de-portugal"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["infraestrutura-critica", "empresa-publica", "em-desenvolvimento"],
+  "etiquetas": [
+    "infraestrutura-critica",
+    "empresa-publica",
+    "em-desenvolvimento"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -139,14 +151,16 @@
     "pj": true
   },
   "relacionados": [],
-  "resumo": "O grupo Águas de Portugal confirmou a 4 de agosto de 2026 ter sido alvo de um ciberataque de elevada complexidade, ocorrido na sexta-feira anterior, que atingiu os sistemas de informação de todo o grupo e paralisou os canais de serviço e a gestão administrativa. Os sistemas críticos mantiveram-se operacionais e o grupo garantiu que o abastecimento e a qualidade da água não foram afetados. Ao segundo dia, a recuperação continuava incompleta, com os sistemas afetados a ser restaurados gradualmente. A Polícia Judiciária e o Centro Nacional de Cibersegurança investigam. O tipo exato de ataque não foi divulgado.",
+  "resumo": "O grupo Águas de Portugal confirmou a 4 de agosto de 2026 ter sido alvo de um ciberataque de elevada complexidade, ocorrido na sexta-feira anterior, que atingiu os sistemas de informação de todo o grupo e paralisou os canais de serviço e a gestão administrativa. Os sistemas críticos mantiveram-se operacionais e o abastecimento e a qualidade da água ficaram assegurados em todas as empresas do grupo. A recuperação decorre por fases e continuava incompleta ao segundo dia. O grupo declarou não haver evidências de acesso não autorizado a dados pessoais de clientes ou colaboradores. A gestão do incidente decorre em articulação com a Polícia Judiciária e o Centro Nacional de Cibersegurança.",
   "revisao": {
     "curador": "ss",
     "data": "2026-08-05",
-    "nota": "Incidente em curso à data desta revisão: a recuperação estava incompleta ao segundo dia. A data de início é inferida das fontes, que referem a sexta-feira anterior a 4 de agosto sem a datarem explicitamente, e fica com precisão de semana. O tipo de ataque não foi divulgado, pelo que consta apenas como intrusão. Rever quando houver informação sobre exfiltração, pedido de resgate ou conclusão da reposição.",
-    "versao": 2
+    "nota": "Incidente em curso à data desta revisão: a recuperação decorria por fases e estava incompleta. A data de início é inferida das fontes, que referem a sexta-feira anterior a 4 de agosto sem a datarem explicitamente, e fica com precisão de semana. O tipo de ataque não foi divulgado, pelo que consta apenas como intrusão. A ausência de evidência de acesso a dados pessoais é declaração do grupo num caso ainda em investigação, e não conclusão de autoridade — o campo fica a false por ser o que a entidade afirma, com a ressalva na nota.",
+    "versao": 3
   },
   "setor": "energia_agua",
-  "tipos_ataque": ["intrusao"],
+  "tipos_ataque": [
+    "intrusao"
+  ],
   "titulo": "Ciberataque ao grupo Águas de Portugal"
 }

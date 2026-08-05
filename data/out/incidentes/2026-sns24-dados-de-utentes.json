@@ -3,7 +3,7 @@
     "atribuicao_por": null,
     "confianca": null,
     "grupo": null,
-    "nota": "Sem atribuição pública. As autoridades suspeitam de ciberataque, com o profissional cujas credenciais foram usadas a ser tratado como vítima de roubo de credenciais e não como autor. Não o identificamos."
+    "nota": "Sem atribuição pública. As autoridades suspeitam de ciberataque, com o profissional cujas credenciais foram usadas a ser tratado como vítima de roubo de credenciais e não como autor. Não o identificamos. A Polícia Judiciária admitiu a hipótese de terem sido usadas ferramentas de inteligência artificial para automatizar os acessos, dado o volume envolvido."
   },
   "correcoes": [],
   "cronologia": [
@@ -35,6 +35,18 @@
       "data": "2026-05-26",
       "fonte": 3,
       "texto": "A CNPD abre averiguações ao acesso indevido a dados de saúde.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2026-05-26",
+      "fonte": 5,
+      "texto": "A Polícia Judiciária admite a hipótese de terem sido usadas ferramentas de inteligência artificial para automatizar os acessos, dado o volume envolvido.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2026-06-01",
+      "fonte": 6,
+      "texto": "As ações forenses prosseguem, conduzidas pelo Centro Nacional de Cibersegurança em conjunto com os Serviços Partilhados do Ministério da Saúde e em articulação com a Polícia Judiciária.",
       "tipo": "regulador"
     }
   ],
@@ -70,10 +82,11 @@
   ],
   "estado_confirmacao": "confirmado_por_regulador",
   "etiquetas": [
-    "dados-de-saude",
-    "menores",
+    "automatizacao-suspeita",
     "credenciais-comprometidas",
-    "em-desenvolvimento"
+    "dados-de-saude",
+    "em-desenvolvimento",
+    "menores"
   ],
   "fontes": [
     {
@@ -133,6 +146,30 @@
       "titulo": "Comissão Nacional de Proteção de Dados averigua acesso indevido a dados de saúde",
       "url": "https://www.diarioleiria.pt/2026/05/26/comissao-nacional-de-protecao-de-dados-averigua-acesso-indevido-a-dados-de-saude/",
       "url_arquivo": null
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2026-05-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Euronews",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Acesso indevido a dados do SNS afetou mais de 100 mil utentes, PJ acredita que foi usada IA",
+      "url": "https://pt.euronews.com/my-europe/2026/05/26/acesso-indevido-a-dados-do-sns-afetou-mais-de-100-mil-utentes-pj-acredita-que-foi-usada-ia",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2026-06-01",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "HealthNews",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Cibersegurança: investigação forense prossegue após acesso indevido a dados do SNS",
+      "url": "https://healthnews.pt/2026/06/01/ciberseguranca-investigacao-forense-prossegue-apos-acesso-indevido-a-dados-do-sns/",
+      "url_arquivo": null
     }
   ],
   "id": "2026-sns24-dados-de-utentes",
@@ -163,8 +200,8 @@
   "revisao": {
     "curador": "ss",
     "data": "2026-08-05",
-    "nota": "É o incidente com mais titulares afetados de todo o registo, e envolve dados de menores. Não identificamos o profissional cujas credenciais foram usadas: é pessoa singular e é tratado como vítima, não como autor. Há divergência pública sobre se os acessos incidiram sobre dados clínicos ou apenas administrativos, e a distinção é material para os titulares: fica registada em disputas[] em vez de resolvida por nós. Caso em desenvolvimento à data desta revisão.",
-    "versao": 1
+    "nota": "É o incidente com mais titulares afetados de todo o registo, e envolve dados de menores. Não identificamos o profissional cujas credenciais foram usadas: é pessoa singular e é tratado como vítima, não como autor. Há divergência pública sobre se os acessos incidiram sobre dados clínicos ou apenas administrativos, e a distinção é material para os titulares: fica registada em disputas[] em vez de resolvida por nós. A hipótese de uso de inteligência artificial para automatizar os acessos é da Polícia Judiciária e está registada como tal, não como facto estabelecido. Caso em desenvolvimento: a investigação forense prosseguia à data desta revisão.",
+    "versao": 2
   },
   "setor": "saude",
   "tipos_ataque": [

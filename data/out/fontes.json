@@ -327,6 +327,32 @@
     "url_arquivo": null
   },
   {
+    "contem_declaracao_de_autoridade": true,
+    "data": "2026-05-26",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-sns24-dados-de-utentes",
+    "indice": 5,
+    "publicador": "Euronews",
+    "tipo": "noticia",
+    "titulo": "Acesso indevido a dados do SNS afetou mais de 100 mil utentes, PJ acredita que foi usada IA",
+    "url": "https://pt.euronews.com/my-europe/2026/05/26/acesso-indevido-a-dados-do-sns-afetou-mais-de-100-mil-utentes-pj-acredita-que-foi-usada-ia",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_de_autoridade": true,
+    "data": "2026-06-01",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-sns24-dados-de-utentes",
+    "indice": 6,
+    "publicador": "HealthNews",
+    "tipo": "noticia",
+    "titulo": "Cibersegurança: investigação forense prossegue após acesso indevido a dados do SNS",
+    "url": "https://healthnews.pt/2026/06/01/ciberseguranca-investigacao-forense-prossegue-apos-acesso-indevido-a-dados-do-sns/",
+    "url_arquivo": null
+  },
+  {
     "contem_declaracao_da_entidade": true,
     "data": "2026-05-13",
     "estado_ligacao": "viva",

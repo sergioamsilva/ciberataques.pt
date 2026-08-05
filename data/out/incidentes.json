@@ -120,7 +120,7 @@
     ],
     "estado_confirmacao": "confirmado_por_regulador",
     "id": "2026-sns24-dados-de-utentes",
-    "n_fontes": 5,
+    "n_fontes": 7,
     "precisao_data": "desconhecida",
     "setor": "saude",
     "tem_disputas": true,
