@@ -30,12 +30,18 @@
       "fonte": 1,
       "texto": "A empresa indica ter notificado as autoridades competentes e adotado medidas de resposta a incidentes com apoio de especialistas em cibersegurança.",
       "tipo": "comunicado"
+    },
+    {
+      "data": "2026-07-26",
+      "fonte": 5,
+      "texto": "A empresa esclarece que os dados de pagamento com cartão bancário não foram afetados, por os pagamentos serem processados em terminais autónomos, isolados dos sistemas atingidos. Precisa ainda ter notificado o Centro Nacional de Cibersegurança, a Comissão Nacional de Proteção de Dados e as autoridades de investigação criminal.",
+      "tipo": "comunicado"
     }
   ],
   "dados_pessoais": {
     "afetados": true,
     "categorias": ["identificacao", "contacto"],
-    "nota": "Podem estar em causa nome, endereço de correio eletrónico e número de telefone de titulares de passe personalizado e de quem trocou mensagens com endereços da empresa. A empresa alertou para o risco de receção de mensagens fraudulentas. A extensão exata não estava confirmada à data desta revisão.",
+    "nota": "Podem estar em causa nome, endereço de correio eletrónico e número de telefone de titulares de passe personalizado e de quem trocou mensagens com endereços da empresa. A empresa alertou para o risco de receção de mensagens fraudulentas, e esclareceu que os dados de pagamento com cartão bancário não foram afetados, por os pagamentos serem processados em terminais autónomos e isolados dos sistemas atingidos. A extensão exata não estava confirmada à data desta revisão.",
     "titulares_declarados": null
   },
   "data": {
@@ -105,6 +111,18 @@
       "titulo": "Metro Mondego listada no site de extorsão do grupo thegentlemen",
       "url": "https://www.ransomware.live/map/PT",
       "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-07-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Diário de Viseu",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Dados pessoais poderão ter sido copiados durante ataque informático à Metro Mondego",
+      "url": "https://www.diarioviseu.pt/2026/07/26/dados-pessoais-poderao-ter-sido-copiados-durante-ataque-informatico-a-metro-mondego/",
+      "url_arquivo": null
     }
   ],
   "id": "2026-metro-mondego",
@@ -130,8 +148,8 @@
   "revisao": {
     "curador": "ss",
     "data": "2026-08-05",
-    "nota": "Incidente recente e em apuramento. Vinte dias entre a ocorrência e a comunicação pública. Rever quando a empresa confirmar que dados foram efetivamente copiados.",
-    "versao": 1
+    "nota": "Incidente recente e em apuramento. Vinte dias entre a ocorrência e a comunicação pública. A segregação dos terminais de pagamento evitou o comprometimento de dados bancários, e é um detalhe de arquitetura raro na cobertura portuguesa. Rever quando a empresa confirmar que dados foram efetivamente copiados.",
+    "versao": 2
   },
   "setor": "transportes",
   "tipos_ataque": ["ransomware", "exfiltracao_dados"],

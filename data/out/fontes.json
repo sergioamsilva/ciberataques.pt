@@ -102,6 +102,31 @@
     "url_arquivo": null
   },
   {
+    "contem_declaracao_da_entidade": true,
+    "data": "2026-07-29",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-universidade-de-aveiro",
+    "indice": 3,
+    "publicador": "Renascença",
+    "tipo": "noticia",
+    "titulo": "Universidade de Aveiro soube de ciberataque pelos piratas informáticos",
+    "url": "https://rr.pt/noticia/pais/2026/07/29/universidade-de-aveiro-soube-de-ciberataque-pelos-piratas-informaticos/480003/",
+    "url_arquivo": null
+  },
+  {
+    "data": "2026-07-29",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-universidade-de-aveiro",
+    "indice": 4,
+    "publicador": "Diário de Coimbra",
+    "tipo": "noticia",
+    "titulo": "Universidade de Aveiro alvo de ataque informático",
+    "url": "https://www.diariocoimbra.pt/2026/07/29/universidade-de-aveiro-alvo-de-ataque-informatico/",
+    "url_arquivo": null
+  },
+  {
     "data": "2026-07-13",
     "estado_ligacao": "viva",
     "excerto": null,
@@ -173,6 +198,19 @@
     "tipo": "leak_site",
     "titulo": "Metro Mondego listada no site de extorsão do grupo thegentlemen",
     "url": "https://www.ransomware.live/map/PT",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2026-07-26",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-metro-mondego",
+    "indice": 5,
+    "publicador": "Diário de Viseu",
+    "tipo": "noticia",
+    "titulo": "Dados pessoais poderão ter sido copiados durante ataque informático à Metro Mondego",
+    "url": "https://www.diarioviseu.pt/2026/07/26/dados-pessoais-poderao-ter-sido-copiados-durante-ataque-informatico-a-metro-mondego/",
     "url_arquivo": null
   },
   {

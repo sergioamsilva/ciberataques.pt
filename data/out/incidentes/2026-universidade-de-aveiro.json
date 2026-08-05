@@ -24,6 +24,12 @@
       "fonte": 0,
       "texto": "A instituição pede à comunidade académica atenção a contactos ou situações anormais relacionados com o incidente, e reporta o caso às autoridades.",
       "tipo": "comunicado"
+    },
+    {
+      "data": "2026-07-29",
+      "fonte": 3,
+      "texto": "O reitor revela que a universidade só teve conhecimento do ciberataque por contacto dos próprios atacantes, que violaram contas de correio eletrónico, extraíram informação e procuravam chegar ao que descreveram como um acordo justo.",
+      "tipo": "reivindicacao"
     }
   ],
   "dados_pessoais": {
@@ -77,6 +83,29 @@
       "titulo": "Universidade de Aveiro alvo de ataque informático",
       "url": "https://www.rtp.pt/noticias/pais/universidade-de-aveiro-alvo-de-ataque-informatico_n1756542",
       "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-07-29",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Renascença",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Universidade de Aveiro soube de ciberataque pelos piratas informáticos",
+      "url": "https://rr.pt/noticia/pais/2026/07/29/universidade-de-aveiro-soube-de-ciberataque-pelos-piratas-informaticos/480003/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2026-07-29",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Diário de Coimbra",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Universidade de Aveiro alvo de ataque informático",
+      "url": "https://www.diariocoimbra.pt/2026/07/29/universidade-de-aveiro-alvo-de-ataque-informatico/",
+      "url_arquivo": null
     }
   ],
   "id": "2026-universidade-de-aveiro",
@@ -98,12 +127,12 @@
     "pj": null
   },
   "relacionados": ["2024-universidade-do-algarve"],
-  "resumo": "A Universidade de Aveiro detetou a 28 de julho de 2026 um acesso indevido aos seus sistemas de informação, ocorrido dias antes, que comprometeu um número reduzido de contas de correio eletrónico e expôs dados pessoais e institucionais. O reitor indicou ter havido cópia de informação, e não perda, sem que a extensão estivesse apurada. A instituição reportou o caso às autoridades e pediu à comunidade académica atenção a contactos anormais que possam decorrer do incidente.",
+  "resumo": "A Universidade de Aveiro detetou a 28 de julho de 2026 um acesso indevido aos seus sistemas de informação, ocorrido dias antes, que comprometeu um número reduzido de contas de correio eletrónico e expôs dados pessoais e institucionais. A instituição só teve conhecimento do ataque por contacto dos próprios atacantes, que tinham extraído informação e procuravam chegar ao que descreveram como um acordo justo. O reitor indicou ter havido cópia de informação, e não perda, sem que a extensão estivesse apurada. O caso foi reportado às autoridades, e a comunidade académica foi alertada para contactos anormais que dele possam decorrer.",
   "revisao": {
     "curador": "ss",
     "data": "2026-08-05",
-    "nota": "Incidente recente e em apuramento. A data de ocorrência não foi divulgada: as fontes referem apenas que terá acontecido dias antes da deteção, pelo que a precisão fica como desconhecida. Rever quando a universidade divulgar a extensão.",
-    "versao": 1
+    "nota": "Incidente recente e em apuramento. A data de ocorrência não foi divulgada: as fontes referem apenas que terá acontecido dias antes da deteção, pelo que a precisão fica como desconhecida. Note-se que a deteção não foi da instituição: foram os atacantes que a contactaram, num padrão de extorsão sem encriptação. Rever quando for divulgada a extensão dos dados copiados.",
+    "versao": 2
   },
   "setor": "educacao_investigacao",
   "tipos_ataque": ["intrusao", "exfiltracao_dados"],
