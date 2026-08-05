@@ -24,6 +24,18 @@
       "fonte": 2,
       "texto": "A Polícia Judiciária e o Centro Nacional de Cibersegurança acompanham a investigação.",
       "tipo": "regulador"
+    },
+    {
+      "data": "2026-08-04",
+      "fonte": 3,
+      "texto": "Apura-se que o ataque atingiu os sistemas de informação de todo o grupo, paralisando os canais de serviço e a gestão administrativa. Os sistemas críticos mantiveram-se operacionais.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2026-08-05",
+      "fonte": 4,
+      "texto": "Ao segundo dia após a divulgação, o grupo ainda não recuperou todos os sistemas. O restauro dos sistemas informáticos afetados decorre de forma gradual.",
+      "tipo": "divulgacao"
     }
   ],
   "dados_pessoais": {
@@ -77,6 +89,30 @@
       "titulo": "Águas de Portugal alvo de ciberataque. Abastecimento não está comprometido",
       "url": "https://www.rtp.pt/noticias/pais/aguas-de-portugal-alvo-de-ciberataque-abastecimento-nao-esta-comprometido_n1757695",
       "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-08-04",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "TSF",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Águas de Portugal alvo de ataque informático de \"elevada complexidade\"",
+      "url": "https://www.tsf.pt/sociedade/artigo/aguas-de-portugal-alvo-de-ataque-informatico-de-elevada-complexidade/18113049",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-08-05",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Águas de Portugal ainda não recuperou todos os sistemas após ciberataque \"de elevada complexidade\"",
+      "url": "https://observador.pt/2026/08/05/aguas-de-portugal-sofreu-ciberataque-de-elevada-complexidade/",
+      "url_arquivo": null
     }
   ],
   "id": "2026-aguas-de-portugal",
@@ -88,7 +124,8 @@
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": null,
     "servicos_afetados": [
-      "processos administrativos",
+      "sistemas de informação de todo o grupo",
+      "canais de serviço e gestão administrativa",
       "canais de contacto com clientes e parceiros",
       "postos de trabalho de colaboradores"
     ]
@@ -102,12 +139,12 @@
     "pj": true
   },
   "relacionados": [],
-  "resumo": "O grupo Águas de Portugal confirmou a 4 de agosto de 2026 ter sido alvo de um ciberataque de elevada complexidade aos seus sistemas de informação, ocorrido na sexta-feira anterior. O grupo garantiu que o abastecimento e a qualidade da água não foram afetados, e que os constrangimentos se limitaram a processos administrativos e aos canais de contacto com clientes e parceiros, tendo os colaboradores sido impedidos por precaução de ligar os computadores. A Polícia Judiciária e o Centro Nacional de Cibersegurança acompanharam a investigação. O tipo exato de ataque não foi divulgado.",
+  "resumo": "O grupo Águas de Portugal confirmou a 4 de agosto de 2026 ter sido alvo de um ciberataque de elevada complexidade, ocorrido na sexta-feira anterior, que atingiu os sistemas de informação de todo o grupo e paralisou os canais de serviço e a gestão administrativa. Os sistemas críticos mantiveram-se operacionais e o grupo garantiu que o abastecimento e a qualidade da água não foram afetados. Ao segundo dia, a recuperação continuava incompleta, com os sistemas afetados a ser restaurados gradualmente. A Polícia Judiciária e o Centro Nacional de Cibersegurança investigam. O tipo exato de ataque não foi divulgado.",
   "revisao": {
     "curador": "ss",
     "data": "2026-08-05",
-    "nota": "Incidente recente e ainda em desenvolvimento. A data de início é inferida das fontes, que referem a sexta-feira anterior a 4 de agosto sem a datarem explicitamente: registada com precisão de semana. O tipo de ataque não foi divulgado, pelo que consta apenas como intrusão.",
-    "versao": 1
+    "nota": "Incidente em curso à data desta revisão: a recuperação estava incompleta ao segundo dia. A data de início é inferida das fontes, que referem a sexta-feira anterior a 4 de agosto sem a datarem explicitamente, e fica com precisão de semana. O tipo de ataque não foi divulgado, pelo que consta apenas como intrusão. Rever quando houver informação sobre exfiltração, pedido de resgate ou conclusão da reposição.",
+    "versao": 2
   },
   "setor": "energia_agua",
   "tipos_ataque": ["intrusao"],

@@ -39,6 +39,32 @@
   },
   {
     "contem_declaracao_da_entidade": true,
+    "data": "2026-08-04",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-aguas-de-portugal",
+    "indice": 3,
+    "publicador": "TSF",
+    "tipo": "noticia",
+    "titulo": "Águas de Portugal alvo de ataque informático de \"elevada complexidade\"",
+    "url": "https://www.tsf.pt/sociedade/artigo/aguas-de-portugal-alvo-de-ataque-informatico-de-elevada-complexidade/18113049",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2026-08-05",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-aguas-de-portugal",
+    "indice": 4,
+    "publicador": "Observador",
+    "tipo": "noticia",
+    "titulo": "Águas de Portugal ainda não recuperou todos os sistemas após ciberataque \"de elevada complexidade\"",
+    "url": "https://observador.pt/2026/08/05/aguas-de-portugal-sofreu-ciberataque-de-elevada-complexidade/",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
     "data": "2026-07-29",
     "estado_ligacao": "viva",
     "excerto": null,
