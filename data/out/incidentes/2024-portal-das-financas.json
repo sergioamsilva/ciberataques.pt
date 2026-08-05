@@ -46,7 +46,10 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["credenciais", "fiscais"],
+    "categorias": [
+      "credenciais",
+      "fiscais"
+    ],
     "nota": "Circulou uma lista de cerca de 15 mil entradas, das quais pelo menos 9 mil correspondiam a dados reais. As credenciais foram recolhidas nos equipamentos dos próprios utilizadores ou em sistemas de terceiros, e não nos sistemas da Autoridade Tributária.",
     "titulares_declarados": 9000
   },
@@ -57,9 +60,15 @@
     "precisao": "mes"
   },
   "disputas": [],
-  "entidades_afetadas": ["autoridade-tributaria"],
+  "entidades_afetadas": [
+    "autoridade-tributaria"
+  ],
   "estado_confirmacao": "confirmado_por_regulador",
-  "etiquetas": ["infostealer", "administracao-central", "nao-e-intrusao"],
+  "etiquetas": [
+    "infostealer",
+    "administracao-central",
+    "nao-e-intrusao"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -71,7 +80,7 @@
       "tipo": "noticia",
       "titulo": "Com passwords expostas na Internet, Portal das Finanças obriga a mudar as credenciais",
       "url": "https://www.publico.pt/2024/10/16/economia/noticia/passwords-expostas-internet-portal-financas-obriga-mudar-credenciais-visados-2108107",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241021205652/https://www.publico.pt/2024/10/16/economia/noticia/passwords-expostas-internet-portal-financas-obriga-mudar-credenciais-visados-2108107"
     },
     {
       "contem_declaracao_de_autoridade": true,
@@ -83,7 +92,7 @@
       "tipo": "noticia",
       "titulo": "Dados do Portal das Finanças expostos na internet sem relação com ciberataque à AMA",
       "url": "https://eco.sapo.pt/2024/10/15/ciberataque-a-ama-sem-relacao-com-suposta-fuga-de-dados-da-autoridade-tributaria/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241106184544/https://eco.sapo.pt/2024/10/15/ciberataque-a-ama-sem-relacao-com-suposta-fuga-de-dados-da-autoridade-tributaria/"
     },
     {
       "contem_declaracao_de_autoridade": true,
@@ -95,7 +104,7 @@
       "tipo": "noticia",
       "titulo": "Fuga de dados do Fisco a circular online \"não está relacionada\" com ataque à AMA. Senhas de acesso comprometidas têm de ser renovadas",
       "url": "https://observador.pt/2024/10/15/centro-nacional-de-ciberseguranca-diz-que-leak-de-dados-a-circular-online-nao-esta-relacionado-com-o-ataque-a-ama/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241023021035/https://observador.pt/2024/10/15/centro-nacional-de-ciberseguranca-diz-que-leak-de-dados-a-circular-online-nao-esta-relacionado-com-o-ataque-a-ama/"
     },
     {
       "data": "2024-12-20",
@@ -117,7 +126,7 @@
       "tipo": "noticia",
       "titulo": "Portal das Finanças passa a ter autenticação reforçada com código por SMS",
       "url": "https://www.publico.pt/2025/07/09/economia/noticia/portal-financas-passa-autenticacao-reforcada-codigo-sms-2139540",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20250709083103/https://www.publico.pt/2025/07/09/economia/noticia/portal-financas-passa-autenticacao-reforcada-codigo-sms-2139540"
     }
   ],
   "id": "2024-portal-das-financas",
@@ -128,7 +137,9 @@
     "resgate_pago": null,
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": null,
-    "servicos_afetados": ["acesso autenticado ao Portal das Finanças"]
+    "servicos_afetados": [
+      "acesso autenticado ao Portal das Finanças"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -138,7 +149,9 @@
     "cnpd": null,
     "pj": null
   },
-  "relacionados": ["2024-ama"],
+  "relacionados": [
+    "2024-ama"
+  ],
   "resumo": "A partir de agosto de 2024, credenciais de utilizadores do Portal das Finanças começaram a circular publicamente, numa lista de cerca de 15 mil entradas das quais pelo menos 9 mil correspondiam a dados reais. Não houve intrusão nos sistemas da Autoridade Tributária: as credenciais foram recolhidas por software malicioso nos equipamentos dos próprios utilizadores ou exfiltradas de sistemas de terceiros. O Centro Nacional de Cibersegurança esclareceu que o caso não tinha relação com o ciberataque à AMA, ocorrido nos mesmos dias. A Autoridade Tributária revogou as senhas comprometidas, e viria a reforçar as regras de palavra-passe e, em julho de 2025, a introduzir autenticação com código por mensagem escrita.",
   "revisao": {
     "curador": "ss",
@@ -147,6 +160,8 @@
     "versao": 1
   },
   "setor": "administracao_publica",
-  "tipos_ataque": ["exposicao_credenciais"],
+  "tipos_ataque": [
+    "exposicao_credenciais"
+  ],
   "titulo": "Exposição de credenciais de utilizadores do Portal das Finanças"
 }

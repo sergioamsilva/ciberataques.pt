@@ -39,9 +39,14 @@
     "precisao": "desconhecida"
   },
   "disputas": [],
-  "entidades_afetadas": ["aguas-e-energia-do-porto"],
+  "entidades_afetadas": [
+    "aguas-e-energia-do-porto"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["infraestrutura-critica", "empresa-municipal"],
+  "etiquetas": [
+    "infraestrutura-critica",
+    "empresa-municipal"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -53,7 +58,7 @@
       "tipo": "noticia",
       "titulo": "Águas e Energia do Porto alvo de ataque informático",
       "url": "https://eco.sapo.pt/2023/01/30/aguas-e-energia-do-porto-alvo-de-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230130142306/https://eco.sapo.pt/2023/01/30/aguas-e-energia-do-porto-alvo-de-ataque-informatico/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -65,7 +70,7 @@
       "tipo": "noticia",
       "titulo": "Empresa municipal Águas e Energia do Porto alvo de ataque informático",
       "url": "https://observador.pt/2023/01/30/empresa-municipal-aguas-e-energia-do-porto-alvo-de-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230130175425/https://observador.pt/2023/01/30/empresa-municipal-aguas-e-energia-do-porto-alvo-de-ataque-informatico/"
     },
     {
       "data": "2023-02-18",
@@ -87,7 +92,9 @@
     "resgate_pago": null,
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": null,
-    "servicos_afetados": ["serviços ao cliente"]
+    "servicos_afetados": [
+      "serviços ao cliente"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -97,7 +104,9 @@
     "cnpd": null,
     "pj": true
   },
-  "relacionados": ["2026-aguas-de-portugal"],
+  "relacionados": [
+    "2026-aguas-de-portugal"
+  ],
   "resumo": "A empresa municipal Águas e Energia do Porto foi alvo de um ataque informático divulgado a 30 de janeiro de 2023 pela Câmara Municipal do Porto. Foram acionados de imediato os protocolos de segurança, e a empresa garantiu que os serviços essenciais de abastecimento de água e saneamento se mantiveram assegurados, apesar de constrangimentos em alguns serviços ao cliente. Três semanas depois, o grupo LockBit listou a empresa no seu site de extorsão.",
   "revisao": {
     "curador": "ss",
@@ -106,6 +115,9 @@
     "versao": 1
   },
   "setor": "energia_agua",
-  "tipos_ataque": ["ransomware", "intrusao"],
+  "tipos_ataque": [
+    "ransomware",
+    "intrusao"
+  ],
   "titulo": "Ciberataque à Águas e Energia do Porto"
 }

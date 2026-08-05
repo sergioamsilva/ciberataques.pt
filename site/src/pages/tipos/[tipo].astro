@@ -1,27 +1,67 @@
 ---
+import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CartaoIncidente from "../../components/CartaoIncidente.astro";
 import { incidentes, nome, taxonomia } from "../../lib/dados";
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
   const tipos = [...new Set(incidentes().flatMap((r) => r.tipos_ataque))];
-  return tipos.map((tipo) => ({ params: { tipo }, props: { tipo } }));
+  const explicadores = await getCollection("tipos");
+  return tipos.map((tipo) => ({
+    params: { tipo },
+    props: { tipo, explicador: explicadores.find((e) => e.data.tipo === tipo) ?? null },
+  }));
 }
 
-const { tipo } = Astro.props as { tipo: string };
+const { tipo, explicador } = Astro.props;
 const lista = incidentes().filter((r) => r.tipos_ataque.includes(tipo));
 const rotulo = nome("tipos_ataque", tipo);
 const descricao = taxonomia().tipos_ataque?.[tipo]?.descricao ?? "";
+
+const Conteudo = explicador ? (await render(explicador)).Content : null;
+
+/*
+ * O explicador é material de referência, não registo. Vive numa secção própria,
+ * visualmente distinta, e declara-se como tal em schema.org: um leitor tem de
+ * conseguir dizer, num relance, o que é facto documentado sobre um incidente e o
+ * que é texto nosso a explicar um conceito.
+ */
+const grafo = explicador
+  ? [
+      {
+        "@type": "Article",
+        headline: explicador.data.titulo,
+        description: explicador.data.resumo,
+        dateModified: explicador.data.revisto_em,
+        inLanguage: "pt-PT",
+        author: { "@id": "https://ciberataques.pt/#organizacao" },
+        citation: explicador.data.referencias.map((r) => ({
+          "@type": "ScholarlyArticle",
+          name: r.titulo,
+          author: r.autores,
+          datePublished: String(r.ano),
+          isPartOf: r.publicacao,
+          ...(r.doi ? { identifier: `https://doi.org/${r.doi}` } : {}),
+          ...(r.url ? { url: r.url } : {}),
+        })),
+      },
+    ]
+  : [];
 ---
 
 <BaseLayout
-  titulo={`${rotulo} em Portugal`}
-  descricao={`${lista.length} ${lista.length === 1 ? "incidente registado" : "incidentes registados"} do tipo ${rotulo.toLowerCase()} em Portugal.`}
+  titulo={explicador ? `${rotulo}: o que é e como se manifesta em Portugal` : `${rotulo} em Portugal`}
+  descricao={
+    explicador?.data.resumo ??
+    `${lista.length} ${lista.length === 1 ? "incidente registado" : "incidentes registados"} do tipo ${rotulo.toLowerCase()} em Portugal.`
+  }
+  grafo={grafo}
 >
   <div class="mx-auto max-w-4xl px-5 py-10">
     <nav aria-label="Navegação estrutural" class="mono-etiqueta">
       <a href="/tipos/">Tipos de ataque</a>
     </nav>
+
     <header class="mt-6">
       <h1 class="mt-2 text-4xl sm:text-5xl">{rotulo}</h1>
       {descricao && <p class="mt-4 max-w-2xl text-[var(--color-suave)]">{descricao}</p>}
@@ -29,8 +69,69 @@ const descricao = taxonomia().tipos_ataque?.[tipo]?.descricao ?? "";
         {lista.length} {lista.length === 1 ? "incidente registado" : "incidentes registados"}.
       </p>
     </header>
-    <div class="mt-10">
-      {lista.map((inc) => <CartaoIncidente incidente={inc} />)}
-    </div>
+
+    {Conteudo && (
+      <section class="mt-12" aria-labelledby="h-explicador">
+        <div class="regua pt-5">
+          <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+            <h2 id="h-explicador" class="text-2xl">{explicador!.data.titulo}</h2>
+            <p class="mono-etiqueta">material de referência</p>
+          </div>
+          <p class="mt-2 max-w-2xl text-sm text-[var(--color-suave)]">
+            Texto explicativo, distinto do registo de incidentes: aqui a fonte é
+            literatura revista por pares e documentação oficial, não a cobertura de
+            um caso concreto.
+          </p>
+        </div>
+
+        <div
+          class="prosa mt-8 max-w-2xl leading-relaxed [&_a]:underline [&_h2]:mt-9 [&_h2]:text-xl [&_li]:mt-1.5 [&_ol]:mt-3 [&_ol]:list-decimal [&_ol]:pl-5 [&_p]:mt-4 [&_ul]:mt-3 [&_ul]:list-disc [&_ul]:pl-5"
+        >
+          <Conteudo />
+        </div>
+
+        <section class="mt-10" aria-labelledby="h-referencias">
+          <h3 id="h-referencias" class="mono-etiqueta">Referências</h3>
+          <ol class="mt-3 divide-y divide-[var(--color-borda)] border-y border-[var(--color-borda)]">
+            {explicador!.data.referencias.map((r) => (
+              <li class="py-3.5 text-sm">
+                <p>
+                  {r.autores} ({r.ano}).{" "}
+                  {r.doi ? (
+                    <a href={`https://doi.org/${r.doi}`} rel="noopener">{r.titulo}</a>
+                  ) : r.url ? (
+                    <a href={r.url} rel="noopener">{r.titulo}</a>
+                  ) : (
+                    <span>{r.titulo}</span>
+                  )}
+                  . <em>{r.publicacao}</em>.
+                </p>
+                {r.doi && (
+                  <p class="mt-0.5 font-mono text-xs text-[var(--color-suave)]">
+                    doi:{r.doi}
+                  </p>
+                )}
+                {r.nota && (
+                  <p class="mt-1 text-[var(--color-suave)]">{r.nota}</p>
+                )}
+              </li>
+            ))}
+          </ol>
+          <p class="mt-3 text-sm text-[var(--color-suave)]">
+            Cada identificador digital é verificado contra o CrossRef antes de ser
+            publicado, e a verificação corre a cada construção do site.
+          </p>
+        </section>
+      </section>
+    )}
+
+    <section class="mt-14" aria-labelledby="h-incidentes">
+      <h2 id="h-incidentes" class="regua pt-5 text-2xl">
+        Incidentes registados
+      </h2>
+      <div class="mt-4">
+        {lista.map((inc) => <CartaoIncidente incidente={inc} />)}
+      </div>
+    </section>
   </div>
 </BaseLayout>

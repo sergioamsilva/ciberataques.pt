@@ -28,7 +28,11 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["identificacao", "contacto", "comunicacoes"],
+    "categorias": [
+      "identificacao",
+      "contacto",
+      "comunicacoes"
+    ],
     "nota": "A Instructure indicou o acesso a nomes, endereços de correio eletrónico, números de estudante e conteúdo de mensagens trocadas na plataforma. As instituições portuguesas declararam não terem sido comprometidas palavras-passe nem credenciais. O número de titulares portugueses afetados não foi divulgado.",
     "titulares_declarados": null
   },
@@ -48,9 +52,16 @@
       "segundo": "ShinyHunters"
     }
   ],
-  "entidades_afetadas": ["universidade-europeia", "ipam"],
+  "entidades_afetadas": [
+    "universidade-europeia",
+    "ipam"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["ensino-superior", "fornecedor-estrangeiro", "extorsao"],
+  "etiquetas": [
+    "ensino-superior",
+    "fornecedor-estrangeiro",
+    "extorsao"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -62,7 +73,7 @@
       "tipo": "noticia",
       "titulo": "Hackers atacam plataforma Canvas, utilizada por universidades portuguesas",
       "url": "https://www.publico.pt/2026/05/08/enter/noticia/hackers-atacam-plataforma-canvas-utilizada-escolas-universidades-portuguesas-2174031",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20260508173543/https://www.publico.pt/2026/05/08/enter/noticia/hackers-atacam-plataforma-canvas-utilizada-escolas-universidades-portuguesas-2174031"
     }
   ],
   "id": "2026-canvas-instituicoes-portuguesas",
@@ -73,7 +84,9 @@
     "resgate_pago": null,
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": "Foi exigido resgate para não divulgar os dados. O valor não foi divulgado.",
-    "servicos_afetados": ["plataforma de gestão de aprendizagem Canvas"]
+    "servicos_afetados": [
+      "plataforma de gestão de aprendizagem Canvas"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -92,6 +105,9 @@
     "versao": 1
   },
   "setor": "educacao_investigacao",
-  "tipos_ataque": ["cadeia_fornecimento", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "cadeia_fornecimento",
+    "exfiltracao_dados"
+  ],
   "titulo": "Ataque à plataforma Canvas com impacto em instituições portuguesas"
 }

@@ -39,9 +39,14 @@
     "precisao": "semana"
   },
   "disputas": [],
-  "entidades_afetadas": ["camara-municipal-de-santa-comba-dao"],
+  "entidades_afetadas": [
+    "camara-municipal-de-santa-comba-dao"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["administracao-local", "comunicacao-parca"],
+  "etiquetas": [
+    "administracao-local",
+    "comunicacao-parca"
+  ],
   "fontes": [
     {
       "data": "2024-06-17",
@@ -64,7 +69,7 @@
       "tipo": "noticia",
       "titulo": "Santa Comba Dão: Município foi alvo de ataque informático",
       "url": "https://alivefm.pt/santa-comba-dao-municipio-foi-alvo-de-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20250113101311/https://alivefm.pt/santa-comba-dao-municipio-foi-alvo-de-ataque-informatico/"
     }
   ],
   "id": "2024-camara-municipal-de-santa-comba-dao",
@@ -101,6 +106,9 @@
     "versao": 1
   },
   "setor": "autarquias",
-  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque à Câmara Municipal de Santa Comba Dão"
 }

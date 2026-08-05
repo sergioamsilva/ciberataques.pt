@@ -46,7 +46,10 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["identificacao", "laborais"],
+    "categorias": [
+      "identificacao",
+      "laborais"
+    ],
     "nota": "A posição pública evoluiu ao longo de quase dois meses: da ausência de acesso indevido apurado, a 21 de novembro, à exposição confirmada de nomes de 14 mil trabalhadores e comunicação à CNPD, a 11 de janeiro. Os dados de contribuintes e empresas mantiveram-se declarados como não comprometidos.",
     "titulares_declarados": 14000
   },
@@ -57,9 +60,14 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["seguranca-social"],
+  "entidades_afetadas": [
+    "seguranca-social"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["administracao-central", "dados-de-trabalhadores"],
+  "etiquetas": [
+    "administracao-central",
+    "dados-de-trabalhadores"
+  ],
   "fontes": [
     {
       "data": "2022-11-21",
@@ -70,7 +78,7 @@
       "tipo": "noticia",
       "titulo": "Segurança Social alvo de ataque informático",
       "url": "https://eco.sapo.pt/2022/11/21/seguranca-social-alvo-de-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20221121123436/https://eco.sapo.pt/2022/11/21/seguranca-social-alvo-de-ataque-informatico/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -105,7 +113,7 @@
       "tipo": "noticia",
       "titulo": "Terá havido violação de dados pessoais no ciberataque à Segurança Social",
       "url": "https://www.publico.pt/2022/11/30/tecnologia/noticia/violacao-dados-pessoais-ciberataque-seguranca-social-2029832",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20221130185058/https://www.publico.pt/2022/11/30/tecnologia/noticia/violacao-dados-pessoais-ciberataque-seguranca-social-2029832"
     },
     {
       "data": "2023-01-11",
@@ -127,7 +135,7 @@
       "tipo": "noticia",
       "titulo": "Ciberataque à segurança social comunicado à CNPD por ter comprometido dados de funcionários em 14 mil contas",
       "url": "https://observador.pt/2023/01/11/ciberataque-a-seguranca-social-comunicado-a-cnpd-devido-ao-comprometido-de-dados-de-funcionarios/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230111123923/https://observador.pt/2023/01/11/ciberataque-a-seguranca-social-comunicado-a-cnpd-devido-ao-comprometido-de-dados-de-funcionarios/"
     },
     {
       "data": "2023-01-11",
@@ -138,7 +146,7 @@
       "tipo": "noticia",
       "titulo": "Nomes de 14 mil trabalhadores da Segurança Social expostos no ciberataque",
       "url": "https://eco.sapo.pt/2023/01/11/nomes-de-14-mil-trabalhadores-da-seguranca-social-expostos-no-ciberataque/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230111124203/https://eco.sapo.pt/2023/01/11/nomes-de-14-mil-trabalhadores-da-seguranca-social-expostos-no-ciberataque/"
     }
   ],
   "id": "2022-seguranca-social",
@@ -171,6 +179,9 @@
     "versao": 1
   },
   "setor": "administracao_publica",
-  "tipos_ataque": ["intrusao", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "intrusao",
+    "exfiltracao_dados"
+  ],
   "titulo": "Ciberataque à Segurança Social"
 }

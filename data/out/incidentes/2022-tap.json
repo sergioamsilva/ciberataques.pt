@@ -46,7 +46,10 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["identificacao", "contacto"],
+    "categorias": [
+      "identificacao",
+      "contacto"
+    ],
     "nota": "A TAP reconheceu a divulgação ao alertar diretamente os clientes afetados, mas não declarou publicamente um número de titulares. Os números em circulação são todos do atacante e variaram ao longo do tempo. A companhia declarou não ter indicação de acesso a dados de pagamento.",
     "titulares_declarados": null
   },
@@ -74,9 +77,14 @@
       "segundo": "Ragnar Locker"
     }
   ],
-  "entidades_afetadas": ["tap"],
+  "entidades_afetadas": [
+    "tap"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["dupla-extorsao", "empresa-publica"],
+  "etiquetas": [
+    "dupla-extorsao",
+    "empresa-publica"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -88,7 +96,7 @@
       "tipo": "noticia",
       "titulo": "Ciberataque à TAP: o que disse a empresa (e o que aconteceu depois)",
       "url": "https://eco.sapo.pt/2022/09/22/ciberataque-a-tap-o-que-disse-a-empresa-e-o-que-aconteceu-depois/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220922192104/https://eco.sapo.pt/2022/09/22/ciberataque-a-tap-o-que-disse-a-empresa-e-o-que-aconteceu-depois/"
     },
     {
       "data": "2022-08-31",
@@ -99,7 +107,7 @@
       "tipo": "noticia",
       "titulo": "Grupo de hackers alega ter roubado dados de 400 mil clientes da TAP",
       "url": "https://www.publico.pt/2022/08/31/tecnologia/noticia/grupo-hackers-alega-roubado-dados-400-mil-clientes-tap-2019015",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220831223700/https://www.publico.pt/2022/08/31/tecnologia/noticia/grupo-hackers-alega-roubado-dados-400-mil-clientes-tap-2019015"
     },
     {
       "data": "2022-09-13",
@@ -110,7 +118,7 @@
       "tipo": "noticia",
       "titulo": "Hackers publicam dados de clientes da TAP. Moradas, nomes e telefones entre informação divulgada",
       "url": "https://www.publico.pt/2022/09/13/sociedade/noticia/hackers-publicam-dados-clientes-tap-moradas-nomes-telefones-informacao-divulgada-2020350",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220913114424/https://www.publico.pt/2022/09/13/sociedade/noticia/hackers-publicam-dados-clientes-tap-moradas-nomes-telefones-informacao-divulgada-2020350"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -122,7 +130,7 @@
       "tipo": "noticia",
       "titulo": "TAP alerta clientes afectados por ciberataque para \"risco de uso ilegítimo\" de dados",
       "url": "https://www.publico.pt/2022/09/13/sociedade/noticia/tap-alerta-clientes-afectados-ciberataque-risco-uso-ilegitimo-dados-2020464",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220913194437/https://www.publico.pt/2022/09/13/sociedade/noticia/tap-alerta-clientes-afectados-ciberataque-risco-uso-ilegitimo-dados-2020464"
     },
     {
       "data": "2022-09-20",
@@ -133,7 +141,7 @@
       "tipo": "noticia",
       "titulo": "Grupo de hackers anuncia exposição de dados de 1,5 milhões de clientes da TAP",
       "url": "https://www.publico.pt/2022/09/20/sociedade/noticia/grupo-hackers-anuncia-exposicao-dados-15-milhoes-clientes-tap-2021158",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220920083559/https://www.publico.pt/2022/09/20/sociedade/noticia/grupo-hackers-anuncia-exposicao-dados-15-milhoes-clientes-tap-2021158"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -145,7 +153,7 @@
       "tipo": "noticia",
       "titulo": "TAP diz não ter indicação de que piratas tenham tido acesso a dados de pagamento",
       "url": "https://eco.sapo.pt/2022/09/20/tap-diz-nao-ter-indicacao-de-que-piratas-tenham-tido-acesso-a-dados-de-pagamento/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220920095537/https://eco.sapo.pt/2022/09/20/tap-diz-nao-ter-indicacao-de-que-piratas-tenham-tido-acesso-a-dados-de-pagamento/"
     },
     {
       "data": "2022-09-01",
@@ -186,6 +194,9 @@
     "versao": 1
   },
   "setor": "transportes",
-  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "ransomware",
+    "exfiltracao_dados"
+  ],
   "titulo": "Ciberataque à TAP Air Portugal"
 }

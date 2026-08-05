@@ -39,9 +39,13 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["camara-municipal-de-loures"],
+  "entidades_afetadas": [
+    "camara-municipal-de-loures"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["administracao-local"],
+  "etiquetas": [
+    "administracao-local"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -53,7 +57,7 @@
       "tipo": "noticia",
       "titulo": "Câmara de Loures alvo de ciberataque \"malicioso e deliberado\"",
       "url": "https://eco.sapo.pt/2022/09/22/camara-de-loures-alvo-de-ciberataque-malicioso-e-deliberado/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220922200554/https://eco.sapo.pt/2022/09/22/camara-de-loures-alvo-de-ciberataque-malicioso-e-deliberado/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -65,7 +69,7 @@
       "tipo": "noticia",
       "titulo": "Câmara de Loures alvo de ciberataque \"malicioso e deliberado\"",
       "url": "https://observador.pt/2022/09/22/camara-de-loures-alvo-de-ciberataque-malicioso-e-deliberado/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220922213204/https://observador.pt/2022/09/22/camara-de-loures-alvo-de-ciberataque-malicioso-e-deliberado/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -77,7 +81,7 @@
       "tipo": "noticia",
       "titulo": "Sistemas informáticos da Câmara de Loures normalizados após ciberataque",
       "url": "https://observador.pt/2022/09/29/sistemas-informaticos-da-camara-de-loures-normalizalizados-apos-ciberataque/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220929012236/https://observador.pt/2022/09/29/sistemas-informaticos-da-camara-de-loures-normalizalizados-apos-ciberataque/"
     }
   ],
   "id": "2022-camara-municipal-de-loures",
@@ -88,7 +92,9 @@
     "resgate_pago": null,
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": null,
-    "servicos_afetados": ["sistema e serviços informáticos municipais"]
+    "servicos_afetados": [
+      "sistema e serviços informáticos municipais"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -107,6 +113,9 @@
     "versao": 1
   },
   "setor": "autarquias",
-  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque à Câmara Municipal de Loures"
 }

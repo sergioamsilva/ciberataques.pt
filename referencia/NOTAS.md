@@ -76,6 +76,39 @@ câmaras. São a melhor fonte possível e não há forma prática de os recolher
 (a) no sítio da própria entidade e (b) sem restringir a pesquisa a órgãos nacionais.
 Foi assim que Santa Comba Dão apareceu, à segunda tentativa.
 
+## Arquivo das fontes: porque não raspamos o Arquivo.pt
+
+Uma ligação numa ficha é a prova do que ali se afirma. Quando morre, a afirmação fica
+sem sustentação. Por isso cada fonte tem duas vias de recuperação:
+
+1. **Cópia fixada no Internet Archive**, guardada em `url_arquivo`, com o carimbo
+   temporal mais próximo da data em que citámos. Preserva o que a fonte dizia *nessa
+   data*, e não a versão de hoje — distinção que importa, porque editar artigos depois
+   de publicados é prática corrente.
+2. **Ligação de pesquisa no Arquivo.pt**, gerada em cada ficha pelo site.
+
+O **Arquivo.pt**, da FCCN, seria a escolha natural: preserva o domínio .pt desde 1996,
+tem quase tudo o que citamos, muitas vezes capturado no próprio dia do incidente, e é
+o arquivo do nosso país. Chegámos a implementar a consulta à sua CDX API — que
+funciona e devolve exatamente o que queríamos.
+
+**Não a usamos.** O `robots.txt` do Arquivo.pt termina, no bloco `User-agent: *`, com
+`Disallow: /wayback`, permitindo apenas uma lista de domínios nomeados. É uma
+instrução explícita, e a política editorial deste projeto não admite contorná-la. A
+camada de rede recusou o pedido sozinha, como devia.
+
+A distinção que resolve o problema: **um robots.txt regula raspagem, não
+hiperligações.** O que ele governa é o que os nossos programas descarregam; não governa
+para onde apontamos uma ligação que o leitor segue no seu navegador. Por isso o site
+gera `https://arquivo.pt/wayback/*/<url>` em cada fonte, sem lhe fazer um único pedido.
+
+O leitor fica com o melhor arquivo para conteúdo português. Nós não raspamos nada.
+
+**Nota adicional**: o Arquivo.pt resolveria também o problema do Público, que nos
+devolve 403 e cujas fontes não conseguimos reverificar. Não é razão suficiente para
+desrespeitar o robots.txt — mas justifica que se peça autorização à FCCN, que é o
+caminho correto e está por fazer.
+
 ## Armadilhas das fontes
 
 - **Datas de publicação**: o Público, o ECO e o Observador trazem a data no próprio URL,

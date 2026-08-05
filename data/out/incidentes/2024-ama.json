@@ -51,10 +51,18 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["ama"],
-  "entidades_afetadas_em_cascata": ["sns"],
+  "entidades_afetadas": [
+    "ama"
+  ],
+  "entidades_afetadas_em_cascata": [
+    "sns"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["infraestrutura-critica", "administracao-central", "identidade-digital"],
+  "etiquetas": [
+    "infraestrutura-critica",
+    "administracao-central",
+    "identidade-digital"
+  ],
   "fontes": [
     {
       "data": "2024-10-10",
@@ -65,7 +73,7 @@
       "tipo": "noticia",
       "titulo": "AMA alvo de ciberataque. Várias plataformas do Estado não estão a funcionar",
       "url": "https://www.publico.pt/2024/10/10/tecnologia/noticia/ama-alvo-ciberataque-varias-plataformas-estado-nao-estao-funcionar-2107411",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241210180855/https://www.publico.pt/2024/10/10/tecnologia/noticia/ama-alvo-ciberataque-varias-plataformas-estado-nao-estao-funcionar-2107411"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -77,7 +85,7 @@
       "tipo": "noticia",
       "titulo": "Agência para a Modernização Administrativa alvo de ciberataque. Serviços como a Chave Móvel Digital atingidos",
       "url": "https://observador.pt/2024/10/10/agencia-para-a-modernizacao-administrativa-alvo-de-ciberataque-servicos-como-a-chave-movel-digital-atingidos/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241102041718/https://observador.pt/2024/10/10/agencia-para-a-modernizacao-administrativa-alvo-de-ciberataque-servicos-como-a-chave-movel-digital-atingidos/"
     },
     {
       "data": "2024-10-12",
@@ -88,7 +96,7 @@
       "tipo": "noticia",
       "titulo": "Médicos não conseguem enviar receitas por SMS desde quinta-feira. SNS 24 em baixo",
       "url": "https://www.publico.pt/2024/10/12/tecnologia/noticia/dois-dias-apos-ciberataque-ama-acesso-portal-sns-24-continua-baixo-2107717",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20250214191602/https://www.publico.pt/2024/10/12/tecnologia/noticia/dois-dias-apos-ciberataque-ama-acesso-portal-sns-24-continua-baixo-2107717"
     },
     {
       "contem_declaracao_de_autoridade": true,
@@ -100,7 +108,7 @@
       "tipo": "noticia",
       "titulo": "Das motivações às consequências: O ataque à AMA e as dúvidas que ficam 'no ar'",
       "url": "https://visao.pt/exameinformatica/noticias-ei/internet/2024-10-14-das-motivacoes-as-consequencias-o-ataque-a-ama-e-as-duvidas-que-ficam-no-ar/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241108011855/https://visao.pt/exameinformatica/noticias-ei/internet/2024-10-14-das-motivacoes-as-consequencias-o-ataque-a-ama-e-as-duvidas-que-ficam-no-ar/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -112,7 +120,7 @@
       "tipo": "noticia",
       "titulo": "Plataformas e serviços do Estado ainda estão em baixo após ciberataque. Resposta da AMA foi \"célere\"",
       "url": "https://www.publico.pt/2024/10/15/tecnologia/noticia/plataformas-servicos-estado-estao-baixo-apos-ciberataque-2107814",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241022125031/https://www.publico.pt/2024/10/15/tecnologia/noticia/plataformas-servicos-estado-estao-baixo-apos-ciberataque-2107814"
     },
     {
       "data": "2024-10-18",
@@ -123,7 +131,7 @@
       "tipo": "noticia",
       "titulo": "Site gov.pt já está restabelecido depois de ciberataque à AMA",
       "url": "https://www.publico.pt/2024/10/18/tecnologia/noticia/site-govpt-ja-restabelecido-ciberataque-ama-2108548",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241021102259/https://www.publico.pt/2024/10/18/tecnologia/noticia/site-govpt-ja-restabelecido-ciberataque-ama-2108548"
     },
     {
       "data": "2024-10-18",
@@ -134,9 +142,10 @@
       "tipo": "noticia",
       "titulo": "Gov.pt já está restabelecido depois de ciberataque à AMA",
       "url": "https://eco.sapo.pt/2024/10/18/gov-pt-ja-esta-restabelecido-depois-de-ciberataque-a-ama/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241022110128/https://eco.sapo.pt/2024/10/18/gov-pt-ja-esta-restabelecido-depois-de-ciberataque-a-ama/"
     }
   ],
+  "id": "2024-ama",
   "impacto": {
     "custo_declarado_eur": null,
     "duracao_horas": null,
@@ -153,7 +162,6 @@
       "envio de receitas médicas por mensagem escrita"
     ]
   },
-  "id": "2024-ama",
   "notificacoes": {
     "anacom": null,
     "banco_de_portugal": null,
@@ -171,6 +179,9 @@
     "versao": 1
   },
   "setor": "administracao_publica",
-  "tipos_ataque": ["ransomware", "indisponibilidade"],
+  "tipos_ataque": [
+    "ransomware",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque à Agência para a Modernização Administrativa"
 }

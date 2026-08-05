@@ -56,9 +56,14 @@
       "segundo": "Ragnar Locker"
     }
   ],
-  "entidades_afetadas": ["edp"],
+  "entidades_afetadas": [
+    "edp"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["infraestrutura-critica", "dupla-extorsao"],
+  "etiquetas": [
+    "infraestrutura-critica",
+    "dupla-extorsao"
+  ],
   "fontes": [
     {
       "contem_declaracao_de_autoridade": true,
@@ -70,7 +75,7 @@
       "tipo": "noticia",
       "titulo": "Centro de Cibersegurança analisa \"origem\" do ataque à EDP",
       "url": "https://eco.sapo.pt/2020/04/15/centro-de-ciberseguranca-analisa-origem-do-ataque-a-edp/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20200415231515/https://eco.sapo.pt/2020/04/15/centro-de-ciberseguranca-analisa-origem-do-ataque-a-edp/"
     },
     {
       "data": "2020-04-16",
@@ -81,7 +86,7 @@
       "tipo": "noticia",
       "titulo": "MP investiga ataque informático à EDP. Altice também foi alvo, mas diz que as consequências \"foram nulas\"",
       "url": "https://observador.pt/2020/04/16/altice-alvo-de-ataque-cibernetico-empresa-diz-que-consequencias-foram-nulas/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20200416102233/https://observador.pt/2020/04/16/altice-alvo-de-ataque-cibernetico-empresa-diz-que-consequencias-foram-nulas/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -93,7 +98,7 @@
       "tipo": "noticia",
       "titulo": "EDP não comenta informação que hackers \"alegadamente\" partilharam na dark web",
       "url": "https://www.publico.pt/2020/05/07/tecnologia/noticia/edp-nao-comenta-informacao-hackers-alegadamente-partilharam-dark-web-1915604",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20200507182839/https://www.publico.pt/2020/05/07/tecnologia/noticia/edp-nao-comenta-informacao-hackers-alegadamente-partilharam-dark-web-1915604"
     }
   ],
   "id": "2020-edp",
@@ -126,6 +131,9 @@
     "versao": 1
   },
   "setor": "energia_agua",
-  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "ransomware",
+    "exfiltracao_dados"
+  ],
   "titulo": "Ciberataque à EDP"
 }

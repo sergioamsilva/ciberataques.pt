@@ -71,6 +71,13 @@ Verificar ligações citadas (semanal, no cron):
 `nao_verificavel` (o servidor recusa automatismos, como faz o Público, o que **não**
 é uma ligação morta).
 
+Preservar as fontes: `.venv/bin/python ingestao/arquivo.py --submeter` procura cópias
+no Internet Archive e pede o arquivamento das que não existem. Corre no cron diário,
+a seguir à recolha, porque as fontes de hoje são as que ainda ninguém preservou. Cada
+ficha oferece ainda uma ligação de pesquisa no Arquivo.pt, que é gerada e nunca
+consultada — o `robots.txt` deles proíbe raspagem de `/wayback`, e um `robots.txt`
+regula raspagem, não hiperligações. Ver `referencia/NOTAS.md`.
+
 O modelo corre via OpenRouter. A chave vai em `~/.config/ciberataques/segredos.env`
 como `OPENROUTER_API_KEY`; o modelo escolhe-se em `LLM_MODELO` e o teto diário de
 custo em `MAX_CANDIDATOS_DIA`. Sem chave, a recolha e a triagem funcionam na mesma e

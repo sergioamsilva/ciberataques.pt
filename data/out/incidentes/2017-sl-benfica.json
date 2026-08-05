@@ -28,7 +28,10 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["comunicacoes", "identificacao"],
+    "categorias": [
+      "comunicacoes",
+      "identificacao"
+    ],
     "nota": "Foram acedidas contas de correio eletrónico profissional de dirigentes. Não nomeamos os visados: são pessoas singulares afetadas, e a política editorial não as identifica.",
     "titulares_declarados": null
   },
@@ -39,9 +42,15 @@
     "precisao": "ano"
   },
   "disputas": [],
-  "entidades_afetadas": ["sl-benfica"],
+  "entidades_afetadas": [
+    "sl-benfica"
+  ],
   "estado_confirmacao": "confirmado_por_regulador",
-  "etiquetas": ["desporto", "processo-judicial", "football-leaks"],
+  "etiquetas": [
+    "desporto",
+    "processo-judicial",
+    "football-leaks"
+  ],
   "fontes": [
     {
       "contem_declaracao_de_autoridade": true,
@@ -53,7 +62,7 @@
       "tipo": "noticia",
       "titulo": "Football Leaks: Benfica sofreu ataque informático antes de divulgações no Porto Canal",
       "url": "https://www.publico.pt/2025/02/26/desporto/noticia/football-leaks-benfica-sofreu-ataque-informatico-divulgacoes-porto-canal-2124001",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20250226163338/https://www.publico.pt/2025/02/26/desporto/noticia/football-leaks-benfica-sofreu-ataque-informatico-divulgacoes-porto-canal-2124001"
     },
     {
       "contem_declaracao_de_autoridade": true,
@@ -65,7 +74,7 @@
       "tipo": "noticia",
       "titulo": "Football Leaks: Benfica sofreu ataque informático antes de divulgações no Porto Canal",
       "url": "https://observador.pt/2025/02/26/football-leaks-benfica-sofreu-ataque-informatico-antes-de-divulgacoes-no-porto-canal/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20250303221127/https://observador.pt/2025/02/26/football-leaks-benfica-sofreu-ataque-informatico-antes-de-divulgacoes-no-porto-canal/"
     },
     {
       "data": "2025-02-26",
@@ -76,7 +85,7 @@
       "tipo": "noticia",
       "titulo": "Football Leaks. Benfica sofreu ataque informático antes de divulgações no Porto Canal",
       "url": "https://rr.pt/bola-branca/noticia/benfica/2025/02/26/football-leaks-benfica-sofreu-ataque-informatico-antes-de-divulgacoes-no-porto-canal/415258/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20250226161032/https://rr.pt/bola-branca/noticia/benfica/2025/02/26/football-leaks-benfica-sofreu-ataque-informatico-antes-de-divulgacoes-no-porto-canal/415258/"
     },
     {
       "data": "2025-02-26",
@@ -87,7 +96,7 @@
       "tipo": "noticia",
       "titulo": "Football Leaks: Benfica sofreu ataque informático antes de divulgações no Porto Canal",
       "url": "https://eco.sapo.pt/2025/02/26/football-leaks-benfica-sofreu-ataque-informatico-antes-de-divulgacoes-no-porto-canal/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20250226150658/https://eco.sapo.pt/2025/02/26/football-leaks-benfica-sofreu-ataque-informatico-antes-de-divulgacoes-no-porto-canal/"
     }
   ],
   "id": "2017-sl-benfica",
@@ -120,6 +129,10 @@
     "versao": 1
   },
   "setor": "desporto",
-  "tipos_ataque": ["intrusao", "exfiltracao_dados", "phishing_bec"],
+  "tipos_ataque": [
+    "intrusao",
+    "exfiltracao_dados",
+    "phishing_bec"
+  ],
   "titulo": "Acesso não autorizado aos sistemas do Sport Lisboa e Benfica"
 }

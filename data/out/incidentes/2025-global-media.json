@@ -39,9 +39,14 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["global-media"],
+  "entidades_afetadas": [
+    "global-media"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["comunicacao-social", "emissao-de-radio"],
+  "etiquetas": [
+    "comunicacao-social",
+    "emissao-de-radio"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -53,7 +58,7 @@
       "tipo": "noticia",
       "titulo": "Sites do JN, O Jogo e TSF alvo de ataque informático",
       "url": "https://www.publico.pt/2025/03/30/sociedade/noticia/sites-jn-jogo-tsf-alvo-ataque-informatico-2127865",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20250330085132/https://www.publico.pt/2025/03/30/sociedade/noticia/sites-jn-jogo-tsf-alvo-ataque-informatico-2127865"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -65,7 +70,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático afeta sites do JN e TSF",
       "url": "https://observador.pt/2025/03/30/ataque-informatico-afeta-sites-do-jornal-de-noticias-e-tsf/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20250330143328/https://observador.pt/2025/03/30/ataque-informatico-afeta-sites-do-jornal-de-noticias-e-tsf/"
     }
   ],
   "id": "2025-global-media",
@@ -90,7 +95,10 @@
     "cnpd": null,
     "pj": true
   },
-  "relacionados": ["2022-impresa", "2022-lusa"],
+  "relacionados": [
+    "2022-impresa",
+    "2022-lusa"
+  ],
   "resumo": "A 30 de março de 2025, os grupos Notícias Ilimitadas e Global Media foram alvo de um ataque informático que atingiu os sistemas do Jornal de Notícias e os sistemas de emissão da TSF. Ficaram indisponíveis sítios noticiosos, edições eletrónicas dos jornais e sistemas de emissão de rádio, afetando o Jornal de Notícias, O Jogo, a TSF, as revistas Evasões, Notícias Magazine e Volta ao Mundo e ainda os títulos Delas e N-TV. O incidente foi reportado às autoridades competentes e os serviços viriam a ser repostos, ainda que com acesso lento.",
   "revisao": {
     "curador": "ss",
@@ -99,6 +107,9 @@
     "versao": 1
   },
   "setor": "media",
-  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque aos grupos Global Media e Notícias Ilimitadas"
 }

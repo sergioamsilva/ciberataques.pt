@@ -39,9 +39,15 @@
     "precisao": "semana"
   },
   "disputas": [],
-  "entidades_afetadas": ["ministerio-dos-negocios-estrangeiros"],
+  "entidades_afetadas": [
+    "ministerio-dos-negocios-estrangeiros"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["seguranca-nacional", "administracao-central", "correio-eletronico"],
+  "etiquetas": [
+    "seguranca-nacional",
+    "administracao-central",
+    "correio-eletronico"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -53,7 +59,7 @@
       "tipo": "noticia",
       "titulo": "MNE alvo de ciberataque: Santos Silva garante que informação \"não está comprometida\"",
       "url": "https://www.publico.pt/2022/02/23/politica/noticia/ministerio-negocios-estrangeiros-alvo-ciberataque-santos-silva-informacao-nao-comprometida-1996594",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220223210103/https://www.publico.pt/2022/02/23/politica/noticia/ministerio-negocios-estrangeiros-alvo-ciberataque-santos-silva-informacao-nao-comprometida-1996594"
     },
     {
       "data": "2022-02-23",
@@ -64,7 +70,7 @@
       "tipo": "noticia",
       "titulo": "Ministério dos Negócios Estrangeiros alvo de ciberataque",
       "url": "https://eco.sapo.pt/2022/02/23/ministerio-dos-negocios-estrangeiros-alvo-de-ciberataque/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220223203233/https://eco.sapo.pt/2022/02/23/ministerio-dos-negocios-estrangeiros-alvo-de-ciberataque/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -76,7 +82,7 @@
       "tipo": "noticia",
       "titulo": "Ministério dos Negócios Estrangeiros alvo de ciberataque. Santos Silva garante que informação confidencial não foi comprometida",
       "url": "https://observador.pt/2022/02/23/ministerio-dos-negocios-estrangeiros-alvo-de-ciberataque-informacao-confidencial-pode-ter-sido-comprometida/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220223195234/https://observador.pt/2022/02/23/ministerio-dos-negocios-estrangeiros-alvo-de-ciberataque-informacao-confidencial-pode-ter-sido-comprometida/"
     }
   ],
   "id": "2022-ministerio-dos-negocios-estrangeiros",
@@ -100,7 +106,9 @@
     "cnpd": null,
     "pj": true
   },
-  "relacionados": ["2022-emgfa"],
+  "relacionados": [
+    "2022-emgfa"
+  ],
   "resumo": "Em fevereiro de 2022, o Ministério dos Negócios Estrangeiros foi alvo de uma intrusão nos seus sistemas. Diplomatas e serviços do Palácio das Necessidades ficaram sem acesso ao correio eletrónico, e a rede mne.pt, usada por toda a estrutura do ministério, foi bloqueada assim que a intrusão foi detetada. O alerta partiu do Serviço de Informações de Segurança e a Polícia Judiciária abriu investigação. O ministro de Estado e dos Negócios Estrangeiros garantiu publicamente que a informação não estava comprometida.",
   "revisao": {
     "curador": "ss",
@@ -109,6 +117,9 @@
     "versao": 1
   },
   "setor": "administracao_publica",
-  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque ao Ministério dos Negócios Estrangeiros"
 }

@@ -33,9 +33,13 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["universidade-de-lisboa"],
+  "entidades_afetadas": [
+    "universidade-de-lisboa"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["ensino-superior"],
+  "etiquetas": [
+    "ensino-superior"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -47,7 +51,7 @@
       "tipo": "noticia",
       "titulo": "Universidade de Lisboa alvo de ataque informático. Hackers exigem resgate",
       "url": "https://www.publico.pt/2021/11/02/sociedade/noticia/universidade-lisboa-alvo-ataque-informatico-emails-seis-faculdades-suspensos-preventivamente-1983390",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20211102195305/https://www.publico.pt/2021/11/02/sociedade/noticia/universidade-lisboa-alvo-ataque-informatico-emails-seis-faculdades-suspensos-preventivamente-1983390"
     }
   ],
   "id": "2021-universidade-de-lisboa",
@@ -72,7 +76,9 @@
     "cnpd": true,
     "pj": true
   },
-  "relacionados": ["2022-universidade-da-beira-interior"],
+  "relacionados": [
+    "2022-universidade-da-beira-interior"
+  ],
   "resumo": "Ao final do dia 30 de outubro de 2021, a Universidade de Lisboa foi alvo de um ataque de ransomware que encriptou informação nos servidores Windows e levou ao encerramento preventivo dos serviços de informática. O correio eletrónico ficou suspenso em seis das faculdades e a rede sem fios foi desligada. Os atacantes exigiram resgate, mas a universidade garantiu dispor de cópias de segurança de todos os dados e declarou que a informação sobre estudantes, funcionários e finanças não foi comprometida. O incidente foi comunicado às autoridades.",
   "revisao": {
     "curador": "ss",
@@ -81,6 +87,9 @@
     "versao": 1
   },
   "setor": "educacao_investigacao",
-  "tipos_ataque": ["ransomware", "indisponibilidade"],
+  "tipos_ataque": [
+    "ransomware",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque à Universidade de Lisboa"
 }

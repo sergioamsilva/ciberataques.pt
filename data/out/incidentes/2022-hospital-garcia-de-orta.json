@@ -57,9 +57,14 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["hospital-garcia-de-orta"],
+  "entidades_afetadas": [
+    "hospital-garcia-de-orta"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["infraestrutura-critica", "servico-nacional-de-saude"],
+  "etiquetas": [
+    "infraestrutura-critica",
+    "servico-nacional-de-saude"
+  ],
   "fontes": [
     {
       "data": "2022-04-26",
@@ -70,7 +75,7 @@
       "tipo": "noticia",
       "titulo": "Hospital Garcia de Orta alvo de ataque informático. No Litoral Alentejano houve uma tentativa de ciberataque",
       "url": "https://www.publico.pt/2022/04/26/sociedade/noticia/hospital-garcia-orta-alvo-ataque-informatico-2003841",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220426112656/https://www.publico.pt/2022/04/26/sociedade/noticia/hospital-garcia-orta-alvo-ataque-informatico-2003841"
     },
     {
       "data": "2022-04-26",
@@ -81,7 +86,7 @@
       "tipo": "noticia",
       "titulo": "Hospital Garcia de Orta alvo de ataque informático",
       "url": "https://eco.sapo.pt/2022/04/26/hospital-garcia-de-orta-tera-sido-alvo-de-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220426110955/https://eco.sapo.pt/2022/04/26/hospital-garcia-de-orta-tera-sido-alvo-de-ataque-informatico/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -93,7 +98,7 @@
       "tipo": "noticia",
       "titulo": "Sistema informático do Hospital Garcia de Orta em baixo após ataque informático. Atividade clínica foi quase toda \"mantida\"",
       "url": "https://observador.pt/2022/04/26/sistema-informatico-do-hospital-garcia-de-orta-em-baixo-apos-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220426115511/https://observador.pt/2022/04/26/sistema-informatico-do-hospital-garcia-de-orta-em-baixo-apos-ataque-informatico/"
     },
     {
       "data": "2022-05-03",
@@ -104,7 +109,7 @@
       "tipo": "noticia",
       "titulo": "Hospital Garcia de Orta, em Almada, continua em contingência uma semana após ataque informático",
       "url": "https://observador.pt/2022/05/03/hospital-garcia-de-orta-em-almada-continua-em-contingencia-uma-semana-apos-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220503125218/https://observador.pt/2022/05/03/hospital-garcia-de-orta-em-almada-continua-em-contingencia-uma-semana-apos-ataque-informatico/"
     },
     {
       "data": "2022-05-16",
@@ -115,7 +120,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático no hospital de Almada coloca em causa cuidados de saúde, alerta sindicato",
       "url": "https://www.publico.pt/2022/05/16/sociedade/noticia/ataque-informatico-hospital-almada-coloca-causa-cuidados-saude-alerta-sindicato-2006360",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220516114213/https://www.publico.pt/2022/05/16/sociedade/noticia/ataque-informatico-hospital-almada-coloca-causa-cuidados-saude-alerta-sindicato-2006360"
     },
     {
       "data": "2022-05-31",
@@ -126,7 +131,7 @@
       "tipo": "noticia",
       "titulo": "Serviços farmacêuticos do Hospital de Almada está a recuperar gradualmente do ataque informático",
       "url": "https://observador.pt/2022/05/31/servicos-farmaceuticos-do-hospital-de-almada-esta-a-recuperar-gradualmente-do-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220531175722/https://observador.pt/2022/05/31/servicos-farmaceuticos-do-hospital-de-almada-esta-a-recuperar-gradualmente-do-ataque-informatico/"
     },
     {
       "contem_declaracao_de_autoridade": true,
@@ -138,9 +143,10 @@
       "tipo": "noticia",
       "titulo": "Desmantelado grupo de piratas informáticos que terá atacado Hospital Garcia da Orta",
       "url": "https://www.publico.pt/2023/01/26/sociedade/noticia/desmantelado-grupo-suspeito-ataques-informaticas-hospitais-camaras-hoteis-2036565",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230126171645/https://www.publico.pt/2023/01/26/sociedade/noticia/desmantelado-grupo-suspeito-ataques-informaticas-hospitais-camaras-hoteis-2036565"
     }
   ],
+  "id": "2022-hospital-garcia-de-orta",
   "impacto": {
     "custo_declarado_eur": null,
     "duracao_horas": null,
@@ -156,7 +162,6 @@
       "serviços farmacêuticos"
     ]
   },
-  "id": "2022-hospital-garcia-de-orta",
   "notificacoes": {
     "anacom": null,
     "banco_de_portugal": null,
@@ -174,6 +179,9 @@
     "versao": 1
   },
   "setor": "saude",
-  "tipos_ataque": ["ransomware", "indisponibilidade"],
+  "tipos_ataque": [
+    "ransomware",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque ao Hospital Garcia de Orta"
 }

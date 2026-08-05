@@ -51,9 +51,15 @@
     "precisao": "semana"
   },
   "disputas": [],
-  "entidades_afetadas": ["misericordia-de-santo-tirso"],
+  "entidades_afetadas": [
+    "misericordia-de-santo-tirso"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["setor-social", "cuidados-de-saude", "instituicao-particular"],
+  "etiquetas": [
+    "setor-social",
+    "cuidados-de-saude",
+    "instituicao-particular"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -65,7 +71,7 @@
       "tipo": "noticia",
       "titulo": "Santa Casa da Misericórdia de Santo Tirso alvo de ciberataque no fim de semana",
       "url": "https://observador.pt/2026/06/09/santa-casa-da-misericordia-de-santo-tirso-alvo-de-ciberataque-no-fim-de-semana/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20260610074145/https://observador.pt/2026/06/09/santa-casa-da-misericordia-de-santo-tirso-alvo-de-ciberataque-no-fim-de-semana/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -113,7 +119,10 @@
     "cnpd": null,
     "pj": true
   },
-  "relacionados": ["2023-sesaram", "2022-hospital-garcia-de-orta"],
+  "relacionados": [
+    "2023-sesaram",
+    "2022-hospital-garcia-de-orta"
+  ],
   "resumo": "A Santa Casa da Misericórdia de Santo Tirso foi alvo de um ciberataque durante o fim de semana de 6 de junho de 2026, detetado na manhã de segunda-feira. A instituição fechou o sistema ao exterior e recorreu a uma equipa externa para apurar a origem e a extensão. O impacto fez-se sentir sobretudo nas unidades de trabalho médico externas, com cancelamento de consultas, enquanto os cuidados a residentes nas estruturas residenciais para pessoas idosas se mantiveram sem impacto. O caso foi reportado à Polícia Judiciária. Uma semana depois, o grupo Qilin listou a instituição no seu site de extorsão.",
   "revisao": {
     "curador": "ss",
@@ -122,6 +131,9 @@
     "versao": 1
   },
   "setor": "saude",
-  "tipos_ataque": ["ransomware", "intrusao"],
+  "tipos_ataque": [
+    "ransomware",
+    "intrusao"
+  ],
   "titulo": "Ciberataque à Santa Casa da Misericórdia de Santo Tirso"
 }

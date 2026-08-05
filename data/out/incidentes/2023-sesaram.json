@@ -33,9 +33,14 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["sesaram"],
+  "entidades_afetadas": [
+    "sesaram"
+  ],
   "estado_confirmacao": "reportado_por_media",
-  "etiquetas": ["infraestrutura-critica", "regiao-autonoma"],
+  "etiquetas": [
+    "infraestrutura-critica",
+    "regiao-autonoma"
+  ],
   "fontes": [
     {
       "data": "2023-08-06",
@@ -46,7 +51,7 @@
       "tipo": "noticia",
       "titulo": "Ciberataque força suspensão de actividade clínica no Serviço de Saúde da Madeira",
       "url": "https://www.publico.pt/2023/08/06/tecnologia/noticia/ciberataque-forca-suspensao-actividade-clinica-servico-saude-madeira-2059423",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230806223510/https://www.publico.pt/2023/08/06/tecnologia/noticia/ciberataque-forca-suspensao-actividade-clinica-servico-saude-madeira-2059423"
     },
     {
       "data": "2023-09-09",
@@ -57,7 +62,7 @@
       "tipo": "noticia",
       "titulo": "Serviço de Saúde da Madeira recupera acesso a informação clínica e não clínica dos utentes após ataque informático",
       "url": "https://www.publico.pt/2023/09/09/sociedade/noticia/servico-saude-madeira-recupera-acesso-informacao-clinica-nao-clinica-utentes-apos-ataque-informatico-2062816",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230910024036/https://www.publico.pt/2023/09/09/sociedade/noticia/servico-saude-madeira-recupera-acesso-informacao-clinica-nao-clinica-utentes-apos-ataque-informatico-2062816"
     },
     {
       "data": "2023-08-15",
@@ -68,7 +73,7 @@
       "tipo": "noticia",
       "titulo": "SESARAM continua a repor serviços fundamentais uma semana após ciberataque",
       "url": "https://healthnews.pt/2023/08/15/sesaram-continua-a-repor-servicos-fundamentais-uma-semana-apos-ciberataque/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241209092233/https://healthnews.pt/2023/08/15/sesaram-continua-a-repor-servicos-fundamentais-uma-semana-apos-ciberataque/"
     }
   ],
   "id": "2023-sesaram",
@@ -95,7 +100,9 @@
     "cnpd": true,
     "pj": true
   },
-  "relacionados": ["2022-hospital-garcia-de-orta"],
+  "relacionados": [
+    "2022-hospital-garcia-de-orta"
+  ],
   "resumo": "A 6 de agosto de 2023, um ciberataque ao Serviço de Saúde da Região Autónoma da Madeira forçou a suspensão da atividade clínica, com bloqueio do acesso aos processos dos utentes e regresso ao registo em papel. Foram afetados os hospitais e os centros de saúde da região, com suspensão de consultas, cirurgias programadas, análises clínicas e meios complementares de diagnóstico. A recuperação foi prolongada: o acesso à informação clínica e não clínica dos utentes só foi restabelecido a 9 de setembro, cerca de cinco semanas depois.",
   "revisao": {
     "curador": "ss",
@@ -104,6 +111,9 @@
     "versao": 1
   },
   "setor": "saude",
-  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque ao Serviço de Saúde da Madeira"
 }

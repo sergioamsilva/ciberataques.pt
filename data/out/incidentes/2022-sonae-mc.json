@@ -48,9 +48,14 @@
       "segundo": "RansomEXX"
     }
   ],
-  "entidades_afetadas": ["sonae-mc"],
+  "entidades_afetadas": [
+    "sonae-mc"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["dupla-extorsao", "retalho-alimentar"],
+  "etiquetas": [
+    "dupla-extorsao",
+    "retalho-alimentar"
+  ],
   "fontes": [
     {
       "data": "2022-03-30",
@@ -61,7 +66,7 @@
       "tipo": "noticia",
       "titulo": "Sonae MC alvo de ataque informático. Site do Continente está \"em manutenção\"",
       "url": "https://eco.sapo.pt/2022/03/30/sonae-mc-alvo-de-ataque-informatico-site-do-continente-esta-em-manutencao/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220330123926/https://eco.sapo.pt/2022/03/30/sonae-mc-alvo-de-ataque-informatico-site-do-continente-esta-em-manutencao/"
     },
     {
       "data": "2022-03-30",
@@ -72,7 +77,7 @@
       "tipo": "noticia",
       "titulo": "Sonae foi alvo de ataque informático. Sites do grupo estão em baixo",
       "url": "https://www.publico.pt/2022/03/30/economia/noticia/sonae-alvo-ataque-informatico-sites-grupo-estao-baixo-2000691",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220330124601/https://www.publico.pt/2022/03/30/economia/noticia/sonae-alvo-ataque-informatico-sites-grupo-estao-baixo-2000691"
     },
     {
       "data": "2022-03-30",
@@ -95,7 +100,7 @@
       "tipo": "noticia",
       "titulo": "Sonae diz não haver evidência de que dados dos clientes foram afetados em ciberataque",
       "url": "https://www.publico.pt/2022/04/05/economia/noticia/sonae-nao-haver-evidencia-dados-clientes-afetados-ciberataque-2001477",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220405172004/https://www.publico.pt/2022/04/05/economia/noticia/sonae-nao-haver-evidencia-dados-clientes-afetados-ciberataque-2001477"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -107,7 +112,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático. Sonae diz que dados pessoais de clientes não terão sido afetados",
       "url": "https://observador.pt/2022/04/05/ataque-informatico-sonae-diz-que-dados-pessoais-de-clientes-nao-terao-sido-afetados/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220405170202/https://observador.pt/2022/04/05/ataque-informatico-sonae-diz-que-dados-pessoais-de-clientes-nao-terao-sido-afetados/"
     }
   ],
   "id": "2022-sonae-mc",
@@ -142,6 +147,10 @@
     "versao": 1
   },
   "setor": "retalho",
-  "tipos_ataque": ["ransomware", "exfiltracao_dados", "indisponibilidade"],
+  "tipos_ataque": [
+    "ransomware",
+    "exfiltracao_dados",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque à Sonae MC (Continente e Wells)"
 }

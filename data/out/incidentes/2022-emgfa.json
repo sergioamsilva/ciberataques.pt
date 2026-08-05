@@ -57,9 +57,15 @@
     "precisao": "desconhecida"
   },
   "disputas": [],
-  "entidades_afetadas": ["emgfa"],
+  "entidades_afetadas": [
+    "emgfa"
+  ],
   "estado_confirmacao": "confirmado_por_regulador",
-  "etiquetas": ["seguranca-nacional", "documentos-classificados", "falha-de-procedimento"],
+  "etiquetas": [
+    "seguranca-nacional",
+    "documentos-classificados",
+    "falha-de-procedimento"
+  ],
   "fontes": [
     {
       "data": "2022-09-08",
@@ -70,7 +76,7 @@
       "tipo": "noticia",
       "titulo": "Hackers atacam Estado-Maior-General das Forças Armadas e colocam documentos da NATO à venda na internet",
       "url": "https://www.publico.pt/2022/09/08/sociedade/noticia/piratas-atacam-estadomaiorgeneral-forcas-armadas-colocam-documentos-nato-venda-internet-2019803",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220908091507/https://www.publico.pt/2022/09/08/sociedade/noticia/piratas-atacam-estadomaiorgeneral-forcas-armadas-colocam-documentos-nato-venda-internet-2019803"
     },
     {
       "data": "2022-09-08",
@@ -81,7 +87,7 @@
       "tipo": "noticia",
       "titulo": "Documentos da NATO enviados a Portugal foram intercetados por hackers e colocados à venda na \"dark web\"",
       "url": "https://observador.pt/2022/09/08/documentos-da-nato-enviados-a-portugal-foram-intercetados-por-hackers-e-colocados-a-venda-na-dark-web/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220908063956/https://observador.pt/2022/09/08/documentos-da-nato-enviados-a-portugal-foram-intercetados-por-hackers-e-colocados-a-venda-na-dark-web/"
     },
     {
       "data": "2022-09-08",
@@ -92,7 +98,7 @@
       "tipo": "noticia",
       "titulo": "Documentos portugueses da NATO apanhados à venda na \"darkweb\"",
       "url": "https://eco.sapo.pt/2022/09/08/documentos-portugueses-da-nato-apanhados-a-venda-na-darkweb/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220908072852/https://eco.sapo.pt/2022/09/08/documentos-portugueses-da-nato-apanhados-a-venda-na-darkweb/"
     },
     {
       "data": "2022-09-10",
@@ -103,7 +109,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático na Defesa: funcionário usou rede não segura para transmitir documentos classificados",
       "url": "https://www.publico.pt/2022/09/10/sociedade/noticia/ataque-informatico-defesa-funcionario-usou-rede-nao-segura-transmitir-documentos-classificados-2020032",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220910061245/https://www.publico.pt/2022/09/10/sociedade/noticia/ataque-informatico-defesa-funcionario-usou-rede-nao-segura-transmitir-documentos-classificados-2020032"
     },
     {
       "contem_declaracao_de_autoridade": true,
@@ -115,7 +121,7 @@
       "tipo": "noticia",
       "titulo": "Ministério Público investiga ciberataque que expôs documentos portugueses da NATO",
       "url": "https://eco.sapo.pt/2022/09/13/ministerio-publico-abre-inquerito-sobre-ciberataque-que-revelou-documentos-da-nato/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220913111155/https://eco.sapo.pt/2022/09/13/ministerio-publico-abre-inquerito-sobre-ciberataque-que-revelou-documentos-da-nato/"
     },
     {
       "data": "2022-09-16",
@@ -126,7 +132,7 @@
       "tipo": "noticia",
       "titulo": "EUA propõem colaboração com Portugal após ciberataque que expôs dados da NATO",
       "url": "https://eco.sapo.pt/2022/09/16/eua-propoem-colaboracao-com-portugal-apos-ciberataque-que-expos-dados-da-nato/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220916083044/https://eco.sapo.pt/2022/09/16/eua-propoem-colaboracao-com-portugal-apos-ciberataque-que-expos-dados-da-nato/"
     },
     {
       "contem_declaracao_de_autoridade": true,
@@ -138,7 +144,7 @@
       "tipo": "noticia",
       "titulo": "Centro de Cibersegurança confirma ataques à rede das Forças Armadas",
       "url": "https://www.publico.pt/2022/09/28/sociedade/noticia/centro-ciberseguranca-confirma-ataques-rede-forcas-armadas-2022206",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220928184130/https://www.publico.pt/2022/09/28/sociedade/noticia/centro-ciberseguranca-confirma-ataques-rede-forcas-armadas-2022206"
     }
   ],
   "id": "2022-emgfa",
@@ -168,6 +174,9 @@
     "versao": 1
   },
   "setor": "justica_defesa",
-  "tipos_ataque": ["intrusao", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "intrusao",
+    "exfiltracao_dados"
+  ],
   "titulo": "Ciberataque ao Estado-Maior-General das Forças Armadas"
 }

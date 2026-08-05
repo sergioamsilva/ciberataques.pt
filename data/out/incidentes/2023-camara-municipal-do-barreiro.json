@@ -33,9 +33,13 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["camara-municipal-do-barreiro"],
+  "entidades_afetadas": [
+    "camara-municipal-do-barreiro"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["administracao-local"],
+  "etiquetas": [
+    "administracao-local"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -47,7 +51,7 @@
       "tipo": "noticia",
       "titulo": "Câmara do Barreiro foi alvo de um ataque informático",
       "url": "https://www.publico.pt/2023/03/10/local/noticia/camara-barreiro-alvo-ataque-informatico-2041905",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230310233722/https://www.publico.pt/2023/03/10/local/noticia/camara-barreiro-alvo-ataque-informatico-2041905"
     }
   ],
   "id": "2023-camara-municipal-do-barreiro",
@@ -58,7 +62,9 @@
     "resgate_pago": null,
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": null,
-    "servicos_afetados": ["servidor informático central"]
+    "servicos_afetados": [
+      "servidor informático central"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -77,6 +83,8 @@
     "versao": 1
   },
   "setor": "autarquias",
-  "tipos_ataque": ["intrusao"],
+  "tipos_ataque": [
+    "intrusao"
+  ],
   "titulo": "Ciberataque à Câmara Municipal do Barreiro"
 }

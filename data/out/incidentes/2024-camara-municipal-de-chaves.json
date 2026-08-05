@@ -39,9 +39,13 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["camara-municipal-de-chaves"],
+  "entidades_afetadas": [
+    "camara-municipal-de-chaves"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["administracao-local"],
+  "etiquetas": [
+    "administracao-local"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -53,7 +57,7 @@
       "tipo": "noticia",
       "titulo": "Câmara de Chaves alvo de ciberataque que afeta serviços e atendimento ao público",
       "url": "https://observador.pt/2024/11/14/camara-de-chaves-alvo-de-ciberataque-que-afeta-servicos-e-atendimento-ao-publico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241114115019/https://observador.pt/2024/11/14/camara-de-chaves-alvo-de-ciberataque-que-afeta-servicos-e-atendimento-ao-publico/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -77,9 +81,10 @@
       "tipo": "noticia",
       "titulo": "Câmara de Chaves restabeleceu comunicações telefónicas após ciberataque",
       "url": "https://observador.pt/2024/11/18/camara-de-chaves-restabeleceu-comunicacoes-telefonicas-apos-ciberataque/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241119091314/https://observador.pt/2024/11/18/camara-de-chaves-restabeleceu-comunicacoes-telefonicas-apos-ciberataque/"
     }
   ],
+  "id": "2024-camara-municipal-de-chaves",
   "impacto": {
     "custo_declarado_eur": null,
     "duracao_horas": null,
@@ -101,8 +106,9 @@
     "cnpd": null,
     "pj": true
   },
-  "id": "2024-camara-municipal-de-chaves",
-  "relacionados": ["2024-camara-municipal-de-alcobaca"],
+  "relacionados": [
+    "2024-camara-municipal-de-alcobaca"
+  ],
   "resumo": "Na madrugada de 13 de novembro de 2024, o município de Chaves foi alvo de um ataque informático que comprometeu severamente o funcionamento dos serviços municipais. A autarquia ficou sem acessos informáticos nem comunicações, impossibilitada de garantir o atendimento aos munícipes. Foram notificados o Centro Nacional de Cibersegurança e a Polícia Judiciária. Cinco dias depois as comunicações telefónicas estavam restabelecidas, mas o município mantinha-se sem acessos informáticos.",
   "revisao": {
     "curador": "ss",
@@ -111,6 +117,9 @@
     "versao": 1
   },
   "setor": "autarquias",
-  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque à Câmara Municipal de Chaves"
 }

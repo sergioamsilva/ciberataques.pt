@@ -33,9 +33,13 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["visabeira"],
+  "entidades_afetadas": [
+    "visabeira"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["multissetorial"],
+  "etiquetas": [
+    "multissetorial"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -47,7 +51,7 @@
       "tipo": "noticia",
       "titulo": "Grupo Visabeira alvo de ciberataque",
       "url": "https://eco.sapo.pt/2023/02/13/grupo-visabeira-alvo-de-ciberataque/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230213203819/https://eco.sapo.pt/2023/02/13/grupo-visabeira-alvo-de-ciberataque/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -70,7 +74,7 @@
       "tipo": "noticia",
       "titulo": "Grupo Visabeira com sede em Viseu alvo de ataque ao sistema informático",
       "url": "https://observador.pt/2023/02/13/grupo-visabeira-com-sede-em-viseu-alvo-de-ataque-ao-sistema-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230214010648/https://observador.pt/2023/02/13/grupo-visabeira-com-sede-em-viseu-alvo-de-ataque-ao-sistema-informatico/"
     }
   ],
   "id": "2023-visabeira",
@@ -81,7 +85,9 @@
     "resgate_pago": null,
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": null,
-    "servicos_afetados": ["serviços interrompidos preventivamente durante o dia"]
+    "servicos_afetados": [
+      "serviços interrompidos preventivamente durante o dia"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -100,6 +106,9 @@
     "versao": 1
   },
   "setor": "industria",
-  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque ao Grupo Visabeira"
 }

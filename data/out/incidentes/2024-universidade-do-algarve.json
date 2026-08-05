@@ -28,7 +28,11 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["identificacao", "contacto", "financeiros"],
+    "categorias": [
+      "identificacao",
+      "contacto",
+      "financeiros"
+    ],
     "nota": "Foram exfiltrados nomes, endereços de correio eletrónico, contactos telefónicos e números de identificação bancária (IBAN). A universidade indicou que o ataque não extraiu de igual forma todos os dados pessoais. O número de titulares afetados não foi divulgado.",
     "titulares_declarados": null
   },
@@ -40,9 +44,15 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["universidade-do-algarve"],
+  "entidades_afetadas": [
+    "universidade-do-algarve"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["ensino-superior", "rgpd", "dados-bancarios"],
+  "etiquetas": [
+    "ensino-superior",
+    "rgpd",
+    "dados-bancarios"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -54,7 +64,7 @@
       "tipo": "noticia",
       "titulo": "Universidade do Algarve alvo de ciberataque com acesso a dados pessoais",
       "url": "https://www.publico.pt/2024/11/22/tecnologia/noticia/universidade-algarve-alvo-ciberataque-acesso-dados-pessoais-2112970",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241122190132/https://www.publico.pt/2024/11/22/tecnologia/noticia/universidade-algarve-alvo-ciberataque-acesso-dados-pessoais-2112970"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -66,7 +76,7 @@
       "tipo": "noticia",
       "titulo": "Universidade do Algarve alvo de ciberataque com acesso a dados pessoais",
       "url": "https://observador.pt/2024/11/22/universidade-do-algarve-alvo-de-ciberataque-com-acesso-a-dados-pessoais/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20241122162652/https://observador.pt/2024/11/22/universidade-do-algarve-alvo-de-ciberataque-com-acesso-a-dados-pessoais/"
     }
   ],
   "id": "2024-universidade-do-algarve",
@@ -77,7 +87,9 @@
     "resgate_pago": null,
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": null,
-    "servicos_afetados": ["sistema de gestão académica"]
+    "servicos_afetados": [
+      "sistema de gestão académica"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -96,6 +108,9 @@
     "versao": 1
   },
   "setor": "educacao_investigacao",
-  "tipos_ataque": ["intrusao", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "intrusao",
+    "exfiltracao_dados"
+  ],
   "titulo": "Ciberataque à Universidade do Algarve"
 }

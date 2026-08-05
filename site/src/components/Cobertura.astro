@@ -53,13 +53,33 @@ const ordenadas = fontes
         </blockquote>
       )}
 
-      {fonte.url_arquivo && (
-        <p class="mt-1.5">
+      {/*
+        Duas vias para quando a ligação original morrer, que é quando um arquivo
+        documental é posto à prova.
+
+        A cópia no Internet Archive é fixada no registo, com o carimbo temporal
+        mais próximo da data em que citámos — é o que preserva o que a fonte dizia
+        nessa data, e não a versão de hoje.
+
+        A ligação para o Arquivo.pt é gerada, nunca consultada: o robots.txt deles
+        proíbe raspagem de /wayback e nós respeitamo-lo. Uma hiperligação que o
+        leitor segue no seu navegador não é raspagem, e assim fica disponível o
+        melhor arquivo para conteúdo português sem lhe fazermos um único pedido.
+      */}
+      <p class="mt-1.5 flex flex-wrap gap-x-4 gap-y-1">
+        {fonte.url_arquivo && (
           <a href={fonte.url_arquivo} rel="noopener nofollow" class="mono-etiqueta">
-            versão arquivada
+            cópia arquivada
           </a>
-        </p>
-      )}
+        )}
+        <a
+          href={`https://arquivo.pt/wayback/*/${fonte.url}`}
+          rel="noopener nofollow"
+          class="mono-etiqueta"
+        >
+          procurar no arquivo.pt
+        </a>
+      </p>
     </li>
   ))}
 </ol>

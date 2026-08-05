@@ -40,7 +40,11 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["identificacao", "saude", "contacto"],
+    "categorias": [
+      "identificacao",
+      "saude",
+      "contacto"
+    ],
     "nota": "Foram referidos mais de cem mil utentes do SNS, adultos e crianças, de todo o país e ilhas. Há divergência pública sobre a natureza do que foi consultado: parte da cobertura refere fichas clínicas, e há indicação de que os acessos incidiram sobre registos administrativos e não clínicos. Ver as versões em confronto.",
     "titulares_declarados": 100000
   },
@@ -60,7 +64,10 @@
       "segundo": "cobertura noticiosa inicial"
     }
   ],
-  "entidades_afetadas": ["sns", "uls-alto-minho"],
+  "entidades_afetadas": [
+    "sns",
+    "uls-alto-minho"
+  ],
   "estado_confirmacao": "confirmado_por_regulador",
   "etiquetas": [
     "dados-de-saude",
@@ -79,7 +86,7 @@
       "tipo": "noticia",
       "titulo": "PJ está a investigar acesso ilegítimo a credenciais de médico que comprometeram dados de utentes",
       "url": "https://www.publico.pt/2026/05/22/sociedade/noticia/saude-dados-utentes-menores-estarao-consultados-hacker-2175647",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20260522121505/https://www.publico.pt/2026/05/22/sociedade/noticia/saude-dados-utentes-menores-estarao-consultados-hacker-2175647"
     },
     {
       "data": "2026-05-22",
@@ -114,7 +121,7 @@
       "tipo": "noticia",
       "titulo": "Comissão Nacional de Protecção de Dados averigua acesso indevido a dados de saúde",
       "url": "https://www.publico.pt/2026/05/26/sociedade/noticia/comissao-nacional-proteccao-dados-averigua-acesso-indevido-dados-saude-2176098",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20260602115325/https://www.publico.pt/2026/05/26/sociedade/noticia/comissao-nacional-proteccao-dados-averigua-acesso-indevido-dados-saude-2176098"
     },
     {
       "data": "2026-05-26",
@@ -136,7 +143,10 @@
     "resgate_pago": null,
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": null,
-    "servicos_afetados": ["portal do SNS 24", "registos de utentes do Serviço Nacional de Saúde"]
+    "servicos_afetados": [
+      "portal do SNS 24",
+      "registos de utentes do Serviço Nacional de Saúde"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -146,7 +156,9 @@
     "cnpd": true,
     "pj": true
   },
-  "relacionados": ["2024-portal-das-financas"],
+  "relacionados": [
+    "2024-portal-das-financas"
+  ],
   "resumo": "A partir de 21 de maio de 2026, pais de todo o país começaram a denunciar acessos indevidos às fichas dos filhos no portal do SNS 24. Apurou-se que os acessos tinham sido feitos com credenciais comprometidas de um médico da Unidade Local de Saúde do Alto Minho, tratado pelas autoridades como vítima de roubo de credenciais. Foram referidos mais de cem mil utentes afetados, adultos e crianças, de todo o país e ilhas. A Comissão Nacional de Proteção de Dados recebeu centenas de participações, abriu averiguações e denunciou ao Ministério Público a suspeita da prática de crimes. A Polícia Judiciária investiga o acesso ilegítimo às credenciais.",
   "revisao": {
     "curador": "ss",
@@ -155,6 +167,10 @@
     "versao": 1
   },
   "setor": "saude",
-  "tipos_ataque": ["exposicao_credenciais", "intrusao", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "exposicao_credenciais",
+    "intrusao",
+    "exfiltracao_dados"
+  ],
   "titulo": "Acesso indevido a dados de utentes do SNS com credenciais de médico"
 }

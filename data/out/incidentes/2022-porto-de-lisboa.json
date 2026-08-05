@@ -60,9 +60,15 @@
       "segundo": "LockBit"
     }
   ],
-  "entidades_afetadas": ["porto-de-lisboa"],
+  "entidades_afetadas": [
+    "porto-de-lisboa"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["infraestrutura-critica", "dupla-extorsao", "empresa-publica"],
+  "etiquetas": [
+    "infraestrutura-critica",
+    "dupla-extorsao",
+    "empresa-publica"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -74,7 +80,7 @@
       "tipo": "noticia",
       "titulo": "Porto de Lisboa alvo de ataque informático. Crime não comprometeu operações",
       "url": "https://www.publico.pt/2022/12/26/sociedade/noticia/porto-lisboa-alvo-ataque-informatico-crime-nao-comprometeu-operacoes-2032713",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20221226111333/https://www.publico.pt/2022/12/26/sociedade/noticia/porto-lisboa-alvo-ataque-informatico-crime-nao-comprometeu-operacoes-2032713"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -86,7 +92,7 @@
       "tipo": "noticia",
       "titulo": "Porto de Lisboa alvo de ataque informático sem compromisso das operações",
       "url": "https://eco.sapo.pt/2022/12/26/porto-de-lisboa-alvo-de-ataque-informatico-sem-compromisso-das-operacoes/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20221226105556/https://eco.sapo.pt/2022/12/26/porto-de-lisboa-alvo-de-ataque-informatico-sem-compromisso-das-operacoes/"
     },
     {
       "data": "2022-12-26",
@@ -97,7 +103,7 @@
       "tipo": "noticia",
       "titulo": "Porto de Lisboa alvo de ataque informático sem compromisso das operações",
       "url": "https://observador.pt/2022/12/26/porto-de-lisboa-alvo-de-ataque-informatico-sem-compromisso-das-operacoes/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20221226110426/https://observador.pt/2022/12/26/porto-de-lisboa-alvo-de-ataque-informatico-sem-compromisso-das-operacoes/"
     },
     {
       "data": "2023-01-06",
@@ -119,7 +125,7 @@
       "tipo": "noticia",
       "titulo": "Hackers que atacaram Administração do Porto de Lisboa pedem resgate de 1,4 milhões de euros",
       "url": "https://observador.pt/2023/01/06/hackers-que-atacaram-administracao-do-porto-de-lisboa-pedem-resgate-de-14-milhoes-de-euros/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230106074003/https://observador.pt/2023/01/06/hackers-que-atacaram-administracao-do-porto-de-lisboa-pedem-resgate-de-14-milhoes-de-euros/"
     },
     {
       "data": "2023-01-18",
@@ -130,7 +136,7 @@
       "tipo": "noticia",
       "titulo": "Hackers alegam ter exposto dados roubados ao Porto de Lisboa",
       "url": "https://eco.sapo.pt/2023/01/18/hackers-alegam-ter-exposto-dados-roubados-ao-porto-de-lisboa/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230118174657/https://eco.sapo.pt/2023/01/18/hackers-alegam-ter-exposto-dados-roubados-ao-porto-de-lisboa/"
     }
   ],
   "id": "2022-porto-de-lisboa",
@@ -141,7 +147,10 @@
     "resgate_pago": null,
     "resgate_pedido_eur": 1500000,
     "resgate_pedido_nota": "Cerca de 1,5 milhões de euros, com prazo até 18 de janeiro de 2023. O grupo ofereceu ainda adiar a publicação por 24 horas mediante o pagamento de mil euros. Não há confirmação pública de pagamento.",
-    "servicos_afetados": ["sítio institucional", "sistemas internos"]
+    "servicos_afetados": [
+      "sítio institucional",
+      "sistemas internos"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -160,6 +169,9 @@
     "versao": 1
   },
   "setor": "transportes",
-  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "ransomware",
+    "exfiltracao_dados"
+  ],
   "titulo": "Ciberataque à Administração do Porto de Lisboa"
 }

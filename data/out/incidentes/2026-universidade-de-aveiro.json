@@ -34,7 +34,11 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["identificacao", "contacto", "comunicacoes"],
+    "categorias": [
+      "identificacao",
+      "contacto",
+      "comunicacoes"
+    ],
     "nota": "Foi comprometido um número reduzido de contas de correio eletrónico, com exposição de dados pessoais e institucionais. A extensão da informação copiada estava por apurar à data desta revisão.",
     "titulares_declarados": null
   },
@@ -45,9 +49,15 @@
     "precisao": "desconhecida"
   },
   "disputas": [],
-  "entidades_afetadas": ["universidade-de-aveiro"],
+  "entidades_afetadas": [
+    "universidade-de-aveiro"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["ensino-superior", "em-desenvolvimento", "correio-eletronico"],
+  "etiquetas": [
+    "ensino-superior",
+    "em-desenvolvimento",
+    "correio-eletronico"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -59,7 +69,7 @@
       "tipo": "noticia",
       "titulo": "Universidade de Aveiro investiga ataque informático. Acesso indevido expôs dados pessoais e institucionais",
       "url": "https://tek.sapo.pt/noticias/internet/artigos/universidade-de-aveiro-investiga-ataque-informatico-acesso-indevido-expos-dados-pessoais-e-institucionais/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20260729225028/https://tek.sapo.pt/noticias/internet/artigos/universidade-de-aveiro-investiga-ataque-informatico-acesso-indevido-expos-dados-pessoais-e-institucionais/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -71,7 +81,7 @@
       "tipo": "noticia",
       "titulo": "Universidade de Aveiro sofreu ataque informático: contas de e-mail violadas e dados pessoais expostos",
       "url": "https://observador.pt/2026/07/29/universidade-de-aveiro-sofreu-ataque-informatico-contas-de-e-mail-violadas-e-dados-pessoais-expostos/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20260729225015/https://observador.pt/2026/07/29/universidade-de-aveiro-sofreu-ataque-informatico-contas-de-e-mail-violadas-e-dados-pessoais-expostos/"
     },
     {
       "data": "2026-07-29",
@@ -82,7 +92,7 @@
       "tipo": "noticia",
       "titulo": "Universidade de Aveiro alvo de ataque informático",
       "url": "https://www.rtp.pt/noticias/pais/universidade-de-aveiro-alvo-de-ataque-informatico_n1756542",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20260729161244/https://www.rtp.pt/noticias/pais/universidade-de-aveiro-alvo-de-ataque-informatico_n1756542"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -116,7 +126,9 @@
     "resgate_pago": null,
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": null,
-    "servicos_afetados": ["contas de correio eletrónico institucional"]
+    "servicos_afetados": [
+      "contas de correio eletrónico institucional"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -126,7 +138,9 @@
     "cnpd": null,
     "pj": null
   },
-  "relacionados": ["2024-universidade-do-algarve"],
+  "relacionados": [
+    "2024-universidade-do-algarve"
+  ],
   "resumo": "A Universidade de Aveiro detetou a 28 de julho de 2026 um acesso indevido aos seus sistemas de informação, ocorrido dias antes, que comprometeu um número reduzido de contas de correio eletrónico e expôs dados pessoais e institucionais. A instituição só teve conhecimento do ataque por contacto dos próprios atacantes, que tinham extraído informação e procuravam chegar ao que descreveram como um acordo justo. O reitor indicou ter havido cópia de informação, e não perda, sem que a extensão estivesse apurada. O caso foi reportado às autoridades, e a comunidade académica foi alertada para contactos anormais que dele possam decorrer.",
   "revisao": {
     "curador": "ss",
@@ -135,6 +149,9 @@
     "versao": 2
   },
   "setor": "educacao_investigacao",
-  "tipos_ataque": ["intrusao", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "intrusao",
+    "exfiltracao_dados"
+  ],
   "titulo": "Ciberataque à Universidade de Aveiro"
 }

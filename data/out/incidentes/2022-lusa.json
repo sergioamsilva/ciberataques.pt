@@ -46,9 +46,14 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["lusa"],
+  "entidades_afetadas": [
+    "lusa"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["comunicacao-social", "agencia-noticiosa"],
+  "etiquetas": [
+    "comunicacao-social",
+    "agencia-noticiosa"
+  ],
   "fontes": [
     {
       "data": "2022-05-14",
@@ -59,7 +64,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático à agência Lusa causa instabilidade no serviço",
       "url": "https://eco.sapo.pt/2022/05/14/ataque-informatico-a-agencia-lusa-causa-instabilidade-no-servico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220514110716/https://eco.sapo.pt/2022/05/14/ataque-informatico-a-agencia-lusa-causa-instabilidade-no-servico/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -71,7 +76,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático à agência Lusa causa instabilidade no serviço",
       "url": "https://observador.pt/2022/05/14/ataque-informatico-a-agencia-lusa-causa-instabilidade-no-servico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220514095103/https://observador.pt/2022/05/14/ataque-informatico-a-agencia-lusa-causa-instabilidade-no-servico/"
     },
     {
       "data": "2022-05-25",
@@ -82,7 +87,7 @@
       "tipo": "noticia",
       "titulo": "Agência Lusa alvo de novo ciberataque",
       "url": "https://eco.sapo.pt/2022/05/25/agencia-lusa-alvo-de-novo-ciberataque/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220525181405/https://eco.sapo.pt/2022/05/25/agencia-lusa-alvo-de-novo-ciberataque/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -94,7 +99,7 @@
       "tipo": "noticia",
       "titulo": "Agência Lusa alvo de \"ataque informático\". É o segundo em menos de duas semanas",
       "url": "https://observador.pt/2022/05/25/agencia-lusa-alvo-de-ataque-informatico-e-o-segundo-em-menos-de-duas-semanas/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220525181614/https://observador.pt/2022/05/25/agencia-lusa-alvo-de-ataque-informatico-e-o-segundo-em-menos-de-duas-semanas/"
     }
   ],
   "id": "2022-lusa",
@@ -119,7 +124,9 @@
     "cnpd": null,
     "pj": true
   },
-  "relacionados": ["2022-impresa"],
+  "relacionados": [
+    "2022-impresa"
+  ],
   "resumo": "A agência Lusa foi alvo de dois ataques de negação de serviço em maio de 2022. O primeiro, a partir de 12 de maio, causou instabilidade continuada no serviço noticioso. O segundo, a 25 de maio, menos de duas semanas depois, deixou indisponíveis o sítio da agência, o serviço noticioso distribuído aos órgãos de comunicação social e as redes sociais, sem que houvesse previsão nem diagnóstico para o regresso ao normal. Sendo a Lusa a agência que abastece grande parte da imprensa nacional, o impacto estendeu-se aos seus clientes.",
   "revisao": {
     "curador": "ss",
@@ -128,6 +135,9 @@
     "versao": 1
   },
   "setor": "media",
-  "tipos_ataque": ["ddos", "indisponibilidade"],
+  "tipos_ataque": [
+    "ddos",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataques à Agência Lusa"
 }

@@ -45,9 +45,14 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["camara-municipal-da-figueira-da-foz"],
+  "entidades_afetadas": [
+    "camara-municipal-da-figueira-da-foz"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["administracao-local", "copias-de-seguranca-afetadas"],
+  "etiquetas": [
+    "administracao-local",
+    "copias-de-seguranca-afetadas"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -59,7 +64,7 @@
       "tipo": "noticia",
       "titulo": "Câmara da Figueira da Foz alvo de ciberataque",
       "url": "https://eco.sapo.pt/2022/11/07/camara-da-figueira-da-foz-alvo-de-ciberataque/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20221107165131/https://eco.sapo.pt/2022/11/07/camara-da-figueira-da-foz-alvo-de-ciberataque/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -71,7 +76,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático atinge Câmara da Figueira da Foz",
       "url": "https://observador.pt/2022/11/07/ataque-informatico-atinge-camara-da-figueira-da-foz/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20221107181254/https://observador.pt/2022/11/07/ataque-informatico-atinge-camara-da-figueira-da-foz/"
     }
   ],
   "id": "2022-camara-municipal-da-figueira-da-foz",
@@ -96,7 +101,9 @@
     "cnpd": null,
     "pj": true
   },
-  "relacionados": ["2022-camara-municipal-de-loures"],
+  "relacionados": [
+    "2022-camara-municipal-de-loures"
+  ],
   "resumo": "O município da Figueira da Foz foi alvo de um ciberataque iniciado no sábado 5 de novembro de 2022 e executado no domingo, atingindo a generalidade dos serviços municipais. Os serviços não encerraram, mas ficou impossível aceder a ficheiros, e o ataque atingiu também algumas cópias de segurança, o que prolongou a reposição por vários dias. O município comunicou o caso às autoridades competentes e apresentou queixa na Polícia Judiciária.",
   "revisao": {
     "curador": "ss",
@@ -105,6 +112,9 @@
     "versao": 1
   },
   "setor": "autarquias",
-  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque à Câmara Municipal da Figueira da Foz"
 }

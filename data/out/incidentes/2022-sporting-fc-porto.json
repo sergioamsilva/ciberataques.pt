@@ -33,9 +33,15 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["sporting-cp", "fc-porto"],
+  "entidades_afetadas": [
+    "sporting-cp",
+    "fc-porto"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["desporto", "campanha-coordenada"],
+  "etiquetas": [
+    "desporto",
+    "campanha-coordenada"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -47,7 +53,7 @@
       "tipo": "noticia",
       "titulo": "Sporting e FC Porto alvos de ataque informático",
       "url": "https://eco.sapo.pt/2022/09/15/sporting-e-fc-porto-alvos-de-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220915131210/https://eco.sapo.pt/2022/09/15/sporting-e-fc-porto-alvos-de-ataque-informatico/"
     },
     {
       "data": "2022-09-15",
@@ -58,7 +64,7 @@
       "tipo": "noticia",
       "titulo": "Ataques informáticos atingem Sporting e FC Porto",
       "url": "https://www.publico.pt/2022/09/15/desporto/noticia/sporting-alvo-ataque-informatico-site-oficial-indisponivel-2020635",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220915095809/https://www.publico.pt/2022/09/15/desporto/noticia/sporting-alvo-ataque-informatico-site-oficial-indisponivel-2020635"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -70,7 +76,7 @@
       "tipo": "noticia",
       "titulo": "Sites do Sporting e do FC Porto alvo de ataque informático",
       "url": "https://observador.pt/2022/09/15/site-do-sporting-alvo-de-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220920235041/https://observador.pt/2022/09/15/site-do-sporting-alvo-de-ataque-informatico/"
     }
   ],
   "id": "2022-sporting-fc-porto",
@@ -81,7 +87,10 @@
     "resgate_pago": null,
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": null,
-    "servicos_afetados": ["sporting.pt", "fcporto.pt"]
+    "servicos_afetados": [
+      "sporting.pt",
+      "fcporto.pt"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -100,6 +109,9 @@
     "versao": 1
   },
   "setor": "desporto",
-  "tipos_ataque": ["ddos", "indisponibilidade"],
+  "tipos_ataque": [
+    "ddos",
+    "indisponibilidade"
+  ],
   "titulo": "Ataques de negação de serviço ao Sporting e ao FC Porto"
 }

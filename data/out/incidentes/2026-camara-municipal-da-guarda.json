@@ -45,7 +45,9 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["camara-municipal-da-guarda"],
+  "entidades_afetadas": [
+    "camara-municipal-da-guarda"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
   "etiquetas": [
     "administracao-local",
@@ -63,7 +65,7 @@
       "tipo": "noticia",
       "titulo": "Câmara da Guarda com vários serviços bloqueados após \"incidente cibernético complexo\"",
       "url": "https://observador.pt/2026/02/20/camara-da-guarda-com-varios-servicos-bloqueados-apos-incidente-cibernetico-complexo/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20260221000450/https://observador.pt/2026/02/20/camara-da-guarda-com-varios-servicos-bloqueados-apos-incidente-cibernetico-complexo/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -111,6 +113,9 @@
     "versao": 1
   },
   "setor": "autarquias",
-  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque à Câmara Municipal da Guarda"
 }

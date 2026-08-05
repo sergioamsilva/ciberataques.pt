@@ -45,9 +45,14 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["camara-municipal-de-alcanena"],
+  "entidades_afetadas": [
+    "camara-municipal-de-alcanena"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["administracao-local", "ataque-destrutivo"],
+  "etiquetas": [
+    "administracao-local",
+    "ataque-destrutivo"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -59,7 +64,7 @@
       "tipo": "noticia",
       "titulo": "Câmara de Alcanena sofre ataque informático",
       "url": "https://observador.pt/2023/11/08/ataque-informatico-na-camara-de-alcanena/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20231108011813/https://observador.pt/2023/11/08/ataque-informatico-na-camara-de-alcanena/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -71,7 +76,7 @@
       "tipo": "noticia",
       "titulo": "Ciberataque de \"grande gravidade\" condiciona serviços da Câmara de Alcanena",
       "url": "https://observador.pt/2023/11/16/ciberataque-de-grande-gravidade-condiciona-servicos-da-camara-de-alcanena/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20231116012804/https://observador.pt/2023/11/16/ciberataque-de-grande-gravidade-condiciona-servicos-da-camara-de-alcanena/"
     }
   ],
   "id": "2023-camara-municipal-de-alcanena",
@@ -97,7 +102,9 @@
     "cnpd": true,
     "pj": true
   },
-  "relacionados": ["2023-camara-municipal-de-gondomar"],
+  "relacionados": [
+    "2023-camara-municipal-de-gondomar"
+  ],
   "resumo": "A 6 de novembro de 2023, o sistema informático do município de Alcanena foi atingido por um ataque descrito pelo presidente da câmara como destrutivo e de grande gravidade, ao ponto de suspender os prazos de resposta da autarquia. O responsável informático caracterizou-o como violento e sofisticado, com grande cuidado no apagamento de rastos. A reposição exigiu restauro manual de dados. O caso foi comunicado à Autoridade Tributária, à Segurança Social e ao Tribunal de Contas, além da Polícia Judiciária, da CNPD e do Centro Nacional de Cibersegurança.",
   "revisao": {
     "curador": "ss",
@@ -106,6 +113,9 @@
     "versao": 1
   },
   "setor": "autarquias",
-  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque à Câmara Municipal de Alcanena"
 }

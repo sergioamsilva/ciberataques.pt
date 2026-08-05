@@ -31,6 +31,14 @@ SEGREDOS="$HOME/.config/ciberataques/segredos.env"
 .venv/bin/python ingestao/recolher.py
 ESTADO=$?
 
+# Preservar as fontes citadas enquanto ainda existem.
+#
+# Corre a seguir à recolha e não antes: as fontes acrescentadas hoje são as que
+# mais urgem arquivar, porque uma notícia recente é a que ainda ninguém preservou.
+# O Save Page Now aplica limites por endereço e recusa parte dos pedidos — não é
+# erro, e a passagem seguinte retoma o que ficou.
+.venv/bin/python ingestao/arquivo.py --submeter || true
+
 NOVOS=$(find data/fila/candidatos -name '*.json' 2>/dev/null | wc -l)
 echo "candidatos por rever: ${NOVOS}"
 

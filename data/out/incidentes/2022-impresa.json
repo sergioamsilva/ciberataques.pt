@@ -40,7 +40,11 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["identificacao", "contacto", "credenciais"],
+    "categorias": [
+      "identificacao",
+      "contacto",
+      "credenciais"
+    ],
     "nota": "A Impresa reconheceu o acesso a dados pessoais de utilizadores registados. Não foi declarado publicamente um número de titulares afetados.",
     "titulares_declarados": null
   },
@@ -51,9 +55,14 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["impresa"],
+  "entidades_afetadas": [
+    "impresa"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["liberdade-de-imprensa", "perda-de-arquivo"],
+  "etiquetas": [
+    "liberdade-de-imprensa",
+    "perda-de-arquivo"
+  ],
   "fontes": [
     {
       "data": "2022-01-02",
@@ -64,7 +73,7 @@
       "tipo": "noticia",
       "titulo": "Sites do Expresso e da SIC indisponíveis após ataque informático",
       "url": "https://www.publico.pt/2022/01/02/economia/noticia/sites-expresso-sic-indisponiveis-apos-ataque-informatico-1990516",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220102124717/https://www.publico.pt/2022/01/02/economia/noticia/sites-expresso-sic-indisponiveis-apos-ataque-informatico-1990516"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -76,7 +85,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático é um \"atentado à liberdade de imprensa\", diz dona da SIC",
       "url": "https://eco.sapo.pt/2022/01/02/ataque-informatico-e-um-atentado-a-liberdade-de-imprensa-diz-dona-da-sic/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220102200547/https://eco.sapo.pt/2022/01/02/ataque-informatico-e-um-atentado-a-liberdade-de-imprensa-diz-dona-da-sic/"
     },
     {
       "data": "2022-01-04",
@@ -87,7 +96,7 @@
       "tipo": "noticia",
       "titulo": "Hackers que atacaram SIC e Expresso estiveram vários dias dentro do sistema a planear ataque sequencial",
       "url": "https://www.publico.pt/2022/01/04/sociedade/noticia/hackers-atacaram-sic-expresso-varios-dias-dentro-sistema-planear-ataque-sequencial-1990638",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220104064744/https://www.publico.pt/2022/01/04/sociedade/noticia/hackers-atacaram-sic-expresso-varios-dias-dentro-sistema-planear-ataque-sequencial-1990638"
     },
     {
       "data": "2022-01-05",
@@ -110,7 +119,7 @@
       "tipo": "noticia",
       "titulo": "Impresa admite que dados pessoais foram acedidos no ciberataque aos sites do Expresso e SIC",
       "url": "https://eco.sapo.pt/2022/01/05/impresa-esta-a-avaliar-impacto-potencial-do-ciberataque/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220105180222/https://eco.sapo.pt/2022/01/05/impresa-esta-a-avaliar-impacto-potencial-do-ciberataque/"
     }
   ],
   "id": "2022-impresa",
@@ -146,6 +155,10 @@
     "versao": 1
   },
   "setor": "media",
-  "tipos_ataque": ["ransomware", "intrusao", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "ransomware",
+    "intrusao",
+    "exfiltracao_dados"
+  ],
   "titulo": "Ciberataque ao grupo Impresa (SIC e Expresso)"
 }

@@ -28,7 +28,10 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["identificacao", "contacto"],
+    "categorias": [
+      "identificacao",
+      "contacto"
+    ],
     "nota": "Os CTT reconheceram a exposição, caracterizando-a como limitada a dados de contacto para notificação de entregas, e excluindo expressamente moradas completas, palavras-passe e dados financeiros. O número de titulares em circulação é do atacante e não foi confirmado pela empresa.",
     "titulares_declarados": null
   },
@@ -48,9 +51,14 @@
       "segundo": "autor da publicação no fórum"
     }
   ],
-  "entidades_afetadas": ["ctt"],
+  "entidades_afetadas": [
+    "ctt"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["logistica", "empresa-cotada"],
+  "etiquetas": [
+    "logistica",
+    "empresa-cotada"
+  ],
   "fontes": [
     {
       "data": "2026-04-27",
@@ -73,7 +81,7 @@
       "tipo": "noticia",
       "titulo": "CTT confirma roubo de dados do Locky, mas garante exposição \"limitada\" de dados dos clientes afetados",
       "url": "https://tek.sapo.pt/noticias/internet/artigos/ctt-confirma-roubo-de-dados-do-locky-mas-garante-exposicao-limitada-de-dados-dos-clientes-afetados/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20260701124310/https://tek.sapo.pt/noticias/internet/artigos/ctt-confirma-roubo-de-dados-do-locky-mas-garante-exposicao-limitada-de-dados-dos-clientes-afetados/"
     }
   ],
   "id": "2026-ctt",
@@ -103,6 +111,9 @@
     "versao": 1
   },
   "setor": "transportes",
-  "tipos_ataque": ["exfiltracao_dados", "cadeia_fornecimento"],
+  "tipos_ataque": [
+    "exfiltracao_dados",
+    "cadeia_fornecimento"
+  ],
   "titulo": "Fuga de dados da rede de cacifos Locky dos CTT"
 }

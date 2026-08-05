@@ -40,7 +40,9 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["identificacao"],
+    "categorias": [
+      "identificacao"
+    ],
     "nota": "Foram divulgados documentos oficiais do município, incluindo cartões de cidadão e passaportes, o que constitui exposição de documentos de identificação de cidadãos. O número de titulares afetados não foi divulgado publicamente.",
     "titulares_declarados": null
   },
@@ -60,7 +62,9 @@
       "segundo": "Rhysida"
     }
   ],
-  "entidades_afetadas": ["camara-municipal-de-gondomar"],
+  "entidades_afetadas": [
+    "camara-municipal-de-gondomar"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
   "etiquetas": [
     "administracao-local",
@@ -78,7 +82,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático à Câmara de Gondomar: dados roubados estão em leilão na dark web",
       "url": "https://www.publico.pt/2023/10/09/local/noticia/ataque-informatico-camara-gondomar-dados-roubados-estao-leilao-dark-web-2066112",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20231010043343/https://www.publico.pt/2023/10/09/local/noticia/ataque-informatico-camara-gondomar-dados-roubados-estao-leilao-dark-web-2066112"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -139,6 +143,9 @@
     "versao": 1
   },
   "setor": "autarquias",
-  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "ransomware",
+    "exfiltracao_dados"
+  ],
   "titulo": "Ciberataque à Câmara Municipal de Gondomar"
 }

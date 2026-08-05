@@ -45,9 +45,13 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["camara-municipal-de-odemira"],
+  "entidades_afetadas": [
+    "camara-municipal-de-odemira"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["administracao-local"],
+  "etiquetas": [
+    "administracao-local"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -59,7 +63,7 @@
       "tipo": "noticia",
       "titulo": "Câmara de Odemira alvo de ciberataque que afetará serviços nos \"próximos dias\"",
       "url": "https://observador.pt/2023/03/26/camara-de-odemira-alvo-de-ciberataque-que-afetara-servicos-nos-proximos-dias/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230326225130/https://observador.pt/2023/03/26/camara-de-odemira-alvo-de-ciberataque-que-afetara-servicos-nos-proximos-dias/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -71,7 +75,7 @@
       "tipo": "noticia",
       "titulo": "Ciberataque à Câmara de Odemira afeta serviços nos \"próximos dias\"",
       "url": "https://eco.sapo.pt/2023/03/27/ciberataque-a-camara-de-odemira-afetara-servicos-nos-proximos-dias/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230327112335/https://eco.sapo.pt/2023/03/27/ciberataque-a-camara-de-odemira-afetara-servicos-nos-proximos-dias/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -120,6 +124,9 @@
     "versao": 1
   },
   "setor": "autarquias",
-  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque à Câmara Municipal de Odemira"
 }

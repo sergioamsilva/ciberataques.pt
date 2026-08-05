@@ -60,10 +60,19 @@
       "segundo": "atacantes"
     }
   ],
-  "entidades_afetadas": ["germano-de-sousa"],
-  "entidades_afetadas_em_cascata": ["cuf", "sns"],
+  "entidades_afetadas": [
+    "germano-de-sousa"
+  ],
+  "entidades_afetadas_em_cascata": [
+    "cuf",
+    "sns"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["saude-privada", "covid-19", "impacto-em-saude-publica"],
+  "etiquetas": [
+    "saude-privada",
+    "covid-19",
+    "impacto-em-saude-publica"
+  ],
   "fontes": [
     {
       "data": "2022-02-10",
@@ -74,7 +83,7 @@
       "tipo": "noticia",
       "titulo": "Laboratórios Germano de Sousa alvo de ataque informático",
       "url": "https://eco.sapo.pt/2022/02/10/laboratorios-germano-de-sousa-alvo-de-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220210110612/https://eco.sapo.pt/2022/02/10/laboratorios-germano-de-sousa-alvo-de-ataque-informatico/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -97,7 +106,7 @@
       "tipo": "noticia",
       "titulo": "Laboratórios Germano de Sousa alvo de ataque informático. CUF alerta para \"constrangimentos no acesso ao serviço de análises clínicas\"",
       "url": "https://observador.pt/2022/02/10/laboratorios-germano-de-sousa-alvo-de-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220210103954/https://observador.pt/2022/02/10/laboratorios-germano-de-sousa-alvo-de-ataque-informatico/"
     },
     {
       "data": "2022-02-11",
@@ -108,7 +117,7 @@
       "tipo": "noticia",
       "titulo": "Laboratórios Germano de Sousa estão encerrados esta sexta-feira devido ao ciberataque",
       "url": "https://www.publico.pt/2022/02/11/sociedade/noticia/laboratorios-germano-sousa-estao-encerrados-sextafeira-devido-ciberataque-1995109",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220211114005/https://www.publico.pt/2022/02/11/sociedade/noticia/laboratorios-germano-sousa-estao-encerrados-sextafeira-devido-ciberataque-1995109"
     },
     {
       "data": "2022-02-14",
@@ -119,7 +128,7 @@
       "tipo": "noticia",
       "titulo": "Laboratórios Germano de Sousa mantêm-se encerrados esta segunda-feira",
       "url": "https://www.publico.pt/2022/02/14/sociedade/noticia/laboratorios-germano-sousa-mantemse-encerrados-segundafeira-1995371",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220214084219/https://www.publico.pt/2022/02/14/sociedade/noticia/laboratorios-germano-sousa-mantemse-encerrados-segundafeira-1995371"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -131,7 +140,7 @@
       "tipo": "noticia",
       "titulo": "Germano de Sousa adia reabertura enquanto recupera do ciberataque",
       "url": "https://eco.sapo.pt/2022/02/14/germano-de-sousa-adia-reabertura-enquanto-recupera-do-ciberataque/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220214102432/https://eco.sapo.pt/2022/02/14/germano-de-sousa-adia-reabertura-enquanto-recupera-do-ciberataque/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -143,7 +152,7 @@
       "tipo": "noticia",
       "titulo": "Ciberataque à Germano de Sousa impede mais de 30 mil testes PCR à Covid-19",
       "url": "https://eco.sapo.pt/2022/02/15/ciberataque-a-germano-de-sousa-impede-mais-de-30-mil-testes-pcr-a-covid-19/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220215074618/https://eco.sapo.pt/2022/02/15/ciberataque-a-germano-de-sousa-impede-mais-de-30-mil-testes-pcr-a-covid-19/"
     }
   ],
   "id": "2022-germano-de-sousa",
@@ -178,6 +187,9 @@
     "versao": 1
   },
   "setor": "saude",
-  "tipos_ataque": ["ransomware", "indisponibilidade"],
+  "tipos_ataque": [
+    "ransomware",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque ao Grupo Germano de Sousa"
 }

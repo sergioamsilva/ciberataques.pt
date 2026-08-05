@@ -1,4 +1,10 @@
 {
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública. A investigação concluiu tratar-se de profissionais, mas nenhuma autoria foi estabelecida nem reivindicada."
+  },
   "correcoes": [],
   "cronologia": [
     {
@@ -39,10 +45,18 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["vodafone-portugal"],
-  "entidades_afetadas_em_cascata": ["inem", "sibs"],
+  "entidades_afetadas": [
+    "vodafone-portugal"
+  ],
+  "entidades_afetadas_em_cascata": [
+    "inem",
+    "sibs"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["infraestrutura-critica", "servicos-de-emergencia"],
+  "etiquetas": [
+    "infraestrutura-critica",
+    "servicos-de-emergencia"
+  ],
   "fontes": [
     {
       "data": "2022-02-08",
@@ -53,7 +67,7 @@
       "tipo": "comunicado",
       "titulo": "Vodafone Portugal alvo de ciberataque",
       "url": "https://www.vodafone.pt/press-releases/2022/2/vodafone-portugal-alvo-de-ciberataque.html",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220208135830/https://www.vodafone.pt/press-releases/2022/2/vodafone-portugal-alvo-de-ciberataque.html"
     },
     {
       "data": "2022-02-08",
@@ -64,7 +78,7 @@
       "tipo": "noticia",
       "titulo": "Objectivo do acto criminoso era deixar rede da Vodafone indisponível. Empresa trabalha para repor serviços essenciais: INEM, bombeiros, bancos",
       "url": "https://www.publico.pt/2022/02/08/sociedade/noticia/objetivo-acto-criminoso-deixar-rede-vodafone-indisponivel-empresa-trabalha-repor-servicos-essenciais-inem-bombeiros-bancos-1994668",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220208122845/https://www.publico.pt/2022/02/08/sociedade/noticia/objetivo-acto-criminoso-deixar-rede-vodafone-indisponivel-empresa-trabalha-repor-servicos-essenciais-inem-bombeiros-bancos-1994668"
     }
   ],
   "id": "2022-vodafone-portugal",
@@ -101,12 +115,9 @@
     "versao": 1
   },
   "setor": "telecomunicacoes",
-  "tipos_ataque": ["indisponibilidade", "intrusao"],
-  "titulo": "Ciberataque à Vodafone Portugal",
-  "ator": {
-    "atribuicao_por": null,
-    "confianca": null,
-    "grupo": null,
-    "nota": "Sem atribuição pública. A investigação concluiu tratar-se de profissionais, mas nenhuma autoria foi estabelecida nem reivindicada."
-  }
+  "tipos_ataque": [
+    "indisponibilidade",
+    "intrusao"
+  ],
+  "titulo": "Ciberataque à Vodafone Portugal"
 }

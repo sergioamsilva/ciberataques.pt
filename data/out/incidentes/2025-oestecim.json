@@ -39,8 +39,12 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["oestecim"],
-  "entidades_afetadas_em_cascata": ["camara-municipal-de-alcobaca"],
+  "entidades_afetadas": [
+    "oestecim"
+  ],
+  "entidades_afetadas_em_cascata": [
+    "camara-municipal-de-alcobaca"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
   "etiquetas": [
     "administracao-local",
@@ -58,7 +62,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático afeta plataformas digitais dos municípios do Oeste",
       "url": "https://www.jn.pt/nacional/artigo/ataque-informatico-afeta-plataformas-digitais-dos-municipios-do-oeste/18021201",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20251118160313/https://www.jn.pt/nacional/artigo/ataque-informatico-afeta-plataformas-digitais-dos-municipios-do-oeste/18021201"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -70,7 +74,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático à OesteCIM afeta plataformas digitais dos municípios do Oeste",
       "url": "https://observador.pt/2025/11/18/ataque-informatico-a-oestecim-afeta-plataformas-digitais-dos-municipios-do-oeste/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20251118184408/https://observador.pt/2025/11/18/ataque-informatico-a-oestecim-afeta-plataformas-digitais-dos-municipios-do-oeste/"
     }
   ],
   "id": "2025-oestecim",
@@ -105,6 +109,10 @@
     "versao": 1
   },
   "setor": "autarquias",
-  "tipos_ataque": ["intrusao", "indisponibilidade", "cadeia_fornecimento"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade",
+    "cadeia_fornecimento"
+  ],
   "titulo": "Ciberataque à OesteCIM com impacto em doze municípios do Oeste"
 }

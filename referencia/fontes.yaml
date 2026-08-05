@@ -229,6 +229,32 @@ fontes:
       citar sempre o tracker. Tudo o que daqui vem entra na fila como alegação do
       atacante e não pode ser promovido sem fonte independente.
 
+  # ---------------------------------------------------------------------- arquivo
+  - id: arquivo-pt
+    nome: Arquivo.pt
+    metodo: api
+    ativa: true
+    intervalo_s: 2
+    dominios: [arquivo.pt]
+    endpoint: https://arquivo.pt/wayback/cdx
+    nota: >-
+      Arquivo da web portuguesa, da FCCN. Preserva o domínio .pt desde 1996 e é a
+      escolha natural para um registo português: já tem arquivadas quase todas as
+      notícias que citamos, muitas vezes capturadas no próprio dia do incidente.
+      Resolve dois problemas de uma vez — as ligações que morrem, e os sítios que
+      nos recusam acesso direto, como o Público. Uso apenas de leitura: consultamos
+      capturas existentes, não submetemos nada.
+
+  - id: wayback-machine
+    nome: Internet Archive
+    metodo: api
+    ativa: true
+    intervalo_s: 3
+    dominios: [web.archive.org, archive.org]
+    endpoint: https://archive.org/wayback/available
+    nota: >-
+      Recurso secundário, para fontes estrangeiras que o Arquivo.pt não cobre.
+
   # ------------------------------------------------------------------ fase 2 e além
   - id: cncs
     nome: Centro Nacional de Cibersegurança

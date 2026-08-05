@@ -33,9 +33,13 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["ministerio-da-economia"],
+  "entidades_afetadas": [
+    "ministerio-da-economia"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["administracao-central"],
+  "etiquetas": [
+    "administracao-central"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -47,7 +51,7 @@
       "tipo": "noticia",
       "titulo": "Ministério da Economia restabeleceu 85% do impacto do ataque informático",
       "url": "https://www.publico.pt/2023/04/06/sociedade/noticia/ministerio-economia-alvo-ataque-informatico-2045244",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230407071720/https://www.publico.pt/2023/04/06/sociedade/noticia/ministerio-economia-alvo-ataque-informatico-2045244"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -59,7 +63,7 @@
       "tipo": "noticia",
       "titulo": "Ministério da Economia com 85% do impacto restabelecido após ataque informático",
       "url": "https://observador.pt/2023/04/06/ministerio-da-economia-alvo-de-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230407043631/https://observador.pt/2023/04/06/ministerio-da-economia-alvo-de-ataque-informatico/"
     },
     {
       "data": "2023-04-06",
@@ -70,7 +74,7 @@
       "tipo": "noticia",
       "titulo": "Sites de organismos do Ministério da Economia alvo de ataque informático",
       "url": "https://eco.sapo.pt/2023/04/06/sites-de-organismos-do-ministerio-da-economia-alvo-de-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20230407065326/https://eco.sapo.pt/2023/04/06/sites-de-organismos-do-ministerio-da-economia-alvo-de-ataque-informatico/"
     }
   ],
   "id": "2023-ministerio-da-economia",
@@ -103,6 +107,8 @@
     "versao": 1
   },
   "setor": "administracao_publica",
-  "tipos_ataque": ["indisponibilidade"],
+  "tipos_ataque": [
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque a organismos do Ministério da Economia"
 }
