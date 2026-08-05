@@ -441,6 +441,56 @@
     "url_arquivo": "http://web.archive.org/web/20260701124310/https://tek.sapo.pt/noticias/internet/artigos/ctt-confirma-roubo-de-dados-do-locky-mas-garante-exposicao-limitada-de-dados-dos-clientes-afetados/"
   },
   {
+    "data": "2026-04-16",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-navigator",
+    "indice": 0,
+    "publicador": "ECO",
+    "tipo": "noticia",
+    "titulo": "Ciberataque expõe contratos e dados da Navigator na dark web",
+    "url": "https://eco.sapo.pt/2026/04/16/ciberataque-expoe-contratos-e-dados-da-navigator-na-dark-web/",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2026-04-16",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-navigator",
+    "indice": 1,
+    "publicador": "Jornal de Negócios",
+    "tipo": "noticia",
+    "titulo": "Ataque informático expõe dados da Navigator na \"darkweb\"",
+    "url": "https://www.jornaldenegocios.pt/empresas/industria/detalhe/ataque-informatico-expoe-dados-da-navigator-na-darkweb",
+    "url_arquivo": null
+  },
+  {
+    "data": "2026-03-17",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-navigator",
+    "indice": 2,
+    "publicador": "ransomware.live",
+    "tipo": "leak_site",
+    "titulo": "The Navigator Company listada no site de extorsão do grupo SafePay",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2026-04-16",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-navigator",
+    "indice": 3,
+    "publicador": "O Setubalense",
+    "tipo": "noticia",
+    "titulo": "The Navigator Company alvo de ataque informático aos seus sistemas",
+    "url": "https://osetubalense.com/local/setubal/the-navigator-company-alvo-de-ataque-informatico-aos-seus-sistemas/",
+    "url_arquivo": null
+  },
+  {
     "contem_declaracao_da_entidade": true,
     "data": "2026-02-20",
     "estado_ligacao": "viva",
@@ -558,6 +608,31 @@
   },
   {
     "contem_declaracao_da_entidade": true,
+    "data": "2025-04-16",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2025-ersar",
+    "indice": 0,
+    "publicador": "Security Magazine",
+    "tipo": "noticia",
+    "titulo": "ERSAR sofre ataque informático",
+    "url": "https://www.securitymagazine.pt/2025/04/16/ersar-sofre-ataque-informatico/",
+    "url_arquivo": null
+  },
+  {
+    "data": "2025-06-11",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2025-ersar",
+    "indice": 1,
+    "publicador": "ransomware.live",
+    "tipo": "leak_site",
+    "titulo": "ERSAR listada no site de extorsão do grupo Warlock",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
     "data": "2025-03-30",
     "estado_ligacao": "viva",
     "excerto": null,
@@ -646,6 +721,18 @@
     "titulo": "Câmara de Chaves restabeleceu comunicações telefónicas após ciberataque",
     "url": "https://observador.pt/2024/11/18/camara-de-chaves-restabeleceu-comunicacoes-telefonicas-apos-ciberataque/",
     "url_arquivo": "http://web.archive.org/web/20241119091314/https://observador.pt/2024/11/18/camara-de-chaves-restabeleceu-comunicacoes-telefonicas-apos-ciberataque/"
+  },
+  {
+    "data": "2024-12-17",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2024-camara-municipal-de-chaves",
+    "indice": 3,
+    "publicador": "ransomware.live",
+    "tipo": "leak_site",
+    "titulo": "Câmara Municipal de Chaves listada no site de extorsão do grupo Qilin",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_arquivo": null
   },
   {
     "contem_declaracao_da_entidade": true,
@@ -1086,6 +1173,44 @@
     "titulo": "Grupo Visabeira com sede em Viseu alvo de ataque ao sistema informático",
     "url": "https://observador.pt/2023/02/13/grupo-visabeira-com-sede-em-viseu-alvo-de-ataque-ao-sistema-informatico/",
     "url_arquivo": "http://web.archive.org/web/20230214010648/https://observador.pt/2023/02/13/grupo-visabeira-com-sede-em-viseu-alvo-de-ataque-ao-sistema-informatico/"
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2023-01-30",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2023-camara-municipal-de-vimioso",
+    "indice": 0,
+    "publicador": "Notícias ao Minuto",
+    "tipo": "noticia",
+    "titulo": "Vimioso alvo de ataque informático que provocou \"graves constrangimentos\"",
+    "url": "https://www.noticiasaominuto.com/tech/2048541/vimioso-alvo-de-ataque-informatico-que-provocou-graves-constrangimentos",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2023-01-30",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2023-camara-municipal-de-vimioso",
+    "indice": 1,
+    "publicador": "Diário de Trás-os-Montes",
+    "tipo": "noticia",
+    "titulo": "Município de Vimioso alvo de ataque informático",
+    "url": "https://www.diariodetrasosmontes.com/noticia/municipio-de-vimioso-alvo-de-ataque-informatico",
+    "url_arquivo": null
+  },
+  {
+    "data": "2023-01-30",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2023-camara-municipal-de-vimioso",
+    "indice": 2,
+    "publicador": "ransomware.live",
+    "tipo": "leak_site",
+    "titulo": "Câmara Municipal de Vimioso listada no site de extorsão do grupo LockBit",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_arquivo": null
   },
   {
     "contem_declaracao_da_entidade": true,
@@ -2082,6 +2207,42 @@
     "titulo": "EDP não comenta informação que hackers \"alegadamente\" partilharam na dark web",
     "url": "https://www.publico.pt/2020/05/07/tecnologia/noticia/edp-nao-comenta-informacao-hackers-alegadamente-partilharam-dark-web-1915604",
     "url_arquivo": "http://web.archive.org/web/20200507182839/https://www.publico.pt/2020/05/07/tecnologia/noticia/edp-nao-comenta-informacao-hackers-alegadamente-partilharam-dark-web-1915604"
+  },
+  {
+    "data": "2017-05-12",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2017-wannacry",
+    "indice": 0,
+    "publicador": "Público",
+    "tipo": "noticia",
+    "titulo": "Ataque informático de larga escala afecta empresas em Portugal",
+    "url": "https://www.publico.pt/2017/05/12/tecnologia/noticia/ataque-informatico-internacional-afecta-empresas-e-hospitais-1771939",
+    "url_arquivo": null
+  },
+  {
+    "data": "2017-05-12",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2017-wannacry",
+    "indice": 1,
+    "publicador": "Distribuição Hoje",
+    "tipo": "noticia",
+    "titulo": "Ransomware atinge empresas em Portugal e Espanha",
+    "url": "https://www.distribuicaohoje.com/pagamentos/ransomware-atinge-empresas-portugal-espanha/",
+    "url_arquivo": null
+  },
+  {
+    "data": "2017-05-13",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2017-wannacry",
+    "indice": 2,
+    "publicador": "Observador",
+    "tipo": "noticia",
+    "titulo": "Ataque informático. O que foi, como se espalhou, quem o travou",
+    "url": "https://observador.pt/2017/05/13/ataque-informatico-o-que-foi-como-se-espalhou-quem-o-travou/",
+    "url_arquivo": null
   },
   {
     "contem_declaracao_de_autoridade": true,

@@ -215,6 +215,60 @@
   url: https://www.sojadeportugal.pt
   chaves: [soja de portugal, savinor, avicasal]
 
+- id: camara-municipal-de-vimioso
+  nome: Município de Vimioso
+  nome_curto: Câmara Municipal de Vimioso
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Bragança
+  url: https://www.cm-vimioso.pt
+  chaves: [camara municipal de vimioso, municipio de vimioso, camara de vimioso]
+
+- id: fidelidade
+  nome: Fidelidade — Companhia de Seguros, S.A.
+  nome_curto: Fidelidade
+  setor: banca_seguros
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.fidelidade.pt
+  chaves: [fidelidade, fidelidade companhia de seguros]
+
+- id: bpi
+  nome: Banco BPI, S.A.
+  nome_curto: BPI
+  setor: banca_seguros
+  tipo: empresa
+  distrito: Porto
+  url: https://www.bancobpi.pt
+  chaves: [bpi, banco bpi]
+
+- id: caixa-geral-de-depositos
+  nome: Caixa Geral de Depósitos, S.A.
+  nome_curto: Caixa Geral de Depósitos
+  setor: banca_seguros
+  tipo: empresa_publica
+  distrito: Lisboa
+  url: https://www.cgd.pt
+  chaves: [caixa geral de depositos, cgd, caixa]
+
+- id: navigator
+  nome: The Navigator Company, S.A.
+  nome_curto: The Navigator Company
+  setor: industria
+  tipo: empresa
+  distrito: Setúbal
+  url: https://www.thenavigatorcompany.com
+  chaves: [the navigator company, navigator, thenavigatorcompany, portucel]
+
+- id: ersar
+  nome: Entidade Reguladora dos Serviços de Águas e Resíduos
+  nome_curto: ERSAR
+  setor: energia_agua
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.ersar.pt
+  chaves: [ersar, entidade reguladora dos servicos de aguas e residuos]
+
 - id: aguas-e-energia-do-porto
   nome: Águas e Energia do Porto, E.M.
   nome_curto: Águas e Energia do Porto

@@ -1,65 +1,69 @@
 {
   "distribuicao_fontes_por_incidente": {
     "1": 6,
-    "2": 11,
-    "3": 13,
-    "4": 3,
+    "2": 12,
+    "3": 14,
+    "4": 5,
     "5": 6,
     "6": 2,
     "7": 7
   },
-  "incidentes_com_disputas": 9,
+  "incidentes_com_disputas": 10,
   "por_ano": {
-    "2017": 1,
+    "2017": 2,
     "2020": 1,
     "2021": 1,
     "2022": 16,
-    "2023": 9,
+    "2023": 10,
     "2024": 6,
-    "2025": 3,
-    "2026": 11
+    "2025": 4,
+    "2026": 12
   },
   "por_ator": {
     "HIVE": 1,
     "Lapsus$ Group": 1,
-    "LockBit": 2,
-    "Qilin": 2,
+    "LockBit": 3,
+    "Qilin": 3,
     "Ragnar Locker": 2,
     "RansomEXX": 1,
     "Rhysida": 1,
+    "SafePay": 1,
     "ShinyHunters": 1,
+    "WannaCry": 1,
+    "Warlock": 1,
     "thegentlemen": 2
   },
   "por_estado_confirmacao": {
     "alegado_pelo_atacante": 2,
-    "confirmado_pela_entidade": 40,
+    "confirmado_pela_entidade": 43,
     "confirmado_por_regulador": 4,
-    "reportado_por_media": 2
+    "reportado_por_media": 3
   },
   "por_setor": {
     "administracao_publica": 5,
-    "autarquias": 13,
+    "autarquias": 14,
     "banca_seguros": 1,
     "desporto": 2,
     "educacao_investigacao": 6,
-    "energia_agua": 3,
-    "industria": 2,
+    "energia_agua": 4,
+    "industria": 3,
     "justica_defesa": 2,
     "media": 3,
     "retalho": 1,
     "saude": 5,
+    "tecnologia": 1,
     "telecomunicacoes": 1,
     "transportes": 4
   },
   "por_tipo_ataque": {
     "cadeia_fornecimento": 3,
     "ddos": 3,
-    "exfiltracao_dados": 15,
+    "exfiltracao_dados": 16,
     "exposicao_credenciais": 2,
-    "indisponibilidade": 26,
+    "indisponibilidade": 29,
     "intrusao": 27,
     "phishing_bec": 1,
-    "ransomware": 17
+    "ransomware": 22
   },
-  "total": 48
+  "total": 52
 }

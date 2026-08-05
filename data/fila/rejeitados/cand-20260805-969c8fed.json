@@ -1,19 +1,19 @@
 {
   "confianca_llm": 1.0,
-  "estado": "novo",
+  "estado": "promovido",
   "extraccao": {
     "afirmacoes": [
       {
-        "atribuida_a": "qilin",
-        "texto": "chaves foi listada no site de extorsão."
+        "atribuida_a": "warlock",
+        "texto": "Ersar foi listada no site de extorsão."
       }
     ],
-    "ator_mencionado": "qilin",
+    "ator_mencionado": "warlock",
     "confianca": 1.0,
     "dados_pessoais_mencionados": null,
-    "data_ocorrencia": "2024-12-17",
+    "data_ocorrencia": "2025-06-11",
     "e_incidente_pt": null,
-    "entidade_mencionada": "chaves",
+    "entidade_mencionada": "Ersar",
     "excerto_chave": null,
     "precisao_data": "dia",
     "razao": "listagem em site de extorsão; exige confirmação independente",
@@ -22,19 +22,20 @@
       "ransomware"
     ]
   },
-  "id": "cand-20260805-c050f4e8",
-  "motivo_rejeicao": null,
+  "id": "cand-20260805-969c8fed",
+  "motivo_rejeicao": "já registado como incidente da entidade ersar",
   "origem": {
-    "chave": "c050f4e87b7ddbdd9a1892be6d8c529f6d8dc777e9512a9ed9c3614962da2611",
-    "data": "2024-12-17",
+    "chave": "969c8fedb8b3f197ad37ada4d89949929ba163885d01dafc7925d5e64d2e5532",
+    "data": "2025-06-11",
     "fonte": "ransomware_live",
     "publicador": "ransomware.live",
-    "sha256": "67022d63d850f7fb4c5c24db4f337441498d2bd421f607f19cf49264a5a7d5b9",
+    "sha256": "de7fca146a1019e32b9fa7a04e1238b51348ead365adcb5bffcb81aee18b535e",
     "tipo_fonte": "leak_site",
     "url": "https://www.ransomware.live/map/PT",
     "url_canonica": "https://www.ransomware.live/map/PT"
   },
+  "rejeitado_em": "2026-08-05",
   "sugestao_agrupamento": null,
-  "titulo_origem": "chaves listada em site de extorsão (qilin)",
+  "titulo_origem": "Ersar listada em site de extorsão (warlock)",
   "triado_em": "2026-08-05T17:59:50+00:00"
 }

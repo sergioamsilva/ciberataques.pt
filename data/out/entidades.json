@@ -35,6 +35,27 @@
     "tipo": "empresa_publica",
     "url": "https://www.aguasdoporto.pt"
   },
+  "altice-portugal": {
+    "chaves": [
+      "altice portugal",
+      "altice",
+      "meo",
+      "portugal telecom",
+      "pt"
+    ],
+    "distrito": "Lisboa",
+    "id": "altice-portugal",
+    "incidentes": [
+      "2017-wannacry"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Altice Portugal, S.A.",
+    "nome_curto": "Altice Portugal",
+    "nota": "Distinguir da casa-mãe Altice/SFR em França. O incidente de agosto de 2022 diz respeito à operação portuguesa.",
+    "setor": "telecomunicacoes",
+    "tipo": "empresa",
+    "url": "https://www.telecom.pt"
+  },
   "ama": {
     "chaves": [
       "ama",
@@ -74,6 +95,41 @@
     "setor": "administracao_publica",
     "tipo": "entidade_publica",
     "url": "https://www.portaldasfinancas.gov.pt"
+  },
+  "bpi": {
+    "chaves": [
+      "bpi",
+      "banco bpi"
+    ],
+    "distrito": "Porto",
+    "id": "bpi",
+    "incidentes": [
+      "2017-wannacry"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Banco BPI, S.A.",
+    "nome_curto": "BPI",
+    "setor": "banca_seguros",
+    "tipo": "empresa",
+    "url": "https://www.bancobpi.pt"
+  },
+  "caixa-geral-de-depositos": {
+    "chaves": [
+      "caixa geral de depositos",
+      "cgd",
+      "caixa"
+    ],
+    "distrito": "Lisboa",
+    "id": "caixa-geral-de-depositos",
+    "incidentes": [
+      "2017-wannacry"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Caixa Geral de Depósitos, S.A.",
+    "nome_curto": "Caixa Geral de Depósitos",
+    "setor": "banca_seguros",
+    "tipo": "empresa_publica",
+    "url": "https://www.cgd.pt"
   },
   "camara-municipal-da-figueira-da-foz": {
     "chaves": [
@@ -278,6 +334,24 @@
     "tipo": "entidade_publica",
     "url": "https://www.cm-serpa.pt"
   },
+  "camara-municipal-de-vimioso": {
+    "chaves": [
+      "camara municipal de vimioso",
+      "municipio de vimioso",
+      "camara de vimioso"
+    ],
+    "distrito": "Bragança",
+    "id": "camara-municipal-de-vimioso",
+    "incidentes": [
+      "2023-camara-municipal-de-vimioso"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município de Vimioso",
+    "nome_curto": "Câmara Municipal de Vimioso",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-vimioso.pt"
+  },
   "camara-municipal-do-barreiro": {
     "chaves": [
       "camara municipal do barreiro",
@@ -375,7 +449,9 @@
     "incidentes": [
       "2020-edp"
     ],
-    "incidentes_em_cascata": [],
+    "incidentes_em_cascata": [
+      "2017-wannacry"
+    ],
     "nome": "EDP — Energias de Portugal, S.A.",
     "nome_curto": "EDP",
     "setor": "energia_agua",
@@ -400,6 +476,23 @@
     "tipo": "entidade_publica",
     "url": "https://www.emgfa.pt"
   },
+  "ersar": {
+    "chaves": [
+      "ersar",
+      "entidade reguladora dos servicos de aguas e residuos"
+    ],
+    "distrito": "Lisboa",
+    "id": "ersar",
+    "incidentes": [
+      "2025-ersar"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Entidade Reguladora dos Serviços de Águas e Resíduos",
+    "nome_curto": "ERSAR",
+    "setor": "energia_agua",
+    "tipo": "entidade_publica",
+    "url": "https://www.ersar.pt"
+  },
   "fc-porto": {
     "chaves": [
       "fc porto",
@@ -417,6 +510,23 @@
     "setor": "desporto",
     "tipo": "associacao",
     "url": "https://www.fcporto.pt"
+  },
+  "fidelidade": {
+    "chaves": [
+      "fidelidade",
+      "fidelidade companhia de seguros"
+    ],
+    "distrito": "Lisboa",
+    "id": "fidelidade",
+    "incidentes": [
+      "2017-wannacry"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Fidelidade — Companhia de Seguros, S.A.",
+    "nome_curto": "Fidelidade",
+    "setor": "banca_seguros",
+    "tipo": "empresa",
+    "url": "https://www.fidelidade.pt"
   },
   "germano-de-sousa": {
     "chaves": [
@@ -640,6 +750,25 @@
     "setor": "saude",
     "tipo": "associacao",
     "url": "https://www.scmst.pt"
+  },
+  "navigator": {
+    "chaves": [
+      "the navigator company",
+      "navigator",
+      "thenavigatorcompany",
+      "portucel"
+    ],
+    "distrito": "Setúbal",
+    "id": "navigator",
+    "incidentes": [
+      "2026-navigator"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "The Navigator Company, S.A.",
+    "nome_curto": "The Navigator Company",
+    "setor": "industria",
+    "tipo": "empresa",
+    "url": "https://www.thenavigatorcompany.com"
   },
   "oestecim": {
     "chaves": [

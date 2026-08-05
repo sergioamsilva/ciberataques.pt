@@ -1,0 +1,123 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "LockBit",
+    "nota": "O grupo confirmou o ataque no seu sítio na rede Tor e anunciou a intenção de divulgar os dados no prazo de catorze dias."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2023-01-30",
+      "fonte": 2,
+      "texto": "O grupo LockBit lista o município no seu site de extorsão e anuncia que publicará os dados recolhidos no prazo de catorze dias.",
+      "tipo": "reivindicacao"
+    },
+    {
+      "data": "2023-01-30",
+      "fonte": 0,
+      "texto": "O presidente da câmara descreve graves constrangimentos em vários departamentos municipais.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2023-01-30",
+      "fonte": 1,
+      "texto": "O presidente garante que não foram comprometidos dados pessoais, apenas dados administrativos, que descreve ainda assim como importantes, e afirma desconhecer qualquer pedido de resgate.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "O presidente da câmara garantiu que não foram comprometidos dados pessoais, apenas dados administrativos. É declaração da entidade, e o grupo atacante anunciou publicação de dados sem que seja conhecido o desfecho.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2023-01-30",
+    "divulgacao": "2023-01-30",
+    "inicio": "2023-01-30",
+    "precisao": "desconhecida"
+  },
+  "disputas": [
+    {
+      "afirmacao": "O grupo afirmou ter recolhido dados do município e anunciou que os publicaria em catorze dias.",
+      "contestado_por": "Município de Vimioso",
+      "fonte_afirmacao": 2,
+      "fonte_contestacao": 1,
+      "nota": "O presidente da câmara sustenta que os dados comprometidos são administrativos e não pessoais. Não é conhecido publicamente se a publicação anunciada chegou a concretizar-se nem qual o conteúdo.",
+      "segundo": "LockBit"
+    }
+  ],
+  "entidades_afetadas": ["camara-municipal-de-vimioso"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["administracao-local", "municipio-pequeno"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-01-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Notícias ao Minuto",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Vimioso alvo de ataque informático que provocou \"graves constrangimentos\"",
+      "url": "https://www.noticiasaominuto.com/tech/2048541/vimioso-alvo-de-ataque-informatico-que-provocou-graves-constrangimentos",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-01-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Diário de Trás-os-Montes",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Município de Vimioso alvo de ataque informático",
+      "url": "https://www.diariodetrasosmontes.com/noticia/municipio-de-vimioso-alvo-de-ataque-informatico",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-01-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "Câmara Municipal de Vimioso listada no site de extorsão do grupo LockBit",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2023-camara-municipal-de-vimioso",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "O presidente da câmara afirmou desconhecer qualquer pedido de resgate.",
+    "servicos_afetados": ["vários departamentos municipais"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2023-camara-municipal-de-gondomar",
+    "2022-camara-municipal-da-figueira-da-foz"
+  ],
+  "resumo": "Em janeiro de 2023, o município de Vimioso foi alvo de um ataque de ransomware reivindicado pelo grupo LockBit, que o listou no seu site de extorsão e anunciou a publicação dos dados recolhidos em catorze dias. O presidente da câmara descreveu graves constrangimentos em vários departamentos municipais, garantiu que não foram comprometidos dados pessoais, apenas administrativos, e afirmou desconhecer qualquer pedido de resgate.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Vimioso tem cerca de quatro mil habitantes e é dos municípios mais pequenos do registo, o que reforça que a administração local é atacada independentemente da dimensão. Estava na fila de candidatos desde a primeira recolha, com o LockBit corretamente identificado, e ficou por curar. A cobertura foi de imprensa regional e de tecnologia, sem órgão nacional generalista.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["ransomware", "indisponibilidade"],
+  "titulo": "Ciberataque à Câmara Municipal de Vimioso"
+}

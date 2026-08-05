@@ -1,6 +1,6 @@
 {
   "confianca_llm": 1.0,
-  "estado": "novo",
+  "estado": "promovido",
   "extraccao": {
     "afirmacoes": [
       {
@@ -23,7 +23,7 @@
     ]
   },
   "id": "cand-20260805-233329de",
-  "motivo_rejeicao": null,
+  "motivo_rejeicao": "já registado como incidente da entidade metro-mondego",
   "origem": {
     "chave": "233329de669b98db8291303388d3907f88e13e9555821247ab6429fb37133a0d",
     "data": "2026-07-16",
@@ -34,6 +34,7 @@
     "url": "https://www.ransomware.live/map/PT",
     "url_canonica": "https://www.ransomware.live/map/PT"
   },
+  "rejeitado_em": "2026-08-05",
   "sugestao_agrupamento": {
     "incidente_id": "2026-metro-mondego",
     "razao": "mesma entidade, 10 dias de diferença, tipos em comum: ransomware",

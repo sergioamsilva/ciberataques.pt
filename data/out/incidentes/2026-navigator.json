@@ -1,0 +1,122 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "SafePay",
+    "nota": "O grupo reivindicou o ataque no seu site de extorsão a 17 de março de 2026. Surgiu no final de 2024 e usa a tática de dupla extorsão: rouba os dados antes de encriptar os servidores e ameaça publicá-los se o resgate não for pago."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-03-17",
+      "fonte": 2,
+      "texto": "O grupo SafePay reivindica o ataque à empresa no seu site de extorsão.",
+      "tipo": "reivindicacao"
+    },
+    {
+      "data": "2026-04-16",
+      "fonte": 0,
+      "texto": "É noticiado que parte dos dados e documentos da empresa foi exposta na dark web, incluindo contratos, dados de preços e documentos internos.",
+      "tipo": "publicacao_dados"
+    },
+    {
+      "data": "2026-04-16",
+      "fonte": 1,
+      "texto": "A empresa confirma ter identificado um incidente de cibersegurança e ter ativado de imediato os respetivos protocolos de resposta e contenção, sem revelar se houve pagamento de resgate.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["identificacao", "laborais"],
+    "nota": "Entre a informação divulgada foram referidos dados de trabalhadores, além de notas de reuniões, informação sobre contraordenações ambientais, resultados de auditorias e registos de custos operacionais. A empresa não quantificou titulares afetados.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-03-17",
+    "divulgacao": "2026-04-16",
+    "inicio": "2026-03-01",
+    "precisao": "mes"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["navigator"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["dupla-extorsao", "empresa-cotada", "industria-papeleira"],
+  "fontes": [
+    {
+      "data": "2026-04-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque expõe contratos e dados da Navigator na dark web",
+      "url": "https://eco.sapo.pt/2026/04/16/ciberataque-expoe-contratos-e-dados-da-navigator-na-dark-web/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-04-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Jornal de Negócios",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático expõe dados da Navigator na \"darkweb\"",
+      "url": "https://www.jornaldenegocios.pt/empresas/industria/detalhe/ataque-informatico-expoe-dados-da-navigator-na-darkweb",
+      "url_arquivo": null
+    },
+    {
+      "data": "2026-03-17",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "The Navigator Company listada no site de extorsão do grupo SafePay",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-04-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "O Setubalense",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "The Navigator Company alvo de ataque informático aos seus sistemas",
+      "url": "https://osetubalense.com/local/setubal/the-navigator-company-alvo-de-ataque-informatico-aos-seus-sistemas/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-navigator",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "A empresa não revelou se houve pedido ou pagamento de resgate. Os dados acabaram publicados, o que é o desfecho habitual quando não há pagamento.",
+    "servicos_afetados": ["sistemas de informação da empresa"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": ["2022-tap", "2022-porto-de-lisboa"],
+  "resumo": "Em março de 2026, a The Navigator Company foi alvo de um ataque de ransomware reivindicado pelo grupo SafePay, que a listou no seu site de extorsão a 17 de março. Em abril, parte dos dados e documentos da empresa foi exposta na dark web, incluindo contratos, dados de preços, documentos internos, dados de trabalhadores, notas de reuniões, informação sobre contraordenações ambientais, resultados de auditorias e registos de custos operacionais. A empresa confirmou ter identificado um incidente de cibersegurança e ativado os protocolos de resposta e contenção, sem revelar se houve pagamento de resgate.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Estava na fila de candidatos desde a primeira recolha, apanhado pelo módulo do tracker com o grupo SafePay corretamente identificado, e ficou por curar. A data de início é o mês, porque a reivindicação de 17 de março estabelece um limite superior mas não a data do acesso inicial. A publicação efetiva dos dados sugere que não houve pagamento, mas a empresa não o confirmou e por isso o campo fica a null.",
+    "versao": 1
+  },
+  "setor": "industria",
+  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "titulo": "Ciberataque à The Navigator Company"
+}

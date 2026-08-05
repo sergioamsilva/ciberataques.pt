@@ -1,6 +1,6 @@
 {
   "confianca_llm": 1.0,
-  "estado": "novo",
+  "estado": "promovido",
   "extraccao": {
     "afirmacoes": [
       {
@@ -23,7 +23,7 @@
     ]
   },
   "id": "cand-20260805-8e492b13",
-  "motivo_rejeicao": null,
+  "motivo_rejeicao": "já registado como incidente da entidade impresa",
   "origem": {
     "chave": "8e492b132fefad1ef11798a679660cb33faba521a4381d6bafb5902b0cc3696c",
     "data": "2022-01-01",
@@ -34,6 +34,7 @@
     "url": "https://www.ransomware.live/map/PT",
     "url_canonica": "https://www.ransomware.live/map/PT"
   },
+  "rejeitado_em": "2026-08-05",
   "sugestao_agrupamento": {
     "incidente_id": "2022-impresa",
     "razao": "mesma entidade, 1 dias de diferença, tipos em comum: ransomware",

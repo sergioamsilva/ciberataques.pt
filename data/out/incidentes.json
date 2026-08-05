@@ -191,6 +191,25 @@
   },
   {
     "ano": 2026,
+    "ator": "SafePay",
+    "data": "2026-03-01",
+    "entidades_afetadas": [
+      "navigator"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-navigator",
+    "n_fontes": 4,
+    "precisao_data": "mes",
+    "setor": "industria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ciberataque à The Navigator Company"
+  },
+  {
+    "ano": 2026,
     "ator": null,
     "data": "2026-02-12",
     "entidades_afetadas": [
@@ -249,6 +268,25 @@
   },
   {
     "ano": 2025,
+    "ator": "Warlock",
+    "data": "2025-03-31",
+    "entidades_afetadas": [
+      "ersar"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2025-ersar",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "energia_agua",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à ERSAR"
+  },
+  {
+    "ano": 2025,
     "ator": null,
     "data": "2025-03-30",
     "entidades_afetadas": [
@@ -287,20 +325,21 @@
   },
   {
     "ano": 2024,
-    "ator": null,
+    "ator": "Qilin",
     "data": "2024-11-13",
     "entidades_afetadas": [
       "camara-municipal-de-chaves"
     ],
     "estado_confirmacao": "confirmado_pela_entidade",
     "id": "2024-camara-municipal-de-chaves",
-    "n_fontes": 3,
+    "n_fontes": 4,
     "precisao_data": "dia",
     "setor": "autarquias",
     "tem_disputas": false,
     "tipos_ataque": [
+      "indisponibilidade",
       "intrusao",
-      "indisponibilidade"
+      "ransomware"
     ],
     "titulo": "Ciberataque à Câmara Municipal de Chaves"
   },
@@ -528,6 +567,25 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque ao Grupo Visabeira"
+  },
+  {
+    "ano": 2023,
+    "ator": "LockBit",
+    "data": "2023-01-30",
+    "entidades_afetadas": [
+      "camara-municipal-de-vimioso"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2023-camara-municipal-de-vimioso",
+    "n_fontes": 3,
+    "precisao_data": "desconhecida",
+    "setor": "autarquias",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "ransomware",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal de Vimioso"
   },
   {
     "ano": 2023,
@@ -891,6 +949,28 @@
       "exfiltracao_dados"
     ],
     "titulo": "Ciberataque à EDP"
+  },
+  {
+    "ano": 2017,
+    "ator": "WannaCry",
+    "data": "2017-05-12",
+    "entidades_afetadas": [
+      "altice-portugal",
+      "fidelidade",
+      "bpi",
+      "caixa-geral-de-depositos"
+    ],
+    "estado_confirmacao": "reportado_por_media",
+    "id": "2017-wannacry",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "tecnologia",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "indisponibilidade"
+    ],
+    "titulo": "WannaCry em Portugal"
   },
   {
     "ano": 2017,

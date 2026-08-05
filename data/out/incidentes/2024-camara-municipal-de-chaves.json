@@ -1,11 +1,17 @@
 {
   "ator": {
-    "atribuicao_por": null,
-    "confianca": null,
-    "grupo": null,
-    "nota": "Sem atribuição pública."
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "Qilin",
+    "nota": "O município não identificou o atacante. A atribuição assenta na listagem de Chaves no site de extorsão do grupo Qilin, a 17 de dezembro de 2024, cerca de um mês após o ataque."
   },
-  "correcoes": [],
+  "correcoes": [
+    {
+      "data": "2026-08-05",
+      "descricao": "Acrescentada a atribuição ao grupo Qilin e a classificação como ransomware, a partir da listagem no tracker público de sites de extorsão. O registo anterior indicava ator não identificado.",
+      "origem": "curadoria"
+    }
+  ],
   "cronologia": [
     {
       "data": "2024-11-13",
@@ -24,6 +30,12 @@
       "fonte": 2,
       "texto": "As comunicações telefónicas são restabelecidas, mas o município mantém-se sem acessos informáticos e com o atendimento ao público condicionado.",
       "tipo": "reposicao"
+    },
+    {
+      "data": "2024-12-17",
+      "fonte": 3,
+      "texto": "O grupo Qilin lista o município no seu site de extorsão, um mês após o ataque.",
+      "tipo": "reivindicacao"
     }
   ],
   "dados_pessoais": {
@@ -82,6 +94,17 @@
       "titulo": "Câmara de Chaves restabeleceu comunicações telefónicas após ciberataque",
       "url": "https://observador.pt/2024/11/18/camara-de-chaves-restabeleceu-comunicacoes-telefonicas-apos-ciberataque/",
       "url_arquivo": "http://web.archive.org/web/20241119091314/https://observador.pt/2024/11/18/camara-de-chaves-restabeleceu-comunicacoes-telefonicas-apos-ciberataque/"
+    },
+    {
+      "data": "2024-12-17",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "Câmara Municipal de Chaves listada no site de extorsão do grupo Qilin",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
     }
   ],
   "id": "2024-camara-municipal-de-chaves",
@@ -113,13 +136,14 @@
   "revisao": {
     "curador": "ss",
     "data": "2026-08-05",
-    "nota": "Ocorreu na mesma madrugada que o ataque à Câmara de Alcobaça. Não é conhecida ligação estabelecida entre os dois casos, e não a inferimos: coincidência temporal não é prova de campanha.",
-    "versao": 1
+    "nota": "Ocorreu na mesma madrugada que o ataque à Câmara de Alcobaça. Não é conhecida ligação estabelecida entre os dois casos, e não a inferimos: coincidência temporal não é prova de campanha. A atribuição ao Qilin resultou de rever a fila de candidatos, onde o cruzamento estava desde a primeira recolha.",
+    "versao": 2
   },
   "setor": "autarquias",
   "tipos_ataque": [
+    "indisponibilidade",
     "intrusao",
-    "indisponibilidade"
+    "ransomware"
   ],
   "titulo": "Ciberataque à Câmara Municipal de Chaves"
 }

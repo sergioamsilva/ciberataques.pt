@@ -1,0 +1,109 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "Warlock",
+    "nota": "A entidade não identificou o atacante. A atribuição assenta na listagem no site de extorsão do grupo Warlock, em junho de 2025, cerca de dois meses após o ataque."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2025-03-31",
+      "fonte": 0,
+      "texto": "A ERSAR é alvo de um ataque de ransomware que causa perturbação significativa nos seus sistemas de informação.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2025-04-16",
+      "fonte": 0,
+      "texto": "Por medida preventiva, o portal, o sítio e o fórum da entidade ficam temporariamente indisponíveis. A ERSAR indica ter notificado as autoridades nacionais de cibercrime e que só reporá os sistemas quando houver garantias de que estão seguros e plenamente operacionais.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2025-04-16",
+      "fonte": 0,
+      "texto": "A entidade passa a comunicar com as entidades gestoras por meios alternativos, com alguns relatórios de informação a serem feitos por correio eletrónico para assegurar a monitorização atempada.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2025-06-11",
+      "fonte": 1,
+      "texto": "O grupo Warlock lista a entidade no seu site de extorsão.",
+      "tipo": "reivindicacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados. A ERSAR trata informação de regulação das entidades gestoras de água e resíduos, não bases de dados de consumidores finais.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2025-03-31",
+    "divulgacao": "2025-04-16",
+    "inicio": "2025-03-31",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["ersar"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["regulador", "infraestrutura-critica"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2025-04-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Security Magazine",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "ERSAR sofre ataque informático",
+      "url": "https://www.securitymagazine.pt/2025/04/16/ersar-sofre-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2025-06-11",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "ERSAR listada no site de extorsão do grupo Warlock",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2025-ersar",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "sistemas de informação da entidade",
+      "portal, sítio institucional e fórum",
+      "comunicação com as entidades gestoras"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": ["2026-aguas-de-portugal", "2023-aguas-e-energia-do-porto"],
+  "resumo": "A 31 de março de 2025, a Entidade Reguladora dos Serviços de Águas e Resíduos foi alvo de um ataque de ransomware que causou perturbação significativa nos seus sistemas de informação. Por medida preventiva, o portal, o sítio institucional e o fórum ficaram indisponíveis, e a entidade passou a comunicar com as entidades gestoras por meios alternativos. As autoridades nacionais de cibercrime foram notificadas. Em junho, o grupo Warlock listou a ERSAR no seu site de extorsão.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "É o primeiro regulador setorial do registo, o que lhe dá relevância que excede a dimensão da entidade: a ERSAR supervisiona o abastecimento de água e o saneamento em todo o continente. Estava na fila de candidatos desde a primeira recolha e ficou por curar. A atribuição ao Warlock vem do cruzamento com o tracker, não de declaração da entidade. Assenta em duas fontes, uma delas o próprio site de extorsão: procurar cobertura adicional e eventual comunicado no sítio da ERSAR.",
+    "versao": 1
+  },
+  "setor": "energia_agua",
+  "tipos_ataque": ["ransomware", "indisponibilidade"],
+  "titulo": "Ciberataque à ERSAR"
+}

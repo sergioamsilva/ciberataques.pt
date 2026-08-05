@@ -1,19 +1,19 @@
 {
   "confianca_llm": 1.0,
-  "estado": "novo",
+  "estado": "promovido",
   "extraccao": {
     "afirmacoes": [
       {
-        "atribuida_a": "thegentlemen",
-        "texto": "Soja de Portugal foi listada no site de extorsão."
+        "atribuida_a": "nitrogen",
+        "texto": "Global Media Group foi listada no site de extorsão."
       }
     ],
-    "ator_mencionado": "thegentlemen",
+    "ator_mencionado": "nitrogen",
     "confianca": 1.0,
     "dados_pessoais_mencionados": null,
-    "data_ocorrencia": "2026-06-04",
+    "data_ocorrencia": "2025-04-18",
     "e_incidente_pt": null,
-    "entidade_mencionada": "Soja de Portugal",
+    "entidade_mencionada": "Global Media Group",
     "excerto_chave": null,
     "precisao_data": "dia",
     "razao": "listagem em site de extorsão; exige confirmação independente",
@@ -22,19 +22,20 @@
       "ransomware"
     ]
   },
-  "id": "cand-20260805-f6fe8e59",
-  "motivo_rejeicao": null,
+  "id": "cand-20260805-49ceb92d",
+  "motivo_rejeicao": "já registado como incidente da entidade global-media",
   "origem": {
-    "chave": "f6fe8e599feae67cf91f8684080e8fa79262fede2a2cc830b7aec131617c71dc",
-    "data": "2026-06-04",
+    "chave": "49ceb92d4b42c8bec4bfddbdfba1af01c9d32e4a60ce4c44aa187e411ec1215b",
+    "data": "2025-04-18",
     "fonte": "ransomware_live",
     "publicador": "ransomware.live",
-    "sha256": "f2814570e68845c0b8e702504a40caf7b4fed47bcbe449d554a0d76c2d8da895",
+    "sha256": "a9fde810739a9f35eadb67b53604449bf43ffcd560931277dc24f587a1a61284",
     "tipo_fonte": "leak_site",
     "url": "https://www.ransomware.live/map/PT",
     "url_canonica": "https://www.ransomware.live/map/PT"
   },
+  "rejeitado_em": "2026-08-05",
   "sugestao_agrupamento": null,
-  "titulo_origem": "Soja de Portugal listada em site de extorsão (thegentlemen)",
+  "titulo_origem": "Global Media Group listada em site de extorsão (nitrogen)",
   "triado_em": "2026-08-05T17:59:50+00:00"
 }
