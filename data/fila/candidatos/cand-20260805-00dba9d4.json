@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "mallox",
+        "texto": "BOMCALCADO foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "mallox",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2023-01-25",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "BOMCALCADO",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-00dba9d4",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "00dba9d4b76840978e1c68139c68ad388a56e3bed21b7aa5c68503604358cb8c",
+    "data": "2023-01-25",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "88c3cee5610ee543b8a926759459fea89d15c07084deeae7237433d759ac4f16",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "BOMCALCADO listada em site de extorsão (mallox)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

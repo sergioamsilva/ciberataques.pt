@@ -1,0 +1,170 @@
+# Léxico da triagem determinística.
+#
+# Corta o corpus ANTES de gastar um único token de modelo de linguagem. Com ~700 itens
+# recolhidos por dia e uma base de custo por item, a diferença entre triar aqui e triar
+# no modelo é a diferença entre o projeto ser sustentável e não ser.
+#
+# É deliberadamente agressiva. O modo de falha mais provável deste projeto não é perder
+# um incidente: é acumular candidatos por rever até a curadoria parar. Mais vale perder
+# um caso, que uma segunda fonte acabará por trazer, do que ter duzentos por triar.
+
+# Um item precisa de PELO MENOS UM termo desta lista.
+ataque:
+  - ciberataque
+  - ciber-ataque
+  - ataque informático
+  - ataque informatico
+  - ransomware
+  - resgate informático
+  - pirataria informática
+  - piratas informáticos
+  - hackers
+  - hacker
+  - violação de dados
+  - fuga de dados
+  - roubo de dados
+  - dados roubados
+  - dados expostos
+  - acesso indevido
+  - acesso ilegítimo
+  - intrusão
+  - exfiltração
+  - phishing
+  - malware
+  - software malicioso
+  - negação de serviço
+  - ddos
+  - cibersegurança
+  - ciberataques
+  - ciberataque
+  - dark web
+  - darkweb
+  - site de extorsão
+  - extorsão informática
+  - sistemas informáticos em baixo
+  - vítima de ataque
+
+# Marcadores de que o caso é ESTRANGEIRO. Verificados primeiro: sem isto, um hospital
+# em Munique passava o filtro, porque "hospital" consta dos marcadores portugueses.
+# Só são ignorados quando o texto traz também um marcador português inequívoco.
+estrangeiro:
+  - alemão
+  - alemã
+  - alemanha
+  - munique
+  - berlim
+  - espanhol
+  - espanha
+  - madrid
+  - barcelona
+  - francês
+  - francesa
+  - frança
+  - paris
+  - britânico
+  - britânica
+  - reino unido
+  - londres
+  - norte-americano
+  - norte-americana
+  - estados unidos
+  - eua
+  - brasileiro
+  - brasileira
+  - brasil
+  - italiano
+  - itália
+  - holandês
+  - países baixos
+  - belga
+  - bélgica
+  - ucraniano
+  - ucrânia
+  - russo
+  - rússia
+  - chinês
+  - china
+  - indiano
+  - índia
+  - japonês
+  - japão
+  - australiano
+  - austrália
+  - canadiano
+  - canadá
+
+# Marcadores portugueses INEQUÍVOCOS: bastam por si, e anulam o filtro de estrangeiro.
+portugal_forte:
+  - portugal
+  - português
+  - portuguesa
+  - portugueses
+  - portuguesas
+  - cncs
+  - cnpd
+  - centro nacional de cibersegurança
+  - polícia judiciária
+  - autoridade tributária
+  - segurança social
+  - serviço nacional de saúde
+  - diário da república
+  - anacom
+  - cmvm
+
+# Marcadores portugueses FRACOS: ajudam, mas não bastam sozinhos, porque descrevem
+# realidades que existem em qualquer país.
+portugal:
+  - lisboa
+  - porto
+  - braga
+  - coimbra
+  - aveiro
+  - faro
+  - setúbal
+  - madeira
+  - açores
+  - câmara municipal
+  - município
+  - universidade de
+  - universidade do
+  - universidade da
+  - instituto politécnico
+  - centro hospitalar
+  - direção-geral
+
+# Termos que despromovem o item mesmo passando nos filtros acima: cobertura genérica,
+# opinião, formação, publicidade a produtos de segurança.
+ruido:
+  - dicas para
+  - saiba como se proteger
+  - como proteger
+  - opinião
+  - webinar
+  - conferência
+  - formação em
+  - curso de
+  - relatório anual
+  - estudo revela
+  - inquérito revela
+  - previsões para
+  - tendências para
+  - lança solução
+  - nova solução de
+  - parceria com
+  - patrocinado
+
+# Marcadores fortes: um item que os contenha passa mesmo com pontuação baixa, porque
+# a probabilidade de ser um incidente concreto é alta.
+fortes:
+  - alvo de ciberataque
+  - alvo de ataque informático
+  - alvo de um ataque
+  - foi atacada
+  - foi atacado
+  - confirma ataque
+  - confirma ciberataque
+  - sofreu ataque
+  - sofreu um ataque
+  - vítima de ransomware
+  - reivindica o ataque
+  - reivindicou o ataque

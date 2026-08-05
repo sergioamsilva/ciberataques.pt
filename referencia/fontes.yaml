@@ -1,0 +1,184 @@
+# Catálogo declarativo das fontes de recolha.
+#
+# O alistamento é obrigatório: ingestao/rede.py recusa descarregar de qualquer domínio
+# que não esteja aqui. Sem isto, bastava uma ligação num feed para nos pôr a raspar
+# metade da internet.
+#
+# `intervalo_s` é o tempo mínimo entre pedidos ao mesmo servidor. Não é uma sugestão:
+# é a diferença entre um agregador cívico e um incómodo.
+#
+# Estado dos feeds verificado a 2026-08-05. Ver referencia/NOTAS.md para as armadilhas.
+
+fontes:
+  # ---------------------------------------------------------------- comunicação social
+  - id: eco
+    nome: ECO
+    metodo: rss
+    ativa: true
+    intervalo_s: 3
+    dominios: [eco.sapo.pt]
+    feeds:
+      - https://eco.sapo.pt/feed/
+    nota: O feed mais fiável da lista, com boa profundidade.
+
+  - id: publico
+    nome: Público
+    metodo: rss
+    ativa: true
+    intervalo_s: 3
+    dominios: [publico.pt, feeds.feedburner.com]
+    feeds:
+      - https://feeds.feedburner.com/PublicoRSS
+      - https://feeds.feedburner.com/PublicoTecnologia
+    nota: >-
+      publico.pt/rss devolve 403 a acessos automatizados; usar o Feedburner. O sítio
+      também bloqueia a leitura do corpo dos artigos, pelo que os excertos exigem
+      verificação manual.
+
+  - id: observador
+    nome: Observador
+    metodo: rss
+    ativa: true
+    intervalo_s: 3
+    dominios: [observador.pt]
+    feeds:
+      - https://observador.pt/feed/
+    nota: O feed principal traz poucos itens; complementar com pesquisa.
+
+  - id: exame-informatica
+    nome: Exame Informática
+    metodo: rss
+    ativa: true
+    intervalo_s: 3
+    dominios: [visao.pt]
+    feeds:
+      - https://visao.pt/exameinformatica/feed/
+
+  - id: dinheiro-vivo
+    nome: Dinheiro Vivo
+    metodo: rss
+    ativa: true
+    intervalo_s: 3
+    dominios: [dinheirovivo.pt]
+    feeds:
+      - https://www.dinheirovivo.pt/feed/
+
+  - id: dn
+    nome: Diário de Notícias
+    metodo: rss
+    ativa: true
+    intervalo_s: 3
+    dominios: [dn.pt]
+    feeds:
+      - https://www.dn.pt/feed/
+    nota: dn.pt/rss devolve 404; o caminho correto é /feed/.
+
+  - id: jornal-de-negocios
+    nome: Jornal de Negócios
+    metodo: rss
+    ativa: true
+    intervalo_s: 3
+    dominios: [jornaldenegocios.pt]
+    feeds:
+      - https://www.jornaldenegocios.pt/rss
+    codificacao: iso-8859-1
+    nota: Declara ISO-8859-1. Ler como UTF-8 parte todos os acentos.
+
+  - id: cm-jornal
+    nome: Correio da Manhã
+    metodo: rss
+    ativa: true
+    intervalo_s: 3
+    dominios: [cmjornal.pt]
+    feeds:
+      - https://www.cmjornal.pt/rss
+    codificacao: iso-8859-1
+
+  - id: sabado
+    nome: Sábado
+    metodo: rss
+    ativa: true
+    intervalo_s: 3
+    dominios: [sabado.pt]
+    feeds:
+      - https://www.sabado.pt/rss
+    codificacao: iso-8859-1
+
+  - id: rtp
+    nome: RTP
+    metodo: rss
+    ativa: true
+    intervalo_s: 3
+    dominios: [rtp.pt]
+    feeds:
+      - https://www.rtp.pt/noticias/rss
+
+  - id: noticias-ao-minuto
+    nome: Notícias ao Minuto
+    metodo: rss
+    ativa: true
+    intervalo_s: 3
+    dominios: [noticiasaominuto.com]
+    feeds:
+      - https://www.noticiasaominuto.com/rss/tech
+
+  - id: jn
+    nome: Jornal de Notícias
+    metodo: rss
+    ativa: false
+    intervalo_s: 3
+    dominios: [jn.pt]
+    feeds:
+      - https://www.jn.pt/feed/
+    nota: >-
+      Desativado: entra em ciclo de redirecionamentos, provavelmente por exigir cookie
+      de sessão. Reativar se aparecer um caminho de feed estável.
+
+  - id: expresso
+    nome: Expresso
+    metodo: rss
+    ativa: false
+    intervalo_s: 3
+    dominios: [feeds.feedburner.com]
+    feeds:
+      - https://feeds.feedburner.com/expresso-geral
+    nota: >-
+      Desativado: expresso.pt/rss devolve 403 e o feed do Feedburner traz um único
+      item, o que o torna inútil para recolha diária.
+
+  # --------------------------------------------------------------------- leak sites
+  - id: ransomware-live
+    nome: ransomware.live
+    metodo: api
+    ativa: true
+    intervalo_s: 65
+    dominios: [api.ransomware.live, ransomware.live]
+    endpoint: https://api.ransomware.live/v2/countryvictims/PT
+    nota: >-
+      Limite declarado de 1 pedido por minuto por endpoint; usamos 65 segundos por
+      margem. O nível gratuito declara-se para uso pessoal: pedir a chave PRO gratuita
+      antes de uso em produção. Nunca espelhar o conteúdo, nunca ligar a .onion, e
+      citar sempre o tracker. Tudo o que daqui vem entra na fila como alegação do
+      atacante e não pode ser promovido sem fonte independente.
+
+  # ------------------------------------------------------------------ fase 2 e além
+  - id: cncs
+    nome: Centro Nacional de Cibersegurança
+    metodo: navegador
+    ativa: false
+    intervalo_s: 10
+    dominios: [cncs.gov.pt, dyn.cncs.gov.pt]
+    nota: >-
+      Desativado. Os feeds WordPress usados no iocRadar já não existem, e o portal
+      está atrás de um WAF que devolve 307 em ciclo e 513 aos PDF. Exige Playwright.
+
+  - id: cnpd
+    nome: Comissão Nacional de Proteção de Dados
+    metodo: html
+    ativa: false
+    intervalo_s: 10
+    dominios: [cnpd.pt]
+    nota: >-
+      Desativado até haver parser. Sem RSS nem API: deliberações em PDF listadas em
+      /decisoes/deliberacoes/. É a fonte de maior credibilidade do projeto, porque são
+      factos confirmados por regulador, e a que exige mais cuidado.

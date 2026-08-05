@@ -1,0 +1,20 @@
+{
+  "confianca_llm": null,
+  "estado": "novo",
+  "extraccao": {},
+  "id": "cand-20260805-3ca8baf8",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "3ca8baf8841780ebee41ce5c6f4d9fe2db2829b95269ac9c5d6202e3dc582001",
+    "data": "2026-07-29",
+    "fonte": "noticias-ao-minuto",
+    "publicador": "Notícias ao Minuto",
+    "sha256": "49ae8743e17078918f23f0d2df6daf23b90ff1d3771f2a654ebde9833aea14f2",
+    "tipo_fonte": "noticia",
+    "url": "https://www.noticiasaominuto.com/tech/3029236/universidade-de-aveiro-alvo-de-ataque-informatico-copia-de-informacao#utm_source=rss-tech&utm_medium=rss&utm_campaign=rssfeed",
+    "url_canonica": "https://www.noticiasaominuto.com/tech/3029236/universidade-de-aveiro-alvo-de-ataque-informatico-copia-de-informacao"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Universidade de Aveiro alvo de ataque informático: \"Cópia de informação\"",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "safepay",
+        "texto": "thenavigatorcompany.com foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "safepay",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-03-17",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "thenavigatorcompany.com",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-babffb3d",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "babffb3d34ee9ad89baa5f471e5f6d74a709f5d38092c751c212cd3bfe889ddc",
+    "data": "2026-03-17",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "9deb88c75f1df1ba6ecc6cb5838d70301926725acc2da894f98708baccbba98c",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "thenavigatorcompany.com listada em site de extorsão (safepay)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

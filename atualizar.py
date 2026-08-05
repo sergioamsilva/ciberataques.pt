@@ -52,10 +52,28 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--site", action="store_true", help="constrói também o site")
     parser.add_argument("--sem-testes", action="store_true", help="salta a validação")
+    parser.add_argument(
+        "--recolher",
+        action="store_true",
+        help="vai à rede encher a fila de candidatos (não publica nada)",
+    )
+    parser.add_argument(
+        "--sem-llm", action="store_true", help="recolhe sem extração por modelo"
+    )
     args = parser.parse_args()
 
     garantir_dirs()
     py = python_do_venv()
+
+    if args.recolher:
+        t = passo("Recolher fontes e encher a fila")
+        comando = [py, "ingestao/recolher.py"]
+        if args.sem_llm:
+            comando.append("--sem-llm")
+        correr(comando)
+        feito(t)
+        # A recolha PARA AQUI. Promover um candidato a incidente é `python curar.py`,
+        # e publicar é um commit. O cron nunca toca em data/out.
 
     if not args.sem_testes:
         t = passo("Validar o registo")
@@ -64,6 +82,10 @@ def main() -> None:
 
     t = passo("Construir os índices")
     correr([py, "ingestao/construir.py"])
+    feito(t)
+
+    t = passo("Verificar integridade")
+    correr([py, "ingestao/verificar.py"])
     feito(t)
 
     if args.site:

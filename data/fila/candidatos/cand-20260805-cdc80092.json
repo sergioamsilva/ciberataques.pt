@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "qilin",
+        "texto": "Cimertex foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "qilin",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2025-11-20",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Cimertex",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-cdc80092",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "cdc80092583b4f804445d7b365e14e315bffb44ac371c9744206fb6f7d474862",
+    "data": "2025-11-20",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "ac1187050a6a5ee139475479f24782fcc50e15d2c6b96306eb70fc2edeaa9c71",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Cimertex listada em site de extorsão (qilin)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

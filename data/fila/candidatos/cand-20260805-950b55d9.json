@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "qilin",
+        "texto": "MEISA - Sines foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "qilin",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-06-03",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "MEISA - Sines",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-950b55d9",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "950b55d951c4e0434f52513420457b6d26b76b7af29ef775b85fc104e77105bb",
+    "data": "2026-06-03",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "f0e019cc7cbe43556608104556156d667a54ad1305105b98fea803a2eb1d080d",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "MEISA - Sines listada em site de extorsão (qilin)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

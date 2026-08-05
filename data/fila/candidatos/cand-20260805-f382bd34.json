@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "akira",
+        "texto": "Perfumes & Companhia foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "akira",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2024-06-19",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Perfumes & Companhia",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-f382bd34",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "f382bd34f48c24e35c2e8788493b91b74c6600d73b33a43619418263aa567dba",
+    "data": "2024-06-19",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "5dc7bb41642af119b5196e50acdbee8dc476fd37c58fd11811ca5db7c42dce10",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Perfumes & Companhia listada em site de extorsão (akira)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

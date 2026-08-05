@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "ciphbit",
+        "texto": "António Belém & António Gonçalve foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "ciphbit",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2025-09-24",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "António Belém & António Gonçalve",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-93b0b0c2",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "93b0b0c2b93c1d1243c249c6ea0988e6e1da3a69a4af0ded69a6b2733925347f",
+    "data": "2025-09-24",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "e99c3d30ffb12d05f03fb95f432d10c9ba0579a27472c453bb485167b3f547a8",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "António Belém & António Gonçalve listada em site de extorsão (ciphbit)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "confianca_llm": null,
+  "estado": "novo",
+  "extraccao": {},
+  "id": "cand-20260805-772544a7",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "772544a76eb1f4e4683a8ce92ce0fa79b2a21443bf9e9966867e61fc8941ff17",
+    "data": "2026-07-14",
+    "fonte": "noticias-ao-minuto",
+    "publicador": "Notícias ao Minuto",
+    "sha256": "e8e0526c9e5e170abab9667ee4a8b2272388e83856991cbb50e40a79c5ee98e7",
+    "tipo_fonte": "noticia",
+    "url": "https://www.noticiasaominuto.com/tech/3021199/ciberataque-ao-lidl-dados-de-clientes-em-portugal-nao-foram-afetados#utm_source=rss-tech&utm_medium=rss&utm_campaign=rssfeed",
+    "url_canonica": "https://www.noticiasaominuto.com/tech/3021199/ciberataque-ao-lidl-dados-de-clientes-em-portugal-nao-foram-afetados"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Ciberataque ao Lidl: Dados de clientes em Portugal \"não foram afetados\"",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

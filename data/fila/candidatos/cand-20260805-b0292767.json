@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "thegentlemen",
+        "texto": "Museu do Caramulo foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "thegentlemen",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-02-10",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Museu do Caramulo",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-b0292767",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "b029276744000b8f278b5ad4caed19800d42387a80bc52d4155c2358fbd9bfbc",
+    "data": "2026-02-10",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "72e8f9eb67d03b7f4e831ef382091184e22fe4e6e0e626eedd2e1066ccd323d6",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Museu do Caramulo listada em site de extorsão (thegentlemen)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

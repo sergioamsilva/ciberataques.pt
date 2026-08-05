@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "everest",
+        "texto": "Agriloja pt.3 foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "everest",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2023-08-29",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Agriloja pt.3",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-f3b37893",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "f3b378937b9a40facb4defaf599ae68d2e4f2dc3842ad54f2357a0a10ffe8b10",
+    "data": "2023-08-29",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "9e6a2433dfeeba3cfb6143019ab4d6e93e77b9ce1dec09353f0e49bfd88ad052",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Agriloja pt.3 listada em site de extorsão (everest)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

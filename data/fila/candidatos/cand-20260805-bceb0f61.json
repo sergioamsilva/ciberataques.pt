@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "lockbit2",
+        "texto": "seatarrabida.pt foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "lockbit2",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2022-05-22",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "seatarrabida.pt",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-bceb0f61",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "bceb0f61ad47011e89e88b671076cf8d1f9ebfe197307b0f463a22ea6421cc14",
+    "data": "2022-05-22",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "db01a83904489f4d0aa7b4a3ed7a0f4dc19d050c9a88f7c436551a0a286c196f",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "seatarrabida.pt listada em site de extorsão (lockbit2)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "lockbit3",
+        "texto": "cm-vimioso.pt foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "lockbit3",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2023-01-30",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "cm-vimioso.pt",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-52a6a296",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "52a6a2968aa1100f0d72ead1213782a6130a0463af51acbca405b160971be06c",
+    "data": "2023-01-30",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "ca27adfdf410f88d75f97406eacb1a7d58948efe4c2d019c1eddd9a031f73d56",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "cm-vimioso.pt listada em site de extorsão (lockbit3)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

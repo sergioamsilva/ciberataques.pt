@@ -3,8 +3,8 @@
     "1": 2,
     "2": 3,
     "3": 6,
-    "4": 2,
-    "5": 2,
+    "4": 1,
+    "5": 3,
     "7": 6
   },
   "incidentes_com_disputas": 6,
@@ -21,7 +21,8 @@
     "Lapsus$ Group": 1,
     "Ragnar Locker": 2,
     "RansomEXX": 1,
-    "ShinyHunters": 1
+    "ShinyHunters": 1,
+    "thegentlemen": 1
   },
   "por_estado_confirmacao": {
     "confirmado_pela_entidade": 18,

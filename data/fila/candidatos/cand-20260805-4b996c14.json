@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "lockbit3",
+        "texto": "portodelisboa.pt foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "lockbit3",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2022-12-29",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "portodelisboa.pt",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-4b996c14",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "4b996c14d2f3642b1243106b5953bff05807717980d83404e7c938574edb5e1b",
+    "data": "2022-12-29",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "47bf52862cefe0cbd04fa71fc47275700679ac35348ccd56d85d1eebd01f8c1f",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "portodelisboa.pt listada em site de extorsão (lockbit3)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

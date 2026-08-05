@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "thegentlemen",
+        "texto": "Aveiro Constructors Limited foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "thegentlemen",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-07-11",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Aveiro Constructors Limited",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-a6e83d35",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "a6e83d355f2fe6b7bd89b9b39de2b2472b2578223d5107d4b17b4de540222dfa",
+    "data": "2026-07-11",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "a058d696151118a206982071ff1cd560e54ec31ecc786cce11c2e75b86292dea",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Aveiro Constructors Limited listada em site de extorsão (thegentlemen)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

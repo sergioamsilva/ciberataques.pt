@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "qilin",
+        "texto": "Centro Científico e Cultural de Macau foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "qilin",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-07-13",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Centro Científico e Cultural de Macau",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-64fa40d4",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "64fa40d4b8f53d31ec939028a0248c03d45111a5af884ff63ab4847a33ddc42d",
+    "data": "2026-07-13",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "38333f634d18ec129fd4ed5130a527e2e669cf4b1703643bf2384207be8b1d38",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Centro Científico e Cultural de Macau listada em site de extorsão (qilin)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

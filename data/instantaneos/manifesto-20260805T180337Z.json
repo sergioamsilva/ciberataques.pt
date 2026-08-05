@@ -1,0 +1,82 @@
+{
+  "fontes": {
+    "2020-edp#0": {
+      "estado": "viva",
+      "sha256": "b28171b7c4f3d38803dcf1e8d190df462e7a891237baa32f00651c880919b456",
+      "url": "https://eco.sapo.pt/2020/04/15/centro-de-ciberseguranca-analisa-origem-do-ataque-a-edp/",
+      "verificado_em": "2026-08-05"
+    },
+    "2020-edp#1": {
+      "estado": "viva",
+      "sha256": "4908bdfed36dc5cf4078753505fdab6e7e7242ed9e3bac1622cbd5340ab6ef1d",
+      "url": "https://observador.pt/2020/04/16/altice-alvo-de-ataque-cibernetico-empresa-diz-que-consequencias-foram-nulas/",
+      "verificado_em": "2026-08-05"
+    },
+    "2020-edp#2": {
+      "estado": "nao_verificavel",
+      "url": "https://www.publico.pt/2020/05/07/tecnologia/noticia/edp-nao-comenta-informacao-hackers-alegadamente-partilharam-dark-web-1915604"
+    },
+    "2021-universidade-de-lisboa#0": {
+      "estado": "nao_verificavel",
+      "url": "https://www.publico.pt/2021/11/02/sociedade/noticia/universidade-lisboa-alvo-ataque-informatico-emails-seis-faculdades-suspensos-preventivamente-1983390"
+    },
+    "2022-camara-municipal-de-loures#0": {
+      "estado": "viva",
+      "sha256": "db7d20c9a9810814a5110037cb5415bdc710d512c6d912a7995921e9721339b6",
+      "url": "https://eco.sapo.pt/2022/09/22/camara-de-loures-alvo-de-ciberataque-malicioso-e-deliberado/",
+      "verificado_em": "2026-08-05"
+    },
+    "2022-camara-municipal-de-loures#1": {
+      "estado": "viva",
+      "sha256": "9d8e308f4e71cbcb179cd3c02b5357e847ae8f775d42efdb35a0d50f8dbf6bc6",
+      "url": "https://observador.pt/2022/09/22/camara-de-loures-alvo-de-ciberataque-malicioso-e-deliberado/",
+      "verificado_em": "2026-08-05"
+    },
+    "2022-camara-municipal-de-loures#2": {
+      "estado": "viva",
+      "sha256": "3f2f0df4632fb57d38ad9dd4e9ac40aedfc6c27bab54b90e8d14cf88f4d75c0a",
+      "url": "https://observador.pt/2022/09/29/sistemas-informaticos-da-camara-de-loures-normalizalizados-apos-ciberataque/",
+      "verificado_em": "2026-08-05"
+    },
+    "2022-emgfa#0": {
+      "estado": "nao_verificavel",
+      "url": "https://www.publico.pt/2022/09/08/sociedade/noticia/piratas-atacam-estadomaiorgeneral-forcas-armadas-colocam-documentos-nato-venda-internet-2019803"
+    },
+    "2022-emgfa#1": {
+      "estado": "viva",
+      "sha256": "69941a27d5a1b910f89043fe61118581c5927932b5eb76bd9d5b296641f45a35",
+      "url": "https://observador.pt/2022/09/08/documentos-da-nato-enviados-a-portugal-foram-intercetados-por-hackers-e-colocados-a-venda-na-dark-web/",
+      "verificado_em": "2026-08-05"
+    },
+    "2022-emgfa#2": {
+      "estado": "viva",
+      "sha256": "2fdf27c99de33218df8e71cf2da5a11f50541696d3dde1030d8dd72dfb8ddc68",
+      "url": "https://eco.sapo.pt/2022/09/08/documentos-portugueses-da-nato-apanhados-a-venda-na-darkweb/",
+      "verificado_em": "2026-08-05"
+    }
+  },
+  "gerado_em": "2026-08-05T18:03:37+00:00",
+  "registo": {
+    "2020-edp": "8289fef9780ba1e02c0e737a401f881b88c65a253340aa6496bd01b60497b0d9",
+    "2021-universidade-de-lisboa": "1a56bc2d86a5e4687d9e3cefe6e247e5ad703f42d942df0f52e6f8ce0210d26a",
+    "2022-camara-municipal-de-loures": "252382be5656fd6aed99aa090761208a9ad4e0a6d7253001b341dd2cd6de10fa",
+    "2022-emgfa": "6b4d18325753214a06f7d0e3bce566c27cc48f834879edf9038fa0ede2d4c292",
+    "2022-germano-de-sousa": "94e75bbeefda769f9eff85e2777fa3b97cffca0e4e5ca8c8d66154ea9b7ba53e",
+    "2022-hospital-garcia-de-orta": "f3d15781ab25e969d735570fde82a031084e6c96357c7b0e15a5d6508c6830b2",
+    "2022-impresa": "7718b93e4afea26f26a7ae7fc02571aa7e1c5ed99c6b05cce69289424a488b0d",
+    "2022-lusa": "777888f36b9b941f4f34fe51a5f5f3ae3bd6bbd2cfb7068ee5999743e005a96a",
+    "2022-seguranca-social": "9ca76f3f56c36532ec18ffd85bd80ae187e4a0f2f6c8f6fdede02910d8c1a47e",
+    "2022-sonae-mc": "93d2569a9f4e10e84e0f70dce5693cfbea402006195fe7fb2115683f28b5130e",
+    "2022-tap": "c94d5e39b453beb2f68793765f6e986bd3abd1df05a2e2c390d5fd04161ccf29",
+    "2022-universidade-da-beira-interior": "cfc347e8accc231e8239623c0548b83586a95a3a62e0db7e99bcc0f5d1be3b91",
+    "2022-vodafone-portugal": "6da41f2e123ff2f0aabd7956440710835c0d20ccf3970df29d170bfccf46b353",
+    "2023-sesaram": "3e56f24bb0a121ac8ed13f0bb4eff6f04210f4ddf27e172b74ffe8e8ebd6e000",
+    "2024-ama": "62eb5db298f53593740fc707c6081d483ff870efc25381eb08ae6da4ddd83ac3",
+    "2024-universidade-do-algarve": "9721abbc4a756dbfe50fb40b99be8045d9883a06e068ae724aa8b80f957b3029",
+    "2026-aguas-de-portugal": "0fd0d50ed26ee0d4df9dd1c6412bef3810cc59c81955eab5b5db7ac6ba0a999f",
+    "2026-canvas-instituicoes-portuguesas": "cf817f332e6771eefef71da79d9e3c1e8f51e9272344eaf998f04c2f10febdc3",
+    "2026-ctt": "aac0cd87d5562b006bb8a91701df5586fdccb2e5683402de51d1c944b8a9d7c4",
+    "2026-metro-mondego": "7ca3e83b0a0036994b864903a0a3cbce95192a6856fb5f4902e1f07c1c17135b",
+    "2026-universidade-de-aveiro": "920594eb8cfdd42b8ac840a4464334db9818b79d27b4822fd8356e2935722753"
+  }
+}

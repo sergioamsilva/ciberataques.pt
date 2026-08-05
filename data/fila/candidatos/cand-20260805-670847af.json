@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "lockbit3",
+        "texto": "divultec.pt foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "lockbit3",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2022-09-05",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "divultec.pt",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-670847af",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "670847af2430730993bd1f8cd1baa2034138227f592eb8fec7b0659a3ba89d2b",
+    "data": "2022-09-05",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "f313d12952f6a3229c398cb2b15e8fa14050bde16af9ac58ff0a74477757b638",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "divultec.pt listada em site de extorsão (lockbit3)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

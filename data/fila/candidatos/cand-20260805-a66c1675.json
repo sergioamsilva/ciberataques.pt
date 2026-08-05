@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "lockbit2",
+        "texto": "smtuc.pt foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "lockbit2",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2022-05-01",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "smtuc.pt",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-a66c1675",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "a66c1675e07388a9fe6b303efa9c601acea4fb948942af5d2a866b8e1e7313c4",
+    "data": "2022-05-01",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "68b9ab138065700500298d6130a9f7154984aa58a3a844663aedda3ed34d7ac9",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "smtuc.pt listada em site de extorsão (lockbit2)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

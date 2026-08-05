@@ -126,6 +126,18 @@
     "url_arquivo": null
   },
   {
+    "data": "2026-07-16",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-metro-mondego",
+    "indice": 4,
+    "publicador": "ransomware.live",
+    "tipo": "leak_site",
+    "titulo": "Metro Mondego listada no site de extorsão do grupo thegentlemen",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_arquivo": null
+  },
+  {
     "contem_declaracao_da_entidade": true,
     "data": "2026-05-08",
     "estado_ligacao": "viva",

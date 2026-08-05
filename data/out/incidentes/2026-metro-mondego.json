@@ -1,11 +1,17 @@
 {
   "ator": {
     "atribuicao_por": "reivindicacao",
-    "confianca": "baixa",
-    "grupo": null,
-    "nota": "O grupo responsável reivindicou publicamente o ataque, alegando estar na posse de informação da empresa e anunciando a intenção de a divulgar. As fontes consultadas não o identificam pelo nome."
+    "confianca": "media",
+    "grupo": "thegentlemen",
+    "nota": "A empresa não identificou o grupo. A atribuição assenta na listagem da Metro Mondego no site de extorsão do grupo thegentlemen, a 16 de julho de 2026, dez dias após o ataque e dez dias antes da comunicação pública da empresa. É uma reivindicação do próprio grupo, não uma atribuição por autoridade."
   },
-  "correcoes": [],
+  "correcoes": [
+    {
+      "data": "2026-08-05",
+      "descricao": "Acrescentada a atribuição ao grupo thegentlemen, a partir da listagem no tracker público de sites de extorsão. O registo anterior indicava ator não identificado.",
+      "origem": "curadoria"
+    }
+  ],
   "cronologia": [
     {
       "data": "2026-07-06",
@@ -87,6 +93,17 @@
       "tipo": "noticia",
       "titulo": "Ransomware: O que se sabe sobre o ataque à Metro Mondego e que dados pessoais podem estar em causa?",
       "url": "https://tek.sapo.pt/noticias/internet/artigos/ransomware-o-que-se-sabe-sobre-o-ataque-a-metro-mondego-e-que-dados-pessoais-podem-estar-em-causa/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2026-07-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "Metro Mondego listada no site de extorsão do grupo thegentlemen",
+      "url": "https://www.ransomware.live/map/PT",
       "url_arquivo": null
     }
   ],

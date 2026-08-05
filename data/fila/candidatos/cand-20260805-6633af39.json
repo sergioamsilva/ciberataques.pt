@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "thegentlemen",
+        "texto": "MicroChem foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "thegentlemen",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-03-19",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "MicroChem",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-6633af39",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "6633af39c243ca06c1032fe3de1f90af5c3f0d014984ce4b26cbb990621a9a06",
+    "data": "2026-03-19",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "b0709b8a6579c4468699c750244d70711272ae1438149d11b39cb07f8db93b5d",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "MicroChem listada em site de extorsão (thegentlemen)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "lapsus$",
+        "texto": "Impresa foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "lapsus$",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2022-01-01",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Impresa",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-8e492b13",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "8e492b132fefad1ef11798a679660cb33faba521a4381d6bafb5902b0cc3696c",
+    "data": "2022-01-01",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "723b38e8e43f15f96b805cc042e0222660bb5f2b476a69693b443539f642b8c4",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": {
+    "incidente_id": "2022-impresa",
+    "razao": "mesma entidade, 1 dias de diferença, tipos em comum: ransomware",
+    "similaridade": 0.99,
+    "titulo": "Ciberataque ao grupo Impresa (SIC e Expresso)"
+  },
+  "titulo_origem": "Impresa listada em site de extorsão (lapsus$)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "qilin",
+        "texto": "Espaço Casa foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "qilin",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2025-12-04",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Espaço Casa",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-0cfebe32",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "0cfebe32d9b2b905d48dc467e4bb318c10d5080a5d126a5710b8f7c0047faef2",
+    "data": "2025-12-04",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "d434e1f01fe5b8376481c793b239ff8b8a23ed3eb667c3784e06002621d69eb4",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Espaço Casa listada em site de extorsão (qilin)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

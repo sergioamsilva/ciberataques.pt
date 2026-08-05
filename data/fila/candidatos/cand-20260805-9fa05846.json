@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "qilin",
+        "texto": "Misericórdia de Santo Tirso foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "qilin",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-06-16",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Misericórdia de Santo Tirso",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-9fa05846",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "9fa058465ea469d7ff56a83cf7d2dac2f0593b0c2a9645d30290d6105ca9ba7e",
+    "data": "2026-06-16",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "8ad24d0e8cadf0df40acda6449fca208b4dc5c26374e4a1f9b22c8e022cb0977",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Misericórdia de Santo Tirso listada em site de extorsão (qilin)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

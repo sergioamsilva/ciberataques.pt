@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "m3rx",
+        "texto": "createinfor.pt foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "m3rx",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-07-26",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "createinfor.pt",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-0b391deb",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "0b391debebacdeb49ebd6f57b777ba21fefee0af691aa05af1bdb4540f1c6ddc",
+    "data": "2026-07-26",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "965de7315386c7553e04b5cd4a8f18cfcc3524f4c1c2ec2fca146ff0d9eafbb4",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "createinfor.pt listada em site de extorsão (m3rx)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

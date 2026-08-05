@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "novo",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "BrainCipher",
+        "texto": "valedolobo.com foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "BrainCipher",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2025-05-05",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "valedolobo.com",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-5ae8e8d0",
+  "motivo_rejeicao": null,
+  "origem": {
+    "chave": "5ae8e8d0abfbe12c4ec5d526514a8b8446b9d004efb3f0ea553ebe7833896a02",
+    "data": "2025-05-05",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "a4e0a0d64be6c45615506377b8db86b8c77e756079dc81058b09f527028ce7fc",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "valedolobo.com listada em site de extorsão (BrainCipher)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

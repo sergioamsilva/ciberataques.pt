@@ -16,13 +16,24 @@ entidades. A imprensa cobre caso a caso e segue em frente. Faltava o arquivo.
 ## Como está organizado
 
 ```
-referencia/     A autoridade: esquema, taxonomia, entidades. Ler primeiro.
-ingestao/       Pipeline Python. Não vai à rede em condições normais.
+referencia/     A autoridade: esquema, taxonomia, entidades, fontes. Ler primeiro.
+ingestao/       Pipeline. rede.py é o único ponto de saída para a internet.
+data/fila/      Candidatos por rever e rejeitados. Versionado.
 data/out/       O registo canónico. Um ficheiro JSON por incidente, versionado.
 site/           Astro 7 + Tailwind v4. Lê data/out em tempo de compilação.
-testes/         Validação do esquema e das invariantes editoriais.
+testes/         Validação do esquema, das invariantes editoriais e da rede.
 deploy/         nginx e o guião de publicação.
 ```
+
+O caminho de um facto até ao site:
+
+```
+fontes  →  triagem  →  dedup  →  extração  →  FILA  ⟂  curadoria  →  commit  →  site
+        determinística        modelo LLM              humana
+```
+
+O símbolo ⟂ é onde o automatismo para. Não há caminho automático entre uma notícia e
+o site: `ingestao/recolher.py` termina na fila e nunca escreve em `data/out`.
 
 O ficheiro mais importante do repositório não é código: é
 [POLITICA-EDITORIAL.md](POLITICA-EDITORIAL.md). Manda no resto.
@@ -43,12 +54,27 @@ O ficheiro mais importante do repositório não é código: é
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 cd site && npm install && cd ..
 
-python atualizar.py          # valida e reconstrói os índices
-python atualizar.py --site   # + build do Astro e índice de pesquisa
-.venv/bin/python -m pytest   # só a validação
+python atualizar.py                     # valida, reconstrói índices, verifica integridade
+python atualizar.py --site              # + build do Astro e índice de pesquisa
+python atualizar.py --recolher          # + vai à rede encher a fila (não publica)
+python atualizar.py --recolher --sem-llm  # recolhe sem gastar tokens
+python curar.py                         # rever a fila e promover candidatos
+python curar.py --resumo                # só ver o que está por rever
+.venv/bin/python -m pytest              # só a validação
 ```
 
 Pré-visualizar: `cd site && npx astro preview`.
+
+Verificar ligações citadas (semanal, no cron):
+`.venv/bin/python ingestao/instantaneo.py --verificar-fontes`. Distingue três estados:
+`revisto` (o artigo mudou desde que o citámos), `MORREU` (404 ou 410) e
+`nao_verificavel` (o servidor recusa automatismos, como faz o Público, o que **não**
+é uma ligação morta).
+
+O modelo corre via OpenRouter. A chave vai em `~/.config/ciberataques/segredos.env`
+como `OPENROUTER_API_KEY`; o modelo escolhe-se em `LLM_MODELO` e o teto diário de
+custo em `MAX_CANDIDATOS_DIA`. Sem chave, a recolha e a triagem funcionam na mesma e
+os candidatos ficam por extrair.
 
 ### Acrescentar um incidente
 

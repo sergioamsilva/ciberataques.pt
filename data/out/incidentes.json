@@ -38,14 +38,14 @@
   },
   {
     "ano": 2026,
-    "ator": null,
+    "ator": "thegentlemen",
     "data": "2026-07-06",
     "entidades_afetadas": [
       "metro-mondego"
     ],
     "estado_confirmacao": "confirmado_pela_entidade",
     "id": "2026-metro-mondego",
-    "n_fontes": 4,
+    "n_fontes": 5,
     "precisao_data": "dia",
     "setor": "transportes",
     "tem_disputas": false,
