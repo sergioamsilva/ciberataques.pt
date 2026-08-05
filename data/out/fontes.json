@@ -127,6 +127,19 @@
     "url_arquivo": null
   },
   {
+    "contem_declaracao_da_entidade": true,
+    "data": "2026-07-30",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-universidade-de-aveiro",
+    "indice": 5,
+    "publicador": "Jornal de Notícias",
+    "tipo": "noticia",
+    "titulo": "Piratas informáticos roubam base de dados da Universidade de Aveiro",
+    "url": "https://www.jn.pt/justica/artigo/piratas-informaticos-roubam-base-de-dados-da-universidade-de-aveiro/18111434",
+    "url_arquivo": null
+  },
+  {
     "data": "2026-07-13",
     "estado_ligacao": "viva",
     "excerto": null,

@@ -5,7 +5,12 @@
     "grupo": null,
     "nota": "Sem atribuição pública."
   },
-  "correcoes": [],
+  "correcoes": [
+    {
+      "data": "2026-08-06",
+      "descricao": "Acrescentado o comprometimento de pelo menos uma base de dados e as notificações à Polícia Judiciária e à CNPD, a partir da cobertura do Jornal de Notícias de 30 de julho. O registo anterior referia apenas contas de correio eletrónico e a notificação ao CNCS."
+    }
+  ],
   "cronologia": [
     {
       "data": "2026-07-28",
@@ -30,6 +35,12 @@
       "fonte": 3,
       "texto": "O reitor revela que a universidade só teve conhecimento do ciberataque por contacto dos próprios atacantes, que violaram contas de correio eletrónico, extraíram informação e procuravam chegar ao que descreveram como um acordo justo.",
       "tipo": "reivindicacao"
+    },
+    {
+      "data": "2026-07-30",
+      "fonte": 5,
+      "texto": "Apura-se que o comprometimento abrangeu pelo menos uma base de dados, além das contas de correio eletrónico, e que foram notificados o Centro Nacional de Cibersegurança, a Polícia Judiciária e a Comissão Nacional de Proteção de Dados.",
+      "tipo": "divulgacao"
     }
   ],
   "dados_pessoais": {
@@ -39,7 +50,7 @@
       "contacto",
       "comunicacoes"
     ],
-    "nota": "Foi comprometido um número reduzido de contas de correio eletrónico, com exposição de dados pessoais e institucionais. A extensão da informação copiada estava por apurar à data desta revisão.",
+    "nota": "Foi comprometido um número reduzido de contas de correio eletrónico e pelo menos uma base de dados, com exposição de dados pessoais e institucionais. O reitor sustenta que houve cópia de informação e não perda. A extensão do que foi copiado estava por apurar à data desta revisão, e a universidade não quantificou titulares afetados.",
     "titulares_declarados": null
   },
   "data": {
@@ -116,6 +127,18 @@
       "titulo": "Universidade de Aveiro alvo de ataque informático",
       "url": "https://www.diariocoimbra.pt/2026/07/29/universidade-de-aveiro-alvo-de-ataque-informatico/",
       "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-07-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Jornal de Notícias",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Piratas informáticos roubam base de dados da Universidade de Aveiro",
+      "url": "https://www.jn.pt/justica/artigo/piratas-informaticos-roubam-base-de-dados-da-universidade-de-aveiro/18111434",
+      "url_arquivo": null
     }
   ],
   "id": "2026-universidade-de-aveiro",
@@ -135,18 +158,18 @@
     "banco_de_portugal": null,
     "cmvm": null,
     "cncs": true,
-    "cnpd": null,
-    "pj": null
+    "cnpd": true,
+    "pj": true
   },
   "relacionados": [
     "2024-universidade-do-algarve"
   ],
-  "resumo": "A Universidade de Aveiro detetou a 28 de julho de 2026 um acesso indevido aos seus sistemas de informação, ocorrido dias antes, que comprometeu um número reduzido de contas de correio eletrónico e expôs dados pessoais e institucionais. A instituição só teve conhecimento do ataque por contacto dos próprios atacantes, que tinham extraído informação e procuravam chegar ao que descreveram como um acordo justo. O reitor indicou ter havido cópia de informação, e não perda, sem que a extensão estivesse apurada. O caso foi reportado às autoridades, e a comunidade académica foi alertada para contactos anormais que dele possam decorrer.",
+  "resumo": "A Universidade de Aveiro detetou a 28 de julho de 2026 um acesso indevido aos seus sistemas de informação, ocorrido dias antes, que comprometeu um número reduzido de contas de correio eletrónico e pelo menos uma base de dados, com exposição de dados pessoais e institucionais. A instituição só teve conhecimento do ataque por contacto dos próprios atacantes, que tinham extraído informação e procuravam chegar ao que descreveram como um acordo justo. O reitor indicou ter havido cópia de informação, e não perda, sem que a extensão estivesse apurada. O caso foi reportado às autoridades, e a comunidade académica foi alertada para contactos anormais que dele possam decorrer.",
   "revisao": {
     "curador": "ss",
-    "data": "2026-08-05",
-    "nota": "Incidente recente e em apuramento. A data de ocorrência não foi divulgada: as fontes referem apenas que terá acontecido dias antes da deteção, pelo que a precisão fica como desconhecida. Note-se que a deteção não foi da instituição: foram os atacantes que a contactaram, num padrão de extorsão sem encriptação. Rever quando for divulgada a extensão dos dados copiados.",
-    "versao": 2
+    "data": "2026-08-06",
+    "nota": "Terceira revisão. Uma pesquisa apontava também o envolvimento do Serviço de Informações de Segurança; a leitura do artigo citado não o sustenta, e por isso não foi registado. O que se confirma é a notificação ao CNCS, à Polícia Judiciária e à CNPD. Continua por apurar a extensão do que foi copiado, a atribuição e a existência de pedido de resgate — sabe-se apenas que os atacantes procuraram contacto para chegar ao que descreveram como um acordo justo.",
+    "versao": 3
   },
   "setor": "educacao_investigacao",
   "tipos_ataque": [
