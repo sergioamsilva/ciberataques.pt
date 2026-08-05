@@ -1,0 +1,199 @@
+---
+/*
+ * O painel que abre a página de um tipo de ataque.
+ *
+ * Antes, o facto mais forte desta página — quarenta e nove incidentes, o maior
+ * conjunto do registo, espalhados por uma década — estava escrito como
+ * "49 incidentes registados." em corpo de texto, e passava despercebido. Um
+ * número que custou meses a reunir merece ser mostrado como número.
+ *
+ * Três blocos, e nenhum é decoração: a fila editorial de estatísticas responde
+ * "quanto e desde quando"; a régua de anos responde "quando"; a barra de
+ * confirmação responde à pergunta que este projeto existe para responder, que é
+ * "e quanto disto está confirmado".
+ */
+import ReguaDeAnos from "./ReguaDeAnos.astro";
+import { nome, type EstadoConfirmacao, type ResumoIncidente } from "../lib/dados";
+
+interface Props {
+  lista: ResumoIncidente[];
+  rotulo: string;
+}
+const { lista, rotulo } = Astro.props;
+
+const porAno: Record<string, number> = {};
+for (const r of lista) porAno[String(r.ano)] = (porAno[String(r.ano)] ?? 0) + 1;
+
+const anos = Object.keys(porAno).map(Number).sort((a, b) => a - b);
+const setores = new Set(lista.map((r) => r.setor));
+const grupos = new Set(lista.map((r) => r.ator).filter(Boolean) as string[]);
+
+const estatisticas = [
+  { valor: lista.length, rotulo: lista.length === 1 ? "incidente" : "incidentes" },
+  { valor: setores.size, rotulo: setores.size === 1 ? "setor" : "setores" },
+  { valor: grupos.size, rotulo: grupos.size === 1 ? "grupo identificado" : "grupos identificados" },
+];
+
+/* A ordem é a da escala de confiança, do mais firme ao mais frágil. */
+const ORDEM: EstadoConfirmacao[] = [
+  "confirmado_por_regulador",
+  "confirmado_pela_entidade",
+  "reportado_por_media",
+  "noticiado_por_uma_fonte",
+  "alegado_pelo_atacante",
+  "desmentido",
+];
+const COR: Record<EstadoConfirmacao, string> = {
+  confirmado_pela_entidade: "var(--color-conf-entidade)",
+  confirmado_por_regulador: "var(--color-conf-regulador)",
+  reportado_por_media: "var(--color-conf-media)",
+  noticiado_por_uma_fonte: "var(--color-conf-unica)",
+  alegado_pelo_atacante: "var(--color-conf-atacante)",
+  desmentido: "var(--color-conf-desmentido)",
+};
+
+const confirmacao = ORDEM.map((estado) => ({
+  estado,
+  n: lista.filter((r) => r.estado_confirmacao === estado).length,
+})).filter((x) => x.n > 0);
+
+const semConfirmacao = lista.filter(
+  (r) => r.estado_confirmacao === "alegado_pelo_atacante",
+).length;
+const percentagem = Math.round((semConfirmacao / lista.length) * 100);
+---
+
+<section class="mt-10" aria-label={`Panorama dos incidentes do tipo ${rotulo}`}>
+  {/*
+    Fila editorial: filete fino em cima, número grande em cifras tabulares, e uma
+    régua de acento que cresce por baixo. Sem caixas, sem sombras — é uma página de
+    arquivo, não um painel de controlo.
+  */}
+  <dl class="revelar grid grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-4">
+    {estatisticas.map((e) => (
+      <div class="estatistica regua pt-3">
+        <dt class="mono-etiqueta">{e.rotulo}</dt>
+        <dd
+          class="mt-1 font-mono text-4xl tabular-nums leading-none text-[var(--color-tinta)]"
+          data-contar={e.valor}
+        >
+          {e.valor}
+        </dd>
+        <span class="risca mt-3 block h-0.5 w-full bg-[var(--color-acento)]" aria-hidden="true"></span>
+      </div>
+    ))}
+    {anos.length > 0 && (
+      <div class="estatistica regua pt-3">
+        <dt class="mono-etiqueta">período</dt>
+        <dd class="mt-1 font-mono text-4xl tabular-nums leading-none text-[var(--color-tinta)]">
+          {anos[0]}<span class="text-[var(--color-suave)]">–</span>{String(anos[anos.length - 1]).slice(2)}
+        </dd>
+        <span class="risca mt-3 block h-0.5 w-full bg-[var(--color-acento)]" aria-hidden="true"></span>
+      </div>
+    )}
+  </dl>
+
+  <div class="mt-10 grid gap-10 lg:grid-cols-[1fr_auto] lg:gap-12">
+    <div>
+      <h2 class="mono-etiqueta">Quando</h2>
+      <div class="mt-4">
+        <ReguaDeAnos porAno={porAno} />
+      </div>
+    </div>
+
+    <div class="lg:w-80">
+      <h2 class="mono-etiqueta">Quanto disto está confirmado</h2>
+      {/* Gap de 2px entre segmentos: a superfície separa, não uma linha. */}
+      <div class="revelar mt-4">
+        <div class="flex h-3 w-full gap-0.5" role="img"
+             aria-label={confirmacao.map((c) => `${nome("estados_confirmacao", c.estado)}: ${c.n}`).join("; ")}>
+          {confirmacao.map((c) => (
+            <span
+              class="block first:rounded-l-[2px] last:rounded-r-[2px]"
+              style={`width: ${(c.n / lista.length) * 100}%; background: ${COR[c.estado]}`}
+            ></span>
+          ))}
+        </div>
+        <ul class="mt-4 space-y-2" role="list">
+          {confirmacao.map((c) => (
+            <li class="flex items-baseline gap-2.5 text-sm">
+              <span
+                class="mt-1 block h-2.5 w-2.5 shrink-0 rounded-[1px]"
+                style={`background: ${COR[c.estado]}`}
+                aria-hidden="true"
+              ></span>
+              <span class="font-mono text-xs tabular-nums text-[var(--color-suave)]">
+                {String(c.n).padStart(2, "0")}
+              </span>
+              <span class="min-w-0 leading-snug">{nome("estados_confirmacao", c.estado)}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {semConfirmacao > 0 && (
+        <p class="mt-4 border-l-2 border-[var(--color-acento)] pl-3 text-sm text-[var(--color-suave)]">
+          {percentagem}% dos casos deste tipo assenta apenas na palavra de quem diz
+          ter atacado. É o que a escala de confiança serve para dizer, e nenhum
+          outro registo o mostra.
+        </p>
+      )}
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (prefers-reduced-motion: no-preference) {
+    /* A régua de acento cresce da esquerda quando o bloco entra. */
+    :global(html.js) .estatistica .risca {
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    :global(html.js) .visivel .estatistica .risca,
+    :global(html.js) .estatistica.visivel .risca {
+      transform: scaleX(1);
+    }
+  }
+</style>
+
+<script>
+  /*
+   * Contagem crescente dos números do painel.
+   *
+   * Só corre quando o elemento entra no ecrã, só uma vez, e não corre de todo se
+   * o utilizador pedir movimento reduzido — nesse caso o número já está no HTML,
+   * escrito pelo servidor, e fica como está. Sem JavaScript acontece o mesmo.
+   */
+  const reduzido = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const alvos = document.querySelectorAll<HTMLElement>("[data-contar]");
+
+  if (!reduzido && alvos.length && "IntersectionObserver" in window) {
+    const contar = (el: HTMLElement) => {
+      const fim = Number(el.dataset.contar);
+      if (!Number.isFinite(fim) || fim <= 0) return;
+      const duracao = 900;
+      const inicio = performance.now();
+      const passo = (agora: number) => {
+        const t = Math.min(1, (agora - inicio) / duracao);
+        /* easeOutCubic: rápido a arrancar, a assentar no fim. */
+        const e = 1 - Math.pow(1 - t, 3);
+        el.textContent = String(Math.round(fim * e));
+        if (t < 1) requestAnimationFrame(passo);
+        else el.textContent = String(fim);
+      };
+      requestAnimationFrame(passo);
+    };
+
+    const observador = new IntersectionObserver(
+      (entradas) => {
+        for (const entrada of entradas) {
+          if (!entrada.isIntersecting) continue;
+          contar(entrada.target as HTMLElement);
+          observador.unobserve(entrada.target);
+        }
+      },
+      { rootMargin: "0px 0px -10% 0px" },
+    );
+    alvos.forEach((el) => observador.observe(el));
+  }
+</script>

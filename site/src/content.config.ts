@@ -36,6 +36,18 @@ const tipos = defineCollection({
         }),
       )
       .min(1),
+    /*
+     * As fases por que o ataque passa, por ordem. Opcional: só faz sentido nos
+     * tipos que têm uma sequência reconhecida na literatura, e é preferível não
+     * ter nenhuma a inventar uma.
+     *
+     * `visivel_a_partir_de` é o índice, começado em 1, da fase a partir da qual a
+     * organização atacada tipicamente dá por ela. É o número que explica porque a
+     * data de divulgação de um incidente é quase sempre posterior à do ataque.
+     */
+    fases: z.array(z.string()).min(3).optional(),
+    visivel_a_partir_de: z.number().int().min(1).optional(),
+    nota_fases: z.string().optional(),
     revisto_em: z.string(),
   }),
 });

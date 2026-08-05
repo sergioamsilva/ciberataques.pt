@@ -5,6 +5,18 @@ resumo: >-
   Software que bloqueia o acesso aos dados de uma organização e exige pagamento
   para o devolver. Desde 2019 raramente se limita a isso: os dados são primeiro
   copiados, e a ameaça passa a ser publicá-los.
+fases:
+  - Acesso inicial
+  - Reconhecimento
+  - Elevação de privilégios
+  - Movimento lateral
+  - Exfiltração
+  - Encriptação
+  - Extorsão
+visivel_a_partir_de: 6
+nota_fases: >-
+  Entre a entrada e o efeito visível podem passar dias ou semanas. Na Impresa
+  apurou-se que os atacantes estiveram vários dias dentro da rede antes de agir.
 revisto_em: "2026-08-05"
 referencias:
   - autores: "Oz, H., Aris, A., Levi, A., Uluagac, A. S."

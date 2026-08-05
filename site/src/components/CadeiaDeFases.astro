@@ -1,0 +1,110 @@
+---
+/*
+ * A cadeia de fases: o elemento de assinatura da página de um tipo de ataque.
+ *
+ * O texto do explicador já dizia isto numa frase — "a literatura descreve um ciclo
+ * com fases: acesso inicial, reconhecimento, elevação de privilégios..." — e uma
+ * frase é o pior formato possível para uma sequência. Aqui a sequência é
+ * desenhada, e o que ela mostra é a coisa que interessa e que a prosa enterrava:
+ * o ponto a partir do qual a organização atacada dá por ela.
+ *
+ * Esse ponto é a razão pela qual, neste registo, a data de divulgação é quase
+ * sempre posterior à data do ataque. Passa a ver-se em vez de se ter de explicar.
+ *
+ * Sem JavaScript aparece desenhada de uma vez; o filete e as marcas só se animam
+ * quando há quem os revele e quem não peça movimento reduzido.
+ */
+interface Props {
+  fases: string[];
+  visivelAPartirDe?: number;
+  nota?: string;
+}
+const { fases, visivelAPartirDe, nota } = Astro.props;
+
+const primeiraVisivel = visivelAPartirDe ?? fases.length + 1;
+const nInvisiveis = Math.max(0, primeiraVisivel - 1);
+const nVisiveis = fases.length - nInvisiveis;
+---
+
+<figure class="revelar cadeia mt-8">
+  <figcaption class="mono-etiqueta">O que acontece, por ordem</figcaption>
+
+  <div class="relative mt-5" style={`--n: ${fases.length}`}>
+    {/*
+      O filete que liga as fases, atrás das marcas. Termina no centro da última
+      marca e não na margem da página: uma linha que continua para lá do fim
+      sugere uma fase que não existe.
+
+      Só aparece na disposição em linha. Em ecrã estreito as fases empilham numa
+      grelha, e uma horizontal atravessaria as colunas sem ligar coisa nenhuma.
+    */}
+    <span
+      class="fio absolute left-1.5 top-[7px] hidden h-px bg-[var(--color-borda-forte)] lg:block"
+      style="right: calc(100% / var(--n) - 0.375rem)"
+      aria-hidden="true"
+    ></span>
+
+    <ol class="relative grid grid-cols-2 gap-y-6 sm:grid-cols-4 lg:flex lg:gap-x-2" role="list">
+      {fases.map((fase, i) => {
+        const visivel = i + 1 >= primeiraVisivel;
+        return (
+          <li class="flex min-w-0 flex-1 flex-col items-start gap-2">
+            <span
+              class:list={[
+                "marca block h-3.5 w-3.5 rounded-full border-2 bg-[var(--color-papel)]",
+                visivel
+                  ? "border-[var(--color-acento)]"
+                  : "border-[var(--color-borda-forte)]",
+              ]}
+              style={`--atraso: ${i * 70}ms`}
+              aria-hidden="true"
+            ></span>
+            <span class="font-mono text-[0.625rem] tabular-nums text-[var(--color-suave)]">
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <span
+              class:list={[
+                "-mt-1 text-sm leading-tight",
+                visivel ? "text-[var(--color-tinta)]" : "text-[var(--color-suave)]",
+              ]}
+            >
+              {fase}
+            </span>
+          </li>
+        );
+      })}
+    </ol>
+  </div>
+
+  {visivelAPartirDe && (
+    <div class="mt-6 grid gap-3 sm:grid-cols-2">
+      <p class="border-l-2 border-[var(--color-borda-forte)] pl-4 text-sm text-[var(--color-suave)]">
+        <span class="mono-etiqueta block">Fases 01–{String(nInvisiveis).padStart(2, "0")}</span>
+        Nada disto é visível de fora. A organização está a ser atacada e não sabe.
+      </p>
+      <p class="border-l-2 border-[var(--color-acento)] pl-4 text-sm text-[var(--color-corpo)]">
+        <span class="mono-etiqueta block text-[var(--color-acento)]">
+          Fases {String(primeiraVisivel).padStart(2, "0")}–{String(fases.length).padStart(2, "0")}
+        </span>
+        {nVisiveis === 1
+          ? "Só aqui há efeito visível — e é quando o relógio público começa a contar."
+          : "Só aqui há efeito visível — e é quando o relógio público começa a contar."}
+      </p>
+    </div>
+  )}
+
+  {nota && <p class="mt-4 max-w-2xl text-sm text-[var(--color-suave)]">{nota}</p>}
+</figure>
+
+<style>
+  @media (prefers-reduced-motion: no-preference) {
+    :global(html.js) .cadeia .fio {
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    :global(html.js) .cadeia.visivel .fio {
+      transform: scaleX(1);
+    }
+  }
+</style>

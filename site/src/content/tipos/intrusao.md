@@ -5,6 +5,16 @@ resumo: >-
   Acesso não autorizado a sistemas, quando o objetivo final não é público. É a
   classificação mais comum deste registo, e isso diz mais sobre o que as
   organizações portuguesas divulgam do que sobre o que lhes acontece.
+fases:
+  - Acesso inicial
+  - Persistência
+  - Reconhecimento
+  - Movimento lateral
+  - Recolha
+visivel_a_partir_de: 5
+nota_fases: >-
+  Sem encriptação nem extorsão não há efeito visível nenhum, e é por isso que
+  estes casos se descobrem tantas vezes por aviso de terceiros.
 revisto_em: "2026-08-05"
 referencias:
   - autores: "Cichonski, P., Millar, T., Grance, T., Scarfone, K."

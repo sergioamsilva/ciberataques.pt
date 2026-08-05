@@ -2,6 +2,8 @@
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CartaoIncidente from "../../components/CartaoIncidente.astro";
+import PainelDoTipo from "../../components/PainelDoTipo.astro";
+import CadeiaDeFases from "../../components/CadeiaDeFases.astro";
 import { incidentes, nome, taxonomia } from "../../lib/dados";
 
 /*
@@ -79,11 +81,18 @@ const grafo = explicador
 
     <header class="mt-6">
       <h1 class="mt-2 text-4xl sm:text-5xl">{rotulo}</h1>
-      {descricao && <p class="mt-4 max-w-2xl text-[var(--color-suave)]">{descricao}</p>}
-      <p class="mt-4 text-lg">
-        {lista.length} {lista.length === 1 ? "incidente registado" : "incidentes registados"}.
+      {/*
+        A entrada da taxonomia é uma instrução de curadoria — "usar mesmo quando há
+        também exfiltração, acrescentando exfiltracao_dados" — escrita para quem
+        classifica e não para quem lê, com um nome de campo cru lá dentro. O resumo
+        do explicador é escrito para o leitor. Quando existe, manda ele.
+      */}
+      <p class="mt-4 max-w-2xl text-lg leading-relaxed text-[var(--color-corpo)]">
+        {explicador?.data.resumo ?? descricao}
       </p>
     </header>
+
+    {lista.length > 0 && <PainelDoTipo lista={lista} rotulo={rotulo} />}
 
     {Conteudo && (
       <section class="mt-12" aria-labelledby="h-explicador">
@@ -98,6 +107,14 @@ const grafo = explicador
             um caso concreto.
           </p>
         </div>
+
+        {explicador!.data.fases && (
+          <CadeiaDeFases
+            fases={explicador!.data.fases}
+            visivelAPartirDe={explicador!.data.visivel_a_partir_de}
+            nota={explicador!.data.nota_fases}
+          />
+        )}
 
         <div
           class="prosa mt-8 max-w-2xl leading-relaxed [&_a]:underline [&_h2]:mt-9 [&_h2]:text-xl [&_li]:mt-1.5 [&_ol]:mt-3 [&_ol]:list-decimal [&_ol]:pl-5 [&_p]:mt-4 [&_ul]:mt-3 [&_ul]:list-disc [&_ul]:pl-5"
