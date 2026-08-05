@@ -93,6 +93,24 @@
     "tipo": "entidade_publica",
     "url": "https://www.cm-figfoz.pt"
   },
+  "camara-municipal-da-guarda": {
+    "chaves": [
+      "camara municipal da guarda",
+      "municipio da guarda",
+      "camara da guarda"
+    ],
+    "distrito": "Guarda",
+    "id": "camara-municipal-da-guarda",
+    "incidentes": [
+      "2026-camara-municipal-da-guarda"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município da Guarda",
+    "nome_curto": "Câmara Municipal da Guarda",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.mun-guarda.pt"
+  },
   "camara-municipal-de-alcanena": {
     "chaves": [
       "camara municipal de alcanena",
@@ -203,6 +221,25 @@
     "setor": "autarquias",
     "tipo": "entidade_publica",
     "url": "https://www.cm-odemira.pt"
+  },
+  "camara-municipal-de-santa-comba-dao": {
+    "chaves": [
+      "camara municipal de santa comba dao",
+      "municipio de santa comba dao",
+      "camara de santa comba dao",
+      "santa comba dao"
+    ],
+    "distrito": "Viseu",
+    "id": "camara-municipal-de-santa-comba-dao",
+    "incidentes": [
+      "2024-camara-municipal-de-santa-comba-dao"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município de Santa Comba Dão",
+    "nome_curto": "Câmara Municipal de Santa Comba Dão",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://cm-santacombadao.pt"
   },
   "camara-municipal-do-barreiro": {
     "chaves": [
@@ -531,6 +568,24 @@
     "nome_curto": "MNE",
     "setor": "administracao_publica",
     "tipo": "entidade_publica"
+  },
+  "misericordia-de-santo-tirso": {
+    "chaves": [
+      "santa casa da misericordia de santo tirso",
+      "misericordia de santo tirso",
+      "scmst"
+    ],
+    "distrito": "Porto",
+    "id": "misericordia-de-santo-tirso",
+    "incidentes": [
+      "2026-misericordia-de-santo-tirso"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Santa Casa da Misericórdia de Santo Tirso",
+    "nome_curto": "Misericórdia de Santo Tirso",
+    "setor": "saude",
+    "tipo": "associacao",
+    "url": "https://www.scmst.pt"
   },
   "oestecim": {
     "chaves": [

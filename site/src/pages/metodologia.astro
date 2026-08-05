@@ -132,6 +132,19 @@ const umaFonte = ag.distribuicao_fontes_por_incidente["1"] ?? 0;
         incidentes existirem com uma única fonte, mais frágil é a cobertura.
       </p>
 
+      <div class="mt-6 border-l-2 border-[var(--color-acento)] pl-5">
+        <p class="mono-etiqueta">O viés também é nosso</p>
+        <p class="mt-1.5 text-sm leading-relaxed">
+          A maior parte das fontes deste registo vem de um punhado de órgãos nacionais.
+          Um município pequeno não é notícia em Lisboa, e uma recolha que só olhasse
+          para Lisboa herdaria essa cegueira e apresentá-la-ia como o retrato do país.
+          Já nos aconteceu: um ataque a uma câmara municipal esteve por registar apesar
+          de existir comunicado da própria autarquia, porque procurámos no sítio errado.
+          A lista de fontes passou a incluir imprensa regional, e a regra de curadoria
+          passou a ser procurar sempre no sítio da própria entidade.
+        </p>
+      </div>
+
       <dl class="mt-6 divide-y divide-[var(--color-borda)] border-y border-[var(--color-borda)]">
         {distribuicao.map(([n, quantos]) => (
           <div class="flex items-baseline justify-between gap-4 py-2.5">

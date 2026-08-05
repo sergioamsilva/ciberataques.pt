@@ -75,6 +75,25 @@
   },
   {
     "ano": 2026,
+    "ator": "Qilin",
+    "data": "2026-06-06",
+    "entidades_afetadas": [
+      "misericordia-de-santo-tirso"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-misericordia-de-santo-tirso",
+    "n_fontes": 3,
+    "precisao_data": "semana",
+    "setor": "saude",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "intrusao"
+    ],
+    "titulo": "Ciberataque à Santa Casa da Misericórdia de Santo Tirso"
+  },
+  {
+    "ano": 2026,
     "ator": "thegentlemen",
     "data": "2026-06-04",
     "entidades_afetadas": [
@@ -129,6 +148,25 @@
       "cadeia_fornecimento"
     ],
     "titulo": "Fuga de dados da rede de cacifos Locky dos CTT"
+  },
+  {
+    "ano": 2026,
+    "ator": null,
+    "data": "2026-02-12",
+    "entidades_afetadas": [
+      "camara-municipal-da-guarda"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-camara-municipal-da-guarda",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal da Guarda"
   },
   {
     "ano": 2025,
@@ -262,6 +300,25 @@
       "exposicao_credenciais"
     ],
     "titulo": "Exposição de credenciais de utilizadores do Portal das Finanças"
+  },
+  {
+    "ano": 2024,
+    "ator": null,
+    "data": "2024-06-14",
+    "entidades_afetadas": [
+      "camara-municipal-de-santa-comba-dao"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2024-camara-municipal-de-santa-comba-dao",
+    "n_fontes": 2,
+    "precisao_data": "semana",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal de Santa Comba Dão"
   },
   {
     "ano": 2023,

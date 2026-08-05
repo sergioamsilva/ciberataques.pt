@@ -146,6 +146,74 @@ fontes:
       Desativado: expresso.pt/rss devolve 403 e o feed do Feedburner traz um único
       item, o que o torna inútil para recolha diária.
 
+  # ------------------------------------------------------- imprensa regional
+  #
+  # Acrescentada depois de uma falha concreta: o ciberataque ao município de Santa
+  # Comba Dão, em junho de 2024, teve comunicado da própria câmara e cobertura numa
+  # rádio regional, e não foi noticiado por nenhum órgão nacional. A recolha, que só
+  # tinha títulos nacionais, era estruturalmente incapaz de o apanhar.
+  #
+  # Um registo que aspira a cobrir 308 municípios não pode depender de três jornais
+  # de Lisboa. Estes cinco feeds não resolvem a lacuna — cobrem uma fatia do país —
+  # mas mudam a natureza do problema, de cego para incompleto.
+  #
+  # Feeds verificados a 2026-08-05.
+  - id: diario-de-coimbra
+    nome: Diário de Coimbra
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    # Redireciona para diariocoimbra.pt, sem a preposição. Ambos declarados: sem o
+    # segundo, a camada de rede recusa o destino do redirecionamento, como deve.
+    dominios: [diariodecoimbra.pt, diariocoimbra.pt]
+    feeds:
+      - https://www.diariodecoimbra.pt/feed/
+
+  - id: diario-de-viseu
+    nome: Diário de Viseu
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [diariodeviseu.pt, diarioviseu.pt]
+    feeds:
+      - https://www.diariodeviseu.pt/rss
+
+  - id: jornal-do-centro
+    nome: Jornal do Centro
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [jornaldocentro.pt]
+    feeds:
+      - https://www.jornaldocentro.pt/feed/
+
+  - id: regiao-de-leiria
+    nome: Região de Leiria
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [regiaodeleiria.pt]
+    feeds:
+      - https://www.regiaodeleiria.pt/feed/
+
+  - id: noticias-de-aveiro
+    nome: Notícias de Aveiro
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [noticiasdeaveiro.pt]
+    feeds:
+      - https://www.noticiasdeaveiro.pt/feed/
+
+  - id: cidade-hoje
+    nome: Cidade Hoje
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [cidadehoje.pt]
+    feeds:
+      - https://www.cidadehoje.pt/feed/
+
   # --------------------------------------------------------------------- leak sites
   - id: ransomware-live
     nome: ransomware.live

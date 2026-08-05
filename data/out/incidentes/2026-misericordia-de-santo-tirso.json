@@ -1,0 +1,127 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "Qilin",
+    "nota": "A instituição não identificou o atacante. A atribuição assenta na listagem no site de extorsão do grupo Qilin, a 16 de junho de 2026, uma semana após a divulgação do incidente."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-06-06",
+      "fonte": 0,
+      "texto": "O ataque ocorre durante o fim de semana.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2026-06-08",
+      "fonte": 0,
+      "texto": "O ataque é detetado na manhã de segunda-feira. A instituição fecha o sistema hermeticamente ao exterior e uma equipa externa começa a apurar a origem e o que foi afetado.",
+      "tipo": "detecao"
+    },
+    {
+      "data": "2026-06-09",
+      "fonte": 0,
+      "texto": "O vice-provedor descreve o impacto nas unidades de trabalho médico externas, com cancelamento de consultas. Os cuidados a residentes nas estruturas residenciais para pessoas idosas mantêm-se sem impacto.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-06-09",
+      "fonte": 1,
+      "texto": "O caso é reportado à Polícia Judiciária. A direção de recursos financeiros e tecnologias de informação pede aos trabalhadores que não liguem, desliguem nem reiniciem equipamentos por iniciativa própria, e que não abram mensagens, anexos ou ligações suspeitas.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-06-16",
+      "fonte": 2,
+      "texto": "O grupo Qilin lista a instituição no seu site de extorsão.",
+      "tipo": "reivindicacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados. Tratando-se de uma instituição que presta cuidados de saúde e apoio social, estariam em causa categorias sensíveis, mas nada foi confirmado.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-06-08",
+    "divulgacao": "2026-06-09",
+    "inicio": "2026-06-06",
+    "precisao": "semana"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["misericordia-de-santo-tirso"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["setor-social", "cuidados-de-saude", "instituicao-particular"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-06-09",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Santa Casa da Misericórdia de Santo Tirso alvo de ciberataque no fim de semana",
+      "url": "https://observador.pt/2026/06/09/santa-casa-da-misericordia-de-santo-tirso-alvo-de-ciberataque-no-fim-de-semana/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-06-09",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Jornal de Notícias",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Santa Casa da Misericórdia de Santo Tirso alvo de ciberataque",
+      "url": "https://www.jn.pt/pais/artigo/santa-casa-da-misericordia-de-santo-tirso-alvo-de-ciberataque/18093444",
+      "url_arquivo": null
+    },
+    {
+      "data": "2026-06-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "Misericórdia de Santo Tirso listada no site de extorsão do grupo Qilin",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-misericordia-de-santo-tirso",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "unidades de trabalho médico externas",
+      "consultas, com cancelamentos",
+      "sistemas de informação da instituição"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": ["2023-sesaram", "2022-hospital-garcia-de-orta"],
+  "resumo": "A Santa Casa da Misericórdia de Santo Tirso foi alvo de um ciberataque durante o fim de semana de 6 de junho de 2026, detetado na manhã de segunda-feira. A instituição fechou o sistema ao exterior e recorreu a uma equipa externa para apurar a origem e a extensão. O impacto fez-se sentir sobretudo nas unidades de trabalho médico externas, com cancelamento de consultas, enquanto os cuidados a residentes nas estruturas residenciais para pessoas idosas se mantiveram sem impacto. O caso foi reportado à Polícia Judiciária. Uma semana depois, o grupo Qilin listou a instituição no seu site de extorsão.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Primeiro incidente do registo numa instituição particular de solidariedade social, um setor com pouca cobertura mediática e grande exposição a dados sensíveis. Estava na fila de candidatos desde a primeira recolha, apanhado pelo módulo do tracker.",
+    "versao": 1
+  },
+  "setor": "saude",
+  "tipos_ataque": ["ransomware", "intrusao"],
+  "titulo": "Ciberataque à Santa Casa da Misericórdia de Santo Tirso"
+}

@@ -1,0 +1,106 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública. O município não divulgou o tipo de ataque nem qualquer elemento sobre a autoria."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2024-06-14",
+      "fonte": 0,
+      "texto": "O município é alvo de um ataque informático no final da semana. É divulgada uma primeira comunicação na sexta-feira.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2024-06-17",
+      "fonte": 0,
+      "texto": "Em comunicado de atualização, o município indica que os serviços de segurança informática permitiram recuperar documentação arquivada, e que todo o sistema informático está a ser revisto para prevenir problemas futuros.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2024-06-17",
+      "fonte": 1,
+      "texto": "O presidente da câmara anuncia que os serviços ao público serão gradualmente disponibilizados a partir da quarta-feira seguinte.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "O município não se pronunciou sobre comprometimento de dados. A ausência de declaração não equivale a ausência de impacto.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2024-06-14",
+    "divulgacao": "2024-06-14",
+    "inicio": "2024-06-14",
+    "precisao": "semana"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["camara-municipal-de-santa-comba-dao"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["administracao-local", "comunicacao-parca"],
+  "fontes": [
+    {
+      "data": "2024-06-17",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Município de Santa Comba Dão",
+      "sha256": null,
+      "tipo": "comunicado",
+      "titulo": "Comunicado: atualização da situação — ataque informático",
+      "url": "https://cm-santacombadao.pt/8711/comunicado-atualizacao-da-situacao---ataque-informatico",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2024-06-17",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Alive FM",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Santa Comba Dão: Município foi alvo de ataque informático",
+      "url": "https://alivefm.pt/santa-comba-dao-municipio-foi-alvo-de-ataque-informatico/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2024-camara-municipal-de-santa-comba-dao",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "serviços ao público",
+      "sistema informático municipal",
+      "documentação arquivada"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2024-camara-municipal-de-chaves",
+    "2023-camara-municipal-de-alcanena"
+  ],
+  "resumo": "O município de Santa Comba Dão foi alvo de um ataque informático no final da semana de 14 de junho de 2024. Em comunicado de atualização publicado na segunda-feira seguinte, o município indicou ter recuperado documentação arquivada e estar a rever todo o sistema informático. Os serviços ao público foram gradualmente repostos a partir da quarta-feira. O comunicado não refere o tipo de ataque, eventual comprometimento de dados, pedido de resgate nem notificação de autoridades.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Sustentado por comunicado do próprio município, que é a fonte mais forte possível — e ainda assim um dos registos mais pobres em informação de todo o arquivo. O comunicado reconhece o incidente e pede desculpa pelo incómodo, sem esclarecer natureza, extensão, dados ou autoridades notificadas. Registamos essa parcimónia em vez de a preencher: os campos de notificação ficam a null, que significa 'não é público', e não a false. A data de ocorrência é aproximada, inferida da referência a uma comunicação anterior de sexta-feira.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque à Câmara Municipal de Santa Comba Dão"
+}

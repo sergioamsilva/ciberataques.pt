@@ -47,6 +47,35 @@ falhou. Não entram no registo enquanto não houver fonte que os sustente.
   inferência: não semear.
 - **2017 a 2019** estão praticamente por fazer.
 
+## O viés que quase nos escapou: a imprensa nacional
+
+O ciberataque ao município de **Santa Comba Dão** (junho de 2024) esteve por registar
+até alguém perguntar por ele. Não por falta de fontes: havia **comunicado da própria
+câmara**, que é a fonte mais forte que este registo pode ter. Faltava era ter procurado
+onde ele estava.
+
+A causa é estrutural e mensurável. Nesta data, 121 das 147 fontes citadas — **82%** —
+vinham de apenas três órgãos nacionais (Observador, Público, ECO). A imprensa regional
+contribuía com **uma** fonte, e os comunicados diretos de entidades com **duas**.
+
+Um município de onze mil habitantes não é notícia em Lisboa. Se a recolha só olha para
+Lisboa, o registo herda essa cegueira e depois apresenta-a como se fosse o retrato do
+país. É o mesmo viés que `/metodologia/#vies` assume, mas agravado por uma decisão
+nossa: a lista de fontes.
+
+**O que mudou:** `referencia/fontes.yaml` passa a incluir imprensa regional (Diário de
+Coimbra, Diário de Viseu, Jornal do Centro, Região de Leiria, Notícias de Aveiro,
+Cidade Hoje). Não resolve — são seis títulos para 308 municípios —, mas muda a natureza
+do problema, de cego para incompleto.
+
+**O que continua por resolver:** os comunicados publicados nos sítios das próprias
+câmaras. São a melhor fonte possível e não há forma prática de os recolher sem raspar
+308 sítios. Por agora, dependem de pesquisa manual e de quem nos avise.
+
+**Regra de curadoria que daqui resulta:** ao investigar um caso local, procurar sempre
+(a) no sítio da própria entidade e (b) sem restringir a pesquisa a órgãos nacionais.
+Foi assim que Santa Comba Dão apareceu, à segunda tentativa.
+
 ## Armadilhas das fontes
 
 - **Datas de publicação**: o Público, o ECO e o Observador trazem a data no próprio URL,

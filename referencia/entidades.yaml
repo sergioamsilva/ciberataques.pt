@@ -233,6 +233,33 @@
   url: https://www.cm-alcanena.pt
   chaves: [camara municipal de alcanena, municipio de alcanena, camara de alcanena]
 
+- id: camara-municipal-da-guarda
+  nome: Município da Guarda
+  nome_curto: Câmara Municipal da Guarda
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Guarda
+  url: https://www.mun-guarda.pt
+  chaves: [camara municipal da guarda, municipio da guarda, camara da guarda]
+
+- id: misericordia-de-santo-tirso
+  nome: Santa Casa da Misericórdia de Santo Tirso
+  nome_curto: Misericórdia de Santo Tirso
+  setor: saude
+  tipo: associacao
+  distrito: Porto
+  url: https://www.scmst.pt
+  chaves: [santa casa da misericordia de santo tirso, misericordia de santo tirso, scmst]
+
+- id: camara-municipal-de-santa-comba-dao
+  nome: Município de Santa Comba Dão
+  nome_curto: Câmara Municipal de Santa Comba Dão
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Viseu
+  url: https://cm-santacombadao.pt
+  chaves: [camara municipal de santa comba dao, municipio de santa comba dao, camara de santa comba dao, santa comba dao]
+
 - id: camara-municipal-de-chaves
   nome: Município de Chaves
   nome_curto: Câmara Municipal de Chaves

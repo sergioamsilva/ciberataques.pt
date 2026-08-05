@@ -1,0 +1,116 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-02-12",
+      "fonte": 0,
+      "texto": "Vários serviços municipais ficam bloqueados na sequência do que o município descreve como um incidente cibernético complexo.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2026-02-20",
+      "fonte": 0,
+      "texto": "O presidente da câmara reconhece publicamente que os serviços se mantêm bloqueados desde 12 de fevereiro e que o impacto no funcionamento vai continuar.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-06-17",
+      "fonte": 1,
+      "texto": "Quatro meses depois, os serviços ainda não recuperaram na totalidade. O município abre concurso público para aquisição e implementação de infraestruturas de cibersegurança, com preço base de 423.655 euros acrescido de IVA, depois de um primeiro procedimento ter ficado deserto.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-06-17",
+      "fonte": 1,
+      "texto": "O município estima um investimento total de dois milhões de euros em cibersegurança e tecnologias de informação, e reconhece que as fontes de financiamento são escassas ou inexistentes.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados de munícipes.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-02-12",
+    "divulgacao": "2026-02-20",
+    "inicio": "2026-02-12",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["camara-municipal-da-guarda"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "administracao-local",
+    "recuperacao-prolongada",
+    "custo-de-remediacao"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-02-20",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara da Guarda com vários serviços bloqueados após \"incidente cibernético complexo\"",
+      "url": "https://observador.pt/2026/02/20/camara-da-guarda-com-varios-servicos-bloqueados-apos-incidente-cibernetico-complexo/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-06-17",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara da Guarda abre concurso para infraestruturas de cibersegurança após ataque informático",
+      "url": "https://observador.pt/2026/06/17/camara-da-guarda-abre-concurso-para-infraestruturas-de-ciberseguranca-apos-ataque-informatico/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-camara-municipal-da-guarda",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "vários serviços municipais, bloqueados durante meses",
+      "sistemas de informação do município"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2023-camara-municipal-de-gondomar",
+    "2023-camara-municipal-de-alcanena"
+  ],
+  "resumo": "A 12 de fevereiro de 2026, vários serviços do município da Guarda ficaram bloqueados na sequência do que a autarquia descreveu como um incidente cibernético complexo. Quatro meses depois os serviços ainda não tinham recuperado na totalidade, e o município abriu concurso público para aquisição de infraestruturas de cibersegurança, com preço base de 423.655 euros, depois de um primeiro procedimento ter ficado deserto. A autarquia estimou um investimento total de dois milhões de euros em cibersegurança e tecnologias de informação, reconhecendo que as fontes de financiamento eram escassas ou inexistentes.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "É o incidente com recuperação mais prolongada do registo: quatro meses sem reposição total, contra as cinco semanas do SESARAM e as semanas da Figueira da Foz. O campo de custo fica vazio de propósito: os dois milhões referidos são investimento futuro em infraestrutura, não custo de recuperação do incidente, e confundi-los inflacionaria o número. A cobertura assinala que o incidente ocorreu no mesmo dia em que decorriam buscas da Polícia Judiciária no município, no âmbito de uma investigação sem relação conhecida com o ataque. Registamos a coincidência sem inferir ligação, e sem identificar pessoas visadas por essa investigação.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque à Câmara Municipal da Guarda"
+}

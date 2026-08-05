@@ -150,6 +150,44 @@
     "url_arquivo": null
   },
   {
+    "contem_declaracao_da_entidade": true,
+    "data": "2026-06-09",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-misericordia-de-santo-tirso",
+    "indice": 0,
+    "publicador": "Observador",
+    "tipo": "noticia",
+    "titulo": "Santa Casa da Misericórdia de Santo Tirso alvo de ciberataque no fim de semana",
+    "url": "https://observador.pt/2026/06/09/santa-casa-da-misericordia-de-santo-tirso-alvo-de-ciberataque-no-fim-de-semana/",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2026-06-09",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-misericordia-de-santo-tirso",
+    "indice": 1,
+    "publicador": "Jornal de Notícias",
+    "tipo": "noticia",
+    "titulo": "Santa Casa da Misericórdia de Santo Tirso alvo de ciberataque",
+    "url": "https://www.jn.pt/pais/artigo/santa-casa-da-misericordia-de-santo-tirso-alvo-de-ciberataque/18093444",
+    "url_arquivo": null
+  },
+  {
+    "data": "2026-06-16",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-misericordia-de-santo-tirso",
+    "indice": 2,
+    "publicador": "ransomware.live",
+    "tipo": "leak_site",
+    "titulo": "Misericórdia de Santo Tirso listada no site de extorsão do grupo Qilin",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_arquivo": null
+  },
+  {
     "data": "2026-06-04",
     "estado_ligacao": "viva",
     "excerto": null,
@@ -197,6 +235,32 @@
     "tipo": "noticia",
     "titulo": "CTT confirma roubo de dados do Locky, mas garante exposição \"limitada\" de dados dos clientes afetados",
     "url": "https://tek.sapo.pt/noticias/internet/artigos/ctt-confirma-roubo-de-dados-do-locky-mas-garante-exposicao-limitada-de-dados-dos-clientes-afetados/",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2026-02-20",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-camara-municipal-da-guarda",
+    "indice": 0,
+    "publicador": "Observador",
+    "tipo": "noticia",
+    "titulo": "Câmara da Guarda com vários serviços bloqueados após \"incidente cibernético complexo\"",
+    "url": "https://observador.pt/2026/02/20/camara-da-guarda-com-varios-servicos-bloqueados-apos-incidente-cibernetico-complexo/",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2026-06-17",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-camara-municipal-da-guarda",
+    "indice": 1,
+    "publicador": "Observador",
+    "tipo": "noticia",
+    "titulo": "Câmara da Guarda abre concurso para infraestruturas de cibersegurança após ataque informático",
+    "url": "https://observador.pt/2026/06/17/camara-da-guarda-abre-concurso-para-infraestruturas-de-ciberseguranca-apos-ataque-informatico/",
     "url_arquivo": null
   },
   {
@@ -477,6 +541,31 @@
     "tipo": "noticia",
     "titulo": "Portal das Finanças passa a ter autenticação reforçada com código por SMS",
     "url": "https://www.publico.pt/2025/07/09/economia/noticia/portal-financas-passa-autenticacao-reforcada-codigo-sms-2139540",
+    "url_arquivo": null
+  },
+  {
+    "data": "2024-06-17",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2024-camara-municipal-de-santa-comba-dao",
+    "indice": 0,
+    "publicador": "Município de Santa Comba Dão",
+    "tipo": "comunicado",
+    "titulo": "Comunicado: atualização da situação — ataque informático",
+    "url": "https://cm-santacombadao.pt/8711/comunicado-atualizacao-da-situacao---ataque-informatico",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2024-06-17",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2024-camara-municipal-de-santa-comba-dao",
+    "indice": 1,
+    "publicador": "Alive FM",
+    "tipo": "noticia",
+    "titulo": "Santa Comba Dão: Município foi alvo de ataque informático",
+    "url": "https://alivefm.pt/santa-comba-dao-municipio-foi-alvo-de-ataque-informatico/",
     "url_arquivo": null
   },
   {
