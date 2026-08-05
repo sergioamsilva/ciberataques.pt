@@ -1,0 +1,134 @@
+---
+import { formatarData, nome, type ResumoIncidente, type EstadoConfirmacao } from "../lib/dados";
+
+interface Props {
+  incidentes: ResumoIncidente[];
+}
+const { incidentes } = Astro.props;
+
+/*
+ * O cronograma de proveniência: a assinatura do site.
+ *
+ * Cada incidente é uma marca, colocada no tempo e tonalizada pelo grau de
+ * confirmação. Diz duas coisas ao mesmo tempo que nenhum outro registo diz junto:
+ * quando aconteceram, e quanto do que se sabe está realmente sustentado.
+ *
+ * A leitura é literal: o facto confirmado tem peso, a alegação por confirmar quase
+ * se apaga. Um ano cheio de marcas escuras é um ano bem documentado; um ano de
+ * marcas pálidas é um ano em que sabemos pouco e devíamos desconfiar do que
+ * julgamos saber.
+ */
+
+const ORDEM: EstadoConfirmacao[] = [
+  "confirmado_pela_entidade",
+  "confirmado_por_regulador",
+  "reportado_por_media",
+  "noticiado_por_uma_fonte",
+  "alegado_pelo_atacante",
+  "desmentido",
+];
+
+const TOM: Record<EstadoConfirmacao, string> = {
+  confirmado_pela_entidade: "var(--color-conf-entidade)",
+  confirmado_por_regulador: "var(--color-conf-regulador)",
+  reportado_por_media: "var(--color-conf-media)",
+  noticiado_por_uma_fonte: "var(--color-conf-unica)",
+  alegado_pelo_atacante: "var(--color-conf-atacante)",
+  desmentido: "var(--color-conf-desmentido)",
+};
+
+const anos = [...new Set(incidentes.map((i) => i.ano))].sort((a, b) => a - b);
+const primeiro = anos[0];
+const ultimo = anos[anos.length - 1];
+const todosOsAnos = Array.from({ length: ultimo - primeiro + 1 }, (_, i) => primeiro + i);
+
+// Agrupa por ano e ordena dentro do ano pelo grau de confirmação: o mais
+// sustentado assenta em baixo, como fundações.
+const porAno = new Map<number, ResumoIncidente[]>();
+for (const inc of incidentes) {
+  if (!porAno.has(inc.ano)) porAno.set(inc.ano, []);
+  porAno.get(inc.ano)!.push(inc);
+}
+for (const lista of porAno.values()) {
+  lista.sort(
+    (a, b) =>
+      ORDEM.indexOf(a.estado_confirmacao) - ORDEM.indexOf(b.estado_confirmacao) ||
+      a.data.localeCompare(b.data),
+  );
+}
+
+const maximo = Math.max(...[...porAno.values()].map((l) => l.length), 1);
+// Marcas com corpo suficiente para a tonalidade se ler. Abaixo de ~14px de altura
+// a rampa ordinal deixa de ser distinguível e o gráfico passa a dizer só "volume",
+// perdendo metade do que tem para dizer.
+const ALTURA_MARCA = 14;
+const ESPACO = 4;
+const alturaTotal = maximo * (ALTURA_MARCA + ESPACO);
+
+// Presentes na legenda apenas os níveis que o registo efetivamente usa: uma
+// legenda com categorias vazias faz o leitor procurar o que não existe.
+const usados = ORDEM.filter((e) => incidentes.some((i) => i.estado_confirmacao === e));
+
+let indiceGlobal = 0;
+---
+
+<figure class="revelar">
+  <figcaption class="sr-only">
+    Cronograma dos {incidentes.length} incidentes registados entre {primeiro} e {ultimo}.
+    Cada marca é um incidente; quanto mais escura, mais sustentado está o que dele se sabe.
+  </figcaption>
+
+  <div class="overflow-x-auto pb-1">
+    {/* Largura mínima ajustada para caber num telemóvel sem scroll horizontal: com
+        o pico fora do ecrã inicial, o gráfico perdia aquilo que tem para dizer. */}
+    <ol
+      class="flex min-w-[19rem] items-end gap-1 sm:gap-3"
+      style={`height: ${alturaTotal}px`}
+    >
+      {todosOsAnos.map((ano) => {
+        const lista = porAno.get(ano) ?? [];
+        return (
+          <li class="group flex min-w-0 max-w-20 flex-1 flex-col justify-end gap-1">
+            {lista.map((inc) => {
+              indiceGlobal += 1;
+              return (
+                <a
+                  href={`/incidentes/${inc.id}/`}
+                  class="marca block w-full transition-[filter,transform] duration-200 hover:scale-y-125 focus-visible:scale-y-125"
+                  style={`height: ${ALTURA_MARCA}px; background-color: ${TOM[inc.estado_confirmacao]}; --atraso: ${Math.min(indiceGlobal * 22, 900)}ms`}
+                  title={`${inc.titulo} — ${formatarData(inc.data, inc.precisao_data)} — ${nome("estados_confirmacao", inc.estado_confirmacao)}`}
+                >
+                  <span class="sr-only">{inc.titulo}</span>
+                </a>
+              );
+            })}
+          </li>
+        );
+      })}
+    </ol>
+
+    <ol class="mt-2 flex min-w-[19rem] gap-1 sm:gap-3" aria-hidden="true">
+      {todosOsAnos.map((ano) => (
+        <li class="min-w-0 flex-1 text-center">
+          <span class="font-mono text-[0.625rem] tabular-nums text-[var(--color-suave)]">
+            {String(ano).slice(2)}
+          </span>
+        </li>
+      ))}
+    </ol>
+  </div>
+
+  {/* Legenda: obrigatória, porque a identidade nunca pode depender só da cor. */}
+  <ul class="mt-6 flex flex-wrap gap-x-5 gap-y-2">
+    {usados.map((estado) => (
+      <li class="flex items-center gap-2">
+        <span
+          class="block h-2.5 w-2.5 flex-none"
+          style={`background-color: ${TOM[estado]}`}
+          aria-hidden="true"
+        ></span>
+        <span class="mono-etiqueta">{nome("estados_confirmacao", estado)}</span>
+      </li>
+    ))}
+  </ul>
+</figure>

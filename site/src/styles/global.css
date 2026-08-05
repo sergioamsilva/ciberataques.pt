@@ -24,16 +24,28 @@
   --color-sobre-tinta: #c8c2b8;
 
   /*
-   * Escala de confirmação. As cores acompanham a palavra, nunca a substituem:
-   * cada selo mostra sempre o texto do estado. Uma cor não se lê em voz alta
-   * nem sobrevive a um leitor de ecrã.
+   * Escala de confirmação: rampa ORDINAL, não categórica.
+   *
+   * Trocar a ordem destes seis níveis mudaria o significado, o que faz deles uma
+   * escala ordinal — e uma escala ordinal leva uma só matiz com passos monótonos
+   * de luminosidade, para que o leitor veja a ordem na própria cor. Um conjunto de
+   * matizes diferentes (verde, azul, vermelho) diria "categorias distintas" quando
+   * o que existe é um grau.
+   *
+   * Validada com o validador da skill dataviz em modo --ordinal contra o papel
+   * #FBFAF8: luminosidade monótona, saltos >= 0.06, extremo claro a 2.01:1, matiz
+   * com 13 graus de dispersão. Passa os quatro testes.
+   *
+   * A leitura é literal e é o conceito do site: quanto mais sólido o facto, mais
+   * peso tem na página; a alegação por confirmar quase se apaga. As cores nunca
+   * substituem a palavra — cada selo mostra sempre o texto do estado.
    */
-  --color-conf-entidade: #2d5a3d;
-  --color-conf-regulador: #1f4d5c;
-  --color-conf-media: #3e5c76;
-  --color-conf-unica: #8a6d1f;
-  --color-conf-atacante: #a4243b;
-  --color-conf-desmentido: #6b6560;
+  --color-conf-entidade: #2a2621;
+  --color-conf-regulador: #443d34;
+  --color-conf-media: #5f5648;
+  --color-conf-unica: #7c725f;
+  --color-conf-atacante: #9c9179;
+  --color-conf-desmentido: #bdb29a;
 
   /*
    * Duas famílias, ambas ancoradas no domínio: a serifada é a do relatório e do
@@ -175,6 +187,33 @@
   }
 
   html.js .visivel .barra-ano {
+    transform: scaleY(1);
+  }
+
+  /*
+   * As marcas do cronograma assentam uma a uma, da esquerda para a direita, como
+   * se o registo se fosse construindo à frente de quem lê. O atraso vem de uma
+   * variável por marca, calculada no servidor: sem JavaScript de animação, só a
+   * classe que o observador acrescenta.
+   */
+  html.js .marca {
+    opacity: 0;
+    transform: scaleY(0.2);
+    transform-origin: bottom;
+  }
+
+  html.js .visivel .marca {
+    animation: assentar 0.5s cubic-bezier(0.22, 1, 0.36, 1) var(--atraso, 0ms) both;
+  }
+}
+
+@keyframes assentar {
+  from {
+    opacity: 0;
+    transform: scaleY(0.2);
+  }
+  to {
+    opacity: 1;
     transform: scaleY(1);
   }
 }
