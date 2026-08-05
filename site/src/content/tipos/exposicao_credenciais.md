@@ -24,6 +24,25 @@ referencias:
     nota: >-
       Documenta o crescimento do software de recolha de credenciais como vetor
       dominante de acesso inicial.
+  - autores: "Thomas, K., Li, F., Zand, A., Barrett, J., Ranieri, J., et al."
+    ano: 2017
+    titulo: "Data Breaches, Phishing, or Malware? Understanding the Risks of Stolen Credentials"
+    publicacao: "Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security (CCS)"
+    doi: "10.1145/3133956.3134067"
+    nota: >-
+      Mede, durante um ano, a origem das credenciais que circulam: fugas de dados,
+      phishing e software de recolha. Conclui que o phishing e os recolhedores são os
+      que mais risco real representam para a conta, por trazerem também o contexto que
+      permite passar a autenticação.
+  - autores: "Das, A., Bonneau, J., Caesar, M., Borisov, N., Wang, X."
+    ano: 2014
+    titulo: "The Tangled Web of Password Reuse"
+    publicacao: "Proceedings 2014 Network and Distributed System Security Symposium (NDSS)"
+    doi: "10.14722/ndss.2014.23357"
+    nota: >-
+      Demonstra empiricamente a reutilização de palavras-passe entre serviços e a
+      facilidade com que pequenas variações são adivinhadas. É o mecanismo que
+      transforma a fuga num serviço num problema em todos os outros.
 ---
 
 ## O que é
@@ -75,3 +94,22 @@ de roubo de credenciais e não como autor, e a
 Se as suas credenciais aparecem numa lista, o problema não está necessariamente no
 serviço a que elas dão acesso. Está, com maior probabilidade, num equipamento
 comprometido ou na reutilização da mesma palavra-passe em vários sítios.
+
+## Porque a fuga num sítio é um problema noutro
+
+A reutilização de palavras-passe está medida: uma proporção elevada de pessoas usa a
+mesma em vários serviços, e boa parte das restantes usa variações pequenas o
+suficiente para serem adivinhadas automaticamente a partir da primeira.
+
+É este mecanismo que faz com que uma exposição de credenciais recolhidas nos
+computadores das pessoas se torne um risco para o serviço a que essas credenciais
+dão acesso, **sem que esse serviço tenha tido qualquer falha**. Foi exatamente o que
+aconteceu no [Portal das Finanças](/incidentes/2024-portal-das-financas/), e é a
+razão pela qual este registo insiste na distinção.
+
+## Nem todas as credenciais roubadas valem o mesmo
+
+A medição da origem das credenciais em circulação mostra que as que vêm de
+phishing e de software de recolha são muito mais perigosas do que as que vêm de
+fugas antigas: trazem consigo o contexto — a máquina, a localização, as sessões
+abertas — que permite contornar as defesas adicionais.

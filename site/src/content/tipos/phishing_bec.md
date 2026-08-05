@@ -23,6 +23,32 @@ referencias:
     nota: >-
       Mantém o phishing entre os vetores dominantes de acesso inicial na União
       Europeia.
+  - autores: "Dhamija, R., Tygar, J., Hearst, M."
+    ano: 2006
+    titulo: "Why phishing works"
+    publicacao: "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI)"
+    doi: "10.1145/1124772.1124861"
+    nota: >-
+      O estudo fundador. Demonstrou experimentalmente que os melhores sítios
+      fraudulentos enganavam a maioria dos participantes, e que os indicadores de
+      segurança dos navegadores passavam despercebidos.
+  - autores: "Almutairi, A., Kang, B., Al Hashimy, N."
+    ano: 2025
+    titulo: "Business email compromise: A systematic review of understanding, detection, and challenges"
+    publicacao: "Computers & Security, 155"
+    doi: "10.1016/j.cose.2025.104630"
+    nota: >-
+      Revisão sistemática dedicada à burla ao gestor. Confirma que o traço
+      distintivo é a ausência de artefactos técnicos: não há anexo nem ligação
+      maliciosa a detetar.
+  - autores: "Jakobsson, M."
+    ano: 2016
+    titulo: "Case Study: Business Email Compromise"
+    publicacao: "Understanding Social Engineering Based Scams, Springer"
+    doi: "10.1007/978-1-4939-6457-4_11"
+    nota: >-
+      Estudo de caso da mecânica da burla ao gestor, incluindo o reconhecimento
+      prévio da estrutura hierárquica da organização.
 ---
 
 ## O que é
@@ -66,3 +92,28 @@ que as fontes afirmam, e as fontes falam do efeito, não do vetor.
 
 É uma das razões pelas quais a [metodologia](/metodologia/#vies) insiste que estas
 contagens são de incidentes noticiados, e não de incidentes ocorridos.
+
+## Não é distração, é desenho
+
+O estudo experimental fundador nesta área mostrou que os melhores sítios
+fraudulentos enganavam a larga maioria dos participantes — incluindo pessoas com
+formação técnica — e que os indicadores de segurança do navegador simplesmente não
+eram vistos.
+
+Vale a pena reter isto ao ler qualquer caso deste registo que tenha começado por uma
+mensagem: a explicação de que "alguém foi distraído" é confortável e está errada. O
+engano é desenhado por quem estuda como as pessoas decidem, e funciona contra
+pessoas atentas.
+
+## Porque a burla ao gestor não é detetável por meios técnicos
+
+A revisão sistemática da literatura sobre burla ao gestor confirma o traço que a
+torna singular: **não há artefacto malicioso**. Não há anexo, não há ligação, não há
+código. Há uma mensagem de texto simples, muitas vezes enviada de uma conta
+legítima previamente comprometida, a pedir uma transferência que a organização faz
+todos os dias.
+
+Nenhum filtro de correio pode marcar isso como perigoso sem marcar também o
+trabalho normal. Daí que as defesas eficazes sejam de processo — dupla aprovação,
+confirmação por canal distinto — e não de tecnologia, como se explica também em
+[fraude](/tipos/fraude/).

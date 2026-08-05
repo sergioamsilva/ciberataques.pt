@@ -30,6 +30,42 @@ referencias:
     url: "https://www.enisa.europa.eu/publications/enisa-threat-landscape-for-ransomware-attacks"
     nota: >-
       Relatório oficial europeu. É a fonte da definição adotada neste registo.
+  - autores: "Kharraz, A., Robertson, W., Balzarotti, D., Bilge, L., Kirda, E."
+    ano: 2015
+    titulo: "Cutting the Gordian Knot: A Look Under the Hood of Ransomware Attacks"
+    publicacao: "Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA), Lecture Notes in Computer Science 9148"
+    doi: "10.1007/978-3-319-20550-2_1"
+    nota: >-
+      Análise técnica de mil e trezentas amostras ao longo de cinco anos. Mostra que
+      uma minoria das famílias faz destruição irreversível — o que é a base do
+      argumento de que pagar não é a única via de recuperação.
+  - autores: "Huang, D., Aliapoulios, M., Li, V., Invernizzi, L., Bursztein, E., et al."
+    ano: 2018
+    titulo: "Tracking Ransomware End-to-end"
+    publicacao: "2018 IEEE Symposium on Security and Privacy (SP)"
+    doi: "10.1109/sp.2018.00047"
+    nota: >-
+      Segue os pagamentos na cadeia de blocos e estima o volume real de resgates
+      pagos. É a fonte que permite falar de dinheiro sem depender de números
+      avançados pelos próprios grupos.
+  - autores: "Dameff, C., Tully, J., Chan, T., Castillo, E., Savage, S., et al."
+    ano: 2023
+    titulo: "Ransomware Attack Associated With Disruptions at Adjacent Emergency Departments in the US"
+    publicacao: "JAMA Network Open, 6(5)"
+    doi: "10.1001/jamanetworkopen.2023.12270"
+    nota: >-
+      Demonstra que o dano de um ataque a um hospital não fica no hospital atacado:
+      as urgências vizinhas registaram mais chegadas, mais tempo de espera e mais
+      casos de acidente vascular cerebral. É a evidência empírica do efeito em
+      cascata.
+  - autores: "Neprash, H., McGlave, C., Cross, D., Virnig, B., Puskarich, M., et al."
+    ano: 2022
+    titulo: "Trends in Ransomware Attacks on US Hospitals, Clinics, and Other Health Care Delivery Organizations"
+    publicacao: "JAMA Health Forum, 3(12)"
+    doi: "10.1001/jamahealthforum.2022.4873"
+    nota: >-
+      Quantifica a subida dos ataques a prestadores de cuidados de saúde e a
+      proporção que envolve exposição de dados de doentes.
 ---
 
 ## O que é
@@ -91,3 +127,30 @@ estudo de Meurs e colegas trata precisamente da credibilidade dessas ameaças.
 Por isso, neste registo, esses números nunca entram na ficha técnica de um
 incidente. Ficam na secção de versões em confronto, com indicação de quem os
 afirmou. Ver a [metodologia](/metodologia/#disputas).
+
+## O que a literatura diz sobre pagar
+
+A questão que qualquer leitor faz é se as vítimas pagam. O trabalho que seguiu
+pagamentos na cadeia de blocos permite responder com dados em vez de impressões: uma
+minoria paga, mas os montantes concentram-se num pequeno número de casos de valor
+elevado.
+
+Neste registo o campo de resgate é preenchido com o que a entidade declarou ou com o
+que se deduz de facto observável — a publicação dos ficheiros na data anunciada
+indica que não houve pagamento, como aconteceu na
+[Trust in News](/incidentes/2022-trust-in-news/) e nos
+[SMTUC](/incidentes/2022-smtuc/). Nunca registamos como facto um valor avançado pelo
+grupo atacante.
+
+## Quando a vítima é um hospital, o dano não fica no hospital
+
+Há evidência empírica de que um ataque a uma unidade de saúde se propaga às
+unidades vizinhas: mais chegadas às urgências em redor, mais tempo de espera, mais
+casos de acidente vascular cerebral confirmados. O hospital atacado deixa de receber
+e os doentes vão para o lado.
+
+É a razão pela qual este arquivo regista **entidades afetadas em cascata** como
+campo próprio, e não apenas a entidade atacada. Nos casos do
+[Hospital Garcia de Orta](/incidentes/2022-hospital-garcia-de-orta/) e do
+[SESARAM](/incidentes/2023-sesaram/), o efeito sobre a rede é parte do incidente, não
+contexto dele.

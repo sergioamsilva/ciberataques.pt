@@ -23,6 +23,15 @@ referencias:
     nota: >-
       Relatório oficial europeu, com a distinção entre o ataque ao fornecedor e o
       efeito no cliente.
+  - autores: "Ohm, M., Plate, H., Sykosch, A., Meier, M."
+    ano: 2020
+    titulo: "Backstabber's Knife Collection: A Review of Open Source Software Supply Chain Attacks"
+    publicacao: "Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA), Lecture Notes in Computer Science 12223"
+    doi: "10.1007/978-3-030-52683-2_2"
+    nota: >-
+      Reúne e dissseca centenas de pacotes maliciosos publicados em repositórios
+      públicos. Mostra que a maioria age no momento da instalação e procura
+      credenciais.
 ---
 
 ## O que é
@@ -68,3 +77,13 @@ A classificação `cadeia_fornecimento` é aplicada quando a entidade portuguesa
 atingida **através de terceiro**, e regista-se sempre quem confirmou exposição.
 Instituições que usam a mesma plataforma mas nada declararam não entram: registá-las
 seria inventar cobertura.
+
+## O ataque que se instala sozinho
+
+A análise de centenas de pacotes maliciosos publicados em repositórios públicos
+mostra um padrão: a maior parte executa o seu código no **momento da instalação**, e
+o que procura em primeiro lugar são credenciais e variáveis de ambiente.
+
+Isto explica porque este tipo escapa às defesas habituais. Ninguém teve de invadir
+nada: a organização instalou voluntariamente o que a atacou, através de um processo
+automatizado que corre sem supervisão humana e com as permissões de quem o executa.

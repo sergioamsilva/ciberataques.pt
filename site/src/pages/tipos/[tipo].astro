@@ -4,9 +4,24 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import CartaoIncidente from "../../components/CartaoIncidente.astro";
 import { incidentes, nome, taxonomia } from "../../lib/dados";
 
+/*
+ * A união de dois conjuntos, e não só o primeiro: os tipos que o registo usa, mais
+ * os tipos que têm explicador escrito.
+ *
+ * Derivar as rotas apenas dos incidentes parece natural e está errado. Um tipo com
+ * explicador e sem incidentes — defacement, fraude, hacktivismo e insider, hoje —
+ * ficaria sem página nenhuma, e o texto que alguém escreveu não existiria no site.
+ * O explicador é material de referência: vale por explicar o conceito, não por
+ * haver casos portugueses registados dele.
+ */
 export async function getStaticPaths() {
-  const tipos = [...new Set(incidentes().flatMap((r) => r.tipos_ataque))];
   const explicadores = await getCollection("tipos");
+  const tipos = [
+    ...new Set([
+      ...incidentes().flatMap((r) => r.tipos_ataque),
+      ...explicadores.map((e) => e.data.tipo),
+    ]),
+  ];
   return tipos.map((tipo) => ({
     params: { tipo },
     props: { tipo, explicador: explicadores.find((e) => e.data.tipo === tipo) ?? null },

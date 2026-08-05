@@ -22,6 +22,16 @@ referencias:
     doi: "10.1109/SURV.2013.031413.00127"
     nota: >-
       Revisão das defesas conhecidas e das suas limitações.
+  - autores: "Jonker, M., King, A., Krupp, J., Rossow, C., Sperotto, A., Dainotti, A."
+    ano: 2017
+    titulo: "Millions of targets under attack: a macroscopic characterization of the DoS ecosystem"
+    publicacao: "Proceedings of the 2017 Internet Measurement Conference (IMC)"
+    doi: "10.1145/3131365.3131383"
+    nota: >-
+      Medição à escala da Internet ao longo de dois anos. Mostra que a negação de
+      serviço é um fenómeno contínuo e de massa, e não uma sucessão de acontecimentos
+      excecionais — cerca de um terço de todos os domínios ativos foi alvo no período
+      estudado.
 ---
 
 ## O que é
@@ -73,3 +83,15 @@ Estes ataques tendem a ser curtos e a repetir-se. O sítio do FC Porto esteve em
 baixo menos de uma hora. A [agência Lusa](/incidentes/2022-lusa/) foi atingida duas
 vezes em treze dias, o que levou este registo a tratá-las como um só incidente com
 dois episódios, e não como dois incidentes distintos.
+
+## É muito mais comum do que as notícias sugerem
+
+A medição à escala da Internet mostra um fenómeno contínuo e de massa: uma fração
+muito substancial de todos os domínios ativos é alvo em algum momento, com dezenas
+de milhares de ataques por dia a nível global.
+
+Isso ajuda a ler o registo com a proporção certa. Os três casos portugueses aqui
+documentados não são os três ataques de negação de serviço que houve em Portugal —
+são os três que alguém noticiou, porque atingiram alvos com visibilidade. A
+diferença entre ocorrência e cobertura é, neste tipo, maior do que em qualquer
+outro.

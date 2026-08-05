@@ -24,6 +24,24 @@ referencias:
     nota: >-
       Referência para a causa técnica mais comum de indisponibilidade deliberada,
       quando essa causa é conhecida.
+  - autores: "Dameff, C., Tully, J., Chan, T., Castillo, E., Savage, S., et al."
+    ano: 2023
+    titulo: "Ransomware Attack Associated With Disruptions at Adjacent Emergency Departments in the US"
+    publicacao: "JAMA Network Open, 6(5)"
+    doi: "10.1001/jamanetworkopen.2023.12270"
+    nota: >-
+      Mede o efeito da indisponibilidade de um hospital sobre os hospitais vizinhos.
+      É a demonstração de que indisponibilidade não é inconveniente administrativo
+      quando o serviço é essencial.
+  - autores: "Küfeoğlu, S., Akgün, A."
+    ano: 2023
+    titulo: "Cyber Resilience in Critical Infrastructure"
+    publicacao: "CRC Press"
+    doi: "10.1201/9781003449522"
+    nota: >-
+      Trata a resiliência de infraestruturas críticas como problema de continuidade
+      do serviço e não de prevenção do ataque, que é o enquadramento correto para
+      ler os casos de água, energia e transportes deste registo.
 ---
 
 ## O que é
@@ -83,3 +101,24 @@ O que distingue os extremos raramente é a sofisticação do ataque. É se as c�
 segurança sobreviveram — comparar [Alcobaça](/incidentes/2024-camara-municipal-de-alcobaca/),
 que as tinha intactas, com a [Figueira da Foz](/incidentes/2022-camara-municipal-da-figueira-da-foz/),
 onde foram atingidas.
+
+## Indisponibilidade não é um inconveniente
+
+Quando o serviço é essencial, a indisponibilidade **é** o dano, e não a consequência
+administrativa de um dano informático. A investigação sobre unidades de saúde
+mostra-o com clareza: o efeito mede-se em tempo de espera e em desfechos clínicos,
+não em sistemas por repor.
+
+Este registo tem vários casos em que a entidade sublinhou, com razão, que o serviço
+essencial se manteve — o abastecimento de água nas
+[Águas de Portugal](/incidentes/2026-aguas-de-portugal/), a circulação nos
+[SMTUC](/incidentes/2022-smtuc/). Essa distinção entre sistemas de informação e
+serviço prestado é exatamente a que este campo procura captar.
+
+## Porque a resposta certa é continuidade, não prevenção
+
+A literatura sobre infraestruturas críticas desloca a pergunta de "como impedir o
+ataque" para "como continuar a prestar o serviço durante o ataque". É um
+enquadramento mais útil para ler os casos de água, energia e transportes deste
+arquivo, onde a pergunta que interessa ao cidadão nunca é se houve intrusão, mas se
+sai água da torneira.

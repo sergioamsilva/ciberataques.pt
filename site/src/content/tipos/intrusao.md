@@ -23,6 +23,23 @@ referencias:
     nota: >-
       Catálogo das técnicas observadas em intrusões reais, organizado pelas fases
       em que ocorrem. É a base de vocabulário comum da área.
+  - autores: "Sommer, R., Paxson, V."
+    ano: 2010
+    titulo: "Outside the Closed World: On Using Machine Learning for Network Intrusion Detection"
+    publicacao: "2010 IEEE Symposium on Security and Privacy"
+    doi: "10.1109/sp.2010.25"
+    nota: >-
+      Explica porque a deteção de intrusões é um problema estruturalmente diferente
+      dos outros: não existe um perfil estável de \"normal\", e o custo de um falso
+      positivo num ambiente real é altíssimo.
+  - autores: "Khraisat, A., Gondal, I., Vamplew, P., Kamruzzaman, J."
+    ano: 2019
+    titulo: "Survey of intrusion detection systems: techniques, datasets and challenges"
+    publicacao: "Cybersecurity, 2(20)"
+    doi: "10.1186/s42400-019-0038-7"
+    nota: >-
+      Revisão das abordagens de deteção e das suas limitações, incluindo a
+      dificuldade persistente com ataques que não correspondem a assinatura conhecida.
 ---
 
 ## O que é
@@ -72,3 +89,15 @@ e o campo de dados pessoais fica a `null` — que significa *não é público*, 
 
 A distinção entre não ter havido e não se saber é, em muitos destes casos, a única
 coisa honesta a registar.
+
+## Porque se descobre tarde
+
+A deteção de intrusões é um problema estruturalmente mais difícil do que parece, e a
+literatura é explícita quanto à razão: ao contrário de outros domínios onde se
+distingue o normal do anómalo, aqui não existe um perfil estável de normalidade. O
+tráfego de uma organização varia com a hora, a época, um projeto novo, uma campanha.
+
+A consequência prática está visível neste arquivo: em vários casos portugueses a
+entidade soube do ataque por terceiros — pelo próprio atacante, como na
+[Universidade de Aveiro](/incidentes/2026-universidade-de-aveiro/), ou por
+aparecer listada num site de extorsão. Não é negligência; é a natureza do problema.

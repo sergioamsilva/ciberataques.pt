@@ -100,7 +100,29 @@ def teste_dois_resolvem_e_correspondem(caminho):
 
         registado = normalizar(ref["titulo"])
         obtido = normalizar(dados["title"][0])
-        assert registado == obtido, (
+
+        # A igualdade exata é o caso normal, mas rejeita citações corretas por uma
+        # razão que nada tem que ver com a citação: o CrossRef guarda com frequência
+        # o título truncado no dois-pontos — "Millions of targets under attack" em
+        # vez do título completo com subtítulo — e, noutros casos, uma forma mais
+        # longa do que a publicada, como o "..., 2016-2021" que a JAMA acrescenta.
+        #
+        # Aceitamos por isso que um seja prefixo do outro, desde que o mais curto
+        # tenha pelo menos quatro palavras. O limiar é em palavras e não em
+        # caracteres de propósito: o que dá confiança a um prefixo é ele ser
+        # específico, e "Insight Into Insiders and IT" é específico com vinte e oito
+        # caracteres enquanto "A survey of network security" o não seria com trinta.
+        #
+        # A proteção que interessa mantém-se intacta: um DOI trocado ou inventado
+        # aponta para um artigo com outro assunto, e um título de outro assunto não
+        # é prefixo deste.
+        MINIMO_PALAVRAS = 4
+        mais_curto = min(registado, obtido, key=len)
+        coincide = registado == obtido or (
+            len(mais_curto.split()) >= MINIMO_PALAVRAS
+            and (registado.startswith(obtido) or obtido.startswith(registado))
+        )
+        assert coincide, (
             f"o DOI {doi} existe mas aponta para outro artigo.\n"
             f"  registámos: {ref['titulo']}\n"
             f"  CrossRef  : {dados['title'][0]}"

@@ -23,6 +23,24 @@ referencias:
     nota: >-
       Revisão sistemática de 203 estudos empíricos sobre determinantes e
       consequências do risco de cibersegurança nas organizações.
+  - autores: "Romanosky, S."
+    ano: 2016
+    titulo: "Examining the costs and causes of cyber incidents"
+    publicacao: "Journal of Cybersecurity, 2(2)"
+    doi: "10.1093/cybsec/tyw001"
+    nota: >-
+      Analisa doze mil incidentes e conclui que o custo mediano é muito inferior ao
+      que a cobertura mediática sugere, e representa uma fração pequena da receita
+      anual das empresas afetadas.
+  - autores: "Romanosky, S., Telang, R., Acquisti, A."
+    ano: 2011
+    titulo: "Do data breach disclosure laws reduce identity theft?"
+    publicacao: "Journal of Policy Analysis and Management, 30(2)"
+    doi: "10.1002/pam.20567"
+    nota: >-
+      Avalia o efeito das leis de notificação obrigatória. O efeito existe mas é
+      modesto, o que é relevante para julgar o valor de arquivos como este: a
+      notificação sozinha muda pouco se ninguém agregar o que é notificado.
 ---
 
 ## O que é
@@ -83,3 +101,25 @@ desculpa, compensação, e a ausência de resposta. Este registo documenta o esp
 todo, incluindo comunicados que reconhecem o incidente sem esclarecer natureza,
 extensão nem autoridades notificadas — como o de
 [Santa Comba Dão](/incidentes/2024-camara-municipal-de-santa-comba-dao/).
+
+## Quanto custa, na verdade
+
+A cobertura noticiosa de uma fuga de dados tende a números grandes. A literatura que
+analisou dezenas de milhares de incidentes encontra um custo mediano bastante
+modesto e muito assimétrico: a distribuição tem uma cauda longa, e é essa cauda que
+dá as manchetes.
+
+Este registo regista custo apenas quando **declarado pela entidade** ou por
+autoridade. É por isso que o campo está vazio na esmagadora maioria das fichas — não
+por não haver custo, mas por não haver quem o declare.
+
+## Porque um arquivo como este faz diferença
+
+O estudo do efeito das leis de notificação obrigatória encontra um efeito real mas
+pequeno. A leitura útil é que notificar não basta: se cada notificação vive isolada
+num comunicado que desaparece do sítio ao fim de um ano, a informação existe e não
+serve a ninguém.
+
+O caso de [Barrancos](/incidentes/2023-camara-municipal-de-barrancos/) é a
+ilustração disto neste arquivo: os dois comunicados originais devolvem hoje 404 e
+não existe cópia no Internet Archive.
