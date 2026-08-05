@@ -10,6 +10,7 @@
     "2021-universidade-de-lisboa"
   ],
   "2022": [
+    "2022-inforlandia",
     "2022-porto-de-lisboa",
     "2022-seguranca-social",
     "2022-camara-municipal-da-figueira-da-foz",
@@ -31,9 +32,15 @@
   ],
   "2023": [
     "2023-camara-municipal-de-barrancos",
+    "2023-zonesoft",
+    "2023-ccdr-centro",
     "2023-camara-municipal-de-alcanena",
     "2023-camara-municipal-de-gondomar",
+    "2023-agriloja",
     "2023-sesaram",
+    "2023-luna-hotels",
+    "2023-luis-simoes",
+    "2023-ert",
     "2023-ministerio-da-economia",
     "2023-camara-municipal-de-odemira",
     "2023-camara-municipal-do-barreiro",
@@ -42,16 +49,31 @@
     "2023-aguas-e-energia-do-porto"
   ],
   "2024": [
+    "2024-bebecar",
     "2024-universidade-do-algarve",
     "2024-camara-municipal-de-chaves",
     "2024-camara-municipal-de-alcobaca",
     "2024-ama",
     "2024-portal-das-financas",
-    "2024-camara-municipal-de-santa-comba-dao"
+    "2024-perfumes-e-companhia",
+    "2024-camara-municipal-de-santa-comba-dao",
+    "2024-portline"
   ],
   "2025": [
+    "2025-ambisig",
+    "2025-spzc",
+    "2025-espaco-casa",
+    "2025-armis-group",
+    "2025-cimertex",
     "2025-oestecim",
+    "2025-elis-portugal",
+    "2025-quinta-da-marinha",
     "2025-conselho-superior-da-magistratura",
+    "2025-selenis",
+    "2025-vale-do-lobo",
+    "2025-newhotel",
+    "2025-mar-de-ar-hotels",
+    "2025-socarpor",
     "2025-ersar",
     "2025-global-media"
   ],
@@ -60,13 +82,16 @@
     "2026-universidade-de-aveiro",
     "2026-centro-cientifico-e-cultural-de-macau",
     "2026-metro-mondego",
+    "2026-conduril",
     "2026-misericordia-de-santo-tirso",
     "2026-soja-de-portugal",
+    "2026-meisa-sines",
     "2026-sns24-dados-de-utentes",
     "2026-camara-municipal-de-serpa",
     "2026-canvas-instituicoes-portuguesas",
     "2026-ctt",
     "2026-navigator",
-    "2026-camara-municipal-da-guarda"
+    "2026-camara-municipal-da-guarda",
+    "2026-museu-do-caramulo"
   ]
 }

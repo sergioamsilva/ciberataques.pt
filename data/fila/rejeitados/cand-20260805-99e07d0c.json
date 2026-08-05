@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "promovido",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "everest",
+        "texto": "Agriloja.pt foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "everest",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2023-08-14",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Agriloja.pt",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-99e07d0c",
+  "motivo_rejeicao": "promovido a incidente de nível 5 (alegado pelo atacante)",
+  "origem": {
+    "chave": "99e07d0c37188690db8ddb3afa716ed6ee18631891c1c546746ff32d995539c5",
+    "data": "2023-08-14",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "fbb57a9f796b4ac6b09ae4406b4f598d73d3fbf69a931922f14cc2179c2127b6",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Agriloja.pt listada em site de extorsão (everest)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

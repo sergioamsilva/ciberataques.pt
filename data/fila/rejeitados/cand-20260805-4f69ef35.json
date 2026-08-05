@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "promovido",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "darkrace",
+        "texto": "ERT foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "darkrace",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2023-05-31",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "ERT",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-4f69ef35",
+  "motivo_rejeicao": "promovido a incidente de nível 5 (alegado pelo atacante)",
+  "origem": {
+    "chave": "4f69ef35a2646572f4db4896d589951ceb11fbd309ab6284ef4f494b5577939f",
+    "data": "2023-05-31",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "3552f0a13c338a40fea69469e602a566b097d9f99c773790bad8da289e8ed0a6",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "ERT listada em site de extorsão (darkrace)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "arcusmedia",
+        "texto": "gemese.pt foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "arcusmedia",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-07-14",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "gemese.pt",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-e3231dc5",
+  "motivo_rejeicao": "alegação de site de extorsão sem confirmação independente, e gemese.pt não passa no critério de interesse público da política editorial (secção 3.1): não é entidade pública, nem de setor crítico, nem serve o público em escala, nem é fornecedora de muitas organizações. Sobe se aparecer fonte independente.",
+  "origem": {
+    "chave": "e3231dc5e2349b28655ffb9a12e74c437f2087ff7c5086335299290fd41af683",
+    "data": "2026-07-14",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "6293079f5e041dc971446fde1acc5c97db68a0221ee255721919670c93b8072d",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "gemese.pt listada em site de extorsão (arcusmedia)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "promovido",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "lockbit5",
+        "texto": "ambisig.com foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "lockbit5",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2025-12-26",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "ambisig.com",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-0c2f0caa",
+  "motivo_rejeicao": "promovido a incidente de nível 5 (alegado pelo atacante)",
+  "origem": {
+    "chave": "0c2f0caac4a4e3241caa6b177ab18ba2e2400d263bcc2671ccb869894b2bdb59",
+    "data": "2025-12-26",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "7c7a94857caf6774825d59ef4b02fe7cf851ff76a49f6083fbbd96d487db633a",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "ambisig.com listada em site de extorsão (lockbit5)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

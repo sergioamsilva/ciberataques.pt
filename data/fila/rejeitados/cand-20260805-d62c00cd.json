@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "dragonforce",
+        "texto": "Enerre Pharma Lda foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "dragonforce",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2025-11-27",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Enerre Pharma Lda",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-d62c00cd",
+  "motivo_rejeicao": "alegação de site de extorsão sem confirmação independente, e Enerre Pharma não passa no critério de interesse público da política editorial (secção 3.1): não é entidade pública, nem de setor crítico, nem serve o público em escala, nem é fornecedora de muitas organizações. Sobe se aparecer fonte independente.",
+  "origem": {
+    "chave": "d62c00cd6ef8c740c3194318fbe26298735831367d47b598c62172ff870e88ae",
+    "data": "2025-11-27",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "d006291260abb0bd078f4571794b422682ca00b027e427ecf52dad85ca62a2e1",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Enerre Pharma Lda listada em site de extorsão (dragonforce)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

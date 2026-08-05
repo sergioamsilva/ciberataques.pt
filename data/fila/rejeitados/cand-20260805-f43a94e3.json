@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "nova",
+        "texto": "lpgroup.pt foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "nova",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-06-24",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "lpgroup.pt",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-f43a94e3",
+  "motivo_rejeicao": "alegação de site de extorsão sem confirmação independente, e lpgroup.pt não passa no critério de interesse público da política editorial (secção 3.1): não é entidade pública, nem de setor crítico, nem serve o público em escala, nem é fornecedora de muitas organizações. Sobe se aparecer fonte independente.",
+  "origem": {
+    "chave": "f43a94e31fbdf7cabfb5e97991dd0b68d9fc581415e11d9de9aff091a8bf7043",
+    "data": "2026-06-24",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "c5ed8720ac187cea835abbbab1bf17e17821594dbb405b1672d266e404b2a586",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "lpgroup.pt listada em site de extorsão (nova)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

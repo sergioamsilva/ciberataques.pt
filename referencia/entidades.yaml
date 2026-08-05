@@ -629,3 +629,227 @@
   distrito: Lisboa
   url: https://www.cuf.pt
   chaves: [cuf, jose de mello saude]
+
+- id: ccdr-centro
+  nome: "Comissão de Coordenação e Desenvolvimento Regional do Centro"
+  nome_curto: "CCDR-Centro"
+  setor: administracao_publica
+  tipo: entidade_publica
+  distrito: Coimbra
+  url: https://www.ccdrc.pt
+  chaves: [ccdrc, ccdr centro, comissao de coordenacao e desenvolvimento regional do centro]
+
+- id: spzc
+  nome: "Sindicato dos Professores da Zona Centro"
+  nome_curto: "SPZC"
+  setor: educacao_investigacao
+  tipo: associacao
+  distrito: Coimbra
+  url: https://www.spzc.pt
+  chaves: [spzc, sindicato dos professores da zona centro]
+
+- id: museu-do-caramulo
+  nome: "Fundação Abel e João de Lacerda — Museu do Caramulo"
+  nome_curto: "Museu do Caramulo"
+  setor: educacao_investigacao
+  tipo: associacao
+  distrito: Viseu
+  url: https://www.museudocaramulo.pt
+  chaves: [museu do caramulo, fundacao abel e joao de lacerda]
+
+- id: luis-simoes
+  nome: "Luís Simões — Logística Integrada, S.A."
+  nome_curto: "Luís Simões"
+  setor: transportes
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.luis-simoes.com
+  chaves: [luis simoes, luis simoes logistica]
+
+- id: socarpor
+  nome: "SOCARPOR — Sociedade de Cargas Portuárias (Aveiro), S.A."
+  nome_curto: "Socarpor"
+  setor: transportes
+  tipo: empresa
+  distrito: Aveiro
+  url: https://www.socarpor-aveiro.pt
+  chaves: [socarpor, socarpor aveiro, sociedade de cargas portuarias]
+
+- id: portline
+  nome: "Portline — Transportes Marítimos Internacionais, S.A."
+  nome_curto: "Portline"
+  setor: transportes
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.portline.pt
+  chaves: [portline, portline transportes maritimos]
+
+- id: conduril
+  nome: "Conduril — Engenharia, S.A."
+  nome_curto: "Conduril"
+  setor: industria
+  tipo: empresa
+  distrito: Porto
+  url: https://www.conduril.pt
+  chaves: [conduril, conduril engenharia]
+
+- id: selenis
+  nome: "Selenis — Grupo IMG"
+  nome_curto: "Selenis"
+  setor: industria
+  tipo: empresa
+  distrito: Santarém
+  url: https://www.selenis.com
+  chaves: [selenis, evertis, img group, imatosgil]
+
+- id: perfumes-e-companhia
+  nome: "Perfumes & Companhia — Perfumarias, S.A."
+  nome_curto: "Perfumes & Companhia"
+  setor: retalho
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.perfumesecompanhia.pt
+  chaves: [perfumes e companhia, perfumes companhia, perfumesecompanhia]
+
+- id: espaco-casa
+  nome: "Espaço Casa"
+  nome_curto: "Espaço Casa"
+  setor: retalho
+  tipo: empresa
+  distrito: Porto
+  url: https://www.espacocasa.pt
+  chaves: [espaco casa, espacocasa]
+
+- id: vale-do-lobo
+  nome: "Vale do Lobo — Resort Turístico de Luxo, S.A."
+  nome_curto: "Vale do Lobo"
+  setor: turismo_hotelaria
+  tipo: empresa
+  distrito: Faro
+  url: https://www.valedolobo.com
+  chaves: [vale do lobo, valedolobo]
+
+- id: bebecar
+  nome: "Bébécar — Utilidades para Criança, S.A."
+  nome_curto: "Bébécar"
+  setor: industria
+  tipo: empresa
+  distrito: Porto
+  url: https://www.bebecar.com
+  chaves: [bebecar, grupo bebecar]
+
+- id: luna-hotels
+  nome: "Luna Hotels & Resorts"
+  nome_curto: "Luna Hotels"
+  setor: turismo_hotelaria
+  tipo: empresa
+  distrito: Leiria
+  url: https://www.lunahoteis.com
+  chaves: [luna hotels, luna hoteis, luna hotels resorts]
+
+- id: mar-de-ar-hotels
+  nome: "M'AR De AR Hotels"
+  nome_curto: "M'AR De AR Hotels"
+  setor: turismo_hotelaria
+  tipo: empresa
+  distrito: Évora
+  url: https://www.mardearhotels.com
+  chaves: [mar de ar hotels, mardearhotels, m ar de ar]
+
+- id: quinta-da-marinha
+  nome: "Onyria Quinta da Marinha Hotel"
+  nome_curto: "Quinta da Marinha"
+  setor: turismo_hotelaria
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.quintadamarinha.com
+  chaves: [quinta da marinha, onyria quinta da marinha, quintadamarinha]
+
+- id: newhotel
+  nome: "NewHotel Software"
+  nome_curto: "NewHotel"
+  setor: tecnologia
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.newhotel.com
+  chaves: [newhotel, newhotel cloud, newhotel software]
+
+- id: zonesoft
+  nome: "Zone Soft"
+  nome_curto: "Zonesoft"
+  setor: tecnologia
+  tipo: empresa
+  distrito: Santarém
+  url: https://www.zonesoft.pt
+  chaves: [zonesoft, zone soft]
+
+- id: armis-group
+  nome: "Armis Group"
+  nome_curto: "Armis Group"
+  setor: tecnologia
+  tipo: empresa
+  distrito: Braga
+  url: https://www.armisgroup.com
+  chaves: [armis group, armis]
+
+- id: ambisig
+  nome: "Ambisig — Ambiente e Sistemas de Informação Geográfica"
+  nome_curto: "Ambisig"
+  setor: tecnologia
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.ambisig.com
+  chaves: [ambisig]
+
+- id: inforlandia
+  nome: "Inforlandia"
+  nome_curto: "Inforlandia"
+  setor: tecnologia
+  tipo: empresa
+  distrito: Aveiro
+  url: https://www.inforlandia.com
+  chaves: [inforlandia]
+
+- id: ert
+  nome: "ERT — Automotive"
+  nome_curto: "ERT"
+  setor: industria
+  tipo: empresa
+  distrito: Aveiro
+  chaves: [ert, ert automotive, ert textil]
+
+- id: meisa-sines
+  nome: "MEISA — unidade de Sines"
+  nome_curto: "MEISA Sines"
+  setor: energia_agua
+  tipo: empresa
+  distrito: Setúbal
+  url: https://www.meisa-e.com
+  chaves: [meisa, meisa sines, meisa e]
+
+- id: agriloja
+  nome: "Agriloja"
+  nome_curto: "Agriloja"
+  setor: retalho
+  tipo: empresa
+  distrito: Santarém
+  url: https://www.agriloja.pt
+  chaves: [agriloja]
+
+- id: cimertex
+  nome: "Cimertex — Sociedade Técnica de Equipamentos e Veículos, S.A."
+  nome_curto: "Cimertex"
+  setor: industria
+  tipo: empresa
+  distrito: Porto
+  url: https://www.cimertex.pt
+  chaves: [cimertex]
+
+- id: elis-portugal
+  nome: "Elis Portugal"
+  nome_curto: "Elis Portugal"
+  setor: industria
+  tipo: empresa
+  distrito: Lisboa
+  url: https://pt.elis.com
+  chaves: [elis, elis portugal]

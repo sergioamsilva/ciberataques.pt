@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "devman",
+        "texto": "www.profimetrics.com foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "devman",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2025-10-01",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "www.profimetrics.com",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-22b1df00",
+  "motivo_rejeicao": "alegação de site de extorsão sem confirmação independente, e profimetrics.com não passa no critério de interesse público da política editorial (secção 3.1): não é entidade pública, nem de setor crítico, nem serve o público em escala, nem é fornecedora de muitas organizações. Sobe se aparecer fonte independente.",
+  "origem": {
+    "chave": "22b1df0024b472194c3655c412246062d8062e16cf62fcf083637448d02f0b63",
+    "data": "2025-10-01",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "e177c03469c40756c56ee0661c2742a36caa3b4107e3ddaa656cef25e76c321d",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "www.profimetrics.com listada em site de extorsão (devman)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

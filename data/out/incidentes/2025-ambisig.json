@@ -1,0 +1,87 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "baixa",
+    "grupo": "lockbit5",
+    "nota": "A atribuição assenta exclusivamente na reivindicação do próprio grupo."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2025-12-26",
+      "fonte": 0,
+      "texto": "O grupo lockbit5 lista Ambisig no seu site de extorsão.",
+      "tipo": "reivindicacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação verificada sobre dados comprometidos. Volumes e categorias atribuídos ao grupo não são registados por não terem confirmação independente.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2025-12-26",
+    "divulgacao": "2025-12-26",
+    "inicio": "2025-12-26",
+    "precisao": "desconhecida"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "ambisig"
+  ],
+  "estado_confirmacao": "alegado_pelo_atacante",
+  "etiquetas": [
+    "sem-confirmacao",
+    "cadeia-de-fornecimento",
+    "administracao-local"
+  ],
+  "fontes": [
+    {
+      "data": "2025-12-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "Ambisig listada no site de extorsão do grupo lockbit5",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2025-ambisig",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": []
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2025-newhotel",
+    "2023-zonesoft",
+    "2025-armis-group"
+  ],
+  "resumo": "A 26 de dezembro de 2025, o grupo de ransomware lockbit5 listou Ambisig — empresa de sistemas de informação geográfica que presta serviços a autarquias e a empresas — no seu site de extorsão. A entidade não se pronunciou publicamente e não é conhecida confirmação por autoridade nem cobertura mediática do caso. Tudo o que existe é a alegação de quem diz tê-la atacado.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Nível mais baixo da escala de confiança: só existe a palavra do atacante. Registado por passar no critério de interesse público da política editorial — fornecedor de software a muitas outras organizacoes. Volumes de dados alegados pelo grupo não entram na ficha técnica.",
+    "versao": 1
+  },
+  "setor": "tecnologia",
+  "tipos_ataque": [
+    "ransomware"
+  ],
+  "titulo": "Ambisig listada em site de extorsão"
+}

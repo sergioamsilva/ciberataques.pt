@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "promovido",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "akira",
+        "texto": "Selenis (Evertis) foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "akira",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2025-05-08",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Selenis (Evertis)",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-190cce1c",
+  "motivo_rejeicao": "promovido a incidente de nível 5 (alegado pelo atacante)",
+  "origem": {
+    "chave": "190cce1ca3744a4d6fddb759cb94a0bbbb02bb35186a2279a175ed82c0341139",
+    "data": "2025-05-08",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "6ff41f87ca8d8379d4f3a0e9c421c67c1eeed66eaefd6b9f399760f174bfa7b1",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Selenis (Evertis) listada em site de extorsão (akira)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

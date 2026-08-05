@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "lynx",
+        "texto": "Pervedant foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "lynx",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2025-03-05",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Pervedant",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-7609477c",
+  "motivo_rejeicao": "alegação de site de extorsão sem confirmação independente, e Pervedant não passa no critério de interesse público da política editorial (secção 3.1): não é entidade pública, nem de setor crítico, nem serve o público em escala, nem é fornecedora de muitas organizações. Sobe se aparecer fonte independente.",
+  "origem": {
+    "chave": "7609477c58dbab56290d8d4de94e38fb278e9bce4b0d2438e6cd36cdd7a6ae36",
+    "data": "2025-03-05",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "dd51f627189d7c4da8c92513653a30ffb4121e7a1d92bbce145d9ef57885c778",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Pervedant listada em site de extorsão (lynx)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

@@ -75,6 +75,24 @@
   },
   {
     "ano": 2026,
+    "ator": "settra",
+    "data": "2026-06-28",
+    "entidades_afetadas": [
+      "conduril"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2026-conduril",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "industria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Conduril listada em site de extorsão"
+  },
+  {
+    "ano": 2026,
     "ator": "Qilin",
     "data": "2026-06-06",
     "entidades_afetadas": [
@@ -109,6 +127,24 @@
       "ransomware"
     ],
     "titulo": "Soja de Portugal listada em site de extorsão"
+  },
+  {
+    "ano": 2026,
+    "ator": "qilin",
+    "data": "2026-06-03",
+    "entidades_afetadas": [
+      "meisa-sines"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2026-meisa-sines",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "energia_agua",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "MEISA Sines listada em site de extorsão"
   },
   {
     "ano": 2026,
@@ -228,6 +264,114 @@
     "titulo": "Ciberataque à Câmara Municipal da Guarda"
   },
   {
+    "ano": 2026,
+    "ator": "thegentlemen",
+    "data": "2026-02-10",
+    "entidades_afetadas": [
+      "museu-do-caramulo"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2026-museu-do-caramulo",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "educacao_investigacao",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Museu do Caramulo listada em site de extorsão"
+  },
+  {
+    "ano": 2025,
+    "ator": "lockbit5",
+    "data": "2025-12-26",
+    "entidades_afetadas": [
+      "ambisig"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2025-ambisig",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "tecnologia",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Ambisig listada em site de extorsão"
+  },
+  {
+    "ano": 2025,
+    "ator": "nova",
+    "data": "2025-12-19",
+    "entidades_afetadas": [
+      "spzc"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2025-spzc",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "educacao_investigacao",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "SPZC listada em site de extorsão"
+  },
+  {
+    "ano": 2025,
+    "ator": "qilin",
+    "data": "2025-12-04",
+    "entidades_afetadas": [
+      "espaco-casa"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2025-espaco-casa",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "retalho",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Espaço Casa listada em site de extorsão"
+  },
+  {
+    "ano": 2025,
+    "ator": "ransomhouse",
+    "data": "2025-12-03",
+    "entidades_afetadas": [
+      "armis-group"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2025-armis-group",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "tecnologia",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Armis Group listada em site de extorsão"
+  },
+  {
+    "ano": 2025,
+    "ator": "qilin",
+    "data": "2025-11-20",
+    "entidades_afetadas": [
+      "cimertex"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2025-cimertex",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "industria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Cimertex listada em site de extorsão"
+  },
+  {
     "ano": 2025,
     "ator": null,
     "data": "2025-11-16",
@@ -249,6 +393,42 @@
   },
   {
     "ano": 2025,
+    "ator": "devman",
+    "data": "2025-07-20",
+    "entidades_afetadas": [
+      "elis-portugal"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2025-elis-portugal",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "industria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Elis Portugal listada em site de extorsão"
+  },
+  {
+    "ano": 2025,
+    "ator": "qilin",
+    "data": "2025-07-02",
+    "entidades_afetadas": [
+      "quinta-da-marinha"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2025-quinta-da-marinha",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "turismo_hotelaria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Quinta da Marinha listada em site de extorsão"
+  },
+  {
+    "ano": 2025,
     "ator": null,
     "data": "2025-06-28",
     "entidades_afetadas": [
@@ -265,6 +445,96 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque ao sítio do Conselho Superior da Magistratura"
+  },
+  {
+    "ano": 2025,
+    "ator": "akira",
+    "data": "2025-05-08",
+    "entidades_afetadas": [
+      "selenis"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2025-selenis",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "industria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Selenis listada em site de extorsão"
+  },
+  {
+    "ano": 2025,
+    "ator": "BrainCipher",
+    "data": "2025-05-05",
+    "entidades_afetadas": [
+      "vale-do-lobo"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2025-vale-do-lobo",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "turismo_hotelaria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Vale do Lobo listada em site de extorsão"
+  },
+  {
+    "ano": 2025,
+    "ator": "nova",
+    "data": "2025-04-28",
+    "entidades_afetadas": [
+      "newhotel"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2025-newhotel",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "tecnologia",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "NewHotel listada em site de extorsão"
+  },
+  {
+    "ano": 2025,
+    "ator": "nitrogen",
+    "data": "2025-04-25",
+    "entidades_afetadas": [
+      "mar-de-ar-hotels"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2025-mar-de-ar-hotels",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "turismo_hotelaria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "M'AR De AR Hotels listada em site de extorsão"
+  },
+  {
+    "ano": 2025,
+    "ator": "akira",
+    "data": "2025-04-02",
+    "entidades_afetadas": [
+      "socarpor"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2025-socarpor",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "transportes",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Socarpor listada em site de extorsão"
   },
   {
     "ano": 2025,
@@ -303,6 +573,24 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque aos grupos Global Media e Notícias Ilimitadas"
+  },
+  {
+    "ano": 2024,
+    "ator": "8base",
+    "data": "2024-12-21",
+    "entidades_afetadas": [
+      "bebecar"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2024-bebecar",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "industria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Bébécar listada em site de extorsão"
   },
   {
     "ano": 2024,
@@ -401,6 +689,24 @@
   },
   {
     "ano": 2024,
+    "ator": "akira",
+    "data": "2024-06-19",
+    "entidades_afetadas": [
+      "perfumes-e-companhia"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2024-perfumes-e-companhia",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "retalho",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Perfumes & Companhia listada em site de extorsão"
+  },
+  {
+    "ano": 2024,
     "ator": null,
     "data": "2024-06-14",
     "entidades_afetadas": [
@@ -417,6 +723,24 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque à Câmara Municipal de Santa Comba Dão"
+  },
+  {
+    "ano": 2024,
+    "ator": "lockbit3",
+    "data": "2024-02-05",
+    "entidades_afetadas": [
+      "portline"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2024-portline",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "transportes",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Portline listada em site de extorsão"
   },
   {
     "ano": 2023,
@@ -436,6 +760,42 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque à Câmara Municipal de Barrancos"
+  },
+  {
+    "ano": 2023,
+    "ator": "ranstreet",
+    "data": "2023-12-21",
+    "entidades_afetadas": [
+      "zonesoft"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2023-zonesoft",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "tecnologia",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Zonesoft listada em site de extorsão"
+  },
+  {
+    "ano": 2023,
+    "ator": "lockbit3",
+    "data": "2023-11-07",
+    "entidades_afetadas": [
+      "ccdr-centro"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2023-ccdr-centro",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "administracao_publica",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "CCDR-Centro listada em site de extorsão"
   },
   {
     "ano": 2023,
@@ -477,6 +837,24 @@
   },
   {
     "ano": 2023,
+    "ator": "everest",
+    "data": "2023-08-14",
+    "entidades_afetadas": [
+      "agriloja"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2023-agriloja",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "retalho",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Agriloja listada em site de extorsão"
+  },
+  {
+    "ano": 2023,
     "ator": null,
     "data": "2023-08-06",
     "entidades_afetadas": [
@@ -493,6 +871,60 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque ao Serviço de Saúde da Madeira"
+  },
+  {
+    "ano": 2023,
+    "ator": "medusa",
+    "data": "2023-07-03",
+    "entidades_afetadas": [
+      "luna-hotels"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2023-luna-hotels",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "turismo_hotelaria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Luna Hotels listada em site de extorsão"
+  },
+  {
+    "ano": 2023,
+    "ator": "play",
+    "data": "2023-06-21",
+    "entidades_afetadas": [
+      "luis-simoes"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2023-luis-simoes",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "transportes",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Luís Simões listada em site de extorsão"
+  },
+  {
+    "ano": 2023,
+    "ator": "darkrace",
+    "data": "2023-05-31",
+    "entidades_afetadas": [
+      "ert"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2023-ert",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "industria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "ERT listada em site de extorsão"
   },
   {
     "ano": 2023,
@@ -605,6 +1037,24 @@
       "intrusao"
     ],
     "titulo": "Ciberataque à Águas e Energia do Porto"
+  },
+  {
+    "ano": 2022,
+    "ator": "royal",
+    "data": "2022-12-27",
+    "entidades_afetadas": [
+      "inforlandia"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2022-inforlandia",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "tecnologia",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Inforlandia listada em site de extorsão"
   },
   {
     "ano": 2022,

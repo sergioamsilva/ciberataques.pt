@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "promovido",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "8base",
+        "texto": "Grupo Bébécar foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "8base",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2024-12-21",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Grupo Bébécar",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-49938b32",
+  "motivo_rejeicao": "promovido a incidente de nível 5 (alegado pelo atacante)",
+  "origem": {
+    "chave": "49938b32bde45405f7caead2d76c7b1a6dff273cc5d2e2328931fdd8a569b153",
+    "data": "2024-12-21",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "1a08a4f4c543cee717f64e3544b7b186ee341dad17b6351ecbf1ae3f360b512e",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Grupo Bébécar listada em site de extorsão (8base)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

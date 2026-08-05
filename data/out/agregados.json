@@ -1,6 +1,6 @@
 {
   "distribuicao_fontes_por_incidente": {
-    "1": 6,
+    "1": 31,
     "2": 13,
     "3": 14,
     "4": 6,
@@ -13,13 +13,15 @@
     "2017": 2,
     "2020": 1,
     "2021": 1,
-    "2022": 18,
-    "2023": 10,
-    "2024": 6,
-    "2025": 4,
-    "2026": 12
+    "2022": 19,
+    "2023": 16,
+    "2024": 9,
+    "2025": 16,
+    "2026": 15
   },
   "por_ator": {
+    "8base": 1,
+    "BrainCipher": 1,
     "HIVE": 1,
     "Lapsus$ Group": 1,
     "LockBit": 3,
@@ -32,29 +34,45 @@
     "ShinyHunters": 1,
     "WannaCry": 1,
     "Warlock": 1,
-    "thegentlemen": 2
+    "akira": 3,
+    "darkrace": 1,
+    "devman": 1,
+    "everest": 1,
+    "lockbit3": 2,
+    "lockbit5": 1,
+    "medusa": 1,
+    "nitrogen": 1,
+    "nova": 2,
+    "play": 1,
+    "qilin": 4,
+    "ransomhouse": 1,
+    "ranstreet": 1,
+    "royal": 1,
+    "settra": 1,
+    "thegentlemen": 3
   },
   "por_estado_confirmacao": {
-    "alegado_pelo_atacante": 2,
+    "alegado_pelo_atacante": 27,
     "confirmado_pela_entidade": 45,
     "confirmado_por_regulador": 4,
     "reportado_por_media": 3
   },
   "por_setor": {
-    "administracao_publica": 5,
+    "administracao_publica": 6,
     "autarquias": 14,
     "banca_seguros": 1,
     "desporto": 2,
-    "educacao_investigacao": 6,
-    "energia_agua": 4,
-    "industria": 3,
+    "educacao_investigacao": 8,
+    "energia_agua": 5,
+    "industria": 9,
     "justica_defesa": 2,
     "media": 4,
-    "retalho": 1,
+    "retalho": 4,
     "saude": 5,
-    "tecnologia": 1,
+    "tecnologia": 6,
     "telecomunicacoes": 1,
-    "transportes": 5
+    "transportes": 8,
+    "turismo_hotelaria": 4
   },
   "por_tipo_ataque": {
     "cadeia_fornecimento": 3,
@@ -64,7 +82,7 @@
     "indisponibilidade": 29,
     "intrusao": 27,
     "phishing_bec": 1,
-    "ransomware": 24
+    "ransomware": 49
   },
-  "total": 54
+  "total": 79
 }

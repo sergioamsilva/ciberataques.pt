@@ -52,6 +52,39 @@ Três regras sobre este campo:
 - **Nada sobe a "confirmado" por repetição.** Cinco órgãos a citar o mesmo comunicado do
   atacante continuam a ser uma alegação do atacante.
 
+### 3.1. Quando registamos uma alegação de atacante e mais nada
+
+O nível 5 é o único em que publicamos o nome de uma entidade sem que ninguém, além de
+quem diz tê-la atacado, tenha confirmado o que quer que seja. Isso é grave o suficiente
+para exigir um segundo teste, além do da fonte: **o do interesse público**.
+
+Registamos uma listagem em site de extorsão sem confirmação independente quando a
+entidade é uma destas:
+
+- **Entidade pública, ou que exerce função pública ou representativa** — administração
+  central e local, institutos, sindicatos, associações públicas, instituições culturais
+  abertas ao público.
+- **Entidade de setor crítico** na aceção dos anexos da NIS2 — energia, água,
+  transportes, saúde, banca, telecomunicações, infraestrutura portuária.
+- **Entidade que serve o público em escala** e trata por isso dados de muitas pessoas —
+  cadeias de retalho, grupos hoteleiros, resorts.
+- **Fornecedor de software ou serviços a muitas outras organizações**, em que o
+  comprometimento de um é risco para todos os clientes.
+
+Não registamos a listagem de uma microempresa sem nenhuma destas características. O que
+pesa não é a dimensão em si: é que, para uma empresa de dez pessoas, a alegação de um
+criminoso passaria a ser o primeiro resultado permanente e pesquisável sobre o seu nome,
+sem que ninguém a tenha verificado e sem que ela tenha meios de o contrariar. O valor
+informativo para o público não justifica esse dano.
+
+As que ficam de fora não desaparecem: vão para `data/fila/rejeitados/`, que é versionado
+e auditável, com o motivo escrito. Se aparecer fonte independente, sobem.
+
+Quando a firma da entidade é composta por nomes de pessoas singulares — sociedades de
+advogados e de contabilistas, sobretudo — usamos o nome comercial tal como consta do
+registo, por ser o da pessoa coletiva, e não criamos entrada de entidade nem página
+indexável para as pessoas nomeadas nele.
+
 ## 4. Pessoas singulares
 
 **Não nomeamos pessoas singulares.** Três exceções, e só três:

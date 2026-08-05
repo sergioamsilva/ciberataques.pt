@@ -1,0 +1,87 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "baixa",
+    "grupo": "medusa",
+    "nota": "A atribuição assenta exclusivamente na reivindicação do próprio grupo."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2023-07-03",
+      "fonte": 0,
+      "texto": "O grupo medusa lista Luna Hotels no seu site de extorsão.",
+      "tipo": "reivindicacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação verificada sobre dados comprometidos. Volumes e categorias atribuídos ao grupo não são registados por não terem confirmação independente.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2023-07-03",
+    "divulgacao": "2023-07-03",
+    "inicio": "2023-07-03",
+    "precisao": "desconhecida"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "luna-hotels"
+  ],
+  "estado_confirmacao": "alegado_pelo_atacante",
+  "etiquetas": [
+    "sem-confirmacao",
+    "hotelaria",
+    "retirado-do-site-de-extorsao"
+  ],
+  "fontes": [
+    {
+      "data": "2023-07-03",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "Luna Hotels listada no site de extorsão do grupo medusa",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2023-luna-hotels",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": []
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2025-vale-do-lobo",
+    "2025-mar-de-ar-hotels",
+    "2025-quinta-da-marinha"
+  ],
+  "resumo": "A 3 de julho de 2023, o grupo de ransomware medusa listou Luna Hotels — grupo hoteleiro português com unidades no litoral e no Algarve — no seu site de extorsão. A entidade não se pronunciou publicamente e não é conhecida confirmação por autoridade nem cobertura mediática do caso. Tudo o que existe é a alegação de quem diz tê-la atacado.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Nível mais baixo da escala de confiança: só existe a palavra do atacante. Registado por passar no critério de interesse público da política editorial — grupo hoteleiro que serve o publico em escala. A listagem já não consta do feed público do tracker, o que pode significar pagamento de resgate, acordo ou remoção pelo próprio grupo, e que não interpretamos. Volumes de dados alegados pelo grupo não entram na ficha técnica.",
+    "versao": 1
+  },
+  "setor": "turismo_hotelaria",
+  "tipos_ataque": [
+    "ransomware"
+  ],
+  "titulo": "Luna Hotels listada em site de extorsão"
+}

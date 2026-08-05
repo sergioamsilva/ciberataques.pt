@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "promovido",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "ranstreet",
+        "texto": "zonesoft.pt foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "ranstreet",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2023-12-21",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "zonesoft.pt",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-b4ad4124",
+  "motivo_rejeicao": "promovido a incidente de nível 5 (alegado pelo atacante)",
+  "origem": {
+    "chave": "b4ad4124495c0592ebd668c0aabcd244800e552f5f1ee8c3ce6ac2980057fd8d",
+    "data": "2023-12-21",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "ea813078a60d10303ffeeb7a5cf36a8e79a4d8bd4d008bda8d7a9d879b638fc9",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "zonesoft.pt listada em site de extorsão (ranstreet)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

@@ -1,0 +1,86 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "baixa",
+    "grupo": "everest",
+    "nota": "A atribuição assenta exclusivamente na reivindicação do próprio grupo."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2023-08-14",
+      "fonte": 0,
+      "texto": "O grupo everest lista Agriloja no seu site de extorsão.",
+      "tipo": "reivindicacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação verificada sobre dados comprometidos. Volumes e categorias atribuídos ao grupo não são registados por não terem confirmação independente.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2023-08-14",
+    "divulgacao": "2023-08-14",
+    "inicio": "2023-08-14",
+    "precisao": "desconhecida"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "agriloja"
+  ],
+  "estado_confirmacao": "alegado_pelo_atacante",
+  "etiquetas": [
+    "sem-confirmacao",
+    "retalho",
+    "agroalimentar"
+  ],
+  "fontes": [
+    {
+      "data": "2023-08-14",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "Agriloja listada no site de extorsão do grupo everest",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2023-agriloja",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": []
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2024-perfumes-e-companhia",
+    "2025-espaco-casa"
+  ],
+  "resumo": "A 14 de agosto de 2023, o grupo de ransomware everest listou Agriloja — cadeia de lojas de produtos agrícolas, veterinários e para animais, com presença nacional — no seu site de extorsão. A entidade não se pronunciou publicamente e não é conhecida confirmação por autoridade nem cobertura mediática do caso. Tudo o que existe é a alegação de quem diz tê-la atacado.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Nível mais baixo da escala de confiança: só existe a palavra do atacante. Registado por passar no critério de interesse público da política editorial — cadeia de retalho que serve o publico em escala. Volumes de dados alegados pelo grupo não entram na ficha técnica.",
+    "versao": 1
+  },
+  "setor": "retalho",
+  "tipos_ataque": [
+    "ransomware"
+  ],
+  "titulo": "Agriloja listada em site de extorsão"
+}

@@ -82,6 +82,7 @@ setores:
   justica_defesa: {nome: Justiça e defesa}
   tecnologia: {nome: Tecnologia}
   desporto: {nome: Desporto}
+  turismo_hotelaria: {nome: Turismo e hotelaria}
 
 # A escala de confiança. É o campo mais importante do projeto e o que nenhum outro
 # recurso oferece: separa a versão da vítima da versão do atacante.

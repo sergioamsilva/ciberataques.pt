@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "promovido",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "settra",
+        "texto": "conduril.pt foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "settra",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-06-28",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "conduril.pt",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-93ce0cb7",
+  "motivo_rejeicao": "promovido a incidente de nível 5 (alegado pelo atacante)",
+  "origem": {
+    "chave": "93ce0cb7c8c47a1f49fbd26b7210a27cfb3ba272a657cb46de17415fd78c4c13",
+    "data": "2026-06-28",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "e84e11e50b869bf23afc4fc80712bbda107861b38e4dca50dcb5cd5fb6e2fcee",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "conduril.pt listada em site de extorsão (settra)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

@@ -1,0 +1,86 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "baixa",
+    "grupo": "qilin",
+    "nota": "A atribuição assenta exclusivamente na reivindicação do próprio grupo."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2025-11-20",
+      "fonte": 0,
+      "texto": "O grupo qilin lista Cimertex no seu site de extorsão.",
+      "tipo": "reivindicacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação verificada sobre dados comprometidos. Volumes e categorias atribuídos ao grupo não são registados por não terem confirmação independente.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2025-11-20",
+    "divulgacao": "2025-11-20",
+    "inicio": "2025-11-20",
+    "precisao": "desconhecida"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "cimertex"
+  ],
+  "estado_confirmacao": "alegado_pelo_atacante",
+  "etiquetas": [
+    "sem-confirmacao",
+    "equipamento-industrial"
+  ],
+  "fontes": [
+    {
+      "data": "2025-11-20",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "Cimertex listada no site de extorsão do grupo qilin",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2025-cimertex",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": []
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2026-conduril",
+    "2025-selenis",
+    "2024-bebecar"
+  ],
+  "resumo": "A 20 de novembro de 2025, o grupo de ransomware qilin listou Cimertex — distribuidora de máquinas e equipamento pesado para construção e indústria — no seu site de extorsão. A entidade não se pronunciou publicamente e não é conhecida confirmação por autoridade nem cobertura mediática do caso. Tudo o que existe é a alegação de quem diz tê-la atacado.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Nível mais baixo da escala de confiança: só existe a palavra do atacante. Registado por passar no critério de interesse público da política editorial — fornecedor de equipamento a setores criticos. Volumes de dados alegados pelo grupo não entram na ficha técnica.",
+    "versao": 1
+  },
+  "setor": "industria",
+  "tipos_ataque": [
+    "ransomware"
+  ],
+  "titulo": "Cimertex listada em site de extorsão"
+}

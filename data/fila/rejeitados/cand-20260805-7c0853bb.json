@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "akira",
+        "texto": "Agricola Da Quinta De Corona foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "akira",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2025-04-14",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Agricola Da Quinta De Corona",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-7c0853bb",
+  "motivo_rejeicao": "alegação de site de extorsão sem confirmação independente, e Agricola da Quinta de Corona não passa no critério de interesse público da política editorial (secção 3.1): não é entidade pública, nem de setor crítico, nem serve o público em escala, nem é fornecedora de muitas organizações. Sobe se aparecer fonte independente.",
+  "origem": {
+    "chave": "7c0853bba3f70cce5376d64473b72e065498db2a760ee2bde9d6e9a634891d0d",
+    "data": "2025-04-14",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "2c5119347f27d1ffcfc8dd17d7d02a48811f7ee75b90fc88253850eb29f9128f",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Agricola Da Quinta De Corona listada em site de extorsão (akira)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

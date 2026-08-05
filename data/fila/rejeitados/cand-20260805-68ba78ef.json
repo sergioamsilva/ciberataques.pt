@@ -1,0 +1,41 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "trigona",
+        "texto": "Bwizer foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "trigona",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2024-03-16",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Bwizer",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20260805-68ba78ef",
+  "motivo_rejeicao": "alegação de site de extorsão sem confirmação independente, e Bwizer não passa no critério de interesse público da política editorial (secção 3.1): não é entidade pública, nem de setor crítico, nem serve o público em escala, nem é fornecedora de muitas organizações. Sobe se aparecer fonte independente.",
+  "origem": {
+    "chave": "68ba78efbe631bdb37352c096368a604722cca927a7216c07f7f8db0086d00ee",
+    "data": "2024-03-16",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "428832e9a8c8601fc6bed5fb8c7c22460a3bb5daa2c09590e6f33c7ed2c95313",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "rejeitado_em": "2026-08-05",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Bwizer listada em site de extorsão (trigona)",
+  "triado_em": "2026-08-05T17:59:50+00:00"
+}

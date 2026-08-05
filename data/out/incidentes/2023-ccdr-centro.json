@@ -1,0 +1,83 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "baixa",
+    "grupo": "lockbit3",
+    "nota": "A atribuição assenta exclusivamente na reivindicação do próprio grupo."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2023-11-07",
+      "fonte": 0,
+      "texto": "O grupo lockbit3 lista CCDR-Centro no seu site de extorsão.",
+      "tipo": "reivindicacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação verificada sobre dados comprometidos. Volumes e categorias atribuídos ao grupo não são registados por não terem confirmação independente.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2023-11-07",
+    "divulgacao": "2023-11-07",
+    "inicio": "2023-11-07",
+    "precisao": "desconhecida"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "ccdr-centro"
+  ],
+  "estado_confirmacao": "alegado_pelo_atacante",
+  "etiquetas": [
+    "sem-confirmacao",
+    "administracao-central",
+    "desconcentrada"
+  ],
+  "fontes": [
+    {
+      "data": "2023-11-07",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "CCDR-Centro listada no site de extorsão do grupo lockbit3",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2023-ccdr-centro",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": []
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A 7 de novembro de 2023, o grupo de ransomware lockbit3 listou CCDR-Centro — serviço desconcentrado da Presidência do Conselho de Ministros, com autonomia administrativa e financeira, responsável pela coordenação do desenvolvimento e do ambiente na Região Centro — no seu site de extorsão. A entidade não se pronunciou publicamente e não é conhecida confirmação por autoridade nem cobertura mediática do caso. Tudo o que existe é a alegação de quem diz tê-la atacado.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Nível mais baixo da escala de confiança: só existe a palavra do atacante. Registado por passar no critério de interesse público da política editorial — entidade publica. Volumes de dados alegados pelo grupo não entram na ficha técnica.",
+    "versao": 1
+  },
+  "setor": "administracao_publica",
+  "tipos_ataque": [
+    "ransomware"
+  ],
+  "titulo": "CCDR-Centro listada em site de extorsão"
+}

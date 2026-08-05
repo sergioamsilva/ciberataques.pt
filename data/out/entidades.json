@@ -1,4 +1,20 @@
 {
+  "agriloja": {
+    "chaves": [
+      "agriloja"
+    ],
+    "distrito": "Santarém",
+    "id": "agriloja",
+    "incidentes": [
+      "2023-agriloja"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Agriloja",
+    "nome_curto": "Agriloja",
+    "setor": "retalho",
+    "tipo": "empresa",
+    "url": "https://www.agriloja.pt"
+  },
   "aguas-de-portugal": {
     "chaves": [
       "aguas de portugal",
@@ -76,6 +92,39 @@
     "tipo": "entidade_publica",
     "url": "https://www.ama.gov.pt"
   },
+  "ambisig": {
+    "chaves": [
+      "ambisig"
+    ],
+    "distrito": "Lisboa",
+    "id": "ambisig",
+    "incidentes": [
+      "2025-ambisig"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Ambisig — Ambiente e Sistemas de Informação Geográfica",
+    "nome_curto": "Ambisig",
+    "setor": "tecnologia",
+    "tipo": "empresa",
+    "url": "https://www.ambisig.com"
+  },
+  "armis-group": {
+    "chaves": [
+      "armis group",
+      "armis"
+    ],
+    "distrito": "Braga",
+    "id": "armis-group",
+    "incidentes": [
+      "2025-armis-group"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Armis Group",
+    "nome_curto": "Armis Group",
+    "setor": "tecnologia",
+    "tipo": "empresa",
+    "url": "https://www.armisgroup.com"
+  },
   "autoridade-tributaria": {
     "chaves": [
       "autoridade tributaria",
@@ -95,6 +144,23 @@
     "setor": "administracao_publica",
     "tipo": "entidade_publica",
     "url": "https://www.portaldasfinancas.gov.pt"
+  },
+  "bebecar": {
+    "chaves": [
+      "bebecar",
+      "grupo bebecar"
+    ],
+    "distrito": "Porto",
+    "id": "bebecar",
+    "incidentes": [
+      "2024-bebecar"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Bébécar — Utilidades para Criança, S.A.",
+    "nome_curto": "Bébécar",
+    "setor": "industria",
+    "tipo": "empresa",
+    "url": "https://www.bebecar.com"
   },
   "bpi": {
     "chaves": [
@@ -370,6 +436,24 @@
     "tipo": "entidade_publica",
     "url": "https://www.cm-barreiro.pt"
   },
+  "ccdr-centro": {
+    "chaves": [
+      "ccdrc",
+      "ccdr centro",
+      "comissao de coordenacao e desenvolvimento regional do centro"
+    ],
+    "distrito": "Coimbra",
+    "id": "ccdr-centro",
+    "incidentes": [
+      "2023-ccdr-centro"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Comissão de Coordenação e Desenvolvimento Regional do Centro",
+    "nome_curto": "CCDR-Centro",
+    "setor": "administracao_publica",
+    "tipo": "entidade_publica",
+    "url": "https://www.ccdrc.pt"
+  },
   "centro-cientifico-e-cultural-de-macau": {
     "chaves": [
       "centro cientifico e cultural de macau",
@@ -386,6 +470,39 @@
     "setor": "educacao_investigacao",
     "tipo": "entidade_publica",
     "url": "https://www.cccm.gov.pt"
+  },
+  "cimertex": {
+    "chaves": [
+      "cimertex"
+    ],
+    "distrito": "Porto",
+    "id": "cimertex",
+    "incidentes": [
+      "2025-cimertex"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Cimertex — Sociedade Técnica de Equipamentos e Veículos, S.A.",
+    "nome_curto": "Cimertex",
+    "setor": "industria",
+    "tipo": "empresa",
+    "url": "https://www.cimertex.pt"
+  },
+  "conduril": {
+    "chaves": [
+      "conduril",
+      "conduril engenharia"
+    ],
+    "distrito": "Porto",
+    "id": "conduril",
+    "incidentes": [
+      "2026-conduril"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Conduril — Engenharia, S.A.",
+    "nome_curto": "Conduril",
+    "setor": "industria",
+    "tipo": "empresa",
+    "url": "https://www.conduril.pt"
   },
   "conselho-superior-da-magistratura": {
     "chaves": [
@@ -458,6 +575,23 @@
     "tipo": "empresa",
     "url": "https://www.edp.com"
   },
+  "elis-portugal": {
+    "chaves": [
+      "elis",
+      "elis portugal"
+    ],
+    "distrito": "Lisboa",
+    "id": "elis-portugal",
+    "incidentes": [
+      "2025-elis-portugal"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Elis Portugal",
+    "nome_curto": "Elis Portugal",
+    "setor": "industria",
+    "tipo": "empresa",
+    "url": "https://pt.elis.com"
+  },
   "emgfa": {
     "chaves": [
       "emgfa",
@@ -492,6 +626,40 @@
     "setor": "energia_agua",
     "tipo": "entidade_publica",
     "url": "https://www.ersar.pt"
+  },
+  "ert": {
+    "chaves": [
+      "ert",
+      "ert automotive",
+      "ert textil"
+    ],
+    "distrito": "Aveiro",
+    "id": "ert",
+    "incidentes": [
+      "2023-ert"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "ERT — Automotive",
+    "nome_curto": "ERT",
+    "setor": "industria",
+    "tipo": "empresa"
+  },
+  "espaco-casa": {
+    "chaves": [
+      "espaco casa",
+      "espacocasa"
+    ],
+    "distrito": "Porto",
+    "id": "espaco-casa",
+    "incidentes": [
+      "2025-espaco-casa"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Espaço Casa",
+    "nome_curto": "Espaço Casa",
+    "setor": "retalho",
+    "tipo": "empresa",
+    "url": "https://www.espacocasa.pt"
   },
   "fc-porto": {
     "chaves": [
@@ -628,6 +796,22 @@
     "tipo": "entidade_publica",
     "url": "https://www.inem.pt"
   },
+  "inforlandia": {
+    "chaves": [
+      "inforlandia"
+    ],
+    "distrito": "Aveiro",
+    "id": "inforlandia",
+    "incidentes": [
+      "2022-inforlandia"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Inforlandia",
+    "nome_curto": "Inforlandia",
+    "setor": "tecnologia",
+    "tipo": "empresa",
+    "url": "https://www.inforlandia.com"
+  },
   "ipam": {
     "chaves": [
       "ipam",
@@ -644,6 +828,41 @@
     "setor": "educacao_investigacao",
     "tipo": "empresa",
     "url": "https://www.ipam.pt"
+  },
+  "luis-simoes": {
+    "chaves": [
+      "luis simoes",
+      "luis simoes logistica"
+    ],
+    "distrito": "Lisboa",
+    "id": "luis-simoes",
+    "incidentes": [
+      "2023-luis-simoes"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Luís Simões — Logística Integrada, S.A.",
+    "nome_curto": "Luís Simões",
+    "setor": "transportes",
+    "tipo": "empresa",
+    "url": "https://www.luis-simoes.com"
+  },
+  "luna-hotels": {
+    "chaves": [
+      "luna hotels",
+      "luna hoteis",
+      "luna hotels resorts"
+    ],
+    "distrito": "Leiria",
+    "id": "luna-hotels",
+    "incidentes": [
+      "2023-luna-hotels"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Luna Hotels & Resorts",
+    "nome_curto": "Luna Hotels",
+    "setor": "turismo_hotelaria",
+    "tipo": "empresa",
+    "url": "https://www.lunahoteis.com"
   },
   "lusa": {
     "chaves": [
@@ -662,6 +881,42 @@
     "setor": "media",
     "tipo": "empresa_publica",
     "url": "https://www.lusa.pt"
+  },
+  "mar-de-ar-hotels": {
+    "chaves": [
+      "mar de ar hotels",
+      "mardearhotels",
+      "m ar de ar"
+    ],
+    "distrito": "Évora",
+    "id": "mar-de-ar-hotels",
+    "incidentes": [
+      "2025-mar-de-ar-hotels"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "M'AR De AR Hotels",
+    "nome_curto": "M'AR De AR Hotels",
+    "setor": "turismo_hotelaria",
+    "tipo": "empresa",
+    "url": "https://www.mardearhotels.com"
+  },
+  "meisa-sines": {
+    "chaves": [
+      "meisa",
+      "meisa sines",
+      "meisa e"
+    ],
+    "distrito": "Setúbal",
+    "id": "meisa-sines",
+    "incidentes": [
+      "2026-meisa-sines"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "MEISA — unidade de Sines",
+    "nome_curto": "MEISA Sines",
+    "setor": "energia_agua",
+    "tipo": "empresa",
+    "url": "https://www.meisa-e.com"
   },
   "metro-mondego": {
     "chaves": [
@@ -751,6 +1006,23 @@
     "tipo": "associacao",
     "url": "https://www.scmst.pt"
   },
+  "museu-do-caramulo": {
+    "chaves": [
+      "museu do caramulo",
+      "fundacao abel e joao de lacerda"
+    ],
+    "distrito": "Viseu",
+    "id": "museu-do-caramulo",
+    "incidentes": [
+      "2026-museu-do-caramulo"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Fundação Abel e João de Lacerda — Museu do Caramulo",
+    "nome_curto": "Museu do Caramulo",
+    "setor": "educacao_investigacao",
+    "tipo": "associacao",
+    "url": "https://www.museudocaramulo.pt"
+  },
   "navigator": {
     "chaves": [
       "the navigator company",
@@ -770,6 +1042,24 @@
     "tipo": "empresa",
     "url": "https://www.thenavigatorcompany.com"
   },
+  "newhotel": {
+    "chaves": [
+      "newhotel",
+      "newhotel cloud",
+      "newhotel software"
+    ],
+    "distrito": "Lisboa",
+    "id": "newhotel",
+    "incidentes": [
+      "2025-newhotel"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "NewHotel Software",
+    "nome_curto": "NewHotel",
+    "setor": "tecnologia",
+    "tipo": "empresa",
+    "url": "https://www.newhotel.com"
+  },
   "oestecim": {
     "chaves": [
       "oestecim",
@@ -787,6 +1077,41 @@
     "setor": "autarquias",
     "tipo": "entidade_publica",
     "url": "https://oestecim.pt"
+  },
+  "perfumes-e-companhia": {
+    "chaves": [
+      "perfumes e companhia",
+      "perfumes companhia",
+      "perfumesecompanhia"
+    ],
+    "distrito": "Lisboa",
+    "id": "perfumes-e-companhia",
+    "incidentes": [
+      "2024-perfumes-e-companhia"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Perfumes & Companhia — Perfumarias, S.A.",
+    "nome_curto": "Perfumes & Companhia",
+    "setor": "retalho",
+    "tipo": "empresa",
+    "url": "https://www.perfumesecompanhia.pt"
+  },
+  "portline": {
+    "chaves": [
+      "portline",
+      "portline transportes maritimos"
+    ],
+    "distrito": "Lisboa",
+    "id": "portline",
+    "incidentes": [
+      "2024-portline"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Portline — Transportes Marítimos Internacionais, S.A.",
+    "nome_curto": "Portline",
+    "setor": "transportes",
+    "tipo": "empresa",
+    "url": "https://www.portline.pt"
   },
   "porto-de-lisboa": {
     "chaves": [
@@ -806,6 +1131,24 @@
     "tipo": "empresa_publica",
     "url": "https://www.portodelisboa.pt"
   },
+  "quinta-da-marinha": {
+    "chaves": [
+      "quinta da marinha",
+      "onyria quinta da marinha",
+      "quintadamarinha"
+    ],
+    "distrito": "Lisboa",
+    "id": "quinta-da-marinha",
+    "incidentes": [
+      "2025-quinta-da-marinha"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Onyria Quinta da Marinha Hotel",
+    "nome_curto": "Quinta da Marinha",
+    "setor": "turismo_hotelaria",
+    "tipo": "empresa",
+    "url": "https://www.quintadamarinha.com"
+  },
   "seguranca-social": {
     "chaves": [
       "seguranca social",
@@ -824,6 +1167,25 @@
     "setor": "administracao_publica",
     "tipo": "entidade_publica",
     "url": "https://www.seg-social.pt"
+  },
+  "selenis": {
+    "chaves": [
+      "selenis",
+      "evertis",
+      "img group",
+      "imatosgil"
+    ],
+    "distrito": "Santarém",
+    "id": "selenis",
+    "incidentes": [
+      "2025-selenis"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Selenis — Grupo IMG",
+    "nome_curto": "Selenis",
+    "setor": "industria",
+    "tipo": "empresa",
+    "url": "https://www.selenis.com"
   },
   "sesaram": {
     "chaves": [
@@ -919,6 +1281,24 @@
     "tipo": "entidade_publica",
     "url": "https://www.sns.gov.pt"
   },
+  "socarpor": {
+    "chaves": [
+      "socarpor",
+      "socarpor aveiro",
+      "sociedade de cargas portuarias"
+    ],
+    "distrito": "Aveiro",
+    "id": "socarpor",
+    "incidentes": [
+      "2025-socarpor"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "SOCARPOR — Sociedade de Cargas Portuárias (Aveiro), S.A.",
+    "nome_curto": "Socarpor",
+    "setor": "transportes",
+    "tipo": "empresa",
+    "url": "https://www.socarpor-aveiro.pt"
+  },
   "soja-de-portugal": {
     "chaves": [
       "soja de portugal",
@@ -975,6 +1355,23 @@
     "setor": "desporto",
     "tipo": "associacao",
     "url": "https://www.sporting.pt"
+  },
+  "spzc": {
+    "chaves": [
+      "spzc",
+      "sindicato dos professores da zona centro"
+    ],
+    "distrito": "Coimbra",
+    "id": "spzc",
+    "incidentes": [
+      "2025-spzc"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Sindicato dos Professores da Zona Centro",
+    "nome_curto": "SPZC",
+    "setor": "educacao_investigacao",
+    "tipo": "associacao",
+    "url": "https://www.spzc.pt"
   },
   "tap": {
     "chaves": [
@@ -1118,6 +1515,23 @@
     "tipo": "empresa",
     "url": "https://www.europeia.pt"
   },
+  "vale-do-lobo": {
+    "chaves": [
+      "vale do lobo",
+      "valedolobo"
+    ],
+    "distrito": "Faro",
+    "id": "vale-do-lobo",
+    "incidentes": [
+      "2025-vale-do-lobo"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Vale do Lobo — Resort Turístico de Luxo, S.A.",
+    "nome_curto": "Vale do Lobo",
+    "setor": "turismo_hotelaria",
+    "tipo": "empresa",
+    "url": "https://www.valedolobo.com"
+  },
   "visabeira": {
     "chaves": [
       "visabeira",
@@ -1151,5 +1565,22 @@
     "setor": "telecomunicacoes",
     "tipo": "empresa",
     "url": "https://www.vodafone.pt"
+  },
+  "zonesoft": {
+    "chaves": [
+      "zonesoft",
+      "zone soft"
+    ],
+    "distrito": "Santarém",
+    "id": "zonesoft",
+    "incidentes": [
+      "2023-zonesoft"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Zone Soft",
+    "nome_curto": "Zonesoft",
+    "setor": "tecnologia",
+    "tipo": "empresa",
+    "url": "https://www.zonesoft.pt"
   }
 }

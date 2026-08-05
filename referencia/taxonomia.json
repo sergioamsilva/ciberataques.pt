@@ -144,6 +144,9 @@
     },
     "transportes": {
       "nome": "Transportes"
+    },
+    "turismo_hotelaria": {
+      "nome": "Turismo e hotelaria"
     }
   },
   "tipos_ataque": {
