@@ -18,6 +18,102 @@
     "titulo": "Ciberataque ao grupo Águas de Portugal"
   },
   {
+    "ano": 2026,
+    "ator": null,
+    "data": "2026-07-28",
+    "entidades_afetadas": [
+      "universidade-de-aveiro"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-universidade-de-aveiro",
+    "n_fontes": 3,
+    "precisao_data": "desconhecida",
+    "setor": "educacao_investigacao",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ciberataque à Universidade de Aveiro"
+  },
+  {
+    "ano": 2026,
+    "ator": null,
+    "data": "2026-07-06",
+    "entidades_afetadas": [
+      "metro-mondego"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-metro-mondego",
+    "n_fontes": 4,
+    "precisao_data": "dia",
+    "setor": "transportes",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ciberataque à Metro Mondego"
+  },
+  {
+    "ano": 2026,
+    "ator": "ShinyHunters",
+    "data": "2026-05-01",
+    "entidades_afetadas": [
+      "universidade-europeia",
+      "ipam"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-canvas-instituicoes-portuguesas",
+    "n_fontes": 1,
+    "precisao_data": "dia",
+    "setor": "educacao_investigacao",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "cadeia_fornecimento",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ataque à plataforma Canvas com impacto em instituições portuguesas"
+  },
+  {
+    "ano": 2026,
+    "ator": null,
+    "data": "2026-04-27",
+    "entidades_afetadas": [
+      "ctt"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-ctt",
+    "n_fontes": 2,
+    "precisao_data": "desconhecida",
+    "setor": "transportes",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "exfiltracao_dados",
+      "cadeia_fornecimento"
+    ],
+    "titulo": "Fuga de dados da rede de cacifos Locky dos CTT"
+  },
+  {
+    "ano": 2024,
+    "ator": null,
+    "data": "2024-11-14",
+    "entidades_afetadas": [
+      "universidade-do-algarve"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2024-universidade-do-algarve",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "educacao_investigacao",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ciberataque à Universidade do Algarve"
+  },
+  {
     "ano": 2024,
     "ator": null,
     "data": "2024-10-10",
@@ -57,6 +153,62 @@
   },
   {
     "ano": 2022,
+    "ator": null,
+    "data": "2022-11-18",
+    "entidades_afetadas": [
+      "seguranca-social"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-seguranca-social",
+    "n_fontes": 7,
+    "precisao_data": "dia",
+    "setor": "administracao_publica",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ciberataque à Segurança Social"
+  },
+  {
+    "ano": 2022,
+    "ator": null,
+    "data": "2022-10-18",
+    "entidades_afetadas": [
+      "universidade-da-beira-interior"
+    ],
+    "estado_confirmacao": "reportado_por_media",
+    "id": "2022-universidade-da-beira-interior",
+    "n_fontes": 3,
+    "precisao_data": "desconhecida",
+    "setor": "educacao_investigacao",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Ciberataque à Universidade da Beira Interior"
+  },
+  {
+    "ano": 2022,
+    "ator": null,
+    "data": "2022-09-22",
+    "entidades_afetadas": [
+      "camara-municipal-de-loures"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-camara-municipal-de-loures",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal de Loures"
+  },
+  {
+    "ano": 2022,
     "ator": "Ragnar Locker",
     "data": "2022-08-25",
     "entidades_afetadas": [
@@ -73,6 +225,44 @@
       "exfiltracao_dados"
     ],
     "titulo": "Ciberataque à TAP Air Portugal"
+  },
+  {
+    "ano": 2022,
+    "ator": null,
+    "data": "2022-08-01",
+    "entidades_afetadas": [
+      "emgfa"
+    ],
+    "estado_confirmacao": "confirmado_por_regulador",
+    "id": "2022-emgfa",
+    "n_fontes": 7,
+    "precisao_data": "desconhecida",
+    "setor": "justica_defesa",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ciberataque ao Estado-Maior-General das Forças Armadas"
+  },
+  {
+    "ano": 2022,
+    "ator": null,
+    "data": "2022-05-12",
+    "entidades_afetadas": [
+      "lusa"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-lusa",
+    "n_fontes": 4,
+    "precisao_data": "dia",
+    "setor": "media",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ddos",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataques à Agência Lusa"
   },
   {
     "ano": 2022,
@@ -116,6 +306,25 @@
   {
     "ano": 2022,
     "ator": null,
+    "data": "2022-02-10",
+    "entidades_afetadas": [
+      "germano-de-sousa"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-germano-de-sousa",
+    "n_fontes": 7,
+    "precisao_data": "dia",
+    "setor": "saude",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "ransomware",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque ao Grupo Germano de Sousa"
+  },
+  {
+    "ano": 2022,
+    "ator": null,
     "data": "2022-02-07",
     "entidades_afetadas": [
       "vodafone-portugal"
@@ -151,6 +360,25 @@
       "exfiltracao_dados"
     ],
     "titulo": "Ciberataque ao grupo Impresa (SIC e Expresso)"
+  },
+  {
+    "ano": 2021,
+    "ator": null,
+    "data": "2021-10-30",
+    "entidades_afetadas": [
+      "universidade-de-lisboa"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2021-universidade-de-lisboa",
+    "n_fontes": 1,
+    "precisao_data": "dia",
+    "setor": "educacao_investigacao",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Universidade de Lisboa"
   },
   {
     "ano": 2020,

@@ -26,6 +26,13 @@ falhou. Não entram no registo enquanto não houver fonte que os sustente.
   no incidente `2022-vodafone-portugal`. Contá-los como incidentes inflacionaria o registo.
 - **Worten**, março de 2022: o comunicado é da Sonae MC e refere Continente e Wells. A
   Worten não foi confirmada como afetada.
+- **INE / Censos 2021**: a coima de 4.300.000 € da CNPD (Deliberação/2022/1072, dezembro de
+  2022) é a maior alguma vez aplicada em Portugal, mas sanciona **tratamento ilícito de dados**
+  (dados de saúde e religião, dever de informação, escolha do subcontratante Cloudflare,
+  transferências internacionais, ausência de avaliação de impacto). **Não houve ciberataque.**
+  Fora do registo, pela mesma regra que exclui a coima de Setúbal. O sítio chama-se
+  ciberataques.pt, não protecaodedados.pt. Deliberações da CNPD entram como
+  `consequencias_regulatorias` de um incidente, nunca como incidente.
 - **Portal das Finanças**, outubro de 2024: é uma **exposição de credenciais** cuja origem
   o próprio Ministério atribui a sistemas de terceiros e a equipamentos dos utilizadores,
   não uma intrusão nos sistemas da Autoridade Tributária. Classificar como

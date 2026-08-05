@@ -1,0 +1,112 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública. A Polícia Judiciária viria a associar o grupo HIVE a ataques a câmaras municipais portuguesas em janeiro de 2023, mas sem identificar nominalmente o município de Loures."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-09-22",
+      "fonte": 0,
+      "texto": "O município é alvo de um ciberataque que descreve como malicioso e deliberado, dirigido a causar disrupção no sistema e nos serviços informáticos. O ataque é detetado pelo sistema de segurança.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-09-22",
+      "fonte": 1,
+      "texto": "O município comunica o caso à Polícia Judiciária e ao Centro Nacional de Cibersegurança, e toma medidas de contenção e mitigação.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2022-09-29",
+      "fonte": 2,
+      "texto": "Os sistemas informáticos são dados como normalizados e utilizáveis em segurança, após trabalho da equipa técnica com especialistas em cibersegurança e em articulação com o CNCS e a PJ.",
+      "tipo": "reposicao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "O município não especificou que serviços foram afetados nem se houve exposição de dados de munícipes. A ausência de informação não equivale a ausência de impacto.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-09-22",
+    "divulgacao": "2022-09-22",
+    "inicio": "2022-09-22",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["camara-municipal-de-loures"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["administracao-local"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-09-22",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara de Loures alvo de ciberataque \"malicioso e deliberado\"",
+      "url": "https://eco.sapo.pt/2022/09/22/camara-de-loures-alvo-de-ciberataque-malicioso-e-deliberado/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-09-22",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara de Loures alvo de ciberataque \"malicioso e deliberado\"",
+      "url": "https://observador.pt/2022/09/22/camara-de-loures-alvo-de-ciberataque-malicioso-e-deliberado/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-09-29",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Sistemas informáticos da Câmara de Loures normalizados após ciberataque",
+      "url": "https://observador.pt/2022/09/29/sistemas-informaticos-da-camara-de-loures-normalizalizados-apos-ciberataque/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-camara-municipal-de-loures",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": ["sistema e serviços informáticos municipais"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "A 22 de setembro de 2022, o município de Loures foi alvo de um ciberataque que descreveu como malicioso e deliberado, dirigido a causar disrupção nos sistemas e serviços informáticos. O ataque foi detetado pelo sistema de segurança e comunicado à Polícia Judiciária e ao Centro Nacional de Cibersegurança. Os sistemas foram dados como normalizados uma semana depois. O município não especificou que serviços foram afetados nem se houve exposição de dados de munícipes.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "O tipo de ataque nunca foi divulgado, pelo que consta apenas como intrusão. Registo deliberadamente cauteloso: a comunicação do município é vaga e não permite afirmar mais.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque à Câmara Municipal de Loures"
+}

@@ -1,0 +1,111 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-07-28",
+      "fonte": 0,
+      "texto": "A universidade apercebe-se, ao final da tarde, da extensão de um acesso indevido aos seus sistemas de informação ocorrido dias antes.",
+      "tipo": "detecao"
+    },
+    {
+      "data": "2026-07-29",
+      "fonte": 1,
+      "texto": "A universidade torna público o incidente. O reitor indica ter havido cópia de informação, e não perda, sem que a extensão esteja apurada.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-07-29",
+      "fonte": 0,
+      "texto": "A instituição pede à comunidade académica atenção a contactos ou situações anormais relacionados com o incidente, e reporta o caso às autoridades.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["identificacao", "contacto", "comunicacoes"],
+    "nota": "Foi comprometido um número reduzido de contas de correio eletrónico, com exposição de dados pessoais e institucionais. A extensão da informação copiada estava por apurar à data desta revisão.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-07-28",
+    "divulgacao": "2026-07-29",
+    "inicio": "2026-07-28",
+    "precisao": "desconhecida"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["universidade-de-aveiro"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["ensino-superior", "em-desenvolvimento", "correio-eletronico"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-07-29",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "SAPO Tek",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Universidade de Aveiro investiga ataque informático. Acesso indevido expôs dados pessoais e institucionais",
+      "url": "https://tek.sapo.pt/noticias/internet/artigos/universidade-de-aveiro-investiga-ataque-informatico-acesso-indevido-expos-dados-pessoais-e-institucionais/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-07-29",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Universidade de Aveiro sofreu ataque informático: contas de e-mail violadas e dados pessoais expostos",
+      "url": "https://observador.pt/2026/07/29/universidade-de-aveiro-sofreu-ataque-informatico-contas-de-e-mail-violadas-e-dados-pessoais-expostos/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2026-07-29",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "RTP",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Universidade de Aveiro alvo de ataque informático",
+      "url": "https://www.rtp.pt/noticias/pais/universidade-de-aveiro-alvo-de-ataque-informatico_n1756542",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-universidade-de-aveiro",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": ["contas de correio eletrónico institucional"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": ["2024-universidade-do-algarve"],
+  "resumo": "A Universidade de Aveiro detetou a 28 de julho de 2026 um acesso indevido aos seus sistemas de informação, ocorrido dias antes, que comprometeu um número reduzido de contas de correio eletrónico e expôs dados pessoais e institucionais. O reitor indicou ter havido cópia de informação, e não perda, sem que a extensão estivesse apurada. A instituição reportou o caso às autoridades e pediu à comunidade académica atenção a contactos anormais que possam decorrer do incidente.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Incidente recente e em apuramento. A data de ocorrência não foi divulgada: as fontes referem apenas que terá acontecido dias antes da deteção, pelo que a precisão fica como desconhecida. Rever quando a universidade divulgar a extensão.",
+    "versao": 1
+  },
+  "setor": "educacao_investigacao",
+  "tipos_ataque": ["intrusao", "exfiltracao_dados"],
+  "titulo": "Ciberataque à Universidade de Aveiro"
+}

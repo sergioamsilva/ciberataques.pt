@@ -1,0 +1,97 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "ShinyHunters",
+    "nota": "O coletivo reivindicou o acesso e exigiu resgate para não divulgar os dados. É o mesmo grupo associado a ataques anteriores ao Ticketmaster, à Microsoft e à AT&T."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-05-01",
+      "fonte": 0,
+      "texto": "Ocorre o ataque à plataforma Canvas, da Instructure, usada por mais de nove mil escolas e universidades em todo o mundo.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2026-05-08",
+      "fonte": 0,
+      "texto": "É noticiado que o coletivo alega ter acedido a dados de mais de 275 milhões de utilizadores e exige resgate para não os divulgar. Segundo a Instructure, foram acedidos nomes, endereços de correio eletrónico, números de estudante e o conteúdo de mensagens trocadas na plataforma.",
+      "tipo": "reivindicacao"
+    },
+    {
+      "data": "2026-05-08",
+      "fonte": 0,
+      "texto": "A Universidade Europeia e o IPAM declaram que o incidente não teve impacto na disponibilidade dos seus sistemas e que não foram comprometidas palavras-passe, credenciais de acesso nem outros dados particularmente sensíveis, tendo adotado com urgência protocolos internos de segurança e articulação com a Instructure.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["identificacao", "contacto", "comunicacoes"],
+    "nota": "A Instructure indicou o acesso a nomes, endereços de correio eletrónico, números de estudante e conteúdo de mensagens trocadas na plataforma. As instituições portuguesas declararam não terem sido comprometidas palavras-passe nem credenciais. O número de titulares portugueses afetados não foi divulgado.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-05-01",
+    "divulgacao": "2026-05-08",
+    "inicio": "2026-05-01",
+    "precisao": "dia"
+  },
+  "disputas": [
+    {
+      "afirmacao": "O coletivo alegou ter acedido a dados de mais de 275 milhões de utilizadores da plataforma a nível mundial.",
+      "contestado_por": null,
+      "fonte_afirmacao": 0,
+      "fonte_contestacao": null,
+      "nota": "Número global avançado pelos atacantes. Não corresponde a titulares portugueses, e a parcela portuguesa nunca foi quantificada.",
+      "segundo": "ShinyHunters"
+    }
+  ],
+  "entidades_afetadas": ["universidade-europeia", "ipam"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["ensino-superior", "fornecedor-estrangeiro", "extorsao"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-05-08",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hackers atacam plataforma Canvas, utilizada por universidades portuguesas",
+      "url": "https://www.publico.pt/2026/05/08/enter/noticia/hackers-atacam-plataforma-canvas-utilizada-escolas-universidades-portuguesas-2174031",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-canvas-instituicoes-portuguesas",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "Foi exigido resgate para não divulgar os dados. O valor não foi divulgado.",
+    "servicos_afetados": ["plataforma de gestão de aprendizagem Canvas"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A plataforma de gestão de aprendizagem Canvas, da norte-americana Instructure, foi atacada a 1 de maio de 2026, com o coletivo ShinyHunters a reivindicar o acesso a dados de utilizadores e a exigir resgate para não os divulgar. Segundo a Instructure, foram acedidos nomes, endereços de correio eletrónico, números de estudante e o conteúdo de mensagens trocadas na plataforma. Em Portugal, a Universidade Europeia e o IPAM declararam que o incidente não teve impacto na disponibilidade dos seus sistemas e que não foram comprometidas palavras-passe nem credenciais de acesso, tendo adotado protocolos internos de segurança em articulação com o fornecedor.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Caso de cadeia de fornecimento: o ataque foi a um fornecedor estrangeiro, e as entidades registadas são as instituições portuguesas que confirmaram exposição. O número de 275 milhões é global e não corresponde a titulares portugueses. Assenta numa única fonte: rever quando houver mais cobertura ou declarações de outras instituições nacionais que usem a plataforma.",
+    "versao": 1
+  },
+  "setor": "educacao_investigacao",
+  "tipos_ataque": ["cadeia_fornecimento", "exfiltracao_dados"],
+  "titulo": "Ataque à plataforma Canvas com impacto em instituições portuguesas"
+}

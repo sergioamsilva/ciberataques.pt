@@ -37,6 +37,59 @@
     "tipo": "entidade_publica",
     "url": "https://www.ama.gov.pt"
   },
+  "camara-municipal-de-loures": {
+    "chaves": [
+      "camara municipal de loures",
+      "municipio de loures",
+      "camara de loures"
+    ],
+    "distrito": "Lisboa",
+    "id": "camara-municipal-de-loures",
+    "incidentes": [
+      "2022-camara-municipal-de-loures"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município de Loures",
+    "nome_curto": "Câmara Municipal de Loures",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-loures.pt"
+  },
+  "ctt": {
+    "chaves": [
+      "ctt",
+      "correios de portugal",
+      "locky"
+    ],
+    "distrito": "Lisboa",
+    "id": "ctt",
+    "incidentes": [
+      "2026-ctt"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "CTT — Correios de Portugal, S.A.",
+    "nome_curto": "CTT",
+    "setor": "transportes",
+    "tipo": "empresa",
+    "url": "https://www.ctt.pt"
+  },
+  "cuf": {
+    "chaves": [
+      "cuf",
+      "jose de mello saude"
+    ],
+    "distrito": "Lisboa",
+    "id": "cuf",
+    "incidentes": [],
+    "incidentes_em_cascata": [
+      "2022-germano-de-sousa"
+    ],
+    "nome": "CUF, S.A.",
+    "nome_curto": "CUF",
+    "setor": "saude",
+    "tipo": "empresa",
+    "url": "https://www.cuf.pt"
+  },
   "edp": {
     "chaves": [
       "edp",
@@ -53,6 +106,42 @@
     "setor": "energia_agua",
     "tipo": "empresa",
     "url": "https://www.edp.com"
+  },
+  "emgfa": {
+    "chaves": [
+      "emgfa",
+      "estado maior general das forcas armadas",
+      "forcas armadas"
+    ],
+    "distrito": "Lisboa",
+    "id": "emgfa",
+    "incidentes": [
+      "2022-emgfa"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Estado-Maior-General das Forças Armadas",
+    "nome_curto": "EMGFA",
+    "setor": "justica_defesa",
+    "tipo": "entidade_publica",
+    "url": "https://www.emgfa.pt"
+  },
+  "germano-de-sousa": {
+    "chaves": [
+      "germano de sousa",
+      "grupo germano de sousa",
+      "laboratorios germano de sousa"
+    ],
+    "distrito": "Lisboa",
+    "id": "germano-de-sousa",
+    "incidentes": [
+      "2022-germano-de-sousa"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Grupo Germano de Sousa — Centro de Medicina Laboratorial",
+    "nome_curto": "Grupo Germano de Sousa",
+    "setor": "saude",
+    "tipo": "empresa",
+    "url": "https://www.germanodesousa.com"
   },
   "hospital-garcia-de-orta": {
     "chaves": [
@@ -111,6 +200,78 @@
     "tipo": "entidade_publica",
     "url": "https://www.inem.pt"
   },
+  "ipam": {
+    "chaves": [
+      "ipam",
+      "instituto portugues de administracao de marketing"
+    ],
+    "distrito": "Porto",
+    "id": "ipam",
+    "incidentes": [
+      "2026-canvas-instituicoes-portuguesas"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "IPAM — Instituto Português de Administração de Marketing",
+    "nome_curto": "IPAM",
+    "setor": "educacao_investigacao",
+    "tipo": "empresa",
+    "url": "https://www.ipam.pt"
+  },
+  "lusa": {
+    "chaves": [
+      "lusa",
+      "agencia lusa",
+      "agencia de noticias de portugal"
+    ],
+    "distrito": "Lisboa",
+    "id": "lusa",
+    "incidentes": [
+      "2022-lusa"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Lusa — Agência de Notícias de Portugal, S.A.",
+    "nome_curto": "Agência Lusa",
+    "setor": "media",
+    "tipo": "empresa_publica",
+    "url": "https://www.lusa.pt"
+  },
+  "metro-mondego": {
+    "chaves": [
+      "metro mondego",
+      "metrobus",
+      "sistema de mobilidade do mondego"
+    ],
+    "distrito": "Coimbra",
+    "id": "metro-mondego",
+    "incidentes": [
+      "2026-metro-mondego"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Metro Mondego, S.A.",
+    "nome_curto": "Metro Mondego",
+    "setor": "transportes",
+    "tipo": "empresa_publica",
+    "url": "https://www.metromondego.pt"
+  },
+  "seguranca-social": {
+    "chaves": [
+      "seguranca social",
+      "instituto da seguranca social",
+      "instituto de informatica",
+      "iss"
+    ],
+    "distrito": "Lisboa",
+    "id": "seguranca-social",
+    "incidentes": [
+      "2022-seguranca-social"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Instituto de Informática, I.P. / Instituto da Segurança Social, I.P.",
+    "nome_curto": "Segurança Social",
+    "setor": "administracao_publica",
+    "tipo": "entidade_publica",
+    "url": "https://www.seg-social.pt"
+  },
   "sesaram": {
     "chaves": [
       "sesaram",
@@ -158,7 +319,8 @@
     "id": "sns",
     "incidentes": [],
     "incidentes_em_cascata": [
-      "2024-ama"
+      "2024-ama",
+      "2022-germano-de-sousa"
     ],
     "nome": "Serviço Nacional de Saúde",
     "nome_curto": "SNS",
@@ -205,6 +367,90 @@
     "setor": "transportes",
     "tipo": "empresa_publica",
     "url": "https://www.flytap.com"
+  },
+  "universidade-da-beira-interior": {
+    "chaves": [
+      "universidade da beira interior",
+      "ubi"
+    ],
+    "distrito": "Castelo Branco",
+    "id": "universidade-da-beira-interior",
+    "incidentes": [
+      "2022-universidade-da-beira-interior"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Universidade da Beira Interior",
+    "nome_curto": "Universidade da Beira Interior",
+    "setor": "educacao_investigacao",
+    "tipo": "entidade_publica",
+    "url": "https://www.ubi.pt"
+  },
+  "universidade-de-aveiro": {
+    "chaves": [
+      "universidade de aveiro",
+      "ua"
+    ],
+    "distrito": "Aveiro",
+    "id": "universidade-de-aveiro",
+    "incidentes": [
+      "2026-universidade-de-aveiro"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Universidade de Aveiro",
+    "nome_curto": "Universidade de Aveiro",
+    "setor": "educacao_investigacao",
+    "tipo": "entidade_publica",
+    "url": "https://www.ua.pt"
+  },
+  "universidade-de-lisboa": {
+    "chaves": [
+      "universidade de lisboa",
+      "ulisboa"
+    ],
+    "distrito": "Lisboa",
+    "id": "universidade-de-lisboa",
+    "incidentes": [
+      "2021-universidade-de-lisboa"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Universidade de Lisboa",
+    "nome_curto": "Universidade de Lisboa",
+    "setor": "educacao_investigacao",
+    "tipo": "entidade_publica",
+    "url": "https://www.ulisboa.pt"
+  },
+  "universidade-do-algarve": {
+    "chaves": [
+      "universidade do algarve",
+      "ualg"
+    ],
+    "distrito": "Faro",
+    "id": "universidade-do-algarve",
+    "incidentes": [
+      "2024-universidade-do-algarve"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Universidade do Algarve",
+    "nome_curto": "Universidade do Algarve",
+    "setor": "educacao_investigacao",
+    "tipo": "entidade_publica",
+    "url": "https://www.ualg.pt"
+  },
+  "universidade-europeia": {
+    "chaves": [
+      "universidade europeia"
+    ],
+    "distrito": "Lisboa",
+    "id": "universidade-europeia",
+    "incidentes": [
+      "2026-canvas-instituicoes-portuguesas"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Universidade Europeia",
+    "nome_curto": "Universidade Europeia",
+    "setor": "educacao_investigacao",
+    "tipo": "empresa",
+    "url": "https://www.europeia.pt"
   },
   "vodafone-portugal": {
     "chaves": [

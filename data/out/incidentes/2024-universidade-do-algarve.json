@@ -1,0 +1,101 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2024-11-14",
+      "fonte": 0,
+      "texto": "Inicia-se o ataque ao sistema informático de gestão académica, através de uma vulnerabilidade no software.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2024-11-19",
+      "fonte": 0,
+      "texto": "A ameaça é eliminada a partir das 20h, ao fim de seis dias de atividade do atacante.",
+      "tipo": "reposicao"
+    },
+    {
+      "data": "2024-11-22",
+      "fonte": 1,
+      "texto": "A universidade torna público o ciberataque e confirma a exfiltração de dados pessoais de candidatos, estudantes e funcionários, tendo notificado os titulares afetados ao abrigo do Regulamento Geral de Proteção de Dados.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["identificacao", "contacto", "financeiros"],
+    "nota": "Foram exfiltrados nomes, endereços de correio eletrónico, contactos telefónicos e números de identificação bancária (IBAN). A universidade indicou que o ataque não extraiu de igual forma todos os dados pessoais. O número de titulares afetados não foi divulgado.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2024-11-19",
+    "divulgacao": "2024-11-22",
+    "fim": "2024-11-19",
+    "inicio": "2024-11-14",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["universidade-do-algarve"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["ensino-superior", "rgpd", "dados-bancarios"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2024-11-22",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Universidade do Algarve alvo de ciberataque com acesso a dados pessoais",
+      "url": "https://www.publico.pt/2024/11/22/tecnologia/noticia/universidade-algarve-alvo-ciberataque-acesso-dados-pessoais-2112970",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2024-11-22",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Universidade do Algarve alvo de ciberataque com acesso a dados pessoais",
+      "url": "https://observador.pt/2024/11/22/universidade-do-algarve-alvo-de-ciberataque-com-acesso-a-dados-pessoais/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2024-universidade-do-algarve",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": ["sistema de gestão académica"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": true,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "Entre 14 e 19 de novembro de 2024, o sistema informático de gestão académica da Universidade do Algarve foi alvo de um ciberataque, através de uma vulnerabilidade no software. A ameaça foi eliminada ao fim de seis dias. Foram exfiltrados dados pessoais de candidatos, estudantes e funcionários, incluindo nomes, endereços de correio eletrónico, contactos telefónicos e números de identificação bancária. A universidade tornou o caso público a 22 de novembro, notificou os titulares afetados ao abrigo do Regulamento Geral de Proteção de Dados e reportou o incidente às autoridades. As atividades letivas e de investigação não foram interrompidas.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Excertos por preencher.",
+    "versao": 1
+  },
+  "setor": "educacao_investigacao",
+  "tipos_ataque": ["intrusao", "exfiltracao_dados"],
+  "titulo": "Ciberataque à Universidade do Algarve"
+}

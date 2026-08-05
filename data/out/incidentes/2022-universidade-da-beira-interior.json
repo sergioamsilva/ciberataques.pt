@@ -1,0 +1,97 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-10-18",
+      "fonte": 0,
+      "texto": "É tornado público que a Universidade da Beira Interior foi alvo de um ataque de ransomware que comprometeu sistemas informáticos, com pedido de resgate.",
+      "tipo": "divulgacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública que confirme ou exclua o comprometimento de dados pessoais.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-10-18",
+    "divulgacao": "2022-10-18",
+    "inicio": "2022-10-18",
+    "precisao": "desconhecida"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["universidade-da-beira-interior"],
+  "estado_confirmacao": "reportado_por_media",
+  "etiquetas": ["ensino-superior"],
+  "fontes": [
+    {
+      "data": "2022-10-18",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "UBI alvo de ataque informático e pedido de resgate",
+      "url": "https://observador.pt/2022/10/18/universidade-da-beira-interior-sofre-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-10-18",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Universidade da Beira Interior sofre ataque informático",
+      "url": "https://eco.sapo.pt/2022/10/18/universidade-da-beira-interior-sofre-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-10-18",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "SAPO Tek",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque de ransomware compromete sistemas informáticos da Universidade da Beira Interior",
+      "url": "https://tek.sapo.pt/noticias/internet/artigos/ataque-de-ransomware-compromete-sistemas-informaticos-da-universidade-da-beira-interior",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-universidade-da-beira-interior",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "Houve pedido de resgate. O valor não foi divulgado.",
+    "servicos_afetados": ["sistemas informáticos da universidade"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": ["2021-universidade-de-lisboa"],
+  "resumo": "Em outubro de 2022, a Universidade da Beira Interior foi alvo de um ataque de ransomware que comprometeu sistemas informáticos, com pedido de resgate. A cobertura pública do caso é escassa e não estabelece a data da ocorrência, a extensão do impacto nem se houve comprometimento de dados pessoais.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Registo deliberadamente magro: as fontes não sustentam mais do que isto. A data de ocorrência não é conhecida, apenas a da divulgação. Procurar comunicado da universidade antes de acrescentar seja o que for.",
+    "versao": 1
+  },
+  "setor": "educacao_investigacao",
+  "tipos_ataque": ["ransomware"],
+  "titulo": "Ciberataque à Universidade da Beira Interior"
+}

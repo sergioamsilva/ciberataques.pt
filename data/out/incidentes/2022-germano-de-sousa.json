@@ -1,0 +1,183 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-02-10",
+      "fonte": 1,
+      "texto": "Pelas sete da manhã, os responsáveis do departamento tecnológico detetam instabilidade significativa nas comunicações, identificada como um ataque com software malicioso que afetou sobretudo a ligação entre os postos de colheita, os laboratórios centrais e os clientes.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-02-10",
+      "fonte": 2,
+      "texto": "A CUF alerta para constrangimentos no acesso ao serviço de análises clínicas, por efeito em cascata do incidente.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-02-11",
+      "fonte": 3,
+      "texto": "Os laboratórios encerram ao público.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-02-14",
+      "fonte": 5,
+      "texto": "O grupo adia a reabertura enquanto recupera do ciberataque. Os laboratórios mantêm-se encerrados.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2022-02-15",
+      "fonte": 6,
+      "texto": "Apura-se que mais de 30 mil testes PCR à covid-19 não foram realizados por causa do incidente, com reflexo no boletim epidemiológico da Direção-Geral da Saúde.",
+      "tipo": "divulgacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "O grupo declarou não haver indicações de corrupção das bases de dados nem de acesso a dados sensíveis de utentes. Houve, ainda assim, pedido de resgate por alegados dados roubados, que o grupo recusou pagar.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-02-10",
+    "divulgacao": "2022-02-10",
+    "inicio": "2022-02-10",
+    "precisao": "dia"
+  },
+  "disputas": [
+    {
+      "afirmacao": "Os atacantes exigiram resgate por dados alegadamente roubados ao grupo.",
+      "contestado_por": "Grupo Germano de Sousa",
+      "fonte_afirmacao": 6,
+      "fonte_contestacao": 6,
+      "nota": "O grupo declarou não haver indicações de acesso a dados sensíveis, e recusou pagar, afirmando não negociar com criminosos. Não é conhecida publicação subsequente de dados que confirmasse a alegação dos atacantes.",
+      "segundo": "atacantes"
+    }
+  ],
+  "entidades_afetadas": ["germano-de-sousa"],
+  "entidades_afetadas_em_cascata": ["cuf", "sns"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["saude-privada", "covid-19", "impacto-em-saude-publica"],
+  "fontes": [
+    {
+      "data": "2022-02-10",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Laboratórios Germano de Sousa alvo de ataque informático",
+      "url": "https://eco.sapo.pt/2022/02/10/laboratorios-germano-de-sousa-alvo-de-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-02-10",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Laboratórios Germano de Sousa foram alvo de ataque informático",
+      "url": "https://www.publico.pt/2022/02/10/sociedade/noticia/laboratorios-germano-sousa-alvo-ataque-informatico-1994959",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-02-10",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Laboratórios Germano de Sousa alvo de ataque informático. CUF alerta para \"constrangimentos no acesso ao serviço de análises clínicas\"",
+      "url": "https://observador.pt/2022/02/10/laboratorios-germano-de-sousa-alvo-de-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-02-11",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Laboratórios Germano de Sousa estão encerrados esta sexta-feira devido ao ciberataque",
+      "url": "https://www.publico.pt/2022/02/11/sociedade/noticia/laboratorios-germano-sousa-estao-encerrados-sextafeira-devido-ciberataque-1995109",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-02-14",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Laboratórios Germano de Sousa mantêm-se encerrados esta segunda-feira",
+      "url": "https://www.publico.pt/2022/02/14/sociedade/noticia/laboratorios-germano-sousa-mantemse-encerrados-segundafeira-1995371",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-02-14",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Germano de Sousa adia reabertura enquanto recupera do ciberataque",
+      "url": "https://eco.sapo.pt/2022/02/14/germano-de-sousa-adia-reabertura-enquanto-recupera-do-ciberataque/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-02-15",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque à Germano de Sousa impede mais de 30 mil testes PCR à Covid-19",
+      "url": "https://eco.sapo.pt/2022/02/15/ciberataque-a-germano-de-sousa-impede-mais-de-30-mil-testes-pcr-a-covid-19/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-germano-de-sousa",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": false,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "Houve pedido de resgate por alegados dados roubados. O grupo recusou pagar, afirmando não negociar com criminosos.",
+    "servicos_afetados": [
+      "postos de colheita",
+      "laboratórios centrais",
+      "comunicação com clientes",
+      "realização de testes PCR à covid-19"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": true,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "A 10 de fevereiro de 2022, pelas sete da manhã, o Grupo Germano de Sousa detetou um ataque com software malicioso que afetou sobretudo a ligação entre os postos de colheita, os laboratórios centrais e os clientes. Os laboratórios encerraram ao público durante quatro dias. O impacto estendeu-se para lá do grupo: a CUF alertou para constrangimentos no acesso a análises clínicas, e mais de 30 mil testes PCR à covid-19 deixaram de ser realizados, com reflexo no boletim epidemiológico da Direção-Geral da Saúde. O grupo declarou não haver indicações de acesso a dados sensíveis de utentes e recusou pagar o resgate exigido.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Caso com impacto em saúde pública mensurável, raro no registo: a falha de um laboratório privado alterou a estatística epidemiológica nacional. Excertos por preencher.",
+    "versao": 1
+  },
+  "setor": "saude",
+  "tipos_ataque": ["ransomware", "indisponibilidade"],
+  "titulo": "Ciberataque ao Grupo Germano de Sousa"
+}

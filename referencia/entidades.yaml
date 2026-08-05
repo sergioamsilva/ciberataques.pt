@@ -179,6 +179,51 @@
   url: https://www.ualg.pt
   chaves: [universidade do algarve, ualg]
 
+- id: metro-mondego
+  nome: Metro Mondego, S.A.
+  nome_curto: Metro Mondego
+  setor: transportes
+  tipo: empresa_publica
+  distrito: Coimbra
+  url: https://www.metromondego.pt
+  chaves: [metro mondego, metrobus, sistema de mobilidade do mondego]
+
+- id: universidade-da-beira-interior
+  nome: Universidade da Beira Interior
+  nome_curto: Universidade da Beira Interior
+  setor: educacao_investigacao
+  tipo: entidade_publica
+  distrito: Castelo Branco
+  url: https://www.ubi.pt
+  chaves: [universidade da beira interior, ubi]
+
+- id: universidade-de-aveiro
+  nome: Universidade de Aveiro
+  nome_curto: Universidade de Aveiro
+  setor: educacao_investigacao
+  tipo: entidade_publica
+  distrito: Aveiro
+  url: https://www.ua.pt
+  chaves: [universidade de aveiro, ua]
+
+- id: universidade-europeia
+  nome: Universidade Europeia
+  nome_curto: Universidade Europeia
+  setor: educacao_investigacao
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.europeia.pt
+  chaves: [universidade europeia]
+
+- id: ipam
+  nome: IPAM — Instituto Português de Administração de Marketing
+  nome_curto: IPAM
+  setor: educacao_investigacao
+  tipo: empresa
+  distrito: Porto
+  url: https://www.ipam.pt
+  chaves: [ipam, instituto portugues de administracao de marketing]
+
 - id: camara-municipal-de-loures
   nome: Município de Loures
   nome_curto: Câmara Municipal de Loures

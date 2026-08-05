@@ -1,0 +1,176 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-11-18",
+      "fonte": 2,
+      "texto": "O Instituto de Informática recebe, cerca das cinco e meia da manhã, o alerta de uma possível ameaça aos sistemas.",
+      "tipo": "detecao"
+    },
+    {
+      "data": "2022-11-21",
+      "fonte": 1,
+      "texto": "A Segurança Social confirma publicamente ter sido alvo de uma intrusão intencional e maliciosa na rede informática, e afirma não ter apurado acesso indevido a dados de cidadãos ou empresas.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2022-11-21",
+      "fonte": 2,
+      "texto": "A Polícia Judiciária avalia a dimensão dos danos, em articulação com o Centro Nacional de Cibersegurança.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2022-11-30",
+      "fonte": 3,
+      "texto": "Noticia-se que terá havido violação de dados pessoais, contrariando a leitura inicial.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2023-01-11",
+      "fonte": 4,
+      "texto": "Apura-se que foram expostos nomes de 14 mil trabalhadores da Segurança Social. O Governo mantém que dados de contribuintes e empresas não foram comprometidos.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2023-01-11",
+      "fonte": 5,
+      "texto": "O incidente é comunicado à Comissão Nacional de Proteção de Dados por ter comprometido dados de funcionários em 14 mil contas.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["identificacao", "laborais"],
+    "nota": "A posição pública evoluiu ao longo de quase dois meses: da ausência de acesso indevido apurado, a 21 de novembro, à exposição confirmada de nomes de 14 mil trabalhadores e comunicação à CNPD, a 11 de janeiro. Os dados de contribuintes e empresas mantiveram-se declarados como não comprometidos.",
+    "titulares_declarados": 14000
+  },
+  "data": {
+    "detecao": "2022-11-18",
+    "divulgacao": "2022-11-21",
+    "inicio": "2022-11-18",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["seguranca-social"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["administracao-central", "dados-de-trabalhadores"],
+  "fontes": [
+    {
+      "data": "2022-11-21",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Segurança Social alvo de ataque informático",
+      "url": "https://eco.sapo.pt/2022/11/21/seguranca-social-alvo-de-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-11-21",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Segurança Social confirma que foi alvo de ciberataque",
+      "url": "https://www.publico.pt/2022/11/21/economia/noticia/seguranca-social-confirma-alvo-ciberataque-2028547",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2022-11-21",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Segurança Social alvo de ataque informático. PJ está a avaliar a dimensão dos danos",
+      "url": "https://observador.pt/2022/11/21/seguranca-social-alvo-de-ataque-informatico-pj-esta-a-avaliar-a-dimensao-dos-danos/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-11-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Terá havido violação de dados pessoais no ciberataque à Segurança Social",
+      "url": "https://www.publico.pt/2022/11/30/tecnologia/noticia/violacao-dados-pessoais-ciberataque-seguranca-social-2029832",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-01-11",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Expostos nomes de 14 mil trabalhadores da Segurança Social em ataque informático",
+      "url": "https://www.publico.pt/2023/01/11/sociedade/noticia/expostos-nomes-14-mil-trabalhadores-seguranca-social-ataque-informatico-2034614",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-01-11",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque à segurança social comunicado à CNPD por ter comprometido dados de funcionários em 14 mil contas",
+      "url": "https://observador.pt/2023/01/11/ciberataque-a-seguranca-social-comunicado-a-cnpd-devido-ao-comprometido-de-dados-de-funcionarios/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-01-11",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Nomes de 14 mil trabalhadores da Segurança Social expostos no ciberataque",
+      "url": "https://eco.sapo.pt/2023/01/11/nomes-de-14-mil-trabalhadores-da-seguranca-social-expostos-no-ciberataque/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-seguranca-social",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "acesso aos serviços da Segurança Social",
+      "serviços do IEFP dependentes dos sistemas"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": true,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "A 18 de novembro de 2022, o Instituto de Informática detetou uma intrusão intencional e maliciosa na rede informática da Segurança Social, tornada pública três dias depois. A posição inicial foi a de que não fora apurado acesso indevido a dados de cidadãos ou empresas, mas o apuramento evoluiu: a 11 de janeiro de 2023 confirmou-se a exposição de nomes de 14 mil trabalhadores, e o incidente foi comunicado à Comissão Nacional de Proteção de Dados. Os dados de contribuintes e empresas mantiveram-se declarados como não comprometidos. Investigaram o caso a Polícia Judiciária e o Centro Nacional de Cibersegurança.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Caso ilustrativo de como a dimensão de um incidente só se estabiliza semanas depois. A cronologia regista a evolução da posição pública em vez de a esconder atrás do apuramento final. Excertos por preencher.",
+    "versao": 1
+  },
+  "setor": "administracao_publica",
+  "tipos_ataque": ["intrusao", "exfiltracao_dados"],
+  "titulo": "Ciberataque à Segurança Social"
+}

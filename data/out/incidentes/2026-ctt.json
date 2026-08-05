@@ -1,0 +1,108 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "baixa",
+    "grupo": null,
+    "nota": "A alegação foi publicada num fórum de cibercrime por um utilizador com pseudónimo autoatribuído. Não o identificamos: a política editorial não nomeia alegados atacantes não condenados, e um pseudónimo individual num fórum não é um grupo estabelecido."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-04-27",
+      "fonte": 0,
+      "texto": "É noticiado que um utilizador de um fórum de cibercrime alega ter obtido dados de mais de um milhão de clientes dos CTT associados à rede de cacifos Locky.",
+      "tipo": "reivindicacao"
+    },
+    {
+      "data": "2026-04-28",
+      "fonte": 1,
+      "texto": "Os CTT confirmam o incidente, afirmam tê-lo contido e garantem que o serviço Locky se mantém operacional. Declaram que a informação em causa corresponde exclusivamente a dados de contacto para notificação de entregas.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-04-28",
+      "fonte": 1,
+      "texto": "O Centro Nacional de Cibersegurança é notificado do incidente.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["identificacao", "contacto"],
+    "nota": "Os CTT reconheceram a exposição, caracterizando-a como limitada a dados de contacto para notificação de entregas, e excluindo expressamente moradas completas, palavras-passe e dados financeiros. O número de titulares em circulação é do atacante e não foi confirmado pela empresa.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-04-27",
+    "divulgacao": "2026-04-27",
+    "inicio": "2026-04-27",
+    "precisao": "desconhecida"
+  },
+  "disputas": [
+    {
+      "afirmacao": "O atacante alegou ter obtido nomes, números de telefone, endereços de correio eletrónico, identificadores de encomendas e registos de levantamento de mais de um milhão de clientes, além de configurações internas dos 1.890 cacifos da rede.",
+      "contestado_por": "CTT",
+      "fonte_afirmacao": 0,
+      "fonte_contestacao": 1,
+      "nota": "Os CTT não contestam a existência da fuga, mas sim a sua dimensão e natureza: sustentam que se trata exclusivamente de dados de contacto para notificação de entregas, sem moradas completas, palavras-passe ou dados financeiros. O número de um milhão nunca foi confirmado pela empresa.",
+      "segundo": "autor da publicação no fórum"
+    }
+  ],
+  "entidades_afetadas": ["ctt"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["logistica", "empresa-cotada"],
+  "fontes": [
+    {
+      "data": "2026-04-27",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Renascença",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "CTT confirma roubo de dados de clientes",
+      "url": "https://rr.pt/noticia/economia/2026/04/27/ctt-confirma-roubo-de-dados-de-clientes/468636/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-04-28",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "SAPO Tek",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "CTT confirma roubo de dados do Locky, mas garante exposição \"limitada\" de dados dos clientes afetados",
+      "url": "https://tek.sapo.pt/noticias/internet/artigos/ctt-confirma-roubo-de-dados-do-locky-mas-garante-exposicao-limitada-de-dados-dos-clientes-afetados/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-ctt",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": []
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "Em abril de 2026, um utilizador de um fórum de cibercrime alegou ter obtido dados de mais de um milhão de clientes dos CTT associados à rede de cacifos Locky, incluindo nomes, contactos telefónicos, endereços de correio eletrónico e registos de levantamento, bem como configurações internas dos 1.890 cacifos. Os CTT confirmaram o incidente e declararam tê-lo contido, mas caracterizaram a exposição como limitada a dados de contacto para notificação de entregas, excluindo moradas completas, palavras-passe e dados financeiros. O Centro Nacional de Cibersegurança foi notificado.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "A data do incidente não foi divulgada: as fontes referem apenas um incidente entretanto contido. A precisão da data é por isso desconhecida, e a data registada corresponde à divulgação pública. Excertos por preencher.",
+    "versao": 1
+  },
+  "setor": "transportes",
+  "tipos_ataque": ["exfiltracao_dados", "cadeia_fornecimento"],
+  "titulo": "Fuga de dados da rede de cacifos Locky dos CTT"
+}

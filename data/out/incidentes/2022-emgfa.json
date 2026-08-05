@@ -1,0 +1,173 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública. A extensão do acesso mantém-se matéria classificada."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-08-01",
+      "fonte": 0,
+      "texto": "Serviços de informações norte-americanos detetam documentos classificados da NATO, enviados a Portugal, à venda na dark web, e informam a embaixada em Lisboa e diretamente o primeiro-ministro.",
+      "tipo": "detecao"
+    },
+    {
+      "data": "2022-09-08",
+      "fonte": 0,
+      "texto": "É tornado público que o Estado-Maior-General das Forças Armadas foi alvo de um ciberataque prolongado, com exfiltração de centenas de documentos classificados como secretos e confidenciais.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-09-10",
+      "fonte": 3,
+      "texto": "Um primeiro inquérito conclui que não foram cumpridas regras de segurança: documentos classificados circularam em linhas não seguras, em vez do Sistema Integrado de Comunicações Militares.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-09-13",
+      "fonte": 4,
+      "texto": "O Ministério Público abre inquérito, dirigido pelo Departamento Central de Investigação e Ação Penal.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2022-09-16",
+      "fonte": 5,
+      "texto": "Os Estados Unidos propõem colaboração com Portugal no domínio da cibersegurança na sequência do caso.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-09-28",
+      "fonte": 6,
+      "texto": "O Centro Nacional de Cibersegurança confirma a existência de ataques à rede das Forças Armadas.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "O material exfiltrado é documentação classificada, não bases de dados de titulares. Não há informação pública sobre comprometimento de dados pessoais.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-08-01",
+    "divulgacao": "2022-09-08",
+    "inicio": "2022-08-01",
+    "precisao": "desconhecida"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["emgfa"],
+  "estado_confirmacao": "confirmado_por_regulador",
+  "etiquetas": ["seguranca-nacional", "documentos-classificados", "falha-de-procedimento"],
+  "fontes": [
+    {
+      "data": "2022-09-08",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hackers atacam Estado-Maior-General das Forças Armadas e colocam documentos da NATO à venda na internet",
+      "url": "https://www.publico.pt/2022/09/08/sociedade/noticia/piratas-atacam-estadomaiorgeneral-forcas-armadas-colocam-documentos-nato-venda-internet-2019803",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-09-08",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Documentos da NATO enviados a Portugal foram intercetados por hackers e colocados à venda na \"dark web\"",
+      "url": "https://observador.pt/2022/09/08/documentos-da-nato-enviados-a-portugal-foram-intercetados-por-hackers-e-colocados-a-venda-na-dark-web/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-09-08",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Documentos portugueses da NATO apanhados à venda na \"darkweb\"",
+      "url": "https://eco.sapo.pt/2022/09/08/documentos-portugueses-da-nato-apanhados-a-venda-na-darkweb/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-09-10",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático na Defesa: funcionário usou rede não segura para transmitir documentos classificados",
+      "url": "https://www.publico.pt/2022/09/10/sociedade/noticia/ataque-informatico-defesa-funcionario-usou-rede-nao-segura-transmitir-documentos-classificados-2020032",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2022-09-13",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ministério Público investiga ciberataque que expôs documentos portugueses da NATO",
+      "url": "https://eco.sapo.pt/2022/09/13/ministerio-publico-abre-inquerito-sobre-ciberataque-que-revelou-documentos-da-nato/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-09-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "EUA propõem colaboração com Portugal após ciberataque que expôs dados da NATO",
+      "url": "https://eco.sapo.pt/2022/09/16/eua-propoem-colaboracao-com-portugal-apos-ciberataque-que-expos-dados-da-nato/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2022-09-28",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Centro de Cibersegurança confirma ataques à rede das Forças Armadas",
+      "url": "https://www.publico.pt/2022/09/28/sociedade/noticia/centro-ciberseguranca-confirma-ataques-rede-forcas-armadas-2022206",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-emgfa",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": []
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "Centenas de documentos classificados como secretos e confidenciais, enviados pela NATO a Portugal, foram exfiltrados dos sistemas do Estado-Maior-General das Forças Armadas e encontrados à venda na dark web. Portugal só teve conhecimento do caso porque foi informado por serviços de informações norte-americanos, em agosto de 2022, numa comunicação feita à embaixada em Lisboa e diretamente ao primeiro-ministro. Um primeiro inquérito concluiu que documentos classificados tinham circulado em linhas não seguras, fora do Sistema Integrado de Comunicações Militares. O Ministério Público abriu inquérito através do DCIAP, e o Centro Nacional de Cibersegurança confirmou a existência de ataques à rede das Forças Armadas.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "O período de atividade do atacante nunca foi divulgado, pelo que a precisão da data é registada como desconhecida: agosto de 2022 é quando Portugal foi informado, não quando o ataque começou. A extensão do acesso mantém-se classificada. Excertos por preencher.",
+    "versao": 1
+  },
+  "setor": "justica_defesa",
+  "tipos_ataque": ["intrusao", "exfiltracao_dados"],
+  "titulo": "Ciberataque ao Estado-Maior-General das Forças Armadas"
+}

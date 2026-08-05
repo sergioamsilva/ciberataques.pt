@@ -1,0 +1,122 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "baixa",
+    "grupo": null,
+    "nota": "O grupo responsável reivindicou publicamente o ataque, alegando estar na posse de informação da empresa e anunciando a intenção de a divulgar. As fontes consultadas não o identificam pelo nome."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-07-06",
+      "fonte": 0,
+      "texto": "A Metro Mondego é alvo de um ataque de ransomware que afeta parte dos sistemas internos, sem comprometer a operação do serviço de transporte.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2026-07-26",
+      "fonte": 0,
+      "texto": "A empresa alerta que dados pessoais de titulares de passe personalizado poderão ter sido copiados, e que não é ainda possível confirmar que dados foram concretamente extraídos.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-07-26",
+      "fonte": 1,
+      "texto": "A empresa indica ter notificado as autoridades competentes e adotado medidas de resposta a incidentes com apoio de especialistas em cibersegurança.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["identificacao", "contacto"],
+    "nota": "Podem estar em causa nome, endereço de correio eletrónico e número de telefone de titulares de passe personalizado e de quem trocou mensagens com endereços da empresa. A empresa alertou para o risco de receção de mensagens fraudulentas. A extensão exata não estava confirmada à data desta revisão.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-07-06",
+    "divulgacao": "2026-07-26",
+    "inicio": "2026-07-06",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["metro-mondego"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["transporte-publico", "em-desenvolvimento", "empresa-publica"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-07-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Dados pessoais em risco durante ataque informático à Metro Mondego",
+      "url": "https://eco.sapo.pt/2026/07/26/dados-pessoais-em-risco-durante-ataque-informatico-a-metro-mondego/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-07-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Dados pessoais poderão ter sido copiados durante ataque informático à Metro Mondego",
+      "url": "https://observador.pt/2026/07/26/dados-pessoais-poderao-ter-sido-copiados-durante-ataque-informatico-a-metro-mondego/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2026-07-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "RTP",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Dados pessoais poderão ter sido copiados durante ataque informático à Metro Mondego",
+      "url": "https://www.rtp.pt/noticias/economia/dados-pessoais-poderao-ter-sido-copiados-durante-ataque-informatico-a-metro-mondego_n1755936",
+      "url_arquivo": null
+    },
+    {
+      "data": "2026-07-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "SAPO Tek",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ransomware: O que se sabe sobre o ataque à Metro Mondego e que dados pessoais podem estar em causa?",
+      "url": "https://tek.sapo.pt/noticias/internet/artigos/ransomware-o-que-se-sabe-sobre-o-ataque-a-metro-mondego-e-que-dados-pessoais-podem-estar-em-causa/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-metro-mondego",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": ["parte dos sistemas internos"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": true,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "A Metro Mondego foi alvo de um ataque de ransomware a 6 de julho de 2026, que afetou parte dos sistemas internos sem comprometer a operação do serviço de transporte. A 26 de julho a empresa alertou que dados pessoais de titulares de passe personalizado poderão ter sido copiados, entre eles nome, endereço de correio eletrónico e número de telefone, com risco de receção de mensagens fraudulentas. O grupo responsável reivindicou publicamente o ataque e anunciou a intenção de divulgar a informação. A empresa notificou as autoridades competentes.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Incidente recente e em apuramento. Vinte dias entre a ocorrência e a comunicação pública. Rever quando a empresa confirmar que dados foram efetivamente copiados.",
+    "versao": 1
+  },
+  "setor": "transportes",
+  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "titulo": "Ciberataque à Metro Mondego"
+}
