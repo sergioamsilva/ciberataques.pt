@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CartaoIncidente from "../../components/CartaoIncidente.astro";
+import ReguaDeAnos from "../../components/ReguaDeAnos.astro";
+import { incidentes, agregados } from "../../lib/dados";
+
+const lista = incidentes();
+const ag = agregados();
+const porAno = new Map<number, typeof lista>();
+for (const inc of lista) {
+  if (!porAno.has(inc.ano)) porAno.set(inc.ano, []);
+  porAno.get(inc.ano)!.push(inc);
+}
+const anos = [...porAno.keys()].sort((a, b) => b - a);
+---
+
+<BaseLayout
+  titulo="Cronologia dos ciberataques em Portugal"
+  descricao="Todos os ciberataques registados a entidades portuguesas, ano a ano, com fontes e grau de confirmação."
+>
+  <div class="mx-auto max-w-4xl px-5 py-10">
+    <header>
+      <p class="mono-etiqueta">O registo</p>
+      <h1 class="mt-2 text-4xl sm:text-5xl">Cronologia</h1>
+      <p class="mt-4 max-w-2xl text-lg">
+        Todos os incidentes registados, do mais recente ao mais antigo.
+      </p>
+    </header>
+
+    <div class="mt-10">
+      <ReguaDeAnos porAno={ag.por_ano} />
+    </div>
+
+    {anos.map((ano) => (
+      <section class="mt-14" aria-labelledby={`ano-${ano}`}>
+        <h2 id={`ano-${ano}`} class="regua scroll-mt-24 pt-5 font-mono text-3xl tabular-nums">
+          <a href={`/cronologia/${ano}/`} class="no-underline">{ano}</a>
+        </h2>
+        <div class="mt-2">
+          {porAno.get(ano)!.map((inc) => <CartaoIncidente incidente={inc} />)}
+        </div>
+      </section>
+    ))}
+  </div>
+</BaseLayout>

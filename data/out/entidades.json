@@ -1,0 +1,226 @@
+{
+  "aguas-de-portugal": {
+    "chaves": [
+      "aguas de portugal",
+      "grupo aguas de portugal",
+      "adp"
+    ],
+    "distrito": "Lisboa",
+    "id": "aguas-de-portugal",
+    "incidentes": [
+      "2026-aguas-de-portugal"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Águas de Portugal, SGPS, S.A.",
+    "nome_curto": "Águas de Portugal",
+    "setor": "energia_agua",
+    "tipo": "empresa_publica",
+    "url": "https://www.adp.pt"
+  },
+  "ama": {
+    "chaves": [
+      "ama",
+      "agencia para a modernizacao administrativa",
+      "autenticacao gov",
+      "chave movel digital",
+      "gov id"
+    ],
+    "distrito": "Lisboa",
+    "id": "ama",
+    "incidentes": [
+      "2024-ama"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Agência para a Modernização Administrativa, I.P.",
+    "nome_curto": "AMA",
+    "setor": "administracao_publica",
+    "tipo": "entidade_publica",
+    "url": "https://www.ama.gov.pt"
+  },
+  "edp": {
+    "chaves": [
+      "edp",
+      "energias de portugal"
+    ],
+    "distrito": "Lisboa",
+    "id": "edp",
+    "incidentes": [
+      "2020-edp"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "EDP — Energias de Portugal, S.A.",
+    "nome_curto": "EDP",
+    "setor": "energia_agua",
+    "tipo": "empresa",
+    "url": "https://www.edp.com"
+  },
+  "hospital-garcia-de-orta": {
+    "chaves": [
+      "hospital garcia de orta",
+      "garcia de orta",
+      "hgo"
+    ],
+    "distrito": "Setúbal",
+    "id": "hospital-garcia-de-orta",
+    "incidentes": [
+      "2022-hospital-garcia-de-orta"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Hospital Garcia de Orta, E.P.E.",
+    "nome_curto": "Hospital Garcia de Orta",
+    "setor": "saude",
+    "tipo": "entidade_publica",
+    "url": "https://www.hgo.pt"
+  },
+  "impresa": {
+    "chaves": [
+      "impresa",
+      "grupo impresa",
+      "sic",
+      "sic noticias",
+      "expresso",
+      "blitz"
+    ],
+    "distrito": "Lisboa",
+    "id": "impresa",
+    "incidentes": [
+      "2022-impresa"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Impresa, SGPS, S.A.",
+    "nome_curto": "Impresa",
+    "nota": "O ataque de janeiro de 2022 atingiu o grupo, não apenas um título. Registamos ao nível do grupo, com SIC, Expresso e Blitz como chaves.",
+    "setor": "media",
+    "tipo": "empresa",
+    "url": "https://www.impresa.pt"
+  },
+  "inem": {
+    "chaves": [
+      "inem",
+      "instituto nacional de emergencia medica"
+    ],
+    "distrito": "Lisboa",
+    "id": "inem",
+    "incidentes": [],
+    "incidentes_em_cascata": [
+      "2022-vodafone-portugal"
+    ],
+    "nome": "Instituto Nacional de Emergência Médica, I.P.",
+    "nome_curto": "INEM",
+    "setor": "saude",
+    "tipo": "entidade_publica",
+    "url": "https://www.inem.pt"
+  },
+  "sesaram": {
+    "chaves": [
+      "sesaram",
+      "servico de saude da regiao autonoma da madeira",
+      "saude madeira"
+    ],
+    "distrito": "Madeira",
+    "id": "sesaram",
+    "incidentes": [
+      "2023-sesaram"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Serviço de Saúde da Região Autónoma da Madeira, E.P.E.R.A.M.",
+    "nome_curto": "SESARAM",
+    "setor": "saude",
+    "tipo": "entidade_publica",
+    "url": "https://www.sesaram.pt"
+  },
+  "sibs": {
+    "chaves": [
+      "sibs",
+      "multibanco",
+      "rede multibanco"
+    ],
+    "distrito": "Lisboa",
+    "id": "sibs",
+    "incidentes": [],
+    "incidentes_em_cascata": [
+      "2022-vodafone-portugal"
+    ],
+    "nome": "SIBS — Sociedade Interbancária de Serviços, S.A.",
+    "nome_curto": "SIBS",
+    "nota": "Nunca foi atacada diretamente. A rede Multibanco caiu em fevereiro de 2022 por ser cliente da Vodafone. Registar sempre como impacto em cascata.",
+    "setor": "banca_seguros",
+    "tipo": "empresa",
+    "url": "https://www.sibs.com"
+  },
+  "sns": {
+    "chaves": [
+      "sns",
+      "servico nacional de saude",
+      "sns 24",
+      "spms"
+    ],
+    "id": "sns",
+    "incidentes": [],
+    "incidentes_em_cascata": [
+      "2024-ama"
+    ],
+    "nome": "Serviço Nacional de Saúde",
+    "nome_curto": "SNS",
+    "setor": "saude",
+    "tipo": "entidade_publica",
+    "url": "https://www.sns.gov.pt"
+  },
+  "sonae-mc": {
+    "chaves": [
+      "sonae mc",
+      "sonae",
+      "continente",
+      "modelo continente",
+      "wells"
+    ],
+    "distrito": "Porto",
+    "id": "sonae-mc",
+    "incidentes": [
+      "2022-sonae-mc"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "SONAE MC — Serviços Partilhados, S.A.",
+    "nome_curto": "Sonae MC",
+    "nota": "O comunicado de março de 2022 é da Sonae MC, que opera Continente e Wells. A Worten NÃO foi confirmada como afetada.",
+    "setor": "retalho",
+    "tipo": "empresa",
+    "url": "https://mc.sonae.pt"
+  },
+  "tap": {
+    "chaves": [
+      "tap",
+      "tap air portugal",
+      "tap portugal",
+      "transportes aereos portugueses"
+    ],
+    "distrito": "Lisboa",
+    "id": "tap",
+    "incidentes": [
+      "2022-tap"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "TAP — Transportes Aéreos Portugueses, S.A.",
+    "nome_curto": "TAP Air Portugal",
+    "setor": "transportes",
+    "tipo": "empresa_publica",
+    "url": "https://www.flytap.com"
+  },
+  "vodafone-portugal": {
+    "chaves": [
+      "vodafone portugal",
+      "vodafone"
+    ],
+    "distrito": "Lisboa",
+    "id": "vodafone-portugal",
+    "incidentes": [
+      "2022-vodafone-portugal"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Vodafone Portugal — Comunicações Pessoais, S.A.",
+    "nome_curto": "Vodafone Portugal",
+    "setor": "telecomunicacoes",
+    "tipo": "empresa",
+    "url": "https://www.vodafone.pt"
+  }
+}

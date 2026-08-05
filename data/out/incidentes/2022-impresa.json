@@ -1,0 +1,151 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "alta",
+    "grupo": "Lapsus$ Group",
+    "nota": "O ataque foi reivindicado pelo Lapsus$ Group e a Impresa confirmou a autoria ao anunciar queixa-crime contra o grupo junto do DIAP de Lisboa."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-01-02",
+      "fonte": 0,
+      "texto": "Os sítios do Expresso, da SIC e da SIC Notícias ficam indisponíveis. Os atacantes deixam mensagem de resgate nas páginas do grupo.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-01-02",
+      "fonte": 1,
+      "texto": "A Impresa classifica publicamente o ataque como um atentado à liberdade de imprensa.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2022-01-04",
+      "fonte": 2,
+      "texto": "Apura-se que os atacantes estiveram vários dias dentro dos sistemas antes de desencadearem o ataque, tendo chegado a controlar a plataforma de nuvem do grupo.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-01-05",
+      "fonte": 3,
+      "texto": "É noticiada a destruição de arquivos noticiosos guardados nos servidores do grupo.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-01-05",
+      "fonte": 4,
+      "texto": "A Impresa admite que dados pessoais de utilizadores foram acedidos, incluindo nomes, endereços de correio eletrónico e contactos telefónicos associados a credenciais de acesso.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["identificacao", "contacto", "credenciais"],
+    "nota": "A Impresa reconheceu o acesso a dados pessoais de utilizadores registados. Não foi declarado publicamente um número de titulares afetados.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-01-02",
+    "divulgacao": "2022-01-02",
+    "inicio": "2022-01-02",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["impresa"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["liberdade-de-imprensa", "perda-de-arquivo"],
+  "fontes": [
+    {
+      "data": "2022-01-02",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Sites do Expresso e da SIC indisponíveis após ataque informático",
+      "url": "https://www.publico.pt/2022/01/02/economia/noticia/sites-expresso-sic-indisponiveis-apos-ataque-informatico-1990516",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-01-02",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático é um \"atentado à liberdade de imprensa\", diz dona da SIC",
+      "url": "https://eco.sapo.pt/2022/01/02/ataque-informatico-e-um-atentado-a-liberdade-de-imprensa-diz-dona-da-sic/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-01-04",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hackers que atacaram SIC e Expresso estiveram vários dias dentro do sistema a planear ataque sequencial",
+      "url": "https://www.publico.pt/2022/01/04/sociedade/noticia/hackers-atacaram-sic-expresso-varios-dias-dentro-sistema-planear-ataque-sequencial-1990638",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-01-05",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Expresso/SIC. Ataque informático destruiu arquivos",
+      "url": "https://observador.pt/2022/01/05/ataque-informatico-destruiu-arquivos-do-expresso-e-da-sic/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-01-05",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Impresa admite que dados pessoais foram acedidos no ciberataque aos sites do Expresso e SIC",
+      "url": "https://eco.sapo.pt/2022/01/05/impresa-esta-a-avaliar-impacto-potencial-do-ciberataque/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-impresa",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "Foi exigido resgate para reposição do acesso. O valor não foi divulgado.",
+    "servicos_afetados": [
+      "expresso.pt",
+      "sicnoticias.pt",
+      "sic.pt",
+      "plataforma de streaming OPTO",
+      "arquivo noticioso"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "No dia 2 de janeiro de 2022, o Lapsus$ Group atacou os sistemas do grupo Impresa, deixando indisponíveis os sítios do Expresso, da SIC e da SIC Notícias, com mensagem de resgate nas páginas. Apurou-se depois que os atacantes tinham estado vários dias dentro da rede antes de desencadearem o ataque, chegando a controlar a plataforma de nuvem do grupo. Foram destruídos arquivos noticiosos guardados nos servidores, e a Impresa reconheceu o acesso a dados pessoais de utilizadores registados. O grupo apresentou queixa-crime e classificou o ataque como um atentado à liberdade de imprensa.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Excertos das fontes por preencher: exigem verificação do texto original.",
+    "versao": 1
+  },
+  "setor": "media",
+  "tipos_ataque": ["ransomware", "intrusao", "exfiltracao_dados"],
+  "titulo": "Ciberataque ao grupo Impresa (SIC e Expresso)"
+}

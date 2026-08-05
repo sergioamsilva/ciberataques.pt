@@ -1,0 +1,65 @@
+---
+import { formatarNumero } from "../lib/dados";
+
+interface Props {
+  porAno: Record<string, number>;
+}
+const { porAno } = Astro.props;
+
+const anos = Object.keys(porAno).map(Number).sort((a, b) => a - b);
+const primeiro = anos[0];
+const ultimo = anos[anos.length - 1];
+const todos = Array.from({ length: ultimo - primeiro + 1 }, (_, i) => primeiro + i);
+const maximo = Math.max(...Object.values(porAno), 1);
+const total = Object.values(porAno).reduce((a, b) => a + b, 0);
+---
+
+{/*
+  A régua de anos: a assinatura da home.
+
+  Não é um gráfico de dashboard, é uma régua tipográfica de arquivo. As barras
+  crescem a partir da base quando entram no viewport, e cada ano é uma ligação
+  para a sua página de cronologia. Sem JavaScript, aparecem já desenhadas.
+
+  Uma cor só, a tinta, com o acento reservado ao ano em foco: a paleta de um
+  registo documental não precisa de mais do que isso, e mais do que isso faria a
+  contagem parecer um alarme em vez de um facto.
+*/}
+<figure class="revelar">
+  <figcaption class="sr-only">
+    Incidentes registados por ano, de {primeiro} a {ultimo}. Total: {total}.
+  </figcaption>
+
+  {/* max-w por barra: com poucos anos, `flex-1` sozinho esticaria uma única barra
+      até à largura da página e o gráfico degeneraria num retângulo. */}
+  <ol class="flex items-end gap-1.5 sm:gap-2.5" role="list">
+    {todos.map((ano) => {
+      const n = porAno[String(ano)] ?? 0;
+      const altura = n === 0 ? 2 : Math.max(6, Math.round((n / maximo) * 120));
+      return (
+        <li class="group flex min-w-0 max-w-16 flex-1 flex-col items-center gap-2">
+          <span class="font-mono text-[0.6875rem] tabular-nums text-[var(--color-suave)] group-hover:text-[var(--color-acento)]">
+            {n || ""}
+          </span>
+          <a
+            href={n ? `/cronologia/${ano}/` : undefined}
+            aria-label={`${ano}: ${n} ${n === 1 ? "incidente" : "incidentes"}`}
+            class:list={[
+              "block w-full",
+              n ? "cursor-pointer" : "pointer-events-none",
+            ]}
+          >
+            <span
+              class="barra-ano block w-full bg-[var(--color-tinta)] transition-colors group-hover:bg-[var(--color-acento)]"
+              style={`height: ${altura}px`}
+              aria-hidden="true"
+            ></span>
+          </a>
+          <span class="font-mono text-[0.625rem] tabular-nums text-[var(--color-suave)]">
+            {String(ano).slice(2)}
+          </span>
+        </li>
+      );
+    })}
+  </ol>
+</figure>

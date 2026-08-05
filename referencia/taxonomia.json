@@ -1,0 +1,257 @@
+{
+  "categorias_dados": {
+    "biometricos": {
+      "art. 9.º RGPD": null,
+      "nome": "Dados biométricos"
+    },
+    "comunicacoes": {
+      "nome": "Conteúdo de comunicações"
+    },
+    "contacto": {
+      "nome": "Dados de contacto"
+    },
+    "credenciais": {
+      "nome": "Credenciais de acesso"
+    },
+    "financeiros": {
+      "nome": "Dados financeiros e bancários"
+    },
+    "fiscais": {
+      "nome": "Dados fiscais"
+    },
+    "identificacao": {
+      "nome": "Dados de identificação"
+    },
+    "laborais": {
+      "nome": "Dados laborais"
+    },
+    "localizacao": {
+      "nome": "Dados de localização"
+    },
+    "saude": {
+      "art. 9.º RGPD": null,
+      "nome": "Dados de saúde"
+    }
+  },
+  "estados_confirmacao": {
+    "alegado_pelo_atacante": {
+      "exige_fonte_tipo": [
+        "leak_site"
+      ],
+      "explicacao": "A informação vem de um site de extorsão ou de quem reivindica o ataque. Não foi confirmada pela entidade nem por autoridade. É a categoria de menor fiabilidade e a que exige mais cuidado de leitura.",
+      "nome": "Alegado pelo atacante, sem confirmação",
+      "peso": 5
+    },
+    "confirmado_pela_entidade": {
+      "exige_fonte_tipo": [
+        "comunicado"
+      ],
+      "explicacao": "A organização afetada reconheceu publicamente o incidente, por comunicado próprio ou declaração atribuível.",
+      "nome": "Confirmado pela entidade",
+      "peso": 1
+    },
+    "confirmado_por_regulador": {
+      "exige_fonte_tipo": [
+        "regulador",
+        "dre"
+      ],
+      "explicacao": "Uma autoridade competente (CNCS, CNPD, ANACOM, CMVM, Polícia Judiciária) ou um tribunal confirmou o incidente.",
+      "nome": "Confirmado por autoridade",
+      "peso": 2
+    },
+    "desmentido": {
+      "exige_fonte_tipo": [
+        "comunicado"
+      ],
+      "explicacao": "A entidade negou publicamente o incidente. Mantemos o registo publicado, com o desmentido, porque apagar o que noticiámos seria pior do que corrigi-lo.",
+      "nome": "Desmentido pela entidade",
+      "peso": 6
+    },
+    "noticiado_por_uma_fonte": {
+      "exige_fonte_tipo": [
+        "noticia"
+      ],
+      "explicacao": "Um só órgão noticiou o incidente. Registamos, mas o leitor deve saber que não houve corroboração.",
+      "nome": "Noticiado por uma única fonte",
+      "peso": 4
+    },
+    "reportado_por_media": {
+      "exige_fonte_tipo": [
+        "noticia"
+      ],
+      "explicacao": "Pelo menos dois órgãos independentes noticiaram o incidente, sem confirmação da entidade nem de autoridade.",
+      "minimo_publicadores": 2,
+      "nome": "Reportado por vários órgãos de comunicação social",
+      "peso": 3
+    }
+  },
+  "precisoes_data": {
+    "ano": {
+      "nome": "Ano"
+    },
+    "desconhecida": {
+      "nome": "Desconhecida"
+    },
+    "dia": {
+      "nome": "Dia exato"
+    },
+    "mes": {
+      "nome": "Mês"
+    },
+    "semana": {
+      "nome": "Semana"
+    }
+  },
+  "setores": {
+    "administracao_publica": {
+      "nome": "Administração pública central"
+    },
+    "autarquias": {
+      "nome": "Administração local"
+    },
+    "banca_seguros": {
+      "nome": "Banca e seguros"
+    },
+    "desporto": {
+      "nome": "Desporto"
+    },
+    "educacao_investigacao": {
+      "nome": "Educação e investigação"
+    },
+    "energia_agua": {
+      "nome": "Energia e água"
+    },
+    "industria": {
+      "nome": "Indústria"
+    },
+    "justica_defesa": {
+      "nome": "Justiça e defesa"
+    },
+    "media": {
+      "nome": "Comunicação social"
+    },
+    "retalho": {
+      "nome": "Retalho e distribuição"
+    },
+    "saude": {
+      "nome": "Saúde"
+    },
+    "tecnologia": {
+      "nome": "Tecnologia"
+    },
+    "telecomunicacoes": {
+      "nome": "Telecomunicações"
+    },
+    "transportes": {
+      "nome": "Transportes"
+    }
+  },
+  "tipos_ataque": {
+    "cadeia_fornecimento": {
+      "descricao": "A entidade é afetada através de um fornecedor, prestador ou componente de terceiros, não por intrusão direta.",
+      "nome": "Cadeia de fornecimento"
+    },
+    "ddos": {
+      "descricao": "Ataque volumétrico ou aplicacional que torna um serviço indisponível.",
+      "nome": "Negação de serviço"
+    },
+    "defacement": {
+      "descricao": "Alteração não autorizada do conteúdo público de um site.",
+      "nome": "Desfiguração de site"
+    },
+    "exfiltracao_dados": {
+      "descricao": "Cópia não autorizada de dados para fora da organização.",
+      "nome": "Exfiltração de dados"
+    },
+    "exposicao_credenciais": {
+      "descricao": "Credenciais de utilizadores da entidade a circular publicamente, tipicamente recolhidas por infostealers nos equipamentos dos próprios utilizadores. NÃO implica intrusão nos sistemas da entidade — ver o caso do Portal das Finanças em outubro de 2024.",
+      "nome": "Exposição de credenciais"
+    },
+    "fraude": {
+      "descricao": "Uso de meios informáticos para obter vantagem patrimonial ilegítima, incluindo desvio de pagamentos e alteração de dados bancários.",
+      "nome": "Fraude informática"
+    },
+    "hacktivismo": {
+      "descricao": "Ataque com motivação política ou ideológica declarada.",
+      "nome": "Hacktivismo"
+    },
+    "indisponibilidade": {
+      "descricao": "Serviço em baixo por ação deliberada, sem que a causa técnica seja pública. Distinto de ddos, que é uma causa concreta.",
+      "nome": "Indisponibilidade de serviço"
+    },
+    "insider": {
+      "descricao": "Ação de quem tem acesso legítimo, dolosa ou negligente.",
+      "nome": "Ameaça interna"
+    },
+    "intrusao": {
+      "descricao": "Acesso não autorizado a sistemas. Usar quando há acesso confirmado mas o objetivo final não é público.",
+      "nome": "Intrusão"
+    },
+    "phishing_bec": {
+      "descricao": "Engenharia social por correio eletrónico, incluindo comprometimento de e-mail empresarial com desvio de pagamentos.",
+      "nome": "Phishing e fraude no e-mail empresarial"
+    },
+    "ransomware": {
+      "descricao": "Encriptação de sistemas com pedido de resgate. Usar mesmo quando há também exfiltração (dupla extorsão), acrescentando exfiltracao_dados.",
+      "nome": "Ransomware"
+    }
+  },
+  "tipos_evento": {
+    "comunicado": {
+      "nome": "Comunicado da entidade"
+    },
+    "desmentido": {
+      "nome": "Desmentido"
+    },
+    "detecao": {
+      "nome": "Deteção"
+    },
+    "divulgacao": {
+      "nome": "Divulgação pública"
+    },
+    "judicial": {
+      "nome": "Ato judicial"
+    },
+    "ocorrencia": {
+      "nome": "Ocorrência"
+    },
+    "publicacao_dados": {
+      "nome": "Publicação dos dados"
+    },
+    "regulador": {
+      "nome": "Ação de autoridade"
+    },
+    "reivindicacao": {
+      "nome": "Reivindicação pelo atacante"
+    },
+    "reposicao": {
+      "nome": "Reposição do serviço"
+    }
+  },
+  "tipos_fonte": {
+    "comunicado": {
+      "descricao": "Declaração pública da organização afetada, ou do seu grupo.",
+      "nome": "Comunicado da entidade"
+    },
+    "dre": {
+      "descricao": "Publicação oficial.",
+      "nome": "Diário da República"
+    },
+    "leak_site": {
+      "descricao": "Reivindicação publicada pelo próprio grupo atacante, tipicamente via um tracker público. Nunca ligamos diretamente a endereços .onion.",
+      "nome": "Site de extorsão"
+    },
+    "noticia": {
+      "descricao": "Órgão de comunicação social registado.",
+      "nome": "Comunicação social"
+    },
+    "regulador": {
+      "descricao": "CNCS, CNPD, ANACOM, CMVM, Polícia Judiciária, Ministério Público, tribunais.",
+      "nome": "Autoridade ou tribunal"
+    },
+    "relatorio": {
+      "descricao": "Relatório de empresa de segurança, associação ou organismo internacional (CNCS/Observatório, ENISA).",
+      "nome": "Relatório"
+    }
+  }
+}

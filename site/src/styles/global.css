@@ -1,0 +1,206 @@
+@import "tailwindcss";
+@import "@fontsource-variable/source-serif-4";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
+
+@theme {
+  /*
+   * Paleta de arquivo, não de dashboard de segurança.
+   *
+   * A escolha deliberada é NÃO alarmar. Um registo que grita em vermelho e preto
+   * lê-se como propaganda de fornecedor de cibersegurança e perde a credibilidade
+   * que precisa de ter junto de jornalistas e académicos. Base de papel quente,
+   * tinta quase-preta, e um carmim sóbrio reservado a interação e ao que é grave.
+   */
+  --color-papel: #fbfaf8;
+  --color-superficie: #f3f1ed;
+  --color-tinta: #1a1815;
+  --color-corpo: #26231f;
+  --color-suave: #5f5a52;
+  --color-borda: #e3ded5;
+  --color-borda-forte: #cdc6ba;
+  --color-acento: #a4243b;
+  --color-acento-forte: #7d1b2d;
+  --color-sobre-tinta: #c8c2b8;
+
+  /*
+   * Escala de confirmação. As cores acompanham a palavra, nunca a substituem:
+   * cada selo mostra sempre o texto do estado. Uma cor não se lê em voz alta
+   * nem sobrevive a um leitor de ecrã.
+   */
+  --color-conf-entidade: #2d5a3d;
+  --color-conf-regulador: #1f4d5c;
+  --color-conf-media: #3e5c76;
+  --color-conf-unica: #8a6d1f;
+  --color-conf-atacante: #a4243b;
+  --color-conf-desmentido: #6b6560;
+
+  /*
+   * Duas famílias, ambas ancoradas no domínio: a serifada é a do relatório e do
+   * jornal, a monoespaçada é a do registo técnico. Não há sans genérica, que é o
+   * que faria isto parecer um template.
+   */
+  --font-serif: "Source Serif 4 Variable", "Source Serif 4", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
+  --font-sans: var(--font-serif);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-papel);
+    color: var(--color-corpo);
+    font-family: var(--font-serif);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    color: var(--color-tinta);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    color: inherit;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1px;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  summary:focus-visible,
+  input:focus-visible {
+    outline: 2px solid var(--color-acento);
+    outline-offset: 2px;
+    border-radius: 1px;
+  }
+
+  /* Âncoras de secção não podem ficar debaixo do cabeçalho fixo. */
+  :target {
+    scroll-margin-top: 5rem;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-acento) 18%, transparent);
+  }
+}
+
+@layer components {
+  /*
+   * Régua: o filete horizontal que separa blocos editoriais. É o elemento que dá
+   * ao site a textura de página impressa, e repete-se por todo o lado.
+   */
+  .regua {
+    border-top: 1px solid var(--color-borda);
+  }
+
+  .mono-etiqueta {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--color-suave);
+  }
+
+  /*
+   * Carimbo de confirmação. É a assinatura visual do projeto: o campo que nenhum
+   * outro registo de ciberataques mostra. Tratado como carimbo de arquivo, com
+   * borda dupla e texto monoespaçado, para se ler como uma anotação de processo e
+   * não como um badge de aplicação web.
+   */
+  .carimbo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.7rem;
+    border: 1px solid currentColor;
+    box-shadow: 0 0 0 1px var(--color-papel), 0 0 0 2px currentColor;
+    background: color-mix(in srgb, currentColor 5%, var(--color-papel));
+  }
+
+  .carimbo::before {
+    content: "";
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    background: currentColor;
+    flex: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Movimento.
+
+   Os estados iniciais escondidos aplicam-se apenas sob html.js, para que sem
+   JavaScript a página apareça inteira e legível. O site tem de funcionar com o
+   JavaScript desligado: quem consulta um registo de ciberataques pode muito bem
+   navegar com scripts bloqueados.
+   --------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: no-preference) {
+  html.js .revelar {
+    opacity: 0;
+    transform: translateY(0.75rem);
+    transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  html.js .revelar.visivel {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* As barras da régua de anos crescem a partir da base. */
+  html.js .barra-ano {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  html.js .visivel .barra-ano {
+    transform: scaleY(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  .nao-imprimir {
+    display: none !important;
+  }
+
+  /* Num arquivo documental, a versão impressa tem de conservar as ligações:
+     é a prova de proveniência que justifica o projeto. */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75em;
+    word-break: break-all;
+  }
+}

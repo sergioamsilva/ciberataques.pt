@@ -1,0 +1,349 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Confianca from "../../components/Confianca.astro";
+import Cronologia from "../../components/Cronologia.astro";
+import Cobertura from "../../components/Cobertura.astro";
+import Disputas from "../../components/Disputas.astro";
+import {
+  incidentes,
+  incidente as lerIncidente,
+  entidades,
+  formatarData,
+  formatarNumero,
+  nome,
+  type Incidente,
+} from "../../lib/dados";
+
+export function getStaticPaths() {
+  return incidentes().map((r) => ({ params: { id: r.id }, props: { resumo: r } }));
+}
+
+const { id } = Astro.params;
+const inc: Incidente = lerIncidente(id!);
+const todasEntidades = entidades();
+
+const principais = inc.entidades_afetadas.map((e) => todasEntidades[e]).filter(Boolean);
+const cascata = (inc.entidades_afetadas_em_cascata ?? [])
+  .map((e) => todasEntidades[e])
+  .filter(Boolean);
+
+const MESES = ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
+const [ano, mes] = inc.data.inicio.split("-").map(Number);
+const alvo = principais[0]?.nome_curto ?? principais[0]?.nome ?? "entidade portuguesa";
+const tituloSeo =
+  inc.data.precisao === "ano"
+    ? `Ciberataque a ${alvo} (${ano}) — cronologia, fontes e impacto`
+    : `Ciberataque a ${alvo} (${MESES[mes - 1]} de ${ano}) — cronologia, fontes e impacto`;
+
+/*
+ * citation[] é a jogada estratégica de SEO deste site: a única coisa que temos e
+ * mais nenhum recurso tem é a agregação de fontes por facto. Declará-lo em
+ * schema.org é dizer exatamente isso a quem indexa.
+ *
+ * Article e não NewsArticle: NewsArticle posicionaria o site como órgão de
+ * comunicação social, enquadramento que atrai obrigações que não queremos.
+ */
+const grafo = [
+  {
+    "@type": "Article",
+    "@id": `https://ciberataques.pt/incidentes/${inc.id}/#registo`,
+    headline: inc.titulo,
+    description: inc.resumo.slice(0, 300),
+    datePublished: inc.data.divulgacao ?? inc.data.inicio,
+    dateModified: inc.revisao.data,
+    inLanguage: "pt-PT",
+    author: { "@id": "https://ciberataques.pt/#organizacao" },
+    publisher: { "@id": "https://ciberataques.pt/#organizacao" },
+    isPartOf: { "@id": "https://ciberataques.pt/#site" },
+    about: principais.map((e) => ({
+      "@type": "Organization",
+      name: e.nome,
+      ...(e.url ? { url: e.url } : {}),
+    })),
+    citation: inc.fontes.map((f) => ({
+      "@type": "CreativeWork",
+      name: f.titulo,
+      url: f.url,
+      datePublished: f.data,
+      publisher: { "@type": "Organization", name: f.publicador },
+    })),
+  },
+  {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Início", item: "https://ciberataques.pt/" },
+      { "@type": "ListItem", position: 2, name: "Incidentes", item: "https://ciberataques.pt/incidentes/" },
+      { "@type": "ListItem", position: 3, name: inc.titulo },
+    ],
+  },
+];
+
+interface LinhaFicha {
+  rotulo: string;
+  valor: string;
+  fonte?: number;
+}
+const ficha: LinhaFicha[] = [];
+ficha.push({ rotulo: "Data", valor: formatarData(inc.data.inicio, inc.data.precisao) });
+if (inc.data.divulgacao) {
+  ficha.push({ rotulo: "Divulgação pública", valor: formatarData(inc.data.divulgacao) });
+}
+ficha.push({ rotulo: "Setor", valor: nome("setores", inc.setor) });
+ficha.push({
+  rotulo: "Tipo de ataque",
+  valor: inc.tipos_ataque.map((t) => nome("tipos_ataque", t)).join(", "),
+});
+if (inc.ator?.grupo) {
+  ficha.push({
+    rotulo: "Ator",
+    valor:
+      inc.ator.atribuicao_por === "reivindicacao"
+        ? `${inc.ator.grupo} (reivindicado pelo próprio grupo)`
+        : inc.ator.grupo,
+  });
+}
+if (inc.impacto?.pessoas_afetadas_declaradas) {
+  ficha.push({
+    rotulo: "Pessoas afetadas",
+    valor: formatarNumero(inc.impacto.pessoas_afetadas_declaradas),
+  });
+}
+if (inc.impacto?.servicos_afetados?.length) {
+  ficha.push({ rotulo: "Serviços afetados", valor: inc.impacto.servicos_afetados.join(", ") });
+}
+if (inc.dados_pessoais?.afetados !== null && inc.dados_pessoais?.afetados !== undefined) {
+  ficha.push({
+    rotulo: "Dados pessoais",
+    valor: inc.dados_pessoais.afetados
+      ? inc.dados_pessoais.categorias.length
+        ? inc.dados_pessoais.categorias.map((c) => nome("categorias_dados", c)).join(", ")
+        : "Sim"
+      : "Sem indício de comprometimento",
+  });
+}
+if (inc.impacto?.resgate_pago === false) {
+  ficha.push({ rotulo: "Resgate", valor: "Não pago" });
+}
+
+const notificadas = Object.entries(inc.notificacoes ?? {})
+  .filter(([, v]) => v === true)
+  .map(([k]) =>
+    ({ cncs: "CNCS", cnpd: "CNPD", pj: "Polícia Judiciária", anacom: "ANACOM",
+       cmvm: "CMVM", banco_de_portugal: "Banco de Portugal" })[k] ?? k,
+  );
+if (notificadas.length) {
+  ficha.push({ rotulo: "Autoridades notificadas", valor: notificadas.join(", ") });
+}
+
+const anosDisponiveis = ano;
+
+/*
+ * Filtros facetados do Pagefind.
+ *
+ * Um elemento por par chave/valor. Vários pares num único atributo NÃO funcionam:
+ * o Pagefind lê a primeira chave e absorve o resto da string como valor dela.
+ * Um elemento por filtro é também o que permite repetir a mesma chave, como
+ * acontece com os incidentes que têm mais do que um tipo de ataque.
+ *
+ * Declarados aqui, na página que é efetivamente indexada: postos na listagem não
+ * chegariam ao índice, porque a listagem não tem data-pagefind-body.
+ */
+const filtros: Array<[string, string]> = [
+  ["ano", String(ano)],
+  ["setor", nome("setores", inc.setor)],
+  ["confirmação", nome("estados_confirmacao", inc.estado_confirmacao)],
+  ...inc.tipos_ataque.map((t) => ["tipo", nome("tipos_ataque", t)] as [string, string]),
+  ...(inc.ator?.grupo ? [["ator", inc.ator.grupo] as [string, string]] : []),
+];
+
+/*
+ * Termos alternativos por que se procura esta entidade. Sem isto, quem escrever
+ * "MEO" não encontra a Altice e quem escrever "Continente" não encontra a Sonae MC.
+ */
+const alternativos = [
+  ...principais.flatMap((e) => [e.nome, e.nome_curto, ...(e.chaves ?? [])]),
+  ...cascata.flatMap((e) => [e.nome_curto ?? e.nome]),
+].filter(Boolean) as string[];
+---
+
+<BaseLayout
+  titulo={tituloSeo}
+  descricao={inc.resumo.slice(0, 200)}
+  atualizadoEm={inc.revisao.data}
+  grafo={grafo}
+>
+  <article class="mx-auto max-w-6xl px-5 py-10" data-pagefind-body>
+    {/* Metadados de pesquisa: invisíveis na página, indexados pelo Pagefind. */}
+    <div class="sr-only" aria-hidden="true">
+      {filtros.map(([chave, valor]) => (
+        <span data-pagefind-filter={`${chave}:${valor}`}></span>
+      ))}
+      <span data-pagefind-meta="alternativos">{alternativos.join(" · ")}</span>
+    </div>
+
+    <nav aria-label="Navegação estrutural" class="mono-etiqueta nao-imprimir">
+      <a href="/incidentes/">Incidentes</a>
+      <span class="mx-2 text-[var(--color-borda-forte)]">/</span>
+      <a href={`/cronologia/${anosDisponiveis}/`}>{anosDisponiveis}</a>
+    </nav>
+
+    <header class="mt-6 max-w-3xl">
+      <p class="mono-etiqueta" data-pagefind-meta="id">{inc.id}</p>
+      <h1 class="mt-2 text-4xl sm:text-5xl">{inc.titulo}</h1>
+
+      <div class="mt-6">
+        <Confianca estado={inc.estado_confirmacao} destaque />
+      </div>
+
+      <p class="mt-6 text-lg leading-relaxed">{inc.resumo}</p>
+    </header>
+
+    <div class="mt-12 grid gap-12 lg:grid-cols-[minmax(0,1fr)_20rem]">
+      <div class="space-y-12">
+        {inc.cronologia?.length ? (
+          <section aria-labelledby="h-cronologia">
+            <h2 id="h-cronologia" class="regua pt-4 text-2xl">Cronologia</h2>
+            <div class="mt-6">
+              <Cronologia eventos={inc.cronologia} fontes={inc.fontes} />
+            </div>
+          </section>
+        ) : null}
+
+        {inc.disputas?.length ? (
+          <section aria-labelledby="h-disputas">
+            <h2 id="h-disputas" class="regua pt-4 text-2xl">Versões em confronto</h2>
+            <p class="mt-2 max-w-2xl text-sm text-[var(--color-suave)]">
+              Afirmações em que as versões divergem. Os números avançados por quem ataca
+              não entram na ficha técnica: ficam aqui, identificados.
+            </p>
+            <div class="mt-6">
+              <Disputas disputas={inc.disputas} fontes={inc.fontes} />
+            </div>
+          </section>
+        ) : null}
+
+        {inc.consequencias_regulatorias?.length ? (
+          <section aria-labelledby="h-regulador">
+            <h2 id="h-regulador" class="regua pt-4 text-2xl">Consequências regulatórias</h2>
+            <ul class="mt-6 space-y-5">
+              {inc.consequencias_regulatorias.map((c) => (
+                <li class="revelar">
+                  <p class="mono-etiqueta">
+                    <time datetime={c.data}>{formatarData(c.data)}</time>
+                    <span class="mx-2 text-[var(--color-borda-forte)]">/</span>
+                    {c.autoridade}
+                    {c.valor_eur ? (
+                      <>
+                        <span class="mx-2 text-[var(--color-borda-forte)]">/</span>
+                        <span class="text-[var(--color-acento)]">
+                          {formatarNumero(c.valor_eur)} €
+                        </span>
+                      </>
+                    ) : null}
+                  </p>
+                  <p class="mt-1.5 max-w-2xl">{c.descricao}</p>
+                  <p class="mt-1 text-sm text-[var(--color-suave)]">
+                    <a href={`#fonte-${c.fonte}`}>{inc.fontes[c.fonte]?.publicador}</a>
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
+        <section aria-labelledby="h-cobertura">
+          <h2 id="h-cobertura" class="regua pt-4 text-2xl">Fontes e cobertura</h2>
+          <p class="mt-2 max-w-2xl text-sm text-[var(--color-suave)]">
+            {inc.fontes.length === 1
+              ? "Este incidente assenta numa única fonte."
+              : `Este incidente assenta em ${inc.fontes.length} fontes.`}
+            {" "}As ligações apontam para os originais. Não reproduzimos os artigos.
+          </p>
+          <div class="mt-4">
+            <Cobertura fontes={inc.fontes} />
+          </div>
+        </section>
+      </div>
+
+      <aside class="space-y-10 lg:sticky lg:top-24 lg:self-start">
+        <section aria-labelledby="h-ficha">
+          <h2 id="h-ficha" class="mono-etiqueta">Ficha técnica</h2>
+          <dl class="mt-4 divide-y divide-[var(--color-borda)] border-y border-[var(--color-borda)]">
+            {ficha.map((linha) => (
+              <div class="py-2.5">
+                <dt class="mono-etiqueta">{linha.rotulo}</dt>
+                <dd class="mt-0.5 text-sm">{linha.valor}</dd>
+              </div>
+            ))}
+          </dl>
+          {inc.dados_pessoais?.nota && (
+            <p class="mt-3 text-sm text-[var(--color-suave)]">{inc.dados_pessoais.nota}</p>
+          )}
+          {inc.ator?.nota && (
+            <p class="mt-3 text-sm text-[var(--color-suave)]">{inc.ator.nota}</p>
+          )}
+        </section>
+
+        <section aria-labelledby="h-entidades">
+          <h2 id="h-entidades" class="mono-etiqueta">Entidades</h2>
+          <ul class="mt-3 space-y-2 text-sm">
+            {principais.map((e) => (
+              <li>
+                <a href={`/entidades/${e.id}/`} data-pagefind-meta="entidade">{e.nome}</a>
+              </li>
+            ))}
+          </ul>
+          {cascata.length > 0 && (
+            <>
+              <p class="mono-etiqueta mt-5">Afetadas em cascata</p>
+              <ul class="mt-2 space-y-2 text-sm">
+                {cascata.map((e) => (
+                  <li><a href={`/entidades/${e.id}/`}>{e.nome_curto ?? e.nome}</a></li>
+                ))}
+              </ul>
+              <p class="mt-2 text-sm text-[var(--color-suave)]">
+                Não foram atacadas: sofreram o impacto por dependerem de quem foi.
+              </p>
+            </>
+          )}
+        </section>
+
+        {inc.correcoes?.length ? (
+          <section aria-labelledby="h-correcoes">
+            <h2 id="h-correcoes" class="mono-etiqueta">Correções</h2>
+            <ul class="mt-3 space-y-3 text-sm">
+              {inc.correcoes.map((c) => (
+                <li>
+                  <span class="mono-etiqueta tabular-nums">
+                    <time datetime={c.data}>{formatarData(c.data)}</time>
+                  </span>
+                  <p class="mt-0.5">{c.descricao}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
+        <section class="regua pt-4" aria-labelledby="h-proveniencia">
+          <h2 id="h-proveniencia" class="mono-etiqueta">Proveniência</h2>
+          <dl class="mt-3 space-y-1 font-mono text-xs text-[var(--color-suave)]">
+            <div class="flex justify-between gap-3">
+              <dt>Identificador</dt><dd class="text-[var(--color-tinta)]">{inc.id}</dd>
+            </div>
+            <div class="flex justify-between gap-3">
+              <dt>Revisão</dt><dd class="text-[var(--color-tinta)]">v{inc.revisao.versao}</dd>
+            </div>
+            <div class="flex justify-between gap-3">
+              <dt>Última revisão</dt>
+              <dd class="text-[var(--color-tinta)] tabular-nums">{inc.revisao.data}</dd>
+            </div>
+          </dl>
+          <p class="mt-4 text-sm text-[var(--color-suave)]">
+            Encontrou um erro? <a href="/correcoes/">Como corrigimos</a>.
+            Representa esta entidade? <a href="/direito-de-resposta/">Direito de resposta</a>.
+          </p>
+        </section>
+      </aside>
+    </div>
+  </article>
+</BaseLayout>

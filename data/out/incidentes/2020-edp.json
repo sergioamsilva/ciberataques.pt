@@ -1,0 +1,131 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "baixa",
+    "grupo": "Ragnar Locker",
+    "nota": "O ransomware utilizado foi identificado como Ragnar Locker. A autoria chegou a ser reclamada publicamente pelo grupo CyberTeam, o que não é coerente com a atribuição ao Ragnar Locker e nunca foi esclarecido."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2020-04-13",
+      "fonte": 0,
+      "texto": "A rede corporativa da EDP é atingida por ransomware. O Centro Nacional de Cibersegurança passa a analisar a origem do ataque.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2020-04-16",
+      "fonte": 1,
+      "texto": "O Ministério Público abre investigação ao ataque.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2020-05-07",
+      "fonte": 2,
+      "texto": "A EDP não comenta a informação que os atacantes alegadamente partilharam na dark web.",
+      "tipo": "divulgacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Os atacantes alegaram deter informação sensível, incluindo dados de clientes e credenciais de colaboradores. A EDP não confirmou o conteúdo alegado, e não há apuramento público independente do que terá sido efetivamente exfiltrado.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2020-04-13",
+    "divulgacao": "2020-04-15",
+    "inicio": "2020-04-13",
+    "precisao": "dia"
+  },
+  "disputas": [
+    {
+      "afirmacao": "Os atacantes exigiram um resgate de 1.580 bitcoin, cerca de 9,8 milhões de euros, sob ameaça de tornar públicos os dados em 20 dias.",
+      "contestado_por": "EDP",
+      "fonte_afirmacao": 2,
+      "fonte_contestacao": 2,
+      "nota": "A EDP declarou não ter recebido e, por consequência, não ter pago qualquer pedido de resgate. A divergência não é sobre o valor: é sobre a própria existência do pedido.",
+      "segundo": "Ragnar Locker"
+    },
+    {
+      "afirmacao": "Os atacantes alegaram ter na sua posse 10 terabytes de informação sensível da empresa.",
+      "contestado_por": null,
+      "fonte_afirmacao": 2,
+      "fonte_contestacao": null,
+      "nota": "Volume avançado pelos atacantes e nunca confirmado pela EDP nem por autoridade.",
+      "segundo": "Ragnar Locker"
+    }
+  ],
+  "entidades_afetadas": ["edp"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["infraestrutura-critica", "dupla-extorsao"],
+  "fontes": [
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2020-04-15",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Centro de Cibersegurança analisa \"origem\" do ataque à EDP",
+      "url": "https://eco.sapo.pt/2020/04/15/centro-de-ciberseguranca-analisa-origem-do-ataque-a-edp/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2020-04-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "MP investiga ataque informático à EDP. Altice também foi alvo, mas diz que as consequências \"foram nulas\"",
+      "url": "https://observador.pt/2020/04/16/altice-alvo-de-ataque-cibernetico-empresa-diz-que-consequencias-foram-nulas/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2020-05-07",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "EDP não comenta informação que hackers \"alegadamente\" partilharam na dark web",
+      "url": "https://www.publico.pt/2020/05/07/tecnologia/noticia/edp-nao-comenta-informacao-hackers-alegadamente-partilharam-dark-web-1915604",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2020-edp",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": false,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "Os atacantes alegaram ter exigido 1.580 bitcoin. A EDP declarou não ter recebido qualquer pedido de resgate, e por consequência não o ter pago. Ver as versões em confronto.",
+    "servicos_afetados": [
+      "rede corporativa",
+      "sistema de atendimento a clientes"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "A rede corporativa da EDP foi atingida por ransomware a 13 de abril de 2020, afetando parte dos serviços e o sistema de atendimento a clientes, sem impacto no fornecimento de energia. O ransomware foi identificado como Ragnar Locker, e os atacantes alegaram deter dez terabytes de informação sensível, exigindo 1.580 bitcoin sob ameaça de divulgação. A EDP declarou não ter recebido, e por consequência não ter pago, qualquer pedido de resgate. O Centro Nacional de Cibersegurança analisou a origem do ataque e o Ministério Público abriu investigação.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "A autoria é contraditória nas fontes: o ransomware aponta para o Ragnar Locker, mas o grupo CyberTeam reclamou publicamente o ataque. Registado com confiança baixa. Excertos por preencher.",
+    "versao": 1
+  },
+  "setor": "energia_agua",
+  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "titulo": "Ciberataque à EDP"
+}

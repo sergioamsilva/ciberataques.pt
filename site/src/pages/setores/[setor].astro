@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CartaoIncidente from "../../components/CartaoIncidente.astro";
+import { incidentes, nome } from "../../lib/dados";
+
+export function getStaticPaths() {
+  const setores = [...new Set(incidentes().map((r) => r.setor))];
+  return setores.map((setor) => ({ params: { setor }, props: { setor } }));
+}
+
+const { setor } = Astro.props as { setor: string };
+const lista = incidentes().filter((r) => r.setor === setor);
+const rotulo = nome("setores", setor);
+---
+
+<BaseLayout
+  titulo={`Ciberataques no setor ${rotulo.toLowerCase()} em Portugal`}
+  descricao={`${lista.length} ${lista.length === 1 ? "incidente registado" : "incidentes registados"} no setor ${rotulo.toLowerCase()} em Portugal.`}
+>
+  <div class="mx-auto max-w-4xl px-5 py-10">
+    <nav aria-label="Navegação estrutural" class="mono-etiqueta">
+      <a href="/setores/">Setores</a>
+    </nav>
+    <header class="mt-6">
+      <h1 class="mt-2 text-4xl sm:text-5xl">{rotulo}</h1>
+      <p class="mt-4 text-lg">
+        {lista.length} {lista.length === 1 ? "incidente registado" : "incidentes registados"}.
+      </p>
+    </header>
+    <div class="mt-10">
+      {lista.map((inc) => <CartaoIncidente incidente={inc} />)}
+    </div>
+  </div>
+</BaseLayout>

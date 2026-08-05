@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout titulo="Página não encontrada" descricao="A página pedida não existe." noindex>
+  <div class="mx-auto max-w-3xl px-5 py-20">
+    <p class="font-mono text-6xl tabular-nums text-[var(--color-borda-forte)]">404</p>
+    <h1 class="mt-4 text-4xl">Esta página não existe</h1>
+    <p class="mt-4 text-lg leading-relaxed">
+      Os identificadores dos incidentes são estáveis e não mudam. Se chegou aqui por uma
+      ligação antiga, é provável que a página nunca tenha existido.
+    </p>
+    <p class="mt-6">
+      <a href="/incidentes/">Ver todos os incidentes</a>
+      <span class="mx-2 text-[var(--color-borda-forte)]">·</span>
+      <a href="/pesquisa/">Pesquisar</a>
+      <span class="mx-2 text-[var(--color-borda-forte)]">·</span>
+      <a href="/">Início</a>
+    </p>
+  </div>
+</BaseLayout>

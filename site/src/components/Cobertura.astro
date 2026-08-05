@@ -1,0 +1,65 @@
+---
+import { formatarData, nome, type Fonte } from "../lib/dados";
+
+interface Props {
+  fontes: Fonte[];
+}
+const { fontes } = Astro.props;
+
+/* Fontes oficiais primeiro: um comunicado ou uma deliberação valem mais do que
+   cobertura, e a ordem de leitura deve refleti-lo. */
+const PESO: Record<string, number> = {
+  comunicado: 0, regulador: 1, dre: 2, relatorio: 3, noticia: 4, leak_site: 5,
+};
+const ordenadas = fontes
+  .map((f, i) => ({ ...f, indice: i }))
+  .sort((a, b) => (PESO[a.tipo] ?? 9) - (PESO[b.tipo] ?? 9) || a.data.localeCompare(b.data));
+---
+
+{/*
+  A cobertura vive aqui, e só aqui: uma notícia é uma fonte dentro de um incidente,
+  nunca uma página deste site. Guardamos título, publicador, data e ligação, e no
+  máximo 200 caracteres de excerto com atribuição visível.
+*/}
+<ol class="divide-y divide-[var(--color-borda)]">
+  {ordenadas.map((fonte) => (
+    <li id={`fonte-${fonte.indice}`} class="scroll-mt-24 py-4">
+      <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+        <span class="mono-etiqueta tabular-nums">
+          <time datetime={fonte.data}>{formatarData(fonte.data)}</time>
+        </span>
+        <span class="mono-etiqueta text-[var(--color-tinta)]">{fonte.publicador}</span>
+        <span class="mono-etiqueta">{nome("tipos_fonte", fonte.tipo)}</span>
+        {fonte.estado_ligacao === "morta" && (
+          <span class="mono-etiqueta text-[var(--color-acento)]">ligação morta</span>
+        )}
+        {fonte.estado_ligacao === "alterada" && (
+          <span class="mono-etiqueta text-[var(--color-conf-unica)]">artigo alterado desde a citação</span>
+        )}
+      </div>
+
+      <p class="mt-1.5">
+        <a href={fonte.url} rel="noopener nofollow" target="_blank">{fonte.titulo}</a>
+      </p>
+
+      {fonte.excerto && (
+        <blockquote
+          cite={fonte.url}
+          class="mt-2 border-l-2 border-[var(--color-borda-forte)] pl-4 text-sm italic text-[var(--color-suave)]"
+          data-pagefind-ignore
+        >
+          {fonte.excerto}
+          <footer class="mt-1 not-italic">— {fonte.publicador}</footer>
+        </blockquote>
+      )}
+
+      {fonte.url_arquivo && (
+        <p class="mt-1.5">
+          <a href={fonte.url_arquivo} rel="noopener nofollow" class="mono-etiqueta">
+            versão arquivada
+          </a>
+        </p>
+      )}
+    </li>
+  ))}
+</ol>

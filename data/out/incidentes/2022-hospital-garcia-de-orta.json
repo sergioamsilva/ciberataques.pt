@@ -1,0 +1,179 @@
+{
+  "ator": {
+    "atribuicao_por": "autoridade",
+    "confianca": "media",
+    "grupo": "HIVE",
+    "nota": "A atribuição foi feita pela Polícia Judiciária em janeiro de 2023, no âmbito da operação internacional que desmantelou a infraestrutura do grupo HIVE."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-04-26",
+      "fonte": 0,
+      "texto": "O hospital é alvo de um ataque de ransomware que deixa os sistemas informáticos em baixo.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-04-26",
+      "fonte": 2,
+      "texto": "O hospital afirma manter praticamente toda a atividade clínica, com exceção das consultas externas, e indica estar em contacto permanente com o CNCS e a Polícia Judiciária.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2022-05-03",
+      "fonte": 3,
+      "texto": "Uma semana depois, a unidade continua em situação de contingência.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-05-16",
+      "fonte": 4,
+      "texto": "O sindicato alerta que o ataque continua a pôr em causa a prestação de cuidados de saúde.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-05-31",
+      "fonte": 5,
+      "texto": "Os serviços farmacêuticos recuperam gradualmente, mais de um mês após o ataque.",
+      "tipo": "reposicao"
+    },
+    {
+      "data": "2023-01-26",
+      "fonte": 6,
+      "texto": "A Polícia Judiciária anuncia a participação na operação internacional que desmantelou a infraestrutura do grupo HIVE, e identifica o Hospital Garcia de Orta entre as vítimas em Portugal.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública que confirme ou exclua o comprometimento de dados de utentes. O ataque foi de encriptação, sem publicação conhecida de dados.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-04-26",
+    "divulgacao": "2022-04-26",
+    "inicio": "2022-04-26",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["hospital-garcia-de-orta"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["infraestrutura-critica", "servico-nacional-de-saude"],
+  "fontes": [
+    {
+      "data": "2022-04-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hospital Garcia de Orta alvo de ataque informático. No Litoral Alentejano houve uma tentativa de ciberataque",
+      "url": "https://www.publico.pt/2022/04/26/sociedade/noticia/hospital-garcia-orta-alvo-ataque-informatico-2003841",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-04-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hospital Garcia de Orta alvo de ataque informático",
+      "url": "https://eco.sapo.pt/2022/04/26/hospital-garcia-de-orta-tera-sido-alvo-de-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-04-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Sistema informático do Hospital Garcia de Orta em baixo após ataque informático. Atividade clínica foi quase toda \"mantida\"",
+      "url": "https://observador.pt/2022/04/26/sistema-informatico-do-hospital-garcia-de-orta-em-baixo-apos-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-05-03",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hospital Garcia de Orta, em Almada, continua em contingência uma semana após ataque informático",
+      "url": "https://observador.pt/2022/05/03/hospital-garcia-de-orta-em-almada-continua-em-contingencia-uma-semana-apos-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-05-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático no hospital de Almada coloca em causa cuidados de saúde, alerta sindicato",
+      "url": "https://www.publico.pt/2022/05/16/sociedade/noticia/ataque-informatico-hospital-almada-coloca-causa-cuidados-saude-alerta-sindicato-2006360",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-05-31",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Serviços farmacêuticos do Hospital de Almada está a recuperar gradualmente do ataque informático",
+      "url": "https://observador.pt/2022/05/31/servicos-farmaceuticos-do-hospital-de-almada-esta-a-recuperar-gradualmente-do-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2023-01-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Desmantelado grupo de piratas informáticos que terá atacado Hospital Garcia da Orta",
+      "url": "https://www.publico.pt/2023/01/26/sociedade/noticia/desmantelado-grupo-suspeito-ataques-informaticas-hospitais-camaras-hoteis-2036565",
+      "url_arquivo": null
+    }
+  ],
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "Foi exigido resgate em bitcoin. O valor não foi divulgado e não há confirmação pública de pagamento.",
+    "servicos_afetados": [
+      "sistemas informáticos hospitalares",
+      "consultas externas",
+      "cirurgias programadas",
+      "receção de doentes transportados pela emergência",
+      "serviços farmacêuticos"
+    ]
+  },
+  "id": "2022-hospital-garcia-de-orta",
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "O Hospital Garcia de Orta, em Almada, foi alvo de um ataque de ransomware a 26 de abril de 2022, com pedido de resgate em bitcoin. A unidade afirmou manter praticamente toda a atividade clínica, com exceção das consultas externas, mas o ataque obrigou à desmarcação de consultas e cirurgias e deixou o hospital sem receber doentes transportados pela emergência. Uma semana depois continuava em contingência, e os serviços farmacêuticos só recuperaram gradualmente ao fim de mais de um mês. Em janeiro de 2023 a Polícia Judiciária identificou o hospital entre as vítimas do grupo HIVE, cuja infraestrutura foi desmantelada numa operação internacional.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "A data de início segue o que as fontes sustentam (26 de abril). Há referências a que o ataque terá ocorrido na noite anterior, mas não foram confirmadas. Excertos por preencher.",
+    "versao": 1
+  },
+  "setor": "saude",
+  "tipos_ataque": ["ransomware", "indisponibilidade"],
+  "titulo": "Ciberataque ao Hospital Garcia de Orta"
+}

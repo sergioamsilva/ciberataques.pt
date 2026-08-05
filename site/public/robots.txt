@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# A pesquisa gera combinações infinitas sem valor de indexação.
+Disallow: /pesquisa/
+
+Sitemap: https://ciberataques.pt/sitemap-index.xml

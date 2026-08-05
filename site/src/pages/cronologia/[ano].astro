@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CartaoIncidente from "../../components/CartaoIncidente.astro";
+import { incidentes, agregados } from "../../lib/dados";
+
+export function getStaticPaths() {
+  const anos = [...new Set(incidentes().map((r) => r.ano))].sort((a, b) => b - a);
+  return anos.map((ano) => ({ params: { ano: String(ano) }, props: { ano } }));
+}
+
+const { ano } = Astro.props as { ano: number };
+const lista = incidentes().filter((r) => r.ano === ano);
+const anos = Object.keys(agregados().por_ano).map(Number).sort((a, b) => b - a);
+const i = anos.indexOf(ano);
+---
+
+<BaseLayout
+  titulo={`Ciberataques em Portugal em ${ano}`}
+  descricao={`${lista.length} ${lista.length === 1 ? "incidente registado" : "incidentes registados"} em Portugal em ${ano}, com fontes e grau de confirmação.`}
+>
+  <div class="mx-auto max-w-4xl px-5 py-10">
+    <nav aria-label="Navegação estrutural" class="mono-etiqueta">
+      <a href="/cronologia/">Cronologia</a>
+    </nav>
+
+    <header class="mt-6">
+      <h1 class="font-mono text-6xl tabular-nums sm:text-8xl">{ano}</h1>
+      <p class="mt-3 text-lg">
+        {lista.length} {lista.length === 1 ? "incidente registado" : "incidentes registados"}.
+      </p>
+    </header>
+
+    <div class="mt-10">
+      {lista.map((inc) => <CartaoIncidente incidente={inc} />)}
+    </div>
+
+    <nav class="regua mt-12 flex justify-between gap-4 pt-6" aria-label="Outros anos">
+      {anos[i + 1] ? (
+        <a href={`/cronologia/${anos[i + 1]}/`} class="mono-etiqueta">← {anos[i + 1]}</a>
+      ) : <span></span>}
+      {anos[i - 1] ? (
+        <a href={`/cronologia/${anos[i - 1]}/`} class="mono-etiqueta">{anos[i - 1]} →</a>
+      ) : <span></span>}
+    </nav>
+  </div>
+</BaseLayout>

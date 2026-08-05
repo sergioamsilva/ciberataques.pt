@@ -1,0 +1,26 @@
+# Itens recolhidos e texto integral de terceiros. Nunca versionado: não republicamos
+# texto que não é nosso, e o Google News RSS proíbe expressamente o uso não pessoal.
+data/bruto/
+
+# Cópia arquivada das fontes. Privada e nunca servida pelo site — existe apenas como
+# prova interna e para detetar edições silenciosas. O arquivo público é a Wayback Machine.
+data/arquivo/
+
+# Logs por execução do cron.
+data/instantaneos/registo/
+
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+node_modules/
+site/dist/
+site/.astro/
+
+.env
+segredos.env
+.DS_Store
+
+# Artefactos do Astro na raiz (o build corre em site/, mas o astro sync pode escrever aqui).
+.astro/

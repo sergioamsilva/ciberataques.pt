@@ -1,0 +1,74 @@
+---
+import { manifesto } from "../lib/dados";
+const m = manifesto();
+---
+
+<footer class="mt-24 border-t border-[var(--color-borda)] bg-[var(--color-superficie)]">
+  <div class="mx-auto max-w-6xl px-5 py-12">
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <p class="mono-etiqueta">O registo</p>
+        <ul class="mt-3 space-y-1.5 text-sm">
+          <li><a href="/incidentes/">Todos os incidentes</a></li>
+          <li><a href="/cronologia/">Cronologia</a></li>
+          <li><a href="/entidades/">Entidades</a></li>
+          <li><a href="/setores/">Setores</a></li>
+          <li><a href="/tipos/">Tipos de ataque</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="mono-etiqueta">Como trabalhamos</p>
+        <ul class="mt-3 space-y-1.5 text-sm">
+          <li><a href="/metodologia/">Metodologia</a></li>
+          <li><a href="/correcoes/">Correções</a></li>
+          <li><a href="/direito-de-resposta/">Direito de resposta</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="mono-etiqueta">Dados abertos</p>
+        <ul class="mt-3 space-y-1.5 text-sm">
+          <li><a href="/dados/">Descarregar e citar</a></li>
+          <li><a href="/dados/incidentes.json">incidentes.json</a></li>
+          <li><a href="/dados/incidentes.csv">incidentes.csv</a></li>
+          <li><a href="/dados/fontes.csv">fontes.csv</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="mono-etiqueta">Estado do registo</p>
+        <dl class="mt-3 space-y-1 font-mono text-xs text-[var(--color-suave)]">
+          <div class="flex justify-between gap-3">
+            <dt>Incidentes</dt><dd class="tabular-nums text-[var(--color-tinta)]">{m.total_incidentes}</dd>
+          </div>
+          <div class="flex justify-between gap-3">
+            <dt>Fontes</dt><dd class="tabular-nums text-[var(--color-tinta)]">{m.total_fontes}</dd>
+          </div>
+          <div class="flex justify-between gap-3">
+            <dt>Entidades</dt><dd class="tabular-nums text-[var(--color-tinta)]">{m.total_entidades}</dd>
+          </div>
+          <div class="flex justify-between gap-3">
+            <dt>Atualizado</dt><dd class="tabular-nums text-[var(--color-tinta)]">{m.construido_em}</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="regua mt-10 pt-6 text-sm text-[var(--color-suave)]">
+      <p class="max-w-3xl">
+        Registo documental independente de ciberataques a entidades portuguesas. Não somos
+        um órgão de comunicação social: reunimos e organizamos o que outros apuraram, sempre
+        com a fonte à vista. Cada incidente indica o grau de confirmação e as fontes que o
+        sustentam.
+      </p>
+      <p class="mt-4 font-mono text-xs">
+        Registo sob licença <a href="/dados/">{m.licenca_dados}</a>. As fontes citadas
+        pertencem aos respetivos editores. Sem cookies, sem analytics, sem registo de
+        endereços IP.
+      </p>
+    </div>
+  </div>
+</footer>

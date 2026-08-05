@@ -1,0 +1,191 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "Ragnar Locker",
+    "nota": "A autoria assenta na reivindicação do próprio grupo, que adicionou a TAP ao seu site de extorsão a 31 de agosto de 2022. Não é conhecida atribuição independente por autoridade."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-08-26",
+      "fonte": 0,
+      "texto": "A TAP anuncia publicamente ter sido alvo de um ciberataque na noite anterior, e afirma tê-lo neutralizado, garantindo a integridade operacional.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2022-08-31",
+      "fonte": 1,
+      "texto": "O Ragnar Locker adiciona a TAP ao seu site de extorsão e alega ter dados de cerca de 400 mil clientes.",
+      "tipo": "reivindicacao"
+    },
+    {
+      "data": "2022-09-13",
+      "fonte": 2,
+      "texto": "O grupo publica ficheiros com dados pessoais de cerca de 115 mil clientes, incluindo nome, morada, data de nascimento, nacionalidade e contacto telefónico.",
+      "tipo": "publicacao_dados"
+    },
+    {
+      "data": "2022-09-13",
+      "fonte": 3,
+      "texto": "A TAP alerta os clientes cujos dados foram publicados de que a divulgação pode aumentar o risco de uso ilegítimo, e pede atenção a comunicações suspeitas.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2022-09-20",
+      "fonte": 4,
+      "texto": "O Ragnar Locker anuncia a divulgação de dados de 1,5 milhões de clientes.",
+      "tipo": "publicacao_dados"
+    },
+    {
+      "data": "2022-09-20",
+      "fonte": 5,
+      "texto": "A TAP declara não ter indicação de que os atacantes tenham acedido a dados de pagamento, e afirma não ter negociado nem vir a negociar com os autores do ataque.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["identificacao", "contacto"],
+    "nota": "A TAP reconheceu a divulgação ao alertar diretamente os clientes afetados, mas não declarou publicamente um número de titulares. Os números em circulação são todos do atacante e variaram ao longo do tempo. A companhia declarou não ter indicação de acesso a dados de pagamento.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-08-26",
+    "divulgacao": "2022-08-26",
+    "inicio": "2022-08-25",
+    "precisao": "dia"
+  },
+  "disputas": [
+    {
+      "afirmacao": "O grupo alegou ter dados de cerca de 400 mil clientes.",
+      "contestado_por": "TAP",
+      "fonte_afirmacao": 1,
+      "fonte_contestacao": 0,
+      "nota": "À data desta alegação, a posição pública da TAP era a de que não fora apurado qualquer facto que permitisse concluir ter havido acesso indevido a dados de clientes. Essa posição viria a ser ultrapassada pela publicação efetiva dos dados em setembro.",
+      "segundo": "Ragnar Locker"
+    },
+    {
+      "afirmacao": "O grupo anunciou a divulgação de dados de 1,5 milhões de clientes.",
+      "contestado_por": null,
+      "fonte_afirmacao": 4,
+      "fonte_contestacao": null,
+      "nota": "Número avançado pelo atacante e nunca confirmado pela TAP nem por autoridade. Note-se que os valores alegados pelo grupo variaram ao longo de três semanas, de 400 mil para 1,5 milhões, tendo os ficheiros efetivamente publicados a 13 de setembro dado conta de cerca de 115 mil clientes.",
+      "segundo": "Ragnar Locker"
+    }
+  ],
+  "entidades_afetadas": ["tap"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["dupla-extorsao", "empresa-publica"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-09-22",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque à TAP: o que disse a empresa (e o que aconteceu depois)",
+      "url": "https://eco.sapo.pt/2022/09/22/ciberataque-a-tap-o-que-disse-a-empresa-e-o-que-aconteceu-depois/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-08-31",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Grupo de hackers alega ter roubado dados de 400 mil clientes da TAP",
+      "url": "https://www.publico.pt/2022/08/31/tecnologia/noticia/grupo-hackers-alega-roubado-dados-400-mil-clientes-tap-2019015",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-09-13",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hackers publicam dados de clientes da TAP. Moradas, nomes e telefones entre informação divulgada",
+      "url": "https://www.publico.pt/2022/09/13/sociedade/noticia/hackers-publicam-dados-clientes-tap-moradas-nomes-telefones-informacao-divulgada-2020350",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-09-13",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "TAP alerta clientes afectados por ciberataque para \"risco de uso ilegítimo\" de dados",
+      "url": "https://www.publico.pt/2022/09/13/sociedade/noticia/tap-alerta-clientes-afectados-ciberataque-risco-uso-ilegitimo-dados-2020464",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-09-20",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Grupo de hackers anuncia exposição de dados de 1,5 milhões de clientes da TAP",
+      "url": "https://www.publico.pt/2022/09/20/sociedade/noticia/grupo-hackers-anuncia-exposicao-dados-15-milhoes-clientes-tap-2021158",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-09-20",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "TAP diz não ter indicação de que piratas tenham tido acesso a dados de pagamento",
+      "url": "https://eco.sapo.pt/2022/09/20/tap-diz-nao-ter-indicacao-de-que-piratas-tenham-tido-acesso-a-dados-de-pagamento/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-09-01",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Security Affairs",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ragnar Locker ransomware gang claims to have stolen data from TAP Air Portugal",
+      "url": "https://securityaffairs.com/135168/data-breach/ragnar-locker-ransomware-tap-air-portugal.html",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-tap",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": false,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "O valor exigido nunca foi divulgado. A TAP declarou não ter negociado nem vir a negociar com os autores do ataque.",
+    "servicos_afetados": []
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": true,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "A TAP anunciou a 26 de agosto de 2022 ter sido alvo de um ciberataque na noite anterior, afirmando tê-lo neutralizado sem perda de integridade operacional. Cinco dias depois, o grupo de ransomware Ragnar Locker reivindicou o ataque no seu site de extorsão. A 13 de setembro publicou ficheiros com dados pessoais de clientes, entre eles nome, morada, data de nascimento e contacto telefónico, levando a companhia a alertar diretamente os visados para o risco de uso ilegítimo. A 20 de setembro o grupo anunciou a divulgação de dados de 1,5 milhões de clientes. A TAP declarou não ter indicação de acesso a dados de pagamento e afirmou não ter negociado com os atacantes.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Os números de titulares avançados pelo Ragnar Locker variaram de 400 mil a 1,5 milhões ao longo de três semanas e estão registados em disputas[], nunca no campo de impacto. Excertos das fontes por preencher.",
+    "versao": 1
+  },
+  "setor": "transportes",
+  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "titulo": "Ciberataque à TAP Air Portugal"
+}

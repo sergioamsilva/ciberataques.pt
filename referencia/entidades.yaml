@@ -1,0 +1,318 @@
+# Crosswalk de organizações portuguesas.
+#
+# `chaves` são as formas por que a entidade aparece em notícias e reivindicações,
+# já normalizadas (minúsculas, sem acentos, sem pontuação). São o que permite que
+# procurar "MEO" encontre a Altice e "Continente" encontre a Sonae MC, tanto no
+# agrupamento automático como na pesquisa do site.
+#
+# `sucessao` regista fusões e mudanças de nome, para que o histórico não se perca
+# quando uma empresa muda de designação.
+
+- id: vodafone-portugal
+  nome: Vodafone Portugal — Comunicações Pessoais, S.A.
+  nome_curto: Vodafone Portugal
+  setor: telecomunicacoes
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.vodafone.pt
+  chaves: [vodafone portugal, vodafone]
+
+- id: impresa
+  nome: Impresa, SGPS, S.A.
+  nome_curto: Impresa
+  setor: media
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.impresa.pt
+  chaves: [impresa, grupo impresa, sic, sic noticias, expresso, blitz]
+  nota: >-
+    O ataque de janeiro de 2022 atingiu o grupo, não apenas um título. Registamos ao
+    nível do grupo, com SIC, Expresso e Blitz como chaves.
+
+- id: tap
+  nome: TAP — Transportes Aéreos Portugueses, S.A.
+  nome_curto: TAP Air Portugal
+  setor: transportes
+  tipo: empresa_publica
+  distrito: Lisboa
+  url: https://www.flytap.com
+  chaves: [tap, tap air portugal, tap portugal, transportes aereos portugueses]
+
+- id: edp
+  nome: EDP — Energias de Portugal, S.A.
+  nome_curto: EDP
+  setor: energia_agua
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.edp.com
+  chaves: [edp, energias de portugal]
+
+- id: altice-portugal
+  nome: Altice Portugal, S.A.
+  nome_curto: Altice Portugal
+  setor: telecomunicacoes
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.telecom.pt
+  chaves: [altice portugal, altice, meo, portugal telecom, pt]
+  nota: >-
+    Distinguir da casa-mãe Altice/SFR em França. O incidente de agosto de 2022 diz
+    respeito à operação portuguesa.
+
+- id: hospital-garcia-de-orta
+  nome: Hospital Garcia de Orta, E.P.E.
+  nome_curto: Hospital Garcia de Orta
+  setor: saude
+  tipo: entidade_publica
+  distrito: Setúbal
+  url: https://www.hgo.pt
+  chaves: [hospital garcia de orta, garcia de orta, hgo]
+
+- id: sesaram
+  nome: Serviço de Saúde da Região Autónoma da Madeira, E.P.E.R.A.M.
+  nome_curto: SESARAM
+  setor: saude
+  tipo: entidade_publica
+  distrito: Madeira
+  url: https://www.sesaram.pt
+  chaves: [sesaram, servico de saude da regiao autonoma da madeira, saude madeira]
+
+- id: ama
+  nome: Agência para a Modernização Administrativa, I.P.
+  nome_curto: AMA
+  setor: administracao_publica
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.ama.gov.pt
+  chaves: [ama, agencia para a modernizacao administrativa, autenticacao gov, chave movel digital, gov id]
+
+- id: aguas-de-portugal
+  nome: Águas de Portugal, SGPS, S.A.
+  nome_curto: Águas de Portugal
+  setor: energia_agua
+  tipo: empresa_publica
+  distrito: Lisboa
+  url: https://www.adp.pt
+  chaves: [aguas de portugal, grupo aguas de portugal, adp]
+
+- id: ctt
+  nome: CTT — Correios de Portugal, S.A.
+  nome_curto: CTT
+  setor: transportes
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.ctt.pt
+  chaves: [ctt, correios de portugal, locky]
+
+- id: emgfa
+  nome: Estado-Maior-General das Forças Armadas
+  nome_curto: EMGFA
+  setor: justica_defesa
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.emgfa.pt
+  chaves: [emgfa, estado maior general das forcas armadas, forcas armadas]
+
+- id: seguranca-social
+  nome: Instituto de Informática, I.P. / Instituto da Segurança Social, I.P.
+  nome_curto: Segurança Social
+  setor: administracao_publica
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.seg-social.pt
+  chaves: [seguranca social, instituto da seguranca social, instituto de informatica, iss]
+
+- id: sonae-mc
+  nome: SONAE MC — Serviços Partilhados, S.A.
+  nome_curto: Sonae MC
+  setor: retalho
+  tipo: empresa
+  distrito: Porto
+  url: https://mc.sonae.pt
+  chaves: [sonae mc, sonae, continente, modelo continente, wells]
+  nota: >-
+    O comunicado de março de 2022 é da Sonae MC, que opera Continente e Wells. A
+    Worten NÃO foi confirmada como afetada.
+
+- id: germano-de-sousa
+  nome: Grupo Germano de Sousa — Centro de Medicina Laboratorial
+  nome_curto: Grupo Germano de Sousa
+  setor: saude
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.germanodesousa.com
+  chaves: [germano de sousa, grupo germano de sousa, laboratorios germano de sousa]
+
+- id: lusa
+  nome: Lusa — Agência de Notícias de Portugal, S.A.
+  nome_curto: Agência Lusa
+  setor: media
+  tipo: empresa_publica
+  distrito: Lisboa
+  url: https://www.lusa.pt
+  chaves: [lusa, agencia lusa, agencia de noticias de portugal]
+
+- id: visabeira
+  nome: Grupo Visabeira, SGPS, S.A.
+  nome_curto: Grupo Visabeira
+  setor: industria
+  tipo: empresa
+  distrito: Viseu
+  url: https://www.visabeira.com
+  chaves: [visabeira, grupo visabeira]
+
+- id: universidade-de-lisboa
+  nome: Universidade de Lisboa
+  nome_curto: Universidade de Lisboa
+  setor: educacao_investigacao
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.ulisboa.pt
+  chaves: [universidade de lisboa, ulisboa]
+
+- id: universidade-do-algarve
+  nome: Universidade do Algarve
+  nome_curto: Universidade do Algarve
+  setor: educacao_investigacao
+  tipo: entidade_publica
+  distrito: Faro
+  url: https://www.ualg.pt
+  chaves: [universidade do algarve, ualg]
+
+- id: camara-municipal-de-loures
+  nome: Município de Loures
+  nome_curto: Câmara Municipal de Loures
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.cm-loures.pt
+  chaves: [camara municipal de loures, municipio de loures, camara de loures]
+
+- id: millennium-bcp
+  nome: Banco Comercial Português, S.A.
+  nome_curto: Millennium BCP
+  setor: banca_seguros
+  tipo: empresa
+  distrito: Porto
+  url: https://www.millenniumbcp.pt
+  chaves: [millennium bcp, bcp, banco comercial portugues, millennium]
+
+- id: sporting-cp
+  nome: Sporting Clube de Portugal
+  nome_curto: Sporting CP
+  setor: desporto
+  tipo: associacao
+  distrito: Lisboa
+  url: https://www.sporting.pt
+  chaves: [sporting, sporting clube de portugal, sporting cp]
+
+- id: fc-porto
+  nome: Futebol Clube do Porto
+  nome_curto: FC Porto
+  setor: desporto
+  tipo: associacao
+  distrito: Porto
+  url: https://www.fcporto.pt
+  chaves: [fc porto, futebol clube do porto, porto]
+
+- id: sl-benfica
+  nome: Sport Lisboa e Benfica
+  nome_curto: SL Benfica
+  setor: desporto
+  tipo: associacao
+  distrito: Lisboa
+  url: https://www.slbenfica.pt
+  chaves: [benfica, sport lisboa e benfica, sl benfica]
+
+- id: autoridade-tributaria
+  nome: Autoridade Tributária e Aduaneira
+  nome_curto: Autoridade Tributária
+  setor: administracao_publica
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.portaldasfinancas.gov.pt
+  chaves: [autoridade tributaria, autoridade tributaria e aduaneira, at, portal das financas, financas]
+
+- id: cofina-media
+  nome: Cofina Media, S.A.
+  nome_curto: Cofina Media
+  setor: media
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.cofina.pt
+  chaves: [cofina, cofina media, correio da manha, record, jornal de negocios, sabado, cmtv]
+
+- id: ine
+  nome: Instituto Nacional de Estatística, I.P.
+  nome_curto: INE
+  setor: administracao_publica
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.ine.pt
+  chaves: [ine, instituto nacional de estatistica, censos]
+
+- id: camara-municipal-de-lisboa
+  nome: Município de Lisboa
+  nome_curto: Câmara Municipal de Lisboa
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.lisboa.pt
+  chaves: [camara municipal de lisboa, municipio de lisboa, cml, camara de lisboa]
+
+- id: camara-municipal-de-setubal
+  nome: Município de Setúbal
+  nome_curto: Câmara Municipal de Setúbal
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Setúbal
+  url: https://www.mun-setubal.pt
+  chaves: [camara municipal de setubal, municipio de setubal, camara de setubal]
+
+- id: centro-hospitalar-barreiro-montijo
+  nome: Centro Hospitalar Barreiro Montijo, E.P.E.
+  nome_curto: Centro Hospitalar Barreiro Montijo
+  setor: saude
+  tipo: entidade_publica
+  distrito: Setúbal
+  url: https://www.chbm.min-saude.pt
+  chaves: [centro hospitalar barreiro montijo, hospital do barreiro, chbm]
+
+# Entidades que aparecem como afetadas em cascata, nunca como alvo direto.
+- id: inem
+  nome: Instituto Nacional de Emergência Médica, I.P.
+  nome_curto: INEM
+  setor: saude
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.inem.pt
+  chaves: [inem, instituto nacional de emergencia medica]
+
+- id: sibs
+  nome: SIBS — Sociedade Interbancária de Serviços, S.A.
+  nome_curto: SIBS
+  setor: banca_seguros
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.sibs.com
+  chaves: [sibs, multibanco, rede multibanco]
+  nota: >-
+    Nunca foi atacada diretamente. A rede Multibanco caiu em fevereiro de 2022 por ser
+    cliente da Vodafone. Registar sempre como impacto em cascata.
+
+- id: sns
+  nome: Serviço Nacional de Saúde
+  nome_curto: SNS
+  setor: saude
+  tipo: entidade_publica
+  url: https://www.sns.gov.pt
+  chaves: [sns, servico nacional de saude, sns 24, spms]
+
+- id: cuf
+  nome: CUF, S.A.
+  nome_curto: CUF
+  setor: saude
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.cuf.pt
+  chaves: [cuf, jose de mello saude]

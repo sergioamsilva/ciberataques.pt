@@ -1,0 +1,38 @@
+---
+import { formatarData, nome, type Evento, type Fonte } from "../lib/dados";
+
+interface Props {
+  eventos: Evento[];
+  fontes: Fonte[];
+}
+const { eventos, fontes } = Astro.props;
+const ordenados = [...eventos].sort((a, b) => a.data.localeCompare(b.data));
+---
+
+<ol class="relative ml-1 space-y-7 border-l border-[var(--color-borda-forte)] pl-7">
+  {ordenados.map((evento) => {
+    const fonte = fontes[evento.fonte];
+    return (
+      <li class="revelar relative">
+        {/* A espinha vertical com marcas: a leitura de um processo, evento a evento. */}
+        <span
+          class="absolute -left-[calc(1.75rem+1px)] top-2 h-2.5 w-2.5 rounded-full border border-[var(--color-borda-forte)] bg-[var(--color-papel)]"
+          aria-hidden="true"
+        ></span>
+        <p class="mono-etiqueta">
+          <time datetime={evento.data}>{formatarData(evento.data)}</time>
+          <span class="mx-2 text-[var(--color-borda-forte)]">/</span>
+          {nome("tipos_evento", evento.tipo)}
+        </p>
+        <p class="mt-1.5 max-w-2xl">{evento.texto}</p>
+        {fonte && (
+          <p class="mt-1.5 text-sm text-[var(--color-suave)]">
+            <a href={`#fonte-${evento.fonte}`}>
+              {fonte.publicador}
+            </a>
+          </p>
+        )}
+      </li>
+    );
+  })}
+</ol>

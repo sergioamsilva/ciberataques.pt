@@ -1,0 +1,15 @@
+{
+  "anos": [
+    2020,
+    2022,
+    2023,
+    2024,
+    2026
+  ],
+  "construido_em": "2026-08-05",
+  "esquema": "incidente-1",
+  "licenca_dados": "CC BY 4.0",
+  "total_entidades": 12,
+  "total_fontes": 42,
+  "total_incidentes": 9
+}

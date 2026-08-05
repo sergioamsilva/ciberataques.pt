@@ -1,0 +1,46 @@
+---
+import { nome, explicacaoEstado, type EstadoConfirmacao } from "../lib/dados";
+
+interface Props {
+  estado: EstadoConfirmacao;
+  /** `destaque` mostra também a explicação: usar no topo da ficha de incidente. */
+  destaque?: boolean;
+}
+
+const { estado, destaque = false } = Astro.props;
+
+/**
+ * A cor acompanha a palavra, nunca a substitui. Cada selo mostra sempre o texto do
+ * estado: uma cor não se lê em voz alta nem sobrevive a um leitor de ecrã.
+ */
+const COR: Record<EstadoConfirmacao, string> = {
+  confirmado_pela_entidade: "var(--color-conf-entidade)",
+  confirmado_por_regulador: "var(--color-conf-regulador)",
+  reportado_por_media: "var(--color-conf-media)",
+  noticiado_por_uma_fonte: "var(--color-conf-unica)",
+  alegado_pelo_atacante: "var(--color-conf-atacante)",
+  desmentido: "var(--color-conf-desmentido)",
+};
+---
+
+{destaque ? (
+  <div class="flex flex-col gap-2">
+    <span class="carimbo" style={`color: ${COR[estado]}`}>
+      {nome("estados_confirmacao", estado)}
+    </span>
+    <p class="max-w-2xl text-sm text-[var(--color-suave)]">
+      {explicacaoEstado(estado)}
+      {" "}
+      <a href="/metodologia/#escala" class="whitespace-nowrap">Como classificamos</a>
+    </p>
+  </div>
+) : (
+  <span
+    class="inline-flex items-center gap-1.5 font-mono text-[0.6875rem] font-medium uppercase tracking-wider"
+    style={`color: ${COR[estado]}`}
+    title={explicacaoEstado(estado)}
+  >
+    <span class="h-1.5 w-1.5 rounded-full bg-current" aria-hidden="true"></span>
+    {nome("estados_confirmacao", estado)}
+  </span>
+)}

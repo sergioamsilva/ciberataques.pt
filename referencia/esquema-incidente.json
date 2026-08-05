@@ -1,0 +1,371 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ciberataques.pt/esquema/incidente-1.json",
+  "title": "Incidente",
+  "description": "Um ciberataque a uma entidade portuguesa. Os enumerados espelham referencia/taxonomia.yaml; testes/teste_esquema.py falha se divergirem.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "titulo",
+    "resumo",
+    "entidades_afetadas",
+    "setor",
+    "tipos_ataque",
+    "data",
+    "estado_confirmacao",
+    "fontes",
+    "revisao"
+  ],
+  "properties": {
+    "id": {
+      "description": "Identificador estável e citável. Formato <ano>-<entidade-slug>, com sufixo numérico em colisão. Nunca muda: se mudasse, quebrava citações académicas e ligações externas. Deliberadamente não contém o tipo de ataque, porque o tipo é revisto à medida que a investigação avança.",
+      "type": "string",
+      "pattern": "^(19|20)[0-9]{2}-[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 160
+    },
+    "resumo": {
+      "description": "Escrito sempre por um curador humano, nunca pelo LLM. Três a cinco frases.",
+      "type": "string",
+      "minLength": 80,
+      "maxLength": 1200
+    },
+    "entidades_afetadas": {
+      "description": "Identificadores de referencia/entidades.yaml. Pelo menos um.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/slug" },
+      "uniqueItems": true
+    },
+    "entidades_afetadas_em_cascata": {
+      "description": "Entidades que sofreram impacto por dependerem da entidade atacada, sem terem sido atacadas. O INEM e a SIBS no caso Vodafone de 2022 são o exemplo canónico: entram aqui, nunca como incidentes próprios.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/slug" },
+      "uniqueItems": true
+    },
+    "setor": {
+      "enum": [
+        "saude",
+        "administracao_publica",
+        "autarquias",
+        "banca_seguros",
+        "telecomunicacoes",
+        "energia_agua",
+        "transportes",
+        "retalho",
+        "industria",
+        "educacao_investigacao",
+        "media",
+        "justica_defesa",
+        "tecnologia",
+        "desporto"
+      ]
+    },
+    "tipos_ataque": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "ransomware",
+          "exfiltracao_dados",
+          "ddos",
+          "defacement",
+          "phishing_bec",
+          "cadeia_fornecimento",
+          "intrusao",
+          "indisponibilidade",
+          "insider",
+          "hacktivismo",
+          "fraude",
+          "exposicao_credenciais"
+        ]
+      }
+    },
+    "data": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["inicio", "precisao"],
+      "properties": {
+        "inicio": {
+          "description": "Data do ataque, não da notícia. Se só o mês for conhecido, usar o dia 01 e marcar precisao: mes.",
+          "$ref": "#/$defs/data"
+        },
+        "precisao": {
+          "enum": ["dia", "semana", "mes", "ano", "desconhecida"]
+        },
+        "fim": {
+          "description": "Fim do período de atividade do atacante, quando conhecido e distinto do início.",
+          "$ref": "#/$defs/data"
+        },
+        "detecao": { "$ref": "#/$defs/data" },
+        "divulgacao": {
+          "description": "Data em que o incidente se tornou público.",
+          "$ref": "#/$defs/data"
+        }
+      }
+    },
+    "estado_confirmacao": {
+      "description": "Derivado em ingestao/construir.py a partir dos tipos de fonte presentes. O LLM nunca escreve este campo. Um curador pode baixá-lo, nunca subi-lo acima do que as fontes sustentam.",
+      "enum": [
+        "confirmado_pela_entidade",
+        "confirmado_por_regulador",
+        "reportado_por_media",
+        "noticiado_por_uma_fonte",
+        "alegado_pelo_atacante",
+        "desmentido"
+      ]
+    },
+    "ator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "grupo": {
+          "description": "Nome do grupo, quando atribuído. null quando não há atribuição pública, que é o caso mais comum.",
+          "type": ["string", "null"]
+        },
+        "atribuicao_por": {
+          "description": "Quem fez a atribuição. Uma reivindicação do próprio grupo não é a mesma coisa que uma atribuição da Polícia Judiciária.",
+          "enum": ["entidade", "autoridade", "investigador", "reivindicacao", null]
+        },
+        "confianca": { "enum": ["alta", "media", "baixa", null] },
+        "nota": { "type": ["string", "null"] }
+      }
+    },
+    "dados_pessoais": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["afetados"],
+      "properties": {
+        "afetados": {
+          "description": "true, false, ou null quando não é público se houve dados pessoais envolvidos.",
+          "type": ["boolean", "null"]
+        },
+        "categorias": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "identificacao",
+              "contacto",
+              "financeiros",
+              "credenciais",
+              "saude",
+              "biometricos",
+              "localizacao",
+              "laborais",
+              "fiscais",
+              "comunicacoes"
+            ]
+          }
+        },
+        "titulares_declarados": {
+          "description": "Número de titulares afetados. Só preencher com o valor declarado pela entidade ou por autoridade. Números avançados pelo atacante vão para disputas[], nunca para aqui.",
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "nota": { "type": ["string", "null"] }
+      }
+    },
+    "impacto": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "servicos_afetados": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "duracao_horas": { "type": ["number", "null"], "minimum": 0 },
+        "pessoas_afetadas_declaradas": { "type": ["integer", "null"], "minimum": 0 },
+        "custo_declarado_eur": { "type": ["number", "null"], "minimum": 0 },
+        "resgate_pedido_eur": { "type": ["number", "null"], "minimum": 0 },
+        "resgate_pedido_nota": {
+          "description": "Texto livre para resgates expressos noutra unidade, como os 1.580 BTC exigidos à EDP em 2020.",
+          "type": ["string", "null"]
+        },
+        "resgate_pago": {
+          "description": "Quase sempre null. Só afirmar com fonte que o sustente.",
+          "type": ["boolean", "null"]
+        }
+      }
+    },
+    "notificacoes": {
+      "description": "Se a entidade notificou cada autoridade. null significa que não é público, o que é diferente de false.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cncs": { "type": ["boolean", "null"] },
+        "cnpd": { "type": ["boolean", "null"] },
+        "pj": { "type": ["boolean", "null"] },
+        "anacom": { "type": ["boolean", "null"] },
+        "cmvm": { "type": ["boolean", "null"] },
+        "banco_de_portugal": { "type": ["boolean", "null"] }
+      }
+    },
+    "consequencias_regulatorias": {
+      "description": "Coimas, deliberações e decisões judiciais na sequência do incidente.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["autoridade", "data", "descricao", "fonte"],
+        "properties": {
+          "autoridade": { "type": "string" },
+          "data": { "$ref": "#/$defs/data" },
+          "tipo": { "enum": ["coima", "repreensao", "medida_corretiva", "decisao_judicial", "arquivamento"] },
+          "valor_eur": { "type": ["number", "null"], "minimum": 0 },
+          "processo": { "type": ["string", "null"] },
+          "descricao": { "type": "string" },
+          "fonte": { "$ref": "#/$defs/indiceFonte" }
+        }
+      }
+    },
+    "cronologia": {
+      "description": "Sequência de eventos. Cada evento tem de citar a fonte que o sustenta.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["data", "tipo", "texto", "fonte"],
+        "properties": {
+          "data": { "$ref": "#/$defs/data" },
+          "tipo": {
+            "enum": [
+              "ocorrencia",
+              "detecao",
+              "divulgacao",
+              "comunicado",
+              "reivindicacao",
+              "publicacao_dados",
+              "regulador",
+              "judicial",
+              "reposicao",
+              "desmentido"
+            ]
+          },
+          "texto": { "type": "string", "minLength": 10, "maxLength": 500 },
+          "fonte": { "$ref": "#/$defs/indiceFonte" }
+        }
+      }
+    },
+    "fontes": {
+      "description": "Pelo menos uma. Um incidente sem fontes não constrói.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/fonte" }
+    },
+    "disputas": {
+      "description": "Afirmações em que as versões divergem, tipicamente números avançados pelo atacante e contestados pela vítima. Existe porque em Altice/Hive, Sonae/RansomEXX, TAP/Ragnar Locker, EDP/RagnarLocker e CTT as duas versões são materialmente diferentes, e nenhum outro recurso as regista lado a lado.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["afirmacao", "segundo", "fonte_afirmacao"],
+        "properties": {
+          "afirmacao": { "type": "string", "maxLength": 300 },
+          "segundo": { "type": "string" },
+          "fonte_afirmacao": { "$ref": "#/$defs/indiceFonte" },
+          "contestado_por": { "type": ["string", "null"] },
+          "fonte_contestacao": {
+            "oneOf": [{ "$ref": "#/$defs/indiceFonte" }, { "type": "null" }]
+          },
+          "nota": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "relacionados": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "etiquetas": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/slug" },
+      "uniqueItems": true
+    },
+    "revisao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["curador", "data", "versao"],
+      "properties": {
+        "curador": { "type": "string" },
+        "data": { "$ref": "#/$defs/data" },
+        "versao": { "type": "integer", "minimum": 1 },
+        "nota": { "type": ["string", "null"] }
+      }
+    },
+    "correcoes": {
+      "description": "Registo público de retificações. Corrigir em público é o que distingue um arquivo de um blogue.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["data", "descricao"],
+        "properties": {
+          "data": { "$ref": "#/$defs/data" },
+          "descricao": { "type": "string", "minLength": 10 },
+          "origem": { "enum": ["curadoria", "direito_de_resposta", "leitor", "entidade"] }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "data": {
+      "type": "string",
+      "pattern": "^(19|20)[0-9]{2}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "indiceFonte": {
+      "description": "Índice, base zero, no array fontes[] deste incidente. testes/teste_integridade.py verifica que aponta para uma fonte existente.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "fonte": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tipo", "url", "publicador", "data", "titulo"],
+      "properties": {
+        "tipo": {
+          "enum": ["comunicado", "regulador", "noticia", "relatorio", "leak_site", "dre"]
+        },
+        "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "url_arquivo": {
+          "description": "Cópia pública na Wayback Machine. A cópia local fica em data/arquivo/, é privada e nunca é servida.",
+          "type": ["string", "null"]
+        },
+        "publicador": { "type": "string", "minLength": 2 },
+        "data": { "$ref": "#/$defs/data" },
+        "titulo": { "type": "string", "minLength": 5 },
+        "excerto": {
+          "description": "Limite de 200 caracteres, imposto pelo direito de citação (CDADC art. 75.º/2 g) e pelo direito conexo dos editores (DL 47/2023, que exclui excertos muito curtos). Nunca texto integral.",
+          "type": ["string", "null"],
+          "maxLength": 200
+        },
+        "sha256": {
+          "description": "Hash do texto arquivado localmente. Permite provar o que a fonte dizia numa data, mesmo que o artigo seja editado depois de publicado.",
+          "type": ["string", "null"],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "contem_declaracao_da_entidade": {
+          "description": "A fonte reproduz uma declaração atribuível à entidade afetada. Permite que uma notícia que cita o comunicado sustente 'confirmado_pela_entidade' sem termos o URL do comunicado original, que muitas vezes desaparece ou nunca existiu (a TAP confirmou o ataque de 2022 por Twitter). É uma afirmação explícita do curador, verificada em testes/teste_integridade.py, e não um efeito colateral de o texto mencionar a empresa.",
+          "type": "boolean",
+          "default": false
+        },
+        "contem_declaracao_de_autoridade": {
+          "description": "Equivalente ao anterior, para declarações de CNCS, CNPD, PJ, ANACOM, CMVM ou tribunais reproduzidas por outra fonte.",
+          "type": "boolean",
+          "default": false
+        },
+        "estado_ligacao": { "enum": ["viva", "alterada", "morta"] },
+        "verificado_em": { "$ref": "#/$defs/data" }
+      }
+    }
+  }
+}

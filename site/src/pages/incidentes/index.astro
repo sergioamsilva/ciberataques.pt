@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CartaoIncidente from "../../components/CartaoIncidente.astro";
+import { incidentes, agregados, nome } from "../../lib/dados";
+
+const lista = incidentes();
+const ag = agregados();
+
+const grafo = [
+  {
+    "@type": "CollectionPage",
+    name: "Incidentes registados",
+    inLanguage: "pt-PT",
+    isPartOf: { "@id": "https://ciberataques.pt/#site" },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: lista.length,
+      itemListElement: lista.slice(0, 100).map((r, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `https://ciberataques.pt/incidentes/${r.id}/`,
+        name: r.titulo,
+      })),
+    },
+  },
+];
+---
+
+<BaseLayout
+  titulo="Incidentes registados"
+  descricao={`Registo de ${lista.length} ciberataques a entidades portuguesas, com fontes e grau de confirmação.`}
+  grafo={grafo}
+>
+  <div class="mx-auto max-w-6xl px-5 py-10">
+    <header class="max-w-3xl">
+      <p class="mono-etiqueta">O registo</p>
+      <h1 class="mt-2 text-4xl sm:text-5xl">Incidentes</h1>
+      <p class="mt-4 text-lg">
+        {lista.length} {lista.length === 1 ? "incidente registado" : "incidentes registados"},
+        cada um com as fontes que o sustentam e o grau de confirmação declarado.
+        Para pesquisar e filtrar, use a <a href="/pesquisa/">pesquisa</a>.
+      </p>
+    </header>
+
+    <div class="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_16rem]">
+      <div>
+        {lista.map((inc) => <CartaoIncidente incidente={inc} indexavel />)}
+      </div>
+
+      <aside class="lg:sticky lg:top-24 lg:self-start" data-pagefind-ignore>
+        <h2 class="mono-etiqueta">Por setor</h2>
+        <ul class="mt-3 space-y-1.5 text-sm">
+          {Object.entries(ag.por_setor).map(([setor, n]) => (
+            <li class="flex items-baseline justify-between gap-3">
+              <a href={`/setores/${setor}/`}>{nome("setores", setor)}</a>
+              <span class="font-mono text-xs tabular-nums text-[var(--color-suave)]">{n}</span>
+            </li>
+          ))}
+        </ul>
+
+        <h2 class="mono-etiqueta mt-8">Por tipo de ataque</h2>
+        <ul class="mt-3 space-y-1.5 text-sm">
+          {Object.entries(ag.por_tipo_ataque).map(([tipo, n]) => (
+            <li class="flex items-baseline justify-between gap-3">
+              <a href={`/tipos/${tipo}/`}>{nome("tipos_ataque", tipo)}</a>
+              <span class="font-mono text-xs tabular-nums text-[var(--color-suave)]">{n}</span>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>

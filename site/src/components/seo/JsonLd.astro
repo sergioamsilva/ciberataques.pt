@@ -1,0 +1,15 @@
+---
+/**
+ * Emite JSON-LD compatível com CSP estrita.
+ *
+ * O `<` é escapado para <: é markup de dados, não script executável, pelo que
+ * passa numa política sem 'unsafe-inline' para scripts. Portado de
+ * siteCybers3c/src/components/seo/JsonLd.astro.
+ */
+interface Props {
+  dados: unknown;
+}
+const { dados } = Astro.props;
+const json = JSON.stringify(dados).replace(/</g, "\\u003c");
+---
+<script type="application/ld+json" is:inline set:html={json} />

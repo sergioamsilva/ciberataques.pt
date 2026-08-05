@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { manifesto } from "../lib/dados";
+const m = manifesto();
+---
+
+<BaseLayout
+  titulo="Pesquisar no registo"
+  descricao="Pesquise por entidade, ator, setor, ano ou tipo de ataque no registo de ciberataques em Portugal."
+  noindex
+>
+  <div class="mx-auto max-w-4xl px-5 py-10">
+    <header class="max-w-2xl">
+      <p class="mono-etiqueta">O registo</p>
+      <h1 class="mt-2 text-4xl sm:text-5xl">Pesquisar</h1>
+      <p class="mt-4 text-lg">
+        {m.total_incidentes} incidentes e {m.total_fontes} fontes. Filtre por ano, setor,
+        tipo de ataque, estado de confirmação ou ator.
+      </p>
+      <p class="mt-3 text-sm text-[var(--color-suave)]">
+        A pesquisa corre inteiramente no seu navegador, contra um índice estático. Não
+        sabemos o que procurou, e não queremos saber.
+      </p>
+    </header>
+
+    {/*
+      Sem JavaScript, o Pagefind não arranca. A alternativa não é uma página vazia:
+      é a navegação estática, que chega a tudo, só que a folhear.
+    */}
+    <noscript>
+      <div class="mt-8 border border-[var(--color-borda-forte)] bg-[var(--color-superficie)] p-6">
+        <p>
+          A pesquisa precisa de JavaScript. Sem ele, pode na mesma chegar a todo o registo
+          por <a href="/incidentes/">incidentes</a>, <a href="/cronologia/">ano</a>,
+          <a href="/setores/">setor</a>, <a href="/tipos/">tipo de ataque</a> ou
+          <a href="/entidades/">entidade</a>.
+        </p>
+      </div>
+    </noscript>
+
+    <div id="pesquisa" class="mt-8"></div>
+  </div>
+</BaseLayout>
+
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+<script src="/pagefind/pagefind-ui.js" is:inline></script>
+<script is:inline>
+  window.addEventListener("DOMContentLoaded", () => {
+    if (typeof PagefindUI === "undefined") return;
+    const ui = new PagefindUI({
+      element: "#pesquisa",
+      showSubResults: false,
+      showImages: false,
+      pageSize: 20,
+      translations: {
+        placeholder: "Entidade, ator, tipo de ataque…",
+        clear_search: "Limpar",
+        load_more: "Ver mais resultados",
+        search_label: "Pesquisar no registo",
+        filters_label: "Filtros",
+        zero_results: "Nada encontrado para [SEARCH_TERM]",
+        many_results: "[COUNT] resultados para [SEARCH_TERM]",
+        one_result: "1 resultado para [SEARCH_TERM]",
+        searching: "A pesquisar [SEARCH_TERM]…",
+      },
+    });
+
+    // ?q= lido do URL, para que uma pesquisa seja um link citável.
+    const q = new URLSearchParams(window.location.search).get("q");
+    if (q) ui.triggerSearch(q);
+  });
+</script>

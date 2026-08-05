@@ -1,0 +1,204 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { taxonomia, agregados, nome, manifesto } from "../lib/dados";
+
+const tax = taxonomia();
+const ag = agregados();
+const m = manifesto();
+
+const escala = Object.entries(tax.estados_confirmacao).sort(
+  (a, b) => (a[1].peso ?? 0) - (b[1].peso ?? 0),
+);
+
+const grafo = [
+  {
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Como distinguem um facto confirmado de uma alegação?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Cada incidente tem um estado de confirmação derivado dos tipos de fonte que o sustentam, numa escala de seis níveis que vai de confirmado pela entidade a alegado pelo atacante.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Publicam dados vazados?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nunca. Não republicamos conteúdo de fugas, nem amostras, nem capturas de ecrã, e não ligamos a sites de extorsão.",
+        },
+      },
+    ],
+  },
+];
+
+const distribuicao = Object.entries(ag.distribuicao_fontes_por_incidente);
+const umaFonte = ag.distribuicao_fontes_por_incidente["1"] ?? 0;
+---
+
+<BaseLayout
+  titulo="Metodologia"
+  descricao="Como reunimos, classificamos e verificamos os ciberataques registados, e o que deliberadamente não publicamos."
+  grafo={grafo}
+>
+  <div class="mx-auto max-w-3xl px-5 py-10">
+    <header>
+      <p class="mono-etiqueta">Como trabalhamos</p>
+      <h1 class="mt-2 text-4xl sm:text-5xl">Metodologia</h1>
+      <p class="mt-4 text-lg leading-relaxed">
+        Este registo nomeia organizações que foram atacadas, o que tem consequências
+        reais para essas organizações. A única coisa que o justifica é o rigor com que
+        é feito. Esta página explica esse rigor, incluindo onde ele falha.
+      </p>
+    </header>
+
+    <section class="mt-14 scroll-mt-24" id="escala" aria-labelledby="h-escala">
+      <h2 id="h-escala" class="regua pt-5 text-2xl">A escala de confirmação</h2>
+      <p class="mt-3 leading-relaxed">
+        Nem tudo o que se sabe sobre um ataque tem o mesmo valor. Um comunicado da empresa
+        não é a mesma coisa que um número publicado por quem a atacou. Cada incidente
+        mostra, no topo da ficha e em texto legível, em que nível se encontra.
+      </p>
+
+      <ol class="mt-6 divide-y divide-[var(--color-borda)] border-y border-[var(--color-borda)]">
+        {escala.map(([chave, valor]) => (
+          <li class="revelar py-4">
+            <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+              <h3 class="font-mono text-sm font-medium uppercase tracking-wider">
+                {valor.nome}
+              </h3>
+              <span class="font-mono text-xs tabular-nums text-[var(--color-suave)]">
+                {ag.por_estado_confirmacao[chave] ?? 0}
+              </span>
+            </div>
+            <p class="mt-1.5 text-sm leading-relaxed text-[var(--color-suave)]">
+              {valor.explicacao}
+            </p>
+          </li>
+        ))}
+      </ol>
+
+      <div class="mt-6 border-l-2 border-[var(--color-acento)] pl-5">
+        <p class="mono-etiqueta">Três regras sobre este campo</p>
+        <ul class="mt-2 space-y-2 text-sm leading-relaxed">
+          <li>
+            Nenhum modelo de linguagem o escreve. É derivado em código a partir dos tipos
+            de fonte. O texto que analisamos é, no caso dos sites de extorsão, escrito por
+            adversários: se um deles pudesse influenciar a classificação através do que
+            escreve, a escala não valeria nada.
+          </li>
+          <li>
+            Um curador pode baixá-lo por prudência, nunca subi-lo acima do que as fontes
+            sustentam.
+          </li>
+          <li>
+            Nada sobe por repetição. Cinco órgãos a citar o mesmo comunicado do atacante
+            continuam a ser uma alegação do atacante.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mt-14 scroll-mt-24" id="disputas" aria-labelledby="h-disputas">
+      <h2 id="h-disputas" class="regua pt-5 text-2xl">Versões em confronto</h2>
+      <p class="mt-3 leading-relaxed">
+        Em vários casos portugueses, os números que circulam vêm de quem atacou e são
+        contestados por quem foi atacado. Quando isso acontece, registamos as duas
+        versões lado a lado, identificadas, em vez de escolher uma.
+      </p>
+      <p class="mt-3 leading-relaxed">
+        Um número avançado pelo atacante nunca entra na ficha técnica do incidente.
+        Fica na secção de versões em confronto, com a indicação de quem o afirmou e de
+        quem o contestou. Neste momento
+        {ag.incidentes_com_disputas === 1
+          ? " há um incidente nestas condições"
+          : ` há ${ag.incidentes_com_disputas} incidentes nestas condições`}.
+      </p>
+    </section>
+
+    <section class="mt-14 scroll-mt-24" id="vies" aria-labelledby="h-vies">
+      <h2 id="h-vies" class="regua pt-5 text-2xl">O viés que herdamos</h2>
+      <p class="mt-3 leading-relaxed">
+        Este registo assenta em fontes públicas, e as fontes públicas cobrem o que é
+        notícia. Uma operadora nacional em baixo é notícia; uma empresa de vinte pessoas
+        em Guimarães não é. Quem contar incidentes por setor está a contar
+        <strong> incidentes noticiados</strong>, não incidentes ocorridos.
+      </p>
+      <p class="mt-3 leading-relaxed">
+        Não conseguimos corrigir isto. O que podemos fazer é torná-lo mensurável: a
+        distribuição de fontes por incidente é publicada nos dados abertos, e quanto mais
+        incidentes existirem com uma única fonte, mais frágil é a cobertura.
+      </p>
+
+      <dl class="mt-6 divide-y divide-[var(--color-borda)] border-y border-[var(--color-borda)]">
+        {distribuicao.map(([n, quantos]) => (
+          <div class="flex items-baseline justify-between gap-4 py-2.5">
+            <dt class="text-sm">
+              {n === "1" ? "Com uma única fonte" : `Com ${n} fontes`}
+            </dt>
+            <dd class="font-mono text-xs tabular-nums text-[var(--color-suave)]">{quantos}</dd>
+          </div>
+        ))}
+      </dl>
+
+      {umaFonte > 0 && (
+        <p class="mt-4 text-sm text-[var(--color-suave)]">
+          {umaFonte === 1
+            ? "Um incidente assenta numa única fonte."
+            : `${umaFonte} incidentes assentam numa única fonte.`}
+          {" "}São os mais frágeis do registo e estão assinalados como tal.
+        </p>
+      )}
+    </section>
+
+    <section class="mt-14 scroll-mt-24" id="limites" aria-labelledby="h-limites">
+      <h2 id="h-limites" class="regua pt-5 text-2xl">O que não publicamos</h2>
+      <ul class="mt-4 space-y-4 leading-relaxed">
+        <li>
+          <strong>Dados vazados.</strong> Nem o conteúdo, nem amostras, nem capturas de
+          ecrã, nem contagens que só se obtenham lendo-os. Não ligamos a sites de
+          extorsão: quando citamos uma reivindicação, a ligação aponta para o tracker
+          público.
+        </li>
+        <li>
+          <strong>Nomes de pessoas singulares.</strong> Salvo titulares de cargo a falar
+          em nome da entidade e condenações judiciais públicas. Nunca nomeamos alegados
+          atacantes não condenados, nem vítimas individuais, nem trabalhadores da entidade
+          atacada.
+        </li>
+        <li>
+          <strong>Texto de terceiros.</strong> De cada fonte guardamos título, publicador,
+          data, ligação e, no máximo, duzentos caracteres de excerto com atribuição
+          visível. Nunca reproduzimos artigos.
+        </li>
+      </ul>
+    </section>
+
+    <section class="mt-14 scroll-mt-24" id="lacunas" aria-labelledby="h-lacunas">
+      <h2 id="h-lacunas" class="regua pt-5 text-2xl">Lacunas conhecidas</h2>
+      <p class="mt-3 leading-relaxed">
+        O registo cobre {m.anos[0]} a {m.anos[m.anos.length - 1]} e está longe de completo.
+        Há anos com cobertura pública muito mais fraca do que outros, e há incidentes
+        descritos por autoridades em termos agregados sem que a entidade visada seja
+        nomeada. Nesses casos não inferimos: se não há fonte que identifique a entidade,
+        não há registo.
+      </p>
+    </section>
+
+    <section class="mt-14" aria-labelledby="h-erros">
+      <h2 id="h-erros" class="regua pt-5 text-2xl">Quando erramos</h2>
+      <p class="mt-3 leading-relaxed">
+        Corrigimos em público, com registo da correção na própria ficha, e não apagamos
+        incidentes publicados: um incidente que se revele infundado passa a estar marcado
+        como desmentido, com a explicação, e continua acessível na mesma morada.
+      </p>
+      <p class="mt-4">
+        <a href="/correcoes/">Política de correções</a>
+        <span class="mx-2 text-[var(--color-borda-forte)]">·</span>
+        <a href="/direito-de-resposta/">Direito de resposta</a>
+      </p>
+    </section>
+  </div>
+</BaseLayout>

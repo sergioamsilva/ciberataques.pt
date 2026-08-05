@@ -1,0 +1,147 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "RansomEXX",
+    "nota": "O ataque foi reivindicado pelo grupo que opera o ransomware RansomEXX. A Sonae MC afirmou inicialmente que a autoria não havia sido reivindicada."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-03-30",
+      "fonte": 0,
+      "texto": "A Sonae MC é alvo de um ataque informático. Os sítios do grupo ficam em baixo e o do Continente passa a exibir uma mensagem de manutenção.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-03-30",
+      "fonte": 2,
+      "texto": "Cerca de quatro milhões de clientes ficam sem acesso ao Cartão Continente.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-04-05",
+      "fonte": 3,
+      "texto": "A Sonae MC declara não haver evidência de que dados pessoais de clientes tenham sido afetados, na sequência do trabalho forense realizado.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "A Sonae MC declarou não haver evidência de comprometimento de dados pessoais de clientes, afirmando que a informação exposta dizia respeito ao negócio e fora extraída dos sistemas que suportam o sítio e o Cartão Continente, bem como o sítio da Wells. Não há apuramento público independente que confirme ou contrarie essa caracterização.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-03-30",
+    "divulgacao": "2022-03-30",
+    "inicio": "2022-03-30",
+    "precisao": "dia"
+  },
+  "disputas": [
+    {
+      "afirmacao": "O grupo expôs na dark web 56 ficheiros, correspondentes a cerca de 27 GB de dados da empresa.",
+      "contestado_por": "Sonae MC",
+      "fonte_afirmacao": 4,
+      "fonte_contestacao": 3,
+      "nota": "A divergência não é sobre a existência da fuga, mas sobre a sua natureza: a Sonae MC sustenta que a informação exposta é do negócio e não de clientes. O volume de 27 GB é um valor avançado no contexto da reivindicação e não foi confirmado pela empresa.",
+      "segundo": "RansomEXX"
+    }
+  ],
+  "entidades_afetadas": ["sonae-mc"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["dupla-extorsao", "retalho-alimentar"],
+  "fontes": [
+    {
+      "data": "2022-03-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Sonae MC alvo de ataque informático. Site do Continente está \"em manutenção\"",
+      "url": "https://eco.sapo.pt/2022/03/30/sonae-mc-alvo-de-ataque-informatico-site-do-continente-esta-em-manutencao/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-03-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Sonae foi alvo de ataque informático. Sites do grupo estão em baixo",
+      "url": "https://www.publico.pt/2022/03/30/economia/noticia/sonae-alvo-ataque-informatico-sites-grupo-estao-baixo-2000691",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-03-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque à Sonae. O dia em que quatro milhões de clientes ficaram sem cartão Continente",
+      "url": "https://observador.pt/2022/03/30/ataque-a-sonae-o-dia-em-que-quatro-milhoes-de-clientes-ficaram-sem-cartao-continente/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-04-05",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Sonae diz não haver evidência de que dados dos clientes foram afetados em ciberataque",
+      "url": "https://www.publico.pt/2022/04/05/economia/noticia/sonae-nao-haver-evidencia-dados-clientes-afetados-ciberataque-2001477",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-04-05",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático. Sonae diz que dados pessoais de clientes não terão sido afetados",
+      "url": "https://observador.pt/2022/04/05/ataque-informatico-sonae-diz-que-dados-pessoais-de-clientes-nao-terao-sido-afetados/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-sonae-mc",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": 4000000,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "continente.pt",
+      "wells.pt",
+      "Continente Online",
+      "aplicação Cartão Continente"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": true,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "A Sonae MC, que opera o Continente e a Wells, foi alvo de um ataque informático a 30 de março de 2022. Os sítios do grupo ficaram em baixo e cerca de quatro milhões de clientes ficaram sem acesso ao Cartão Continente. O grupo que opera o ransomware RansomEXX reivindicou o ataque e expôs ficheiros na dark web. A Sonae MC sustentou que a informação exposta dizia respeito ao negócio e não a clientes, e declarou a 5 de abril não haver evidência de que dados pessoais de clientes tivessem sido afetados. O Continente Online e a aplicação do cartão foram repostos ao fim de uma semana.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "O número de quatro milhões refere-se a clientes privados do acesso ao Cartão Continente durante o incidente, não a titulares de dados comprometidos. Excertos por preencher.",
+    "versao": 1
+  },
+  "setor": "retalho",
+  "tipos_ataque": ["ransomware", "exfiltracao_dados", "indisponibilidade"],
+  "titulo": "Ciberataque à Sonae MC (Continente e Wells)"
+}

@@ -1,0 +1,107 @@
+---
+import "../styles/global.css";
+import JsonLd from "../components/seo/JsonLd.astro";
+import Cabecalho from "../components/Cabecalho.astro";
+import Rodape from "../components/Rodape.astro";
+
+interface Props {
+  titulo: string;
+  descricao: string;
+  noindex?: boolean;
+  /** Data da última revisão do conteúdo, para o sitemap e para o leitor. */
+  atualizadoEm?: string;
+  /** Nós adicionais para o @graph desta página. */
+  grafo?: unknown[];
+}
+
+const { titulo, descricao, noindex = false, atualizadoEm, grafo = [] } = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const tituloCompleto = titulo === "ciberataques.pt"
+  ? titulo
+  : `${titulo} — ciberataques.pt`;
+
+const organizacao = {
+  "@type": "Organization",
+  "@id": "https://ciberataques.pt/#organizacao",
+  name: "ciberataques.pt",
+  url: "https://ciberataques.pt/",
+  description:
+    "Registo público e documentado de ciberataques a entidades portuguesas.",
+};
+
+const website = {
+  "@type": "WebSite",
+  "@id": "https://ciberataques.pt/#site",
+  url: "https://ciberataques.pt/",
+  name: "ciberataques.pt",
+  inLanguage: "pt-PT",
+  publisher: { "@id": "https://ciberataques.pt/#organizacao" },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://ciberataques.pt/pesquisa/?q={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+---
+
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{tituloCompleto}</title>
+    <meta name="description" content={descricao} />
+    <link rel="canonical" href={canonical} />
+    <meta
+      name="robots"
+      content={noindex
+        ? "noindex,nofollow"
+        : "index,follow,max-image-preview:large,max-snippet:-1"}
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ciberataques.pt" />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:title" content={tituloCompleto} />
+    <meta property="og:description" content={descricao} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+
+    {atualizadoEm && <meta name="date" content={atualizadoEm} />}
+
+    <link rel="alternate" type="application/rss+xml" title="ciberataques.pt" href="/rss.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <JsonLd dados={{ "@context": "https://schema.org", "@graph": [organizacao, website, ...grafo] }} />
+
+    <script is:inline>
+      // Marca que há JavaScript, para que os estados iniciais escondidos das
+      // animações só se apliquem quando houver quem os possa revelar. Sem isto,
+      // navegar sem JS deixaria a página em branco.
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+
+  <body class="min-h-screen flex flex-col">
+    <a
+      href="#conteudo"
+      class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:m-3 focus:bg-[var(--color-tinta)] focus:px-4 focus:py-2 focus:text-[var(--color-papel)]"
+    >
+      Saltar para o conteúdo
+    </a>
+
+    <Cabecalho />
+
+    <main id="conteudo" class="flex-1">
+      <slot />
+    </main>
+
+    <Rodape />
+
+    <script src="../scripts/revelar.ts"></script>
+  </body>
+</html>

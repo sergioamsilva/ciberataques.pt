@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { agregados, nome, taxonomia } from "../../lib/dados";
+
+const ag = agregados();
+const tax = taxonomia();
+---
+
+<BaseLayout
+  titulo="Tipos de ataque"
+  descricao="Ciberataques registados em Portugal, por tipo de ataque."
+>
+  <div class="mx-auto max-w-4xl px-5 py-10">
+    <header>
+      <p class="mono-etiqueta">O registo</p>
+      <h1 class="mt-2 text-4xl sm:text-5xl">Tipos de ataque</h1>
+      <p class="mt-4 max-w-2xl text-lg">
+        Um incidente pode ter mais do que um tipo: um ransomware com roubo de dados conta
+        nos dois. Por isso a soma excede o total de incidentes.
+      </p>
+    </header>
+
+    <ul class="mt-10 space-y-6">
+      {Object.entries(ag.por_tipo_ataque).map(([tipo, n]) => (
+        <li class="revelar regua pt-5">
+          <div class="flex flex-wrap items-baseline justify-between gap-4">
+            <h2 class="text-xl">
+              <a href={`/tipos/${tipo}/`} class="no-underline hover:underline">
+                {nome("tipos_ataque", tipo)}
+              </a>
+            </h2>
+            <span class="font-mono text-sm tabular-nums text-[var(--color-suave)]">
+              {n} {n === 1 ? "incidente" : "incidentes"}
+            </span>
+          </div>
+          {tax.tipos_ataque?.[tipo]?.descricao && (
+            <p class="mt-1.5 max-w-2xl text-sm text-[var(--color-suave)]">
+              {tax.tipos_ataque[tipo].descricao}
+            </p>
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>

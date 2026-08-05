@@ -1,0 +1,115 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública à data desta revisão."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-08-04",
+      "fonte": 0,
+      "texto": "O grupo Águas de Portugal confirma ter sido alvo de um ciberataque de elevada complexidade aos seus sistemas de informação, ocorrido na sexta-feira anterior.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-08-04",
+      "fonte": 1,
+      "texto": "O grupo garante que o abastecimento e a qualidade da água não foram afetados, e que os constrangimentos se limitam a processos administrativos e canais de contacto com clientes e parceiros.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-08-04",
+      "fonte": 2,
+      "texto": "A Polícia Judiciária e o Centro Nacional de Cibersegurança acompanham a investigação.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados pessoais. A investigação decorria à data desta revisão.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-07-31",
+    "divulgacao": "2026-08-04",
+    "inicio": "2026-07-31",
+    "precisao": "semana"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["aguas-de-portugal"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["infraestrutura-critica", "empresa-publica", "em-desenvolvimento"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-08-04",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Águas de Portugal alvo de ciberataque. Fornecimento e qualidade da água não está em causa",
+      "url": "https://eco.sapo.pt/2026/08/04/aguas-de-portugal-alvo-de-ciberataque-fornecimento-e-qualidade-da-agua-nao-esta-em-causa/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-08-04",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Renascença",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Águas de Portugal alvo de ciberataque de \"elevada complexidade\"",
+      "url": "https://rr.pt/noticia/pais/2026/08/04/aguas-de-portugal-alvo-de-ciberataque-de-elevada-complexidade/480625/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2026-08-04",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "RTP",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Águas de Portugal alvo de ciberataque. Abastecimento não está comprometido",
+      "url": "https://www.rtp.pt/noticias/pais/aguas-de-portugal-alvo-de-ciberataque-abastecimento-nao-esta-comprometido_n1757695",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-aguas-de-portugal",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "processos administrativos",
+      "canais de contacto com clientes e parceiros",
+      "postos de trabalho de colaboradores"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "O grupo Águas de Portugal confirmou a 4 de agosto de 2026 ter sido alvo de um ciberataque de elevada complexidade aos seus sistemas de informação, ocorrido na sexta-feira anterior. O grupo garantiu que o abastecimento e a qualidade da água não foram afetados, e que os constrangimentos se limitaram a processos administrativos e aos canais de contacto com clientes e parceiros, tendo os colaboradores sido impedidos por precaução de ligar os computadores. A Polícia Judiciária e o Centro Nacional de Cibersegurança acompanharam a investigação. O tipo exato de ataque não foi divulgado.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Incidente recente e ainda em desenvolvimento. A data de início é inferida das fontes, que referem a sexta-feira anterior a 4 de agosto sem a datarem explicitamente: registada com precisão de semana. O tipo de ataque não foi divulgado, pelo que consta apenas como intrusão.",
+    "versao": 1
+  },
+  "setor": "energia_agua",
+  "tipos_ataque": ["intrusao"],
+  "titulo": "Ciberataque ao grupo Águas de Portugal"
+}

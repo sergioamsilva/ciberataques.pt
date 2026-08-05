@@ -1,0 +1,87 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { manifesto } from "../lib/dados";
+const m = manifesto();
+---
+
+<BaseLayout
+  titulo="Sobre"
+  descricao="O que é o ciberataques.pt, porque existe, e o que deliberadamente não é."
+>
+  <div class="mx-auto max-w-3xl px-5 py-10">
+    <header>
+      <p class="mono-etiqueta">O projeto</p>
+      <h1 class="mt-2 text-4xl sm:text-5xl">Sobre</h1>
+    </header>
+
+    <section class="mt-10 space-y-4 text-lg leading-relaxed">
+      <p>
+        O ciberataques.pt é um registo documental dos ciberataques a entidades
+        portuguesas. Reúne, organiza e data o que já é público, sempre com a fonte à
+        vista, e distingue explicitamente o que foi confirmado do que foi apenas alegado.
+      </p>
+      <p>
+        Existe porque essa informação não existia reunida em lado nenhum. Há trackers
+        internacionais que cobrem ransomware com site de extorsão, e falham tudo o resto.
+        Há relatórios oficiais com estatística agregada, que nunca nomeiam entidades. E há
+        a imprensa, que cobre caso a caso e depois segue em frente. Faltava o arquivo.
+      </p>
+    </section>
+
+    <section class="mt-12" aria-labelledby="h-nao-somos">
+      <h2 id="h-nao-somos" class="regua pt-5 text-2xl">O que não somos</h2>
+      <p class="mt-3 leading-relaxed">
+        Não somos um órgão de comunicação social. Não fazemos reportagem própria, não
+        temos periodicidade informativa e não publicamos notícias. Registamos o que
+        outros apuraram e citamos quem o apurou.
+      </p>
+      <p class="mt-3 leading-relaxed">
+        Também não somos um serviço de alerta nem uma ferramenta de segurança. Este é um
+        arquivo histórico: serve para perceber o que aconteceu, não para reagir ao que
+        está a acontecer.
+      </p>
+    </section>
+
+    <section class="mt-12" aria-labelledby="h-como-e-feito">
+      <h2 id="h-como-e-feito" class="regua pt-5 text-2xl">Como é feito</h2>
+      <p class="mt-3 leading-relaxed">
+        Cada incidente é curado por uma pessoa antes de ser publicado. Há recolha
+        automática de fontes, mas ela nunca publica nada: produz candidatos, que ficam à
+        espera de revisão humana. A publicação é sempre um ato deliberado.
+      </p>
+      <p class="mt-3 leading-relaxed">
+        O registo inteiro é público e versionado, o que significa que qualquer pessoa
+        pode ver o que este site dizia em qualquer data, e quem escreveu o quê. É a única
+        forma honesta de manter um arquivo que nomeia organizações.
+      </p>
+    </section>
+
+    <section class="mt-12" aria-labelledby="h-privacidade">
+      <h2 id="h-privacidade" class="regua pt-5 text-2xl">Quem nos lê</h2>
+      <p class="mt-3 leading-relaxed">
+        Sem cookies, sem analytics, sem serviços de terceiros, sem registo de endereços
+        IP. A pesquisa corre no seu navegador, contra um índice estático: não sabemos o
+        que procurou.
+      </p>
+      <p class="mt-3 leading-relaxed text-[var(--color-suave)]">
+        Quem consulta um registo de ciberataques pode estar a investigar o seu próprio
+        empregador, o seu hospital ou a sua câmara municipal. Essa consulta não deve
+        deixar rasto connosco.
+      </p>
+    </section>
+
+    <section class="mt-12" aria-labelledby="h-contacto">
+      <h2 id="h-contacto" class="regua pt-5 text-2xl">Contacto</h2>
+      <p class="mt-3 leading-relaxed">
+        Correções e direito de resposta:
+        <a href="mailto:correcoes@ciberataques.pt">correcoes@ciberataques.pt</a>.
+        Ver também a <a href="/metodologia/">metodologia</a> e os
+        <a href="/dados/">dados abertos</a>.
+      </p>
+      <p class="mt-4 font-mono text-xs text-[var(--color-suave)]">
+        Registo com {m.total_incidentes} incidentes e {m.total_fontes} fontes.
+        Última construção: {m.construido_em}.
+      </p>
+    </section>
+  </div>
+</BaseLayout>

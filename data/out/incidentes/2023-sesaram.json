@@ -1,0 +1,109 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública. As declarações do Governo Regional sobre não ceder a chantagistas apontam para extorsão, mas nenhum grupo foi identificado."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2023-08-06",
+      "fonte": 0,
+      "texto": "Um ciberataque força a suspensão da atividade clínica no Serviço de Saúde da Região Autónoma da Madeira, com bloqueio do acesso aos processos dos utentes.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2023-09-09",
+      "fonte": 1,
+      "texto": "O serviço recupera o acesso à informação clínica e não clínica dos utentes, cerca de cinco semanas após o ataque.",
+      "tipo": "reposicao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "O acesso aos processos clínicos ficou bloqueado, mas não há confirmação pública de que dados de utentes tenham sido exfiltrados.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2023-08-06",
+    "divulgacao": "2023-08-06",
+    "inicio": "2023-08-06",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["sesaram"],
+  "estado_confirmacao": "reportado_por_media",
+  "etiquetas": ["infraestrutura-critica", "regiao-autonoma"],
+  "fontes": [
+    {
+      "data": "2023-08-06",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque força suspensão de actividade clínica no Serviço de Saúde da Madeira",
+      "url": "https://www.publico.pt/2023/08/06/tecnologia/noticia/ciberataque-forca-suspensao-actividade-clinica-servico-saude-madeira-2059423",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-09-09",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Serviço de Saúde da Madeira recupera acesso a informação clínica e não clínica dos utentes após ataque informático",
+      "url": "https://www.publico.pt/2023/09/09/sociedade/noticia/servico-saude-madeira-recupera-acesso-informacao-clinica-nao-clinica-utentes-apos-ataque-informatico-2062816",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-08-15",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "HealthNews",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "SESARAM continua a repor serviços fundamentais uma semana após ciberataque",
+      "url": "https://healthnews.pt/2023/08/15/sesaram-continua-a-repor-servicos-fundamentais-uma-semana-apos-ciberataque/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2023-sesaram",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "Não foi divulgado pedido de resgate concreto. O Governo Regional afirmou publicamente não ceder a chantagistas.",
+    "servicos_afetados": [
+      "consultas",
+      "cirurgias programadas",
+      "análises clínicas",
+      "meios complementares de diagnóstico",
+      "acesso aos processos clínicos dos utentes"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": true,
+    "pj": true
+  },
+  "relacionados": ["2022-hospital-garcia-de-orta"],
+  "resumo": "A 6 de agosto de 2023, um ciberataque ao Serviço de Saúde da Região Autónoma da Madeira forçou a suspensão da atividade clínica, com bloqueio do acesso aos processos dos utentes e regresso ao registo em papel. Foram afetados os hospitais e os centros de saúde da região, com suspensão de consultas, cirurgias programadas, análises clínicas e meios complementares de diagnóstico. A recuperação foi prolongada: o acesso à informação clínica e não clínica dos utentes só foi restabelecido a 9 de setembro, cerca de cinco semanas depois.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "As fontes descrevem o incidente como ciberataque sem uniformizar a classificação como ransomware. Registado como intrusão com indisponibilidade, à espera de confirmação. Excertos por preencher.",
+    "versao": 1
+  },
+  "setor": "saude",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque ao Serviço de Saúde da Madeira"
+}

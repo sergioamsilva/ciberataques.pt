@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { agregados, nome } from "../../lib/dados";
+
+const ag = agregados();
+const maximo = Math.max(...Object.values(ag.por_setor), 1);
+---
+
+<BaseLayout
+  titulo="Setores"
+  descricao="Ciberataques registados em Portugal, por setor de atividade."
+>
+  <div class="mx-auto max-w-4xl px-5 py-10">
+    <header>
+      <p class="mono-etiqueta">O registo</p>
+      <h1 class="mt-2 text-4xl sm:text-5xl">Setores</h1>
+      <p class="mt-4 max-w-2xl text-lg">
+        Distribuição dos incidentes registados por setor. Os setores seguem os anexos I
+        e II da diretiva NIS2, com a administração local separada da central.
+      </p>
+      <p class="mt-3 max-w-2xl text-sm text-[var(--color-suave)]">
+        Estas contagens são de incidentes <em>noticiados</em>, não de incidentes ocorridos.
+        <a href="/metodologia/#vies">Porque é que a distinção importa</a>.
+      </p>
+    </header>
+
+    <ul class="mt-10 divide-y divide-[var(--color-borda)] border-y border-[var(--color-borda)]">
+      {Object.entries(ag.por_setor).map(([setor, n]) => (
+        <li class="revelar py-3.5">
+          <div class="flex items-baseline justify-between gap-4">
+            <a href={`/setores/${setor}/`} class="text-lg">{nome("setores", setor)}</a>
+            <span class="font-mono text-sm tabular-nums text-[var(--color-suave)]">{n}</span>
+          </div>
+          <span
+            class="mt-2 block h-0.5 bg-[var(--color-tinta)]"
+            style={`width: ${Math.max(4, (n / maximo) * 100)}%`}
+            aria-hidden="true"
+          ></span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>

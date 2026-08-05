@@ -1,0 +1,112 @@
+{
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-02-07",
+      "fonte": 0,
+      "texto": "A Vodafone Portugal identifica, por volta das 21h00, uma perturbação grave na rede que viria a ser atribuída a um ataque deliberado.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-02-08",
+      "fonte": 0,
+      "texto": "A operadora divulga comunicado a classificar o incidente como acto criminoso destinado a tornar a rede indisponível, e afirma não haver indício de invasão, extração ou corrupção de dados de clientes.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2022-02-08",
+      "fonte": 1,
+      "texto": "Serviços que dependem da rede ficam afetados, incluindo o INEM, os bombeiros e a rede Multibanco operada pela SIBS.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-02-10",
+      "fonte": 1,
+      "texto": "A maior parte dos serviços está reposta, após reposição progressiva iniciada na noite do próprio ataque com a voz móvel.",
+      "tipo": "reposicao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "A Vodafone declarou não haver indício de invasão, extração ou corrupção de dados de clientes. Não houve, até hoje, informação pública que contrarie essa declaração.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-02-07",
+    "divulgacao": "2022-02-08",
+    "inicio": "2022-02-07",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["vodafone-portugal"],
+  "entidades_afetadas_em_cascata": ["inem", "sibs"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["infraestrutura-critica", "servicos-de-emergencia"],
+  "fontes": [
+    {
+      "data": "2022-02-08",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Vodafone Portugal",
+      "sha256": null,
+      "tipo": "comunicado",
+      "titulo": "Vodafone Portugal alvo de ciberataque",
+      "url": "https://www.vodafone.pt/press-releases/2022/2/vodafone-portugal-alvo-de-ciberataque.html",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-02-08",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Objectivo do acto criminoso era deixar rede da Vodafone indisponível. Empresa trabalha para repor serviços essenciais: INEM, bombeiros, bancos",
+      "url": "https://www.publico.pt/2022/02/08/sociedade/noticia/objetivo-acto-criminoso-deixar-rede-vodafone-indisponivel-empresa-trabalha-repor-servicos-essenciais-inem-bombeiros-bancos-1994668",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-vodafone-portugal",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": 4000000,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "Não houve pedido de resgate conhecido, nem reivindicação do ataque.",
+    "servicos_afetados": [
+      "rede móvel 4G e 5G",
+      "voz móvel",
+      "voz fixa",
+      "SMS",
+      "televisão",
+      "canais de atendimento"
+    ]
+  },
+  "notificacoes": {
+    "anacom": true,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "Na noite de 7 de fevereiro de 2022, a rede da Vodafone Portugal ficou indisponível na sequência de um ataque deliberado dirigido ao núcleo da infraestrutura. Cerca de quatro milhões de clientes ficaram sem serviço móvel, voz fixa, SMS e televisão. O impacto estendeu-se a serviços que dependiam da rede, entre eles o INEM, os bombeiros e a rede Multibanco. A reposição foi progressiva entre 7 e 11 de fevereiro. Não houve pedido de resgate nem reivindicação, e a operadora declarou não haver indício de acesso a dados de clientes. O caso foi investigado pelo Centro Nacional de Cibersegurança, pela Polícia Judiciária e pela ANACOM.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Excertos das fontes por preencher: exigem verificação do texto original.",
+    "versao": 1
+  },
+  "setor": "telecomunicacoes",
+  "tipos_ataque": ["indisponibilidade", "intrusao"],
+  "titulo": "Ciberataque à Vodafone Portugal",
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública. A investigação concluiu tratar-se de profissionais, mas nenhuma autoria foi estabelecida nem reivindicada."
+  }
+}

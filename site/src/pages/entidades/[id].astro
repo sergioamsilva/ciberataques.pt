@@ -1,0 +1,76 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CartaoIncidente from "../../components/CartaoIncidente.astro";
+import { entidades, incidentes, nome } from "../../lib/dados";
+
+export function getStaticPaths() {
+  return Object.values(entidades()).map((e) => ({ params: { id: e.id }, props: { entidade: e } }));
+}
+
+const { entidade } = Astro.props;
+const todos = incidentes();
+const diretos = todos.filter((r) => entidade.incidentes.includes(r.id));
+const cascata = todos.filter((r) => entidade.incidentes_em_cascata.includes(r.id));
+
+const grafo = [
+  {
+    "@type": "Organization",
+    name: entidade.nome,
+    ...(entidade.url ? { url: entidade.url } : {}),
+  },
+];
+---
+
+<BaseLayout
+  titulo={`Ciberataques a ${entidade.nome_curto ?? entidade.nome}`}
+  descricao={`Incidentes de cibersegurança registados envolvendo ${entidade.nome}, com fontes e grau de confirmação.`}
+  grafo={grafo}
+>
+  <div class="mx-auto max-w-4xl px-5 py-10">
+    <nav aria-label="Navegação estrutural" class="mono-etiqueta">
+      <a href="/entidades/">Entidades</a>
+    </nav>
+
+    <header class="mt-6">
+      <p class="mono-etiqueta">{nome("setores", entidade.setor)}</p>
+      <h1 class="mt-2 text-4xl sm:text-5xl">{entidade.nome_curto ?? entidade.nome}</h1>
+      {entidade.nome_curto && entidade.nome !== entidade.nome_curto && (
+        <p class="mt-2 text-[var(--color-suave)]">{entidade.nome}</p>
+      )}
+      {entidade.url && (
+        <p class="mt-3">
+          <a href={entidade.url} rel="noopener nofollow" class="mono-etiqueta">sítio oficial</a>
+        </p>
+      )}
+      {entidade.nota && (
+        <p class="mt-4 max-w-2xl border-l-2 border-[var(--color-borda-forte)] pl-4 text-sm text-[var(--color-suave)]">
+          {entidade.nota}
+        </p>
+      )}
+    </header>
+
+    {diretos.length > 0 && (
+      <section class="mt-12" aria-labelledby="h-diretos">
+        <h2 id="h-diretos" class="regua pt-5 text-2xl">
+          {diretos.length === 1 ? "Um incidente registado" : `${diretos.length} incidentes registados`}
+        </h2>
+        <div class="mt-2">
+          {diretos.map((inc) => <CartaoIncidente incidente={inc} />)}
+        </div>
+      </section>
+    )}
+
+    {cascata.length > 0 && (
+      <section class="mt-12" aria-labelledby="h-cascata">
+        <h2 id="h-cascata" class="regua pt-5 text-2xl">Afetada em cascata</h2>
+        <p class="mt-2 max-w-2xl text-sm text-[var(--color-suave)]">
+          Nestes casos a entidade não foi atacada: sofreu o impacto por depender de quem
+          foi. Registamos à parte para não inflacionar as contagens.
+        </p>
+        <div class="mt-2">
+          {cascata.map((inc) => <CartaoIncidente incidente={inc} />)}
+        </div>
+      </section>
+    )}
+  </div>
+</BaseLayout>

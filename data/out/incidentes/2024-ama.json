@@ -1,0 +1,176 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública. O Centro Nacional de Cibersegurança classificou o incidente como ransomware, mas nenhum grupo foi identificado ou reivindicou o ataque."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2024-10-10",
+      "fonte": 0,
+      "texto": "A AMA é alvo de um ciberataque. Várias plataformas e serviços digitais do Estado ficam indisponíveis, entre eles o Autenticação.Gov, o Gov.ID, a Chave Móvel Digital e o portal gov.pt.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2024-10-10",
+      "fonte": 1,
+      "texto": "A AMA indica que a disrupção na sua rede se deve a um ciberataque, e que o acesso às plataformas foi preventivamente desativado por poder ter impacto direto na atividade de entidades públicas e privadas.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2024-10-12",
+      "fonte": 2,
+      "texto": "Dois dias depois, o portal do SNS 24 continua em baixo e os médicos não conseguem enviar receitas por mensagem escrita.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2024-10-15",
+      "fonte": 4,
+      "texto": "Plataformas e serviços do Estado continuam indisponíveis. O Governo declara não haver, até àquele momento, evidência de exfiltração de dados.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2024-10-18",
+      "fonte": 5,
+      "texto": "O portal gov.pt é restabelecido, após a reposição de cerca de 400 serviços transacionais e 20 plataformas, portais e sítios públicos.",
+      "tipo": "reposicao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "O Governo declarou não haver evidência de exfiltração de dados. A ausência de evidência foi questionada publicamente na Assembleia da República, e não é conhecida uma conclusão posterior que confirme ou desminta.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2024-10-10",
+    "divulgacao": "2024-10-10",
+    "inicio": "2024-10-10",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["ama"],
+  "entidades_afetadas_em_cascata": ["sns"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["infraestrutura-critica", "administracao-central", "identidade-digital"],
+  "fontes": [
+    {
+      "data": "2024-10-10",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "AMA alvo de ciberataque. Várias plataformas do Estado não estão a funcionar",
+      "url": "https://www.publico.pt/2024/10/10/tecnologia/noticia/ama-alvo-ciberataque-varias-plataformas-estado-nao-estao-funcionar-2107411",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2024-10-10",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Agência para a Modernização Administrativa alvo de ciberataque. Serviços como a Chave Móvel Digital atingidos",
+      "url": "https://observador.pt/2024/10/10/agencia-para-a-modernizacao-administrativa-alvo-de-ciberataque-servicos-como-a-chave-movel-digital-atingidos/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2024-10-12",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Médicos não conseguem enviar receitas por SMS desde quinta-feira. SNS 24 em baixo",
+      "url": "https://www.publico.pt/2024/10/12/tecnologia/noticia/dois-dias-apos-ciberataque-ama-acesso-portal-sns-24-continua-baixo-2107717",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2024-10-14",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Exame Informática",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Das motivações às consequências: O ataque à AMA e as dúvidas que ficam 'no ar'",
+      "url": "https://visao.pt/exameinformatica/noticias-ei/internet/2024-10-14-das-motivacoes-as-consequencias-o-ataque-a-ama-e-as-duvidas-que-ficam-no-ar/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2024-10-15",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Plataformas e serviços do Estado ainda estão em baixo após ciberataque. Resposta da AMA foi \"célere\"",
+      "url": "https://www.publico.pt/2024/10/15/tecnologia/noticia/plataformas-servicos-estado-estao-baixo-apos-ciberataque-2107814",
+      "url_arquivo": null
+    },
+    {
+      "data": "2024-10-18",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Site gov.pt já está restabelecido depois de ciberataque à AMA",
+      "url": "https://www.publico.pt/2024/10/18/tecnologia/noticia/site-govpt-ja-restabelecido-ciberataque-ama-2108548",
+      "url_arquivo": null
+    },
+    {
+      "data": "2024-10-18",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Gov.pt já está restabelecido depois de ciberataque à AMA",
+      "url": "https://eco.sapo.pt/2024/10/18/gov-pt-ja-esta-restabelecido-depois-de-ciberataque-a-ama/",
+      "url_arquivo": null
+    }
+  ],
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "Autenticação.Gov",
+      "Gov.ID",
+      "Chave Móvel Digital",
+      "portal gov.pt",
+      "portal SNS 24",
+      "envio de receitas médicas por mensagem escrita"
+    ]
+  },
+  "id": "2024-ama",
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A 10 de outubro de 2024, a Agência para a Modernização Administrativa foi alvo de um ciberataque que deixou indisponíveis os serviços de autenticação do Estado, incluindo o Autenticação.Gov, o Gov.ID, a Chave Móvel Digital e o portal gov.pt. Por serem infraestrutura de autenticação usada por entidades públicas e privadas em todo o país, o impacto estendeu-se muito para além da AMA: o portal do SNS 24 esteve em baixo e os médicos ficaram impedidos de enviar receitas por mensagem escrita. A reposição demorou mais de uma semana e envolveu cerca de 400 serviços transacionais. O Governo declarou não haver evidência de exfiltração de dados.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "O Centro Nacional de Cibersegurança classificou o incidente como ransomware. Não há atribuição pública nem informação sobre pedido de resgate. Excertos por preencher.",
+    "versao": 1
+  },
+  "setor": "administracao_publica",
+  "tipos_ataque": ["ransomware", "indisponibilidade"],
+  "titulo": "Ciberataque à Agência para a Modernização Administrativa"
+}

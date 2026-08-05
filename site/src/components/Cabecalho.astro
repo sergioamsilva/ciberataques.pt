@@ -1,0 +1,57 @@
+---
+const rota = Astro.url.pathname;
+const ligacoes = [
+  { href: "/incidentes/", texto: "Incidentes" },
+  { href: "/cronologia/", texto: "Cronologia" },
+  { href: "/setores/", texto: "Setores" },
+  { href: "/dados/", texto: "Dados abertos" },
+  { href: "/metodologia/", texto: "Metodologia" },
+];
+const ativo = (href: string) => rota === href || rota.startsWith(href);
+---
+
+<header class="sticky top-0 z-40 border-b border-[var(--color-borda)] bg-[var(--color-papel)]/95 backdrop-blur nao-imprimir">
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-3 px-5 py-3">
+    <a href="/" class="group flex items-baseline gap-2 no-underline">
+      <span class="font-mono text-[0.95rem] font-medium tracking-tight text-[var(--color-tinta)]">
+        ciberataques<span class="text-[var(--color-acento)]">.pt</span>
+      </span>
+    </a>
+
+    <nav aria-label="Principal" class="order-3 w-full sm:order-2 sm:w-auto">
+      <ul class="flex flex-wrap items-center gap-x-5 gap-y-1">
+        {ligacoes.map((l) => (
+          <li>
+            <a
+              href={l.href}
+              aria-current={ativo(l.href) ? "page" : undefined}
+              class:list={[
+                "mono-etiqueta no-underline transition-colors hover:text-[var(--color-acento)]",
+                ativo(l.href) && "text-[var(--color-tinta)]",
+              ]}
+            >
+              {l.texto}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <form
+      action="/pesquisa/"
+      method="get"
+      role="search"
+      class="order-2 ml-auto flex items-center gap-2 sm:order-3"
+    >
+      <label for="pesquisa-cabecalho" class="sr-only">Pesquisar no registo</label>
+      <input
+        type="search"
+        id="pesquisa-cabecalho"
+        name="q"
+        placeholder="Pesquisar…"
+        autocomplete="off"
+        class="w-36 border-b border-[var(--color-borda-forte)] bg-transparent px-1 py-1 font-mono text-xs text-[var(--color-tinta)] placeholder:text-[var(--color-suave)] focus:border-[var(--color-acento)] focus:outline-none sm:w-44"
+      />
+    </form>
+  </div>
+</header>

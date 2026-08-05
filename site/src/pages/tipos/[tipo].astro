@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CartaoIncidente from "../../components/CartaoIncidente.astro";
+import { incidentes, nome, taxonomia } from "../../lib/dados";
+
+export function getStaticPaths() {
+  const tipos = [...new Set(incidentes().flatMap((r) => r.tipos_ataque))];
+  return tipos.map((tipo) => ({ params: { tipo }, props: { tipo } }));
+}
+
+const { tipo } = Astro.props as { tipo: string };
+const lista = incidentes().filter((r) => r.tipos_ataque.includes(tipo));
+const rotulo = nome("tipos_ataque", tipo);
+const descricao = taxonomia().tipos_ataque?.[tipo]?.descricao ?? "";
+---
+
+<BaseLayout
+  titulo={`${rotulo} em Portugal`}
+  descricao={`${lista.length} ${lista.length === 1 ? "incidente registado" : "incidentes registados"} do tipo ${rotulo.toLowerCase()} em Portugal.`}
+>
+  <div class="mx-auto max-w-4xl px-5 py-10">
+    <nav aria-label="Navegação estrutural" class="mono-etiqueta">
+      <a href="/tipos/">Tipos de ataque</a>
+    </nav>
+    <header class="mt-6">
+      <h1 class="mt-2 text-4xl sm:text-5xl">{rotulo}</h1>
+      {descricao && <p class="mt-4 max-w-2xl text-[var(--color-suave)]">{descricao}</p>}
+      <p class="mt-4 text-lg">
+        {lista.length} {lista.length === 1 ? "incidente registado" : "incidentes registados"}.
+      </p>
+    </header>
+    <div class="mt-10">
+      {lista.map((inc) => <CartaoIncidente incidente={inc} />)}
+    </div>
+  </div>
+</BaseLayout>

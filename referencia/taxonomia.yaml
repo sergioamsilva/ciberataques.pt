@@ -1,0 +1,208 @@
+# Vocabulários fechados do ciberataques.pt.
+#
+# Nada fora deste ficheiro entra em data/out/. O esquema-incidente.json referencia
+# estes valores, e testes/teste_esquema.py falha se um incidente usar um termo que
+# aqui não exista.
+#
+# Porquê fechado: um registo cujos rótulos derivam ao longo do tempo deixa de ser
+# comparável consigo próprio. Um académico que conte "ataques de ransomware por ano"
+# tem de obter o mesmo número hoje e daqui a três anos. Acrescentar um termo é uma
+# decisão editorial deliberada, com entrada no registo de correções se mudar a
+# classificação de incidentes já publicados.
+
+tipos_ataque:
+  ransomware:
+    nome: Ransomware
+    descricao: >-
+      Encriptação de sistemas com pedido de resgate. Usar mesmo quando há também
+      exfiltração (dupla extorsão), acrescentando exfiltracao_dados.
+  exfiltracao_dados:
+    nome: Exfiltração de dados
+    descricao: Cópia não autorizada de dados para fora da organização.
+  ddos:
+    nome: Negação de serviço
+    descricao: Ataque volumétrico ou aplicacional que torna um serviço indisponível.
+  defacement:
+    nome: Desfiguração de site
+    descricao: Alteração não autorizada do conteúdo público de um site.
+  phishing_bec:
+    nome: Phishing e fraude no e-mail empresarial
+    descricao: >-
+      Engenharia social por correio eletrónico, incluindo comprometimento de e-mail
+      empresarial com desvio de pagamentos.
+  cadeia_fornecimento:
+    nome: Cadeia de fornecimento
+    descricao: >-
+      A entidade é afetada através de um fornecedor, prestador ou componente de
+      terceiros, não por intrusão direta.
+  intrusao:
+    nome: Intrusão
+    descricao: >-
+      Acesso não autorizado a sistemas. Usar quando há acesso confirmado mas o
+      objetivo final não é público.
+  indisponibilidade:
+    nome: Indisponibilidade de serviço
+    descricao: >-
+      Serviço em baixo por ação deliberada, sem que a causa técnica seja pública.
+      Distinto de ddos, que é uma causa concreta.
+  insider:
+    nome: Ameaça interna
+    descricao: Ação de quem tem acesso legítimo, dolosa ou negligente.
+  hacktivismo:
+    nome: Hacktivismo
+    descricao: Ataque com motivação política ou ideológica declarada.
+  fraude:
+    nome: Fraude informática
+    descricao: >-
+      Uso de meios informáticos para obter vantagem patrimonial ilegítima, incluindo
+      desvio de pagamentos e alteração de dados bancários.
+  exposicao_credenciais:
+    nome: Exposição de credenciais
+    descricao: >-
+      Credenciais de utilizadores da entidade a circular publicamente, tipicamente
+      recolhidas por infostealers nos equipamentos dos próprios utilizadores.
+      NÃO implica intrusão nos sistemas da entidade — ver o caso do Portal das
+      Finanças em outubro de 2024.
+
+# Setores alinhados com os anexos I e II da Diretiva NIS2, adaptados à realidade
+# administrativa portuguesa (autarquias separadas da administração central, porque
+# em Portugal são o alvo mais frequente e têm regime próprio).
+setores:
+  saude: {nome: Saúde}
+  administracao_publica: {nome: Administração pública central}
+  autarquias: {nome: Administração local}
+  banca_seguros: {nome: Banca e seguros}
+  telecomunicacoes: {nome: Telecomunicações}
+  energia_agua: {nome: Energia e água}
+  transportes: {nome: Transportes}
+  retalho: {nome: Retalho e distribuição}
+  industria: {nome: Indústria}
+  educacao_investigacao: {nome: Educação e investigação}
+  media: {nome: Comunicação social}
+  justica_defesa: {nome: Justiça e defesa}
+  tecnologia: {nome: Tecnologia}
+  desporto: {nome: Desporto}
+
+# A escala de confiança. É o campo mais importante do projeto e o que nenhum outro
+# recurso oferece: separa a versão da vítima da versão do atacante.
+#
+# NUNCA é escrito pelo LLM. É derivado em ingestao/construir.py a partir dos tipos
+# de fonte presentes no incidente, e um curador só o pode baixar, nunca subir acima
+# do que as fontes sustentam.
+#
+# `exige_fonte_tipo` diz que tipos de fonte sustentam cada estado. Duas fontes de
+# tipo `noticia` podem substituir um `comunicado` ou um `regulador` quando o curador
+# marca explicitamente `contem_declaracao_da_entidade` ou
+# `contem_declaracao_de_autoridade` na fonte. A distinção existe porque uma entidade
+# pode confirmar um ataque sem emitir comunicado com URL estável: a TAP confirmou o
+# ataque de 2022 por Twitter, e o que resta é a cobertura que reproduz a declaração.
+# O que a regra exige é que alguém tenha verificado que a declaração lá está, não que
+# tenhamos o documento original.
+#
+# A ordem é significativa: `peso` menor é maior confiança.
+estados_confirmacao:
+  confirmado_pela_entidade:
+    peso: 1
+    nome: Confirmado pela entidade
+    explicacao: >-
+      A organização afetada reconheceu publicamente o incidente, por comunicado
+      próprio ou declaração atribuível.
+    exige_fonte_tipo: [comunicado]
+  confirmado_por_regulador:
+    peso: 2
+    nome: Confirmado por autoridade
+    explicacao: >-
+      Uma autoridade competente (CNCS, CNPD, ANACOM, CMVM, Polícia Judiciária) ou
+      um tribunal confirmou o incidente.
+    exige_fonte_tipo: [regulador, dre]
+  reportado_por_media:
+    peso: 3
+    nome: Reportado por vários órgãos de comunicação social
+    explicacao: >-
+      Pelo menos dois órgãos independentes noticiaram o incidente, sem confirmação
+      da entidade nem de autoridade.
+    exige_fonte_tipo: [noticia]
+    minimo_publicadores: 2
+  noticiado_por_uma_fonte:
+    peso: 4
+    nome: Noticiado por uma única fonte
+    explicacao: >-
+      Um só órgão noticiou o incidente. Registamos, mas o leitor deve saber que não
+      houve corroboração.
+    exige_fonte_tipo: [noticia]
+  alegado_pelo_atacante:
+    peso: 5
+    nome: Alegado pelo atacante, sem confirmação
+    explicacao: >-
+      A informação vem de um site de extorsão ou de quem reivindica o ataque. Não foi
+      confirmada pela entidade nem por autoridade. É a categoria de menor fiabilidade
+      e a que exige mais cuidado de leitura.
+    exige_fonte_tipo: [leak_site]
+  desmentido:
+    peso: 6
+    nome: Desmentido pela entidade
+    explicacao: >-
+      A entidade negou publicamente o incidente. Mantemos o registo publicado, com o
+      desmentido, porque apagar o que noticiámos seria pior do que corrigi-lo.
+    exige_fonte_tipo: [comunicado]
+
+# Tipos de fonte. Determinam o estado de confirmação que um incidente pode atingir.
+tipos_fonte:
+  comunicado:
+    nome: Comunicado da entidade
+    descricao: Declaração pública da organização afetada, ou do seu grupo.
+  regulador:
+    nome: Autoridade ou tribunal
+    descricao: CNCS, CNPD, ANACOM, CMVM, Polícia Judiciária, Ministério Público, tribunais.
+  noticia:
+    nome: Comunicação social
+    descricao: Órgão de comunicação social registado.
+  relatorio:
+    nome: Relatório
+    descricao: >-
+      Relatório de empresa de segurança, associação ou organismo internacional
+      (CNCS/Observatório, ENISA).
+  leak_site:
+    nome: Site de extorsão
+    descricao: >-
+      Reivindicação publicada pelo próprio grupo atacante, tipicamente via um tracker
+      público. Nunca ligamos diretamente a endereços .onion.
+  dre:
+    nome: Diário da República
+    descricao: Publicação oficial.
+
+# Tipos de evento admitidos na cronologia interna de um incidente.
+tipos_evento:
+  ocorrencia: {nome: Ocorrência}
+  detecao: {nome: Deteção}
+  divulgacao: {nome: Divulgação pública}
+  comunicado: {nome: Comunicado da entidade}
+  reivindicacao: {nome: Reivindicação pelo atacante}
+  publicacao_dados: {nome: Publicação dos dados}
+  regulador: {nome: Ação de autoridade}
+  judicial: {nome: Ato judicial}
+  reposicao: {nome: Reposição do serviço}
+  desmentido: {nome: Desmentido}
+
+# Precisão da data de início. Muitos incidentes só têm mês ou ano conhecidos, e
+# fingir precisão que não existe é o erro mais fácil de cometer num arquivo destes.
+precisoes_data:
+  dia: {nome: Dia exato}
+  semana: {nome: Semana}
+  mes: {nome: Mês}
+  ano: {nome: Ano}
+  desconhecida: {nome: Desconhecida}
+
+# Categorias de dados pessoais comprometidos. Alinhadas com os artigos 4.º e 9.º do
+# RGPD. Registamos categorias, nunca os dados.
+categorias_dados:
+  identificacao: {nome: Dados de identificação}
+  contacto: {nome: Dados de contacto}
+  financeiros: {nome: Dados financeiros e bancários}
+  credenciais: {nome: Credenciais de acesso}
+  saude: {nome: Dados de saúde, art. 9.º RGPD}
+  biometricos: {nome: Dados biométricos, art. 9.º RGPD}
+  localizacao: {nome: Dados de localização}
+  laborais: {nome: Dados laborais}
+  fiscais: {nome: Dados fiscais}
+  comunicacoes: {nome: Conteúdo de comunicações}

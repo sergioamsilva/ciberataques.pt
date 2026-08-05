@@ -1,0 +1,164 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { manifesto, agregados } from "../../lib/dados";
+
+const m = manifesto();
+const ag = agregados();
+
+const grafo = [
+  {
+    "@type": "Dataset",
+    name: "Registo de ciberataques em Portugal",
+    description:
+      "Registo curado de ciberataques a entidades portuguesas, com fontes, cronologia e grau de confirmação por incidente.",
+    url: "https://ciberataques.pt/dados/",
+    inLanguage: "pt-PT",
+    license: "https://creativecommons.org/licenses/by/4.0/",
+    creator: { "@id": "https://ciberataques.pt/#organizacao" },
+    temporalCoverage: `${m.anos[0]}/${m.anos[m.anos.length - 1]}`,
+    spatialCoverage: { "@type": "Country", name: "Portugal" },
+    dateModified: m.construido_em,
+    distribution: [
+      {
+        "@type": "DataDownload",
+        encodingFormat: "application/json",
+        contentUrl: "https://ciberataques.pt/dados/incidentes.json",
+      },
+      {
+        "@type": "DataDownload",
+        encodingFormat: "text/csv",
+        contentUrl: "https://ciberataques.pt/dados/incidentes.csv",
+      },
+      {
+        "@type": "DataDownload",
+        encodingFormat: "text/csv",
+        contentUrl: "https://ciberataques.pt/dados/fontes.csv",
+      },
+    ],
+  },
+];
+
+const ficheiros = [
+  {
+    url: "/dados/incidentes.json",
+    nome: "incidentes.json",
+    desc: "Registo completo, com cronologia, fontes e versões em confronto de cada incidente.",
+  },
+  {
+    url: "/dados/incidentes.csv",
+    nome: "incidentes.csv",
+    desc: "Uma linha por incidente, achatado. Abre num Excel sem trabalho.",
+  },
+  {
+    url: "/dados/fontes.csv",
+    nome: "fontes.csv",
+    desc: "Uma linha por fonte, com o incidente a que pertence. Permite medir a cobertura por órgão.",
+  },
+];
+---
+
+<BaseLayout
+  titulo="Dados abertos"
+  descricao="Descarregue o registo completo de ciberataques em Portugal em JSON e CSV, sob licença CC BY 4.0."
+  grafo={grafo}
+>
+  <div class="mx-auto max-w-4xl px-5 py-10">
+    <header class="max-w-2xl">
+      <p class="mono-etiqueta">Para investigadores e jornalistas</p>
+      <h1 class="mt-2 text-4xl sm:text-5xl">Dados abertos</h1>
+      <p class="mt-4 text-lg">
+        Todo o registo está disponível para descarregar e reutilizar, sob licença
+        Creative Commons BY 4.0. Sem registo, sem chave, sem limites.
+      </p>
+    </header>
+
+    <section class="mt-12" aria-labelledby="h-ficheiros">
+      <h2 id="h-ficheiros" class="regua pt-5 text-2xl">Ficheiros</h2>
+      <ul class="mt-4 divide-y divide-[var(--color-borda)] border-y border-[var(--color-borda)]">
+        {ficheiros.map((f) => (
+          <li class="revelar py-4">
+            <a href={f.url} class="font-mono text-sm">{f.nome}</a>
+            <p class="mt-1 text-sm text-[var(--color-suave)]">{f.desc}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="mt-12" aria-labelledby="h-conteudo">
+      <h2 id="h-conteudo" class="regua pt-5 text-2xl">O que está lá dentro</h2>
+      <dl class="mt-4 grid gap-px border border-[var(--color-borda)] bg-[var(--color-borda)] sm:grid-cols-3">
+        {[
+          { r: "Incidentes", n: m.total_incidentes },
+          { r: "Fontes citadas", n: m.total_fontes },
+          { r: "Entidades", n: m.total_entidades },
+        ].map((x) => (
+          <div class="bg-[var(--color-papel)] p-5">
+            <dt class="mono-etiqueta">{x.r}</dt>
+            <dd class="mt-1 font-mono text-3xl tabular-nums text-[var(--color-tinta)]">{x.n}</dd>
+          </div>
+        ))}
+      </dl>
+      <p class="mt-4 text-sm text-[var(--color-suave)]">
+        Cobertura temporal: {m.anos[0]} a {m.anos[m.anos.length - 1]}.
+        Última construção: {m.construido_em}.
+      </p>
+    </section>
+
+    <section class="mt-12" aria-labelledby="h-avisos">
+      <h2 id="h-avisos" class="regua pt-5 text-2xl">Antes de usar</h2>
+      <div class="mt-4 space-y-5 text-sm leading-relaxed">
+        <div class="border-l-2 border-[var(--color-acento)] pl-5">
+          <p class="mono-etiqueta">O campo mais importante</p>
+          <p class="mt-1.5">
+            <code class="font-mono">estado_confirmacao</code> distingue o que a entidade
+            confirmou do que apenas o atacante alegou. Uma análise que ignore este campo
+            trata boatos como factos. <a href="/metodologia/#escala">A escala completa</a>.
+          </p>
+        </div>
+
+        <div class="border-l-2 border-[var(--color-borda-forte)] pl-5">
+          <p class="mono-etiqueta">Contagens são de incidentes noticiados</p>
+          <p class="mt-1.5">
+            O registo herda o viés da imprensa: uma operadora nacional é notícia, uma
+            empresa de vinte pessoas não é. Publicamos a distribuição de fontes por
+            incidente precisamente para que esse viés seja mensurável.
+            <a href="/metodologia/#vies">Como o medimos</a>.
+          </p>
+        </div>
+
+        <div class="border-l-2 border-[var(--color-borda-forte)] pl-5">
+          <p class="mono-etiqueta">Não incluímos texto de terceiros</p>
+          <p class="mt-1.5">
+            As exportações trazem título, publicador, data e ligação de cada fonte, nunca
+            o corpo dos artigos. Esses continuam a pertencer aos respetivos editores.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-12" aria-labelledby="h-citar">
+      <h2 id="h-citar" class="regua pt-5 text-2xl">Como citar</h2>
+      <p class="mt-3 text-sm">
+        Cada incidente tem um identificador estável que nunca muda, e é a forma correta
+        de o referenciar num artigo ou num trabalho académico.
+      </p>
+      <pre class="mt-4 overflow-x-auto border border-[var(--color-borda)] bg-[var(--color-superficie)] p-4 font-mono text-xs leading-relaxed"><code>ciberataques.pt (consultado em {m.construido_em}).
+Registo de ciberataques em Portugal. Incidente 2022-vodafone-portugal.
+https://ciberataques.pt/incidentes/2022-vodafone-portugal/</code></pre>
+    </section>
+
+    <section class="mt-12" aria-labelledby="h-licenca">
+      <h2 id="h-licenca" class="regua pt-5 text-2xl">Licença</h2>
+      <p class="mt-3 text-sm leading-relaxed">
+        O registo (a organização dos factos, a classificação e os resumos) está sob
+        <a href="https://creativecommons.org/licenses/by/4.0/deed.pt" rel="license noopener">
+          Creative Commons BY 4.0</a>: pode copiar, redistribuir e adaptar, incluindo
+        para fins comerciais, desde que atribua a ciberataques.pt.
+      </p>
+      <p class="mt-3 text-sm leading-relaxed text-[var(--color-suave)]">
+        As fontes citadas não estão abrangidas: pertencem aos seus editores. O que
+        licenciamos é o nosso trabalho de reunir, verificar e estruturar.
+      </p>
+    </section>
+  </div>
+</BaseLayout>

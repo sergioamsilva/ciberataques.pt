@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { todosOsIncidentes, formatarData } from "../lib/dados";
+
+const correcoes = todosOsIncidentes()
+  .flatMap((i) =>
+    (i.correcoes ?? []).map((c) => ({ ...c, incidente: i.id, titulo: i.titulo })),
+  )
+  .sort((a, b) => b.data.localeCompare(a.data));
+---
+
+<BaseLayout
+  titulo="Correções"
+  descricao="Registo público de todas as correções feitas ao registo de ciberataques em Portugal."
+>
+  <div class="mx-auto max-w-3xl px-5 py-10">
+    <header>
+      <p class="mono-etiqueta">Como trabalhamos</p>
+      <h1 class="mt-2 text-4xl sm:text-5xl">Correções</h1>
+      <p class="mt-4 text-lg leading-relaxed">
+        Erramos. O que distingue um arquivo de um blogue é corrigir em público, e deixar
+        o rasto da correção à vista.
+      </p>
+    </header>
+
+    <section class="mt-12" aria-labelledby="h-politica">
+      <h2 id="h-politica" class="regua pt-5 text-2xl">A política</h2>
+      <ul class="mt-4 space-y-3 leading-relaxed">
+        <li>Cada correção fica registada na ficha do incidente, com data e descrição.</li>
+        <li>Esta página reúne todas as correções feitas ao registo.</li>
+        <li>
+          Não apagamos incidentes publicados. Um incidente infundado passa a desmentido,
+          com a explicação, e mantém a mesma morada.
+        </li>
+        <li>
+          Os identificadores nunca mudam. Se um tiver de mudar, o antigo passa a
+          redirecionar para o novo.
+        </li>
+      </ul>
+      <p class="mt-4">
+        Encontrou um erro? <a href="/direito-de-resposta/">Diga-nos</a>.
+      </p>
+    </section>
+
+    <section class="mt-12" aria-labelledby="h-registo">
+      <h2 id="h-registo" class="regua pt-5 text-2xl">Registo de correções</h2>
+      {correcoes.length === 0 ? (
+        <p class="mt-4 text-[var(--color-suave)]">
+          Ainda não há correções registadas. Quando houver, aparecem aqui, sem exceção.
+        </p>
+      ) : (
+        <ol class="mt-4 divide-y divide-[var(--color-borda)] border-y border-[var(--color-borda)]">
+          {correcoes.map((c) => (
+            <li class="py-4">
+              <p class="mono-etiqueta tabular-nums">
+                <time datetime={c.data}>{formatarData(c.data)}</time>
+              </p>
+              <p class="mt-1">
+                <a href={`/incidentes/${c.incidente}/`}>{c.titulo}</a>
+              </p>
+              <p class="mt-1 text-sm text-[var(--color-suave)]">{c.descricao}</p>
+            </li>
+          ))}
+        </ol>
+      )}
+    </section>
+  </div>
+</BaseLayout>

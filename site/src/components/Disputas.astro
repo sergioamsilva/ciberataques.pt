@@ -1,0 +1,45 @@
+---
+import type { Disputa, Fonte } from "../lib/dados";
+
+interface Props {
+  disputas: Disputa[];
+  fontes: Fonte[];
+}
+const { disputas, fontes } = Astro.props;
+---
+
+{/*
+  Versões em confronto.
+
+  É a secção que justifica o projeto. Em vários casos portugueses (TAP, Sonae,
+  Altice, EDP, CTT) os números que circulam vêm do atacante e são contestados pela
+  vítima, e nenhum outro registo mostra as duas versões lado a lado. Aqui a
+  divergência é o conteúdo, não uma nota de rodapé.
+*/}
+<div class="space-y-6">
+  {disputas.map((disputa) => (
+    <div class="revelar border-l-2 border-[var(--color-acento)] pl-5">
+      <p class="mono-etiqueta">Segundo {disputa.segundo}</p>
+      <p class="mt-1.5 max-w-2xl">{disputa.afirmacao}</p>
+      <p class="mt-1 text-sm text-[var(--color-suave)]">
+        <a href={`#fonte-${disputa.fonte_afirmacao}`}>
+          {fontes[disputa.fonte_afirmacao]?.publicador}
+        </a>
+      </p>
+
+      {disputa.contestado_por && (
+        <p class="mt-3 mono-etiqueta">Contestado por {disputa.contestado_por}</p>
+      )}
+      {disputa.nota && (
+        <p class="mt-1.5 max-w-2xl text-sm text-[var(--color-suave)]">{disputa.nota}</p>
+      )}
+      {disputa.fonte_contestacao !== null && disputa.fonte_contestacao !== undefined && (
+        <p class="mt-1 text-sm text-[var(--color-suave)]">
+          <a href={`#fonte-${disputa.fonte_contestacao}`}>
+            {fontes[disputa.fonte_contestacao]?.publicador}
+          </a>
+        </p>
+      )}
+    </div>
+  ))}
+</div>

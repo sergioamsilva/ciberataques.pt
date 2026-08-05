@@ -1,0 +1,242 @@
+/**
+ * Leitura do registo canónico em tempo de compilação.
+ *
+ * O site não faz um único pedido de rede em runtime: tudo o que mostra vem daqui,
+ * lido de ../data/out durante o build. Segue o padrão de snsRadar/site/src/lib/dados.ts.
+ */
+import fs from "node:fs";
+import path from "node:path";
+
+// A partir de process.cwd(), que é sempre site/ durante o build, e não de
+// import.meta.url: este módulo é compilado para dist/.prerender/chunks/, onde um
+// caminho relativo ao ficheiro deixaria de apontar para a raiz do repositório.
+const RAIZ = path.resolve(process.cwd(), "..");
+const OUT = path.join(RAIZ, "data", "out");
+const REFERENCIA = path.join(RAIZ, "referencia");
+
+function lerJson<T>(...partes: string[]): T {
+  return JSON.parse(fs.readFileSync(path.join(...partes), "utf-8")) as T;
+}
+
+export type EstadoConfirmacao =
+  | "confirmado_pela_entidade"
+  | "confirmado_por_regulador"
+  | "reportado_por_media"
+  | "noticiado_por_uma_fonte"
+  | "alegado_pelo_atacante"
+  | "desmentido";
+
+export type TipoFonte =
+  | "comunicado"
+  | "regulador"
+  | "noticia"
+  | "relatorio"
+  | "leak_site"
+  | "dre";
+
+export interface Fonte {
+  tipo: TipoFonte;
+  url: string;
+  url_arquivo: string | null;
+  publicador: string;
+  data: string;
+  titulo: string;
+  excerto: string | null;
+  estado_ligacao?: "viva" | "alterada" | "morta";
+  contem_declaracao_da_entidade?: boolean;
+  contem_declaracao_de_autoridade?: boolean;
+}
+
+export interface Evento {
+  data: string;
+  tipo: string;
+  texto: string;
+  fonte: number;
+}
+
+export interface Disputa {
+  afirmacao: string;
+  segundo: string;
+  fonte_afirmacao: number;
+  contestado_por: string | null;
+  fonte_contestacao: number | null;
+  nota: string | null;
+}
+
+export interface Incidente {
+  id: string;
+  titulo: string;
+  resumo: string;
+  entidades_afetadas: string[];
+  entidades_afetadas_em_cascata?: string[];
+  setor: string;
+  tipos_ataque: string[];
+  data: {
+    inicio: string;
+    precisao: string;
+    fim?: string;
+    detecao?: string;
+    divulgacao?: string;
+  };
+  estado_confirmacao: EstadoConfirmacao;
+  ator?: {
+    grupo: string | null;
+    atribuicao_por: string | null;
+    confianca: string | null;
+    nota?: string | null;
+  };
+  dados_pessoais?: {
+    afetados: boolean | null;
+    categorias: string[];
+    titulares_declarados: number | null;
+    nota: string | null;
+  };
+  impacto?: {
+    servicos_afetados?: string[];
+    duracao_horas?: number | null;
+    pessoas_afetadas_declaradas?: number | null;
+    custo_declarado_eur?: number | null;
+    resgate_pedido_eur?: number | null;
+    resgate_pedido_nota?: string | null;
+    resgate_pago?: boolean | null;
+  };
+  notificacoes?: Record<string, boolean | null>;
+  consequencias_regulatorias?: Array<{
+    autoridade: string;
+    data: string;
+    tipo?: string;
+    valor_eur?: number | null;
+    processo?: string | null;
+    descricao: string;
+    fonte: number;
+  }>;
+  cronologia?: Evento[];
+  fontes: Fonte[];
+  disputas?: Disputa[];
+  relacionados?: string[];
+  etiquetas?: string[];
+  revisao: { curador: string; data: string; versao: number; nota?: string | null };
+  correcoes?: Array<{ data: string; descricao: string; origem?: string }>;
+}
+
+export interface ResumoIncidente {
+  id: string;
+  titulo: string;
+  data: string;
+  precisao_data: string;
+  ano: number;
+  setor: string;
+  tipos_ataque: string[];
+  entidades_afetadas: string[];
+  estado_confirmacao: EstadoConfirmacao;
+  ator: string | null;
+  n_fontes: number;
+  tem_disputas: boolean;
+}
+
+export interface Entidade {
+  id: string;
+  nome: string;
+  nome_curto?: string;
+  setor: string;
+  tipo: string;
+  distrito?: string;
+  url?: string;
+  nota?: string;
+  /** Formas alternativas pelas quais a entidade aparece; alimentam a pesquisa. */
+  chaves?: string[];
+  incidentes: string[];
+  incidentes_em_cascata: string[];
+}
+
+export interface Agregados {
+  total: number;
+  por_ano: Record<string, number>;
+  por_setor: Record<string, number>;
+  por_tipo_ataque: Record<string, number>;
+  por_estado_confirmacao: Record<string, number>;
+  por_ator: Record<string, number>;
+  distribuicao_fontes_por_incidente: Record<string, number>;
+  incidentes_com_disputas: number;
+}
+
+interface EntradaTaxonomia {
+  nome: string;
+  descricao?: string;
+  peso?: number;
+  explicacao?: string;
+}
+
+let _taxonomia: Record<string, Record<string, EntradaTaxonomia>> | null = null;
+
+/** A taxonomia é YAML; convertemo-la a JSON no build via ingestao/construir.py. */
+export function taxonomia(): Record<string, Record<string, EntradaTaxonomia>> {
+  if (!_taxonomia) {
+    _taxonomia = lerJson(REFERENCIA, "taxonomia.json");
+  }
+  return _taxonomia;
+}
+
+export function incidentes(): ResumoIncidente[] {
+  return lerJson<ResumoIncidente[]>(OUT, "incidentes.json");
+}
+
+export function incidente(id: string): Incidente {
+  return lerJson<Incidente>(OUT, "incidentes", `${id}.json`);
+}
+
+export function todosOsIncidentes(): Incidente[] {
+  return incidentes().map((r) => incidente(r.id));
+}
+
+export function entidades(): Record<string, Entidade> {
+  return lerJson<Record<string, Entidade>>(OUT, "entidades.json");
+}
+
+export function agregados(): Agregados {
+  return lerJson<Agregados>(OUT, "agregados.json");
+}
+
+export function manifesto(): {
+  construido_em: string;
+  total_incidentes: number;
+  total_fontes: number;
+  total_entidades: number;
+  anos: number[];
+  licenca_dados: string;
+} {
+  return lerJson(OUT, "manifesto.json");
+}
+
+/** Nome legível de um termo da taxonomia. Nunca mostramos o identificador ao leitor. */
+export function nome(grupo: string, chave: string): string {
+  return taxonomia()[grupo]?.[chave]?.nome ?? chave;
+}
+
+export function explicacaoEstado(estado: EstadoConfirmacao): string {
+  return taxonomia().estados_confirmacao?.[estado]?.explicacao ?? "";
+}
+
+const MESES = [
+  "janeiro", "fevereiro", "março", "abril", "maio", "junho",
+  "julho", "agosto", "setembro", "outubro", "novembro", "dezembro",
+];
+
+/**
+ * Formata uma data respeitando a precisão declarada.
+ *
+ * Um incidente de que só se conhece o mês não deve aparecer com um dia inventado.
+ * É a diferença entre um arquivo e uma coleção de palpites.
+ */
+export function formatarData(iso: string, precisao = "dia"): string {
+  const [ano, mes, dia] = iso.split("-").map(Number);
+  if (precisao === "ano") return `${ano}`;
+  if (precisao === "mes") return `${MESES[mes - 1]} de ${ano}`;
+  if (precisao === "semana") return `semana de ${dia} de ${MESES[mes - 1]} de ${ano}`;
+  if (precisao === "desconhecida") return `data desconhecida (${ano})`;
+  return `${dia} de ${MESES[mes - 1]} de ${ano}`;
+}
+
+export function formatarNumero(n: number): string {
+  return n.toLocaleString("pt-PT");
+}

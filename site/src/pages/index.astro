@@ -1,0 +1,128 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CartaoIncidente from "../components/CartaoIncidente.astro";
+import ReguaDeAnos from "../components/ReguaDeAnos.astro";
+import { incidentes, agregados, manifesto, nome, formatarNumero } from "../lib/dados";
+
+const lista = incidentes();
+const ag = agregados();
+const m = manifesto();
+const recentes = lista.slice(0, 6);
+
+const confirmados =
+  (ag.por_estado_confirmacao.confirmado_pela_entidade ?? 0) +
+  (ag.por_estado_confirmacao.confirmado_por_regulador ?? 0);
+---
+
+<BaseLayout
+  titulo="ciberataques.pt"
+  descricao="Registo público e documentado de ciberataques a entidades portuguesas. Cada incidente com as suas fontes e o grau de confirmação à vista."
+>
+  {/* ------------------------------------------------------------------ Abertura */}
+  <section class="mx-auto max-w-6xl px-5 pt-16 pb-12 sm:pt-24">
+    <div class="max-w-3xl">
+      <p class="mono-etiqueta revelar">Registo público · {m.anos[0]}–{m.anos[m.anos.length - 1]}</p>
+      <h1 class="revelar mt-4 text-5xl leading-[1.05] sm:text-7xl">
+        O que aconteceu,<br />quem o disse,<br />
+        <span class="text-[var(--color-acento)]">e com que certeza.</span>
+      </h1>
+      <p class="revelar mt-7 max-w-2xl text-lg leading-relaxed">
+        Um registo documentado dos ciberataques a entidades portuguesas. Cada incidente
+        indica as fontes que o sustentam e distingue o que a entidade confirmou do que
+        apenas o atacante alegou. Para cidadãos, jornalistas e investigadores.
+      </p>
+      <p class="revelar mt-6 flex flex-wrap gap-x-6 gap-y-2">
+        <a href="/incidentes/" class="mono-etiqueta text-[var(--color-tinta)]">
+          Ver o registo →
+        </a>
+        <a href="/dados/" class="mono-etiqueta">Descarregar os dados</a>
+        <a href="/metodologia/" class="mono-etiqueta">Como classificamos</a>
+      </p>
+    </div>
+  </section>
+
+  {/* ------------------------------------------------- Dados que atuam: a régua */}
+  <section class="mx-auto max-w-6xl px-5 py-12" aria-labelledby="h-por-ano">
+    <div class="regua pt-6">
+      <div class="flex flex-wrap items-baseline justify-between gap-4">
+        <h2 id="h-por-ano" class="text-2xl">Incidentes por ano</h2>
+        <p class="font-mono text-xs text-[var(--color-suave)]">
+          clique num ano para ver o que aconteceu
+        </p>
+      </div>
+      <div class="mt-8">
+        <ReguaDeAnos porAno={ag.por_ano} />
+      </div>
+    </div>
+  </section>
+
+  {/* --------------------------------------------- Fila editorial de estatísticas */}
+  <section class="mx-auto max-w-6xl px-5 py-8" aria-labelledby="h-numeros">
+    <h2 id="h-numeros" class="sr-only">Números do registo</h2>
+    <dl class="grid gap-px border border-[var(--color-borda)] bg-[var(--color-borda)] sm:grid-cols-2 lg:grid-cols-4">
+      {[
+        { n: m.total_incidentes, r: "incidentes registados", d: "/incidentes/" },
+        { n: m.total_fontes, r: "fontes citadas", d: "/dados/" },
+        { n: confirmados, r: "confirmados por entidade ou autoridade", d: "/metodologia/#escala" },
+        { n: ag.incidentes_com_disputas, r: "com versões em confronto", d: "/metodologia/#disputas" },
+      ].map((item) => (
+        <div class="revelar bg-[var(--color-papel)] p-6">
+          <dt class="mono-etiqueta">{item.r}</dt>
+          <dd class="mt-2 font-mono text-4xl tabular-nums text-[var(--color-tinta)]">
+            {formatarNumero(item.n)}
+          </dd>
+          <span class="mt-3 block h-px w-8 bg-[var(--color-acento)]" aria-hidden="true"></span>
+        </div>
+      ))}
+    </dl>
+  </section>
+
+  {/* ------------------------------------------------------------------ Registos */}
+  <section class="mx-auto max-w-6xl px-5 py-12" aria-labelledby="h-recentes">
+    <div class="grid gap-12 lg:grid-cols-[minmax(0,1fr)_18rem]">
+      <div>
+        <div class="regua flex flex-wrap items-baseline justify-between gap-4 pt-6">
+          <h2 id="h-recentes" class="text-2xl">Últimos registos</h2>
+          <a href="/incidentes/" class="mono-etiqueta">todos os incidentes →</a>
+        </div>
+        <div class="mt-4">
+          {recentes.map((inc) => <CartaoIncidente incidente={inc} />)}
+        </div>
+      </div>
+
+      {/* --------------------------------------- Painel: o que este registo é */}
+      <aside class="lg:sticky lg:top-24 lg:self-start">
+        <div class="border border-[var(--color-borda)] bg-[var(--color-superficie)] p-6">
+          <p class="mono-etiqueta">Como lemos as fontes</p>
+          <p class="mt-3 text-sm leading-relaxed">
+            Nem tudo o que se sabe sobre um ataque tem o mesmo valor. Um comunicado da
+            empresa não é a mesma coisa que um número publicado por quem a atacou.
+          </p>
+          <ul class="mt-5 space-y-3">
+            {Object.entries(ag.por_estado_confirmacao)
+              .sort((a, b) => b[1] - a[1])
+              .map(([estado, n]) => (
+                <li class="flex items-baseline justify-between gap-3 text-sm">
+                  <span>{nome("estados_confirmacao", estado)}</span>
+                  <span class="font-mono text-xs tabular-nums text-[var(--color-suave)]">{n}</span>
+                </li>
+              ))}
+          </ul>
+          <p class="mt-5 text-sm">
+            <a href="/metodologia/#escala">A escala completa →</a>
+          </p>
+        </div>
+
+        <div class="mt-6 border-l-2 border-[var(--color-acento)] pl-5">
+          <p class="text-sm leading-relaxed">
+            Uma notícia é uma prova, não um facto. Cinco notícias sobre o mesmo ataque
+            produzem um incidente com cinco fontes, não cinco páginas.
+          </p>
+          <p class="mt-2 font-mono text-xs text-[var(--color-suave)]">
+            <a href="/metodologia/">política editorial</a>
+          </p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,42 @@
+{
+  "distribuicao_fontes_por_incidente": {
+    "2": 1,
+    "3": 3,
+    "5": 2,
+    "7": 3
+  },
+  "incidentes_com_disputas": 3,
+  "por_ano": {
+    "2020": 1,
+    "2022": 5,
+    "2023": 1,
+    "2024": 1,
+    "2026": 1
+  },
+  "por_ator": {
+    "HIVE": 1,
+    "Lapsus$ Group": 1,
+    "Ragnar Locker": 2,
+    "RansomEXX": 1
+  },
+  "por_estado_confirmacao": {
+    "confirmado_pela_entidade": 8,
+    "reportado_por_media": 1
+  },
+  "por_setor": {
+    "administracao_publica": 1,
+    "energia_agua": 2,
+    "media": 1,
+    "retalho": 1,
+    "saude": 2,
+    "telecomunicacoes": 1,
+    "transportes": 1
+  },
+  "por_tipo_ataque": {
+    "exfiltracao_dados": 4,
+    "indisponibilidade": 5,
+    "intrusao": 4,
+    "ransomware": 6
+  },
+  "total": 9
+}

@@ -1,0 +1,174 @@
+[
+  {
+    "ano": 2026,
+    "ator": null,
+    "data": "2026-07-31",
+    "entidades_afetadas": [
+      "aguas-de-portugal"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-aguas-de-portugal",
+    "n_fontes": 3,
+    "precisao_data": "semana",
+    "setor": "energia_agua",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao"
+    ],
+    "titulo": "Ciberataque ao grupo Águas de Portugal"
+  },
+  {
+    "ano": 2024,
+    "ator": null,
+    "data": "2024-10-10",
+    "entidades_afetadas": [
+      "ama"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2024-ama",
+    "n_fontes": 7,
+    "precisao_data": "dia",
+    "setor": "administracao_publica",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Agência para a Modernização Administrativa"
+  },
+  {
+    "ano": 2023,
+    "ator": null,
+    "data": "2023-08-06",
+    "entidades_afetadas": [
+      "sesaram"
+    ],
+    "estado_confirmacao": "reportado_por_media",
+    "id": "2023-sesaram",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "saude",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque ao Serviço de Saúde da Madeira"
+  },
+  {
+    "ano": 2022,
+    "ator": "Ragnar Locker",
+    "data": "2022-08-25",
+    "entidades_afetadas": [
+      "tap"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-tap",
+    "n_fontes": 7,
+    "precisao_data": "dia",
+    "setor": "transportes",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "ransomware",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ciberataque à TAP Air Portugal"
+  },
+  {
+    "ano": 2022,
+    "ator": "HIVE",
+    "data": "2022-04-26",
+    "entidades_afetadas": [
+      "hospital-garcia-de-orta"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-hospital-garcia-de-orta",
+    "n_fontes": 7,
+    "precisao_data": "dia",
+    "setor": "saude",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque ao Hospital Garcia de Orta"
+  },
+  {
+    "ano": 2022,
+    "ator": "RansomEXX",
+    "data": "2022-03-30",
+    "entidades_afetadas": [
+      "sonae-mc"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-sonae-mc",
+    "n_fontes": 5,
+    "precisao_data": "dia",
+    "setor": "retalho",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "ransomware",
+      "exfiltracao_dados",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Sonae MC (Continente e Wells)"
+  },
+  {
+    "ano": 2022,
+    "ator": null,
+    "data": "2022-02-07",
+    "entidades_afetadas": [
+      "vodafone-portugal"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-vodafone-portugal",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "telecomunicacoes",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "indisponibilidade",
+      "intrusao"
+    ],
+    "titulo": "Ciberataque à Vodafone Portugal"
+  },
+  {
+    "ano": 2022,
+    "ator": "Lapsus$ Group",
+    "data": "2022-01-02",
+    "entidades_afetadas": [
+      "impresa"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-impresa",
+    "n_fontes": 5,
+    "precisao_data": "dia",
+    "setor": "media",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "intrusao",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ciberataque ao grupo Impresa (SIC e Expresso)"
+  },
+  {
+    "ano": 2020,
+    "ator": "Ragnar Locker",
+    "data": "2020-04-13",
+    "entidades_afetadas": [
+      "edp"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2020-edp",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "energia_agua",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "ransomware",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ciberataque à EDP"
+  }
+]
