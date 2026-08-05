@@ -154,6 +154,43 @@ def formas_de_dominio(texto: str) -> list[str]:
     return [limpo, limpo.rsplit(".", 1)[0].rsplit(".", 1)[-1]]
 
 
+def variantes_de_nome(nome: str) -> list[str]:
+    """Todas as formas pelas quais uma fonte pode escrever o nome de uma entidade.
+
+    As fontes não escrevem o nome canónico. O ransomware.live listou a EDP como
+    "Energias de Portugal (EDP)", a Selenis como "Selenis (Evertis is also
+    involved)" e os SMTUC como "smtuc.pt". Cada formato falhava o índice em
+    silêncio, e cada falha punha um candidato numa fila que ninguém sabia que
+    tinha de rever.
+
+    Devolve o nome inteiro, o que está antes do parêntesis, o que está dentro dele,
+    e as formas de domínio de qualquer um dos três.
+    """
+    partes = [nome]
+    for pedaco in re.split(r"[()]", nome):
+        pedaco = pedaco.strip(" ,.;")
+        # "Evertis is also involved" é uma frase, não um nome alternativo.
+        if pedaco and pedaco != nome and len(pedaco.split()) <= 4:
+            partes.append(pedaco)
+    return [p for p in dict.fromkeys(partes + [f for p in partes for f in formas_de_dominio(p)]) if p]
+
+
+def resolver_entidade(nome: str, indice: dict[str, str] | None = None) -> str | None:
+    """Tenta resolver um nome de fonte para um id de entidade, por todas as variantes.
+
+    Ponto único de resolução: qualquer código que case nomes contra o registo usa
+    isto, para que corrigir uma variante corrija toda a gente ao mesmo tempo.
+    """
+    if not nome:
+        return None
+    idx = indice_entidades() if indice is None else indice
+    for variante in variantes_de_nome(nome):
+        eid = idx.get(normalizar_entidade(variante))
+        if eid:
+            return eid
+    return None
+
+
 def indice_entidades() -> dict[str, str]:
     """Mapa de chave normalizada para id de entidade.
 

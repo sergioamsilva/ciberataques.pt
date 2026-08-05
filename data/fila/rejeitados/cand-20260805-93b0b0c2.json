@@ -1,6 +1,6 @@
 {
   "confianca_llm": 1.0,
-  "estado": "novo",
+  "estado": "rejeitado",
   "extraccao": {
     "afirmacoes": [
       {
@@ -23,7 +23,7 @@
     ]
   },
   "id": "cand-20260805-93b0b0c2",
-  "motivo_rejeicao": null,
+  "motivo_rejeicao": "duplicado de cand-20260805-93567dce (António Belém & António Gonçalves, ciphbit): relistagem da mesma vítima pelo mesmo grupo, com o nome truncado.",
   "origem": {
     "chave": "93b0b0c2b93c1d1243c249c6ea0988e6e1da3a69a4af0ded69a6b2733925347f",
     "data": "2025-09-24",
@@ -34,6 +34,7 @@
     "url": "https://www.ransomware.live/map/PT",
     "url_canonica": "https://www.ransomware.live/map/PT"
   },
+  "rejeitado_em": "2026-08-05",
   "sugestao_agrupamento": null,
   "titulo_origem": "António Belém & António Gonçalve listada em site de extorsão (ciphbit)",
   "triado_em": "2026-08-05T17:59:50+00:00"

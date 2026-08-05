@@ -1,9 +1,9 @@
 {
   "confianca_llm": null,
-  "estado": "novo",
+  "estado": "promovido",
   "extraccao": {},
   "id": "cand-20260805-3ca8baf8",
-  "motivo_rejeicao": null,
+  "motivo_rejeicao": "já registado: incidente 2026-universidade-de-aveiro, que reúne cinco órgãos independentes. Esta sexta peça não acrescenta facto novo.",
   "origem": {
     "chave": "3ca8baf8841780ebee41ce5c6f4d9fe2db2829b95269ac9c5d6202e3dc582001",
     "data": "2026-07-29",
@@ -14,6 +14,7 @@
     "url": "https://www.noticiasaominuto.com/tech/3029236/universidade-de-aveiro-alvo-de-ataque-informatico-copia-de-informacao#utm_source=rss-tech&utm_medium=rss&utm_campaign=rssfeed",
     "url_canonica": "https://www.noticiasaominuto.com/tech/3029236/universidade-de-aveiro-alvo-de-ataque-informatico-copia-de-informacao"
   },
+  "rejeitado_em": "2026-08-05",
   "sugestao_agrupamento": null,
   "titulo_origem": "Universidade de Aveiro alvo de ataque informático: \"Cópia de informação\"",
   "triado_em": "2026-08-05T17:59:50+00:00"

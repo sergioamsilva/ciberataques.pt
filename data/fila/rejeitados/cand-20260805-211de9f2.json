@@ -1,6 +1,6 @@
 {
   "confianca_llm": 1.0,
-  "estado": "novo",
+  "estado": "rejeitado",
   "extraccao": {
     "afirmacoes": [
       {
@@ -23,7 +23,7 @@
     ]
   },
   "id": "cand-20260805-211de9f2",
-  "motivo_rejeicao": null,
+  "motivo_rejeicao": "fora de âmbito: o Grupo Cadarso é uma empresa familiar espanhola com sede em Barcelona, do ramo da relojoaria e hotelaria. Distribui em Portugal, mas a entidade atacada é espanhola.",
   "origem": {
     "chave": "211de9f2ba3d92283abb1336a8f553aceb905298baa305dd67348e3b61933ad4",
     "data": "2024-05-21",
@@ -34,6 +34,7 @@
     "url": "https://www.ransomware.live/map/PT",
     "url_canonica": "https://www.ransomware.live/map/PT"
   },
+  "rejeitado_em": "2026-08-05",
   "sugestao_agrupamento": null,
   "titulo_origem": "grupocadarso.com listada em site de extorsão (blackbasta)",
   "triado_em": "2026-08-05T17:59:50+00:00"

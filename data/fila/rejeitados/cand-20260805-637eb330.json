@@ -1,6 +1,6 @@
 {
   "confianca_llm": 1.0,
-  "estado": "novo",
+  "estado": "promovido",
   "extraccao": {
     "afirmacoes": [
       {
@@ -23,7 +23,7 @@
     ]
   },
   "id": "cand-20260805-637eb330",
-  "motivo_rejeicao": null,
+  "motivo_rejeicao": "já registado: incidente 2020-edp, com a mesma atribuição ao RagnarLocker.",
   "origem": {
     "chave": "637eb330d2dc19a76e956f171ba416857a3fc5663a9016a6ab28b80ce3f8acf4",
     "data": "2020-04-01",
@@ -34,6 +34,7 @@
     "url": "https://www.ransomware.live/map/PT",
     "url_canonica": "https://www.ransomware.live/map/PT"
   },
+  "rejeitado_em": "2026-08-05",
   "sugestao_agrupamento": null,
   "titulo_origem": "Energias de Portugal (EDP) listada em site de extorsão (ragnarlocker)",
   "triado_em": "2026-08-05T17:59:50+00:00"

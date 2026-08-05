@@ -165,15 +165,50 @@ def teste_instrucoes_listam_apenas_vocabulario_da_taxonomia():
         assert tipo in instrucoes
 
 
-def teste_resolver_entidade_casa_aliases():
-    assert extrair.resolver_entidade("MEO")[0] == "altice-portugal"
-    assert extrair.resolver_entidade("Continente")[0] == "sonae-mc"
-    assert extrair.resolver_entidade("Hospital Garcia de Orta, E.P.E.")[0] == (
+def teste_casar_entidade_casa_aliases():
+    assert extrair.casar_entidade("MEO")[0] == "altice-portugal"
+    assert extrair.casar_entidade("Continente")[0] == "sonae-mc"
+    assert extrair.casar_entidade("Hospital Garcia de Orta, E.P.E.")[0] == (
         "hospital-garcia-de-orta"
     )
 
 
 def teste_entidade_desconhecida_e_sugestao_e_nao_facto():
-    conhecido, sugestao = extrair.resolver_entidade("Padaria do Zé, Lda")
+    conhecido, sugestao = extrair.casar_entidade("Padaria do Zé, Lda")
     assert conhecido is None
     assert sugestao == "Padaria do Zé, Lda"
+
+
+def teste_leak_site_estrangeiro_nao_passa_a_triagem():
+    """A etiqueta de país do tracker não é um facto: verifica-se.
+
+    A triagem deixava passar tudo o que viesse de um site de extorsão, porque o
+    endpoint já era o de Portugal. Por aí entraram na fila a Aveiro Constructors
+    Limited (construtora canadiana, apanhada pelo topónimo no nome), a Tèrra
+    Aventura (Nouvelle-Aquitaine) e a Sacor de `sacor.fr`.
+    """
+    from ingestao.fontes.ransomware_live import indicio_de_pais
+
+    assert indicio_de_pais({"website": "smtuc.pt"})[0] == "pt"
+    assert indicio_de_pais({"website": "www.sacor.fr"})[0] == "estrangeiro"
+    assert indicio_de_pais(
+        {"website": "aveiroconstructors.com",
+         "description": "a Canadian general contractor headquartered in Southwestern Ontario"}
+    )[0] == "estrangeiro"
+    assert indicio_de_pais({"website": "", "description": ""})[0] == "indefinido"
+
+    def item(extra):
+        return Item(
+            url="https://www.ransomware.live/map/PT",
+            url_canonica="https://www.ransomware.live/map/PT#x",
+            titulo="X listada em site de extorsão (grupo)",
+            publicador="ransomware.live", data_publicacao="2026-01-01",
+            texto="alegação", fonte="ransomware_live", obtido_em="2026-01-01T00:00:00+00:00",
+            tipo_fonte="leak_site", extra=extra,
+        )
+
+    assert not triagem.triar(item({"indicio_pais": "estrangeiro",
+                                   "indicio_pais_motivo": "domínio de outro país (x.fr)"})).passa
+    assert triagem.triar(item({"indicio_pais": "pt"})).passa
+    # Sem indício não se decide contra: um caso por verificar vai para o curador.
+    assert triagem.triar(item({"indicio_pais": "indefinido"})).passa

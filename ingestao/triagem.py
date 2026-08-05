@@ -59,10 +59,19 @@ def triar(item: Item) -> Resultado:
     corpo = normalizar(item.texto)
     tudo = f"{titulo} {corpo}"
 
-    # As fontes de sites de extorsão saltam a triagem: já são, por construção, uma
-    # alegação de ataque a uma entidade portuguesa. O que lhes falta é confirmação,
-    # não relevância.
+    # As fontes de sites de extorsão saltam a triagem de RELEVÂNCIA: já são, por
+    # construção, uma alegação de ataque. O que lhes falta é confirmação.
+    #
+    # O que não saltam é a verificação de PAÍS. Durante algum tempo saltavam, com o
+    # argumento de que o tracker já filtrava por Portugal — e por aí entraram uma
+    # construtora do Ontário chamada Aveiro Constructors, uma aplicação turística da
+    # Nouvelle-Aquitaine e uma empresa de `sacor.fr`. A etiqueta de país do tracker
+    # é um palpite dele, não um facto nosso.
     if item.tipo_fonte == "leak_site":
+        indicio = (item.extra or {}).get("indicio_pais")
+        if indicio == "estrangeiro":
+            motivo = (item.extra or {}).get("indicio_pais_motivo", "indício de país estrangeiro")
+            return Resultado(False, 0, f"listada como PT pelo tracker, mas {motivo}")
         return Resultado(True, 99, "fonte de site de extorsão, entra sempre")
 
     fortes = _contem(tudo, lex["fortes"])

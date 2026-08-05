@@ -1,6 +1,6 @@
 {
   "confianca_llm": 1.0,
-  "estado": "novo",
+  "estado": "rejeitado",
   "extraccao": {
     "afirmacoes": [
       {
@@ -23,7 +23,7 @@
     ]
   },
   "id": "cand-20260805-19c34c71",
-  "motivo_rejeicao": null,
+  "motivo_rejeicao": "fora de âmbito: Tèrra Aventura é uma aplicação de caça ao tesouro da região francesa da Nouvelle-Aquitaine.",
   "origem": {
     "chave": "19c34c712dd307118888d37a12ff1707de27931cf6c2e6484cb7c9668ecfc8c9",
     "data": "2026-07-21",
@@ -34,6 +34,7 @@
     "url": "https://www.ransomware.live/map/PT",
     "url_canonica": "https://www.ransomware.live/map/PT"
   },
+  "rejeitado_em": "2026-08-05",
   "sugestao_agrupamento": null,
   "titulo_origem": "Tèrra Aventura listada em site de extorsão (nova)",
   "triado_em": "2026-08-05T17:59:50+00:00"

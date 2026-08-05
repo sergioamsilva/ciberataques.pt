@@ -38,7 +38,7 @@ from ingestao.comum import (  # noqa: E402
     ler_json,
     slug,
 )
-from ingestao.extrair import resolver_entidade  # noqa: E402
+from ingestao.extrair import casar_entidade  # noqa: E402
 
 NEGRITO = "\033[1m"
 APAGADO = "\033[2m"
@@ -82,7 +82,7 @@ def mostrar(candidato: dict) -> None:
         for a in afirmacoes:
             print(f"    {AMARELO}{a['atribuida_a']}{FIM}: {a['texto']}")
 
-    entidade_id, sugestao_nova = resolver_entidade(extraccao.get("entidade_mencionada"))
+    entidade_id, sugestao_nova = casar_entidade(extraccao.get("entidade_mencionada"))
     if entidade_id:
         print(f"\n  {VERDE}entidade conhecida:{FIM} {entidade_id}")
     elif sugestao_nova:
@@ -189,7 +189,7 @@ def abrir_no_editor(dados: dict) -> dict | None:
 
 def aceitar(candidato: dict, caminho_candidato: Path) -> None:
     extraccao = candidato.get("extraccao", {})
-    entidade_id, sugestao_nova = resolver_entidade(extraccao.get("entidade_mencionada"))
+    entidade_id, sugestao_nova = casar_entidade(extraccao.get("entidade_mencionada"))
     if not entidade_id:
         print(
             f"  {VERMELHO}entidade desconhecida ({sugestao_nova}). "

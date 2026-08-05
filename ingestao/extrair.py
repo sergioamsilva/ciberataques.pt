@@ -34,9 +34,8 @@ from jsonschema import ValidationError, validate  # noqa: E402
 from ingestao.comum import (  # noqa: E402
     DIR_REFERENCIA,
     carregar_taxonomia,
-    indice_entidades,
     ler_json,
-    normalizar_entidade,
+    resolver_entidade,
 )
 from ingestao.fontes import Item  # noqa: E402
 
@@ -166,7 +165,7 @@ def extrair(item: Item) -> dict | None:
     return dados
 
 
-def resolver_entidade(nome: str | None) -> tuple[str | None, str | None]:
+def casar_entidade(nome: str | None) -> tuple[str | None, str | None]:
     """Casa um nome contra referencia/entidades.yaml.
 
     Devolve (id_conhecido, sugestao_de_nova_entidade). Nunca cria entidades: uma
@@ -174,8 +173,7 @@ def resolver_entidade(nome: str | None) -> tuple[str | None, str | None]:
     """
     if not nome:
         return None, None
-    chave = normalizar_entidade(nome)
-    conhecido = indice_entidades().get(chave)
+    conhecido = resolver_entidade(nome)
     if conhecido:
         return conhecido, None
     return None, nome

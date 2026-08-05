@@ -51,6 +51,52 @@ def _data(registo: dict) -> str | None:
     return None
 
 
+# Sufixos de domínio que identificam um país que não é Portugal. Um `.fr` no sítio
+# listado vale mais do que a etiqueta de país do tracker.
+_TLD_ESTRANGEIRO = (
+    ".fr", ".es", ".ca", ".de", ".it", ".nl", ".be", ".uk", ".co.uk", ".br",
+    ".ie", ".lu", ".ch", ".pl", ".us", ".ao", ".mz",
+)
+
+# Países que, ditos como sede na descrição, contradizem a etiqueta PT.
+_SEDE_ESTRANGEIRA = (
+    "canada", "canadian", "france", "french", "spain", "spanish", "espana",
+    "germany", "united kingdom", "brazil", "netherlands", "italy", "belgium",
+    "ireland", "switzerland", "poland", "united states", "ontario",
+)
+
+
+def indicio_de_pais(registo: dict) -> tuple[str, str]:
+    """Avalia se a vítima é mesmo portuguesa, a partir do domínio e da descrição.
+
+    Devolve (veredicto, motivo), com veredicto em {"pt", "estrangeiro", "indefinido"}.
+
+    Existe porque a etiqueta `country: PT` do tracker está errada com alguma
+    frequência: listou como portuguesas a Aveiro Constructors Limited (construtora
+    do Ontário, presumivelmente pelo topónimo no nome), a Tèrra Aventura (aplicação
+    da Nouvelle-Aquitaine) e a Sacor de `sacor.fr`. Os três entraram na fila, e o
+    que os deixou entrar foi a triagem assumir que uma fonte de site de extorsão é,
+    por construção, um caso português.
+
+    A regra é a mesma do resto do projeto: verificar em vez de confiar, e quando não
+    se consegue verificar, dizê-lo em vez de decidir.
+    """
+    sitio = (registo.get("website") or "").strip().lower().rstrip("/")
+    descricao = (registo.get("description") or "").lower()
+
+    if sitio.endswith(".pt") or ".pt/" in sitio:
+        return "pt", f"domínio português ({sitio})"
+    for tld in _TLD_ESTRANGEIRO:
+        if sitio.endswith(tld):
+            return "estrangeiro", f"domínio de outro país ({sitio})"
+    for pais in _SEDE_ESTRANGEIRA:
+        if pais in descricao:
+            return "estrangeiro", f"a descrição situa a entidade fora de Portugal ({pais})"
+    if "portugal" in descricao or "portuguese" in descricao:
+        return "pt", "a descrição situa a entidade em Portugal"
+    return "indefinido", "sem domínio .pt nem indicação de país na descrição"
+
+
 def recolher() -> list[Item]:
     fonte = _configuracao()
     if not fonte:
@@ -89,6 +135,7 @@ def recolher() -> list[Item]:
         if not vitima:
             continue
         grupo = (registo.get("group") or registo.get("group_name") or "").strip()
+        veredicto, motivo = indicio_de_pais(registo)
 
         # A ligação pública aponta sempre para o tracker, nunca para o sítio do grupo.
         # Se o registo trouxer um endereço .onion, ignoramo-lo por completo.
@@ -115,6 +162,9 @@ def recolher() -> list[Item]:
                     "vitima": vitima,
                     "grupo": grupo,
                     "setor_declarado": registo.get("activity") or "",
+                    "indicio_pais": veredicto,
+                    "indicio_pais_motivo": motivo,
+                    "sitio_listado": (registo.get("website") or "").strip(),
                 },
             )
         )

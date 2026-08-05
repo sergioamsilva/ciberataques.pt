@@ -1,6 +1,6 @@
 {
   "confianca_llm": 1.0,
-  "estado": "novo",
+  "estado": "rejeitado",
   "extraccao": {
     "afirmacoes": [
       {
@@ -23,7 +23,7 @@
     ]
   },
   "id": "cand-20260805-5669ad19",
-  "motivo_rejeicao": null,
+  "motivo_rejeicao": "duplicado de cand-20260805-2a613dbb (Espectral, obscura): segunda listagem do mesmo grupo sobre a mesma vítima.",
   "origem": {
     "chave": "5669ad196d5dd1617c9eed59942e5a75385b312a4a86df9246b8101e2f3e0af1",
     "data": "2025-10-13",
@@ -34,6 +34,7 @@
     "url": "https://www.ransomware.live/map/PT",
     "url_canonica": "https://www.ransomware.live/map/PT"
   },
+  "rejeitado_em": "2026-08-05",
   "sugestao_agrupamento": null,
   "titulo_origem": "espectral.pt listada em site de extorsão (obscura)",
   "triado_em": "2026-08-05T17:59:50+00:00"

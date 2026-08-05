@@ -159,9 +159,9 @@ def recolher(usar_llm: bool = True, max_llm: int | None = None) -> dict:
 
         sugestao = None
         if entidade:
-            from ingestao.extrair import resolver_entidade
+            from ingestao.extrair import casar_entidade
 
-            entidade_id, _ = resolver_entidade(entidade)
+            entidade_id, _ = casar_entidade(entidade)
             sugestao = sugerir_incidente(
                 entidade_id,
                 extraccao.get("data_ocorrencia") or item.data_publicacao,

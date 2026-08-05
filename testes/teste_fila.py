@@ -26,6 +26,7 @@ from ingestao.comum import (  # noqa: E402
     indice_entidades,
     ler_json,
     normalizar_entidade,
+    resolver_entidade,
 )
 
 # Acima disto, a fila deixou de ser uma lista de trabalho e passou a ser um monte.
@@ -69,7 +70,7 @@ def teste_candidatos_de_entidades_ja_registadas_nao_ficam_na_fila():
         nome = (candidato.get("extraccao") or {}).get("entidade_mencionada") or ""
         if not nome:
             continue
-        eid = idx.get(normalizar_entidade(nome))
+        eid = resolver_entidade(nome, idx)
         if eid and eid in registadas:
             pendentes.append(f"{nome} → {eid}")
 
@@ -77,6 +78,29 @@ def teste_candidatos_de_entidades_ja_registadas_nao_ficam_na_fila():
         "há candidatos na fila cuja entidade já tem incidente registado:\n  "
         + "\n  ".join(pendentes)
         + "\nCada um ou acrescenta informação ao incidente, ou é rejeitado."
+    )
+
+
+def teste_candidatos_sem_entidade_nao_ficam_na_fila():
+    """Um candidato de que não se extraiu entidade tem de ser decidido à mão.
+
+    O teste acima salta estes com `if not nome: continue`, e tem de saltar: sem
+    nome não há nada contra que casar. Mas saltar não pode significar ignorar.
+    Um candidato do Notícias ao Minuto sobre a Universidade de Aveiro — caso já
+    publicado — ficou na fila precisamente por aqui: sem entidade extraída, era
+    invisível ao guarda e ao curador ao mesmo tempo.
+
+    Estes são os que mais precisam de um humano, não os que menos precisam.
+    """
+    orfaos = [
+        f"{c['id']}: {(c.get('titulo_origem') or '')[:70]}"
+        for c in candidatos()
+        if not (c.get("extraccao") or {}).get("entidade_mencionada")
+    ]
+    assert not orfaos, (
+        f"{len(orfaos)} candidatos estão na fila sem entidade extraída:\n  "
+        + "\n  ".join(orfaos)
+        + "\nSem entidade, o guarda acima não os vê. Decidir à mão em `curar.py`."
     )
 
 
