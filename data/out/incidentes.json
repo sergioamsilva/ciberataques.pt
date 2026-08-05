@@ -231,6 +231,25 @@
   {
     "ano": 2025,
     "ator": null,
+    "data": "2025-06-28",
+    "entidades_afetadas": [
+      "conselho-superior-da-magistratura"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2025-conselho-superior-da-magistratura",
+    "n_fontes": 5,
+    "precisao_data": "dia",
+    "setor": "justica_defesa",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque ao sítio do Conselho Superior da Magistratura"
+  },
+  {
+    "ano": 2025,
+    "ator": null,
     "data": "2025-03-30",
     "entidades_afetadas": [
       "global-media"

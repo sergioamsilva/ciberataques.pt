@@ -104,6 +104,15 @@
   url: https://www.ctt.pt
   chaves: [ctt, correios de portugal, locky]
 
+- id: conselho-superior-da-magistratura
+  nome: Conselho Superior da Magistratura
+  nome_curto: Conselho Superior da Magistratura
+  setor: justica_defesa
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.csm.org.pt
+  chaves: [conselho superior da magistratura, csm]
+
 - id: emgfa
   nome: Estado-Maior-General das Forças Armadas
   nome_curto: EMGFA

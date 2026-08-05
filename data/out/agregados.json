@@ -4,7 +4,7 @@
     "2": 11,
     "3": 13,
     "4": 3,
-    "5": 5,
+    "5": 6,
     "6": 2,
     "7": 7
   },
@@ -16,7 +16,7 @@
     "2022": 16,
     "2023": 9,
     "2024": 6,
-    "2025": 2,
+    "2025": 3,
     "2026": 11
   },
   "por_ator": {
@@ -32,7 +32,7 @@
   },
   "por_estado_confirmacao": {
     "alegado_pelo_atacante": 2,
-    "confirmado_pela_entidade": 39,
+    "confirmado_pela_entidade": 40,
     "confirmado_por_regulador": 4,
     "reportado_por_media": 2
   },
@@ -44,7 +44,7 @@
     "educacao_investigacao": 6,
     "energia_agua": 3,
     "industria": 2,
-    "justica_defesa": 1,
+    "justica_defesa": 2,
     "media": 3,
     "retalho": 1,
     "saude": 5,
@@ -56,10 +56,10 @@
     "ddos": 3,
     "exfiltracao_dados": 15,
     "exposicao_credenciais": 2,
-    "indisponibilidade": 25,
-    "intrusao": 26,
+    "indisponibilidade": 26,
+    "intrusao": 27,
     "phishing_bec": 1,
     "ransomware": 17
   },
-  "total": 47
+  "total": 48
 }

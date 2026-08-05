@@ -1,0 +1,145 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "A origem do ataque não foi identificada."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2025-06-28",
+      "fonte": 0,
+      "texto": "O sítio do Conselho Superior da Magistratura é alvo de um ataque informático e fica indisponível.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2025-06-28",
+      "fonte": 1,
+      "texto": "O Conselho esclarece que o sítio está alojado num servidor externo à instituição e disponibiliza apenas informação pública, não estando em causa o acesso a dados sensíveis de processos.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2025-06-28",
+      "fonte": 2,
+      "texto": "O serviço de informática procede à análise e ao restauro da plataforma a partir de cópias de segurança. O Conselho indica não ter detetado outros ataques aos seus sistemas e que a recuperação poderá levar alguns dias.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2025-06-28",
+      "fonte": 3,
+      "texto": "O incidente é reportado de imediato à Polícia Judiciária, através da Unidade Nacional de Combate ao Cibercrime e à Criminalidade Tecnológica.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "O Conselho declarou que o sítio disponibiliza apenas informação pública e que não esteve em causa o acesso a dados sensíveis de processos judiciais. Os sistemas internos não foram afetados.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2025-06-28",
+    "divulgacao": "2025-06-28",
+    "inicio": "2025-06-28",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["conselho-superior-da-magistratura"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "justica",
+    "alojamento-externo",
+    "copias-de-seguranca-intactas"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2025-06-28",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Site do Conselho Superior da Magistratura alvo de ataque informático",
+      "url": "https://www.publico.pt/2025/06/28/tecnologia/noticia/site-conselho-superior-magistratura-alvo-ataque-informatico-2138233",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2025-06-28",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque paralisa site do Conselho Superior da Magistratura",
+      "url": "https://eco.sapo.pt/2025/06/28/ciberataque-paralisa-site-do-conselho-superior-da-magistratura/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2025-06-28",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Site do Conselho Superior de Magistratura alvo de ataque informático. \"Recuperação poderá levar alguns dias\"",
+      "url": "https://observador.pt/2025/06/28/site-do-conselho-superior-de-magistratura-alvo-de-ataque-informatico-recuperacao-podera-levar-alguns-dias/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2025-06-28",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Renascença",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Conselho Superior da Magistratura alvo de ataque informático",
+      "url": "https://rr.pt/noticia/pais/2025/06/28/conselho-superior-da-magistratura-alvo-de-ataque-informatico/430752/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2025-06-28",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "SOL",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Conselho Superior da Magistratura alvo de ataque informático",
+      "url": "https://sol.sapo.pt/2025/06/28/conselho-superior-da-magistratura-alvo-de-ataque-informatico/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2025-conselho-superior-da-magistratura",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": ["sítio institucional csm.org.pt"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": ["2022-emgfa"],
+  "resumo": "A 28 de junho de 2025, o sítio do Conselho Superior da Magistratura foi alvo de um ataque informático que o deixou indisponível. O Conselho esclareceu que o sítio está alojado num servidor externo à instituição e disponibiliza apenas informação pública, não estando em causa o acesso a dados sensíveis de processos judiciais nem tendo sido detetados outros ataques aos seus sistemas. O restauro foi feito a partir de cópias de segurança e o Conselho antecipou que poderia levar alguns dias. O incidente foi reportado de imediato à Polícia Judiciária, através da Unidade Nacional de Combate ao Cibercrime e à Criminalidade Tecnológica.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Caso do órgão de gestão e disciplina dos juízes, e por isso de relevância institucional que excede o impacto técnico: o que foi atingido foi um sítio informativo alojado no exterior, não os sistemas que tratam processos. A distinção está no resumo porque os títulos noticiosos, ao dizerem que o Conselho Superior da Magistratura foi atacado, sugerem naturalmente algo mais grave do que aconteceu. É o terceiro incidente de 2025 no registo, ano com cobertura nominal escassa.",
+    "versao": 1
+  },
+  "setor": "justica_defesa",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque ao sítio do Conselho Superior da Magistratura"
+}

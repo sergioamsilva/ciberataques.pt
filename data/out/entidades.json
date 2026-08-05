@@ -313,6 +313,23 @@
     "tipo": "entidade_publica",
     "url": "https://www.cccm.gov.pt"
   },
+  "conselho-superior-da-magistratura": {
+    "chaves": [
+      "conselho superior da magistratura",
+      "csm"
+    ],
+    "distrito": "Lisboa",
+    "id": "conselho-superior-da-magistratura",
+    "incidentes": [
+      "2025-conselho-superior-da-magistratura"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Conselho Superior da Magistratura",
+    "nome_curto": "Conselho Superior da Magistratura",
+    "setor": "justica_defesa",
+    "tipo": "entidade_publica",
+    "url": "https://www.csm.org.pt"
+  },
   "ctt": {
     "chaves": [
       "ctt",
