@@ -1,0 +1,116 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2024-11-13",
+      "fonte": 0,
+      "texto": "Na madrugada de quarta-feira, um ataque informático compromete de forma severa o funcionamento dos serviços municipais. A autarquia fica sem acessos informáticos nem comunicações, e não consegue garantir o atendimento aos munícipes.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2024-11-14",
+      "fonte": 0,
+      "texto": "São desencadeados os procedimentos internos de segurança e notificados o Centro Nacional de Cibersegurança e a Polícia Judiciária, que passam a acompanhar o processo.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2024-11-18",
+      "fonte": 2,
+      "texto": "As comunicações telefónicas são restabelecidas, mas o município mantém-se sem acessos informáticos e com o atendimento ao público condicionado.",
+      "tipo": "reposicao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados de munícipes.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2024-11-13",
+    "divulgacao": "2024-11-14",
+    "inicio": "2024-11-13",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["camara-municipal-de-chaves"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["administracao-local"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2024-11-14",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara de Chaves alvo de ciberataque que afeta serviços e atendimento ao público",
+      "url": "https://observador.pt/2024/11/14/camara-de-chaves-alvo-de-ciberataque-que-afeta-servicos-e-atendimento-ao-publico/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2024-11-14",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Jornal de Notícias",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara de Chaves com serviços em baixo após ataque informático",
+      "url": "https://www.jn.pt/justica/artigo/camara-de-chaves-com-servicos-em-baixo-apos-ataque-informatico/17832667",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2024-11-18",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara de Chaves restabeleceu comunicações telefónicas após ciberataque",
+      "url": "https://observador.pt/2024/11/18/camara-de-chaves-restabeleceu-comunicacoes-telefonicas-apos-ciberataque/",
+      "url_arquivo": null
+    }
+  ],
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "acessos informáticos de todos os serviços municipais",
+      "comunicações telefónicas",
+      "atendimento ao público"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "id": "2024-camara-municipal-de-chaves",
+  "relacionados": ["2024-camara-municipal-de-alcobaca"],
+  "resumo": "Na madrugada de 13 de novembro de 2024, o município de Chaves foi alvo de um ataque informático que comprometeu severamente o funcionamento dos serviços municipais. A autarquia ficou sem acessos informáticos nem comunicações, impossibilitada de garantir o atendimento aos munícipes. Foram notificados o Centro Nacional de Cibersegurança e a Polícia Judiciária. Cinco dias depois as comunicações telefónicas estavam restabelecidas, mas o município mantinha-se sem acessos informáticos.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Ocorreu na mesma madrugada que o ataque à Câmara de Alcobaça. Não é conhecida ligação estabelecida entre os dois casos, e não a inferimos: coincidência temporal não é prova de campanha.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque à Câmara Municipal de Chaves"
+}

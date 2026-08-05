@@ -1,0 +1,111 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "LockBit",
+    "nota": "A empresa não identificou o atacante. A atribuição assenta na listagem no site de extorsão do LockBit, a 18 de fevereiro de 2023, cerca de três semanas após a divulgação do incidente."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2023-01-30",
+      "fonte": 0,
+      "texto": "A Câmara Municipal do Porto revela que a empresa municipal Águas e Energia do Porto foi alvo de um ataque informático. São acionados de imediato os protocolos de segurança.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2023-01-30",
+      "fonte": 1,
+      "texto": "A empresa garante que todos os serviços essenciais de abastecimento público de água e saneamento se mantêm assegurados, apesar de constrangimentos em alguns serviços ao cliente. Trabalha em articulação com o Centro Nacional de Cibersegurança e a Polícia Judiciária.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2023-02-18",
+      "fonte": 2,
+      "texto": "O grupo LockBit lista a empresa no seu site de extorsão.",
+      "tipo": "reivindicacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados de clientes.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2023-01-30",
+    "divulgacao": "2023-01-30",
+    "inicio": "2023-01-30",
+    "precisao": "desconhecida"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["aguas-e-energia-do-porto"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["infraestrutura-critica", "empresa-municipal"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-01-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Águas e Energia do Porto alvo de ataque informático",
+      "url": "https://eco.sapo.pt/2023/01/30/aguas-e-energia-do-porto-alvo-de-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-01-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Empresa municipal Águas e Energia do Porto alvo de ataque informático",
+      "url": "https://observador.pt/2023/01/30/empresa-municipal-aguas-e-energia-do-porto-alvo-de-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-02-18",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "Águas e Energia do Porto listada no site de extorsão do grupo LockBit",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2023-aguas-e-energia-do-porto",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": ["serviços ao cliente"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": ["2026-aguas-de-portugal"],
+  "resumo": "A empresa municipal Águas e Energia do Porto foi alvo de um ataque informático divulgado a 30 de janeiro de 2023 pela Câmara Municipal do Porto. Foram acionados de imediato os protocolos de segurança, e a empresa garantiu que os serviços essenciais de abastecimento de água e saneamento se mantiveram assegurados, apesar de constrangimentos em alguns serviços ao cliente. Três semanas depois, o grupo LockBit listou a empresa no seu site de extorsão.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "A data de ocorrência não foi divulgada, apenas a da comunicação pública. A atribuição ao LockBit resulta do cruzamento com o tracker de sites de extorsão, e não de qualquer declaração da empresa ou de autoridade.",
+    "versao": 1
+  },
+  "setor": "energia_agua",
+  "tipos_ataque": ["ransomware", "intrusao"],
+  "titulo": "Ciberataque à Águas e Energia do Porto"
+}

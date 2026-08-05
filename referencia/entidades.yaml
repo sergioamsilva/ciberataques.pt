@@ -206,6 +206,60 @@
   url: https://www.sojadeportugal.pt
   chaves: [soja de portugal, savinor, avicasal]
 
+- id: aguas-e-energia-do-porto
+  nome: Águas e Energia do Porto, E.M.
+  nome_curto: Águas e Energia do Porto
+  setor: energia_agua
+  tipo: empresa_publica
+  distrito: Porto
+  url: https://www.aguasdoporto.pt
+  chaves: [aguas e energia do porto, aguas do porto, aguasdoporto]
+
+- id: camara-municipal-do-barreiro
+  nome: Município do Barreiro
+  nome_curto: Câmara Municipal do Barreiro
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Setúbal
+  url: https://www.cm-barreiro.pt
+  chaves: [camara municipal do barreiro, municipio do barreiro, camara do barreiro]
+
+- id: camara-municipal-de-alcanena
+  nome: Município de Alcanena
+  nome_curto: Câmara Municipal de Alcanena
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Santarém
+  url: https://www.cm-alcanena.pt
+  chaves: [camara municipal de alcanena, municipio de alcanena, camara de alcanena]
+
+- id: camara-municipal-de-chaves
+  nome: Município de Chaves
+  nome_curto: Câmara Municipal de Chaves
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Vila Real
+  url: https://www.chaves.pt
+  chaves: [camara municipal de chaves, municipio de chaves, camara de chaves]
+
+- id: camara-municipal-de-alcobaca
+  nome: Município de Alcobaça
+  nome_curto: Câmara Municipal de Alcobaça
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Leiria
+  url: https://www.cm-alcobaca.pt
+  chaves: [camara municipal de alcobaca, municipio de alcobaca, camara de alcobaca, smas de alcobaca]
+
+- id: oestecim
+  nome: OesteCIM — Comunidade Intermunicipal do Oeste
+  nome_curto: OesteCIM
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Leiria
+  url: https://oestecim.pt
+  chaves: [oestecim, comunidade intermunicipal do oeste, municipios do oeste]
+
 - id: camara-municipal-de-odemira
   nome: Município de Odemira
   nome_curto: Câmara Municipal de Odemira

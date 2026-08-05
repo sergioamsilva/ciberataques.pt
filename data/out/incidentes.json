@@ -133,6 +133,26 @@
   {
     "ano": 2025,
     "ator": null,
+    "data": "2025-11-16",
+    "entidades_afetadas": [
+      "oestecim"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2025-oestecim",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade",
+      "cadeia_fornecimento"
+    ],
+    "titulo": "Ciberataque à OesteCIM com impacto em doze municípios do Oeste"
+  },
+  {
+    "ano": 2025,
+    "ator": null,
     "data": "2025-03-30",
     "entidades_afetadas": [
       "global-media"
@@ -171,6 +191,44 @@
   {
     "ano": 2024,
     "ator": null,
+    "data": "2024-11-13",
+    "entidades_afetadas": [
+      "camara-municipal-de-chaves"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2024-camara-municipal-de-chaves",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal de Chaves"
+  },
+  {
+    "ano": 2024,
+    "ator": null,
+    "data": "2024-11-13",
+    "entidades_afetadas": [
+      "camara-municipal-de-alcobaca"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2024-camara-municipal-de-alcobaca",
+    "n_fontes": 1,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal de Alcobaça"
+  },
+  {
+    "ano": 2024,
+    "ator": null,
     "data": "2024-10-10",
     "entidades_afetadas": [
       "ama"
@@ -204,6 +262,25 @@
       "exposicao_credenciais"
     ],
     "titulo": "Exposição de credenciais de utilizadores do Portal das Finanças"
+  },
+  {
+    "ano": 2023,
+    "ator": null,
+    "data": "2023-11-06",
+    "entidades_afetadas": [
+      "camara-municipal-de-alcanena"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2023-camara-municipal-de-alcanena",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal de Alcanena"
   },
   {
     "ano": 2023,
@@ -283,6 +360,24 @@
   {
     "ano": 2023,
     "ator": null,
+    "data": "2023-03-09",
+    "entidades_afetadas": [
+      "camara-municipal-do-barreiro"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2023-camara-municipal-do-barreiro",
+    "n_fontes": 1,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal do Barreiro"
+  },
+  {
+    "ano": 2023,
+    "ator": null,
     "data": "2023-02-13",
     "entidades_afetadas": [
       "visabeira"
@@ -298,6 +393,25 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque ao Grupo Visabeira"
+  },
+  {
+    "ano": 2023,
+    "ator": "LockBit",
+    "data": "2023-01-30",
+    "entidades_afetadas": [
+      "aguas-e-energia-do-porto"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2023-aguas-e-energia-do-porto",
+    "n_fontes": 3,
+    "precisao_data": "desconhecida",
+    "setor": "energia_agua",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "intrusao"
+    ],
+    "titulo": "Ciberataque à Águas e Energia do Porto"
   },
   {
     "ano": 2022,

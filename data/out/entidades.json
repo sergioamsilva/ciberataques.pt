@@ -17,6 +17,24 @@
     "tipo": "empresa_publica",
     "url": "https://www.adp.pt"
   },
+  "aguas-e-energia-do-porto": {
+    "chaves": [
+      "aguas e energia do porto",
+      "aguas do porto",
+      "aguasdoporto"
+    ],
+    "distrito": "Porto",
+    "id": "aguas-e-energia-do-porto",
+    "incidentes": [
+      "2023-aguas-e-energia-do-porto"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Águas e Energia do Porto, E.M.",
+    "nome_curto": "Águas e Energia do Porto",
+    "setor": "energia_agua",
+    "tipo": "empresa_publica",
+    "url": "https://www.aguasdoporto.pt"
+  },
   "ama": {
     "chaves": [
       "ama",
@@ -75,6 +93,63 @@
     "tipo": "entidade_publica",
     "url": "https://www.cm-figfoz.pt"
   },
+  "camara-municipal-de-alcanena": {
+    "chaves": [
+      "camara municipal de alcanena",
+      "municipio de alcanena",
+      "camara de alcanena"
+    ],
+    "distrito": "Santarém",
+    "id": "camara-municipal-de-alcanena",
+    "incidentes": [
+      "2023-camara-municipal-de-alcanena"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município de Alcanena",
+    "nome_curto": "Câmara Municipal de Alcanena",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-alcanena.pt"
+  },
+  "camara-municipal-de-alcobaca": {
+    "chaves": [
+      "camara municipal de alcobaca",
+      "municipio de alcobaca",
+      "camara de alcobaca",
+      "smas de alcobaca"
+    ],
+    "distrito": "Leiria",
+    "id": "camara-municipal-de-alcobaca",
+    "incidentes": [
+      "2024-camara-municipal-de-alcobaca"
+    ],
+    "incidentes_em_cascata": [
+      "2025-oestecim"
+    ],
+    "nome": "Município de Alcobaça",
+    "nome_curto": "Câmara Municipal de Alcobaça",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-alcobaca.pt"
+  },
+  "camara-municipal-de-chaves": {
+    "chaves": [
+      "camara municipal de chaves",
+      "municipio de chaves",
+      "camara de chaves"
+    ],
+    "distrito": "Vila Real",
+    "id": "camara-municipal-de-chaves",
+    "incidentes": [
+      "2024-camara-municipal-de-chaves"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município de Chaves",
+    "nome_curto": "Câmara Municipal de Chaves",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.chaves.pt"
+  },
   "camara-municipal-de-gondomar": {
     "chaves": [
       "camara municipal de gondomar",
@@ -128,6 +203,24 @@
     "setor": "autarquias",
     "tipo": "entidade_publica",
     "url": "https://www.cm-odemira.pt"
+  },
+  "camara-municipal-do-barreiro": {
+    "chaves": [
+      "camara municipal do barreiro",
+      "municipio do barreiro",
+      "camara do barreiro"
+    ],
+    "distrito": "Setúbal",
+    "id": "camara-municipal-do-barreiro",
+    "incidentes": [
+      "2023-camara-municipal-do-barreiro"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município do Barreiro",
+    "nome_curto": "Câmara Municipal do Barreiro",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-barreiro.pt"
   },
   "centro-cientifico-e-cultural-de-macau": {
     "chaves": [
@@ -438,6 +531,24 @@
     "nome_curto": "MNE",
     "setor": "administracao_publica",
     "tipo": "entidade_publica"
+  },
+  "oestecim": {
+    "chaves": [
+      "oestecim",
+      "comunidade intermunicipal do oeste",
+      "municipios do oeste"
+    ],
+    "distrito": "Leiria",
+    "id": "oestecim",
+    "incidentes": [
+      "2025-oestecim"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "OesteCIM — Comunidade Intermunicipal do Oeste",
+    "nome_curto": "OesteCIM",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://oestecim.pt"
   },
   "porto-de-lisboa": {
     "chaves": [

@@ -1,0 +1,110 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2025-11-16",
+      "fonte": 0,
+      "texto": "A OesteCIM é alvo de um ataque informático que deixa indisponíveis diversos serviços e plataformas digitais dos doze municípios que a integram.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2025-11-18",
+      "fonte": 0,
+      "texto": "A comunidade intermunicipal torna o caso público. O secretário executivo indica que o nível de impacto nos diversos municípios ainda está a ser avaliado.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2025-11-18",
+      "fonte": 0,
+      "texto": "São acionados o Centro Nacional de Cibersegurança e as demais autoridades nacionais competentes em matéria de cibercrime.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados. O impacto estava por avaliar à data da comunicação.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2025-11-16",
+    "divulgacao": "2025-11-18",
+    "inicio": "2025-11-16",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["oestecim"],
+  "entidades_afetadas_em_cascata": ["camara-municipal-de-alcobaca"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "administracao-local",
+    "cadeia-de-fornecimento",
+    "impacto-multimunicipal"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2025-11-18",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Jornal de Notícias",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático afeta plataformas digitais dos municípios do Oeste",
+      "url": "https://www.jn.pt/nacional/artigo/ataque-informatico-afeta-plataformas-digitais-dos-municipios-do-oeste/18021201",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2025-11-18",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático à OesteCIM afeta plataformas digitais dos municípios do Oeste",
+      "url": "https://observador.pt/2025/11/18/ataque-informatico-a-oestecim-afeta-plataformas-digitais-dos-municipios-do-oeste/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2025-oestecim",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "serviços e plataformas digitais dos doze municípios da comunidade intermunicipal"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [
+    "2024-camara-municipal-de-alcobaca",
+    "2023-camara-municipal-de-gondomar"
+  ],
+  "resumo": "A 16 de novembro de 2025, a OesteCIM foi alvo de um ataque informático que deixou indisponíveis diversos serviços e plataformas digitais dos doze municípios que integram a comunidade intermunicipal: Alcobaça, Caldas da Rainha, Óbidos, Bombarral, Peniche, Nazaré, Alenquer, Arruda dos Vinhos, Cadaval, Lourinhã, Sobral de Monte Agraço e Torres Vedras. O secretário executivo indicou que o nível de impacto em cada município estava ainda a ser avaliado. Foram acionados o Centro Nacional de Cibersegurança e as autoridades competentes em matéria de cibercrime.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Caso de cadeia de fornecimento dentro da administração local: um ataque a uma estrutura intermunicipal degrada serviços em doze municípios de uma só vez. Registamos a OesteCIM como entidade atacada, e Alcobaça em cascata por ser o único município do Oeste com incidente próprio no registo. Os restantes onze não têm ficha, e por isso não constam: registá-los sem informação específica sobre cada um seria inventar cobertura.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["intrusao", "indisponibilidade", "cadeia_fornecimento"],
+  "titulo": "Ciberataque à OesteCIM com impacto em doze municípios do Oeste"
+}

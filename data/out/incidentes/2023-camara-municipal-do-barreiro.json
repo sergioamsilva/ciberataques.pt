@@ -1,0 +1,82 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2023-03-09",
+      "fonte": 0,
+      "texto": "O servidor informático central do município é atingido por um ataque. A Polícia Judiciária é chamada no próprio dia.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2023-03-10",
+      "fonte": 0,
+      "texto": "Inspetores da Polícia Judiciária estão na autarquia a recolher provas e levam os discos para continuar a investigação. O vice-presidente indica que o sistema já está a funcionar sem problemas.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados de munícipes.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2023-03-09",
+    "divulgacao": "2023-03-10",
+    "inicio": "2023-03-09",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["camara-municipal-do-barreiro"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["administracao-local"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-03-10",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara do Barreiro foi alvo de um ataque informático",
+      "url": "https://www.publico.pt/2023/03/10/local/noticia/camara-barreiro-alvo-ataque-informatico-2041905",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2023-camara-municipal-do-barreiro",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": ["servidor informático central"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "O município do Barreiro foi alvo de um ataque ao seu servidor informático central a 9 de março de 2023. A Polícia Judiciária foi chamada no próprio dia e, na manhã seguinte, inspetores estiveram na autarquia a recolher provas, levando os discos para continuar a investigação. O vice-presidente da câmara indicou que o sistema já estava a funcionar sem problemas.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Assenta numa única fonte e a cobertura é escassa. O tipo de ataque, a extensão e eventuais consequências para dados não foram divulgados. Registo deliberadamente magro.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["intrusao"],
+  "titulo": "Ciberataque à Câmara Municipal do Barreiro"
+}

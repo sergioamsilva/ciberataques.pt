@@ -1,0 +1,111 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública. O responsável informático do município descreveu um atacante com grande cuidado no apagamento de rastos e sinais de profissionalismo, mas as autoridades não estabeleceram autoria nem motivação."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2023-11-06",
+      "fonte": 0,
+      "texto": "O sistema informático do município é atingido por um ataque descrito como destrutivo.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2023-11-16",
+      "fonte": 1,
+      "texto": "O presidente da câmara classifica o ataque como de grande gravidade. Os prazos de resposta da autarquia ficam suspensos, e os serviços de atendimento e as áreas administrativas mantêm-se condicionados.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2023-11-16",
+      "fonte": 1,
+      "texto": "O responsável informático descreve o ataque como violento e sofisticado, com grande cuidado no apagamento de rastos. A reposição exige restauro manual de dados, descrito como uma tarefa titânica.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2023-11-16",
+      "fonte": 1,
+      "texto": "O município reporta o ataque e as suas consequências à Autoridade Tributária, à Segurança Social e ao Tribunal de Contas, além da Polícia Judiciária, da Comissão Nacional de Proteção de Dados e do Centro Nacional de Cibersegurança.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "O incidente foi comunicado à Comissão Nacional de Proteção de Dados, o que indicia envolvimento de dados pessoais, mas não há informação pública sobre a extensão do comprometimento.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2023-11-06",
+    "divulgacao": "2023-11-08",
+    "inicio": "2023-11-06",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["camara-municipal-de-alcanena"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["administracao-local", "ataque-destrutivo"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-11-08",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara de Alcanena sofre ataque informático",
+      "url": "https://observador.pt/2023/11/08/ataque-informatico-na-camara-de-alcanena/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-11-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque de \"grande gravidade\" condiciona serviços da Câmara de Alcanena",
+      "url": "https://observador.pt/2023/11/16/ciberataque-de-grande-gravidade-condiciona-servicos-da-camara-de-alcanena/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2023-camara-municipal-de-alcanena",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "sistema informático municipal",
+      "atendimento ao público",
+      "áreas administrativas",
+      "prazos de resposta da autarquia, suspensos"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": true,
+    "pj": true
+  },
+  "relacionados": ["2023-camara-municipal-de-gondomar"],
+  "resumo": "A 6 de novembro de 2023, o sistema informático do município de Alcanena foi atingido por um ataque descrito pelo presidente da câmara como destrutivo e de grande gravidade, ao ponto de suspender os prazos de resposta da autarquia. O responsável informático caracterizou-o como violento e sofisticado, com grande cuidado no apagamento de rastos. A reposição exigiu restauro manual de dados. O caso foi comunicado à Autoridade Tributária, à Segurança Social e ao Tribunal de Contas, além da Polícia Judiciária, da CNPD e do Centro Nacional de Cibersegurança.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "É o segundo município atacado em 2023 com efeitos prolongados, seis semanas depois de Gondomar. A comunicação a Autoridade Tributária, Segurança Social e Tribunal de Contas é invulgar na cobertura portuguesa e indicia comprometimento de dados contabilísticos.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque à Câmara Municipal de Alcanena"
+}

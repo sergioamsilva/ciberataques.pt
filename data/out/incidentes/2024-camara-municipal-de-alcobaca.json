@@ -1,0 +1,92 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2024-11-13",
+      "fonte": 0,
+      "texto": "Na madrugada de quarta-feira, um ataque informático compromete os serviços municipais, em especial o atendimento ao público.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2024-11-19",
+      "fonte": 0,
+      "texto": "O presidente da câmara indica que o serviço financeiro de pessoal e os serviços municipalizados de água e saneamento já estão operacionais, e que os restantes serão repostos até ao fim da semana. O município investiu num novo servidor para o setor financeiro.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2024-11-19",
+      "fonte": 0,
+      "texto": "O presidente garante que não houve perda de dados, por existirem um bom sistema de proteção e cópias de segurança de tudo.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "O município declarou não ter havido perda de dados, invocando a existência de cópias de segurança. Note-se que ausência de perda não é o mesmo que ausência de acesso, e sobre esse ponto não há informação pública.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2024-11-13",
+    "divulgacao": "2024-11-13",
+    "inicio": "2024-11-13",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["camara-municipal-de-alcobaca"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["administracao-local", "copias-de-seguranca-intactas"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2024-11-19",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara de Alcobaça recupera parte dos serviços afetados por ataque informático",
+      "url": "https://observador.pt/2024/11/19/camara-de-alcobaca-recupera-parte-dos-servicos-afetados-por-ataque-informatico/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2024-camara-municipal-de-alcobaca",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "atendimento ao público",
+      "serviço financeiro de pessoal",
+      "serviços municipalizados de água e saneamento"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": true,
+    "pj": true
+  },
+  "relacionados": ["2024-camara-municipal-de-chaves"],
+  "resumo": "Na madrugada de 13 de novembro de 2024, o município de Alcobaça foi alvo de um ataque informático que comprometeu os serviços municipais, sobretudo o atendimento ao público. Uma semana depois, o serviço financeiro de pessoal e os serviços municipalizados de água e saneamento já estavam operacionais, com os restantes previstos para o fim dessa semana, após investimento num novo servidor. O presidente da câmara garantiu não ter havido perda de dados, por existirem cópias de segurança. O caso foi reportado ao Centro Nacional de Cibersegurança, à Comissão Nacional de Proteção de Dados e à Polícia Judiciária.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Assenta numa única fonte. Ocorreu na mesma madrugada que o ataque à Câmara de Chaves, sem que seja conhecida ligação estabelecida entre os dois. Contrasta com o caso da Figueira da Foz, onde as cópias de segurança foram atingidas e a recuperação demorou semanas.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque à Câmara Municipal de Alcobaça"
+}
