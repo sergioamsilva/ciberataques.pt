@@ -133,6 +133,25 @@
   },
   {
     "ano": 2026,
+    "ator": null,
+    "data": "2026-05-13",
+    "entidades_afetadas": [
+      "camara-municipal-de-serpa"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-camara-municipal-de-serpa",
+    "n_fontes": 4,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal de Serpa"
+  },
+  {
+    "ano": 2026,
     "ator": "ShinyHunters",
     "data": "2026-05-01",
     "entidades_afetadas": [
@@ -340,6 +359,25 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque à Câmara Municipal de Santa Comba Dão"
+  },
+  {
+    "ano": 2023,
+    "ator": null,
+    "data": "2023-12-25",
+    "entidades_afetadas": [
+      "camara-municipal-de-barrancos"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2023-camara-municipal-de-barrancos",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal de Barrancos"
   },
   {
     "ano": 2023,

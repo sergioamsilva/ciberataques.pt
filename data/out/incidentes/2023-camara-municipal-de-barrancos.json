@@ -1,0 +1,115 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2023-12-25",
+      "fonte": 0,
+      "texto": "O município é alvo de um ato malicioso externo que afeta todo o sistema informático e compromete a informação nele contida, apesar das medidas de segurança implementadas.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2023-12-25",
+      "fonte": 0,
+      "texto": "O caso é comunicado ao Centro Nacional de Cibersegurança e é apresentada queixa-crime na Polícia Judiciária.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2023-12-27",
+      "fonte": 1,
+      "texto": "Decorrem ações de diagnóstico dos serviços municipais em colaboração com a Polícia Judiciária, para apurar a extensão do ataque e repor o funcionamento normal.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2023-12-28",
+      "fonte": 1,
+      "texto": "O funcionamento dos serviços técnicos e administrativos mantém-se limitado pelas medidas de segurança. O atendimento presencial continua no horário habitual, mas com restrições sempre que o pedido exija consulta aos sistemas informáticos.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "O município referiu que a informação contida nos sistemas foi comprometida, sem esclarecer se incluía dados pessoais de munícipes nem em que extensão.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2023-12-25",
+    "divulgacao": "2023-12-25",
+    "inicio": "2023-12-25",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["camara-municipal-de-barrancos"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "administracao-local",
+    "fonte-desaparecida",
+    "sem-cobertura-mediatica"
+  ],
+  "fontes": [
+    {
+      "data": "2023-12-25",
+      "estado_ligacao": "morta",
+      "excerto": null,
+      "publicador": "Município de Barrancos",
+      "sha256": null,
+      "tipo": "comunicado",
+      "titulo": "Ataque Informático",
+      "url": "https://cm-barrancos.pt/11594/ataque-informático",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-12-28",
+      "estado_ligacao": "morta",
+      "excerto": null,
+      "publicador": "Município de Barrancos",
+      "sha256": null,
+      "tipo": "comunicado",
+      "titulo": "Informação sobre o Ataque Informático à CMB (25.12.2023)",
+      "url": "https://cm-barrancos.pt/11623/menu-216",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2023-camara-municipal-de-barrancos",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "todo o sistema informático municipal",
+      "serviços técnicos e administrativos",
+      "atendimento presencial, com restrições"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [
+    "2023-camara-municipal-de-odemira",
+    "2022-porto-de-lisboa"
+  ],
+  "resumo": "No dia 25 de dezembro de 2023, o município de Barrancos foi alvo de um ato malicioso externo que afetou todo o sistema informático e comprometeu a informação nele contida. O caso foi comunicado ao Centro Nacional de Cibersegurança e deu origem a queixa-crime na Polícia Judiciária, com ações de diagnóstico a decorrer desde 27 de dezembro. Os serviços técnicos e administrativos ficaram limitados pelas medidas de segurança, mantendo-se o atendimento presencial com restrições. O caso não teve cobertura de qualquer órgão de comunicação social.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Este incidente demonstra, melhor do que qualquer outro do registo, porque é que a preservação de fontes existe. As duas únicas fontes são comunicados do próprio município — e ambas devolvem hoje HTTP 404. Não há cópia no Internet Archive, que tem dois mil URL deste domínio arquivados mas não estes, e não houve qualquer cobertura noticiosa. Os factos aqui registados foram reconstruídos a partir do índice de motores de busca, que ainda reproduz o conteúdo dos comunicados. Se ninguém tivesse registado isto, o incidente desapareceria por completo do conhecimento público. Marcar as ligações como mortas é o mínimo de honestidade: o leitor tem de saber que a fonte já não é consultável.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque à Câmara Municipal de Barrancos"
+}

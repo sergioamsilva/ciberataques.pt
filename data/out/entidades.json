@@ -150,6 +150,25 @@
     "tipo": "entidade_publica",
     "url": "https://www.cm-alcobaca.pt"
   },
+  "camara-municipal-de-barrancos": {
+    "chaves": [
+      "camara municipal de barrancos",
+      "municipio de barrancos",
+      "camara de barrancos",
+      "cmb"
+    ],
+    "distrito": "Beja",
+    "id": "camara-municipal-de-barrancos",
+    "incidentes": [
+      "2023-camara-municipal-de-barrancos"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município de Barrancos",
+    "nome_curto": "Câmara Municipal de Barrancos",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://cm-barrancos.pt"
+  },
   "camara-municipal-de-chaves": {
     "chaves": [
       "camara municipal de chaves",
@@ -240,6 +259,24 @@
     "setor": "autarquias",
     "tipo": "entidade_publica",
     "url": "https://cm-santacombadao.pt"
+  },
+  "camara-municipal-de-serpa": {
+    "chaves": [
+      "camara municipal de serpa",
+      "municipio de serpa",
+      "camara de serpa"
+    ],
+    "distrito": "Beja",
+    "id": "camara-municipal-de-serpa",
+    "incidentes": [
+      "2026-camara-municipal-de-serpa"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município de Serpa",
+    "nome_curto": "Câmara Municipal de Serpa",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-serpa.pt"
   },
   "camara-municipal-do-barreiro": {
     "chaves": [

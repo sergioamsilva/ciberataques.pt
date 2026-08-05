@@ -1,0 +1,135 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-05-13",
+      "fonte": 0,
+      "texto": "Entre as 4h00 e as 8h30, um ataque externo atinge a infraestrutura informática do município. É detetado quando os trabalhadores chegam aos Paços do Concelho.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2026-05-13",
+      "fonte": 1,
+      "texto": "Ficheiros são encriptados e admite-se a hipótese de terem passado para o exterior. Os servidores são desligados e vários serviços municipais ficam bloqueados durante todo o dia.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2026-05-13",
+      "fonte": 2,
+      "texto": "O caso é comunicado ao Ministério Público e à Comissão Nacional de Proteção de Dados, e é acompanhado pela Polícia Judiciária.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2026-05-13",
+      "fonte": 0,
+      "texto": "O município inicia a reconstrução quase integral da infraestrutura tecnológica, com previsão de normalização até ao fim da semana seguinte.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Foi admitida a hipótese de os ficheiros encriptados terem passado para o exterior, sem confirmação. A comunicação à Comissão Nacional de Proteção de Dados indicia envolvimento de dados pessoais.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-05-13",
+    "divulgacao": "2026-05-13",
+    "inicio": "2026-05-13",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["camara-municipal-de-serpa"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["administracao-local", "reconstrucao-de-infraestrutura"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-05-13",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Sul Informação",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara de Serpa com serviços condicionados devido a ataque informático",
+      "url": "https://alentejo.sulinformacao.pt/2026/05/camara-de-serpa-com-servicos-condicionados-devido-a-ataque-informatico",
+      "url_arquivo": null
+    },
+    {
+      "data": "2026-05-13",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Rádio Pax",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "\"Piratearam a Câmara de Serpa\": ataque informático bloqueou serviços e deixou documentos encriptados",
+      "url": "https://www.radiopax.com/ataque-informatico-paralisou-servicos-da-camara-de-serpa-e-levanta-preocupacoes-de-seguranca/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-05-13",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "TSF",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara de Serpa com serviços condicionados devido a ataque informático",
+      "url": "https://www.tsf.pt/sociedade/artigo/camara-de-serpa-com-servicos-condicionados-devido-a-ataque-informatico/18089651",
+      "url_arquivo": null
+    },
+    {
+      "data": "2026-05-13",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Correio Alentejo",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque à infraestrutura informática da Câmara de Serpa",
+      "url": "https://correioalentejo.com/ataque-a-infraestrutura-informatica-da-camara-de-serpa/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-camara-municipal-de-serpa",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "infraestrutura informática municipal",
+      "vários serviços municipais, bloqueados durante o dia",
+      "servidores, desligados preventivamente"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": true,
+    "pj": true
+  },
+  "relacionados": [
+    "2023-camara-municipal-de-barrancos",
+    "2023-camara-municipal-de-odemira"
+  ],
+  "resumo": "Na madrugada de 13 de maio de 2026, entre as 4h00 e as 8h30, a infraestrutura informática do município de Serpa foi alvo de um ataque externo, detetado quando os trabalhadores chegaram aos Paços do Concelho. Ficheiros foram encriptados, admitindo-se a hipótese de terem saído para o exterior. Os servidores foram desligados e vários serviços ficaram bloqueados durante todo o dia, obrigando à reconstrução quase integral da infraestrutura tecnológica. O caso foi comunicado ao Ministério Público e à Comissão Nacional de Proteção de Dados, e acompanhado pela Polícia Judiciária.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Terceiro município do distrito de Beja no registo, depois de Odemira e Barrancos. A cobertura foi quase toda regional — Sul Informação, Rádio Pax, Correio Alentejo — com apenas a TSF a nível nacional, o que confirma que a imprensa regional é indispensável para cobrir a administração local.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["ransomware", "indisponibilidade"],
+  "titulo": "Ciberataque à Câmara Municipal de Serpa"
+}

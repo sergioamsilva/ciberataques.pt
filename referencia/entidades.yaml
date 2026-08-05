@@ -287,6 +287,24 @@
   url: https://oestecim.pt
   chaves: [oestecim, comunidade intermunicipal do oeste, municipios do oeste]
 
+- id: camara-municipal-de-barrancos
+  nome: Município de Barrancos
+  nome_curto: Câmara Municipal de Barrancos
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Beja
+  url: https://cm-barrancos.pt
+  chaves: [camara municipal de barrancos, municipio de barrancos, camara de barrancos, cmb]
+
+- id: camara-municipal-de-serpa
+  nome: Município de Serpa
+  nome_curto: Câmara Municipal de Serpa
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Beja
+  url: https://www.cm-serpa.pt
+  chaves: [camara municipal de serpa, municipio de serpa, camara de serpa]
+
 - id: camara-municipal-de-odemira
   nome: Município de Odemira
   nome_curto: Câmara Municipal de Odemira
