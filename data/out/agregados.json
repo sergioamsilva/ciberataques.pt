@@ -2,19 +2,19 @@
   "distribuicao_fontes_por_incidente": {
     "1": 4,
     "2": 6,
-    "3": 10,
+    "3": 12,
     "4": 2,
     "5": 4,
     "6": 1,
     "7": 6
   },
-  "incidentes_com_disputas": 7,
+  "incidentes_com_disputas": 8,
   "por_ano": {
     "2017": 1,
     "2020": 1,
     "2021": 1,
     "2022": 16,
-    "2023": 3,
+    "2023": 5,
     "2024": 3,
     "2025": 1,
     "2026": 7
@@ -26,18 +26,19 @@
     "Qilin": 1,
     "Ragnar Locker": 2,
     "RansomEXX": 1,
+    "Rhysida": 1,
     "ShinyHunters": 1,
     "thegentlemen": 2
   },
   "por_estado_confirmacao": {
     "alegado_pelo_atacante": 2,
-    "confirmado_pela_entidade": 26,
+    "confirmado_pela_entidade": 28,
     "confirmado_por_regulador": 3,
     "reportado_por_media": 2
   },
   "por_setor": {
     "administracao_publica": 5,
-    "autarquias": 2,
+    "autarquias": 4,
     "banca_seguros": 1,
     "desporto": 2,
     "educacao_investigacao": 6,
@@ -53,12 +54,12 @@
   "por_tipo_ataque": {
     "cadeia_fornecimento": 2,
     "ddos": 3,
-    "exfiltracao_dados": 13,
+    "exfiltracao_dados": 14,
     "exposicao_credenciais": 1,
-    "indisponibilidade": 16,
-    "intrusao": 14,
+    "indisponibilidade": 17,
+    "intrusao": 15,
     "phishing_bec": 1,
-    "ransomware": 13
+    "ransomware": 14
   },
-  "total": 33
+  "total": 35
 }

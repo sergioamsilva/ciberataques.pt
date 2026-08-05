@@ -402,6 +402,44 @@
     "url_arquivo": null
   },
   {
+    "data": "2023-10-09",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2023-camara-municipal-de-gondomar",
+    "indice": 0,
+    "publicador": "Público",
+    "tipo": "noticia",
+    "titulo": "Ataque informático à Câmara de Gondomar: dados roubados estão em leilão na dark web",
+    "url": "https://www.publico.pt/2023/10/09/local/noticia/ataque-informatico-camara-gondomar-dados-roubados-estao-leilao-dark-web-2066112",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "contem_declaracao_de_autoridade": true,
+    "data": "2023-11-01",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2023-camara-municipal-de-gondomar",
+    "indice": 1,
+    "publicador": "Jornal de Notícias",
+    "tipo": "noticia",
+    "titulo": "Ciberataque em Gondomar foi o \"maior a uma instituição pública em Portugal\"",
+    "url": "https://www.jn.pt/pais/artigo/ciberataque-em-gondomar-foi-o-maior-a-uma-instituicao-publica-em-portugal/17821009",
+    "url_arquivo": null
+  },
+  {
+    "data": "2023-10-06",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2023-camara-municipal-de-gondomar",
+    "indice": 2,
+    "publicador": "ransomware.live",
+    "tipo": "leak_site",
+    "titulo": "Câmara Municipal de Gondomar listada no site de extorsão do grupo Rhysida",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_arquivo": null
+  },
+  {
     "data": "2023-08-06",
     "estado_ligacao": "viva",
     "excerto": null,
@@ -473,6 +511,45 @@
     "tipo": "noticia",
     "titulo": "Sites de organismos do Ministério da Economia alvo de ataque informático",
     "url": "https://eco.sapo.pt/2023/04/06/sites-de-organismos-do-ministerio-da-economia-alvo-de-ataque-informatico/",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2023-03-26",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2023-camara-municipal-de-odemira",
+    "indice": 0,
+    "publicador": "Observador",
+    "tipo": "noticia",
+    "titulo": "Câmara de Odemira alvo de ciberataque que afetará serviços nos \"próximos dias\"",
+    "url": "https://observador.pt/2023/03/26/camara-de-odemira-alvo-de-ciberataque-que-afetara-servicos-nos-proximos-dias/",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2023-03-27",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2023-camara-municipal-de-odemira",
+    "indice": 1,
+    "publicador": "ECO",
+    "tipo": "noticia",
+    "titulo": "Ciberataque à Câmara de Odemira afeta serviços nos \"próximos dias\"",
+    "url": "https://eco.sapo.pt/2023/03/27/ciberataque-a-camara-de-odemira-afetara-servicos-nos-proximos-dias/",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2023-04-06",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2023-camara-municipal-de-odemira",
+    "indice": 2,
+    "publicador": "Observador",
+    "tipo": "noticia",
+    "titulo": "Câmara de Odemira continua com ação \"condicionada\" após ciberataque",
+    "url": "https://observador.pt/2023/04/06/camara-de-odemira-continua-com-acao-condicionada-apos-ciberataque/",
     "url_arquivo": null
   },
   {

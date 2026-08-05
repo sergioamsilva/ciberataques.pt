@@ -1,0 +1,125 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2023-03-25",
+      "fonte": 0,
+      "texto": "O ataque atinge os servidores do município no sábado, afetando genericamente todos os serviços municipais.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2023-03-26",
+      "fonte": 0,
+      "texto": "O município anuncia que o ciberataque vai comprometer os serviços nos dias seguintes. O sítio institucional e as redes sociais mantêm-se a funcionar.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2023-03-26",
+      "fonte": 1,
+      "texto": "O incidente é reportado ao Centro Nacional de Cibersegurança e é apresentada queixa-crime na Polícia Judiciária. Decorrem ações de diagnóstico para apurar a extensão do ataque.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2023-04-06",
+      "fonte": 2,
+      "texto": "Doze dias depois, a atividade do município continua condicionada. O presidente da câmara descreve o caso como um ataque muito violento, que atingiu todo o sistema digital, todas as unidades orgânicas e todos os serviços municipais.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados de munícipes. O efeito relatado foi de indisponibilidade generalizada.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2023-03-25",
+    "divulgacao": "2023-03-26",
+    "inicio": "2023-03-25",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["camara-municipal-de-odemira"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["administracao-local"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-03-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara de Odemira alvo de ciberataque que afetará serviços nos \"próximos dias\"",
+      "url": "https://observador.pt/2023/03/26/camara-de-odemira-alvo-de-ciberataque-que-afetara-servicos-nos-proximos-dias/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-03-27",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque à Câmara de Odemira afeta serviços nos \"próximos dias\"",
+      "url": "https://eco.sapo.pt/2023/03/27/ciberataque-a-camara-de-odemira-afetara-servicos-nos-proximos-dias/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-04-06",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara de Odemira continua com ação \"condicionada\" após ciberataque",
+      "url": "https://observador.pt/2023/04/06/camara-de-odemira-continua-com-acao-condicionada-apos-ciberataque/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2023-camara-municipal-de-odemira",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "servidores municipais",
+      "todas as unidades orgânicas",
+      "todos os serviços municipais, internos e externos"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [
+    "2023-camara-municipal-de-gondomar",
+    "2022-camara-municipal-da-figueira-da-foz"
+  ],
+  "resumo": "O município de Odemira foi alvo de um ciberataque a 25 de março de 2023, sábado, que atingiu os servidores e afetou genericamente todos os serviços municipais, internos e externos. O sítio institucional e as redes sociais mantiveram-se a funcionar. O incidente foi reportado ao Centro Nacional de Cibersegurança e deu origem a queixa-crime na Polícia Judiciária. Doze dias depois a atividade continuava condicionada, com o presidente da câmara a descrever o caso como um ataque muito violento que atingiu todo o sistema digital do município.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "O tipo de ataque não foi divulgado. É o terceiro município no registo e o segundo de 2023, o que confirma a administração local como alvo recorrente.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque à Câmara Municipal de Odemira"
+}

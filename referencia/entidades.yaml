@@ -206,6 +206,24 @@
   url: https://www.sojadeportugal.pt
   chaves: [soja de portugal, savinor, avicasal]
 
+- id: camara-municipal-de-odemira
+  nome: Município de Odemira
+  nome_curto: Câmara Municipal de Odemira
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Beja
+  url: https://www.cm-odemira.pt
+  chaves: [camara municipal de odemira, municipio de odemira, camara de odemira]
+
+- id: camara-municipal-de-gondomar
+  nome: Município de Gondomar
+  nome_curto: Câmara Municipal de Gondomar
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Porto
+  url: https://www.cm-gondomar.pt
+  chaves: [camara municipal de gondomar, municipio de gondomar, camara de gondomar]
+
 - id: camara-municipal-da-figueira-da-foz
   nome: Município da Figueira da Foz
   nome_curto: Câmara Municipal da Figueira da Foz

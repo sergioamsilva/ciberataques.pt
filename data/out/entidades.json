@@ -75,6 +75,24 @@
     "tipo": "entidade_publica",
     "url": "https://www.cm-figfoz.pt"
   },
+  "camara-municipal-de-gondomar": {
+    "chaves": [
+      "camara municipal de gondomar",
+      "municipio de gondomar",
+      "camara de gondomar"
+    ],
+    "distrito": "Porto",
+    "id": "camara-municipal-de-gondomar",
+    "incidentes": [
+      "2023-camara-municipal-de-gondomar"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município de Gondomar",
+    "nome_curto": "Câmara Municipal de Gondomar",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-gondomar.pt"
+  },
   "camara-municipal-de-loures": {
     "chaves": [
       "camara municipal de loures",
@@ -92,6 +110,24 @@
     "setor": "autarquias",
     "tipo": "entidade_publica",
     "url": "https://www.cm-loures.pt"
+  },
+  "camara-municipal-de-odemira": {
+    "chaves": [
+      "camara municipal de odemira",
+      "municipio de odemira",
+      "camara de odemira"
+    ],
+    "distrito": "Beja",
+    "id": "camara-municipal-de-odemira",
+    "incidentes": [
+      "2023-camara-municipal-de-odemira"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município de Odemira",
+    "nome_curto": "Câmara Municipal de Odemira",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-odemira.pt"
   },
   "centro-cientifico-e-cultural-de-macau": {
     "chaves": [

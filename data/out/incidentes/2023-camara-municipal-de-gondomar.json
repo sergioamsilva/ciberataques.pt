@@ -1,0 +1,144 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "Rhysida",
+    "nota": "O grupo Rhysida listou o município no seu site de extorsão a 6 de outubro de 2023 e colocou os dados em leilão. As autoridades indicaram que o ataque teve origem num servidor russo, o que localiza infraestrutura e não autoria."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2023-09-27",
+      "fonte": 1,
+      "texto": "De madrugada, o alerta soa às 05h38. O ataque encripta os dados e atinge cerca de 900 computadores em rede.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2023-09-27",
+      "fonte": 1,
+      "texto": "São notificadas a Polícia Judiciária, o Centro Nacional de Cibersegurança e a Comissão Nacional de Proteção de Dados.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2023-10-06",
+      "fonte": 2,
+      "texto": "O grupo Rhysida lista o município no seu site de extorsão.",
+      "tipo": "reivindicacao"
+    },
+    {
+      "data": "2023-10-09",
+      "fonte": 0,
+      "texto": "Os dados roubados são colocados em leilão na dark web. Entre a documentação divulgada há cartões de cidadão, passaportes e informação sobre investimentos do município. As autoridades aconselham o município a não ceder à extorsão.",
+      "tipo": "publicacao_dados"
+    },
+    {
+      "data": "2023-11-01",
+      "fonte": 1,
+      "texto": "O presidente da câmara revela que o Centro Nacional de Cibersegurança caracterizou o caso como o maior ataque a uma instituição pública em Portugal, e que a recuperação já custou cerca de 1,5 milhões de euros, com substituição de discos e reinstalação de sistemas.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["identificacao"],
+    "nota": "Foram divulgados documentos oficiais do município, incluindo cartões de cidadão e passaportes, o que constitui exposição de documentos de identificação de cidadãos. O número de titulares afetados não foi divulgado publicamente.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2023-09-27",
+    "divulgacao": "2023-09-27",
+    "inicio": "2023-09-27",
+    "precisao": "dia"
+  },
+  "disputas": [
+    {
+      "afirmacao": "O resgate exigido rondou os 750 mil euros.",
+      "contestado_por": null,
+      "fonte_afirmacao": 1,
+      "fonte_contestacao": null,
+      "nota": "O valor difere entre fontes, sendo referido também como cerca de 700 mil euros. Registamos 750 mil por ser o valor da cobertura mais detalhada, e assinalamos a divergência em vez de a esconder. O município não pagou, por conselho das autoridades.",
+      "segundo": "Rhysida"
+    }
+  ],
+  "entidades_afetadas": ["camara-municipal-de-gondomar"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "administracao-local",
+    "documentos-de-identificacao",
+    "custo-documentado",
+    "maior-ataque-a-instituicao-publica"
+  ],
+  "fontes": [
+    {
+      "data": "2023-10-09",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático à Câmara de Gondomar: dados roubados estão em leilão na dark web",
+      "url": "https://www.publico.pt/2023/10/09/local/noticia/ataque-informatico-camara-gondomar-dados-roubados-estao-leilao-dark-web-2066112",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "contem_declaracao_de_autoridade": true,
+      "data": "2023-11-01",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Jornal de Notícias",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque em Gondomar foi o \"maior a uma instituição pública em Portugal\"",
+      "url": "https://www.jn.pt/pais/artigo/ciberataque-em-gondomar-foi-o-maior-a-uma-instituicao-publica-em-portugal/17821009",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-10-06",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "Câmara Municipal de Gondomar listada no site de extorsão do grupo Rhysida",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2023-camara-municipal-de-gondomar",
+  "impacto": {
+    "custo_declarado_eur": 1500000,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": false,
+    "resgate_pedido_eur": 750000,
+    "resgate_pedido_nota": "Cerca de 750 mil euros, não pagos. As autoridades aconselharam o município a não ceder à extorsão, e os dados foram depois colocados em leilão.",
+    "servicos_afetados": [
+      "cerca de 900 computadores em rede",
+      "serviços online do município",
+      "sistemas de informação municipais"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": true,
+    "pj": true
+  },
+  "relacionados": [
+    "2022-camara-municipal-de-loures",
+    "2022-camara-municipal-da-figueira-da-foz"
+  ],
+  "resumo": "Na madrugada de 27 de setembro de 2023, o município de Gondomar foi alvo de um ataque de ransomware que encriptou dados e atingiu cerca de 900 computadores em rede. O grupo Rhysida reivindicou o ataque e exigiu um resgate na ordem dos 750 mil euros, que o município não pagou por conselho das autoridades. A 9 de outubro os dados foram colocados em leilão na dark web, com divulgação de documentos oficiais que incluíam cartões de cidadão e passaportes. O Centro Nacional de Cibersegurança caracterizou o caso como o maior ataque a uma instituição pública em Portugal. A recuperação exigiu a substituição de discos e a reinstalação dos sistemas, e custou cerca de 1,5 milhões de euros, além das perdas acumuladas com a paralisação.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "É o incidente com maior custo documentado de todo o registo e um dos poucos em que há um valor de recuperação declarado pela própria entidade, o que o torna particularmente útil para quem estude o impacto económico. A caracterização como o maior ataque a uma instituição pública em Portugal é do CNCS, citada pelo presidente da câmara, e não uma avaliação nossa. Excertos por preencher.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "titulo": "Ciberataque à Câmara Municipal de Gondomar"
+}

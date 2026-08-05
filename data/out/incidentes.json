@@ -207,6 +207,25 @@
   },
   {
     "ano": 2023,
+    "ator": "Rhysida",
+    "data": "2023-09-27",
+    "entidades_afetadas": [
+      "camara-municipal-de-gondomar"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2023-camara-municipal-de-gondomar",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "ransomware",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal de Gondomar"
+  },
+  {
+    "ano": 2023,
     "ator": null,
     "data": "2023-08-06",
     "entidades_afetadas": [
@@ -241,6 +260,25 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque a organismos do Ministério da Economia"
+  },
+  {
+    "ano": 2023,
+    "ator": null,
+    "data": "2023-03-25",
+    "entidades_afetadas": [
+      "camara-municipal-de-odemira"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2023-camara-municipal-de-odemira",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal de Odemira"
   },
   {
     "ano": 2023,
