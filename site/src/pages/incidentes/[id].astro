@@ -5,6 +5,7 @@ import Confianca from "../../components/Confianca.astro";
 import Cronologia from "../../components/Cronologia.astro";
 import Cobertura from "../../components/Cobertura.astro";
 import Disputas from "../../components/Disputas.astro";
+import Explicador from "../../components/Explicador.astro";
 import {
   incidentes,
   incidente as lerIncidente,
@@ -32,7 +33,13 @@ const todasEntidades = entidades();
 const explicadores = await getCollection("tipos");
 const explicadoresDoIncidente = inc.tipos_ataque
   .map((t) => explicadores.find((e) => e.data.tipo === t))
-  .filter(Boolean);
+  .filter(Boolean) as NonNullable<(typeof explicadores)[number]>[];
+
+/* Quantos incidentes há de cada tipo, para o bloco de referência os poder situar. */
+const contagensPorTipo = incidentes().reduce<Record<string, number>>((acc, r) => {
+  for (const t of r.tipos_ataque) acc[t] = (acc[t] ?? 0) + 1;
+  return acc;
+}, {});
 
 const principais = inc.entidades_afetadas.map((e) => todasEntidades[e]).filter(Boolean);
 const cascata = (inc.entidades_afetadas_em_cascata ?? [])
@@ -283,33 +290,11 @@ const alternativos = [
         </section>
 
         {explicadoresDoIncidente.length > 0 && (
-          <section aria-labelledby="h-explicador">
-            <h2 id="h-explicador" class="regua pt-4 text-2xl">
-              Como funciona este tipo de ataque
-            </h2>
-            <p class="mt-2 max-w-2xl text-sm text-[var(--color-suave)]">
-              Texto explicativo, distinto do registo: acima, cada facto tem por fonte
-              quem o apurou; aqui a fonte é literatura académica revista por pares.
-            </p>
-            <ul class="mt-4 space-y-3">
-              {explicadoresDoIncidente.map((e) => (
-                <li class="border-l-2 border-[var(--color-borda)] pl-4">
-                  <a class="ligacao text-base font-medium" href={`/tipos/${e!.data.tipo}/`}>
-                    {e!.data.titulo}
-                  </a>
-                  <p class="mt-1 max-w-2xl text-sm text-[var(--color-suave)]">
-                    {e!.data.resumo}
-                  </p>
-                  <p class="mono-etiqueta mt-1">
-                    {e!.data.referencias.length}{" "}
-                    {e!.data.referencias.length === 1
-                      ? "referência académica"
-                      : "referências académicas"}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </section>
+          <Explicador
+            explicadores={explicadoresDoIncidente}
+            contagens={contagensPorTipo}
+            setor={inc.setor}
+          />
         )}
       </div>
 
@@ -321,13 +306,10 @@ const alternativos = [
               <div class="py-2.5">
                 <dt class="mono-etiqueta">{linha.rotulo}</dt>
                 <dd class="mt-0.5 text-sm">
+                  {/* Tudo numa linha: quebras de linha no JSX viram espaço
+                      renderizado, e produziam "Ransomware , Indisponibilidade". */}
                   {linha.ligacoes
-                    ? linha.ligacoes.map((l, i) => (
-                        <>
-                          {i > 0 && ", "}
-                          <a class="ligacao" href={l.href}>{l.texto}</a>
-                        </>
-                      ))
+                    ? linha.ligacoes.map((l, i) => (<>{i > 0 ? ", " : ""}<a href={l.href}>{l.texto}</a></>))
                     : linha.valor}
                 </dd>
               </div>

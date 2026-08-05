@@ -1,0 +1,172 @@
+---
+/*
+ * A ponte entre o registo e a literatura.
+ *
+ * A primeira versão deste bloco mostrava o título do explicador, o resumo e a
+ * contagem de referências. Era pobre, e pela pior razão: uma contagem não prova
+ * nada e não ensina nada. "7 referências académicas" pede que se acredite; o que
+ * dá credibilidade é ver as referências, quem as escreveu, onde saíram, e o que
+ * cada uma efetivamente estabelece.
+ *
+ * Por isso este bloco mostra as fontes com a citação completa e a nota do curador
+ * sobre o que cada trabalho demonstra. Quem lê a ficha do Hospital Garcia de Orta
+ * fica a saber, ali mesmo, que existe medição publicada do efeito de um ataque
+ * destes nas urgências vizinhas — sem ter de seguir uma ligação para descobrir se
+ * vale a pena segui-la.
+ */
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  explicadores: CollectionEntry<"tipos">[];
+  contagens: Record<string, number>;
+  /* Setor do incidente: usado para escolher que referências mostrar primeiro. */
+  setor: string;
+}
+const { explicadores, contagens, setor } = Astro.props;
+
+/*
+ * Quantas referências mostrar por explicador. Três é o que cabe sem transformar a
+ * ficha de um incidente num artigo de revisão; o resto fica no explicador.
+ */
+const MOSTRAR = 3;
+
+/*
+ * Termos que tornam uma referência particularmente pertinente para o setor do
+ * incidente que se está a ler. Um estudo sobre o efeito de ransomware em urgências
+ * hospitalares é a referência mais útil possível na ficha do Hospital Garcia de
+ * Orta, e uma das menos úteis na ficha de uma cadeia de perfumarias — mas está no
+ * mesmo explicador, porque o tipo de ataque é o mesmo.
+ */
+const TERMOS_POR_SETOR: Record<string, string[]> = {
+  saude: ["hospital", "urgência", "urgências", "saúde", "doente", "doentes", "clínic"],
+  energia_agua: ["infraestrutura", "infraestruturas", "crítica", "críticas", "continuidade"],
+  transportes: ["infraestrutura", "infraestruturas", "crítica", "críticas", "continuidade"],
+  tecnologia: ["repositório", "repositórios", "pacote", "pacotes", "instalação"],
+};
+
+function pertinencia(ref: { nota?: string; titulo: string; doi?: string }): number {
+  const termos = TERMOS_POR_SETOR[setor] ?? [];
+  const texto = `${ref.titulo} ${ref.nota ?? ""}`.toLowerCase();
+  let pontos = ref.doi ? 1 : 0;
+  if (termos.some((t) => texto.includes(t))) pontos += 4;
+  return pontos;
+}
+
+/*
+ * Um incidente tem mais do que um tipo com frequência, e o mesmo trabalho pode
+ * sustentar dois explicadores — o estudo da JAMA sobre urgências vizinhas está em
+ * `ransomware` e em `indisponibilidade`, com razão. Numa ficha que tenha os dois
+ * tipos apareceria duas vezes na mesma página, o que faz a bibliografia parecer
+ * maior do que é. Mostramos cada trabalho uma só vez.
+ */
+const jaMostradas = new Set<string>();
+
+const blocos = explicadores.map((e) => {
+  const ordenadas = [...e.data.referencias]
+    .map((r, i) => ({ r, i, p: pertinencia(r) }))
+    /* Ordem estável: a pertinência decide, e em empate manda a ordem editorial. */
+    .sort((a, b) => b.p - a.p || a.i - b.i)
+    .map((x) => x.r);
+
+  const mostradas = [];
+  for (const r of ordenadas) {
+    if (mostradas.length >= MOSTRAR) break;
+    const chave = r.doi ?? r.url ?? r.titulo;
+    if (jaMostradas.has(chave)) continue;
+    jaMostradas.add(chave);
+    mostradas.push(r);
+  }
+
+  return {
+    entrada: e,
+    mostradas,
+    restantes: Math.max(0, e.data.referencias.length - mostradas.length),
+    incidentes: contagens[e.data.tipo] ?? 0,
+  };
+});
+---
+
+<section aria-labelledby="h-explicador">
+  <div class="regua flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 pt-4">
+    <h2 id="h-explicador" class="text-2xl">Como funciona este tipo de ataque</h2>
+    <p class="mono-etiqueta">material de referência</p>
+  </div>
+  <p class="mt-2 max-w-2xl text-sm text-[var(--color-suave)]">
+    Texto de referência, distinto do registo. Acima, cada facto tem por fonte quem o
+    apurou; aqui a fonte é literatura revista por pares e documentação oficial.
+  </p>
+
+  <div class="mt-6 space-y-8">
+    {blocos.map(({ entrada, mostradas, restantes, incidentes }) => (
+      <article class="grupo-explicador border-l-2 border-[var(--color-borda)] pl-5 transition-colors hover:border-[var(--color-acento)]">
+        <header class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+          <h3 class="text-lg">
+            <a href={`/tipos/${entrada.data.tipo}/`} class="no-underline hover:underline">
+              {entrada.data.titulo}
+            </a>
+          </h3>
+          {incidentes > 1 && (
+            <a
+              href={`/tipos/${entrada.data.tipo}/`}
+              class="mono-etiqueta no-underline hover:underline"
+            >
+              {incidentes} incidentes deste tipo
+            </a>
+          )}
+        </header>
+
+        <p class="mt-1.5 max-w-2xl text-sm text-[var(--color-corpo)]">
+          {entrada.data.resumo}
+        </p>
+
+        <p class="mono-etiqueta mt-6">O que a investigação estabelece</p>
+        <ol class="mt-2 divide-y divide-[var(--color-borda)] border-y border-[var(--color-borda)]">
+          {mostradas.map((r) => (
+            <li class="py-3.5">
+              <p class="text-sm leading-snug">
+                {r.doi ? (
+                  <a href={`https://doi.org/${r.doi}`} rel="noopener">{r.titulo}</a>
+                ) : r.url ? (
+                  <a href={r.url} rel="noopener">{r.titulo}</a>
+                ) : (
+                  <span>{r.titulo}</span>
+                )}
+              </p>
+              <p class="mt-1 font-mono text-xs text-[var(--color-suave)]">
+                {r.autores} · {r.ano} · {r.publicacao}
+                {r.doi && <> · doi:{r.doi}</>}
+              </p>
+              {r.nota && (
+                <p class="mt-2 max-w-2xl text-sm text-[var(--color-corpo)]">{r.nota}</p>
+              )}
+            </li>
+          ))}
+        </ol>
+
+        <p class="mt-3 text-sm">
+          <a href={`/tipos/${entrada.data.tipo}/`}>
+            Ler o explicador completo
+            {restantes === 1 && " e a outra referência"}
+            {restantes > 1 && ` e as outras ${restantes} referências`}
+          </a>
+        </p>
+      </article>
+    ))}
+  </div>
+</section>
+
+<style>
+  /*
+   * O filete lateral cresce do cinzento para o carmim ao passar o rato. É o mesmo
+   * gesto que o resto do site usa para assinalar o que é interativo, e aqui serve
+   * para separar visualmente o bloco de referência do registo que está acima.
+   */
+  .grupo-explicador {
+    transition: border-color 180ms ease;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .grupo-explicador {
+      transition: none;
+    }
+  }
+</style>
