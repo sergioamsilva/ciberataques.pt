@@ -1,0 +1,104 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2025-03-30",
+      "fonte": 0,
+      "texto": "Os sistemas informáticos do Jornal de Notícias e os sistemas de emissão da TSF são atingidos por um ataque que afeta vários serviços do grupo.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2025-03-30",
+      "fonte": 1,
+      "texto": "Ficam indisponíveis os sítios noticiosos, as edições eletrónicas dos jornais e os sistemas de emissão de rádio. São afetados o Jornal de Notícias, O Jogo, a TSF e ainda as revistas Evasões, Notícias Magazine e Volta ao Mundo, além dos títulos Delas e N-TV.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2025-03-30",
+      "fonte": 1,
+      "texto": "O incidente é reportado às autoridades competentes. Os serviços do Jornal de Notícias, de O Jogo e da TSF viriam a ser repostos, ainda que com acesso lento.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados. O efeito relatado foi de indisponibilidade.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2025-03-30",
+    "divulgacao": "2025-03-30",
+    "inicio": "2025-03-30",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["global-media"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["comunicacao-social", "emissao-de-radio"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2025-03-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Sites do JN, O Jogo e TSF alvo de ataque informático",
+      "url": "https://www.publico.pt/2025/03/30/sociedade/noticia/sites-jn-jogo-tsf-alvo-ataque-informatico-2127865",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2025-03-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático afeta sites do JN e TSF",
+      "url": "https://observador.pt/2025/03/30/ataque-informatico-afeta-sites-do-jornal-de-noticias-e-tsf/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2025-global-media",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "sítios noticiosos do grupo",
+      "edições eletrónicas dos jornais",
+      "sistemas de emissão de rádio da TSF"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": ["2022-impresa", "2022-lusa"],
+  "resumo": "A 30 de março de 2025, os grupos Notícias Ilimitadas e Global Media foram alvo de um ataque informático que atingiu os sistemas do Jornal de Notícias e os sistemas de emissão da TSF. Ficaram indisponíveis sítios noticiosos, edições eletrónicas dos jornais e sistemas de emissão de rádio, afetando o Jornal de Notícias, O Jogo, a TSF, as revistas Evasões, Notícias Magazine e Volta ao Mundo e ainda os títulos Delas e N-TV. O incidente foi reportado às autoridades competentes e os serviços viriam a ser repostos, ainda que com acesso lento.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "É o único incidente de 2025 no registo, ano com cobertura nominal muito fraca. O tipo de ataque não foi divulgado. O grupo já tinha sido alvo de um ciberataque a alguns sítios em fevereiro de 2023, ainda por curar.",
+    "versao": 1
+  },
+  "setor": "media",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque aos grupos Global Media e Notícias Ilimitadas"
+}

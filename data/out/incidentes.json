@@ -38,6 +38,24 @@
   },
   {
     "ano": 2026,
+    "ator": "Qilin",
+    "data": "2026-07-13",
+    "entidades_afetadas": [
+      "centro-cientifico-e-cultural-de-macau"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2026-centro-cientifico-e-cultural-de-macau",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "educacao_investigacao",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Centro Científico e Cultural de Macau listado em site de extorsão"
+  },
+  {
+    "ano": 2026,
     "ator": "thegentlemen",
     "data": "2026-07-06",
     "entidades_afetadas": [
@@ -54,6 +72,24 @@
       "exfiltracao_dados"
     ],
     "titulo": "Ciberataque à Metro Mondego"
+  },
+  {
+    "ano": 2026,
+    "ator": "thegentlemen",
+    "data": "2026-06-04",
+    "entidades_afetadas": [
+      "soja-de-portugal"
+    ],
+    "estado_confirmacao": "alegado_pelo_atacante",
+    "id": "2026-soja-de-portugal",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "industria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Soja de Portugal listada em site de extorsão"
   },
   {
     "ano": 2026,
@@ -95,6 +131,25 @@
     "titulo": "Fuga de dados da rede de cacifos Locky dos CTT"
   },
   {
+    "ano": 2025,
+    "ator": null,
+    "data": "2025-03-30",
+    "entidades_afetadas": [
+      "global-media"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2025-global-media",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "media",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque aos grupos Global Media e Notícias Ilimitadas"
+  },
+  {
     "ano": 2024,
     "ator": null,
     "data": "2024-11-14",
@@ -133,6 +188,24 @@
     "titulo": "Ciberataque à Agência para a Modernização Administrativa"
   },
   {
+    "ano": 2024,
+    "ator": null,
+    "data": "2024-08-01",
+    "entidades_afetadas": [
+      "autoridade-tributaria"
+    ],
+    "estado_confirmacao": "confirmado_por_regulador",
+    "id": "2024-portal-das-financas",
+    "n_fontes": 5,
+    "precisao_data": "mes",
+    "setor": "administracao_publica",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "exposicao_credenciais"
+    ],
+    "titulo": "Exposição de credenciais de utilizadores do Portal das Finanças"
+  },
+  {
     "ano": 2023,
     "ator": null,
     "data": "2023-08-06",
@@ -150,6 +223,62 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque ao Serviço de Saúde da Madeira"
+  },
+  {
+    "ano": 2023,
+    "ator": null,
+    "data": "2023-04-06",
+    "entidades_afetadas": [
+      "ministerio-da-economia"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2023-ministerio-da-economia",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "administracao_publica",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque a organismos do Ministério da Economia"
+  },
+  {
+    "ano": 2023,
+    "ator": null,
+    "data": "2023-02-13",
+    "entidades_afetadas": [
+      "visabeira"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2023-visabeira",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "industria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque ao Grupo Visabeira"
+  },
+  {
+    "ano": 2022,
+    "ator": "LockBit",
+    "data": "2022-12-25",
+    "entidades_afetadas": [
+      "porto-de-lisboa"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-porto-de-lisboa",
+    "n_fontes": 6,
+    "precisao_data": "dia",
+    "setor": "transportes",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "ransomware",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ciberataque à Administração do Porto de Lisboa"
   },
   {
     "ano": 2022,
@@ -173,6 +302,25 @@
   {
     "ano": 2022,
     "ator": null,
+    "data": "2022-11-05",
+    "entidades_afetadas": [
+      "camara-municipal-da-figueira-da-foz"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-camara-municipal-da-figueira-da-foz",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal da Figueira da Foz"
+  },
+  {
+    "ano": 2022,
+    "ator": null,
     "data": "2022-10-18",
     "entidades_afetadas": [
       "universidade-da-beira-interior"
@@ -187,6 +335,25 @@
       "ransomware"
     ],
     "titulo": "Ciberataque à Universidade da Beira Interior"
+  },
+  {
+    "ano": 2022,
+    "ator": null,
+    "data": "2022-10-03",
+    "entidades_afetadas": [
+      "millennium-bcp"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-millennium-bcp",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "banca_seguros",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ddos",
+      "indisponibilidade"
+    ],
+    "titulo": "Ataque de negação de serviço ao Millennium BCP"
   },
   {
     "ano": 2022,
@@ -206,6 +373,26 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque à Câmara Municipal de Loures"
+  },
+  {
+    "ano": 2022,
+    "ator": null,
+    "data": "2022-09-15",
+    "entidades_afetadas": [
+      "sporting-cp",
+      "fc-porto"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-sporting-fc-porto",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "desporto",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ddos",
+      "indisponibilidade"
+    ],
+    "titulo": "Ataques de negação de serviço ao Sporting e ao FC Porto"
   },
   {
     "ano": 2022,
@@ -306,6 +493,25 @@
   {
     "ano": 2022,
     "ator": null,
+    "data": "2022-02-18",
+    "entidades_afetadas": [
+      "ministerio-dos-negocios-estrangeiros"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-ministerio-dos-negocios-estrangeiros",
+    "n_fontes": 3,
+    "precisao_data": "semana",
+    "setor": "administracao_publica",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque ao Ministério dos Negócios Estrangeiros"
+  },
+  {
+    "ano": 2022,
+    "ator": null,
     "data": "2022-02-10",
     "entidades_afetadas": [
       "germano-de-sousa"
@@ -398,5 +604,25 @@
       "exfiltracao_dados"
     ],
     "titulo": "Ciberataque à EDP"
+  },
+  {
+    "ano": 2017,
+    "ator": null,
+    "data": "2017-01-01",
+    "entidades_afetadas": [
+      "sl-benfica"
+    ],
+    "estado_confirmacao": "confirmado_por_regulador",
+    "id": "2017-sl-benfica",
+    "n_fontes": 4,
+    "precisao_data": "ano",
+    "setor": "desporto",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "exfiltracao_dados",
+      "phishing_bec"
+    ],
+    "titulo": "Acesso não autorizado aos sistemas do Sport Lisboa e Benfica"
   }
 ]

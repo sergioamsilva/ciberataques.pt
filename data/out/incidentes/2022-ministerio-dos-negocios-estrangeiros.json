@@ -1,0 +1,114 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública. A dimensão e a origem do ataque estavam em investigação à data da divulgação."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-02-18",
+      "fonte": 0,
+      "texto": "Diplomatas e serviços do Palácio das Necessidades ficam sem acesso ao correio eletrónico. A rede mne.pt, usada por toda a estrutura do ministério, é bloqueada após a deteção da intrusão.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-02-23",
+      "fonte": 1,
+      "texto": "O caso torna-se público. O alerta partiu do Serviço de Informações de Segurança e a Polícia Judiciária investiga.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-02-23",
+      "fonte": 0,
+      "texto": "O ministro de Estado e dos Negócios Estrangeiros garante publicamente que a informação não está comprometida, e refere um investimento em curso para reforçar as redes informáticas do ministério.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "O ministro garantiu que a informação não estava comprometida. A dimensão do acesso estava em investigação, e não é conhecido apuramento público posterior.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-02-18",
+    "divulgacao": "2022-02-23",
+    "inicio": "2022-02-18",
+    "precisao": "semana"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["ministerio-dos-negocios-estrangeiros"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["seguranca-nacional", "administracao-central", "correio-eletronico"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-02-23",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "MNE alvo de ciberataque: Santos Silva garante que informação \"não está comprometida\"",
+      "url": "https://www.publico.pt/2022/02/23/politica/noticia/ministerio-negocios-estrangeiros-alvo-ciberataque-santos-silva-informacao-nao-comprometida-1996594",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-02-23",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ministério dos Negócios Estrangeiros alvo de ciberataque",
+      "url": "https://eco.sapo.pt/2022/02/23/ministerio-dos-negocios-estrangeiros-alvo-de-ciberataque/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-02-23",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ministério dos Negócios Estrangeiros alvo de ciberataque. Santos Silva garante que informação confidencial não foi comprometida",
+      "url": "https://observador.pt/2022/02/23/ministerio-dos-negocios-estrangeiros-alvo-de-ciberataque-informacao-confidencial-pode-ter-sido-comprometida/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-ministerio-dos-negocios-estrangeiros",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "correio eletrónico do ministério",
+      "rede mne.pt"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": ["2022-emgfa"],
+  "resumo": "Em fevereiro de 2022, o Ministério dos Negócios Estrangeiros foi alvo de uma intrusão nos seus sistemas. Diplomatas e serviços do Palácio das Necessidades ficaram sem acesso ao correio eletrónico, e a rede mne.pt, usada por toda a estrutura do ministério, foi bloqueada assim que a intrusão foi detetada. O alerta partiu do Serviço de Informações de Segurança e a Polícia Judiciária abriu investigação. O ministro de Estado e dos Negócios Estrangeiros garantiu publicamente que a informação não estava comprometida.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "A data de início da intrusão não é conhecida: 18 de fevereiro é quando o correio eletrónico deixou de estar acessível, e a precisão fica como semana. Note-se a proximidade temporal com o caso do EMGFA, em que Portugal também só soube por alerta de serviços de informações.",
+    "versao": 1
+  },
+  "setor": "administracao_publica",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque ao Ministério dos Negócios Estrangeiros"
+}

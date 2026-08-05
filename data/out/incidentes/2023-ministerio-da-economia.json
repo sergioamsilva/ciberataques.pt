@@ -1,0 +1,108 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2023-04-06",
+      "fonte": 0,
+      "texto": "Sítios de organismos sob tutela do Ministério da Economia ficam afetados por um ataque informático. O sítio da Direção-Geral das Atividades Económicas fica em baixo.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2023-04-06",
+      "fonte": 1,
+      "texto": "O Governo indica que as medidas preventivas em vigor ajudaram a conter os danos, que cerca de 85% do impacto está reposto, e garante não ter havido comprometimento de informação.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "Fonte oficial garantiu não ter havido comprometimento de informação. Não é conhecido apuramento posterior que contrarie essa declaração.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2023-04-06",
+    "divulgacao": "2023-04-06",
+    "inicio": "2023-04-06",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["ministerio-da-economia"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["administracao-central"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-04-06",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ministério da Economia restabeleceu 85% do impacto do ataque informático",
+      "url": "https://www.publico.pt/2023/04/06/sociedade/noticia/ministerio-economia-alvo-ataque-informatico-2045244",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-04-06",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ministério da Economia com 85% do impacto restabelecido após ataque informático",
+      "url": "https://observador.pt/2023/04/06/ministerio-da-economia-alvo-de-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-04-06",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Sites de organismos do Ministério da Economia alvo de ataque informático",
+      "url": "https://eco.sapo.pt/2023/04/06/sites-de-organismos-do-ministerio-da-economia-alvo-de-ataque-informatico/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2023-ministerio-da-economia",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "sítios de organismos sob tutela do ministério",
+      "sítio da Direção-Geral das Atividades Económicas"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A 6 de abril de 2023, sítios de organismos sob tutela do Ministério da Economia foram afetados por um ataque informático, ficando em baixo o sítio da Direção-Geral das Atividades Económicas. O Governo indicou que as medidas preventivas em vigor ajudaram a conter os danos, que cerca de 85% do impacto estava reposto no próprio dia, e garantiu não ter havido comprometimento de informação.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "O tipo de ataque não foi divulgado. Registado como indisponibilidade, que é o único efeito confirmado publicamente.",
+    "versao": 1
+  },
+  "setor": "administracao_publica",
+  "tipos_ataque": ["indisponibilidade"],
+  "titulo": "Ciberataque a organismos do Ministério da Economia"
+}

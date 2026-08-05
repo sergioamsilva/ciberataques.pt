@@ -37,6 +37,44 @@
     "tipo": "entidade_publica",
     "url": "https://www.ama.gov.pt"
   },
+  "autoridade-tributaria": {
+    "chaves": [
+      "autoridade tributaria",
+      "autoridade tributaria e aduaneira",
+      "at",
+      "portal das financas",
+      "financas"
+    ],
+    "distrito": "Lisboa",
+    "id": "autoridade-tributaria",
+    "incidentes": [
+      "2024-portal-das-financas"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Autoridade Tributária e Aduaneira",
+    "nome_curto": "Autoridade Tributária",
+    "setor": "administracao_publica",
+    "tipo": "entidade_publica",
+    "url": "https://www.portaldasfinancas.gov.pt"
+  },
+  "camara-municipal-da-figueira-da-foz": {
+    "chaves": [
+      "camara municipal da figueira da foz",
+      "municipio da figueira da foz",
+      "camara da figueira da foz"
+    ],
+    "distrito": "Coimbra",
+    "id": "camara-municipal-da-figueira-da-foz",
+    "incidentes": [
+      "2022-camara-municipal-da-figueira-da-foz"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município da Figueira da Foz",
+    "nome_curto": "Câmara Municipal da Figueira da Foz",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-figfoz.pt"
+  },
   "camara-municipal-de-loures": {
     "chaves": [
       "camara municipal de loures",
@@ -54,6 +92,23 @@
     "setor": "autarquias",
     "tipo": "entidade_publica",
     "url": "https://www.cm-loures.pt"
+  },
+  "centro-cientifico-e-cultural-de-macau": {
+    "chaves": [
+      "centro cientifico e cultural de macau",
+      "cccm"
+    ],
+    "distrito": "Lisboa",
+    "id": "centro-cientifico-e-cultural-de-macau",
+    "incidentes": [
+      "2026-centro-cientifico-e-cultural-de-macau"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Centro Científico e Cultural de Macau, I.P.",
+    "nome_curto": "Centro Científico e Cultural de Macau",
+    "setor": "educacao_investigacao",
+    "tipo": "entidade_publica",
+    "url": "https://www.cccm.gov.pt"
   },
   "ctt": {
     "chaves": [
@@ -125,6 +180,24 @@
     "tipo": "entidade_publica",
     "url": "https://www.emgfa.pt"
   },
+  "fc-porto": {
+    "chaves": [
+      "fc porto",
+      "futebol clube do porto",
+      "porto"
+    ],
+    "distrito": "Porto",
+    "id": "fc-porto",
+    "incidentes": [
+      "2022-sporting-fc-porto"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Futebol Clube do Porto",
+    "nome_curto": "FC Porto",
+    "setor": "desporto",
+    "tipo": "associacao",
+    "url": "https://www.fcporto.pt"
+  },
   "germano-de-sousa": {
     "chaves": [
       "germano de sousa",
@@ -142,6 +215,31 @@
     "setor": "saude",
     "tipo": "empresa",
     "url": "https://www.germanodesousa.com"
+  },
+  "global-media": {
+    "chaves": [
+      "global media",
+      "global media group",
+      "noticias ilimitadas",
+      "jornal de noticias",
+      "jn",
+      "o jogo",
+      "tsf",
+      "noticias magazine",
+      "evasoes",
+      "volta ao mundo"
+    ],
+    "distrito": "Porto",
+    "id": "global-media",
+    "incidentes": [
+      "2025-global-media"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Global Media Group / Notícias Ilimitadas",
+    "nome_curto": "Global Media",
+    "setor": "media",
+    "tipo": "empresa",
+    "url": "https://www.globalmediagroup.pt"
   },
   "hospital-garcia-de-orta": {
     "chaves": [
@@ -253,6 +351,76 @@
     "tipo": "empresa_publica",
     "url": "https://www.metromondego.pt"
   },
+  "millennium-bcp": {
+    "chaves": [
+      "millennium bcp",
+      "bcp",
+      "banco comercial portugues",
+      "millennium"
+    ],
+    "distrito": "Porto",
+    "id": "millennium-bcp",
+    "incidentes": [
+      "2022-millennium-bcp"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Banco Comercial Português, S.A.",
+    "nome_curto": "Millennium BCP",
+    "setor": "banca_seguros",
+    "tipo": "empresa",
+    "url": "https://www.millenniumbcp.pt"
+  },
+  "ministerio-da-economia": {
+    "chaves": [
+      "ministerio da economia",
+      "dgae",
+      "direcao geral das atividades economicas"
+    ],
+    "distrito": "Lisboa",
+    "id": "ministerio-da-economia",
+    "incidentes": [
+      "2023-ministerio-da-economia"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Ministério da Economia",
+    "nome_curto": "Ministério da Economia",
+    "setor": "administracao_publica",
+    "tipo": "entidade_publica"
+  },
+  "ministerio-dos-negocios-estrangeiros": {
+    "chaves": [
+      "ministerio dos negocios estrangeiros",
+      "mne"
+    ],
+    "distrito": "Lisboa",
+    "id": "ministerio-dos-negocios-estrangeiros",
+    "incidentes": [
+      "2022-ministerio-dos-negocios-estrangeiros"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Ministério dos Negócios Estrangeiros",
+    "nome_curto": "MNE",
+    "setor": "administracao_publica",
+    "tipo": "entidade_publica"
+  },
+  "porto-de-lisboa": {
+    "chaves": [
+      "porto de lisboa",
+      "administracao do porto de lisboa",
+      "apl"
+    ],
+    "distrito": "Lisboa",
+    "id": "porto-de-lisboa",
+    "incidentes": [
+      "2022-porto-de-lisboa"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Administração do Porto de Lisboa, S.A.",
+    "nome_curto": "Porto de Lisboa",
+    "setor": "transportes",
+    "tipo": "empresa_publica",
+    "url": "https://www.portodelisboa.pt"
+  },
   "seguranca-social": {
     "chaves": [
       "seguranca social",
@@ -309,6 +477,24 @@
     "tipo": "empresa",
     "url": "https://www.sibs.com"
   },
+  "sl-benfica": {
+    "chaves": [
+      "benfica",
+      "sport lisboa e benfica",
+      "sl benfica"
+    ],
+    "distrito": "Lisboa",
+    "id": "sl-benfica",
+    "incidentes": [
+      "2017-sl-benfica"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Sport Lisboa e Benfica",
+    "nome_curto": "SL Benfica",
+    "setor": "desporto",
+    "tipo": "associacao",
+    "url": "https://www.slbenfica.pt"
+  },
   "sns": {
     "chaves": [
       "sns",
@@ -327,6 +513,24 @@
     "setor": "saude",
     "tipo": "entidade_publica",
     "url": "https://www.sns.gov.pt"
+  },
+  "soja-de-portugal": {
+    "chaves": [
+      "soja de portugal",
+      "savinor",
+      "avicasal"
+    ],
+    "distrito": "Aveiro",
+    "id": "soja-de-portugal",
+    "incidentes": [
+      "2026-soja-de-portugal"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Soja de Portugal, SGPS, S.A.",
+    "nome_curto": "Soja de Portugal",
+    "setor": "industria",
+    "tipo": "empresa",
+    "url": "https://www.sojadeportugal.pt"
   },
   "sonae-mc": {
     "chaves": [
@@ -348,6 +552,24 @@
     "setor": "retalho",
     "tipo": "empresa",
     "url": "https://mc.sonae.pt"
+  },
+  "sporting-cp": {
+    "chaves": [
+      "sporting",
+      "sporting clube de portugal",
+      "sporting cp"
+    ],
+    "distrito": "Lisboa",
+    "id": "sporting-cp",
+    "incidentes": [
+      "2022-sporting-fc-porto"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Sporting Clube de Portugal",
+    "nome_curto": "Sporting CP",
+    "setor": "desporto",
+    "tipo": "associacao",
+    "url": "https://www.sporting.pt"
   },
   "tap": {
     "chaves": [
@@ -451,6 +673,23 @@
     "setor": "educacao_investigacao",
     "tipo": "empresa",
     "url": "https://www.europeia.pt"
+  },
+  "visabeira": {
+    "chaves": [
+      "visabeira",
+      "grupo visabeira"
+    ],
+    "distrito": "Viseu",
+    "id": "visabeira",
+    "incidentes": [
+      "2023-visabeira"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Grupo Visabeira, SGPS, S.A.",
+    "nome_curto": "Grupo Visabeira",
+    "setor": "industria",
+    "tipo": "empresa",
+    "url": "https://www.visabeira.com"
   },
   "vodafone-portugal": {
     "chaves": [

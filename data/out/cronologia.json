@@ -1,4 +1,7 @@
 {
+  "2017": [
+    "2017-sl-benfica"
+  ],
   "2020": [
     "2020-edp"
   ],
@@ -6,29 +9,42 @@
     "2021-universidade-de-lisboa"
   ],
   "2022": [
+    "2022-porto-de-lisboa",
     "2022-seguranca-social",
+    "2022-camara-municipal-da-figueira-da-foz",
     "2022-universidade-da-beira-interior",
+    "2022-millennium-bcp",
     "2022-camara-municipal-de-loures",
+    "2022-sporting-fc-porto",
     "2022-tap",
     "2022-emgfa",
     "2022-lusa",
     "2022-hospital-garcia-de-orta",
     "2022-sonae-mc",
+    "2022-ministerio-dos-negocios-estrangeiros",
     "2022-germano-de-sousa",
     "2022-vodafone-portugal",
     "2022-impresa"
   ],
   "2023": [
-    "2023-sesaram"
+    "2023-sesaram",
+    "2023-ministerio-da-economia",
+    "2023-visabeira"
   ],
   "2024": [
     "2024-universidade-do-algarve",
-    "2024-ama"
+    "2024-ama",
+    "2024-portal-das-financas"
+  ],
+  "2025": [
+    "2025-global-media"
   ],
   "2026": [
     "2026-aguas-de-portugal",
     "2026-universidade-de-aveiro",
+    "2026-centro-cientifico-e-cultural-de-macau",
     "2026-metro-mondego",
+    "2026-soja-de-portugal",
     "2026-canvas-instituicoes-portuguesas",
     "2026-ctt"
   ]

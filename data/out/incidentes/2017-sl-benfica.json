@@ -1,0 +1,125 @@
+{
+  "ator": {
+    "atribuicao_por": "autoridade",
+    "confianca": "media",
+    "grupo": null,
+    "nota": "A autoria é matéria do processo judicial conhecido por Football Leaks, cujo julgamento relativo a estes factos decorria em 2025. Não identificamos o arguido: a política editorial não nomeia pessoas singulares enquanto não houver condenação transitada quanto aos factos em causa."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2017-01-01",
+      "fonte": 0,
+      "texto": "Ocorrem acessos não autorizados aos sistemas do clube, em data não estabelecida publicamente, antes das divulgações de informação confidencial no Porto Canal.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2025-02-26",
+      "fonte": 0,
+      "texto": "Em audiência de julgamento, o responsável pela tecnologia do clube à data confirma o acesso não autorizado a diversos ficheiros internos e a existência de várias campanhas de phishing.",
+      "tipo": "judicial"
+    },
+    {
+      "data": "2025-02-26",
+      "fonte": 1,
+      "texto": "É confirmado em tribunal o acesso a contas profissionais de dirigentes do clube, com recolha indiscriminada de informação. O que veio a ser divulgado publicamente foi, esse sim, selecionado.",
+      "tipo": "judicial"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["comunicacoes", "identificacao"],
+    "nota": "Foram acedidas contas de correio eletrónico profissional de dirigentes. Não nomeamos os visados: são pessoas singulares afetadas, e a política editorial não as identifica.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2017-01-01",
+    "divulgacao": "2025-02-26",
+    "inicio": "2017-01-01",
+    "precisao": "ano"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["sl-benfica"],
+  "estado_confirmacao": "confirmado_por_regulador",
+  "etiquetas": ["desporto", "processo-judicial", "football-leaks"],
+  "fontes": [
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2025-02-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Football Leaks: Benfica sofreu ataque informático antes de divulgações no Porto Canal",
+      "url": "https://www.publico.pt/2025/02/26/desporto/noticia/football-leaks-benfica-sofreu-ataque-informatico-divulgacoes-porto-canal-2124001",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2025-02-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Football Leaks: Benfica sofreu ataque informático antes de divulgações no Porto Canal",
+      "url": "https://observador.pt/2025/02/26/football-leaks-benfica-sofreu-ataque-informatico-antes-de-divulgacoes-no-porto-canal/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2025-02-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Renascença",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Football Leaks. Benfica sofreu ataque informático antes de divulgações no Porto Canal",
+      "url": "https://rr.pt/bola-branca/noticia/benfica/2025/02/26/football-leaks-benfica-sofreu-ataque-informatico-antes-de-divulgacoes-no-porto-canal/415258/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2025-02-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Football Leaks: Benfica sofreu ataque informático antes de divulgações no Porto Canal",
+      "url": "https://eco.sapo.pt/2025/02/26/football-leaks-benfica-sofreu-ataque-informatico-antes-de-divulgacoes-no-porto-canal/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2017-sl-benfica",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "contas de correio eletrónico profissional",
+      "ficheiros internos"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "Em 2017, os sistemas do Sport Lisboa e Benfica foram objeto de acessos não autorizados, antes da divulgação de informação confidencial do clube no Porto Canal. Os factos só viriam a ser confirmados publicamente em fevereiro de 2025, em audiência de julgamento no processo conhecido por Football Leaks, quando o responsável pela tecnologia do clube à data confirmou o acesso a diversos ficheiros internos, a existência de várias campanhas de phishing e o acesso a contas de correio eletrónico profissional de dirigentes. A recolha de informação foi indiscriminada, mas o que veio a ser divulgado publicamente foi selecionado.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "É o incidente mais antigo do registo e o único cuja confirmação vem de audiência judicial, oito anos após os factos. A data exata dos acessos nunca foi estabelecida publicamente, pelo que a precisão é de ano. Não nomeamos o arguido nem os dirigentes cujas contas foram acedidas, em aplicação da política editorial.",
+    "versao": 1
+  },
+  "setor": "desporto",
+  "tipos_ataque": ["intrusao", "exfiltracao_dados", "phishing_bec"],
+  "titulo": "Acesso não autorizado aos sistemas do Sport Lisboa e Benfica"
+}

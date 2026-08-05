@@ -1,16 +1,18 @@
 {
   "anos": [
+    2017,
     2020,
     2021,
     2022,
     2023,
     2024,
+    2025,
     2026
   ],
   "construido_em": "2026-08-05",
   "esquema": "incidente-1",
   "licenca_dados": "CC BY 4.0",
-  "total_entidades": 26,
-  "total_fontes": 87,
-  "total_incidentes": 21
+  "total_entidades": 39,
+  "total_fontes": 122,
+  "total_incidentes": 33
 }

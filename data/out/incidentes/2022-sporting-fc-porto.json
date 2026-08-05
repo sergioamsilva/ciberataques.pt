@@ -1,0 +1,105 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública. Note-se que em 2022 a Polícia Judiciária deteve um jovem por ataques de negação de serviço a entidades públicas e privadas, mas não é conhecida ligação estabelecida a estes casos concretos."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-09-15",
+      "fonte": 0,
+      "texto": "Os sítios oficiais do Sporting e do FC Porto ficam indisponíveis, na sequência de ataques de negação de serviço.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-09-15",
+      "fonte": 2,
+      "texto": "Fonte do FC Porto descreve o ataque como milhões de pedidos de acesso a entupir o sítio. O Sporting afirma estar a envidar todos os esforços para repor a normalidade.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "Um ataque de negação de serviço visa a disponibilidade e não implica acesso a dados. Nenhum dos clubes reportou comprometimento de informação.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-09-15",
+    "divulgacao": "2022-09-15",
+    "inicio": "2022-09-15",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["sporting-cp", "fc-porto"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["desporto", "campanha-coordenada"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-09-15",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Sporting e FC Porto alvos de ataque informático",
+      "url": "https://eco.sapo.pt/2022/09/15/sporting-e-fc-porto-alvos-de-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-09-15",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataques informáticos atingem Sporting e FC Porto",
+      "url": "https://www.publico.pt/2022/09/15/desporto/noticia/sporting-alvo-ataque-informatico-site-oficial-indisponivel-2020635",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-09-15",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Sites do Sporting e do FC Porto alvo de ataque informático",
+      "url": "https://observador.pt/2022/09/15/site-do-sporting-alvo-de-ataque-informatico/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-sporting-fc-porto",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": ["sporting.pt", "fcporto.pt"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A 15 de setembro de 2022, os sítios oficiais do Sporting e do FC Porto ficaram indisponíveis na sequência de ataques de negação de serviço. Uma fonte do FC Porto descreveu o ataque como milhões de pedidos de acesso a entupir o sítio, e o Sporting afirmou estar a envidar esforços para repor a normalidade. Os ataques visaram a disponibilidade dos sítios e nenhum dos clubes reportou comprometimento de dados.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Registado como um incidente com duas entidades, e não como dois: mesmo dia, mesmo tipo de ataque, e a cobertura trata os casos em conjunto. Separar duplicaria a contagem sem acrescentar informação.",
+    "versao": 1
+  },
+  "setor": "desporto",
+  "tipos_ataque": ["ddos", "indisponibilidade"],
+  "titulo": "Ataques de negação de serviço ao Sporting e ao FC Porto"
+}

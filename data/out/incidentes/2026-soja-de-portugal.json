@@ -1,0 +1,75 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "baixa",
+    "grupo": "thegentlemen",
+    "nota": "A atribuição assenta exclusivamente na reivindicação do próprio grupo. É o mesmo grupo que viria a listar a Metro Mondego em julho de 2026, esse com confirmação da entidade."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-06-04",
+      "fonte": 0,
+      "texto": "O grupo thegentlemen lista a Soja de Portugal no seu site de extorsão.",
+      "tipo": "reivindicacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação verificada sobre dados comprometidos. Circulam volumes atribuídos ao grupo, que não registamos por não terem confirmação independente.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-06-04",
+    "divulgacao": "2026-06-04",
+    "inicio": "2026-06-04",
+    "precisao": "desconhecida"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["soja-de-portugal"],
+  "estado_confirmacao": "alegado_pelo_atacante",
+  "etiquetas": ["sem-confirmacao", "sem-cobertura-mediatica", "agroalimentar"],
+  "fontes": [
+    {
+      "data": "2026-06-04",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "Soja de Portugal listada no site de extorsão do grupo thegentlemen",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-soja-de-portugal",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": []
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": ["2026-metro-mondego"],
+  "resumo": "A 4 de junho de 2026, o grupo de ransomware thegentlemen listou a Soja de Portugal no seu site de extorsão. A empresa não se pronunciou publicamente e não é conhecida cobertura mediática do caso nem confirmação por autoridade. Tudo o que existe é a alegação de quem diz ter atacado.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Nível mais baixo da escala de confiança. Circulam publicamente volumes de dados atribuídos ao grupo, que deliberadamente não registamos: seriam números do atacante sem qualquer contraditório, e a política editorial não os admite na ficha técnica.",
+    "versao": 1
+  },
+  "setor": "industria",
+  "tipos_ataque": ["ransomware"],
+  "titulo": "Soja de Portugal listada em site de extorsão"
+}

@@ -1,0 +1,98 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "O banco atribuiu o ataque a entidades mal intencionadas a partir do exterior, sem as identificar."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-10-03",
+      "fonte": 0,
+      "texto": "A partir das 14h, pedidos intensos e não legítimos dirigidos ao sítio e às aplicações do banco causam dificuldades de acesso.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-10-03",
+      "fonte": 1,
+      "texto": "O banco confirma o ciberataque, atribuindo-o a entidades mal intencionadas a partir do exterior, e afirma que a maioria dos clientes conseguiu aceder sem dificuldade e que não houve acesso a dados de clientes.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "O banco garantiu não ter havido acesso a dados de clientes. Um ataque de negação de serviço visa a disponibilidade e não implica, por si, acesso a informação interna.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-10-03",
+    "divulgacao": "2022-10-03",
+    "inicio": "2022-10-03",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["millennium-bcp"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["banca", "servicos-financeiros"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-10-03",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "BCP diz que foi alvo de ciberataque por \"entidades mal intencionadas\" a partir do exterior",
+      "url": "https://eco.sapo.pt/2022/10/03/site-e-app-do-banco-bcp-com-acesso-limitado/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-10-03",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "BCP alvo de ciberataque: \"intensos e não legítimos pedidos\" ao site e à aplicação de \"entidades mal intencionadas\"",
+      "url": "https://observador.pt/2022/10/03/utilizadores-da-app-e-site-do-bcp-relatam-dificuldades-de-acesso/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-millennium-bcp",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "sítio do banco",
+      "aplicação móvel",
+      "acesso às plataformas online"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A partir das 14h de 3 de outubro de 2022, o sítio e as aplicações do Millennium BCP foram alvo de um ataque de negação de serviço, com pedidos intensos e não legítimos que causaram dificuldades de acesso a clientes. O banco atribuiu o ataque a entidades mal intencionadas a partir do exterior, afirmou que a maioria dos clientes conseguiu aceder sem dificuldade e garantiu não ter havido acesso a dados de clientes. O caso inseriu-se numa vaga de ataques a grandes empresas portuguesas nesse ano.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "A data deste incidente estava por fixar no levantamento inicial e ficou confirmada como 3 de outubro de 2022. Excertos por preencher.",
+    "versao": 1
+  },
+  "setor": "banca_seguros",
+  "tipos_ataque": ["ddos", "indisponibilidade"],
+  "titulo": "Ataque de negação de serviço ao Millennium BCP"
+}

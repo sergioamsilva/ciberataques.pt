@@ -1,0 +1,105 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2023-02-13",
+      "fonte": 0,
+      "texto": "O ataque aos sistemas informáticos é detetado por volta das 7h30.",
+      "tipo": "detecao"
+    },
+    {
+      "data": "2023-02-13",
+      "fonte": 1,
+      "texto": "O grupo interrompe preventivamente todos os serviços potencialmente afetados e ativa os procedimentos internos de gestão de incidentes. As autoridades competentes são informadas.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "O comunicado não esclarece que efeitos concretos o ataque teve, nem se houve comprometimento de dados.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2023-02-13",
+    "divulgacao": "2023-02-13",
+    "inicio": "2023-02-13",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["visabeira"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["multissetorial"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-02-13",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Grupo Visabeira alvo de ciberataque",
+      "url": "https://eco.sapo.pt/2023/02/13/grupo-visabeira-alvo-de-ciberataque/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2023-02-13",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Grupo Visabeira com sede em Viseu alvo de ciberataque",
+      "url": "https://www.publico.pt/2023/02/13/tecnologia/noticia/grupo-visabeira-sede-viseu-alvo-ciberataque-2038782",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-02-13",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Grupo Visabeira com sede em Viseu alvo de ataque ao sistema informático",
+      "url": "https://observador.pt/2023/02/13/grupo-visabeira-com-sede-em-viseu-alvo-de-ataque-ao-sistema-informatico/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2023-visabeira",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": ["serviços interrompidos preventivamente durante o dia"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "O Grupo Visabeira, com sede em Viseu, detetou por volta das 7h30 de 13 de fevereiro de 2023 um ataque aos seus sistemas informáticos. Como medida preventiva, interrompeu durante o dia todos os serviços potencialmente afetados e ativou os procedimentos internos de gestão de incidentes, informando as autoridades competentes. O grupo, que opera em turismo, construção e comunicações, não esclareceu publicamente que efeitos concretos o ataque teve nem se houve comprometimento de dados.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "O tipo de ataque nunca foi divulgado, pelo que consta apenas como intrusão. A comunicação do grupo é vaga quanto a consequências, e o registo reflete essa limitação em vez de a preencher com suposições.",
+    "versao": 1
+  },
+  "setor": "industria",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque ao Grupo Visabeira"
+}

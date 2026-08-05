@@ -1,0 +1,110 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-11-05",
+      "fonte": 0,
+      "texto": "O ataque é iniciado no sábado.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-11-06",
+      "fonte": 0,
+      "texto": "O ataque é executado no domingo e afeta a generalidade dos serviços municipais.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-11-07",
+      "fonte": 1,
+      "texto": "O presidente da câmara torna o caso público e indica que a reposição da normalidade levará alguns dias, por o ataque ter atingido também algumas cópias de segurança. Os serviços não encerram, mas fica impossível aceder a ficheiros.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2022-11-07",
+      "fonte": 1,
+      "texto": "O município comunica o caso às autoridades competentes e apresenta queixa na Polícia Judiciária.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados de munícipes. O efeito relatado foi de indisponibilidade e perda de acesso a ficheiros.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-11-06",
+    "divulgacao": "2022-11-07",
+    "inicio": "2022-11-05",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["camara-municipal-da-figueira-da-foz"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["administracao-local", "copias-de-seguranca-afetadas"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-11-07",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara da Figueira da Foz alvo de ciberataque",
+      "url": "https://eco.sapo.pt/2022/11/07/camara-da-figueira-da-foz-alvo-de-ciberataque/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-11-07",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático atinge Câmara da Figueira da Foz",
+      "url": "https://observador.pt/2022/11/07/ataque-informatico-atinge-camara-da-figueira-da-foz/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-camara-municipal-da-figueira-da-foz",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "generalidade dos serviços municipais",
+      "acesso a ficheiros",
+      "algumas cópias de segurança"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": ["2022-camara-municipal-de-loures"],
+  "resumo": "O município da Figueira da Foz foi alvo de um ciberataque iniciado no sábado 5 de novembro de 2022 e executado no domingo, atingindo a generalidade dos serviços municipais. Os serviços não encerraram, mas ficou impossível aceder a ficheiros, e o ataque atingiu também algumas cópias de segurança, o que prolongou a reposição por vários dias. O município comunicou o caso às autoridades competentes e apresentou queixa na Polícia Judiciária.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "O comprometimento de cópias de segurança é um detalhe operacional raro na cobertura portuguesa e vale a pena reter: é o que distingue uma interrupção de horas de uma de semanas.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "titulo": "Ciberataque à Câmara Municipal da Figueira da Foz"
+}

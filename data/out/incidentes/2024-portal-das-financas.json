@@ -1,0 +1,152 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública. A recolha foi atribuída a atividade criminosa com recurso a infostealers, sem identificação de autores."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2024-08-01",
+      "fonte": 0,
+      "texto": "Credenciais de utilizadores do Portal das Finanças começam a circular publicamente.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2024-10-15",
+      "fonte": 1,
+      "texto": "O Centro Nacional de Cibersegurança confirma que a fuga a circular online não tem relação com o ciberataque à Agência para a Modernização Administrativa, ocorrido cinco dias antes.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2024-10-15",
+      "fonte": 2,
+      "texto": "É esclarecido que os dados expostos não resultam de acesso ilegítimo aos sistemas da Autoridade Tributária, mas de exfiltração em sistemas de terceiros ou do comprometimento dos equipamentos dos próprios utilizadores, por ação de software de recolha de credenciais.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2024-10-16",
+      "fonte": 0,
+      "texto": "A Autoridade Tributária revoga as senhas comprometidas. Os utilizadores visados passam a ver a palavra-passe declarada como expirada no acesso seguinte, sendo obrigados a definir uma nova.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2024-12-20",
+      "fonte": 3,
+      "texto": "Entram em vigor novas regras para as senhas de acesso ao Portal das Finanças.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2025-07-09",
+      "fonte": 4,
+      "texto": "O Portal das Finanças passa a ter autenticação reforçada com código enviado por mensagem escrita.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["credenciais", "fiscais"],
+    "nota": "Circulou uma lista de cerca de 15 mil entradas, das quais pelo menos 9 mil correspondiam a dados reais. As credenciais foram recolhidas nos equipamentos dos próprios utilizadores ou em sistemas de terceiros, e não nos sistemas da Autoridade Tributária.",
+    "titulares_declarados": 9000
+  },
+  "data": {
+    "detecao": "2024-10-15",
+    "divulgacao": "2024-10-15",
+    "inicio": "2024-08-01",
+    "precisao": "mes"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["autoridade-tributaria"],
+  "estado_confirmacao": "confirmado_por_regulador",
+  "etiquetas": ["infostealer", "administracao-central", "nao-e-intrusao"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2024-10-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Com passwords expostas na Internet, Portal das Finanças obriga a mudar as credenciais",
+      "url": "https://www.publico.pt/2024/10/16/economia/noticia/passwords-expostas-internet-portal-financas-obriga-mudar-credenciais-visados-2108107",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2024-10-15",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Dados do Portal das Finanças expostos na internet sem relação com ciberataque à AMA",
+      "url": "https://eco.sapo.pt/2024/10/15/ciberataque-a-ama-sem-relacao-com-suposta-fuga-de-dados-da-autoridade-tributaria/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2024-10-15",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Fuga de dados do Fisco a circular online \"não está relacionada\" com ataque à AMA. Senhas de acesso comprometidas têm de ser renovadas",
+      "url": "https://observador.pt/2024/10/15/centro-nacional-de-ciberseguranca-diz-que-leak-de-dados-a-circular-online-nao-esta-relacionado-com-o-ataque-a-ama/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2024-12-20",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Senhas de acesso para autenticação no Portal das Finanças com novas regras",
+      "url": "https://eco.sapo.pt/2024/12/20/senhas-de-acesso-para-autenticacao-no-portal-das-financas-com-novas-regras/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2025-07-09",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Portal das Finanças passa a ter autenticação reforçada com código por SMS",
+      "url": "https://www.publico.pt/2025/07/09/economia/noticia/portal-financas-passa-autenticacao-reforcada-codigo-sms-2139540",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2024-portal-das-financas",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": 9000,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": ["acesso autenticado ao Portal das Finanças"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": ["2024-ama"],
+  "resumo": "A partir de agosto de 2024, credenciais de utilizadores do Portal das Finanças começaram a circular publicamente, numa lista de cerca de 15 mil entradas das quais pelo menos 9 mil correspondiam a dados reais. Não houve intrusão nos sistemas da Autoridade Tributária: as credenciais foram recolhidas por software malicioso nos equipamentos dos próprios utilizadores ou exfiltradas de sistemas de terceiros. O Centro Nacional de Cibersegurança esclareceu que o caso não tinha relação com o ciberataque à AMA, ocorrido nos mesmos dias. A Autoridade Tributária revogou as senhas comprometidas, e viria a reforçar as regras de palavra-passe e, em julho de 2025, a introduzir autenticação com código por mensagem escrita.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Registado como exposição de credenciais e NÃO como intrusão. A distinção é essencial e está dita no resumo: quem lesse apenas o título concluiria que a Autoridade Tributária foi invadida, o que não aconteceu. É também o caso que justifica a existência do tipo exposicao_credenciais na taxonomia.",
+    "versao": 1
+  },
+  "setor": "administracao_publica",
+  "tipos_ataque": ["exposicao_credenciais"],
+  "titulo": "Exposição de credenciais de utilizadores do Portal das Finanças"
+}

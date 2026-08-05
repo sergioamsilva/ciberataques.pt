@@ -1,0 +1,165 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "LockBit",
+    "nota": "O LockBit reivindicou o ataque a 29 de dezembro, no seu sítio na dark web. Era, à data, o grupo de ransomware mais ativo do mundo."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-12-25",
+      "fonte": 0,
+      "texto": "O Porto de Lisboa é alvo de um ataque informático no dia de Natal.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-12-26",
+      "fonte": 0,
+      "texto": "A administração torna público o ataque e afirma que a atividade operacional não foi comprometida.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2022-12-29",
+      "fonte": 3,
+      "texto": "O LockBit reivindica o ataque, afirmando ter derrubado o sítio e o sistema interno da administração.",
+      "tipo": "reivindicacao"
+    },
+    {
+      "data": "2023-01-06",
+      "fonte": 3,
+      "texto": "Sabe-se que o grupo exige cerca de 1,5 milhões de euros para não publicar os dados, com prazo até 18 de janeiro, e oferece adiar a publicação por 24 horas mediante o pagamento de mil euros.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2023-01-18",
+      "fonte": 5,
+      "texto": "Esgotado o prazo, o grupo alega ter exposto os dados que diz ter roubado.",
+      "tipo": "publicacao_dados"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "O grupo alegou deter informação pessoal de clientes e dados de tripulações. A administração não confirmou o conteúdo alegado, e não há apuramento público independente do que terá sido efetivamente exfiltrado.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-12-25",
+    "divulgacao": "2022-12-26",
+    "inicio": "2022-12-25",
+    "precisao": "dia"
+  },
+  "disputas": [
+    {
+      "afirmacao": "O grupo alegou deter relatórios financeiros, auditorias, orçamentos, contratos, informação de carga, registos de navios, dados de tripulações, informação pessoal de clientes, documentação portuária e correspondência eletrónica.",
+      "contestado_por": "Administração do Porto de Lisboa",
+      "fonte_afirmacao": 3,
+      "fonte_contestacao": 0,
+      "nota": "A administração afirmou que a atividade operacional não foi comprometida, mas não se pronunciou publicamente sobre o conteúdo concreto alegado pelo grupo. Foram publicadas amostras, e a extensão do que foi efetivamente exfiltrado nunca foi apurada publicamente.",
+      "segundo": "LockBit"
+    }
+  ],
+  "entidades_afetadas": ["porto-de-lisboa"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["infraestrutura-critica", "dupla-extorsao", "empresa-publica"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-12-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Porto de Lisboa alvo de ataque informático. Crime não comprometeu operações",
+      "url": "https://www.publico.pt/2022/12/26/sociedade/noticia/porto-lisboa-alvo-ataque-informatico-crime-nao-comprometeu-operacoes-2032713",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-12-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Porto de Lisboa alvo de ataque informático sem compromisso das operações",
+      "url": "https://eco.sapo.pt/2022/12/26/porto-de-lisboa-alvo-de-ataque-informatico-sem-compromisso-das-operacoes/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-12-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Porto de Lisboa alvo de ataque informático sem compromisso das operações",
+      "url": "https://observador.pt/2022/12/26/porto-de-lisboa-alvo-de-ataque-informatico-sem-compromisso-das-operacoes/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-01-06",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Piratas informáticos exigem quase 1,5 milhões ao Porto de Lisboa",
+      "url": "https://www.publico.pt/2023/01/06/sociedade/noticia/piratas-informaticos-exigem-quase-15-milhoes-porto-lisboa-2034015",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-01-06",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hackers que atacaram Administração do Porto de Lisboa pedem resgate de 1,4 milhões de euros",
+      "url": "https://observador.pt/2023/01/06/hackers-que-atacaram-administracao-do-porto-de-lisboa-pedem-resgate-de-14-milhoes-de-euros/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2023-01-18",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hackers alegam ter exposto dados roubados ao Porto de Lisboa",
+      "url": "https://eco.sapo.pt/2023/01/18/hackers-alegam-ter-exposto-dados-roubados-ao-porto-de-lisboa/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-porto-de-lisboa",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": 1500000,
+    "resgate_pedido_nota": "Cerca de 1,5 milhões de euros, com prazo até 18 de janeiro de 2023. O grupo ofereceu ainda adiar a publicação por 24 horas mediante o pagamento de mil euros. Não há confirmação pública de pagamento.",
+    "servicos_afetados": ["sítio institucional", "sistemas internos"]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "A Administração do Porto de Lisboa foi alvo de um ataque de ransomware no dia de Natal de 2022, tornado público no dia seguinte. A administração afirmou que a atividade operacional não foi comprometida. A 29 de dezembro o grupo LockBit reivindicou o ataque, e viria a exigir cerca de 1,5 milhões de euros para não publicar dados que alegava ter roubado, entre eles relatórios financeiros, contratos, informação de carga, registos de navios e dados pessoais de clientes. Esgotado o prazo de 18 de janeiro, o grupo alegou ter exposto a informação. A extensão do que foi efetivamente exfiltrado nunca foi apurada publicamente.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "O valor do resgate difere ligeiramente entre fontes (1,4 e 1,5 milhões). Registado o valor arredondado citado pela maioria. Excertos por preencher.",
+    "versao": 1
+  },
+  "setor": "transportes",
+  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "titulo": "Ciberataque à Administração do Porto de Lisboa"
+}

@@ -1,0 +1,75 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "baixa",
+    "grupo": "Qilin",
+    "nota": "A atribuição assenta exclusivamente na reivindicação do próprio grupo, publicada no seu site de extorsão. Não há confirmação da entidade nem de autoridade."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-07-13",
+      "fonte": 0,
+      "texto": "O grupo Qilin lista o Centro Científico e Cultural de Macau no seu site de extorsão.",
+      "tipo": "reivindicacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há qualquer informação verificada sobre dados comprometidos. O que existe é a alegação do grupo.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-07-13",
+    "divulgacao": "2026-07-13",
+    "inicio": "2026-07-13",
+    "precisao": "desconhecida"
+  },
+  "disputas": [],
+  "entidades_afetadas": ["centro-cientifico-e-cultural-de-macau"],
+  "estado_confirmacao": "alegado_pelo_atacante",
+  "etiquetas": ["sem-confirmacao", "sem-cobertura-mediatica"],
+  "fontes": [
+    {
+      "data": "2026-07-13",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "Centro Científico e Cultural de Macau listado no site de extorsão do grupo Qilin",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-centro-cientifico-e-cultural-de-macau",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": []
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A 13 de julho de 2026, o grupo de ransomware Qilin listou o Centro Científico e Cultural de Macau no seu site de extorsão. A instituição não se pronunciou publicamente e não é conhecida cobertura mediática do caso, nem confirmação por qualquer autoridade. Tudo o que existe é a alegação de quem diz ter atacado, e é assim que este registo o classifica.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Registado no nível mais baixo da escala de confiança, com uma única fonte, que é o próprio atacante. Não afirmamos volumes, datas de ataque nem dados comprometidos, porque não há nada verificado a afirmar. Rever se a instituição se pronunciar ou se surgir cobertura.",
+    "versao": 1
+  },
+  "setor": "educacao_investigacao",
+  "tipos_ataque": ["ransomware"],
+  "titulo": "Centro Científico e Cultural de Macau listado em site de extorsão"
+}

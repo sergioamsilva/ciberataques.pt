@@ -143,6 +143,15 @@
   url: https://www.germanodesousa.com
   chaves: [germano de sousa, grupo germano de sousa, laboratorios germano de sousa]
 
+- id: global-media
+  nome: Global Media Group / Notícias Ilimitadas
+  nome_curto: Global Media
+  setor: media
+  tipo: empresa
+  distrito: Porto
+  url: https://www.globalmediagroup.pt
+  chaves: [global media, global media group, noticias ilimitadas, jornal de noticias, jn, o jogo, tsf, noticias magazine, evasoes, volta ao mundo]
+
 - id: lusa
   nome: Lusa — Agência de Notícias de Portugal, S.A.
   nome_curto: Agência Lusa
@@ -178,6 +187,58 @@
   distrito: Faro
   url: https://www.ualg.pt
   chaves: [universidade do algarve, ualg]
+
+- id: centro-cientifico-e-cultural-de-macau
+  nome: Centro Científico e Cultural de Macau, I.P.
+  nome_curto: Centro Científico e Cultural de Macau
+  setor: educacao_investigacao
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.cccm.gov.pt
+  chaves: [centro cientifico e cultural de macau, cccm]
+
+- id: soja-de-portugal
+  nome: Soja de Portugal, SGPS, S.A.
+  nome_curto: Soja de Portugal
+  setor: industria
+  tipo: empresa
+  distrito: Aveiro
+  url: https://www.sojadeportugal.pt
+  chaves: [soja de portugal, savinor, avicasal]
+
+- id: camara-municipal-da-figueira-da-foz
+  nome: Município da Figueira da Foz
+  nome_curto: Câmara Municipal da Figueira da Foz
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Coimbra
+  url: https://www.cm-figfoz.pt
+  chaves: [camara municipal da figueira da foz, municipio da figueira da foz, camara da figueira da foz]
+
+- id: porto-de-lisboa
+  nome: Administração do Porto de Lisboa, S.A.
+  nome_curto: Porto de Lisboa
+  setor: transportes
+  tipo: empresa_publica
+  distrito: Lisboa
+  url: https://www.portodelisboa.pt
+  chaves: [porto de lisboa, administracao do porto de lisboa, apl]
+
+- id: ministerio-da-economia
+  nome: Ministério da Economia
+  nome_curto: Ministério da Economia
+  setor: administracao_publica
+  tipo: entidade_publica
+  distrito: Lisboa
+  chaves: [ministerio da economia, dgae, direcao geral das atividades economicas]
+
+- id: ministerio-dos-negocios-estrangeiros
+  nome: Ministério dos Negócios Estrangeiros
+  nome_curto: MNE
+  setor: administracao_publica
+  tipo: entidade_publica
+  distrito: Lisboa
+  chaves: [ministerio dos negocios estrangeiros, mne]
 
 - id: metro-mondego
   nome: Metro Mondego, S.A.
