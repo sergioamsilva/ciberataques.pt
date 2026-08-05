@@ -817,6 +817,25 @@
   },
   {
     "ano": 2022,
+    "ator": "LockBit 2.0",
+    "data": "2022-04-20",
+    "entidades_afetadas": [
+      "smtuc"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-smtuc",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "transportes",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "ransomware",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ciberataque aos SMTUC de Coimbra"
+  },
+  {
+    "ano": 2022,
     "ator": "RansomEXX",
     "data": "2022-03-30",
     "entidades_afetadas": [
@@ -872,6 +891,25 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque ao Grupo Germano de Sousa"
+  },
+  {
+    "ano": 2022,
+    "ator": "LockBit 2.0",
+    "data": "2022-02-09",
+    "entidades_afetadas": [
+      "trust-in-news"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-trust-in-news",
+    "n_fontes": 4,
+    "precisao_data": "dia",
+    "setor": "media",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "ransomware",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ciberataque à Trust in News (Visão, Caras e Exame)"
   },
   {
     "ano": 2022,

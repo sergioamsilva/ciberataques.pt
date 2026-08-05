@@ -136,18 +136,40 @@ def carregar_entidades() -> list[dict]:
     return ler_yaml(ENTIDADES)
 
 
+def formas_de_dominio(texto: str) -> list[str]:
+    """Devolve as formas pelas quais um domínio pode designar uma entidade.
+
+    `https://www.smtuc.pt/algo` produz `smtuc.pt` e `smtuc`. Devolve lista vazia
+    para o que não parece um domínio.
+
+    Existe porque os sites de extorsão identificam as vítimas por domínio, não por
+    nome: o ransomware.live listou `trustinnews.pt` e `smtuc.pt`, e nenhum dos dois
+    correspondia a uma entidade indexada por nome. Os dois candidatos ficaram na
+    fila e o teste que devia acusá-los passou, porque também ele resolvia por nome.
+    """
+    limpo = re.sub(r"^[a-z]+://", "", texto.strip().lower()).split("/")[0]
+    limpo = re.sub(r"^www\.", "", limpo).strip(".")
+    if not re.fullmatch(r"[a-z0-9-]+(\.[a-z0-9-]+)+", limpo):
+        return []
+    return [limpo, limpo.rsplit(".", 1)[0].rsplit(".", 1)[-1]]
+
+
 def indice_entidades() -> dict[str, str]:
     """Mapa de chave normalizada para id de entidade.
 
-    Inclui o nome, o nome curto e todas as `chaves` declaradas. É o que permite que
-    "MEO" resolva para altice-portugal e "Continente" para sonae-mc.
+    Inclui o nome, o nome curto, todas as `chaves` declaradas e — quando a entidade
+    tem `url` — o domínio com e sem sufixo. É o que permite que "MEO" resolva para
+    altice-portugal, "Continente" para sonae-mc e `smtuc.pt` para smtuc.
     """
     indice: dict[str, str] = {}
     for entidade in carregar_entidades():
         candidatos = [entidade["nome"], entidade.get("nome_curto", "")]
         candidatos += entidade.get("chaves", [])
+        candidatos += formas_de_dominio(entidade.get("url") or "")
         for candidato in candidatos:
             if not candidato:
                 continue
             indice.setdefault(normalizar_entidade(candidato), entidade["id"])
+            for forma in formas_de_dominio(candidato):
+                indice.setdefault(normalizar_entidade(forma), entidade["id"])
     return indice

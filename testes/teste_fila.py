@@ -99,3 +99,30 @@ def teste_candidatos_nao_apodrecem():
         f"{len(velhos)} candidatos estão há mais de {MAX_DIAS_SEM_REVISAO} dias na "
         "fila sem decisão:\n  " + "\n  ".join(velhos[:10])
     )
+
+
+def teste_dominios_resolvem_para_entidades():
+    """Um domínio tem de resolver para a entidade, como o nome resolve.
+
+    Os sites de extorsão identificam vítimas por domínio. Enquanto o índice só
+    resolvia nomes, os candidatos `thenavigatorcompany.com`, `smtuc.pt`,
+    `trustinnews.pt`, `portodelisboa.pt`, `aguasdoporto.pt` e `cm-vimioso.pt`
+    ficaram na fila — quatro deles com o incidente já publicado — e o teste acima
+    passava, porque também ele resolvia por nome. O guarda tinha o mesmo ponto cego
+    daquilo que devia guardar.
+    """
+    from ingestao.comum import formas_de_dominio
+
+    assert formas_de_dominio("https://www.smtuc.pt/horarios") == ["smtuc.pt", "smtuc"]
+    assert formas_de_dominio("SMTUC") == []
+    assert formas_de_dominio("Câmara Municipal de Vimioso") == []
+
+    idx = indice_entidades()
+    for dominio, esperado in [
+        ("smtuc.pt", "smtuc"),
+        ("trustinnews.pt", "trust-in-news"),
+        ("thenavigatorcompany.com", "navigator"),
+    ]:
+        assert idx.get(normalizar_entidade(dominio)) == esperado, (
+            f"{dominio} devia resolver para {esperado}"
+        )

@@ -880,6 +880,24 @@
     "tipo": "associacao",
     "url": "https://www.slbenfica.pt"
   },
+  "smtuc": {
+    "chaves": [
+      "smtuc",
+      "servicos municipalizados de transportes urbanos de coimbra",
+      "transportes urbanos de coimbra"
+    ],
+    "distrito": "Coimbra",
+    "id": "smtuc",
+    "incidentes": [
+      "2022-smtuc"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Serviços Municipalizados de Transportes Urbanos de Coimbra",
+    "nome_curto": "SMTUC",
+    "setor": "transportes",
+    "tipo": "entidade_publica",
+    "url": "https://www.smtuc.pt"
+  },
   "sns": {
     "chaves": [
       "sns",
@@ -976,6 +994,27 @@
     "setor": "transportes",
     "tipo": "empresa_publica",
     "url": "https://www.flytap.com"
+  },
+  "trust-in-news": {
+    "chaves": [
+      "trust in news",
+      "visao",
+      "caras",
+      "exame",
+      "exame informatica",
+      "trustinnews"
+    ],
+    "distrito": "Lisboa",
+    "id": "trust-in-news",
+    "incidentes": [
+      "2022-trust-in-news"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Trust in News, Unipessoal, Lda.",
+    "nome_curto": "Trust in News",
+    "setor": "media",
+    "tipo": "empresa",
+    "url": "https://www.trustinnews.pt"
   },
   "uls-alto-minho": {
     "chaves": [

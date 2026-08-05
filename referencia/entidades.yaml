@@ -215,6 +215,24 @@
   url: https://www.sojadeportugal.pt
   chaves: [soja de portugal, savinor, avicasal]
 
+- id: trust-in-news
+  nome: Trust in News, Unipessoal, Lda.
+  nome_curto: Trust in News
+  setor: media
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.trustinnews.pt
+  chaves: [trust in news, visao, caras, exame, exame informatica, trustinnews]
+
+- id: smtuc
+  nome: Serviços Municipalizados de Transportes Urbanos de Coimbra
+  nome_curto: SMTUC
+  setor: transportes
+  tipo: entidade_publica
+  distrito: Coimbra
+  url: https://www.smtuc.pt
+  chaves: [smtuc, servicos municipalizados de transportes urbanos de coimbra, transportes urbanos de coimbra]
+
 - id: camara-municipal-de-vimioso
   nome: Município de Vimioso
   nome_curto: Câmara Municipal de Vimioso

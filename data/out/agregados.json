@@ -1,19 +1,19 @@
 {
   "distribuicao_fontes_por_incidente": {
     "1": 6,
-    "2": 12,
+    "2": 13,
     "3": 14,
-    "4": 5,
+    "4": 6,
     "5": 6,
     "6": 2,
     "7": 7
   },
-  "incidentes_com_disputas": 10,
+  "incidentes_com_disputas": 12,
   "por_ano": {
     "2017": 2,
     "2020": 1,
     "2021": 1,
-    "2022": 16,
+    "2022": 18,
     "2023": 10,
     "2024": 6,
     "2025": 4,
@@ -23,6 +23,7 @@
     "HIVE": 1,
     "Lapsus$ Group": 1,
     "LockBit": 3,
+    "LockBit 2.0": 2,
     "Qilin": 3,
     "Ragnar Locker": 2,
     "RansomEXX": 1,
@@ -35,7 +36,7 @@
   },
   "por_estado_confirmacao": {
     "alegado_pelo_atacante": 2,
-    "confirmado_pela_entidade": 43,
+    "confirmado_pela_entidade": 45,
     "confirmado_por_regulador": 4,
     "reportado_por_media": 3
   },
@@ -48,22 +49,22 @@
     "energia_agua": 4,
     "industria": 3,
     "justica_defesa": 2,
-    "media": 3,
+    "media": 4,
     "retalho": 1,
     "saude": 5,
     "tecnologia": 1,
     "telecomunicacoes": 1,
-    "transportes": 4
+    "transportes": 5
   },
   "por_tipo_ataque": {
     "cadeia_fornecimento": 3,
     "ddos": 3,
-    "exfiltracao_dados": 16,
+    "exfiltracao_dados": 18,
     "exposicao_credenciais": 2,
     "indisponibilidade": 29,
     "intrusao": 27,
     "phishing_bec": 1,
-    "ransomware": 22
+    "ransomware": 24
   },
-  "total": 52
+  "total": 54
 }

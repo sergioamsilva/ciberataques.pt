@@ -1,0 +1,121 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "LockBit 2.0",
+    "nota": "A empresa não identificou o atacante. A atribuição assenta na listagem no site de extorsão do grupo LockBit 2.0 e na publicação subsequente dos dados."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-04-20",
+      "fonte": 0,
+      "texto": "Os serviços municipalizados são alvo de um ciberataque com exfiltração de cerca de vinte gigabytes de informação.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-04-20",
+      "fonte": 0,
+      "texto": "Os SMTUC descrevem o caso como tentativa de ciberataque e afirmam que a empresa de apoio à segurança conseguiu contê-lo de imediato. São notificados o Centro Nacional de Cibersegurança, a Comissão Nacional de Proteção de Dados e a Polícia Judiciária.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2022-05-01",
+      "fonte": 1,
+      "texto": "O grupo lista os serviços municipalizados no seu site de extorsão e dá oito dias para pagamento do resgate.",
+      "tipo": "reivindicacao"
+    },
+    {
+      "data": "2022-05-10",
+      "fonte": 0,
+      "texto": "Esgotado o prazo, o grupo divulga uma parte dos dados: vencimentos, faltas injustificadas, atestados médicos, cortes salariais e horas extraordinárias de trabalhadores. Os serviços de transporte não foram comprometidos.",
+      "tipo": "publicacao_dados"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["identificacao", "laborais", "saude"],
+    "nota": "Foram divulgados vencimentos, faltas injustificadas, atestados médicos, cortes salariais e horas extraordinárias de trabalhadores. Os atestados médicos são dados de saúde, categoria especial ao abrigo do artigo 9.º do RGPD. O número de titulares não foi divulgado.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-04-20",
+    "divulgacao": "2022-04-20",
+    "inicio": "2022-04-20",
+    "precisao": "dia"
+  },
+  "disputas": [
+    {
+      "afirmacao": "O grupo afirmou deter cerca de vinte gigabytes de informação e publicou uma parte, incluindo dados laborais e de saúde de trabalhadores.",
+      "contestado_por": "SMTUC",
+      "fonte_afirmacao": 0,
+      "fonte_contestacao": 0,
+      "nota": "Os serviços municipalizados descreveram o caso como tentativa de ciberataque contida de imediato. A publicação efetiva de vencimentos, faltas e atestados médicos vinte dias depois contradiz essa caracterização, ainda que a contenção possa ter impedido danos maiores nos sistemas.",
+      "segundo": "LockBit 2.0"
+    }
+  ],
+  "entidades_afetadas": ["smtuc"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "transporte-publico",
+    "dados-de-trabalhadores",
+    "dados-de-saude",
+    "empresa-municipal"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-05-10",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "CNN Portugal",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hackers divulgam vencimentos, faltas e outros dados da rede de transportes de Coimbra depois de terem exigido resgate",
+      "url": "https://cnnportugal.iol.pt/ciberataque/cibercrime/hackers-divulgam-vencimentos-faltas-e-outros-dados-da-rede-de-transportes-de-coimbra-depois-de-ter-exigido-resgate/20220510/627a67c30cf2ea4f0a49868a",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-05-01",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "SMTUC listada no site de extorsão do grupo LockBit 2.0",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-smtuc",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": false,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "O grupo deu oito dias para pagamento. Esgotado o prazo, publicou parte dos dados, o que indica que não houve pagamento.",
+    "servicos_afetados": [
+      "sistemas de informação dos serviços municipalizados"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": true,
+    "pj": true
+  },
+  "relacionados": ["2023-aguas-e-energia-do-porto"],
+  "resumo": "Em abril de 2022, os Serviços Municipalizados de Transportes Urbanos de Coimbra foram alvo de um ciberataque com exfiltração de cerca de vinte gigabytes de informação. Os SMTUC descreveram o caso como tentativa de ciberataque contida de imediato e notificaram o Centro Nacional de Cibersegurança, a CNPD e a Polícia Judiciária. O grupo atacante deu oito dias para pagamento de resgate e, esgotado o prazo, publicou a 10 de maio parte dos dados, incluindo vencimentos, faltas injustificadas, atestados médicos, cortes salariais e horas extraordinárias de trabalhadores. Os serviços de transporte não foram comprometidos.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Caso raro no registo por os dados publicados serem quase todos laborais e de saúde de trabalhadores, e não de clientes: atestados médicos são categoria especial ao abrigo do artigo 9.º do RGPD. Há inconsistência na fonte quanto ao dia da semana da ocorrência, que não afeta a data. Estava na fila de candidatos desde a primeira recolha e ficou por curar.",
+    "versao": 1
+  },
+  "setor": "transportes",
+  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "titulo": "Ciberataque aos SMTUC de Coimbra"
+}

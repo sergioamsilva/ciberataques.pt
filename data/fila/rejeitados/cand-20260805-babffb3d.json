@@ -1,19 +1,19 @@
 {
   "confianca_llm": 1.0,
-  "estado": "novo",
+  "estado": "promovido",
   "extraccao": {
     "afirmacoes": [
       {
-        "atribuida_a": "lockbit2",
-        "texto": "trustinnews.pt foi listada no site de extorsão."
+        "atribuida_a": "safepay",
+        "texto": "thenavigatorcompany.com foi listada no site de extorsão."
       }
     ],
-    "ator_mencionado": "lockbit2",
+    "ator_mencionado": "safepay",
     "confianca": 1.0,
     "dados_pessoais_mencionados": null,
-    "data_ocorrencia": "2022-02-14",
+    "data_ocorrencia": "2026-03-17",
     "e_incidente_pt": null,
-    "entidade_mencionada": "trustinnews.pt",
+    "entidade_mencionada": "thenavigatorcompany.com",
     "excerto_chave": null,
     "precisao_data": "dia",
     "razao": "listagem em site de extorsão; exige confirmação independente",
@@ -22,19 +22,20 @@
       "ransomware"
     ]
   },
-  "id": "cand-20260805-59e561f5",
-  "motivo_rejeicao": null,
+  "id": "cand-20260805-babffb3d",
+  "motivo_rejeicao": "já registado como incidente da entidade navigator",
   "origem": {
-    "chave": "59e561f594575f8f2b9c7aa5263c260fa002ce9ccf440f2c4471325d78b18d4d",
-    "data": "2022-02-14",
+    "chave": "babffb3d34ee9ad89baa5f471e5f6d74a709f5d38092c751c212cd3bfe889ddc",
+    "data": "2026-03-17",
     "fonte": "ransomware_live",
     "publicador": "ransomware.live",
-    "sha256": "df7ca7892ca1f5e5bc7aad9a375581fbc0e31ec2e75924f682c9cbcfaf9534e2",
+    "sha256": "9deb88c75f1df1ba6ecc6cb5838d70301926725acc2da894f98708baccbba98c",
     "tipo_fonte": "leak_site",
     "url": "https://www.ransomware.live/map/PT",
     "url_canonica": "https://www.ransomware.live/map/PT"
   },
+  "rejeitado_em": "2026-08-05",
   "sugestao_agrupamento": null,
-  "titulo_origem": "trustinnews.pt listada em site de extorsão (lockbit2)",
+  "titulo_origem": "thenavigatorcompany.com listada em site de extorsão (safepay)",
   "triado_em": "2026-08-05T17:59:50+00:00"
 }

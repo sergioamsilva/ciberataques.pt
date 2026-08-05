@@ -1,0 +1,140 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "alta",
+    "grupo": "LockBit 2.0",
+    "nota": "O grupo confirmou a autoria nos dias seguintes ao ataque, ameaçou publicar os ficheiros obtidos e cumpriu a ameaça na data anunciada."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-02-09",
+      "fonte": 0,
+      "texto": "De madrugada, um ataque informático deixa a redação sem sistemas e sem redes internas, incluindo a rede privada virtual.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-02-09",
+      "fonte": 1,
+      "texto": "A empresa afirma ter ativado de imediato os sistemas de alerta e segurança e assegura que nenhum sistema crítico foi comprometido.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2022-02-14",
+      "fonte": 3,
+      "texto": "O grupo LockBit 2.0 confirma a autoria e ameaça publicar os ficheiros obtidos.",
+      "tipo": "reivindicacao"
+    },
+    {
+      "data": "2022-02-26",
+      "fonte": 2,
+      "texto": "Na data anunciada, o grupo divulga os ficheiros. Entre os dados comprometidos há informação pessoal de trabalhadores, jornalistas, prestadores de serviços e alguns clientes.",
+      "tipo": "publicacao_dados"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": ["identificacao", "contacto", "laborais"],
+    "nota": "Foram divulgados dados pessoais de trabalhadores, jornalistas, prestadores de serviços e alguns clientes. A empresa não quantificou titulares afetados.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-02-09",
+    "divulgacao": "2022-02-09",
+    "inicio": "2022-02-09",
+    "precisao": "dia"
+  },
+  "disputas": [
+    {
+      "afirmacao": "Nenhum sistema crítico foi comprometido, tratando-se de uma tentativa de ciberataque.",
+      "contestado_por": "LockBit 2.0",
+      "fonte_afirmacao": 1,
+      "fonte_contestacao": 2,
+      "nota": "A posição inicial da empresa foi de que o ataque não comprometera sistemas críticos. Dezassete dias depois, o grupo publicou ficheiros com dados pessoais de trabalhadores, jornalistas e prestadores, o que a contradiz na prática. Registamos as duas afirmações e a sequência em que foram feitas.",
+      "segundo": "Trust in News"
+    }
+  ],
+  "entidades_afetadas": ["trust-in-news"],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": ["comunicacao-social", "dupla-extorsao", "dados-de-jornalistas"],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-02-09",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Grupo da revista Visão alvo de tentativa de ciberataque",
+      "url": "https://observador.pt/2022/02/09/grupo-da-revista-visao-alvo-de-tentativa-de-ciberataque/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-02-09",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Meios & Publicidade",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Novo ataque informático no setor dos media: Trust in News assegura que \"nenhum sistema crítico foi comprometido\"",
+      "url": "https://www.meiosepublicidade.pt/2022/02/novo-ataque-informatico-no-setor-dos-media-trust-in-news-assegura-que-nenhum-sistema-critico-foi-comprometido/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-02-26",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "TugaTech",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Trust in News alvo de ataque ransomware: dados pessoais e sensíveis divulgados",
+      "url": "https://tugatech.com.pt/t44211-trust-in-news-alvo-de-ataque-ransomware-dados-pessoais-e-sensiveis-divulgados",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-02-14",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ransomware.live",
+      "sha256": null,
+      "tipo": "leak_site",
+      "titulo": "Trust in News listada no site de extorsão do grupo LockBit 2.0",
+      "url": "https://www.ransomware.live/map/PT",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-trust-in-news",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "Houve ameaça de publicação dos ficheiros, cumprida na data anunciada, o que indicia ausência de pagamento. Não há confirmação pública.",
+    "servicos_afetados": [
+      "sistemas da redação",
+      "redes internas e rede privada virtual"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": ["2022-impresa", "2022-lusa", "2025-global-media"],
+  "resumo": "Na madrugada de 9 de fevereiro de 2022, a Trust in News, detentora da Visão, da Caras e da Exame, foi alvo de um ataque informático que deixou a redação sem sistemas nem redes internas. A empresa assegurou que nenhum sistema crítico tinha sido comprometido. Dias depois, o grupo LockBit 2.0 confirmou a autoria e ameaçou publicar os ficheiros obtidos, tendo cumprido a ameaça a 26 de fevereiro com a divulgação de dados pessoais de trabalhadores, jornalistas, prestadores de serviços e alguns clientes.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-05",
+    "nota": "Terceiro grupo de comunicação social atacado em Portugal em pouco mais de um mês, depois da Impresa em janeiro e antes da Lusa em maio de 2022. Ilustra com clareza a distância entre a comunicação inicial de uma entidade e o que se veio a saber: entre o comunicado que garantia não haver sistemas críticos comprometidos e a publicação dos dados pessoais passaram dezassete dias. Estava na fila de candidatos desde a primeira recolha e ficou por curar.",
+    "versao": 1
+  },
+  "setor": "media",
+  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "titulo": "Ciberataque à Trust in News (Visão, Caras e Exame)"
+}

@@ -1,19 +1,19 @@
 {
   "confianca_llm": 1.0,
-  "estado": "novo",
+  "estado": "promovido",
   "extraccao": {
     "afirmacoes": [
       {
-        "atribuida_a": "lockbit3",
-        "texto": "aguasdoporto.pt foi listada no site de extorsão."
+        "atribuida_a": "lockbit2",
+        "texto": "smtuc.pt foi listada no site de extorsão."
       }
     ],
-    "ator_mencionado": "lockbit3",
+    "ator_mencionado": "lockbit2",
     "confianca": 1.0,
     "dados_pessoais_mencionados": null,
-    "data_ocorrencia": "2023-02-18",
+    "data_ocorrencia": "2022-05-01",
     "e_incidente_pt": null,
-    "entidade_mencionada": "aguasdoporto.pt",
+    "entidade_mencionada": "smtuc.pt",
     "excerto_chave": null,
     "precisao_data": "dia",
     "razao": "listagem em site de extorsão; exige confirmação independente",
@@ -22,19 +22,20 @@
       "ransomware"
     ]
   },
-  "id": "cand-20260805-14169c47",
-  "motivo_rejeicao": null,
+  "id": "cand-20260805-a66c1675",
+  "motivo_rejeicao": "já registado como incidente da entidade smtuc",
   "origem": {
-    "chave": "14169c47f4234b32adf428f4a54e03abd5d803b94abeab185efabbb313b108ab",
-    "data": "2023-02-18",
+    "chave": "a66c1675e07388a9fe6b303efa9c601acea4fb948942af5d2a866b8e1e7313c4",
+    "data": "2022-05-01",
     "fonte": "ransomware_live",
     "publicador": "ransomware.live",
-    "sha256": "bb30586a1d3b0b8aac914f0f1186fb2c0cb07253b3f78ffd7c64b4eb18efa438",
+    "sha256": "68b9ab138065700500298d6130a9f7154984aa58a3a844663aedda3ed34d7ac9",
     "tipo_fonte": "leak_site",
     "url": "https://www.ransomware.live/map/PT",
     "url_canonica": "https://www.ransomware.live/map/PT"
   },
+  "rejeitado_em": "2026-08-05",
   "sugestao_agrupamento": null,
-  "titulo_origem": "aguasdoporto.pt listada em site de extorsão (lockbit3)",
+  "titulo_origem": "smtuc.pt listada em site de extorsão (lockbit2)",
   "triado_em": "2026-08-05T17:59:50+00:00"
 }

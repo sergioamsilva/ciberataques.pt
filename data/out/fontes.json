@@ -1885,6 +1885,31 @@
     "url_arquivo": "http://web.archive.org/web/20230126171645/https://www.publico.pt/2023/01/26/sociedade/noticia/desmantelado-grupo-suspeito-ataques-informaticas-hospitais-camaras-hoteis-2036565"
   },
   {
+    "contem_declaracao_da_entidade": true,
+    "data": "2022-05-10",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2022-smtuc",
+    "indice": 0,
+    "publicador": "CNN Portugal",
+    "tipo": "noticia",
+    "titulo": "Hackers divulgam vencimentos, faltas e outros dados da rede de transportes de Coimbra depois de terem exigido resgate",
+    "url": "https://cnnportugal.iol.pt/ciberataque/cibercrime/hackers-divulgam-vencimentos-faltas-e-outros-dados-da-rede-de-transportes-de-coimbra-depois-de-ter-exigido-resgate/20220510/627a67c30cf2ea4f0a49868a",
+    "url_arquivo": null
+  },
+  {
+    "data": "2022-05-01",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2022-smtuc",
+    "indice": 1,
+    "publicador": "ransomware.live",
+    "tipo": "leak_site",
+    "titulo": "SMTUC listada no site de extorsão do grupo LockBit 2.0",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_arquivo": null
+  },
+  {
     "data": "2022-03-30",
     "estado_ligacao": "viva",
     "excerto": null,
@@ -2070,6 +2095,56 @@
     "titulo": "Ciberataque à Germano de Sousa impede mais de 30 mil testes PCR à Covid-19",
     "url": "https://eco.sapo.pt/2022/02/15/ciberataque-a-germano-de-sousa-impede-mais-de-30-mil-testes-pcr-a-covid-19/",
     "url_arquivo": "http://web.archive.org/web/20220215074618/https://eco.sapo.pt/2022/02/15/ciberataque-a-germano-de-sousa-impede-mais-de-30-mil-testes-pcr-a-covid-19/"
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2022-02-09",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2022-trust-in-news",
+    "indice": 0,
+    "publicador": "Observador",
+    "tipo": "noticia",
+    "titulo": "Grupo da revista Visão alvo de tentativa de ciberataque",
+    "url": "https://observador.pt/2022/02/09/grupo-da-revista-visao-alvo-de-tentativa-de-ciberataque/",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2022-02-09",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2022-trust-in-news",
+    "indice": 1,
+    "publicador": "Meios & Publicidade",
+    "tipo": "noticia",
+    "titulo": "Novo ataque informático no setor dos media: Trust in News assegura que \"nenhum sistema crítico foi comprometido\"",
+    "url": "https://www.meiosepublicidade.pt/2022/02/novo-ataque-informatico-no-setor-dos-media-trust-in-news-assegura-que-nenhum-sistema-critico-foi-comprometido/",
+    "url_arquivo": null
+  },
+  {
+    "data": "2022-02-26",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2022-trust-in-news",
+    "indice": 2,
+    "publicador": "TugaTech",
+    "tipo": "noticia",
+    "titulo": "Trust in News alvo de ataque ransomware: dados pessoais e sensíveis divulgados",
+    "url": "https://tugatech.com.pt/t44211-trust-in-news-alvo-de-ataque-ransomware-dados-pessoais-e-sensiveis-divulgados",
+    "url_arquivo": null
+  },
+  {
+    "data": "2022-02-14",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2022-trust-in-news",
+    "indice": 3,
+    "publicador": "ransomware.live",
+    "tipo": "leak_site",
+    "titulo": "Trust in News listada no site de extorsão do grupo LockBit 2.0",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_arquivo": null
   },
   {
     "data": "2022-02-08",
