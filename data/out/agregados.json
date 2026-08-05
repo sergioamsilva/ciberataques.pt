@@ -4,11 +4,11 @@
     "2": 10,
     "3": 15,
     "4": 2,
-    "5": 4,
+    "5": 5,
     "6": 1,
     "7": 6
   },
-  "incidentes_com_disputas": 8,
+  "incidentes_com_disputas": 9,
   "por_ano": {
     "2017": 1,
     "2020": 1,
@@ -17,7 +17,7 @@
     "2023": 8,
     "2024": 6,
     "2025": 2,
-    "2026": 9
+    "2026": 10
   },
   "por_ator": {
     "HIVE": 1,
@@ -33,7 +33,7 @@
   "por_estado_confirmacao": {
     "alegado_pelo_atacante": 2,
     "confirmado_pela_entidade": 37,
-    "confirmado_por_regulador": 3,
+    "confirmado_por_regulador": 4,
     "reportado_por_media": 2
   },
   "por_setor": {
@@ -47,19 +47,19 @@
     "justica_defesa": 1,
     "media": 3,
     "retalho": 1,
-    "saude": 4,
+    "saude": 5,
     "telecomunicacoes": 1,
     "transportes": 4
   },
   "por_tipo_ataque": {
     "cadeia_fornecimento": 3,
     "ddos": 3,
-    "exfiltracao_dados": 14,
-    "exposicao_credenciais": 1,
+    "exfiltracao_dados": 15,
+    "exposicao_credenciais": 2,
     "indisponibilidade": 23,
-    "intrusao": 24,
+    "intrusao": 25,
     "phishing_bec": 1,
     "ransomware": 16
   },
-  "total": 44
+  "total": 45
 }

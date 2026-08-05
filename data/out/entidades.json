@@ -705,7 +705,9 @@
       "spms"
     ],
     "id": "sns",
-    "incidentes": [],
+    "incidentes": [
+      "2026-sns24-dados-de-utentes"
+    ],
     "incidentes_em_cascata": [
       "2024-ama",
       "2022-germano-de-sousa"
@@ -791,6 +793,24 @@
     "setor": "transportes",
     "tipo": "empresa_publica",
     "url": "https://www.flytap.com"
+  },
+  "uls-alto-minho": {
+    "chaves": [
+      "unidade local de saude do alto minho",
+      "uls do alto minho",
+      "ulsam"
+    ],
+    "distrito": "Viana do Castelo",
+    "id": "uls-alto-minho",
+    "incidentes": [
+      "2026-sns24-dados-de-utentes"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Unidade Local de Saúde do Alto Minho, E.P.E.",
+    "nome_curto": "ULS do Alto Minho",
+    "setor": "saude",
+    "tipo": "entidade_publica",
+    "url": "https://www.ulsam.min-saude.pt"
   },
   "universidade-da-beira-interior": {
     "chaves": [

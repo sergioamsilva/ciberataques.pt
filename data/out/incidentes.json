@@ -112,6 +112,27 @@
   },
   {
     "ano": 2026,
+    "ator": null,
+    "data": "2026-05-21",
+    "entidades_afetadas": [
+      "sns",
+      "uls-alto-minho"
+    ],
+    "estado_confirmacao": "confirmado_por_regulador",
+    "id": "2026-sns24-dados-de-utentes",
+    "n_fontes": 5,
+    "precisao_data": "desconhecida",
+    "setor": "saude",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "exposicao_credenciais",
+      "intrusao",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Acesso indevido a dados de utentes do SNS com credenciais de médico"
+  },
+  {
+    "ano": 2026,
     "ator": "ShinyHunters",
     "data": "2026-05-01",
     "entidades_afetadas": [

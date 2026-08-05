@@ -505,6 +505,15 @@
     Nunca foi atacada diretamente. A rede Multibanco caiu em fevereiro de 2022 por ser
     cliente da Vodafone. Registar sempre como impacto em cascata.
 
+- id: uls-alto-minho
+  nome: Unidade Local de Saúde do Alto Minho, E.P.E.
+  nome_curto: ULS do Alto Minho
+  setor: saude
+  tipo: entidade_publica
+  distrito: Viana do Castelo
+  url: https://www.ulsam.min-saude.pt
+  chaves: [unidade local de saude do alto minho, uls do alto minho, ulsam]
+
 - id: sns
   nome: Serviço Nacional de Saúde
   nome_curto: SNS
