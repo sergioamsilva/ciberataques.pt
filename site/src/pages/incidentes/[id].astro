@@ -1,4 +1,5 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Confianca from "../../components/Confianca.astro";
 import Cronologia from "../../components/Cronologia.astro";
@@ -21,6 +22,17 @@ export function getStaticPaths() {
 const { id } = Astro.params;
 const inc: Incidente = lerIncidente(id!);
 const todasEntidades = entidades();
+
+/*
+ * Os explicadores por tipo de ataque são a camada didática do site, e durante algum
+ * tempo estiveram órfãos: existiam, tinham referências verificadas no CrossRef, e
+ * não havia uma única ligação para eles a partir das fichas de incidente. Quem
+ * chegasse a um ataque não descobria o texto que explica o ataque.
+ */
+const explicadores = await getCollection("tipos");
+const explicadoresDoIncidente = inc.tipos_ataque
+  .map((t) => explicadores.find((e) => e.data.tipo === t))
+  .filter(Boolean);
 
 const principais = inc.entidades_afetadas.map((e) => todasEntidades[e]).filter(Boolean);
 const cascata = (inc.entidades_afetadas_em_cascata ?? [])
@@ -82,6 +94,8 @@ interface LinhaFicha {
   rotulo: string;
   valor: string;
   fonte?: number;
+  /* Quando presente, o valor é renderizado como ligações em vez de texto. */
+  ligacoes?: { texto: string; href: string }[];
 }
 const ficha: LinhaFicha[] = [];
 ficha.push({ rotulo: "Data", valor: formatarData(inc.data.inicio, inc.data.precisao) });
@@ -92,6 +106,10 @@ ficha.push({ rotulo: "Setor", valor: nome("setores", inc.setor) });
 ficha.push({
   rotulo: "Tipo de ataque",
   valor: inc.tipos_ataque.map((t) => nome("tipos_ataque", t)).join(", "),
+  ligacoes: inc.tipos_ataque.map((t) => ({
+    texto: nome("tipos_ataque", t),
+    href: `/tipos/${t}/`,
+  })),
 });
 if (inc.ator?.grupo) {
   ficha.push({
@@ -263,6 +281,36 @@ const alternativos = [
             <Cobertura fontes={inc.fontes} />
           </div>
         </section>
+
+        {explicadoresDoIncidente.length > 0 && (
+          <section aria-labelledby="h-explicador">
+            <h2 id="h-explicador" class="regua pt-4 text-2xl">
+              Como funciona este tipo de ataque
+            </h2>
+            <p class="mt-2 max-w-2xl text-sm text-[var(--color-suave)]">
+              Texto explicativo, distinto do registo: acima, cada facto tem por fonte
+              quem o apurou; aqui a fonte é literatura académica revista por pares.
+            </p>
+            <ul class="mt-4 space-y-3">
+              {explicadoresDoIncidente.map((e) => (
+                <li class="border-l-2 border-[var(--color-borda)] pl-4">
+                  <a class="ligacao text-base font-medium" href={`/tipos/${e!.data.tipo}/`}>
+                    {e!.data.titulo}
+                  </a>
+                  <p class="mt-1 max-w-2xl text-sm text-[var(--color-suave)]">
+                    {e!.data.resumo}
+                  </p>
+                  <p class="mono-etiqueta mt-1">
+                    {e!.data.referencias.length}{" "}
+                    {e!.data.referencias.length === 1
+                      ? "referência académica"
+                      : "referências académicas"}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
       </div>
 
       <aside class="space-y-10 lg:sticky lg:top-24 lg:self-start">
@@ -272,7 +320,16 @@ const alternativos = [
             {ficha.map((linha) => (
               <div class="py-2.5">
                 <dt class="mono-etiqueta">{linha.rotulo}</dt>
-                <dd class="mt-0.5 text-sm">{linha.valor}</dd>
+                <dd class="mt-0.5 text-sm">
+                  {linha.ligacoes
+                    ? linha.ligacoes.map((l, i) => (
+                        <>
+                          {i > 0 && ", "}
+                          <a class="ligacao" href={l.href}>{l.texto}</a>
+                        </>
+                      ))
+                    : linha.valor}
+                </dd>
               </div>
             ))}
           </dl>
