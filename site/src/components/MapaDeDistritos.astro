@@ -1,0 +1,193 @@
+---
+/*
+ * O mapa do herói: onde estão as entidades atingidas.
+ *
+ * Não é ilustração. Cada marca é um distrito, colocado nas coordenadas reais da
+ * respetiva capital, com área proporcional ao número de incidentes registados. A
+ * silhueta do país nasce das próprias marcas — não há costa desenhada, porque uma
+ * costa desenhada à mão sairia errada e um mapa errado é pior do que nenhum.
+ *
+ * E o que o mapa mostra é o argumento central da metodologia, em imagem: mais de
+ * um terço do registo está em Lisboa. Isso não quer dizer que Lisboa seja mais
+ * atacada — quer dizer que a imprensa nacional está em Lisboa. Quem olha para
+ * isto vê o viés antes de o ler explicado.
+ */
+import { entidades, incidentes } from "../lib/dados";
+
+/* Capitais de distrito, em graus decimais. Fonte: coordenadas oficiais. */
+const CAPITAIS: Record<string, [number, number]> = {
+  "Viana do Castelo": [41.69, -8.83],
+  Braga: [41.55, -8.42],
+  Bragança: [41.81, -6.76],
+  "Vila Real": [41.3, -7.74],
+  Porto: [41.15, -8.61],
+  Aveiro: [40.64, -8.65],
+  Viseu: [40.66, -7.91],
+  Guarda: [40.54, -7.27],
+  Coimbra: [40.21, -8.43],
+  "Castelo Branco": [39.82, -7.49],
+  Leiria: [39.74, -8.81],
+  Santarém: [39.24, -8.69],
+  Portalegre: [39.29, -7.43],
+  Lisboa: [38.72, -9.14],
+  Évora: [38.57, -7.91],
+  Setúbal: [38.52, -8.89],
+  Beja: [38.02, -7.86],
+  Faro: [37.02, -7.93],
+};
+
+/* As regiões autónomas ficam em cartela própria: à escala real sairiam do mapa. */
+const ILHAS: Record<string, string> = { Madeira: "Madeira", Açores: "Açores" };
+
+const todas = entidades();
+const contagem: Record<string, number> = {};
+for (const inc of incidentes()) {
+  for (const eid of inc.entidades_afetadas) {
+    const d = todas[eid]?.distrito;
+    if (d) contagem[d] = (contagem[d] ?? 0) + 1;
+  }
+}
+
+const LAT_MAX = 42.1;
+const LAT_MIN = 36.8;
+const LON_MIN = -9.6;
+const LON_MAX = -6.3;
+/* Correção do meridiano à latitude média: sem isto Portugal sai gordo. */
+const K = Math.cos((39.4 * Math.PI) / 180);
+
+const L = 100;
+const A = ((LAT_MAX - LAT_MIN) / ((LON_MAX - LON_MIN) * K)) * L;
+
+function projetar([lat, lon]: [number, number]) {
+  return {
+    x: ((lon - LON_MIN) / (LON_MAX - LON_MIN)) * L,
+    y: ((LAT_MAX - lat) / (LAT_MAX - LAT_MIN)) * A,
+  };
+}
+
+const maximo = Math.max(...Object.values(contagem), 1);
+/* Raio pela raiz: é a área que se lê como quantidade, não o diâmetro. */
+const raio = (n: number) => 1.6 + Math.sqrt(n / maximo) * 5.4;
+
+const marcas = Object.entries(CAPITAIS)
+  .map(([nome, coord]) => ({ nome, n: contagem[nome] ?? 0, ...projetar(coord) }))
+  .sort((a, b) => a.n - b.n);
+
+const ilhas = Object.keys(ILHAS)
+  .map((nome) => ({ nome, n: contagem[nome] ?? 0 }))
+  .filter((i) => i.n > 0);
+
+const total = Object.values(contagem).reduce((a, b) => a + b, 0);
+const emLisboa = contagem["Lisboa"] ?? 0;
+const percentagem = Math.round((emLisboa / total) * 100);
+---
+
+<figure class="revelar mapa">
+  <svg
+    viewBox={`-6 -4 ${L + 30} ${A + 8}`}
+    class="h-auto w-full max-w-[19rem]"
+    role="img"
+    aria-labelledby="t-mapa"
+  >
+    <title id="t-mapa">
+      Distribuição por distrito dos {total} registos deste arquivo. {emLisboa} em Lisboa.
+    </title>
+
+    {marcas.map((m, i) => (
+      <>
+        {m.n > 0 ? (
+          <circle
+            cx={m.x}
+            cy={m.y}
+            r={raio(m.n)}
+            class="marca-distrito"
+            fill="var(--color-tinta)"
+            style={`--atraso: ${i * 45}ms`}
+          />
+        ) : (
+          /* Distrito sem registos: fica presente, e vazio. Apagá-lo daria a
+             entender que não existe, quando o que não existe é cobertura. */
+          <circle cx={m.x} cy={m.y} r="1.1" fill="var(--color-borda-forte)" />
+        )}
+      </>
+    ))}
+
+    {/* Só os três maiores levam rótulo: o resto seria uma sopa de texto. */}
+    {marcas
+      .filter((m) => m.n >= 5)
+      .map((m) => (
+        <text
+          x={m.x + raio(m.n) + 2.5}
+          y={m.y + 1.6}
+          class="rotulo-distrito"
+          fill="var(--color-suave)"
+        >
+          {m.nome} {m.n}
+        </text>
+      ))}
+
+    {/* Filete a separar a cartela das ilhas: sem ele, a Madeira lê-se como um
+        distrito do continente colocado a sudoeste. */}
+    {ilhas.length > 0 && (
+      <line
+        x1="0"
+        y1={A - 14}
+        x2="26"
+        y2={A - 14}
+        stroke="var(--color-borda-forte)"
+        stroke-width="0.5"
+      />
+    )}
+
+    {ilhas.map((ilha, i) => (
+      <>
+        <circle cx={6} cy={A - 6 - i * 9} r={raio(ilha.n)} fill="var(--color-tinta)" />
+        <text
+          x={11}
+          y={A - 4.6 - i * 9}
+          class="rotulo-distrito"
+          fill="var(--color-suave)"
+        >
+          {ilha.nome} {ilha.n}
+        </text>
+      </>
+    ))}
+  </svg>
+
+  <figcaption class="mt-4 max-w-[19rem] text-sm text-[var(--color-suave)]">
+    <span class="text-[var(--color-corpo)]">{percentagem}% do registo está em Lisboa.</span>{" "}
+    Não é onde há mais ataques — é onde está a imprensa que os noticia.{" "}
+    <a href="/metodologia/#vies">O viés que herdamos</a>.
+  </figcaption>
+</figure>
+
+<style>
+  .rotulo-distrito {
+    font-family: var(--font-mono);
+    font-size: 3.1px;
+    letter-spacing: 0.02em;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    :global(html.js) .mapa .marca-distrito {
+      opacity: 0;
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: scale(0.3);
+    }
+    :global(html.js) .mapa.visivel .marca-distrito {
+      animation: pousar 0.55s cubic-bezier(0.22, 1, 0.36, 1) var(--atraso, 0ms) both;
+    }
+  }
+
+  @keyframes pousar {
+    from {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>

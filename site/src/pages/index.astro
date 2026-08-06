@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CartaoIncidente from "../components/CartaoIncidente.astro";
 import Cronograma from "../components/Cronograma.astro";
+import MapaDeDistritos from "../components/MapaDeDistritos.astro";
 import { incidentes, agregados, manifesto, nome, formatarNumero, entidades, documentados, alegacoes } from "../lib/dados";
 
 const lista = incidentes();
@@ -43,7 +44,12 @@ const numeros = [
   descricao="Registo público e documentado de ciberataques a entidades portuguesas. Cada incidente com as suas fontes e o grau de confirmação à vista."
 >
   {/* ------------------------------------------------------------------ Abertura */}
-  <section class="mx-auto max-w-6xl px-5 pt-16 pb-10 sm:pt-24">
+  {/*
+    O herói passa a duas colunas em ecrã largo: o texto à esquerda, o mapa à
+    direita. Em ecrã estreito o mapa vai para baixo do texto, onde não compete com
+    o título.
+  */}
+  <section class="mx-auto grid max-w-6xl gap-10 px-5 pt-16 pb-10 sm:pt-24 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-16">
     <div class="max-w-3xl">
       <p class="mono-etiqueta revelar">
         Registo público · {m.anos[0]}–{m.anos[m.anos.length - 1]}
@@ -65,6 +71,8 @@ const numeros = [
         <a href="/metodologia/" class="mono-etiqueta">Como classificamos</a>
       </p>
     </div>
+
+    <MapaDeDistritos />
   </section>
 
   {/* --------------------------------------------- A assinatura: o cronograma */}

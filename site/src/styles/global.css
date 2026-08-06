@@ -61,6 +61,26 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+
+    /*
+     * Tipografia fluida acima dos 1280px.
+     *
+     * Antes, o texto tinha exatamente o mesmo tamanho num portátil e num monitor de
+     * 27 polegadas: 17px fixos, e os títulos a parar de crescer no ponto de rutura
+     * `sm`, aos 640px. A 2560px o conteúdo ocupava a mesma coluna de sempre e
+     * sobravam 55% de ecrã vazio — a página lia-se como uma ilha pequena ao meio.
+     *
+     * Escala-se a RAIZ e não cada tamanho. Como as larguras máximas do Tailwind são
+     * em rem, o contentor cresce na mesma proporção do texto: a medida em
+     * caracteres por linha mantém-se onde deve estar, e o que muda é o tamanho
+     * físico das letras. Corrigir isto tamanho a tamanho daria dezenas de pontos de
+     * rutura e uma medida diferente em cada um.
+     *
+     * O termo em rem dentro do clamp não é decorativo: é o que preserva a definição
+     * de tamanho de letra do browser de quem lê, que uma expressão só em vw
+     * ignoraria. Abaixo de 1280px nada muda.
+     */
+    font-size: clamp(1rem, 0.765rem + 0.294vw, 1.235rem);
   }
 
   body {
