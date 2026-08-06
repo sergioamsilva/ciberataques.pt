@@ -1,9 +1,46 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { agregados, nome } from "../../lib/dados";
+import {
+  agregados,
+  corDeConfianca,
+  incidentes,
+  nome,
+  type EstadoConfirmacao,
+} from "../../lib/dados";
 
 const ag = agregados();
 const maximo = Math.max(...Object.values(ag.por_setor), 1);
+
+/*
+ * A barra de cada setor deixa de dizer só "quantos" e passa a dizer também
+ * "quanto disto está sustentado".
+ *
+ * É a mesma informação que o cronograma da página inicial dá no eixo do tempo,
+ * agora no eixo do setor — e responde a uma pergunta que a contagem sozinha
+ * escondia: a indústria tem nove registos, mas quase todos são listagens de sites
+ * de extorsão por confirmar, enquanto a administração local tem catorze quase todos
+ * confirmados pelas próprias câmaras. Uma barra só com o total daria a entender que
+ * sabemos o mesmo dos dois, e não sabemos.
+ */
+const ORDEM: EstadoConfirmacao[] = [
+  "confirmado_por_regulador",
+  "confirmado_pela_entidade",
+  "reportado_por_media",
+  "noticiado_por_uma_fonte",
+  "alegado_pelo_atacante",
+  "desmentido",
+];
+
+const porSetor = new Map<string, Map<EstadoConfirmacao, number>>();
+for (const inc of incidentes()) {
+  if (!porSetor.has(inc.setor)) porSetor.set(inc.setor, new Map());
+  const m = porSetor.get(inc.setor)!;
+  m.set(inc.estado_confirmacao, (m.get(inc.estado_confirmacao) ?? 0) + 1);
+}
+function segmentos(setor: string) {
+  const m = porSetor.get(setor) ?? new Map();
+  return ORDEM.filter((e) => (m.get(e) ?? 0) > 0).map((e) => ({ estado: e, n: m.get(e)! }));
+}
 ---
 
 <BaseLayout
@@ -40,11 +77,23 @@ const maximo = Math.max(...Object.values(ag.por_setor), 1);
             </span>
             <span class="min-w-0 flex-1">
               <span class="block text-lg group-hover:underline">{nome("setores", setor)}</span>
+              {/* Um segmento por grau de confirmação, com 2px de superfície entre
+                  eles: é a superfície que separa, nunca uma linha. */}
               <span
-                class="barra-setor mt-2 block h-1.5 bg-[var(--color-tinta)] transition-colors group-hover:bg-[var(--color-acento)]"
+                class="barra-setor mt-2 flex h-2 gap-0.5"
                 style={`width: ${Math.max(3, (n / maximo) * 100)}%`}
-                aria-hidden="true"
-              ></span>
+                role="img"
+                aria-label={segmentos(setor)
+                  .map((s) => `${s.n} ${nome("estados_confirmacao", s.estado)}`)
+                  .join("; ")}
+              >
+                {segmentos(setor).map((seg) => (
+                  <span
+                    class="block"
+                    style={`width: ${(seg.n / n) * 100}%; background: ${corDeConfianca(seg.estado)}`}
+                  ></span>
+                ))}
+              </span>
             </span>
           </a>
         </li>

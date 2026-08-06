@@ -1,0 +1,96 @@
+---
+/*
+ * Quantas fontes sustentam cada incidente.
+ *
+ * A metodologia prometia publicar isto — "a contagem de fontes por incidente, para
+ * que o viés seja mensurável a partir dos próprios dados" — e nunca o mostrou. É o
+ * gráfico mais desconfortável do site e por isso o que mais falta fazia: quase
+ * metade do registo assenta numa única fonte.
+ *
+ * A barra da coluna de uma fonte vai a acento. Não é destaque decorativo: é a
+ * coluna que o leitor tem de ver antes de confiar em qualquer outra coisa aqui.
+ */
+import { incidentes } from "../lib/dados";
+
+const contagem = new Map<number, number>();
+for (const inc of incidentes()) {
+  contagem.set(inc.n_fontes, (contagem.get(inc.n_fontes) ?? 0) + 1);
+}
+const maxFontes = Math.max(...contagem.keys());
+const colunas = Array.from({ length: maxFontes }, (_, i) => ({
+  fontes: i + 1,
+  n: contagem.get(i + 1) ?? 0,
+}));
+const maximo = Math.max(...colunas.map((c) => c.n), 1);
+const total = incidentes().length;
+const comUma = contagem.get(1) ?? 0;
+const percentagem = Math.round((comUma / total) * 100);
+const ALTURA = 150;
+---
+
+<figure class="revelar grafico-fontes mt-6">
+  <figcaption class="sr-only">
+    Distribuição dos {total} incidentes registados pelo número de fontes que os
+    sustentam. {comUma} assentam numa única fonte.
+  </figcaption>
+
+  <ol class="flex items-end gap-2 sm:gap-4" style={`height: ${ALTURA}px`} role="list">
+    {colunas.map((c, i) => (
+      <li class="group flex h-full min-w-0 flex-1 flex-col justify-end gap-2">
+        <span class="text-center font-mono text-xs tabular-nums text-[var(--color-suave)]">
+          {c.n || ""}
+        </span>
+        <span
+          class:list={[
+            "coluna block w-full",
+            c.fontes === 1 ? "bg-[var(--color-acento)]" : "bg-[var(--color-tinta)]",
+          ]}
+          style={`height: ${Math.max(c.n ? 3 : 0, (c.n / maximo) * (ALTURA - 34))}px; --atraso: ${i * 90}ms`}
+          aria-hidden="true"
+        ></span>
+      </li>
+    ))}
+  </ol>
+
+  <ol class="mt-2 flex gap-2 sm:gap-4" aria-hidden="true" role="list">
+    {colunas.map((c) => (
+      <li class="min-w-0 flex-1 text-center">
+        <span class="font-mono text-[0.625rem] tabular-nums text-[var(--color-suave)]">
+          {c.fontes}
+        </span>
+      </li>
+    ))}
+  </ol>
+  <p class="mono-etiqueta mt-1 text-center">fontes por incidente</p>
+
+  <p class="mt-5 border-l-2 border-[var(--color-acento)] pl-4 text-sm">
+    <strong class="font-normal">{comUma} dos {total} incidentes deste registo — {percentagem}% —
+    assentam numa única fonte.</strong>{" "}
+    <span class="text-[var(--color-suave)]">
+      A maioria são listagens em sites de extorsão, que por definição têm uma só. Mas
+      também há casos noticiados por um único órgão e nunca confirmados por mais
+      ninguém. É a medida do que este arquivo não sabe, publicada com o resto.
+    </span>
+  </p>
+</figure>
+
+<style>
+  @media (prefers-reduced-motion: no-preference) {
+    :global(html.js) .grafico-fontes .coluna {
+      transform: scaleY(0);
+      transform-origin: bottom;
+    }
+    :global(html.js) .grafico-fontes.visivel .coluna {
+      animation: crescer-coluna 0.65s cubic-bezier(0.22, 1, 0.36, 1) var(--atraso, 0ms) both;
+    }
+  }
+
+  @keyframes crescer-coluna {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+</style>

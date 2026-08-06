@@ -39,8 +39,14 @@ def teste_nenhuma_ligacao_interna_aponta_para_o_vazio():
             alvo = href if href.endswith("/") else href + "/"
             if alvo in paginas:
                 continue
-            # Ficheiros servidos diretamente: .json, .csv, .xml, o índice da pesquisa.
+            # Ficheiros servidos diretamente: .json, .csv, .xml.
             if (DIST / href.lstrip("/")).exists():
+                continue
+            # /pagefind/ é escrito num passo posterior ao do Astro, que limpa o dist.
+            # Consoante o momento em que este teste corra, a pasta existe ou não, e a
+            # sua ausência não é uma ligação partida — é uma ordem de construção.
+            # Quem garante que o índice existe é teste_pesquisa.py.
+            if href.startswith("/pagefind/"):
                 continue
             partidas.setdefault(href, set()).add(str(f.relative_to(DIST)))
 

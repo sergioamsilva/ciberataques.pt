@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CartaoIncidente from "../components/CartaoIncidente.astro";
 import Cronograma from "../components/Cronograma.astro";
-import { incidentes, agregados, manifesto, nome, formatarNumero, entidades, documentados } from "../lib/dados";
+import { incidentes, agregados, manifesto, nome, formatarNumero, entidades, documentados, alegacoes } from "../lib/dados";
 
 const lista = incidentes();
 const ag = agregados();
@@ -11,10 +11,6 @@ const m = manifesto();
    cartão numa lista de destaque da página inicial. */
 const recentes = documentados().slice(0, 5);
 const todasEntidades = entidades();
-
-const confirmados =
-  (ag.por_estado_confirmacao.confirmado_pela_entidade ?? 0) +
-  (ag.por_estado_confirmacao.confirmado_por_regulador ?? 0);
 
 // O ano com mais incidentes, para a banda de manifesto. Sai dos dados: se o
 // registo crescer e outro ano passar à frente, a banda acompanha sozinha.
@@ -29,10 +25,15 @@ const setoresDoPico = [...new Set(incidentesDoPico.map((i) => i.setor))]
 const listaSetores =
   setoresDoPico.slice(0, -1).join(", ") + " e " + setoresDoPico[setoresDoPico.length - 1];
 
+/*
+ * Os quatro números separam agora o que está documentado do que é só alegação.
+ * Dizer "79 incidentes registados" e levar a uma listagem que mostra 52 seria uma
+ * contradição à vista, e a distinção é o assunto do site — não uma nota de rodapé.
+ */
 const numeros = [
-  { n: m.total_incidentes, r: "incidentes registados", d: "/incidentes/" },
+  { n: documentados().length, r: "incidentes documentados", d: "/incidentes/" },
+  { n: alegacoes().length, r: "listagens por confirmar", d: "/alegacoes/" },
   { n: m.total_fontes, r: "fontes citadas", d: "/dados/" },
-  { n: confirmados, r: "confirmados por entidade ou autoridade", d: "/metodologia/#escala" },
   { n: ag.incidentes_com_disputas, r: "com versões em confronto", d: "/metodologia/#disputas" },
 ];
 ---

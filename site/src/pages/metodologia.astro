@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import FontesPorIncidente from "../components/FontesPorIncidente.astro";
 import { taxonomia, agregados, nome, manifesto } from "../lib/dados";
 
 const tax = taxonomia();
@@ -127,10 +128,12 @@ const umaFonte = ag.distribuicao_fontes_por_incidente["1"] ?? 0;
         <strong> incidentes noticiados</strong>, não incidentes ocorridos.
       </p>
       <p class="mt-3 leading-relaxed">
-        Não conseguimos corrigir isto. O que podemos fazer é torná-lo mensurável: a
-        distribuição de fontes por incidente é publicada nos dados abertos, e quanto mais
-        incidentes existirem com uma única fonte, mais frágil é a cobertura.
+        Não conseguimos corrigir isto. O que podemos fazer é torná-lo mensurável, e é
+        o que está aqui: quanto mais incidentes existirem com uma única fonte, mais
+        frágil é a cobertura.
       </p>
+
+      <FontesPorIncidente />
 
       <div class="mt-6 border-l-2 border-[var(--color-acento)] pl-5">
         <p class="mono-etiqueta">O viés também é nosso</p>
