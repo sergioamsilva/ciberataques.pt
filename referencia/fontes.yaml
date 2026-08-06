@@ -276,3 +276,50 @@ fontes:
       Desativado até haver parser. Sem RSS nem API: deliberações em PDF listadas em
       /decisoes/deliberacoes/. É a fonte de maior credibilidade do projeto, porque são
       factos confirmados por regulador, e a que exige mais cuidado.
+
+  # -------------------------------------------- imprensa das regiões autónomas
+  #
+  # Acrescentada depois de um varrimento sistemático dos Açores e da Madeira que
+  # revelou o óbvio: o registo tinha zero incidentes açorianos e um da Madeira, e
+  # nenhuma fonte das duas regiões. O ciberataque ao maior hospital dos Açores em
+  # 2021 e o ataque à Eletricidade dos Açores em 2022 só entraram no arquivo por
+  # alguém perguntar, em agosto de 2026.
+  #
+  # As regiões autónomas não são um caso particular da imprensa regional do
+  # continente: têm imprensa própria, governo próprio e serviços de saúde, energia
+  # e transportes próprios, e nada disso aparece nos títulos de Lisboa a não ser
+  # quando é muito grande.
+  #
+  # Feeds verificados a 2026-08-06. Ficam de fora, por não terem RSS utilizável, o
+  # Açoriano Oriental (404 em todos os caminhos testados), o JM Madeira (redireciona
+  # para um RSS que devolve HTML) e a RTP Madeira.
+  - id: diario-dos-acores
+    nome: Diário dos Açores
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    # Sem o www: o domínio com www redireciona, e a camada de rede recusaria o
+    # destino se ele não estivesse declarado.
+    dominios: [diariodosacores.pt]
+    feeds:
+      - https://diariodosacores.pt/feed/
+
+  - id: dnoticias
+    nome: Diário de Notícias da Madeira
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [dnoticias.pt]
+    feeds:
+      - https://www.dnoticias.pt/rss.xml
+    nota: >-
+      /rss e /feed devolvem 404; o caminho correto é /rss.xml.
+
+  - id: funchal-noticias
+    nome: Funchal Notícias
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [funchalnoticias.net]
+    feeds:
+      - https://funchalnoticias.net/feed/
