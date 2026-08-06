@@ -3,6 +3,13 @@
     "2017-wannacry",
     "2017-sl-benfica"
   ],
+  "2018": [
+    "2018-cuf",
+    "2018-centro-hospitalar-barreiro-montijo"
+  ],
+  "2019": [
+    "2019-camara-municipal-de-vinhais"
+  ],
   "2020": [
     "2020-edp"
   ],
@@ -21,6 +28,7 @@
     "2022-tap",
     "2022-emgfa",
     "2022-lusa",
+    "2022-camara-municipal-da-moita",
     "2022-hospital-garcia-de-orta",
     "2022-smtuc",
     "2022-sonae-mc",

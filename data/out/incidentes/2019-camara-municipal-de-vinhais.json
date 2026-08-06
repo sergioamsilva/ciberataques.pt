@@ -1,0 +1,131 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Não houve reivindicação conhecida. Na análise aos sistemas foram detetados onze tipos de código de ransomware, o que aponta para ataques sucessivos ou para uma ferramenta que combina várias famílias."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2019-10-15",
+      "fonte": 1,
+      "texto": "A câmara fica sem sistemas informáticos, com os repositórios municipais encriptados. Os funcionários passam a trabalhar em papel.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2019-10-22",
+      "fonte": 1,
+      "texto": "Na análise aos sistemas municipais são detetados onze tipos de código de ransomware. Os atacantes exigem entre 20 e 30 mil euros para devolver o acesso.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2019-10-22",
+      "fonte": 2,
+      "texto": "O presidente da câmara afirma não estar disponível para pagar o resgate exigido, e reconhece que a resolução terá custos que o município terá de suportar.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2019-10-25",
+      "fonte": 0,
+      "texto": "O município anuncia o ataque resolvido e os constrangimentos ultrapassados, após investir seis mil euros numa empresa especializada para reverter a encriptação.",
+      "tipo": "reposicao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados pessoais. O que foi descrito publicamente foi a encriptação dos repositórios municipais, e não a sua cópia.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2019-10-15",
+    "divulgacao": "2019-10-22",
+    "inicio": "2019-10-15",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "camara-municipal-de-vinhais"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "administracao-local",
+    "municipio-pequeno",
+    "resgate-recusado",
+    "caneta-e-papel"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2019-10-25",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Resolvido ataque informático à Câmara Municipal de Vinhais",
+      "url": "https://www.publico.pt/2019/10/25/local/noticia/resolvido-ataque-informatico-camara-municipal-vinhais-1891428",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2019-10-22",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Exame Informática",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ransomware: 30 organismos públicos atacados desde o início de 2019",
+      "url": "https://visao.pt/exameinformatica/noticias-ei/internet/2019-10-22-ransomware-30-organismos-publicos-atacados-desde-o-inicio-de-2019/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2019-10-22",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Sistemas informáticos de mais de 30 organismos públicos sequestrados por \"hackers\" este ano",
+      "url": "https://observador.pt/2019/10/22/sistemas-informaticos-de-mais-de-30-organismos-publicos-sequestrados-por-hackers-este-ano/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2019-camara-municipal-de-vinhais",
+  "impacto": {
+    "custo_declarado_eur": 6000,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": false,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "Os atacantes exigiram entre 20 e 30 mil euros. O presidente da câmara afirmou publicamente não estar disponível para pagar, e o município recuperou por outra via.",
+    "servicos_afetados": [
+      "repositórios de dados municipais",
+      "atendimento e serviços administrativos"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A 15 de outubro de 2019, a Câmara Municipal de Vinhais ficou sem sistemas informáticos após um ataque de ransomware que encriptou os repositórios municipais, com os funcionários a trabalhar em papel. Foram detetados onze tipos de código de ransomware e os atacantes exigiram entre 20 e 30 mil euros. O presidente da câmara recusou pagar, e o município investiu seis mil euros numa empresa especializada para reverter a encriptação, dando o caso por resolvido a 25 de outubro.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "Um dos raríssimos casos do registo em que se conhece ao mesmo tempo o valor pedido, a recusa de pagamento e o custo real da recuperação — e em que o custo de recuperar foi uma fração do resgate exigido. Vinhais tem menos de nove mil habitantes, o que reforça o padrão de que a administração local é atacada independentemente da dimensão.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": [
+    "ransomware",
+    "indisponibilidade"
+  ],
+  "titulo": "Ciberataque à Câmara Municipal de Vinhais"
+}

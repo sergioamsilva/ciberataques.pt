@@ -1,0 +1,92 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": null
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-04-27",
+      "fonte": 0,
+      "texto": "Na manhã de quarta-feira, um ataque de ransomware afeta todo o sistema informático do município.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-04-27",
+      "fonte": 0,
+      "texto": "A autarquia divulga comunicado na sua página de Facebook, informando ter acionado de imediato os meios para averiguar o problema e estar a trabalhar em conjunto com o Centro Nacional de Cibersegurança e a Polícia Judiciária, com os serviços à população limitados ou condicionados.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "A câmara não se pronunciou sobre comprometimento de dados pessoais na comunicação inicial.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-04-27",
+    "divulgacao": "2022-04-27",
+    "inicio": "2022-04-27",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "camara-municipal-da-moita"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "administracao-local"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-04-28",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Pplware",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara Municipal da Moita alvo de ataque informático com ransomware",
+      "url": "https://pplware.sapo.pt/informacao/camara-municipal-da-moita-alvo-de-ataque-informatico-com-ransomware/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-camara-municipal-da-moita",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "sistema informático municipal",
+      "serviços de atendimento à população"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "Na manhã de 27 de abril de 2022, a Câmara Municipal da Moita foi alvo de um ataque de ransomware que afetou todo o sistema informático do município. A autarquia comunicou o caso na sua página de Facebook, afirmando ter acionado de imediato os meios para averiguar o problema e estar a trabalhar com o Centro Nacional de Cibersegurança e a Polícia Judiciária, com os serviços à população limitados ou a funcionar de forma condicionada.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "Encontrado por acaso, ao verificar a data de um artigo que uma pesquisa sobre 2019 devolvia sem ano à vista — e que afinal era de 2022. Ficou por registar durante toda a curadoria de 2022, que é o ano mais povoado do arquivo. Vale como lembrete de que a lacuna não está só nos anos vazios.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": [
+    "ransomware",
+    "indisponibilidade"
+  ],
+  "titulo": "Ciberataque à Câmara Municipal da Moita"
+}

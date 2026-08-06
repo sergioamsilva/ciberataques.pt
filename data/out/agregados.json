@@ -1,8 +1,8 @@
 {
   "distribuicao_fontes_por_incidente": {
-    "1": 31,
+    "1": 33,
     "2": 13,
-    "3": 14,
+    "3": 16,
     "4": 6,
     "5": 5,
     "6": 3,
@@ -11,9 +11,11 @@
   "incidentes_com_disputas": 12,
   "por_ano": {
     "2017": 2,
+    "2018": 2,
+    "2019": 1,
     "2020": 1,
     "2021": 1,
-    "2022": 19,
+    "2022": 20,
     "2023": 16,
     "2024": 9,
     "2025": 16,
@@ -31,6 +33,7 @@
     "RansomEXX": 1,
     "Rhysida": 1,
     "SafePay": 1,
+    "SamSam": 1,
     "ShinyHunters": 1,
     "WannaCry": 1,
     "Warlock": 1,
@@ -53,13 +56,13 @@
   },
   "por_estado_confirmacao": {
     "alegado_pelo_atacante": 27,
-    "confirmado_pela_entidade": 45,
-    "confirmado_por_regulador": 4,
+    "confirmado_pela_entidade": 48,
+    "confirmado_por_regulador": 5,
     "reportado_por_media": 3
   },
   "por_setor": {
     "administracao_publica": 6,
-    "autarquias": 14,
+    "autarquias": 16,
     "banca_seguros": 1,
     "desporto": 2,
     "educacao_investigacao": 8,
@@ -68,7 +71,7 @@
     "justica_defesa": 2,
     "media": 4,
     "retalho": 4,
-    "saude": 5,
+    "saude": 7,
     "tecnologia": 6,
     "telecomunicacoes": 1,
     "transportes": 8,
@@ -79,10 +82,11 @@
     "ddos": 3,
     "exfiltracao_dados": 18,
     "exposicao_credenciais": 2,
-    "indisponibilidade": 29,
+    "indisponibilidade": 31,
+    "insider": 1,
     "intrusao": 27,
     "phishing_bec": 1,
-    "ransomware": 49
+    "ransomware": 52
   },
-  "total": 79
+  "total": 83
 }

@@ -1248,6 +1248,25 @@
   },
   {
     "ano": 2022,
+    "ator": null,
+    "data": "2022-04-27",
+    "entidades_afetadas": [
+      "camara-municipal-da-moita"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-camara-municipal-da-moita",
+    "n_fontes": 1,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal da Moita"
+  },
+  {
+    "ano": 2022,
     "ator": "HIVE",
     "data": "2022-04-26",
     "entidades_afetadas": [
@@ -1437,6 +1456,61 @@
       "exfiltracao_dados"
     ],
     "titulo": "Ciberataque à EDP"
+  },
+  {
+    "ano": 2019,
+    "ator": null,
+    "data": "2019-10-15",
+    "entidades_afetadas": [
+      "camara-municipal-de-vinhais"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2019-camara-municipal-de-vinhais",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal de Vinhais"
+  },
+  {
+    "ano": 2018,
+    "ator": "SamSam",
+    "data": "2018-08-04",
+    "entidades_afetadas": [
+      "cuf"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2018-cuf",
+    "n_fontes": 1,
+    "precisao_data": "dia",
+    "setor": "saude",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Ciberataque aos hospitais CUF"
+  },
+  {
+    "ano": 2018,
+    "ator": null,
+    "data": "2018-06-01",
+    "entidades_afetadas": [
+      "centro-hospitalar-barreiro-montijo"
+    ],
+    "estado_confirmacao": "confirmado_por_regulador",
+    "id": "2018-centro-hospitalar-barreiro-montijo",
+    "n_fontes": 3,
+    "precisao_data": "mes",
+    "setor": "saude",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "insider"
+    ],
+    "titulo": "Acessos indevidos a processos clínicos no Centro Hospitalar Barreiro Montijo"
   },
   {
     "ano": 2017,

@@ -233,6 +233,25 @@
     "tipo": "entidade_publica",
     "url": "https://www.mun-guarda.pt"
   },
+  "camara-municipal-da-moita": {
+    "chaves": [
+      "moita",
+      "camara municipal da moita",
+      "municipio da moita",
+      "cm-moita.pt"
+    ],
+    "distrito": "Setúbal",
+    "id": "camara-municipal-da-moita",
+    "incidentes": [
+      "2022-camara-municipal-da-moita"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município da Moita",
+    "nome_curto": "Câmara Municipal da Moita",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-moita.pt"
+  },
   "camara-municipal-de-alcanena": {
     "chaves": [
       "camara municipal de alcanena",
@@ -418,6 +437,25 @@
     "tipo": "entidade_publica",
     "url": "https://www.cm-vimioso.pt"
   },
+  "camara-municipal-de-vinhais": {
+    "chaves": [
+      "vinhais",
+      "camara municipal de vinhais",
+      "municipio de vinhais",
+      "cm-vinhais.pt"
+    ],
+    "distrito": "Bragança",
+    "id": "camara-municipal-de-vinhais",
+    "incidentes": [
+      "2019-camara-municipal-de-vinhais"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município de Vinhais",
+    "nome_curto": "Câmara Municipal de Vinhais",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-vinhais.pt"
+  },
   "camara-municipal-do-barreiro": {
     "chaves": [
       "camara municipal do barreiro",
@@ -470,6 +508,24 @@
     "setor": "educacao_investigacao",
     "tipo": "entidade_publica",
     "url": "https://www.cccm.gov.pt"
+  },
+  "centro-hospitalar-barreiro-montijo": {
+    "chaves": [
+      "centro hospitalar barreiro montijo",
+      "hospital do barreiro",
+      "chbm"
+    ],
+    "distrito": "Setúbal",
+    "id": "centro-hospitalar-barreiro-montijo",
+    "incidentes": [
+      "2018-centro-hospitalar-barreiro-montijo"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Centro Hospitalar Barreiro Montijo, E.P.E.",
+    "nome_curto": "Centro Hospitalar Barreiro Montijo",
+    "setor": "saude",
+    "tipo": "entidade_publica",
+    "url": "https://www.chbm.min-saude.pt"
   },
   "cimertex": {
     "chaves": [
@@ -546,7 +602,9 @@
     ],
     "distrito": "Lisboa",
     "id": "cuf",
-    "incidentes": [],
+    "incidentes": [
+      "2018-cuf"
+    ],
     "incidentes_em_cascata": [
       "2022-germano-de-sousa"
     ],

@@ -853,3 +853,21 @@
   distrito: Lisboa
   url: https://pt.elis.com
   chaves: [elis, elis portugal]
+
+- id: camara-municipal-de-vinhais
+  nome: Município de Vinhais
+  nome_curto: Câmara Municipal de Vinhais
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Bragança
+  url: https://www.cm-vinhais.pt
+  chaves: [vinhais, camara municipal de vinhais, municipio de vinhais, cm-vinhais.pt]
+
+- id: camara-municipal-da-moita
+  nome: Município da Moita
+  nome_curto: Câmara Municipal da Moita
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Setúbal
+  url: https://www.cm-moita.pt
+  chaves: [moita, camara municipal da moita, municipio da moita, cm-moita.pt]

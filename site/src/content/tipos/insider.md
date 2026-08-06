@@ -84,10 +84,18 @@ classificação segue o que as fontes sustentam, não o que é plausível.
 
 ## Como este registo o trata
 
-Não há, à data, nenhum incidente classificado como ameaça interna em Portugal. A
-razão é quase certamente de cobertura e não de ocorrência: estes casos resolvem-se
-em processo disciplinar ou em tribunal de trabalho, sem comunicado nem notícia, e
-uma organização tem muito menos incentivo a divulgar que o problema veio de dentro.
+Há um caso registado, e é o mais bem sustentado do arquivo inteiro em matéria de
+prova: os [acessos indevidos a processos clínicos no Centro Hospitalar Barreiro
+Montijo](/incidentes/2018-centro-hospitalar-barreiro-montijo/), que valeram ao
+hospital a primeira coima por incumprimento do RGPD aplicada em Portugal. Não houve
+atacante externo nenhum. Houve 985 contas ativas com perfil de médico num hospital
+com 296 médicos no quadro, e nenhuma medida a impedir que quem tinha conta chegasse
+ao que não devia.
+
+É provável que seja um entre muitos. Estes casos resolvem-se tipicamente em processo
+disciplinar ou em tribunal de trabalho, sem comunicado nem notícia, e uma organização
+tem muito menos incentivo a divulgar que o problema veio de dentro. O do Barreiro só
+é público porque uma autoridade o tornou público.
 
 Quando existe decisão judicial pública, este registo pode nomear a pessoa condenada
 — é uma das três exceções da [política editorial](/metodologia/). Fora disso, nunca.

@@ -1,0 +1,131 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Não há atacante externo. O que a autoridade apurou foi o acesso a processos clínicos por profissionais que não deviam poder aceder-lhes, e a ausência de medidas que o impedissem."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2018-06-01",
+      "fonte": 1,
+      "texto": "A Ordem dos Médicos lança um alerta que leva a Comissão Nacional de Proteção de Dados a inspecionar o hospital.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2018-07-17",
+      "fonte": 1,
+      "texto": "A CNPD delibera aplicar uma coima de 400 mil euros por duas violações do RGPD: 300 mil por permitir acesso indiscriminado a dados por profissionais que só deveriam aceder em casos específicos, sem medidas que o impedissem, e 100 mil pela incapacidade de assegurar a confidencialidade, integridade, disponibilidade e resiliência dos sistemas.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2018-07-17",
+      "fonte": 1,
+      "texto": "A autoridade apura que existiam 985 contas ativas com perfil de médico, num hospital com 296 médicos no quadro.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2018-10-22",
+      "fonte": 0,
+      "texto": "O hospital anuncia que vai contestar judicialmente a coima, afirmando não concordar com o entendimento da autoridade.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": [
+      "identificacao",
+      "saude"
+    ],
+    "nota": "Estão em causa processos clínicos, categoria especial de dados ao abrigo do artigo 9.º do RGPD. A autoridade não quantificou titulares afetados; quantificou os acessos possíveis.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2018-06-01",
+    "divulgacao": "2018-10-19",
+    "inicio": "2018-06-01",
+    "precisao": "mes"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "centro-hospitalar-barreiro-montijo"
+  ],
+  "estado_confirmacao": "confirmado_por_regulador",
+  "etiquetas": [
+    "primeira-coima-rgpd",
+    "dados-de-saude",
+    "controlo-de-acessos",
+    "contestado-em-tribunal"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2018-10-22",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hospital do Barreiro contesta judicialmente coima de 400 mil euros de Comissão de Dados",
+      "url": "https://www.publico.pt/2018/10/22/sociedade/noticia/hospital-barreiro-contesta-judicialmente-coima-400-mil-euros-comissao-dados-1848479",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2018-10-19",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Exame Informática",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "CNPD: Hospital do Barreiro multado em 400 mil euros por permitir acessos indevidos a processos clínicos",
+      "url": "https://visao.pt/exameinformatica/noticias-ei/mercados/2018-10-19-cnpd-hospital-do-barreiro-multado-em-400-mil-euros-por-permitir-acessos-indevidos-a-processos-clinicos/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2018-10-19",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Jornal de Negócios",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hospital do Barreiro multado em 400 mil euros por não proteger dados clínicos dos doentes",
+      "url": "https://www.jornaldenegocios.pt/economia/saude/detalhe/hospital-do-barreiro-multado-em-400-mil-euros-por-nao-proteger-dados-clinicos-dos-doentes",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2018-centro-hospitalar-barreiro-montijo",
+  "impacto": {
+    "custo_declarado_eur": 400000,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "processos clínicos electrónicos"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": true,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "Em 2018 a Comissão Nacional de Proteção de Dados aplicou ao Centro Hospitalar Barreiro Montijo uma coima de 400 mil euros — a primeira coima por incumprimento do RGPD em Portugal. A autoridade apurou que o hospital permitia acesso indiscriminado a processos clínicos por profissionais que só deveriam aceder-lhes em casos específicos, sem medidas que o impedissem, e que existiam 985 contas ativas com perfil de médico num hospital com 296 médicos no quadro. O hospital contestou a coima judicialmente.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "Não há atacante externo neste caso, e por isso ele testa a fronteira do registo. Entra porque a taxonomia prevê a ameaça interna como tipo próprio: o dano vem de quem tem acesso legítimo, e aqui vinha de contas legítimas a alcançar o que não deviam alcançar. É também o caso mais bem sustentado do arquivo inteiro em matéria de prova — uma deliberação de autoridade, e não uma notícia. Fica registada a contestação judicial do hospital; o desfecho do processo não foi apurado.",
+    "versao": 1
+  },
+  "setor": "saude",
+  "tipos_ataque": [
+    "insider"
+  ],
+  "titulo": "Acessos indevidos a processos clínicos no Centro Hospitalar Barreiro Montijo"
+}

@@ -1,0 +1,91 @@
+{
+  "ator": {
+    "atribuicao_por": "investigador",
+    "confianca": "media",
+    "grupo": "SamSam",
+    "nota": "A família de ransomware foi identificada por análise técnica noticiada, e não pela empresa nem por autoridade. O SamSam era, à data, conhecido por atacar unidades de saúde através de acessos remotos expostos."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2018-08-04",
+      "fonte": 0,
+      "texto": "A rede de hospitais CUF, do grupo José de Mello Saúde, é atingida por um ataque de ransomware da família SamSam.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2018-08-04",
+      "fonte": 0,
+      "texto": "O grupo afirma que todos os dados do sistema estão salvaguardados e que não houve qualquer quebra de segurança, e que a atividade decorre com normalidade à exceção das consultas programadas para esse dia, desmarcadas por prudência.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "A José de Mello Saúde afirmou que todos os dados estavam salvaguardados e que não houve qualquer quebra de segurança. Não é conhecida contradição a esta afirmação.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2018-08-04",
+    "divulgacao": "2018-08-04",
+    "inicio": "2018-08-04",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "cuf"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "saude-privada",
+    "consultas-desmarcadas"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2018-08-04",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Pplware",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hospitais da CUF sofrem ataque informático com Ransomware SamSam",
+      "url": "https://pplware.sapo.pt/informacao/hospitais-da-cuf-sofrem-ataque-informatico-com-ransomware-samsam/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2018-cuf",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "consultas programadas do próprio dia"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A 4 de agosto de 2018, a rede de hospitais CUF, do grupo José de Mello Saúde, foi atingida por um ataque de ransomware identificado como SamSam. O grupo afirmou que todos os dados estavam salvaguardados e que não houve quebra de segurança, e que a atividade decorria com normalidade à exceção das consultas programadas para esse dia, desmarcadas por prudência.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "Primeiro caso de 2018 no registo. Assenta numa única fonte: a cobertura noticiosa portuguesa de 2018 não está indexada nos feeds que usamos e este caso teve pouca projeção, apesar de atingir a maior rede hospitalar privada do país. Não foi apurado publicamente se houve pedido de resgate nem o seu valor.",
+    "versao": 1
+  },
+  "setor": "saude",
+  "tipos_ataque": [
+    "ransomware"
+  ],
+  "titulo": "Ciberataque aos hospitais CUF"
+}
