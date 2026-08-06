@@ -1,10 +1,13 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CartaoIncidente from "../../components/CartaoIncidente.astro";
+import NotaAlegacoes from "../../components/NotaAlegacoes.astro";
 import ReguaDeAnos from "../../components/ReguaDeAnos.astro";
-import { incidentes, agregados } from "../../lib/dados";
+import { incidentes, agregados, ehAlegacao } from "../../lib/dados";
 
-const lista = incidentes();
+const todosOsRegistos = incidentes();
+const lista = todosOsRegistos.filter((r) => !ehAlegacao(r));
+const nAlegacoes = todosOsRegistos.length - lista.length;
 const ag = agregados();
 const porAno = new Map<number, typeof lista>();
 for (const inc of lista) {
@@ -41,5 +44,7 @@ const anos = [...porAno.keys()].sort((a, b) => b - a);
         </div>
       </section>
     ))}
+
+    <NotaAlegacoes n={nAlegacoes} />
   </div>
 </BaseLayout>

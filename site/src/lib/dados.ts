@@ -268,3 +268,35 @@ export function corDeConfianca(estado: EstadoConfirmacao): string {
   };
   return cores[estado];
 }
+
+/*
+ * A separação entre o que está documentado e o que é apenas uma alegação.
+ *
+ * Um caso de nível 5 tem uma única fonte, e essa fonte é o próprio atacante. Não
+ * há cronologia, não há impacto apurado, não há confirmação — há uma listagem.
+ * Durante algum tempo cada um destes teve página própria, permanente e indexável,
+ * com um título do género "X listada em site de extorsão" construído inteiramente
+ * a partir do que um criminoso publicou. Tudo o que essas páginas continham era ou
+ * a alegação, ou um aviso sobre a alegação.
+ *
+ * O critério de interesse público que as justificava respondia à pergunta errada:
+ * respondia a "vale a pena escrever sobre esta entidade?", quando a pergunta é
+ * "há aqui alguma coisa para escrever?". Não há.
+ *
+ * Continuam no registo, nos dados abertos e nas contagens — esconder o que
+ * recolhemos seria pior. Deixam é de ter página por entidade, e passam a viver
+ * numa lista única em /alegacoes/, onde o que são está explicado uma vez e bem.
+ */
+export function ehAlegacao(inc: { estado_confirmacao: EstadoConfirmacao }): boolean {
+  return inc.estado_confirmacao === "alegado_pelo_atacante";
+}
+
+/** Os incidentes com página própria: tudo o que não é só a palavra do atacante. */
+export function documentados(): ResumoIncidente[] {
+  return incidentes().filter((i) => !ehAlegacao(i));
+}
+
+/** As listagens em sites de extorsão sem qualquer confirmação independente. */
+export function alegacoes(): ResumoIncidente[] {
+  return incidentes().filter(ehAlegacao);
+}

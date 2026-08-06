@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CartaoIncidente from "../../components/CartaoIncidente.astro";
-import { incidentes, agregados } from "../../lib/dados";
+import NotaAlegacoes from "../../components/NotaAlegacoes.astro";
+import { incidentes, agregados, ehAlegacao } from "../../lib/dados";
 
 export function getStaticPaths() {
   const anos = [...new Set(incidentes().map((r) => r.ano))].sort((a, b) => b - a);
@@ -9,7 +10,9 @@ export function getStaticPaths() {
 }
 
 const { ano } = Astro.props as { ano: number };
-const lista = incidentes().filter((r) => r.ano === ano);
+const doAno = incidentes().filter((r) => r.ano === ano);
+const lista = doAno.filter((r) => !ehAlegacao(r));
+const nAlegacoes = doAno.length - lista.length;
 const anos = Object.keys(agregados().por_ano).map(Number).sort((a, b) => b - a);
 const i = anos.indexOf(ano);
 ---
@@ -32,6 +35,7 @@ const i = anos.indexOf(ano);
 
     <div class="mt-10">
       {lista.map((inc) => <CartaoIncidente incidente={inc} />)}
+      <NotaAlegacoes n={nAlegacoes} contexto={`de ${ano}`} />
     </div>
 
     <nav class="regua mt-12 flex justify-between gap-4 pt-6" aria-label="Outros anos">

@@ -2,12 +2,14 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CartaoIncidente from "../components/CartaoIncidente.astro";
 import Cronograma from "../components/Cronograma.astro";
-import { incidentes, agregados, manifesto, nome, formatarNumero, entidades } from "../lib/dados";
+import { incidentes, agregados, manifesto, nome, formatarNumero, entidades, documentados } from "../lib/dados";
 
 const lista = incidentes();
 const ag = agregados();
 const m = manifesto();
-const recentes = lista.slice(0, 5);
+/* Últimos registos: só os documentados. Uma alegação sem ficha não pode ser
+   cartão numa lista de destaque da página inicial. */
+const recentes = documentados().slice(0, 5);
 const todasEntidades = entidades();
 
 const confirmados =

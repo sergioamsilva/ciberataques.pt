@@ -4,7 +4,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import CartaoIncidente from "../../components/CartaoIncidente.astro";
 import PainelDoTipo from "../../components/PainelDoTipo.astro";
 import CadeiaDeFases from "../../components/CadeiaDeFases.astro";
-import { incidentes, nome, taxonomia } from "../../lib/dados";
+import NotaAlegacoes from "../../components/NotaAlegacoes.astro";
+import { ehAlegacao, incidentes, nome, taxonomia } from "../../lib/dados";
 
 /*
  * A união de dois conjuntos, e não só o primeiro: os tipos que o registo usa, mais
@@ -31,7 +32,11 @@ export async function getStaticPaths() {
 }
 
 const { tipo, explicador } = Astro.props;
-const lista = incidentes().filter((r) => r.tipos_ataque.includes(tipo));
+const doTipo = incidentes().filter((r) => r.tipos_ataque.includes(tipo));
+/* O painel de topo conta tudo, porque descreve o fenómeno. Os cartões só mostram
+   os documentados, porque uma alegação não tem ficha para onde ligar. */
+const lista = doTipo.filter((r) => !ehAlegacao(r));
+const nAlegacoes = doTipo.length - lista.length;
 const rotulo = nome("tipos_ataque", tipo);
 const descricao = taxonomia().tipos_ataque?.[tipo]?.descricao ?? "";
 
@@ -92,7 +97,7 @@ const grafo = explicador
       </p>
     </header>
 
-    {lista.length > 0 && <PainelDoTipo lista={lista} rotulo={rotulo} />}
+    {doTipo.length > 0 && <PainelDoTipo lista={doTipo} rotulo={rotulo} />}
 
     {Conteudo && (
       <section class="mt-12" aria-labelledby="h-explicador">
@@ -163,6 +168,7 @@ const grafo = explicador
       </h2>
       <div class="mt-4">
         {lista.map((inc) => <CartaoIncidente incidente={inc} />)}
+        <NotaAlegacoes n={nAlegacoes} contexto="deste tipo" />
       </div>
     </section>
   </div>

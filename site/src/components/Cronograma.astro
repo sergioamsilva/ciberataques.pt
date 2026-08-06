@@ -1,5 +1,11 @@
 ---
-import { formatarData, nome, type ResumoIncidente, type EstadoConfirmacao } from "../lib/dados";
+import {
+  ehAlegacao,
+  formatarData,
+  nome,
+  type ResumoIncidente,
+  type EstadoConfirmacao,
+} from "../lib/dados";
 
 interface Props {
   incidentes: ResumoIncidente[];
@@ -106,9 +112,11 @@ let indiceGlobal = 0;
             >
             {lista.map((inc) => {
               indiceGlobal += 1;
+              // Uma alegação não tem ficha própria: a marca leva à lista onde
+              // todas estão, e à explicação do que são.
               return (
                 <a
-                  href={`/incidentes/${inc.id}/`}
+                  href={ehAlegacao(inc) ? "/alegacoes/" : `/incidentes/${inc.id}/`}
                   class="marca block w-full transition-[filter,transform] duration-200 hover:scale-y-125 focus-visible:scale-y-125"
                   style={`height: ${ALTURA_MARCA}px; background-color: ${TOM[inc.estado_confirmacao]}; --atraso: ${Math.min(indiceGlobal * 22, 900)}ms`}
                   title={`${inc.titulo} — ${formatarData(inc.data, inc.precisao_data)} — ${nome("estados_confirmacao", inc.estado_confirmacao)}`}

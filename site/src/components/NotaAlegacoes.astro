@@ -1,0 +1,28 @@
+---
+/*
+ * O aviso que impede a omissão silenciosa.
+ *
+ * As listagens não confirmadas deixaram de aparecer como cartões nas listagens do
+ * registo. Se desaparecessem sem deixar rasto, uma página de setor diria "9
+ * incidentes" quando o pipeline recolheu 14, e o leitor não teria como saber que
+ * havia mais cinco nem porquê. Isso seria esconder, e não editar.
+ *
+ * Esta nota diz quantas ficaram de fora e leva a onde estão.
+ */
+interface Props {
+  n: number;
+  /** Onde ficaram de fora: "neste setor", "em 2024", "desta entidade"… */
+  contexto?: string;
+}
+const { n, contexto } = Astro.props;
+---
+
+{n > 0 && (
+  <p class="regua mt-8 pt-4 text-sm text-[var(--color-suave)]">
+    Há {n === 1 ? "mais uma entidade" : `mais ${n} entidades`}
+    {contexto ? ` ${contexto}` : ""} que apareceram em sites de extorsão sem
+    qualquer confirmação independente. Não têm ficha própria, porque tudo o que
+    existe sobre {n === 1 ? "ela" : "elas"} é a alegação de quem diz ter atacado —
+    {" "}<a href="/alegacoes/">estão na lista de listagens não confirmadas</a>.
+  </p>
+)}

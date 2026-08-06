@@ -1,9 +1,11 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CartaoIncidente from "../../components/CartaoIncidente.astro";
-import { incidentes, agregados, nome } from "../../lib/dados";
+import NotaAlegacoes from "../../components/NotaAlegacoes.astro";
+import { incidentes, agregados, nome, documentados, alegacoes } from "../../lib/dados";
 
-const lista = incidentes();
+const lista = documentados();
+const nAlegacoes = alegacoes().length;
 const ag = agregados();
 
 const grafo = [
@@ -45,6 +47,7 @@ const grafo = [
     <div class="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_16rem]">
       <div>
         {lista.map((inc) => <CartaoIncidente incidente={inc} indexavel />)}
+        <NotaAlegacoes n={nAlegacoes} />
       </div>
 
       <aside class="lg:sticky lg:top-24 lg:self-start" data-pagefind-ignore>
