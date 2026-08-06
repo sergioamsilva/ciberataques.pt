@@ -1009,3 +1009,71 @@
   nota: >-
     Sucedeu ao Banco Espírito Santo em agosto de 2014. As fontes da vaga de 2013 a
     2016 referem-se indistintamente a BES e Novo Banco.
+
+- id: direcao-geral-da-saude
+  nome: Direção-Geral da Saúde
+  nome_curto: DGS
+  setor: saude
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.dgs.pt
+  chaves: [direcao geral da saude, dgs]
+
+- id: direcao-geral-da-educacao
+  nome: Direção-Geral da Educação
+  nome_curto: DGE
+  setor: educacao_investigacao
+  tipo: entidade_publica
+  distrito: Lisboa
+  chaves: [direcao geral da educacao, dge]
+
+- id: direcao-geral-do-ensino-superior
+  nome: Direção-Geral do Ensino Superior
+  nome_curto: DGES
+  setor: educacao_investigacao
+  tipo: entidade_publica
+  distrito: Lisboa
+  chaves: [direcao geral do ensino superior, dges]
+
+- id: ministerio-da-defesa-nacional
+  nome: Ministério da Defesa Nacional
+  nome_curto: Ministério da Defesa Nacional
+  setor: justica_defesa
+  tipo: entidade_publica
+  distrito: Lisboa
+  chaves: [ministerio da defesa nacional, defesa nacional]
+
+- id: ministerio-da-agricultura
+  nome: Ministério da Agricultura
+  nome_curto: Ministério da Agricultura
+  setor: administracao_publica
+  tipo: entidade_publica
+  distrito: Lisboa
+  chaves: [ministerio da agricultura]
+
+- id: governo-regional-dos-acores
+  nome: Governo Regional dos Açores
+  nome_curto: Governo Regional dos Açores
+  setor: administracao_publica
+  tipo: entidade_publica
+  distrito: Açores
+  url: https://portal.azores.gov.pt
+  chaves: [governo regional dos acores, governo dos acores]
+
+- id: camara-municipal-de-coimbra
+  nome: Município de Coimbra
+  nome_curto: Câmara Municipal de Coimbra
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Coimbra
+  url: https://www.cm-coimbra.pt
+  chaves: [coimbra, camara municipal de coimbra, municipio de coimbra]
+
+- id: camara-municipal-de-portalegre
+  nome: Município de Portalegre
+  nome_curto: Câmara Municipal de Portalegre
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Portalegre
+  url: https://www.cm-portalegre.pt
+  chaves: [portalegre, camara municipal de portalegre, municipio de portalegre]

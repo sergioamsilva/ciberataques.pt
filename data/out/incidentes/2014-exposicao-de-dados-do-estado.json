@@ -1,0 +1,118 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "SlowGov09 e Outside The Law",
+    "nota": "Dois grupos ligados ao Anonymous Portugal, que publicaram os dados nas suas próprias contas. A vaga de que fazem parte viria a dar origem à Operação C4R3T05 da Polícia Judiciária."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2014-08-23",
+      "fonte": 0,
+      "texto": "Dois grupos ligados ao Anonymous Portugal publicam dados obtidos em sítios de organismos do Estado, incluindo nomes, palavras-passe, números de telefone, cargos e números de identificação fiscal de colaboradores.",
+      "tipo": "publicacao_dados"
+    },
+    {
+      "data": "2014-08-23",
+      "fonte": 0,
+      "texto": "Entre os organismos atingidos contam-se direções-gerais da educação, da saúde, do ensino superior e da administração interna, os ministérios do ambiente, da defesa nacional e da cultura, a Procuradoria-Geral da República, o Governo Regional dos Açores, as câmaras de Coimbra e de Portalegre e juntas de freguesia.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2014-08-23",
+      "fonte": 0,
+      "texto": "O Ministério da Agricultura afirma não ter comentário a fazer sobre o assunto e que todos os sítios estão e têm estado operacionais.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": [
+      "identificacao",
+      "contacto",
+      "laborais"
+    ],
+    "nota": "Foram divulgados nomes, palavras-passe, números de telefone, cargos e números de identificação fiscal de colaboradores. Não houve quantificação de titulares afetados.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2014-08-23",
+    "divulgacao": "2014-08-23",
+    "inicio": "2014-08-23",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "direcao-geral-da-educacao",
+    "direcao-geral-da-saude",
+    "direcao-geral-do-ensino-superior",
+    "ministerio-da-defesa-nacional",
+    "ministerio-da-agricultura",
+    "procuradoria-geral-da-republica",
+    "governo-regional-dos-acores",
+    "camara-municipal-de-coimbra",
+    "camara-municipal-de-portalegre"
+  ],
+  "estado_confirmacao": "noticiado_por_uma_fonte",
+  "etiquetas": [
+    "hacktivismo",
+    "anonymous",
+    "anterior-a-2017",
+    "administracao-central",
+    "dados-de-trabalhadores"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2014-08-23",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Pplware",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hackers continuam a expor vários dados do Governo",
+      "url": "https://pplware.sapo.pt/informacao/hackers-continuam-a-expor-varios-dados-do-governo/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2014-exposicao-de-dados-do-estado",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "sítios institucionais de vários organismos do Estado"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2013-vaga-hacktivista-contra-o-estado",
+    "2012-embaixadas-portuguesas"
+  ],
+  "resumo": "A 23 de agosto de 2014, dois grupos ligados ao Anonymous Portugal publicaram dados obtidos em sítios de organismos do Estado português, incluindo nomes, palavras-passe, números de telefone, cargos e números de identificação fiscal de colaboradores. Entre os atingidos contavam-se direções-gerais da educação, da saúde e do ensino superior, ministérios, a Procuradoria-Geral da República, o Governo Regional dos Açores e as câmaras de Coimbra e Portalegre. O Ministério da Agricultura afirmou não ter comentário a fazer.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "Registado depois de alguém perguntar porque é que 2014 e 2015 apareciam vazios no cronograma. Faz parte da mesma vaga que viria a dar origem à Operação C4R3T05, mas é um episódio datado e com alvos nomeados, ao contrário da vaga em geral — por isso tem ficha própria.\n\nAssenta numa única fonte, o que o coloca no penúltimo degrau da escala: não houve comunicado de nenhum dos organismos, e o único que respondeu declarou não ter comentário a fazer. As entidades registadas são as que a fonte nomeia; a lista inclui ainda juntas de freguesia que não são identificadas uma a uma.",
+    "versao": 1
+  },
+  "setor": "administracao_publica",
+  "tipos_ataque": [
+    "hacktivismo",
+    "intrusao",
+    "exfiltracao_dados",
+    "exposicao_credenciais"
+  ],
+  "titulo": "Exposição de dados de organismos do Estado por grupos hacktivistas"
+}

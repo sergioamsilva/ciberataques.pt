@@ -77,6 +77,16 @@ def resumir(incidente: dict) -> dict:
         "data": incidente["data"]["inicio"],
         "precisao_data": incidente["data"]["precisao"],
         "ano": int(incidente["data"]["inicio"][:4]),
+        # Os anos que o incidente atravessa. Quase sempre um só; a vaga hacktivista
+        # de 2013 a 2016 durou quatro, e sem isto aparecia apenas em 2013 e fazia
+        # 2014 e 2015 parecerem anos sem nada — que foi o que aconteceu até alguém
+        # perguntar porquê.
+        "anos": list(
+            range(
+                int(incidente["data"]["inicio"][:4]),
+                int((incidente["data"].get("fim") or incidente["data"]["inicio"])[:4]) + 1,
+            )
+        ),
         "setor": incidente["setor"],
         "tipos_ataque": incidente["tipos_ataque"],
         "entidades_afetadas": incidente["entidades_afetadas"],

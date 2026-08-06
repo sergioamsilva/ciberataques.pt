@@ -1,6 +1,6 @@
 {
   "distribuicao_fontes_por_incidente": {
-    "1": 40,
+    "1": 41,
     "2": 14,
     "3": 18,
     "4": 6,
@@ -12,6 +12,7 @@
   "por_ano": {
     "2012": 1,
     "2013": 1,
+    "2014": 1,
     "2016": 1,
     "2017": 2,
     "2018": 3,
@@ -40,6 +41,7 @@
     "SafePay": 1,
     "SamSam": 1,
     "ShinyHunters": 1,
+    "SlowGov09 e Outside The Law": 1,
     "WannaCry": 1,
     "Warlock": 1,
     "akira": 3,
@@ -63,11 +65,11 @@
     "alegado_pelo_atacante": 27,
     "confirmado_pela_entidade": 56,
     "confirmado_por_regulador": 6,
-    "noticiado_por_uma_fonte": 1,
+    "noticiado_por_uma_fonte": 2,
     "reportado_por_media": 3
   },
   "por_setor": {
-    "administracao_publica": 7,
+    "administracao_publica": 8,
     "autarquias": 20,
     "banca_seguros": 1,
     "desporto": 2,
@@ -87,15 +89,15 @@
     "cadeia_fornecimento": 3,
     "ddos": 4,
     "defacement": 3,
-    "exfiltracao_dados": 19,
-    "exposicao_credenciais": 2,
+    "exfiltracao_dados": 20,
+    "exposicao_credenciais": 3,
     "fraude": 1,
-    "hacktivismo": 2,
+    "hacktivismo": 3,
     "indisponibilidade": 34,
     "insider": 1,
-    "intrusao": 32,
+    "intrusao": 33,
     "phishing_bec": 1,
     "ransomware": 54
   },
-  "total": 93
+  "total": 94
 }

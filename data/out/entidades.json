@@ -363,6 +363,24 @@
     "tipo": "entidade_publica",
     "url": "https://www.chaves.pt"
   },
+  "camara-municipal-de-coimbra": {
+    "chaves": [
+      "coimbra",
+      "camara municipal de coimbra",
+      "municipio de coimbra"
+    ],
+    "distrito": "Coimbra",
+    "id": "camara-municipal-de-coimbra",
+    "incidentes": [
+      "2014-exposicao-de-dados-do-estado"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município de Coimbra",
+    "nome_curto": "Câmara Municipal de Coimbra",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-coimbra.pt"
+  },
   "camara-municipal-de-gondomar": {
     "chaves": [
       "camara municipal de gondomar",
@@ -416,6 +434,24 @@
     "setor": "autarquias",
     "tipo": "entidade_publica",
     "url": "https://www.cm-odemira.pt"
+  },
+  "camara-municipal-de-portalegre": {
+    "chaves": [
+      "portalegre",
+      "camara municipal de portalegre",
+      "municipio de portalegre"
+    ],
+    "distrito": "Portalegre",
+    "id": "camara-municipal-de-portalegre",
+    "incidentes": [
+      "2014-exposicao-de-dados-do-estado"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município de Portalegre",
+    "nome_curto": "Câmara Municipal de Portalegre",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-portalegre.pt"
   },
   "camara-municipal-de-santa-comba-dao": {
     "chaves": [
@@ -665,6 +701,55 @@
     "tipo": "empresa",
     "url": "https://www.cuf.pt"
   },
+  "direcao-geral-da-educacao": {
+    "chaves": [
+      "direcao geral da educacao",
+      "dge"
+    ],
+    "distrito": "Lisboa",
+    "id": "direcao-geral-da-educacao",
+    "incidentes": [
+      "2014-exposicao-de-dados-do-estado"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Direção-Geral da Educação",
+    "nome_curto": "DGE",
+    "setor": "educacao_investigacao",
+    "tipo": "entidade_publica"
+  },
+  "direcao-geral-da-saude": {
+    "chaves": [
+      "direcao geral da saude",
+      "dgs"
+    ],
+    "distrito": "Lisboa",
+    "id": "direcao-geral-da-saude",
+    "incidentes": [
+      "2014-exposicao-de-dados-do-estado"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Direção-Geral da Saúde",
+    "nome_curto": "DGS",
+    "setor": "saude",
+    "tipo": "entidade_publica",
+    "url": "https://www.dgs.pt"
+  },
+  "direcao-geral-do-ensino-superior": {
+    "chaves": [
+      "direcao geral do ensino superior",
+      "dges"
+    ],
+    "distrito": "Lisboa",
+    "id": "direcao-geral-do-ensino-superior",
+    "incidentes": [
+      "2014-exposicao-de-dados-do-estado"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Direção-Geral do Ensino Superior",
+    "nome_curto": "DGES",
+    "setor": "educacao_investigacao",
+    "tipo": "entidade_publica"
+  },
   "eda": {
     "chaves": [
       "eda",
@@ -865,6 +950,23 @@
     "setor": "media",
     "tipo": "empresa",
     "url": "https://www.globalmediagroup.pt"
+  },
+  "governo-regional-dos-acores": {
+    "chaves": [
+      "governo regional dos acores",
+      "governo dos acores"
+    ],
+    "distrito": "Açores",
+    "id": "governo-regional-dos-acores",
+    "incidentes": [
+      "2014-exposicao-de-dados-do-estado"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Governo Regional dos Açores",
+    "nome_curto": "Governo Regional dos Açores",
+    "setor": "administracao_publica",
+    "tipo": "entidade_publica",
+    "url": "https://portal.azores.gov.pt"
   },
   "hospital-do-divino-espirito-santo": {
     "chaves": [
@@ -1157,6 +1259,37 @@
     "tipo": "empresa",
     "url": "https://www.millenniumbcp.pt"
   },
+  "ministerio-da-agricultura": {
+    "chaves": [
+      "ministerio da agricultura"
+    ],
+    "distrito": "Lisboa",
+    "id": "ministerio-da-agricultura",
+    "incidentes": [
+      "2014-exposicao-de-dados-do-estado"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Ministério da Agricultura",
+    "nome_curto": "Ministério da Agricultura",
+    "setor": "administracao_publica",
+    "tipo": "entidade_publica"
+  },
+  "ministerio-da-defesa-nacional": {
+    "chaves": [
+      "ministerio da defesa nacional",
+      "defesa nacional"
+    ],
+    "distrito": "Lisboa",
+    "id": "ministerio-da-defesa-nacional",
+    "incidentes": [
+      "2014-exposicao-de-dados-do-estado"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Ministério da Defesa Nacional",
+    "nome_curto": "Ministério da Defesa Nacional",
+    "setor": "justica_defesa",
+    "tipo": "entidade_publica"
+  },
   "ministerio-da-economia": {
     "chaves": [
       "ministerio da economia",
@@ -1382,6 +1515,7 @@
     "distrito": "Lisboa",
     "id": "procuradoria-geral-da-republica",
     "incidentes": [
+      "2014-exposicao-de-dados-do-estado",
       "2013-vaga-hacktivista-contra-o-estado"
     ],
     "incidentes_em_cascata": [],

@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import CartaoIncidente from "../components/CartaoIncidente.astro";
 import Cronograma from "../components/Cronograma.astro";
 import MapaDeDistritos from "../components/MapaDeDistritos.astro";
-import { incidentes, agregados, manifesto, nome, formatarNumero, entidades, documentados, alegacoes } from "../lib/dados";
+import { incidentes, agregados, manifesto, nome, formatarNumero, entidades, documentados, alegacoes, porExtenso, amplitudeEmAnos } from "../lib/dados";
 
 const lista = incidentes();
 const ag = agregados();
@@ -79,7 +79,12 @@ const numeros = [
   <section class="mx-auto max-w-6xl px-5 py-10" aria-labelledby="h-cronograma">
     <div class="regua pt-6">
       <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-        <h2 id="h-cronograma" class="text-2xl">Dez anos, marca a marca</h2>
+        <h2 id="h-cronograma" class="text-2xl">
+          {/* Derivado dos dados: este título já disse "Dez anos" durante meses
+              depois de o registo passar a cobrir quinze. */}
+          {porExtenso(amplitudeEmAnos()).replace(/^./, (c) => c.toUpperCase())} anos,
+          marca a marca
+        </h2>
         <p class="max-w-md text-sm text-[var(--color-suave)]">
           Cada marca é um incidente. Quanto mais escura, mais sustentado está o que
           dele se sabe.

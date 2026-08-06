@@ -2930,6 +2930,19 @@
     "url_arquivo": null
   },
   {
+    "contem_declaracao_da_entidade": true,
+    "data": "2014-08-23",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2014-exposicao-de-dados-do-estado",
+    "indice": 0,
+    "publicador": "Pplware",
+    "tipo": "noticia",
+    "titulo": "Hackers continuam a expor vários dados do Governo",
+    "url": "https://pplware.sapo.pt/informacao/hackers-continuam-a-expor-varios-dados-do-governo/",
+    "url_arquivo": null
+  },
+  {
     "contem_declaracao_de_autoridade": true,
     "data": "2015-02-01",
     "estado_ligacao": "viva",

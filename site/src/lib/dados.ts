@@ -125,6 +125,8 @@ export interface ResumoIncidente {
   data: string;
   precisao_data: string;
   ano: number;
+  /** Todos os anos que o incidente atravessa. Um só, exceto nas vagas plurianuais. */
+  anos: number[];
   setor: string;
   tipos_ataque: string[];
   entidades_afetadas: string[];
@@ -403,4 +405,34 @@ export function distritos(): Distrito[] {
   return [...por.entries()]
     .map(([nome, lista]) => ({ id: identificadorDeDistrito(nome), nome, incidentes: lista }))
     .sort((a, b) => b.incidentes.length - a.incidentes.length || a.nome.localeCompare(b.nome, "pt"));
+}
+
+/*
+ * Números por extenso, para texto corrido.
+ *
+ * Existe por causa de um título escrito à mão que os dados desmentiram: a página
+ * inicial anunciou durante meses "Dez anos, marca a marca", e continuou a
+ * anunciá-lo quando o registo passou a cobrir de 2012 a 2026, que são quinze.
+ *
+ * É o mesmo erro que o gráfico dos setores tinha e que a banda do ano de pico
+ * evitou desde o início: um número escrito num sítio e os dados noutro acabam
+ * sempre por divergir, e quem lê não tem como saber qual dos dois está certo.
+ */
+const EXTENSO = [
+  "zero", "um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove",
+  "dez", "onze", "doze", "treze", "catorze", "quinze", "dezasseis", "dezassete",
+  "dezoito", "dezanove", "vinte", "vinte e um", "vinte e dois", "vinte e três",
+  "vinte e quatro", "vinte e cinco", "vinte e seis", "vinte e sete", "vinte e oito",
+  "vinte e nove", "trinta",
+];
+
+export function porExtenso(n: number): string {
+  return EXTENSO[n] ?? String(n);
+}
+
+/** Quantos anos o registo abrange, do primeiro incidente ao último. */
+export function amplitudeEmAnos(): number {
+  const anos = agregados().por_ano ? Object.keys(agregados().por_ano).map(Number) : [];
+  if (anos.length === 0) return 0;
+  return Math.max(...anos) - Math.min(...anos) + 1;
 }

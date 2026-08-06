@@ -41,6 +41,7 @@
   "data": {
     "detecao": "2015-02-01",
     "divulgacao": "2015-02-01",
+    "fim": "2016-05-04",
     "inicio": "2013-01-01",
     "precisao": "ano"
   },
@@ -126,7 +127,7 @@
   "revisao": {
     "curador": "ss",
     "data": "2026-08-06",
-    "nota": "Primeiro caso de hacktivismo do arquivo, e o primeiro anterior a 2017, registado depois de o âmbito ter sido alargado a 2012. É também um dos melhor sustentados de todo o registo: a fonte primária é a própria Polícia Judiciária e há trinta e um arguidos constituídos, o que é prova mais forte do que a de casos muito mais recentes.\n\nFica como um incidente e não como trinta, porque é assim que as fontes o tratam: uma investigação, uma operação, uma vaga. Registar cada ataque em separado exigiria datas e alvos que nunca foram tornados públicos um a um. A data de início é aproximada ao ano, pela mesma razão.\n\nA Polícia Judiciária aparece aqui nos dois papéis, como investigadora e como alvo.",
+    "nota": "Primeiro caso de hacktivismo do arquivo, e o primeiro anterior a 2017, registado depois de o âmbito ter sido alargado a 2012. É também um dos melhor sustentados de todo o registo: a fonte primária é a própria Polícia Judiciária e há trinta e um arguidos constituídos, o que é prova mais forte do que a de casos muito mais recentes.\n\nFica como um incidente e não como trinta, porque é assim que as fontes o tratam: uma investigação, uma operação, uma vaga. Registar cada ataque em separado exigiria datas e alvos que nunca foram tornados públicos um a um. A data de início é aproximada ao ano, pela mesma razão.\n\nA Polícia Judiciária aparece aqui nos dois papéis, como investigadora e como alvo.\n\nTem data de fim, ao contrário de quase todos os incidentes deste arquivo, porque durou. Sem ela, uma vaga de quatro anos apareceria apenas em 2013 e faria os anos seguintes parecerem vazios — que foi exatamente o que aconteceu até alguém perguntar porque é que 2014 e 2015 não tinham nada.",
     "versao": 1
   },
   "setor": "justica_defesa",

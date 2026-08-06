@@ -6,12 +6,13 @@ import ContextoOficial from "../../components/ContextoOficial.astro";
 import { incidentes, agregados, ehAlegacao } from "../../lib/dados";
 
 export function getStaticPaths() {
-  const anos = [...new Set(incidentes().map((r) => r.ano))].sort((a, b) => b - a);
+  const anos = [...new Set(incidentes().flatMap((r) => r.anos ?? [r.ano]))].sort((a, b) => b - a);
   return anos.map((ano) => ({ params: { ano: String(ano) }, props: { ano } }));
 }
 
 const { ano } = Astro.props as { ano: number };
-const doAno = incidentes().filter((r) => r.ano === ano);
+/* Um incidente aparece em todos os anos que atravessa, e não só no primeiro. */
+const doAno = incidentes().filter((r) => (r.anos ?? [r.ano]).includes(ano));
 const lista = doAno.filter((r) => !ehAlegacao(r));
 const nAlegacoes = doAno.length - lista.length;
 const anos = Object.keys(agregados().por_ano).map(Number).sort((a, b) => b - a);
@@ -36,6 +37,22 @@ const i = anos.indexOf(ano);
 
     <div class="mt-10">
       {lista.map((inc) => <CartaoIncidente incidente={inc} />)}
+      {/*
+        Um incidente plurianual aparece em todos os anos que atravessa, mas o
+        cronograma da página inicial põe-lhe uma marca só, no ano em que começou.
+        Sem esta nota, quem vê 2015 vazio no gráfico e cheio aqui fica sem perceber
+        qual dos dois está certo — estão os dois.
+      */}
+      {lista.some((r) => r.ano !== ano) && (
+        <p class="regua mt-8 pt-4 text-sm text-[var(--color-suave)]">
+          {lista.filter((r) => r.ano !== ano).length === 1
+            ? "Um dos registos acima começou noutro ano"
+            : `${lista.filter((r) => r.ano !== ano).length} dos registos acima começaram noutro ano`}{" "}
+          e prolongou-se por {ano}. No cronograma da página inicial conta uma vez, no
+          ano em que começou.
+        </p>
+      )}
+
       <NotaAlegacoes n={nAlegacoes} contexto={`de ${ano}`} />
 
       <div class="mt-12">
