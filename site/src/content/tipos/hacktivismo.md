@@ -84,10 +84,24 @@ ninguém declarou deixa de ser um arquivo e passa a ser uma opinião.
 
 ## Como este registo o trata
 
-Não há, à data, incidentes classificados como hacktivismo em Portugal neste
-arquivo. Houve casos com contornos que o sugeriam — designadamente ataques a sítios
-institucionais em períodos de tensão internacional — mas nenhum reuniu, ao mesmo
-tempo, motivação declarada e confirmação independente de que o ataque ocorreu.
+Não há, à data, incidentes classificados como hacktivismo neste arquivo. Este texto
+já atribuiu essa ausência à exigência de motivação declarada mais confirmação
+independente. Estava incompleto, e a razão principal é outra: **o hacktivismo
+português é sobretudo anterior a 2017**, e o [registo começa em
+2017](/metodologia/#ambito).
 
-A ausência aqui é, portanto, uma consequência direta da regra acima, e não uma
-afirmação de que não acontece em Portugal.
+Entre 2012 e 2015 houve em Portugal a maior sequência de ciberataques de que há
+memória, conduzida por grupos que se reclamavam dos Anonymous, com partidos com
+assento parlamentar, a Polícia Judiciária, a Presidência da República, o Ministério
+Público, a EDP e a Sonae entre os alvos. Em fevereiro de 2013, um só grupo
+desfigurou noventa sítios portugueses de uma vez. Em agosto de 2012, os sítios de
+várias embaixadas portuguesas foram desfigurados, um deles com mensagem política. A
+investigação levou a duas dezenas de arguidos por crimes informáticos.
+
+Nada disso está aqui, e não está por uma questão de âmbito temporal, não por
+nenhuma dúvida sobre os factos — parte deles tem confirmação judicial, que é a prova
+mais forte que esta escala reconhece.
+
+A ausência de casos recentes é que se explica pela regra: um ataque com bandeira
+política só entra se a motivação for declarada por quem reivindica ou apurada por
+autoridade, e nenhum caso posterior a 2017 reuniu as duas coisas.
