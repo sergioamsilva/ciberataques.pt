@@ -13,6 +13,7 @@ import {
   entidades,
   formatarData,
   formatarNumero,
+  mitreDoAtor,
   nome,
   type Incidente,
 } from "../../lib/dados";
@@ -105,6 +106,8 @@ interface LinhaFicha {
   fonte?: number;
   /* Quando presente, o valor é renderizado como ligações em vez de texto. */
   ligacoes?: { texto: string; href: string }[];
+  /* Ligação para fora do site: leva rel="noopener" e um sinal visual. */
+  externa?: boolean;
 }
 const ficha: LinhaFicha[] = [];
 ficha.push({ rotulo: "Data", valor: formatarData(inc.data.inicio, inc.data.precisao) });
@@ -128,6 +131,20 @@ if (inc.ator?.grupo) {
         ? `${inc.ator.grupo} (reivindicado pelo próprio grupo)`
         : inc.ator.grupo,
   });
+  /*
+   * A ficha do grupo no MITRE ATT&CK, quando existe. É uma ligação para quem
+   * queira saber mais sobre o ator — não uma afirmação sobre as técnicas usadas
+   * NESTE ataque, que na esmagadora maioria dos casos ninguém tornou públicas.
+   */
+  const mitre = mitreDoAtor(inc.ator.grupo);
+  if (mitre) {
+    ficha.push({
+      rotulo: "Ator no MITRE ATT&CK",
+      valor: `${mitre.nome} · ${mitre.id}`,
+      ligacoes: [{ texto: `${mitre.nome} · ${mitre.id}`, href: mitre.url }],
+      externa: true,
+    });
+  }
 }
 if (inc.impacto?.pessoas_afetadas_declaradas) {
   ficha.push({
@@ -311,7 +328,7 @@ const alternativos = [
                   {/* Tudo numa linha: quebras de linha no JSX viram espaço
                       renderizado, e produziam "Ransomware , Indisponibilidade". */}
                   {linha.ligacoes
-                    ? linha.ligacoes.map((l, i) => (<>{i > 0 ? ", " : ""}<a href={l.href}>{l.texto}</a></>))
+                    ? linha.ligacoes.map((l, i) => (<>{i > 0 ? ", " : ""}<a href={l.href} rel={linha.externa ? "noopener" : undefined}>{l.texto}</a>{linha.externa && <span class="mono-etiqueta"> ↗</span>}</>))
                     : linha.valor}
                 </dd>
               </div>

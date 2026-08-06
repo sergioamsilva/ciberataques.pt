@@ -1,0 +1,135 @@
+{
+  "atores": {
+    "8base": {
+      "mitre": null
+    },
+    "Akira": {
+      "mitre": {
+        "aliases": [
+          "GOLD SAHARA",
+          "PUNK SPIDER",
+          "Howling Scorpius"
+        ],
+        "id": "G1024",
+        "nome": "Akira",
+        "tipo": "grupo",
+        "url": "https://attack.mitre.org/groups/G1024/"
+      }
+    },
+    "BrainCipher": {
+      "mitre": null
+    },
+    "HIVE": {
+      "mitre": null
+    },
+    "Lapsus$ Group": {
+      "mitre": {
+        "aliases": [
+          "DEV-0537",
+          "Strawberry Tempest"
+        ],
+        "id": "G1004",
+        "nome": "LAPSUS$",
+        "tipo": "grupo",
+        "url": "https://attack.mitre.org/groups/G1004/"
+      }
+    },
+    "LockBit": {
+      "mitre": null
+    },
+    "LockBit 2.0": {
+      "mitre": null
+    },
+    "Play": {
+      "mitre": {
+        "aliases": [],
+        "id": "G1040",
+        "nome": "Play",
+        "tipo": "grupo",
+        "url": "https://attack.mitre.org/groups/G1040/"
+      }
+    },
+    "Qilin": {
+      "mitre": null
+    },
+    "Ragnar Locker": {
+      "mitre": null
+    },
+    "RansomEXX": {
+      "mitre": null
+    },
+    "Rhysida": {
+      "mitre": null
+    },
+    "SafePay": {
+      "mitre": null
+    },
+    "SamSam": {
+      "mitre": null
+    },
+    "ShinyHunters": {
+      "mitre": null
+    },
+    "WannaCry": {
+      "mitre": {
+        "aliases": [
+          "WanaCry",
+          "WanaCrypt",
+          "WanaCrypt0r",
+          "WCry"
+        ],
+        "id": "S0366",
+        "nome": "WannaCry",
+        "tipo": "software",
+        "url": "https://attack.mitre.org/software/S0366/"
+      }
+    },
+    "Warlock": {
+      "mitre": null
+    },
+    "darkrace": {
+      "mitre": null
+    },
+    "devman": {
+      "mitre": null
+    },
+    "everest": {
+      "mitre": null
+    },
+    "lockbit3": {
+      "mitre": null
+    },
+    "lockbit5": {
+      "mitre": null
+    },
+    "medusa": {
+      "mitre": null
+    },
+    "nitrogen": {
+      "mitre": null
+    },
+    "nova": {
+      "mitre": null
+    },
+    "qilin": {
+      "mitre": null
+    },
+    "ransomhouse": {
+      "mitre": null
+    },
+    "ranstreet": {
+      "mitre": null
+    },
+    "royal": {
+      "mitre": null
+    },
+    "settra": {
+      "mitre": null
+    },
+    "thegentlemen": {
+      "mitre": null
+    }
+  },
+  "metodo": "Cada identificador foi confirmado abrindo a página respetiva em attack.mitre.org e lendo o nome e o ID. Não foram usadas listagens agregadas, que se revelaram truncadas e devolveram falsos negativos.",
+  "verificado_em": "2026-08-06"
+}

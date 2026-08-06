@@ -326,3 +326,40 @@ export interface Contexto {
 export function contexto(): Contexto {
   return lerJson<Contexto>(OUT, "contexto.json");
 }
+
+export interface RefMitre {
+  id: string;
+  tipo: "grupo" | "software";
+  nome: string;
+  url: string;
+  aliases: string[];
+}
+
+/*
+ * A ligação de um ator ao MITRE ATT&CK, quando existe.
+ *
+ * Devolve null quando o grupo não está documentado pela MITRE, o que é o caso da
+ * maioria — e é informação, não falha: as marcas de ransomware que atingem
+ * municípios e PME portuguesas estão em boa parte abaixo do limiar de documentação
+ * do ATT&CK.
+ *
+ * Isto NÃO diz que o incidente usou as técnicas que a MITRE associa ao grupo. Ver
+ * o cabeçalho de referencia/atores.yaml para a razão de não atribuirmos técnicas
+ * por incidente.
+ */
+export function mitreDoAtor(ator: string | null | undefined): RefMitre | null {
+  if (!ator) return null;
+  const dados = lerJson<{ atores: Record<string, { mitre: RefMitre | null }> }>(
+    OUT,
+    "atores.json",
+  );
+  /*
+   * Insensível a maiúsculas de propósito: os sites de extorsão escrevem "akira" e
+   * "lockbit3", a MITRE escreve "Akira". É o mesmo ator, e resolver só pela forma
+   * exata faria a ligação desaparecer justamente nos casos vindos do tracker.
+   */
+  const chave = Object.keys(dados.atores).find(
+    (k) => k.toLowerCase() === ator.toLowerCase(),
+  );
+  return chave ? (dados.atores[chave].mitre ?? null) : null;
+}

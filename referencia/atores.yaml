@@ -1,0 +1,88 @@
+# Correspondência entre os atores que este registo atribui e o MITRE ATT&CK.
+#
+# O que aqui está é UMA LIGAÇÃO, não uma caracterização técnica do incidente. Diz
+# "este grupo está documentado pela MITRE, e é aqui" — e nada mais. Não afirma que
+# o ataque a esta entidade usou as técnicas que a MITRE associa ao grupo.
+#
+# A distinção não é preciosismo. Ponderou-se atribuir técnicas ATT&CK a cada
+# incidente, e a medição mostrou porque não se pode: em 83 incidentes, UM menciona
+# phishing e DOIS nomeiam o vetor de entrada. Atribuir técnicas ao resto seria
+# inferi-las, e um identificador como T1486 parece muito mais autoritário do que um
+# palpite em prosa — é o mesmo erro que uma referência académica inventada, com
+# melhor disfarce.
+#
+# Se algum dia uma fonte descrever a técnica de um incidente concreto, essa técnica
+# entra na ficha desse incidente com o índice da fonte, como qualquer outro facto.
+#
+# `mitre: null` significa que foi procurado e não existe. É informação: a maior
+# parte das marcas de ransomware que atingem municípios e PME portuguesas está
+# abaixo do limiar de documentação da MITRE.
+
+verificado_em: "2026-08-06"
+metodo: >-
+  Cada identificador foi confirmado abrindo a página respetiva em attack.mitre.org
+  e lendo o nome e o ID. Não foram usadas listagens agregadas, que se revelaram
+  truncadas e devolveram falsos negativos.
+
+atores:
+  Akira:
+    mitre:
+      id: G1024
+      tipo: grupo
+      nome: Akira
+      url: https://attack.mitre.org/groups/G1024/
+      aliases: [GOLD SAHARA, PUNK SPIDER, Howling Scorpius]
+
+  "Lapsus$ Group":
+    mitre:
+      id: G1004
+      tipo: grupo
+      nome: LAPSUS$
+      url: https://attack.mitre.org/groups/G1004/
+      aliases: [DEV-0537, Strawberry Tempest]
+
+  Play:
+    mitre:
+      id: G1040
+      tipo: grupo
+      nome: Play
+      url: https://attack.mitre.org/groups/G1040/
+      aliases: []
+
+  WannaCry:
+    mitre:
+      id: S0366
+      tipo: software
+      nome: WannaCry
+      url: https://attack.mitre.org/software/S0366/
+      aliases: [WanaCry, WanaCrypt, WanaCrypt0r, WCry]
+
+  # Procurados e ausentes do ATT&CK à data da verificação. Ficam registados para
+  # não serem procurados outra vez, e porque a ausência diz alguma coisa.
+  LockBit: {mitre: null}
+  "LockBit 2.0": {mitre: null}
+  HIVE: {mitre: null}
+  Rhysida: {mitre: null}
+  Qilin: {mitre: null}
+  RansomEXX: {mitre: null}
+  "Ragnar Locker": {mitre: null}
+  SamSam: {mitre: null}
+  ShinyHunters: {mitre: null}
+  8base: {mitre: null}
+  SafePay: {mitre: null}
+  BrainCipher: {mitre: null}
+  Warlock: {mitre: null}
+  darkrace: {mitre: null}
+  devman: {mitre: null}
+  everest: {mitre: null}
+  lockbit3: {mitre: null}
+  lockbit5: {mitre: null}
+  medusa: {mitre: null}
+  nitrogen: {mitre: null}
+  nova: {mitre: null}
+  qilin: {mitre: null}
+  ransomhouse: {mitre: null}
+  ranstreet: {mitre: null}
+  royal: {mitre: null}
+  settra: {mitre: null}
+  thegentlemen: {mitre: null}

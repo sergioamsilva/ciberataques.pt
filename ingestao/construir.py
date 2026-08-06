@@ -178,6 +178,11 @@ def construir(hoje: str | None = None) -> dict:
     # entidade, com outro universo e outra metodologia, e a única coisa que não
     # podem sofrer é serem somadas às nossas por distração de quem lê o JSON.
     # Um ficheiro à parte torna a distinção estrutural em vez de documental.
+    # A ligação de cada ator ao MITRE ATT&CK, quando existe. É uma ligação e não uma
+    # caracterização do incidente: ver o cabeçalho de referencia/atores.yaml.
+    atores = ler_yaml(DIR_REFERENCIA / "atores.yaml")
+    escrever_json(DIR_OUT / "atores.json", atores)
+
     contexto = ler_yaml(DIR_REFERENCIA / "cncs.yaml")
     por_ano_registo = Counter(r["ano"] for r in resumos)
     contexto["comparacao"] = {
