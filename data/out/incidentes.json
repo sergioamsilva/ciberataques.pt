@@ -1326,7 +1326,7 @@
     ],
     "estado_confirmacao": "confirmado_pela_entidade",
     "id": "2022-seguranca-social",
-    "n_fontes": 7,
+    "n_fontes": 8,
     "precisao_data": "dia",
     "setor": "administracao_publica",
     "tem_disputas": false,

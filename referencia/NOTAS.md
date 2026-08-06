@@ -114,8 +114,27 @@ caminho correto e está por fazer.
 - **Datas de publicação**: o Público, o ECO e o Observador trazem a data no próprio URL,
   o que as torna auto-verificáveis. O Tek, o DN e o Jornal de Negócios não. Para estes,
   confirmar a data no artigo antes de citar, ou não citar.
-- **publico.pt devolve 403** a acessos automatizados. As datas continuam a ser legíveis
-  no URL, mas o texto não. Excertos destes artigos exigem verificação manual.
+- **publico.pt e expresso.pt devolvem 403** a acessos automatizados. As datas continuam
+  a ser legíveis no URL, mas o texto não.
+
+  **Antes de dar um artigo bloqueado por inacessível, procurar sempre a cópia
+  arquivada.** É prática obrigatória, não recurso de último caso:
+
+  1. `http://archive.org/wayback/available?url=<url codificado>` devolve a captura
+     mais próxima, com data. É a via mais rápida e não exige chave.
+  2. A cópia da Wayback traz frequentemente o texto **completo**, mesmo de artigos que
+     hoje estão atrás de paywall — a captura foi feita quando a página era aberta.
+  3. O Arquivo.pt tem melhor cobertura de conteúdo português, mas o seu `robots.txt`
+     proíbe `/wayback`. Para o leitor damos a ligação de pesquisa; para nós, não
+     raspamos. A autorização à FCCN continua por pedir.
+
+  Isto não é teórico. O artigo do Expresso de 23 de novembro de 2022 sobre a Segurança
+  Social — o único que reporta o objetivo do ataque — só foi lido através da captura de
+  24 de janeiro de 2025. `ingestao/arquivo.py` já tem
+  `procurar_no_internet_archive()` para o efeito.
+
+  Ao citar, a fonte registada é o **original**, não a captura: a captura vai em
+  `url_arquivo`. Quem lê deve poder ir ao sítio do editor.
 - **Os números do atacante mudam.** No caso da TAP, o Ragnar Locker falou em 400 mil
   clientes a 31 de agosto, publicou ficheiros de cerca de 115 mil a 13 de setembro, e
   anunciou 1,5 milhões a 20 de setembro. Registar sempre com a data da alegação, em

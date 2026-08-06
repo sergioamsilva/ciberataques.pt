@@ -5,7 +5,12 @@
     "grupo": null,
     "nota": "Sem atribuição pública."
   },
-  "correcoes": [],
+  "correcoes": [
+    {
+      "data": "2026-08-06",
+      "descricao": "Acrescentada a cobertura do Expresso de 23 de novembro de 2022, lida através da cópia arquivada na Wayback Machine por o original devolver 403. Regista o que foi noticiado sobre o objetivo do ataque, com a atribuição à fonte anónima à vista."
+    }
+  ],
   "cronologia": [
     {
       "data": "2022-11-18",
@@ -24,6 +29,24 @@
       "fonte": 2,
       "texto": "A Polícia Judiciária avalia a dimensão dos danos, em articulação com o Centro Nacional de Cibersegurança.",
       "tipo": "regulador"
+    },
+    {
+      "data": "2022-11-23",
+      "fonte": 7,
+      "texto": "O Expresso noticia, citando fonte não identificada que recusou fornecer mais detalhes, que o ataque visava a destruição de dados, e que a deteção atempada terá evitado um apagão com efeitos à escala nacional. A afirmação não foi confirmada pelo ministério nem por autoridade.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-11-23",
+      "fonte": 7,
+      "texto": "Estão em curso diligências para localizar e extrair eventual código malicioso deixado nas redes tuteladas pela Segurança Social, que pudesse vir a ser acionado mais tarde.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2022-11-23",
+      "fonte": 7,
+      "texto": "Nem o Ministério do Trabalho e da Segurança Social nem as autoridades revelam que serviços foram atingidos, a data em que o ataque foi detetado, ou qualquer reivindicação de autoria.",
+      "tipo": "divulgacao"
     },
     {
       "data": "2022-11-30",
@@ -147,6 +170,17 @@
       "titulo": "Nomes de 14 mil trabalhadores da Segurança Social expostos no ciberataque",
       "url": "https://eco.sapo.pt/2023/01/11/nomes-de-14-mil-trabalhadores-da-seguranca-social-expostos-no-ciberataque/",
       "url_arquivo": "http://web.archive.org/web/20230111124203/https://eco.sapo.pt/2023/01/11/nomes-de-14-mil-trabalhadores-da-seguranca-social-expostos-no-ciberataque/"
+    },
+    {
+      "data": "2022-11-23",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Expresso",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque à Segurança Social “visava a destruição” de bases de dados que são das mais valiosas para Portugal",
+      "url": "https://expresso.pt/sociedade/ciencia/2022-11-23-Ciberataque-a-Seguranca-Social-visava-a-destruicao-de-bases-de-dados-que-sao-das-mais-valiosas-para-Portugal-0217bbfa",
+      "url_arquivo": "http://web.archive.org/web/20250124122702/https://expresso.pt/sociedade/ciencia/2022-11-23-Ciberataque-a-Seguranca-Social-visava-a-destruicao-de-bases-de-dados-que-sao-das-mais-valiosas-para-Portugal-0217bbfa"
     }
   ],
   "id": "2022-seguranca-social",
@@ -174,9 +208,9 @@
   "resumo": "A 18 de novembro de 2022, o Instituto de Informática detetou uma intrusão intencional e maliciosa na rede informática da Segurança Social, tornada pública três dias depois. A posição inicial foi a de que não fora apurado acesso indevido a dados de cidadãos ou empresas, mas o apuramento evoluiu: a 11 de janeiro de 2023 confirmou-se a exposição de nomes de 14 mil trabalhadores, e o incidente foi comunicado à Comissão Nacional de Proteção de Dados. Os dados de contribuintes e empresas mantiveram-se declarados como não comprometidos. Investigaram o caso a Polícia Judiciária e o Centro Nacional de Cibersegurança.",
   "revisao": {
     "curador": "ss",
-    "data": "2026-08-05",
-    "nota": "Caso ilustrativo de como a dimensão de um incidente só se estabiliza semanas depois. A cronologia regista a evolução da posição pública em vez de a esconder atrás do apuramento final. Excertos por preencher.",
-    "versao": 1
+    "data": "2026-08-06",
+    "nota": "Caso ilustrativo de como a dimensão de um incidente só se estabiliza semanas depois. A cronologia regista a evolução da posição pública em vez de a esconder atrás do apuramento final. Excertos por preencher.\n\nA afirmação de que o ataque visava a destruição de dados é a mais forte que existe sobre este caso, e é também a menos sustentada: vem de uma fonte não identificada, num único órgão, e nunca foi confirmada pelo ministério nem por autoridade. Fica registada como o que é — uma notícia sobre o que alguém disse — e não como facto apurado. O grau de confirmação do incidente não sobe por causa dela.\n\nO artigo só foi lido através da captura de 24 de janeiro de 2025 na Wayback Machine, por o Expresso devolver 403 a acessos automatizados. A fonte registada é o original; a captura vai em url_arquivo.",
+    "versao": 3
   },
   "setor": "administracao_publica",
   "tipos_ataque": [
