@@ -883,3 +883,14 @@
     Primeira junta de freguesia do registo. O nome é o usado pela própria e pela
     imprensa local; a organização administrativa das freguesias de Águeda sofreu
     agregações, pelo que a designação oficial pode diferir.
+
+- id: uniao-de-freguesias-do-ameixial
+  nome: União de Freguesias de Ameixial (Santa Vitória e São Bento)
+  nome_curto: União de Freguesias do Ameixial
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Évora
+  chaves: [ameixial, uniao de freguesias do ameixial, uniao de freguesias de ameixial, santa vitoria e sao bento]
+  nota: >-
+    Freguesia do concelho de Estremoz. Não confundir com o Ameixial do concelho
+    de Loulé, no distrito de Faro.

@@ -1,0 +1,100 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": null
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-04-30",
+      "fonte": 0,
+      "texto": "Apura-se que foram feitas duas transferências de 30 mil euros cada a partir da conta da freguesia, através do serviço de home banking da Caixa Geral de Depósitos, contornando o protocolo de autorizações e assinaturas.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2026-04-30",
+      "fonte": 0,
+      "texto": "O presidente da junta torna o caso público. A freguesia apresenta reclamação formal junto do banco, exigindo a reposição dos valores, e formaliza queixa-crime.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-04-30",
+      "fonte": 0,
+      "texto": "A Polícia Judiciária confirma que a investigação está a cargo da Unidade Local de Investigação Criminal de Évora.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados pessoais. O que foi descrito é o desvio de fundos da conta bancária da freguesia.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-04-30",
+    "divulgacao": "2026-04-30",
+    "inicio": "2026-04-30",
+    "precisao": "desconhecida"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "uniao-de-freguesias-do-ameixial"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "administracao-local",
+    "freguesia",
+    "desvio-de-fundos",
+    "homebanking"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "contem_declaracao_de_autoridade": true,
+      "data": "2026-04-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Ardina do Alentejo",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "União de Freguesias do Ameixial perde 60 mil euros em burla informática",
+      "url": "https://ardinadoalentejo.pt/2026/04/30/uniao-de-freguesias-do-ameixial-perde-60-mil-euros-em-burla-informatica/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-uniao-de-freguesias-do-ameixial",
+  "impacto": {
+    "custo_declarado_eur": 60000,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": []
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [
+    "2026-junta-de-freguesia-de-agueda"
+  ],
+  "resumo": "A União de Freguesias de Ameixial, no concelho de Estremoz, perdeu 60 mil euros num esquema de burla informática, tornado público a 30 de abril de 2026. Foram feitas duas transferências de 30 mil euros cada a partir da conta da freguesia, através do serviço de home banking da Caixa Geral de Depósitos, contornando o protocolo de autorizações e assinaturas. A freguesia apresentou reclamação junto do banco a exigir a reposição dos valores e formalizou queixa-crime. A investigação está a cargo da Unidade Local de Investigação Criminal de Évora.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "Primeiro caso de fraude do registo, e chegou exatamente pela razão que o explicador deste tipo aponta para ele ser o mais subrepresentado: não houve serviço em baixo que denunciasse o caso, e só se soube porque o presidente o levou a uma assembleia de freguesia. Os sistemas funcionaram como foram desenhados — o que falhou foi o controlo de autorizações do lado bancário. É também o único caso do arquivo com uma perda financeira direta e quantificada. A data é a da divulgação; a do desvio nunca foi tornada pública.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": [
+    "fraude"
+  ],
+  "titulo": "Burla informática de 60 mil euros à União de Freguesias do Ameixial"
+}

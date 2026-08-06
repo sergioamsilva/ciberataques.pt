@@ -1507,6 +1507,25 @@
     "tipo": "entidade_publica",
     "url": "https://www.ulsam.min-saude.pt"
   },
+  "uniao-de-freguesias-do-ameixial": {
+    "chaves": [
+      "ameixial",
+      "uniao de freguesias do ameixial",
+      "uniao de freguesias de ameixial",
+      "santa vitoria e sao bento"
+    ],
+    "distrito": "Évora",
+    "id": "uniao-de-freguesias-do-ameixial",
+    "incidentes": [
+      "2026-uniao-de-freguesias-do-ameixial"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "União de Freguesias de Ameixial (Santa Vitória e São Bento)",
+    "nome_curto": "União de Freguesias do Ameixial",
+    "nota": "Freguesia do concelho de Estremoz. Não confundir com o Ameixial do concelho de Loulé, no distrito de Faro.",
+    "setor": "autarquias",
+    "tipo": "entidade_publica"
+  },
   "universidade-da-beira-interior": {
     "chaves": [
       "universidade da beira interior",

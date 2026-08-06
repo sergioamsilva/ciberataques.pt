@@ -466,6 +466,20 @@
     "url_arquivo": "http://web.archive.org/web/20260508173543/https://www.publico.pt/2026/05/08/enter/noticia/hackers-atacam-plataforma-canvas-utilizada-escolas-universidades-portuguesas-2174031"
   },
   {
+    "contem_declaracao_da_entidade": true,
+    "contem_declaracao_de_autoridade": true,
+    "data": "2026-04-30",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-uniao-de-freguesias-do-ameixial",
+    "indice": 0,
+    "publicador": "Ardina do Alentejo",
+    "tipo": "noticia",
+    "titulo": "União de Freguesias do Ameixial perde 60 mil euros em burla informática",
+    "url": "https://ardinadoalentejo.pt/2026/04/30/uniao-de-freguesias-do-ameixial-perde-60-mil-euros-em-burla-informatica/",
+    "url_arquivo": null
+  },
+  {
     "data": "2026-04-27",
     "estado_ligacao": "viva",
     "excerto": null,

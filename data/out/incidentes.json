@@ -227,6 +227,24 @@
   {
     "ano": 2026,
     "ator": null,
+    "data": "2026-04-30",
+    "entidades_afetadas": [
+      "uniao-de-freguesias-do-ameixial"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-uniao-de-freguesias-do-ameixial",
+    "n_fontes": 1,
+    "precisao_data": "desconhecida",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "fraude"
+    ],
+    "titulo": "Burla informática de 60 mil euros à União de Freguesias do Ameixial"
+  },
+  {
+    "ano": 2026,
+    "ator": null,
     "data": "2026-04-27",
     "entidades_afetadas": [
       "ctt"

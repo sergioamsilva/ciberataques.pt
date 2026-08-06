@@ -86,11 +86,19 @@ Cibersegurança e nas estatísticas da Polícia Judiciária, ambos citados na
 
 ## Como este registo o trata
 
-Não há, à data, incidentes classificados como fraude neste arquivo. A razão é
-estrutural e vale a pena dizê-la: uma organização que sofre uma intrusão tende a
-comunicar, porque os clientes reparam no serviço em baixo. Uma organização que
-transferiu dinheiro para a conta errada por ter acreditado num correio eletrónico
-tende a não comunicar coisa nenhuma — não há serviço afetado que denuncie o caso, e
-há um custo reputacional que só se paga se se falar.
+Há um caso, e a forma como chegou confirma tudo o que está escrito acima. A
+[União de Freguesias do Ameixial](/incidentes/2026-uniao-de-freguesias-do-ameixial/),
+no concelho de Estremoz, perdeu sessenta mil euros em duas transferências de trinta
+mil, feitas a partir da conta da freguesia pelo serviço de home banking do banco,
+contornando o protocolo de autorizações e assinaturas.
 
-É, provavelmente, o tipo mais subrepresentado desta taxonomia.
+Não houve serviço em baixo. Não houve ficheiro encriptado. Ninguém teria dado por
+nada se o presidente da junta não tivesse levado o caso a uma assembleia de
+freguesia — e foi só por isso que se soube. É também o único incidente de todo
+este arquivo com uma perda financeira direta e quantificada, o que diz alguma
+coisa sobre o que se consegue apurar dos outros.
+
+Continua a ser, com quase toda a certeza, o tipo mais subrepresentado desta
+taxonomia. Uma organização que sofre uma intrusão tende a comunicar, porque os
+clientes reparam no serviço em baixo. Uma organização que transferiu dinheiro para
+a conta errada tende a não comunicar coisa nenhuma.
