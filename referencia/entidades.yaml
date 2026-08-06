@@ -894,3 +894,14 @@
   nota: >-
     Freguesia do concelho de Estremoz. Não confundir com o Ameixial do concelho
     de Loulé, no distrito de Faro.
+
+- id: junta-de-freguesia-de-bem-viver
+  nome: Junta de Freguesia de Bem Viver
+  nome_curto: Junta de Freguesia de Bem Viver
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Porto
+  chaves: [bem viver, junta de freguesia de bem viver, freguesia de bem viver]
+  nota: >-
+    Freguesia do concelho de Marco de Canaveses, resultante da agregação de Ariz,
+    Carvalhosa, Vila Boa de Quires e Sande.

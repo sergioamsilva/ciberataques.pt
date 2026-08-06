@@ -2638,6 +2638,19 @@
   },
   {
     "contem_declaracao_da_entidade": true,
+    "data": "2019-11-06",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2019-junta-de-freguesia-de-bem-viver",
+    "indice": 0,
+    "publicador": "Correio da Manhã",
+    "tipo": "noticia",
+    "titulo": "Junta foi alvo de ataque informático",
+    "url": "https://www.cmjornal.pt/portugal/detalhe/junta-foi-alvo-de-ataque-informatico",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
     "data": "2019-10-25",
     "estado_ligacao": "viva",
     "excerto": null,

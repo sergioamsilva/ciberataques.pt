@@ -1496,6 +1496,24 @@
   {
     "ano": 2019,
     "ator": null,
+    "data": "2019-10-23",
+    "entidades_afetadas": [
+      "junta-de-freguesia-de-bem-viver"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2019-junta-de-freguesia-de-bem-viver",
+    "n_fontes": 1,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao"
+    ],
+    "titulo": "Ciberataque à Junta de Freguesia de Bem Viver"
+  },
+  {
+    "ano": 2019,
+    "ator": null,
     "data": "2019-10-15",
     "entidades_afetadas": [
       "camara-municipal-de-vinhais"

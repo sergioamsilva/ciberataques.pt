@@ -905,6 +905,24 @@
     "setor": "autarquias",
     "tipo": "entidade_publica"
   },
+  "junta-de-freguesia-de-bem-viver": {
+    "chaves": [
+      "bem viver",
+      "junta de freguesia de bem viver",
+      "freguesia de bem viver"
+    ],
+    "distrito": "Porto",
+    "id": "junta-de-freguesia-de-bem-viver",
+    "incidentes": [
+      "2019-junta-de-freguesia-de-bem-viver"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Junta de Freguesia de Bem Viver",
+    "nome_curto": "Junta de Freguesia de Bem Viver",
+    "nota": "Freguesia do concelho de Marco de Canaveses, resultante da agregação de Ariz, Carvalhosa, Vila Boa de Quires e Sande.",
+    "setor": "autarquias",
+    "tipo": "entidade_publica"
+  },
   "luis-simoes": {
     "chaves": [
       "luis simoes",

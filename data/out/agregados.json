@@ -1,6 +1,6 @@
 {
   "distribuicao_fontes_por_incidente": {
-    "1": 35,
+    "1": 36,
     "2": 13,
     "3": 16,
     "4": 6,
@@ -12,7 +12,7 @@
   "por_ano": {
     "2017": 2,
     "2018": 2,
-    "2019": 1,
+    "2019": 2,
     "2020": 1,
     "2021": 1,
     "2022": 20,
@@ -56,13 +56,13 @@
   },
   "por_estado_confirmacao": {
     "alegado_pelo_atacante": 27,
-    "confirmado_pela_entidade": 50,
+    "confirmado_pela_entidade": 51,
     "confirmado_por_regulador": 5,
     "reportado_por_media": 3
   },
   "por_setor": {
     "administracao_publica": 6,
-    "autarquias": 18,
+    "autarquias": 19,
     "banca_seguros": 1,
     "desporto": 2,
     "educacao_investigacao": 8,
@@ -86,9 +86,9 @@
     "fraude": 1,
     "indisponibilidade": 31,
     "insider": 1,
-    "intrusao": 27,
+    "intrusao": 28,
     "phishing_bec": 1,
     "ransomware": 52
   },
-  "total": 85
+  "total": 86
 }

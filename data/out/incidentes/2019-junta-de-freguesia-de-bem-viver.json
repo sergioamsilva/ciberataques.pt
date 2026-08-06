@@ -1,0 +1,95 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Não houve reivindicação conhecida nem atribuição por autoridade."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2019-10-23",
+      "fonte": 0,
+      "texto": "O servidor da junta é alvo de um ataque informático, confirmado pela empresa que lhe presta apoio informático.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2019-11-06",
+      "fonte": 0,
+      "texto": "O caso torna-se público. A junta considera que o objetivo de quem atacou seria vir a pedir um resgate pelo conteúdo do servidor, e indica ter comunicado o caso às autoridades competentes.",
+      "tipo": "divulgacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre dados comprometidos. O que foi descrito publicamente é o acesso ao servidor da junta.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2019-10-23",
+    "divulgacao": "2019-11-06",
+    "inicio": "2019-10-23",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "junta-de-freguesia-de-bem-viver"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "administracao-local",
+    "freguesia",
+    "resgate-antecipado"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2019-11-06",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Correio da Manhã",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Junta foi alvo de ataque informático",
+      "url": "https://www.cmjornal.pt/portugal/detalhe/junta-foi-alvo-de-ataque-informatico",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2019-junta-de-freguesia-de-bem-viver",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "Não é conhecido pedido de resgate. A junta exprimiu a convicção de que viria a haver um, o que não é o mesmo que ter havido.",
+    "servicos_afetados": [
+      "servidor da junta"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2019-camara-municipal-de-vinhais",
+    "2026-junta-de-freguesia-de-agueda"
+  ],
+  "resumo": "A 23 de outubro de 2019, o servidor da Junta de Freguesia de Bem Viver, no concelho de Marco de Canaveses, foi alvo de um ataque informático, confirmado pela empresa que presta apoio informático à autarquia. O caso tornou-se público a 6 de novembro. A junta considerou que o objetivo de quem atacou seria vir a pedir um resgate pelo conteúdo do servidor, e indicou ter comunicado o caso às autoridades competentes. Não é conhecido pedido de resgate nem o desfecho.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "Classificado como intrusão e não como ransomware, apesar de a junta falar em resgate: o que a fonte descreve é a convicção de que viria a haver um pedido, e uma convicção sobre o futuro não é um facto sobre o passado. A taxonomia reserva a intrusão exatamente para isto — acesso confirmado com objetivo final não apurado. Segundo caso de 2019 do registo, e terceira freguesia.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": [
+    "intrusao"
+  ],
+  "titulo": "Ciberataque à Junta de Freguesia de Bem Viver"
+}
