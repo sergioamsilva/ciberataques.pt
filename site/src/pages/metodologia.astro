@@ -45,7 +45,16 @@ const umaFonte = ag.distribuicao_fontes_por_incidente["1"] ?? 0;
   descricao="Como reunimos, classificamos e verificamos os ciberataques registados, e o que deliberadamente não publicamos."
   grafo={grafo}
 >
-  <div class="mx-auto max-w-3xl px-5 py-10">
+  {/*
+    O contentor é o mesmo do resto do site, mas a prosa mantém a sua medida.
+
+    Esta página esteve em max-w-3xl, o que dava boa medida de leitura enquanto era
+    só texto. Deixou de ser: tem agora o gráfico de fontes por incidente e a série
+    do CERT.PT, e esses ficavam espremidos. Alargar tudo estragaria a leitura —
+    linhas de cem caracteres cansam —, por isso alarga o contentor e cada parágrafo
+    fica limitado à sua medida. Os blocos de dados usam a largura toda.
+  */}
+  <div class="mx-auto max-w-4xl px-5 py-10">
     <header>
       <p class="mono-etiqueta">Como trabalhamos</p>
       <h1 class="mt-2 text-4xl sm:text-5xl">Metodologia</h1>
@@ -58,7 +67,7 @@ const umaFonte = ag.distribuicao_fontes_por_incidente["1"] ?? 0;
 
     <section class="mt-14 scroll-mt-24" id="escala" aria-labelledby="h-escala">
       <h2 id="h-escala" class="regua pt-5 text-2xl">A escala de confirmação</h2>
-      <p class="mt-3 leading-relaxed">
+      <p class="mt-3 max-w-2xl leading-relaxed">
         Nem tudo o que se sabe sobre um ataque tem o mesmo valor. Um comunicado da empresa
         não é a mesma coisa que um número publicado por quem a atacou. Cada incidente
         mostra, no topo da ficha e em texto legível, em que nível se encontra.
@@ -105,12 +114,12 @@ const umaFonte = ag.distribuicao_fontes_por_incidente["1"] ?? 0;
 
     <section class="mt-14 scroll-mt-24" id="disputas" aria-labelledby="h-disputas">
       <h2 id="h-disputas" class="regua pt-5 text-2xl">Versões em confronto</h2>
-      <p class="mt-3 leading-relaxed">
+      <p class="mt-3 max-w-2xl leading-relaxed">
         Em vários casos portugueses, os números que circulam vêm de quem atacou e são
         contestados por quem foi atacado. Quando isso acontece, registamos as duas
         versões lado a lado, identificadas, em vez de escolher uma.
       </p>
-      <p class="mt-3 leading-relaxed">
+      <p class="mt-3 max-w-2xl leading-relaxed">
         Um número avançado pelo atacante nunca entra na ficha técnica do incidente.
         Fica na secção de versões em confronto, com a indicação de quem o afirmou e de
         quem o contestou. Neste momento
@@ -122,13 +131,13 @@ const umaFonte = ag.distribuicao_fontes_por_incidente["1"] ?? 0;
 
     <section class="mt-14 scroll-mt-24" id="vies" aria-labelledby="h-vies">
       <h2 id="h-vies" class="regua pt-5 text-2xl">O viés que herdamos</h2>
-      <p class="mt-3 leading-relaxed">
+      <p class="mt-3 max-w-2xl leading-relaxed">
         Este registo assenta em fontes públicas, e as fontes públicas cobrem o que é
         notícia. Uma operadora nacional em baixo é notícia; uma empresa de vinte pessoas
         em Guimarães não é. Quem contar incidentes por setor está a contar
         <strong> incidentes noticiados</strong>, não incidentes ocorridos.
       </p>
-      <p class="mt-3 leading-relaxed">
+      <p class="mt-3 max-w-2xl leading-relaxed">
         Não conseguimos corrigir isto. O que podemos fazer é torná-lo mensurável, e é
         o que está aqui: quanto mais incidentes existirem com uma única fonte, mais
         frágil é a cobertura.
@@ -199,7 +208,7 @@ const umaFonte = ag.distribuicao_fontes_por_incidente["1"] ?? 0;
 
     <section class="mt-14 scroll-mt-24" id="lacunas" aria-labelledby="h-lacunas">
       <h2 id="h-lacunas" class="regua pt-5 text-2xl">Lacunas conhecidas</h2>
-      <p class="mt-3 leading-relaxed">
+      <p class="mt-3 max-w-2xl leading-relaxed">
         O registo cobre {m.anos[0]} a {m.anos[m.anos.length - 1]} e está longe de completo.
         Há anos com cobertura pública muito mais fraca do que outros, e há incidentes
         descritos por autoridades em termos agregados sem que a entidade visada seja
@@ -228,7 +237,7 @@ const umaFonte = ag.distribuicao_fontes_por_incidente["1"] ?? 0;
 
     <section class="mt-14" aria-labelledby="h-erros">
       <h2 id="h-erros" class="regua pt-5 text-2xl">Quando erramos</h2>
-      <p class="mt-3 leading-relaxed">
+      <p class="mt-3 max-w-2xl leading-relaxed">
         Corrigimos em público, com registo da correção na própria ficha, e não apagamos
         incidentes publicados: um incidente que se revele infundado passa a estar marcado
         como desmentido, com a explicação, e continua acessível na mesma morada.
