@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CartaoIncidente from "../../components/CartaoIncidente.astro";
+import NotaAlegacoes from "../../components/NotaAlegacoes.astro";
+import { distritos, ehAlegacao } from "../../lib/dados";
+
+export function getStaticPaths() {
+  return distritos().map((d) => ({ params: { distrito: d.id }, props: { d } }));
+}
+
+const { d } = Astro.props;
+const documentadas = d.incidentes.filter((r) => !ehAlegacao(r));
+const nAlegacoes = d.incidentes.length - documentadas.length;
+---
+
+<BaseLayout
+  titulo={`Ciberataques no distrito de ${d.nome}`}
+  descricao={`${d.incidentes.length} ciberataques registados a entidades sediadas no distrito de ${d.nome}.`}
+>
+  <div class="mx-auto max-w-4xl px-5 py-10">
+    <nav aria-label="Navegação estrutural" class="mono-etiqueta">
+      <a href="/distritos/">Distritos</a>
+    </nav>
+
+    <header class="mt-6">
+      <h1 class="mt-2 text-4xl sm:text-5xl">{d.nome}</h1>
+      <p class="mt-4 text-lg">
+        {d.incidentes.length}
+        {d.incidentes.length === 1 ? "registo" : "registos"} de entidades com sede
+        neste distrito.
+      </p>
+    </header>
+
+    <div class="mt-10">
+      {documentadas.map((inc) => <CartaoIncidente incidente={inc} />)}
+      <NotaAlegacoes n={nAlegacoes} contexto={`deste distrito`} />
+    </div>
+  </div>
+</BaseLayout>

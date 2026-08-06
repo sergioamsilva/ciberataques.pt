@@ -363,3 +363,44 @@ export function mitreDoAtor(ator: string | null | undefined): RefMitre | null {
   );
   return chave ? (dados.atores[chave].mitre ?? null) : null;
 }
+
+/*
+ * A vista geográfica do registo.
+ *
+ * O arquivo tinha entradas por setor, por tipo, por ano e por entidade, e nenhuma
+ * por território — apesar de 88 dos 89 registos terem distrito. Passou a fazer
+ * falta quando o mapa da página inicial deixou de ser uma imagem e passou a ser
+ * navegação: uma marca que se vê e não se abre é uma promessa por cumprir.
+ */
+export function identificadorDeDistrito(nome: string): string {
+  return nome
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+export interface Distrito {
+  id: string;
+  nome: string;
+  incidentes: ResumoIncidente[];
+}
+
+export function distritos(): Distrito[] {
+  const todas = entidades();
+  const por = new Map<string, ResumoIncidente[]>();
+  for (const inc of incidentes()) {
+    /* Um incidente com duas entidades no mesmo distrito conta uma vez. */
+    const seus = new Set(
+      inc.entidades_afetadas.map((e) => todas[e]?.distrito).filter(Boolean) as string[],
+    );
+    for (const d of seus) {
+      if (!por.has(d)) por.set(d, []);
+      por.get(d)!.push(inc);
+    }
+  }
+  return [...por.entries()]
+    .map(([nome, lista]) => ({ id: identificadorDeDistrito(nome), nome, incidentes: lista }))
+    .sort((a, b) => b.incidentes.length - a.incidentes.length || a.nome.localeCompare(b.nome, "pt"));
+}

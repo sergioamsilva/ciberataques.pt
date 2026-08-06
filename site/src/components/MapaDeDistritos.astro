@@ -20,7 +20,7 @@
  * atacada — quer dizer que a imprensa nacional está em Lisboa. Quem olha para
  * isto vê o viés antes de o ler explicado.
  */
-import { entidades, incidentes } from "../lib/dados";
+import { entidades, identificadorDeDistrito, incidentes } from "../lib/dados";
 import {
   ALTURA,
   CONTORNO_CONTINENTE,
@@ -117,14 +117,24 @@ const percentagem = Math.round((emLisboa / total) * 100);
     {marcas.map((m, i) => (
       <>
         {m.n > 0 ? (
-          <circle
-            cx={m.x}
-            cy={m.y}
-            r={raio(m.n)}
-            class="marca-distrito"
-            fill="var(--color-tinta)"
-            style={`--atraso: ${i * 45}ms`}
-          />
+          <a
+            href={`/distritos/${identificadorDeDistrito(m.nome)}/`}
+            class="ligacao-distrito"
+            aria-label={`${m.nome}: ${m.n} ${m.n === 1 ? "registo" : "registos"}`}
+          >
+            {/* Alvo transparente maior do que a marca. A marca de um distrito com
+                um só registo tem 2px de raio, e uma ligação de 4px não se acerta
+                com o dedo — a WCAG 2.2 pede 24px de lado. */}
+            <circle cx={m.x} cy={m.y} r={Math.max(raio(m.n), 5.5)} fill="transparent" />
+            <circle
+              cx={m.x}
+              cy={m.y}
+              r={raio(m.n)}
+              class="marca-distrito"
+              fill="var(--color-tinta)"
+              style={`--atraso: ${i * 45}ms`}
+            />
+          </a>
         ) : (
           /* Distrito sem registos: fica presente, e vazio. Apagá-lo daria a
              entender que não existe, quando o que não existe é cobertura. */
@@ -183,6 +193,21 @@ const percentagem = Math.round((emLisboa / total) * 100);
 </figure>
 
 <style>
+  .ligacao-distrito {
+    cursor: pointer;
+  }
+  .ligacao-distrito .marca-distrito {
+    transition: fill 160ms ease;
+  }
+  .ligacao-distrito:hover .marca-distrito,
+  .ligacao-distrito:focus-visible .marca-distrito {
+    fill: var(--color-acento);
+  }
+  .ligacao-distrito:focus-visible {
+    outline: 2px solid var(--color-acento);
+    outline-offset: 2px;
+  }
+
   .rotulo-distrito {
     font-family: var(--font-mono);
     font-size: 3.1px;

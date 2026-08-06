@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import MapaDeDistritos from "../../components/MapaDeDistritos.astro";
+import { distritos } from "../../lib/dados";
+
+const lista = distritos();
+const total = lista.reduce((n, d) => n + d.incidentes.length, 0);
+const maximo = Math.max(...lista.map((d) => d.incidentes.length), 1);
+---
+
+<BaseLayout
+  titulo="Distritos"
+  descricao="Ciberataques registados em Portugal, por distrito da entidade atingida."
+>
+  <div class="mx-auto max-w-4xl px-5 py-10">
+    <header>
+      <p class="mono-etiqueta">O registo</p>
+      <h1 class="mt-2 text-4xl sm:text-5xl">Distritos</h1>
+      <p class="mt-4 max-w-2xl text-lg leading-relaxed text-[var(--color-corpo)]">
+        Onde ficam as entidades atingidas. O distrito é o da sede da entidade, e não
+        o do dano: um ataque a uma empresa sediada em Lisboa pode parar serviços em
+        todo o país.
+      </p>
+      <p class="mt-3 max-w-2xl text-sm text-[var(--color-suave)]">
+        Como em todo o registo, estas são contagens de incidentes <em>noticiados</em>.
+        A concentração em Lisboa diz sobretudo onde está a imprensa que os noticia —
+        <a href="/metodologia/#vies">o viés que herdamos</a>.
+      </p>
+    </header>
+
+    <div class="mt-10">
+      <MapaDeDistritos />
+    </div>
+
+    <ul
+      class="mt-12 divide-y divide-[var(--color-borda)] border-y border-[var(--color-borda)]"
+      role="list"
+    >
+      {lista.map((d, i) => (
+        <li class="revelar py-4">
+          <a href={`/distritos/${d.id}/`} class="group flex items-baseline gap-5 no-underline">
+            <span class="mono-etiqueta w-6 shrink-0 tabular-nums">
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <span class="w-12 shrink-0 text-right font-mono text-3xl tabular-nums leading-none text-[var(--color-tinta)]">
+              {d.incidentes.length}
+            </span>
+            <span class="min-w-0 flex-1">
+              <span class="block text-lg group-hover:underline">{d.nome}</span>
+              <span
+                class="barra-setor mt-2 block h-1.5 bg-[var(--color-tinta)] transition-colors group-hover:bg-[var(--color-acento)]"
+                style={`width: ${Math.max(3, (d.incidentes.length / maximo) * 100)}%`}
+                aria-hidden="true"
+              ></span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <p class="mt-6 text-sm text-[var(--color-suave)]">
+      {total} registos com distrito atribuído. Um incidente com entidades em mais do
+      que um distrito conta em cada um deles.
+    </p>
+  </div>
+</BaseLayout>
