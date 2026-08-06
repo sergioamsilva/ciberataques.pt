@@ -81,14 +81,29 @@ let indiceGlobal = 0;
   <div class="overflow-x-auto pb-1">
     {/* Largura mínima ajustada para caber num telemóvel sem scroll horizontal: com
         o pico fora do ecrã inicial, o gráfico perdia aquilo que tem para dizer. */}
-    <ol
-      class="flex min-w-[19rem] items-end gap-1 sm:gap-3"
-      style={`height: ${alturaTotal}px`}
-    >
+    {/*
+      A etiqueta do ano vive DENTRO da coluna das marcas, e não numa segunda lista
+      por baixo.
+
+      Havia aqui um erro que fazia o gráfico mentir. As colunas das marcas tinham
+      `max-w-20`; a lista de etiquetas por baixo não tinha. Com dez anos e uma
+      página larga, as colunas paravam de crescer aos 5rem e amontoavam-se à
+      esquerda enquanto as etiquetas se espalhavam por toda a largura — e o pico de
+      2022 aparecia por cima do rótulo "21".
+
+      Um gráfico de proveniência que atribui incidentes ao ano errado é pior do que
+      não ter gráfico nenhum. Com a etiqueta dentro da mesma caixa das marcas, o
+      desalinhamento deixa de ser possível em vez de ficar apenas corrigido.
+    */}
+    <ol class="flex min-w-[19rem] items-end gap-1 sm:gap-3">
       {todosOsAnos.map((ano) => {
         const lista = porAno.get(ano) ?? [];
         return (
           <li class="group flex min-w-0 max-w-20 flex-1 flex-col justify-end gap-1">
+            <span
+              class="flex flex-col justify-end gap-1"
+              style={`height: ${alturaTotal}px`}
+            >
             {lista.map((inc) => {
               indiceGlobal += 1;
               return (
@@ -102,19 +117,16 @@ let indiceGlobal = 0;
                 </a>
               );
             })}
+            </span>
+            <span
+              class="mt-1 text-center font-mono text-[0.625rem] tabular-nums text-[var(--color-suave)] group-hover:text-[var(--color-acento)]"
+              aria-hidden="true"
+            >
+              {String(ano).slice(2)}
+            </span>
           </li>
         );
       })}
-    </ol>
-
-    <ol class="mt-2 flex min-w-[19rem] gap-1 sm:gap-3" aria-hidden="true">
-      {todosOsAnos.map((ano) => (
-        <li class="min-w-0 flex-1 text-center">
-          <span class="font-mono text-[0.625rem] tabular-nums text-[var(--color-suave)]">
-            {String(ano).slice(2)}
-          </span>
-        </li>
-      ))}
     </ol>
   </div>
 

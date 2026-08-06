@@ -243,3 +243,17 @@
     word-break: break-all;
   }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  /* As barras dos setores crescem da esquerda, como a régua de anos cresce da base. */
+  html.js .barra-setor {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  html.js .visivel .barra-setor,
+  html.js .grupo-setor.visivel .barra-setor {
+    transform: scaleX(1);
+  }
+}

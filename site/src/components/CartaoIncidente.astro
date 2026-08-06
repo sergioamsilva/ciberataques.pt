@@ -1,6 +1,12 @@
 ---
 import Confianca from "./Confianca.astro";
-import { formatarData, nome, entidades, type ResumoIncidente } from "../lib/dados";
+import {
+  corDeConfianca,
+  formatarData,
+  nome,
+  entidades,
+  type ResumoIncidente,
+} from "../lib/dados";
 
 interface Props {
   incidente: ResumoIncidente;
@@ -20,12 +26,28 @@ const filtros = indexavel
   : {};
 ---
 
-<article class="revelar group regua py-6" {...filtros}>
+{/*
+  O filete de confirmação à esquerda.
+
+  É a alteração que faz esta listagem dizer, de relance, aquilo que o site existe
+  para dizer: quais destes casos estão sustentados e quais são a palavra de quem
+  diz ter atacado. Antes, os dois liam-se como duas etiquetas cinzentas iguais.
+
+  A cor vem da rampa ordinal validada e nunca vai sozinha — o rótulo em texto
+  continua ao lado, porque uma cor não se lê em voz alta nem sobrevive a um leitor
+  de ecrã. E vem primeiro que a data, porque é a informação mais importante da
+  linha.
+*/}
+<article
+  class="revelar group regua border-l-2 py-6 pl-5 transition-[padding-left] duration-200 hover:pl-6"
+  style={`border-left-color: ${corDeConfianca(inc.estado_confirmacao)}`}
+  {...filtros}
+>
   <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+    <Confianca estado={inc.estado_confirmacao} />
     <span class="mono-etiqueta tabular-nums">
       <time datetime={inc.data}>{formatarData(inc.data, inc.precisao_data)}</time>
     </span>
-    <Confianca estado={inc.estado_confirmacao} />
   </div>
 
   <h3 class="mt-2 text-xl">
@@ -46,10 +68,22 @@ const filtros = indexavel
     {inc.tipos_ataque.map((t) => (
       <li class="mono-etiqueta">{nome("tipos_ataque", t)}</li>
     ))}
-    {inc.ator && <li class="mono-etiqueta text-[var(--color-acento)]">{inc.ator}</li>}
+    {/*
+      O nome do grupo atacante esteve na cor de acento. Era o pior destino possível
+      para a única cor do site: dava destaque cromático à marca de quem ataca, num
+      registo cuja razão de ser é o contrário disso. Fica em tinta corrente,
+      precedido da palavra que diz o que é — uma reivindicação, não um facto.
+    */}
+    {inc.ator && (
+      <li class="mono-etiqueta">
+        <span class="opacity-60">reivindicado por</span> {inc.ator}
+      </li>
+    )}
     <li class="mono-etiqueta tabular-nums">
       {inc.n_fontes} {inc.n_fontes === 1 ? "fonte" : "fontes"}
     </li>
-    {inc.tem_disputas && <li class="mono-etiqueta">versões em confronto</li>}
+    {inc.tem_disputas && (
+      <li class="mono-etiqueta text-[var(--color-acento)]">versões em confronto</li>
+    )}
   </ul>
 </article>

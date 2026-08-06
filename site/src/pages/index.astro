@@ -83,18 +83,27 @@ const numeros = [
   {/* --------------------------------------------- Fila editorial de estatísticas */}
   <section class="mx-auto max-w-6xl px-5 py-6" aria-labelledby="h-numeros">
     <h2 id="h-numeros" class="sr-only">Números do registo</h2>
-    <dl class="grid gap-px border border-[var(--color-borda)] bg-[var(--color-borda)] sm:grid-cols-2 lg:grid-cols-4">
+    {/*
+      Sem molduras. O resto do site organiza-se por filetes horizontais, à maneira
+      de página impressa, e estas quatro caixas com contorno liam-se como um painel
+      de controlo colado a um arquivo. O filete em cima e a régua de acento em baixo
+      dizem a mesma coisa com o vocabulário que já existe, e deixam o número
+      respirar — que é o que ele merece, sendo o conteúdo.
+    */}
+    <dl class="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
       {numeros.map((item) => (
-        <a href={item.d} class="revelar group block bg-[var(--color-papel)] p-6 no-underline">
-          <dt class="mono-etiqueta">{item.r}</dt>
+        <a href={item.d} class="revelar group regua block pt-3 no-underline">
+          {/* Duas linhas reservadas para todos: um rótulo que quebra desalinhava a
+              base dos números, e são os números que se comparam entre si. */}
+          <dt class="mono-etiqueta block min-h-[2.4em] leading-[1.2]">{item.r}</dt>
           <dd
-            class="mt-2 font-mono text-4xl tabular-nums text-[var(--color-tinta)]"
+            class="mt-1 font-mono text-5xl tabular-nums leading-none text-[var(--color-tinta)]"
             data-contar={item.n}
           >
             {formatarNumero(item.n)}
           </dd>
           <span
-            class="mt-3 block h-px w-8 bg-[var(--color-acento)] transition-all duration-300 group-hover:w-16"
+            class="mt-3 block h-0.5 w-10 bg-[var(--color-acento)] transition-all duration-300 group-hover:w-full"
             aria-hidden="true"
           ></span>
         </a>

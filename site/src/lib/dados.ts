@@ -233,10 +233,38 @@ export function formatarData(iso: string, precisao = "dia"): string {
   if (precisao === "ano") return `${ano}`;
   if (precisao === "mes") return `${MESES[mes - 1]} de ${ano}`;
   if (precisao === "semana") return `semana de ${dia} de ${MESES[mes - 1]} de ${ano}`;
-  if (precisao === "desconhecida") return `data desconhecida (${ano})`;
+  /*
+   * "data desconhecida (2026)" era literalmente verdade e lia-se como uma falha
+   * nossa, logo na primeira linha de dezenas de cartões da listagem. O que não se
+   * sabe destes casos é o DIA em que o ataque começou — o ano sabe-se, e é o que
+   * interessa a quem percorre um arquivo cronológico. Dizemos o que se sabe
+   * primeiro e a ressalva a seguir.
+   */
+  if (precisao === "desconhecida") return `${ano} · dia por apurar`;
   return `${dia} de ${MESES[mes - 1]} de ${ano}`;
 }
 
 export function formatarNumero(n: number): string {
   return n.toLocaleString("pt-PT");
+}
+
+/*
+ * A cor de cada grau de confirmação, num só sítio.
+ *
+ * Estava repetida em três componentes. Além do risco óbvio de divergirem, a
+ * repetição escondia o problema maior: a rampa existia e quase não se via. Numa
+ * listagem, "confirmado pela entidade" e "alegado pelo atacante" liam-se como duas
+ * etiquetas cinzentas iguais, e o campo que distingue este registo de todos os
+ * outros era o elemento menos visível da página.
+ */
+export function corDeConfianca(estado: EstadoConfirmacao): string {
+  const cores: Record<EstadoConfirmacao, string> = {
+    confirmado_pela_entidade: "var(--color-conf-entidade)",
+    confirmado_por_regulador: "var(--color-conf-regulador)",
+    reportado_por_media: "var(--color-conf-media)",
+    noticiado_por_uma_fonte: "var(--color-conf-unica)",
+    alegado_pelo_atacante: "var(--color-conf-atacante)",
+    desmentido: "var(--color-conf-desmentido)",
+  };
+  return cores[estado];
 }
