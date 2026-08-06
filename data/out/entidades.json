@@ -108,6 +108,24 @@
     "tipo": "empresa",
     "url": "https://www.ambisig.com"
   },
+  "apametal": {
+    "chaves": [
+      "apametal",
+      "aparelhagem metalica"
+    ],
+    "distrito": "Lisboa",
+    "id": "apametal",
+    "incidentes": [
+      "2021-apametal"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Apametal — Aparelhagem Metálica, Lda.",
+    "nome_curto": "Apametal",
+    "nota": "Metalomecânica de sinalética e imagem corporativa, fundada em 1978, com sede em Rio de Mouro, Sintra.",
+    "setor": "industria",
+    "tipo": "empresa",
+    "url": "https://apametal.com"
+  },
   "armis-group": {
     "chaves": [
       "armis group",
@@ -920,6 +938,24 @@
     "nome": "Junta de Freguesia de Bem Viver",
     "nome_curto": "Junta de Freguesia de Bem Viver",
     "nota": "Freguesia do concelho de Marco de Canaveses, resultante da agregação de Ariz, Carvalhosa, Vila Boa de Quires e Sande.",
+    "setor": "autarquias",
+    "tipo": "entidade_publica"
+  },
+  "junta-de-freguesia-de-sao-salvador-ilhavo": {
+    "chaves": [
+      "sao salvador ilhavo",
+      "junta de freguesia de sao salvador",
+      "freguesia de sao salvador"
+    ],
+    "distrito": "Aveiro",
+    "id": "junta-de-freguesia-de-sao-salvador-ilhavo",
+    "incidentes": [
+      "2018-junta-de-freguesia-de-sao-salvador-ilhavo"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Junta de Freguesia de São Salvador",
+    "nome_curto": "Junta de Freguesia de São Salvador (Ílhavo)",
+    "nota": "Freguesia do concelho de Ílhavo. Há outras freguesias de São Salvador no país, pelo que o concelho faz parte da identificação.",
     "setor": "autarquias",
     "tipo": "entidade_publica"
   },

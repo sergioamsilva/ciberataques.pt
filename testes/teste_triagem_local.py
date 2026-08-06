@@ -61,3 +61,27 @@ def teste_um_caso_estrangeiro_continua_a_ser_rejeitado():
         )
     )
     assert not resultado.passa, "um caso brasileiro passou a triagem"
+
+
+def teste_o_gazeteiro_dos_concelhos_esta_completo_e_sem_o_ambiguo():
+    """307 dos 308 concelhos, e a ausência do 308.º é deliberada.
+
+    A triagem conhecia nove nomes de lugares portugueses num registo que aspira a
+    cobrir 308 municípios, e por isso o título "Junta de São Salvador, em Ílhavo,
+    foi alvo de ataque informático" não continha um único marcador português.
+
+    Falta Cuba, no distrito de Beja: é o único concelho cujo nome é também o de um
+    país, e apanharia notícias de Havana. Se alguém o acrescentar sem pensar, este
+    teste explica porque não deve.
+    """
+    from ingestao.comum import DIR_REFERENCIA, ler_yaml
+
+    lex = ler_yaml(DIR_REFERENCIA / "triagem.yaml")
+    concelhos = lex["concelhos"]
+    assert len(concelhos) == 307, f"esperados 307 concelhos, há {len(concelhos)}"
+    assert "Cuba" not in concelhos, (
+        "Cuba foi acrescentada ao gazeteiro. É o único concelho cujo nome é também o "
+        "de um país: 'ataque informático em Cuba' passaria a apanhar Havana."
+    )
+    for esperado in ("Ílhavo", "Santa Comba Dão", "Marco de Canaveses", "Estremoz", "Serpa"):
+        assert esperado in concelhos, f"{esperado} em falta no gazeteiro"

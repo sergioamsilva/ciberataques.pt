@@ -1475,6 +1475,25 @@
     "titulo": "Ciberataque à Universidade de Lisboa"
   },
   {
+    "ano": 2021,
+    "ator": null,
+    "data": "2021-04-01",
+    "entidades_afetadas": [
+      "apametal"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2021-apametal",
+    "n_fontes": 1,
+    "precisao_data": "mes",
+    "setor": "industria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "indisponibilidade"
+    ],
+    "titulo": "Ataque de ransomware à Apametal"
+  },
+  {
     "ano": 2020,
     "ator": "Ragnar Locker",
     "data": "2020-04-13",
@@ -1565,6 +1584,25 @@
       "insider"
     ],
     "titulo": "Acessos indevidos a processos clínicos no Centro Hospitalar Barreiro Montijo"
+  },
+  {
+    "ano": 2018,
+    "ator": null,
+    "data": "2018-02-18",
+    "entidades_afetadas": [
+      "junta-de-freguesia-de-sao-salvador-ilhavo"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2018-junta-de-freguesia-de-sao-salvador-ilhavo",
+    "n_fontes": 1,
+    "precisao_data": "semana",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Junta de Freguesia de São Salvador, em Ílhavo"
   },
   {
     "ano": 2017,

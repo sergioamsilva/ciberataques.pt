@@ -1,0 +1,109 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": null
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2018-02-18",
+      "fonte": 0,
+      "texto": "Durante o fim de semana, um ataque informático inviabiliza a utilização dos sistemas e do servidor da junta.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2018-02-19",
+      "fonte": 0,
+      "texto": "Todos os ficheiros são recuperados 24 horas após a deteção, a partir de um sistema de proteção de dados adquirido em dezembro anterior.",
+      "tipo": "reposicao"
+    },
+    {
+      "data": "2018-02-23",
+      "fonte": 0,
+      "texto": "O caso é comunicado à GNR de Ílhavo e à Polícia Judiciária de Aveiro, com entrega dos sistemas encriptados.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2018-02-23",
+      "fonte": 0,
+      "texto": "O presidente da junta garante que todos os dados estão salvaguardados, que não houve difusão de dados e que os residentes na freguesia podem ficar descansados.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "A junta afirmou que todos os dados se encontravam salvaguardados e que não houve qualquer difusão dos mesmos.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2018-02-19",
+    "divulgacao": "2018-02-23",
+    "inicio": "2018-02-18",
+    "precisao": "semana"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "junta-de-freguesia-de-sao-salvador-ilhavo"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "administracao-local",
+    "freguesia",
+    "copias-de-seguranca-funcionaram",
+    "recuperacao-em-24h"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2018-02-23",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Lusa / O Jogo",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Junta de São Salvador, em Ílhavo, foi alvo de ataque informático",
+      "url": "https://www.ojogo.pt/extra/artigo/junta-de-sao-salvador-em-ilhavo-foi-alvo-de-ataque-informatico/9140866",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2018-junta-de-freguesia-de-sao-salvador-ilhavo",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": 24,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "Não é conhecido pedido de resgate. Os sistemas foram entregues encriptados às autoridades.",
+    "servicos_afetados": [
+      "sistemas informáticos e servidor da junta"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [
+    "2019-junta-de-freguesia-de-bem-viver",
+    "2026-junta-de-freguesia-de-agueda"
+  ],
+  "resumo": "No fim de semana de 18 de fevereiro de 2018, um ataque informático inviabilizou a utilização dos sistemas e do servidor da Junta de Freguesia de São Salvador, no concelho de Ílhavo. Todos os ficheiros foram recuperados 24 horas depois da deteção, a partir de um sistema de proteção de dados adquirido em dezembro anterior. A junta garantiu que os dados estavam salvaguardados e que não houve difusão dos mesmos. O caso foi comunicado à GNR de Ílhavo e à Polícia Judiciária de Aveiro, com entrega dos sistemas encriptados.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "O contraexemplo que faltava ao arquivo. Quase todos os casos aqui registados mostram o que corre mal; este mostra o que acontece quando as cópias de segurança existem e funcionam — uma junta de freguesia com sistemas encriptados recuperou tudo em 24 horas, com uma solução comprada dois meses antes. A data de início é a do fim de semana referido pela fonte, com precisão de semana. Terceiro caso de 2018 e quarta freguesia do registo.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": [
+    "ransomware",
+    "indisponibilidade"
+  ],
+  "titulo": "Ciberataque à Junta de Freguesia de São Salvador, em Ílhavo"
+}

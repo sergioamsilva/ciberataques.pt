@@ -1,0 +1,96 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": null
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2021-04-01",
+      "fonte": 0,
+      "texto": "Um ataque de ransomware deixa os trabalhadores sem acesso a computadores, correio eletrónico e Internet, com impacto na produção, na gestão de encomendas, na logística e na faturação.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2021-04-01",
+      "fonte": 0,
+      "texto": "O responsável máximo da empresa descreve publicamente o episódio, afirmando terem sido apanhados de surpresa e que a cibersegurança deve ser vista como investimento essencial e não como despesa.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "A fonte não refere comprometimento de dados pessoais. Descreve indisponibilidade de sistemas.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2021-04-01",
+    "divulgacao": "2021-04-01",
+    "inicio": "2021-04-01",
+    "precisao": "mes"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "apametal"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "metalomecanica",
+    "pme",
+    "fonte-de-fornecedor"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2021-01-01",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "NOS — caso de estudo comercial",
+      "sha256": null,
+      "tipo": "comunicado",
+      "titulo": "Apametal: ataque de ransomware e cibersegurança",
+      "url": "https://www.nos.pt/empresas/grandes-corporate/blog/casos-de-sucesso/apametal-ataque-ransomware-ciberseguranca",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2021-apametal",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "A fonte não refere pedido de resgate nem pagamento.",
+    "servicos_afetados": [
+      "acesso a computadores, correio eletrónico e Internet",
+      "produção",
+      "gestão de encomendas e logística",
+      "faturação"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "Em abril de 2021, a Apametal, metalomecânica de sinalética e imagem corporativa sediada em Rio de Mouro, sofreu um ataque de ransomware que deixou os trabalhadores sem acesso a computadores, correio eletrónico e Internet, com impacto na produção, na gestão de encomendas, na logística e na faturação. O responsável máximo da empresa descreveu publicamente o episódio, afirmando terem sido apanhados de surpresa.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "A fonte é um caso de estudo comercial publicado pelo fornecedor que vendeu à empresa os serviços de segurança, e isso está dito no campo do publicador para que ninguém o leia como jornalismo. Entra como confirmação da entidade porque é o que é: o responsável máximo da empresa a descrever o ataque na primeira pessoa, e a taxonomia define comunicado como declaração pública da organização afetada, sem exigir que o veículo seja independente. O que NÃO se registou foi o resto: números de ameaças por trimestre e afirmações sobre a eficácia da solução vendida são argumentos de venda de quem publica, não factos sobre este incidente. Segundo caso de 2021 do registo.",
+    "versao": 1
+  },
+  "setor": "industria",
+  "tipos_ataque": [
+    "ransomware",
+    "indisponibilidade"
+  ],
+  "titulo": "Ataque de ransomware à Apametal"
+}

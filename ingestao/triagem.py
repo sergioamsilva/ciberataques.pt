@@ -77,7 +77,9 @@ def triar(item: Item) -> Resultado:
     fortes = _contem(tudo, lex["fortes"])
     ataque = _contem(tudo, lex["ataque"])
     pt_forte = _contem(tudo, lex["portugal_forte"])
-    pt_fraco = _contem(tudo, lex["portugal"])
+    # Os nomes de concelho contam como marcador fraco, a par das outras pistas
+    # territoriais. Ver o cabeçalho da secção `concelhos` em triagem.yaml.
+    pt_fraco = _contem(tudo, lex["portugal"] + lex.get("concelhos", []))
     estrangeiro = _contem(tudo, lex["estrangeiro"])
     ruido = _contem(tudo, lex["ruido"])
 

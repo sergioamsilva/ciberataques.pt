@@ -178,3 +178,19 @@ qualquer pessoa procurou, e não queremos saber.
 
 Quem consulta um registo de ciberataques pode estar a investigar o seu próprio empregador,
 o seu hospital ou a sua câmara municipal. Essa consulta não deve deixar rasto connosco.
+
+### 2.1. Material promocional como fonte
+
+Uma empresa de segurança que publica o caso de um cliente tem interesse no que
+conta: o ataque serve para vender a solução. Isso não invalida a fonte, mas muda o
+que dela se pode retirar.
+
+Quando o responsável da organização atacada descreve o incidente na primeira
+pessoa, isso é declaração da entidade, e a secção 3 trata-a como tal — a escala de
+confiança fala do que a fonte sustenta, não de quem a alojou. O que **não** se
+retira daí é o resto: eficácia da solução vendida, números de ameaças detetadas,
+comparações com o setor. São argumentos de venda de quem publica, e não factos
+sobre o incidente.
+
+Nestes casos o publicador é identificado como o que é, para que ninguém leia
+publicidade como jornalismo.

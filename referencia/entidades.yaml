@@ -905,3 +905,26 @@
   nota: >-
     Freguesia do concelho de Marco de Canaveses, resultante da agregação de Ariz,
     Carvalhosa, Vila Boa de Quires e Sande.
+
+- id: junta-de-freguesia-de-sao-salvador-ilhavo
+  nome: Junta de Freguesia de São Salvador
+  nome_curto: Junta de Freguesia de São Salvador (Ílhavo)
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Aveiro
+  chaves: [sao salvador ilhavo, junta de freguesia de sao salvador, freguesia de sao salvador]
+  nota: >-
+    Freguesia do concelho de Ílhavo. Há outras freguesias de São Salvador no país,
+    pelo que o concelho faz parte da identificação.
+
+- id: apametal
+  nome: Apametal — Aparelhagem Metálica, Lda.
+  nome_curto: Apametal
+  setor: industria
+  tipo: empresa
+  distrito: Lisboa
+  url: https://apametal.com
+  chaves: [apametal, aparelhagem metalica]
+  nota: >-
+    Metalomecânica de sinalética e imagem corporativa, fundada em 1978, com sede em
+    Rio de Mouro, Sintra.

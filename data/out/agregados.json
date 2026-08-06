@@ -1,6 +1,6 @@
 {
   "distribuicao_fontes_por_incidente": {
-    "1": 36,
+    "1": 38,
     "2": 13,
     "3": 16,
     "4": 6,
@@ -11,10 +11,10 @@
   "incidentes_com_disputas": 12,
   "por_ano": {
     "2017": 2,
-    "2018": 2,
+    "2018": 3,
     "2019": 2,
     "2020": 1,
-    "2021": 1,
+    "2021": 2,
     "2022": 20,
     "2023": 16,
     "2024": 9,
@@ -56,18 +56,18 @@
   },
   "por_estado_confirmacao": {
     "alegado_pelo_atacante": 27,
-    "confirmado_pela_entidade": 51,
+    "confirmado_pela_entidade": 53,
     "confirmado_por_regulador": 5,
     "reportado_por_media": 3
   },
   "por_setor": {
     "administracao_publica": 6,
-    "autarquias": 19,
+    "autarquias": 20,
     "banca_seguros": 1,
     "desporto": 2,
     "educacao_investigacao": 8,
     "energia_agua": 5,
-    "industria": 9,
+    "industria": 10,
     "justica_defesa": 2,
     "media": 4,
     "retalho": 4,
@@ -84,11 +84,11 @@
     "exfiltracao_dados": 18,
     "exposicao_credenciais": 2,
     "fraude": 1,
-    "indisponibilidade": 31,
+    "indisponibilidade": 33,
     "insider": 1,
     "intrusao": 28,
     "phishing_bec": 1,
-    "ransomware": 52
+    "ransomware": 54
   },
-  "total": 86
+  "total": 88
 }
