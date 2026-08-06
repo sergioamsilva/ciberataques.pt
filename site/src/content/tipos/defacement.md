@@ -13,6 +13,8 @@ pontos_chave:
     Quase sempre atinge só o servidor do sítio público, separado dos sistemas onde estão os dados. Repõe-se a partir de uma cópia em horas.
   - >-
     O que importa não é o que mudaram na página: é que alguém conseguiu autorização para escrever. A desfiguração é o sintoma, não a doença.
+  - >-
+    Também conta quando o canal desfigurado é uma conta numa plataforma de terceiros: para quem lê, o que importa é que a página oficial passou a dizer o que a entidade não disse.
 referencias:
   - autores: "Maggi, F., Balduzzi, M., Flores, R., Gu, L., Ciancaglini, V."
     ano: 2018
@@ -89,11 +91,20 @@ limite inferior: mede-se desde que alguém reparou, não desde que começou.
 
 ## Como este registo o trata
 
-Este tipo não tem, à data, nenhum incidente registado em Portugal. Não é por não
-acontecerem — acontecem, sobretudo em sítios de autarquias e de escolas — mas
-porque raramente são noticiados e quase nunca dão origem a comunicado, o que os
-deixa abaixo do limiar de fontes que este arquivo exige.
+Há um caso registado, e chegou exatamente por onde este texto previa que
+chegaria: a
+[página oficial da Junta de Freguesia de Águeda](/incidentes/2026-junta-de-freguesia-de-agueda/),
+tomada por terceiros em junho de 2026, a publicar conteúdos alheios à atividade da
+autarquia. Foi noticiado por um órgão local e por mais ninguém.
 
-É uma lacuna de cobertura conhecida, e está assumida como tal na
-[metodologia](/metodologia/): a ausência de casos aqui diz mais sobre o que a
-imprensa cobre do que sobre o que se passa.
+Vale a pena notar o que ali foi desfigurado. Não foi um servidor da junta: foi a
+conta dela numa plataforma de terceiros. Para quem lê, a diferença é nenhuma — o
+canal oficial da autarquia estava a dizer coisas que a autarquia não disse — e é
+por isso que o registamos como desfiguração e não como intrusão, que exigiria
+saber como o acesso foi obtido, coisa que nunca foi tornada pública.
+
+Continua a ser o tipo com maior distância entre o que acontece e o que se
+regista. Estas desfigurações são frequentes em sítios de autarquias e de escolas,
+raramente dão origem a comunicado, e quase nunca saem da imprensa local. A
+ausência de mais casos aqui diz mais sobre o que se noticia do que sobre o que se
+passa, e está assumida na [metodologia](/metodologia/).

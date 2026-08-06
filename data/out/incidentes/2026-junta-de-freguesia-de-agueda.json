@@ -1,0 +1,93 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": null
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-06-22",
+      "fonte": 0,
+      "texto": "A página oficial de Facebook da junta passa a publicar conteúdos sem relação com a atividade da autarquia.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2026-06-22",
+      "fonte": 0,
+      "texto": "O presidente da junta afirma que estão a trabalhar com urgência para recuperar a página e resolver a situação o mais rapidamente possível.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre acesso a dados. O que se sabe é que a página passou a publicar conteúdos alheios à atividade da junta.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-06-22",
+    "divulgacao": "2026-06-22",
+    "inicio": "2026-06-22",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "junta-de-freguesia-de-agueda"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "administracao-local",
+    "freguesia",
+    "conta-de-rede-social",
+    "canal-oficial"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-06-22",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Notícias de Águeda / SAPO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Página de Facebook da Junta de Freguesia de Águeda alvo de ataque informático",
+      "url": "https://sapo.pt/artigo/pagina-de-facebook-da-junta-de-freguesia-de-agueda-alvo-de-ataque-informatico-6a39068400d7361927f4c459",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-junta-de-freguesia-de-agueda",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "página oficial de Facebook, usada como canal de comunicação com os fregueses"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A 22 de junho de 2026, a página oficial de Facebook da Junta de Freguesia de Águeda passou a publicar conteúdos sem relação com a atividade da autarquia, depois de ter sido tomada por terceiros. O presidente da junta afirmou que estavam a trabalhar com urgência para a recuperar. Não foi tornado público como o acesso foi obtido, nem se houve queixa às autoridades.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "Primeiro caso de desfiguração do registo, e primeira junta de freguesia. O que foi comprometido não foram sistemas da junta: foi a conta dela numa plataforma de terceiros. Classificamos como desfiguração porque é o que se observa — o canal oficial passou a mostrar conteúdo escolhido por quem lá entrou — e não como intrusão, porque o mecanismo do acesso nunca foi tornado público. A data é a da notícia; o início não foi divulgado.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": [
+    "defacement"
+  ],
+  "titulo": "Página oficial da Junta de Freguesia de Águeda tomada por terceiros"
+}

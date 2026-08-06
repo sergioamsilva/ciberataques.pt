@@ -871,3 +871,15 @@
   distrito: Setúbal
   url: https://www.cm-moita.pt
   chaves: [moita, camara municipal da moita, municipio da moita, cm-moita.pt]
+
+- id: junta-de-freguesia-de-agueda
+  nome: Junta de Freguesia de Águeda
+  nome_curto: Junta de Freguesia de Águeda
+  setor: autarquias
+  tipo: entidade_publica
+  distrito: Aveiro
+  chaves: [junta de freguesia de agueda, freguesia de agueda, agueda]
+  nota: >-
+    Primeira junta de freguesia do registo. O nome é o usado pela própria e pela
+    imprensa local; a organização administrativa das freguesias de Águeda sofreu
+    agregações, pelo que a designação oficial pode diferir.

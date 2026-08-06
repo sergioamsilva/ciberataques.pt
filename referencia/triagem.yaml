@@ -109,6 +109,16 @@ portugal_forte:
   - serviço nacional de saúde
   - diário da república
   - anacom
+  # A camada da freguesia. Faltava por inteiro, e são 3091 em Portugal: uma
+  # notícia sobre a Junta de Freguesia de Águeda foi rejeitada com "sem marcador
+  # português". A triagem sabia reconhecer instituições nacionais e não sabia
+  # reconhecer as locais — o mesmo viés que este registo critica na imprensa.
+  # "Junta de freguesia" é inequivocamente português: nenhum outro país lusófono
+  # tem esta divisão administrativa com este nome.
+  - junta de freguesia
+  - juntas de freguesia
+  - união de freguesias
+  - assembleia de freguesia
   - cmvm
 
 # Marcadores portugueses FRACOS: ajudam, mas não bastam sozinhos, porque descrevem
@@ -131,6 +141,11 @@ portugal:
   - instituto politécnico
   - centro hospitalar
   - direção-geral
+  # Marcadores fracos: existem noutros países lusófonos com outro significado, e
+  # por isso não bastam sozinhos.
+  - autarquia
+  - freguesia
+  - serviços municipalizados
 
 # Termos que despromovem o item mesmo passando nos filtros acima: cobertura genérica,
 # opinião, formação, publicidade a produtos de segurança.

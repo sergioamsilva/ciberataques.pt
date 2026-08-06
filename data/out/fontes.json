@@ -240,6 +240,19 @@
   },
   {
     "contem_declaracao_da_entidade": true,
+    "data": "2026-06-22",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2026-junta-de-freguesia-de-agueda",
+    "indice": 0,
+    "publicador": "Notícias de Águeda / SAPO",
+    "tipo": "noticia",
+    "titulo": "Página de Facebook da Junta de Freguesia de Águeda alvo de ataque informático",
+    "url": "https://sapo.pt/artigo/pagina-de-facebook-da-junta-de-freguesia-de-agueda-alvo-de-ataque-informatico-6a39068400d7361927f4c459",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
     "data": "2026-06-09",
     "estado_ligacao": "viva",
     "excerto": null,

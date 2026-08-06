@@ -93,6 +93,24 @@
   },
   {
     "ano": 2026,
+    "ator": null,
+    "data": "2026-06-22",
+    "entidades_afetadas": [
+      "junta-de-freguesia-de-agueda"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-junta-de-freguesia-de-agueda",
+    "n_fontes": 1,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "defacement"
+    ],
+    "titulo": "Página oficial da Junta de Freguesia de Águeda tomada por terceiros"
+  },
+  {
+    "ano": 2026,
     "ator": "Qilin",
     "data": "2026-06-06",
     "entidades_afetadas": [

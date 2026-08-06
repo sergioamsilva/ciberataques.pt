@@ -887,6 +887,24 @@
     "tipo": "empresa",
     "url": "https://www.ipam.pt"
   },
+  "junta-de-freguesia-de-agueda": {
+    "chaves": [
+      "junta de freguesia de agueda",
+      "freguesia de agueda",
+      "agueda"
+    ],
+    "distrito": "Aveiro",
+    "id": "junta-de-freguesia-de-agueda",
+    "incidentes": [
+      "2026-junta-de-freguesia-de-agueda"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Junta de Freguesia de Águeda",
+    "nome_curto": "Junta de Freguesia de Águeda",
+    "nota": "Primeira junta de freguesia do registo. O nome é o usado pela própria e pela imprensa local; a organização administrativa das freguesias de Águeda sofreu agregações, pelo que a designação oficial pode diferir.",
+    "setor": "autarquias",
+    "tipo": "entidade_publica"
+  },
   "luis-simoes": {
     "chaves": [
       "luis simoes",
