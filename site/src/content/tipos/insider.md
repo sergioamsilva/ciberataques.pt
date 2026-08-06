@@ -6,6 +6,13 @@ resumo: >-
   prestador de serviços. É o tipo de incidente mais difícil de detetar, porque
   nada do que acontece parece, à partida, indevido.
 revisto_em: "2026-08-05"
+pontos_chave:
+  - >-
+    As credenciais usadas são as próprias, e por isso nenhum sistema pode assinalar uma entrada indevida — não houve nenhuma.
+  - >-
+    O interno negligente é muito mais frequente do que o malicioso, e as medidas que travam um não travam o outro.
+  - >-
+    O caso registado em Portugal não teve atacante nenhum: havia 985 contas com perfil de médico num hospital com 296 médicos, e nada a impedir que chegassem ao que não deviam.
 referencias:
   - autores: "Homoliak, I., Toffalini, F., Guarnizo, J., Elovici, Y., Ochoa, M."
     ano: 2019

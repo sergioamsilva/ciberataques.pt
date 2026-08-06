@@ -16,6 +16,13 @@ nota_fases: >-
   Sem encriptação nem extorsão não há efeito visível nenhum, e é por isso que
   estes casos se descobrem tantas vezes por aviso de terceiros.
 revisto_em: "2026-08-05"
+pontos_chave:
+  - >-
+    Não implica encriptação nem publicação de dados. Alguém entrou e esteve lá dentro — o que fez, e durante quanto tempo, é quase sempre o que fica por apurar.
+  - >-
+    Descobre-se tarde porque não há um perfil estável de «normal» contra o qual comparar: o tráfego de uma organização muda com a hora, a época e cada projeto novo.
+  - >-
+    Em vários casos deste registo a entidade soube por terceiros — pelo próprio atacante, ou por aparecer listada num site de extorsão. Não é negligência: é a natureza do problema.
 referencias:
   - autores: "Cichonski, P., Millar, T., Grance, T., Scarfone, K."
     ano: 2012
@@ -40,7 +47,7 @@ referencias:
     doi: "10.1109/sp.2010.25"
     nota: >-
       Explica porque a deteção de intrusões é um problema estruturalmente diferente
-      dos outros: não existe um perfil estável de \"normal\", e o custo de um falso
+      dos outros: não existe um perfil estável de «normal», e o custo de um falso
       positivo num ambiente real é altíssimo.
   - autores: "Khraisat, A., Gondal, I., Vamplew, P., Kamruzzaman, J."
     ano: 2019

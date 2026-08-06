@@ -61,6 +61,20 @@ function pertinencia(ref: { nota?: string; titulo: string; doi?: string }): numb
  */
 const jaMostradas = new Set<string>();
 
+/*
+ * Citação curta: "Sommer & Paxson", "Khraisat et al.", "ENISA".
+ *
+ * Não basta cortar no primeiro vírgula: "Cho, Y." daria "Cho et al." para um autor
+ * único, e "ENISA" não tem apelido nenhum. Contam-se os pares apelido+inicial.
+ */
+function citacaoCurta(autores: string): string {
+  const nomes = autores.match(/[A-ZÀ-ÜÁ-Ú][\wÀ-ÿ'’-]+(?=,\s*[A-ZÀ-Ü]\.)/g);
+  if (!nomes || nomes.length === 0) return autores;
+  if (nomes.length === 1) return nomes[0];
+  if (nomes.length === 2) return `${nomes[0]} & ${nomes[1]}`;
+  return `${nomes[0]} et al.`;
+}
+
 const blocos = explicadores.map((e) => {
   const ordenadas = [...e.data.referencias]
     .map((r, i) => ({ r, i, p: pertinencia(r) }))
@@ -119,31 +133,43 @@ const blocos = explicadores.map((e) => {
           {entrada.data.resumo}
         </p>
 
-        <p class="mono-etiqueta mt-6">O que a investigação estabelece</p>
-        <ol class="mt-2 divide-y divide-[var(--color-borda)] border-y border-[var(--color-borda)]">
+        {/*
+          O ensino primeiro, a bibliografia depois.
+
+          Isto era uma lista de três citações académicas com as respetivas notas, e
+          lia-se como a secção de referências de um artigo — não como um explicador.
+          Quem chega à ficha das Águas de Portugal não quer uma lista de DOI: quer
+          perceber o que é uma intrusão e porque é que estas coisas se descobrem
+          tarde. As fontes continuam, mais abaixo e em uma linha.
+        */}
+        {entrada.data.pontos_chave && (
+          <ul class="mt-5 space-y-3" role="list">
+            {entrada.data.pontos_chave.map((ponto) => (
+              <li class="flex gap-3 text-[var(--color-corpo)]">
+                <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-acento)]" aria-hidden="true"></span>
+                <span class="max-w-2xl leading-relaxed">{ponto}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+
+        <p class="mono-etiqueta mt-6">Sustentado por</p>
+        <ul class="mt-1.5 space-y-1" role="list">
           {mostradas.map((r) => (
-            <li class="py-3.5">
-              <p class="text-sm leading-snug">
-                {r.doi ? (
-                  <a href={`https://doi.org/${r.doi}`} rel="noopener">{r.titulo}</a>
-                ) : r.url ? (
-                  <a href={r.url} rel="noopener">{r.titulo}</a>
-                ) : (
-                  <span>{r.titulo}</span>
-                )}
-              </p>
-              <p class="mt-1 font-mono text-xs text-[var(--color-suave)]">
-                {r.autores} · {r.ano} · {r.publicacao}
-                {r.doi && <> · doi:{r.doi}</>}
-              </p>
-              {r.nota && (
-                <p class="mt-2 max-w-2xl text-sm text-[var(--color-corpo)]">{r.nota}</p>
+            <li class="text-sm leading-snug">
+              {r.doi ? (
+                <a href={`https://doi.org/${r.doi}`} rel="noopener">{r.titulo}</a>
+              ) : r.url ? (
+                <a href={r.url} rel="noopener">{r.titulo}</a>
+              ) : (
+                <span>{r.titulo}</span>
               )}
+              <span class="text-[var(--color-suave)]"> — {citacaoCurta(r.autores)}, {r.publicacao}, {r.ano}</span>
             </li>
           ))}
-        </ol>
+        </ul>
 
-        <p class="mt-3 text-sm">
+        <p class="mt-4 text-sm">
           <a href={`/tipos/${entrada.data.tipo}/`}>
             Ler o explicador completo
             {restantes === 1 && " e a outra referência"}

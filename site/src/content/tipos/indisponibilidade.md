@@ -6,6 +6,13 @@ resumo: >-
   pública. É uma classificação de efeito, não de método — e nomeia com precisão
   aquilo que se sabe quando não se sabe mais.
 revisto_em: "2026-08-05"
+pontos_chave:
+  - >-
+    É uma classificação de efeito, não de método: diz que o serviço parou, sem afirmar como. Usamo-la quando ninguém tornou pública a causa técnica.
+  - >-
+    Quando o serviço é essencial, a indisponibilidade é o dano e não a sua consequência administrativa — mede-se em tempo de espera e em desfechos clínicos, não em sistemas por repor.
+  - >-
+    A pergunta útil não é se houve intrusão, é se o serviço se manteve. Nas Águas de Portugal o abastecimento nunca parou; nos SMTUC os autocarros circularam.
 referencias:
   - autores: "Cichonski, P., Millar, T., Grance, T., Scarfone, K."
     ano: 2012

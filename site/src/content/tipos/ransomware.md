@@ -18,6 +18,15 @@ nota_fases: >-
   Entre a entrada e o efeito visível podem passar dias ou semanas. Na Impresa
   apurou-se que os atacantes estiveram vários dias dentro da rede antes de agir.
 revisto_em: "2026-08-05"
+pontos_chave:
+  - >-
+    Desde 2019 raramente se limita a encriptar. Os dados são copiados primeiro, e a ameaça passa a ser publicá-los — o que faz das cópias de segurança uma defesa incompleta.
+  - >-
+    Recuperar não desfaz a exfiltração. Uma organização pode repor tudo a partir das cópias e continuar a ver a informação publicada, como aconteceu na Trust in News e nos SMTUC.
+  - >-
+    Há medição do efeito em cascata quando a vítima é um hospital: as urgências vizinhas registam mais chegadas, mais tempo de espera e mais casos de AVC.
+  - >-
+    Uma minoria paga, e os montantes concentram-se em poucos casos de valor elevado. Em Vinhais pediram entre 20 e 30 mil euros; o município recuperou por seis mil.
 referencias:
   - autores: "Oz, H., Aris, A., Levi, A., Uluagac, A. S."
     ano: 2022

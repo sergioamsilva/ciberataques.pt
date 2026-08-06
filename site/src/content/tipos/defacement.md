@@ -6,6 +6,13 @@ resumo: >-
   entrou. É o ataque mais visível de todos e, quase sempre, o menos grave — o que
   não significa que não haja um problema sério por trás dele.
 revisto_em: "2026-08-05"
+pontos_chave:
+  - >-
+    É o único ataque cuja característica definidora é ser visto. Todos os outros procuram passar despercebidos; este só cumpre o objetivo se alguém olhar.
+  - >-
+    Quase sempre atinge só o servidor do sítio público, separado dos sistemas onde estão os dados. Repõe-se a partir de uma cópia em horas.
+  - >-
+    O que importa não é o que mudaram na página: é que alguém conseguiu autorização para escrever. A desfiguração é o sintoma, não a doença.
 referencias:
   - autores: "Maggi, F., Balduzzi, M., Flores, R., Gu, L., Ciancaglini, V."
     ano: 2018

@@ -6,6 +6,13 @@ resumo: >-
   único ataque produz muitas vítimas, e cada uma tem de responder por um incidente
   que não pôde prevenir nem investigar.
 revisto_em: "2026-08-05"
+pontos_chave:
+  - >-
+    A organização não foi invadida: instalou voluntariamente o que a atacou, através de um processo automatizado que corre sem supervisão humana.
+  - >-
+    Um só comprometimento chega a centenas de clientes ao mesmo tempo, e por isso o número de vítimas raramente é conhecido — nem pelo fornecedor.
+  - >-
+    A maior parte do código malicioso publicado em repositórios executa-se no momento da instalação, e o que procura primeiro são credenciais.
 referencias:
   - autores: "Ladisa, P., Plate, H., Martinez, M., Barais, O."
     ano: 2023

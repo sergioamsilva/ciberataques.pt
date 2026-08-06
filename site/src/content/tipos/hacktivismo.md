@@ -6,6 +6,13 @@ resumo: >-
   objetivo é a mensagem e não o lucro. Distingue-se dos restantes tipos pela
   intenção, não pela técnica.
 revisto_em: "2026-08-05"
+pontos_chave:
+  - >-
+    O que define este tipo é a intenção declarada, não a técnica: pode ser desfiguração, negação de serviço ou exfiltração.
+  - >-
+    Muda o que esperar a seguir: quem ataca por dinheiro negoceia e desaparece; quem ataca por causa política quer visibilidade e volta.
+  - >-
+    A reivindicação é mais frágil, não mais forte. Assumir um ataque que não se cometeu é trivial e sem custo, e estes grupos operam sob nomes coletivos sem estrutura estável.
 referencias:
   - autores: "Bodó, B."
     ano: 2014

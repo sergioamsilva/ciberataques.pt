@@ -7,6 +7,13 @@ resumo: >-
   organização cujo serviço se acede tenha sido invadida — e a distinção é
   frequentemente perdida.
 revisto_em: "2026-08-05"
+pontos_chave:
+  - >-
+    Não implica que a organização tenha sido invadida. As palavras-passe são recolhidas nos computadores das pessoas ou em serviços de terceiros, e só depois usadas.
+  - >-
+    É a reutilização que transforma uma fuga num sítio em risco noutro: uma proporção elevada de pessoas repete a palavra-passe, e boa parte das restantes usa variações adivinháveis.
+  - >-
+    As credenciais roubadas por software de recolha valem mais do que as de fugas antigas, porque trazem o contexto — máquina, localização, sessões abertas — que contorna as defesas adicionais.
 referencias:
   - autores: "Madarie, R., Ruiter, S., Steenbeek, W., Kleemans, E."
     ano: 2019

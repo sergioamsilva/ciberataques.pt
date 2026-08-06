@@ -37,6 +37,18 @@ const tipos = defineCollection({
       )
       .min(1),
     /*
+     * Duas a quatro afirmações que ensinam alguma coisa, escritas para aparecerem
+     * na ficha de um incidente.
+     *
+     * Existem porque o bloco de referência da ficha era uma bibliografia disfarçada
+     * de explicador: uma definição de uma linha seguida de três citações académicas.
+     * Quem chega à ficha das Águas de Portugal não quer uma lista de DOI — quer
+     * perceber o que é uma intrusão e porque é que estas coisas se descobrem tarde.
+     * As fontes continuam lá, a seguir, e mais compactas.
+     */
+    pontos_chave: z.array(z.string()).min(2).max(4).optional(),
+
+    /*
      * As fases por que o ataque passa, por ordem. Opcional: só faz sentido nos
      * tipos que têm uma sequência reconhecida na literatura, e é preferível não
      * ter nenhuma a inventar uma.

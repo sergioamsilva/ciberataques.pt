@@ -6,6 +6,13 @@ resumo: >-
   instrumento. O sistema atacado não é o computador — é o julgamento de quem está
   a decidir.
 revisto_em: "2026-08-05"
+pontos_chave:
+  - >-
+    Os sistemas funcionam exatamente como foram desenhados. A transferência é autorizada por quem tinha poderes para a autorizar — o que falhou foi o julgamento de uma pessoa.
+  - >-
+    Nenhuma medida técnica impede uma transferência legítima. As defesas eficazes são de processo, e a mais simples é nunca aceitar mudanças de conta bancária por correio eletrónico.
+  - >-
+    É provavelmente o tipo mais subrepresentado deste registo: não há serviço em baixo que denuncie o caso, e há um custo reputacional que só se paga se se falar.
 referencias:
   - autores: "Maimon, D., Louderback, E."
     ano: 2019

@@ -6,6 +6,13 @@ resumo: >-
   legítimo. Não implica entrar nos sistemas nem aceder a dados: o objetivo é
   apenas que o serviço deixe de estar disponível.
 revisto_em: "2026-08-05"
+pontos_chave:
+  - >-
+    Não implica entrada nos sistemas. Ninguém acede a dados nem copia ficheiros — o serviço fica apenas incapaz de atender quem o procura.
+  - >-
+    É difícil de travar porque cada pedido malicioso é indistinguível de um legítimo. O problema não está em nenhum deles, está no volume.
+  - >-
+    É muito mais comum do que as notícias sugerem: a medição à escala da Internet mostra dezenas de milhares de ataques por dia a nível global.
 referencias:
   - autores: "Mirkovic, J., Reiher, P."
     ano: 2004

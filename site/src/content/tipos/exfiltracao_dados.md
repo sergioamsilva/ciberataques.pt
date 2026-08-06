@@ -6,6 +6,13 @@ resumo: >-
   encriptação, não se vê: os dados continuam lá, e a organização pode demorar
   semanas a saber o que saiu — ou nunca chegar a sabê-lo.
 revisto_em: "2026-08-05"
+pontos_chave:
+  - >-
+    O dano não se desfaz. Ao contrário de um serviço em baixo, informação que saiu não volta a entrar — e é por isso que a data em que se soube importa menos do que aquilo que saiu.
+  - >-
+    Os volumes que circulam vêm quase sempre do atacante, que tem interesse em parecer credível. Neste registo esses números ficam nas versões em confronto, nunca na ficha técnica.
+  - >-
+    O custo mediano real é muito inferior ao que a cobertura sugere: a distribuição tem uma cauda longa, e é essa cauda que dá as manchetes.
 referencias:
   - autores: "Nikkhah, H. R., Grover, V."
     ano: 2022

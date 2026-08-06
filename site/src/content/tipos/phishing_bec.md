@@ -6,6 +6,13 @@ resumo: >-
   explora falhas técnicas: explora a normalidade de uma mensagem que parece vir de
   quem devia.
 revisto_em: "2026-08-05"
+pontos_chave:
+  - >-
+    Não é distração de quem cai. Os melhores sítios fraudulentos enganaram a maioria dos participantes em estudos controlados, incluindo pessoas com formação técnica.
+  - >-
+    A burla ao gestor não tem artefacto malicioso nenhum: nem anexo, nem ligação, nem código. É uma mensagem de texto simples a pedir uma transferência que a empresa faz todos os dias.
+  - >-
+    Por isso as defesas que funcionam são de processo — dupla aprovação, confirmação por outro canal — e não de tecnologia.
 referencias:
   - autores: "Lallie, H. S., Shepherd, L. A., Nurse, J. R. C., Erola, A., Epiphaniou, G., Maple, C., Bellekens, X."
     ano: 2021
