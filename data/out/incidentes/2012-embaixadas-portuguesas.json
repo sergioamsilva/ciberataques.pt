@@ -1,0 +1,95 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "Net-DeViL e Sanfour 25",
+    "nota": "Dois grupos distintos, com assinaturas próprias nas páginas alteradas. Não houve confirmação por autoridade."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2012-08-28",
+      "fonte": 0,
+      "texto": "Os sítios das embaixadas portuguesas no Irão, no Reino Unido e na República Checa são alterados por um grupo que deixa uma mensagem contra os Estados Unidos da América.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2012-08-28",
+      "fonte": 0,
+      "texto": "Um segundo grupo atinge os sítios das embaixadas em Berlim, Madrid e Maputo, em zonas normalmente não visitadas pelos utilizadores.",
+      "tipo": "ocorrencia"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação sobre acesso a dados. O que foi descrito é a alteração de conteúdo visível.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2012-08-28",
+    "divulgacao": "2012-08-28",
+    "inicio": "2012-08-28",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "ministerio-dos-negocios-estrangeiros"
+  ],
+  "estado_confirmacao": "noticiado_por_uma_fonte",
+  "etiquetas": [
+    "hacktivismo",
+    "diplomacia",
+    "anterior-a-2017",
+    "mensagem-politica"
+  ],
+  "fontes": [
+    {
+      "data": "2012-08-28",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "TVI",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Sites de embaixadas portuguesas atacados por hackers",
+      "url": "https://tvi.iol.pt/noticias/sociedade/piratas-informaticos/sites-de-embaixadas-portuguesas-atacados-por-hackers",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2012-embaixadas-portuguesas",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "sítios das embaixadas em Teerão, Londres, Praga, Berlim, Madrid e Maputo"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2013-vaga-hacktivista-contra-o-estado"
+  ],
+  "resumo": "A 28 de agosto de 2012, os sítios de seis embaixadas portuguesas foram alterados em dois ataques distintos. Um grupo deixou uma mensagem contra os Estados Unidos nas páginas das embaixadas no Irão, no Reino Unido e na República Checa; outro atingiu as de Berlim, Madrid e Maputo, em zonas dos sítios normalmente não visitadas pelos utilizadores. Não é conhecida confirmação oficial nem investigação pública.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "O caso mais antigo do arquivo, e o que motivou o alargamento do âmbito de 2017 para 2012. Assenta numa única fonte, o que o coloca no penúltimo degrau da escala de confiança: não houve comunicado do ministério nem investigação pública conhecida. A entidade registada é o Ministério dos Negócios Estrangeiros, por serem sítios da rede diplomática, e não seis entidades distintas.",
+    "versao": 1
+  },
+  "setor": "administracao_publica",
+  "tipos_ataque": [
+    "defacement",
+    "hacktivismo"
+  ],
+  "titulo": "Desfiguração dos sítios de embaixadas portuguesas"
+}

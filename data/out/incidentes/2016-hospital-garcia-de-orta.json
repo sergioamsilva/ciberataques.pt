@@ -1,0 +1,102 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Suspeitou-se de ransomware, com base em informação limitada. Nunca foi confirmado."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2016-12-01",
+      "fonte": 0,
+      "texto": "É atingido o sistema onde o hospital guarda as imagens de exames médicos, como radiografias e tomografias.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2017-02-18",
+      "fonte": 0,
+      "texto": "O hospital garante que não foram roubados registos de doentes. Profissionais descrevem um reforço das cópias de segurança nos meses anteriores, com os médicos a requisitarem mais vezes imagens guardadas em servidores à parte.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2017-02-18",
+      "fonte": 0,
+      "texto": "A Procuradoria-Geral da República indica ter sido instaurado inquérito, sem mais detalhes por o caso estar em investigação e sob segredo de justiça.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "O hospital garantiu que não foram roubados registos de doentes. O sistema atingido guarda imagens de exames.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2016-12-01",
+    "divulgacao": "2017-02-18",
+    "inicio": "2016-12-01",
+    "precisao": "mes"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "hospital-garcia-de-orta"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "saude",
+    "imagem-medica",
+    "anterior-a-2017",
+    "segredo-de-justica"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "contem_declaracao_de_autoridade": true,
+      "data": "2017-02-18",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Pplware",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hospital Garcia de Orta atacado por piratas informáticos",
+      "url": "https://pplware.sapo.pt/informacao/hospital-garcia-da-orta-atacado-piratas-informaticos/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2016-hospital-garcia-de-orta",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "Não é conhecido pedido de resgate. A hipótese de ransomware foi levantada com base em informação limitada e nunca confirmada.",
+    "servicos_afetados": [
+      "sistema de armazenamento de imagens de exames médicos"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2022-hospital-garcia-de-orta"
+  ],
+  "resumo": "No final de 2016, o sistema onde o Hospital Garcia de Orta guarda as imagens de exames médicos, como radiografias e tomografias, foi alvo de um ataque informático, tornado público em fevereiro de 2017. O hospital garantiu que não foram roubados registos de doentes. Suspeitou-se de ransomware, com base em informação limitada, sem que tal fosse confirmado. A Procuradoria-Geral da República instaurou inquérito, que ficou sob segredo de justiça.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "O Hospital Garcia de Orta tinha uma só ficha neste arquivo, a de 2022. Tinha sido atacado seis anos antes, e a ficha contava por isso metade da história da mesma entidade. Foi este caso que tornou concreto o custo da fronteira de 2017 e levou ao seu alargamento.\n\nFica como intrusão: a hipótese de ransomware foi levantada pela cobertura com base em informação limitada, e nunca confirmada por ninguém. Registar o que se suspeita como se fosse o que se sabe é precisamente o que esta escala existe para impedir.",
+    "versao": 1
+  },
+  "setor": "saude",
+  "tipos_ataque": [
+    "intrusao"
+  ],
+  "titulo": "Ataque ao sistema de imagem médica do Hospital Garcia de Orta"
+}

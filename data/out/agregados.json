@@ -1,8 +1,8 @@
 {
   "distribuicao_fontes_por_incidente": {
-    "1": 38,
+    "1": 40,
     "2": 14,
-    "3": 17,
+    "3": 18,
     "4": 6,
     "5": 5,
     "6": 3,
@@ -10,6 +10,9 @@
   },
   "incidentes_com_disputas": 12,
   "por_ano": {
+    "2012": 1,
+    "2013": 1,
+    "2016": 1,
     "2017": 2,
     "2018": 3,
     "2019": 2,
@@ -23,11 +26,13 @@
   },
   "por_ator": {
     "8base": 1,
+    "Anonymous Portugal": 1,
     "BrainCipher": 1,
     "HIVE": 1,
     "Lapsus$ Group": 1,
     "LockBit": 3,
     "LockBit 2.0": 2,
+    "Net-DeViL e Sanfour 25": 1,
     "Qilin": 3,
     "Ragnar Locker": 2,
     "RansomEXX": 1,
@@ -56,22 +61,23 @@
   },
   "por_estado_confirmacao": {
     "alegado_pelo_atacante": 27,
-    "confirmado_pela_entidade": 55,
-    "confirmado_por_regulador": 5,
+    "confirmado_pela_entidade": 56,
+    "confirmado_por_regulador": 6,
+    "noticiado_por_uma_fonte": 1,
     "reportado_por_media": 3
   },
   "por_setor": {
-    "administracao_publica": 6,
+    "administracao_publica": 7,
     "autarquias": 20,
     "banca_seguros": 1,
     "desporto": 2,
     "educacao_investigacao": 8,
     "energia_agua": 6,
     "industria": 10,
-    "justica_defesa": 2,
+    "justica_defesa": 3,
     "media": 4,
     "retalho": 4,
-    "saude": 8,
+    "saude": 9,
     "tecnologia": 6,
     "telecomunicacoes": 1,
     "transportes": 8,
@@ -79,16 +85,17 @@
   },
   "por_tipo_ataque": {
     "cadeia_fornecimento": 3,
-    "ddos": 3,
-    "defacement": 1,
-    "exfiltracao_dados": 18,
+    "ddos": 4,
+    "defacement": 3,
+    "exfiltracao_dados": 19,
     "exposicao_credenciais": 2,
     "fraude": 1,
+    "hacktivismo": 2,
     "indisponibilidade": 34,
     "insider": 1,
-    "intrusao": 30,
+    "intrusao": 32,
     "phishing_bec": 1,
     "ransomware": 54
   },
-  "total": 90
+  "total": 93
 }

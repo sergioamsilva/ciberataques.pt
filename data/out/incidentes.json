@@ -1682,5 +1682,69 @@
       "phishing_bec"
     ],
     "titulo": "Acesso não autorizado aos sistemas do Sport Lisboa e Benfica"
+  },
+  {
+    "ano": 2016,
+    "ator": null,
+    "data": "2016-12-01",
+    "entidades_afetadas": [
+      "hospital-garcia-de-orta"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2016-hospital-garcia-de-orta",
+    "n_fontes": 1,
+    "precisao_data": "mes",
+    "setor": "saude",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao"
+    ],
+    "titulo": "Ataque ao sistema de imagem médica do Hospital Garcia de Orta"
+  },
+  {
+    "ano": 2013,
+    "ator": "Anonymous Portugal",
+    "data": "2013-01-01",
+    "entidades_afetadas": [
+      "policia-judiciaria",
+      "supremo-tribunal-de-justica",
+      "citius",
+      "assembleia-da-republica",
+      "novo-banco",
+      "procuradoria-geral-da-republica"
+    ],
+    "estado_confirmacao": "confirmado_por_regulador",
+    "id": "2013-vaga-hacktivista-contra-o-estado",
+    "n_fontes": 3,
+    "precisao_data": "ano",
+    "setor": "justica_defesa",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "hacktivismo",
+      "ddos",
+      "defacement",
+      "intrusao",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Vaga de ataques hacktivistas contra o Estado e a banca"
+  },
+  {
+    "ano": 2012,
+    "ator": "Net-DeViL e Sanfour 25",
+    "data": "2012-08-28",
+    "entidades_afetadas": [
+      "ministerio-dos-negocios-estrangeiros"
+    ],
+    "estado_confirmacao": "noticiado_por_uma_fonte",
+    "id": "2012-embaixadas-portuguesas",
+    "n_fontes": 1,
+    "precisao_data": "dia",
+    "setor": "administracao_publica",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "defacement",
+      "hacktivismo"
+    ],
+    "titulo": "Desfiguração dos sítios de embaixadas portuguesas"
   }
 ]

@@ -86,3 +86,10 @@ atores:
   royal: {mitre: null}
   settra: {mitre: null}
   thegentlemen: {mitre: null}
+
+  # Vaga hacktivista de 2013-2016. O ATT&CK documenta grupos com infraestrutura e
+  # técnicas rastreáveis; estes eram coletivos sem estrutura estável, sob nomes que
+  # qualquer pessoa podia usar — que é, aliás, o que o explicador de hacktivismo diz
+  # tornar a atribuição mais frágil e não mais forte.
+  "Anonymous Portugal": {mitre: null}
+  "Net-DeViL e Sanfour 25": {mitre: null}

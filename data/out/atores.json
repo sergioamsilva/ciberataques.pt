@@ -16,6 +16,9 @@
         "url": "https://attack.mitre.org/groups/G1024/"
       }
     },
+    "Anonymous Portugal": {
+      "mitre": null
+    },
     "BrainCipher": {
       "mitre": null
     },
@@ -38,6 +41,9 @@
       "mitre": null
     },
     "LockBit 2.0": {
+      "mitre": null
+    },
+    "Net-DeViL e Sanfour 25": {
       "mitre": null
     },
     "Play": {

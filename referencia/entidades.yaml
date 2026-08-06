@@ -948,3 +948,64 @@
   distrito: Açores
   url: https://www.eda.pt
   chaves: [eda, eletricidade dos acores, electricidade dos acores]
+
+- id: policia-judiciaria
+  nome: Polícia Judiciária
+  nome_curto: Polícia Judiciária
+  setor: justica_defesa
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.policiajudiciaria.pt
+  chaves: [policia judiciaria, pj, unidade nacional de combate ao cibercrime, unc3t]
+  nota: >-
+    Aparece neste registo nos dois papéis: como autoridade que investiga a maior
+    parte dos casos e, na vaga de 2013 a 2016, como entidade atacada.
+
+- id: supremo-tribunal-de-justica
+  nome: Supremo Tribunal de Justiça
+  nome_curto: Supremo Tribunal de Justiça
+  setor: justica_defesa
+  tipo: entidade_publica
+  distrito: Lisboa
+  chaves: [supremo tribunal de justica, supremo tribunal, stj]
+
+- id: procuradoria-geral-da-republica
+  nome: Procuradoria-Geral da República
+  nome_curto: Procuradoria-Geral da República
+  setor: justica_defesa
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.ministeriopublico.pt
+  chaves: [procuradoria geral da republica, pgr, ministerio publico]
+
+- id: assembleia-da-republica
+  nome: Assembleia da República
+  nome_curto: Assembleia da República
+  setor: administracao_publica
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://www.parlamento.pt
+  chaves: [assembleia da republica, parlamento]
+
+- id: citius
+  nome: Citius — plataforma informática dos tribunais
+  nome_curto: Citius
+  setor: justica_defesa
+  tipo: entidade_publica
+  distrito: Lisboa
+  chaves: [citius]
+  nota: >-
+    Plataforma de tramitação eletrónica dos processos judiciais, gerida pelo
+    Instituto de Gestão Financeira e Equipamentos da Justiça.
+
+- id: novo-banco
+  nome: Novo Banco, S.A.
+  nome_curto: Novo Banco
+  setor: banca_seguros
+  tipo: empresa
+  distrito: Lisboa
+  url: https://www.novobanco.pt
+  chaves: [novo banco, bes, banco espirito santo]
+  nota: >-
+    Sucedeu ao Banco Espírito Santo em agosto de 2014. As fontes da vaga de 2013 a
+    2016 referem-se indistintamente a BES e Novo Banco.

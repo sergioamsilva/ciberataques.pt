@@ -1,5 +1,8 @@
 {
   "anos": [
+    2012,
+    2013,
+    2016,
     2017,
     2018,
     2019,
@@ -14,7 +17,7 @@
   "construido_em": "2026-08-06",
   "esquema": "incidente-1",
   "licenca_dados": "CC BY 4.0",
-  "total_entidades": 98,
-  "total_fontes": 233,
-  "total_incidentes": 90
+  "total_entidades": 104,
+  "total_fontes": 238,
+  "total_incidentes": 93
 }

@@ -2914,5 +2914,69 @@
     "titulo": "Football Leaks: Benfica sofreu ataque informático antes de divulgações no Porto Canal",
     "url": "https://eco.sapo.pt/2025/02/26/football-leaks-benfica-sofreu-ataque-informatico-antes-de-divulgacoes-no-porto-canal/",
     "url_arquivo": "http://web.archive.org/web/20250226150658/https://eco.sapo.pt/2025/02/26/football-leaks-benfica-sofreu-ataque-informatico-antes-de-divulgacoes-no-porto-canal/"
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "contem_declaracao_de_autoridade": true,
+    "data": "2017-02-18",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2016-hospital-garcia-de-orta",
+    "indice": 0,
+    "publicador": "Pplware",
+    "tipo": "noticia",
+    "titulo": "Hospital Garcia de Orta atacado por piratas informáticos",
+    "url": "https://pplware.sapo.pt/informacao/hospital-garcia-da-orta-atacado-piratas-informaticos/",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_de_autoridade": true,
+    "data": "2015-02-01",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2013-vaga-hacktivista-contra-o-estado",
+    "indice": 0,
+    "publicador": "Polícia Judiciária",
+    "tipo": "regulador",
+    "titulo": "Operação C4R3T05 (CARETOS)",
+    "url": "https://www.policiajudiciaria.pt/operacao-c4r3t05-caretos/",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_de_autoridade": true,
+    "data": "2016-05-04",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2013-vaga-hacktivista-contra-o-estado",
+    "indice": 1,
+    "publicador": "Diário de Notícias",
+    "tipo": "noticia",
+    "titulo": "Anonymous. 31 hackers apanhados pela PJ num ano",
+    "url": "https://www.dn.pt/portugal/anonymous-31-hackers-apanhados-pela-pj-num-ano-5157981.html",
+    "url_arquivo": null
+  },
+  {
+    "data": "2016-05-04",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2013-vaga-hacktivista-contra-o-estado",
+    "indice": 2,
+    "publicador": "Renascença",
+    "tipo": "noticia",
+    "titulo": "Cibercrime. PJ faz buscas relacionadas com ataques informáticos ao Estado",
+    "url": "https://rr.pt/noticia/pais/2016/05/04/cibercrime-pj-faz-buscas-relacionadas-com-ataques-informaticos-ao-estado/53328/",
+    "url_arquivo": null
+  },
+  {
+    "data": "2012-08-28",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2012-embaixadas-portuguesas",
+    "indice": 0,
+    "publicador": "TVI",
+    "tipo": "noticia",
+    "titulo": "Sites de embaixadas portuguesas atacados por hackers",
+    "url": "https://tvi.iol.pt/noticias/sociedade/piratas-informaticos/sites-de-embaixadas-portuguesas-atacados-por-hackers",
+    "url_arquivo": null
   }
 ]
