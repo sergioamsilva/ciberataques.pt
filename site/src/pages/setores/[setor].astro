@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import IconeSetor from "../../components/IconeSetor.astro";
 import CartaoIncidente from "../../components/CartaoIncidente.astro";
 import NotaAlegacoes from "../../components/NotaAlegacoes.astro";
 import { incidentes, nome, ehAlegacao } from "../../lib/dados";
@@ -25,7 +26,12 @@ const rotulo = nome("setores", setor);
       <a href="/setores/">Setores</a>
     </nav>
     <header class="mt-6">
-      <h1 class="mt-2 text-4xl sm:text-5xl">{rotulo}</h1>
+      {/* O mesmo ícone da listagem, em maior: quem clicou numa linha reconhece
+          onde chegou sem ter de reler o título. */}
+      <h1 class="mt-2 flex items-center gap-4 text-4xl sm:text-5xl">
+        <IconeSetor setor={setor} tamanho={44} clase="shrink-0 text-[var(--color-acento)]" />
+        {rotulo}
+      </h1>
       <p class="mt-4 text-lg">
         {lista.length} {lista.length === 1 ? "incidente registado" : "incidentes registados"}.
       </p>
