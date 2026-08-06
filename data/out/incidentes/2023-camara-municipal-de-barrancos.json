@@ -45,7 +45,9 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["camara-municipal-de-barrancos"],
+  "entidades_afetadas": [
+    "camara-municipal-de-barrancos"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
   "etiquetas": [
     "administracao-local",
@@ -62,7 +64,7 @@
       "tipo": "comunicado",
       "titulo": "Ataque Informático",
       "url": "https://cm-barrancos.pt/11594/ataque-informático",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20260806195954/https://cm-barrancos.pt/11594/ataque-inform%C3%A1tico"
     },
     {
       "data": "2023-12-28",
@@ -110,6 +112,9 @@
     "versao": 1
   },
   "setor": "autarquias",
-  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque à Câmara Municipal de Barrancos"
 }

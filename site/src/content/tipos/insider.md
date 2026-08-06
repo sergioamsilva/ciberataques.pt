@@ -99,7 +99,19 @@ atacante externo nenhum. Houve 985 contas ativas com perfil de médico num hospi
 com 296 médicos no quadro, e nenhuma medida a impedir que quem tinha conta chegasse
 ao que não devia.
 
-É provável que seja um entre muitos. Estes casos resolvem-se tipicamente em processo
+Há um segundo, e é a prova mais forte de todo o arquivo: os
+[acessos indevidos a sistemas de registo e identificação](/incidentes/2021-acessos-indevidos-a-sistemas-de-registo-e-identificacao/)
+entre 2021 e 2023, em que um funcionário da justiça usou credenciais de colegas de
+outro instituto para criar chaves móveis digitais em nome de terceiros e contrair
+empréstimos com essas identidades. Foi condenado a nove anos e seis meses de prisão
+por noventa e dois crimes.
+
+É o único caso do registo em que o acesso privilegiado foi usado **contra cidadãos**
+e não contra a organização — que é, aliás, o que o torna tão difícil de detetar:
+para os sistemas do IRN, cada acesso parecia o trabalho normal de um funcionário
+autorizado.
+
+É provável que sejam dois entre muitos. Estes casos resolvem-se tipicamente em processo
 disciplinar ou em tribunal de trabalho, sem comunicado nem notícia, e uma organização
 tem muito menos incentivo a divulgar que o problema veio de dentro. O do Barreiro só
 é público porque uma autoridade o tornou público.

@@ -45,7 +45,9 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["conselho-superior-da-magistratura"],
+  "entidades_afetadas": [
+    "conselho-superior-da-magistratura"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
   "etiquetas": [
     "justica",
@@ -75,7 +77,7 @@
       "tipo": "noticia",
       "titulo": "Ciberataque paralisa site do Conselho Superior da Magistratura",
       "url": "https://eco.sapo.pt/2025/06/28/ciberataque-paralisa-site-do-conselho-superior-da-magistratura/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20250628181817/https://eco.sapo.pt/2025/06/28/ciberataque-paralisa-site-do-conselho-superior-da-magistratura/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -87,7 +89,7 @@
       "tipo": "noticia",
       "titulo": "Site do Conselho Superior de Magistratura alvo de ataque informático. \"Recuperação poderá levar alguns dias\"",
       "url": "https://observador.pt/2025/06/28/site-do-conselho-superior-de-magistratura-alvo-de-ataque-informatico-recuperacao-podera-levar-alguns-dias/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20250628155446/https://observador.pt/2025/06/28/site-do-conselho-superior-de-magistratura-alvo-de-ataque-informatico-recuperacao-podera-levar-alguns-dias/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -110,7 +112,7 @@
       "tipo": "noticia",
       "titulo": "Conselho Superior da Magistratura alvo de ataque informático",
       "url": "https://sol.sapo.pt/2025/06/28/conselho-superior-da-magistratura-alvo-de-ataque-informatico/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20250628195621/https://sol.sapo.pt/2025/06/28/conselho-superior-da-magistratura-alvo-de-ataque-informatico/"
     }
   ],
   "id": "2025-conselho-superior-da-magistratura",
@@ -121,7 +123,9 @@
     "resgate_pago": null,
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": null,
-    "servicos_afetados": ["sítio institucional csm.org.pt"]
+    "servicos_afetados": [
+      "sítio institucional csm.org.pt"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -131,7 +135,9 @@
     "cnpd": null,
     "pj": true
   },
-  "relacionados": ["2022-emgfa"],
+  "relacionados": [
+    "2022-emgfa"
+  ],
   "resumo": "A 28 de junho de 2025, o sítio do Conselho Superior da Magistratura foi alvo de um ataque informático que o deixou indisponível. O Conselho esclareceu que o sítio está alojado num servidor externo à instituição e disponibiliza apenas informação pública, não estando em causa o acesso a dados sensíveis de processos judiciais nem tendo sido detetados outros ataques aos seus sistemas. O restauro foi feito a partir de cópias de segurança e o Conselho antecipou que poderia levar alguns dias. O incidente foi reportado de imediato à Polícia Judiciária, através da Unidade Nacional de Combate ao Cibercrime e à Criminalidade Tecnológica.",
   "revisao": {
     "curador": "ss",
@@ -140,6 +146,9 @@
     "versao": 1
   },
   "setor": "justica_defesa",
-  "tipos_ataque": ["intrusao", "indisponibilidade"],
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque ao sítio do Conselho Superior da Magistratura"
 }

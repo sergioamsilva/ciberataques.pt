@@ -45,9 +45,14 @@
     "precisao": "dia"
   },
   "disputas": [],
-  "entidades_afetadas": ["camara-municipal-de-serpa"],
+  "entidades_afetadas": [
+    "camara-municipal-de-serpa"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["administracao-local", "reconstrucao-de-infraestrutura"],
+  "etiquetas": [
+    "administracao-local",
+    "reconstrucao-de-infraestrutura"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -93,7 +98,7 @@
       "tipo": "noticia",
       "titulo": "Ataque à infraestrutura informática da Câmara de Serpa",
       "url": "https://correioalentejo.com/ataque-a-infraestrutura-informatica-da-camara-de-serpa/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20260609233303/https://correioalentejo.com/ataque-a-infraestrutura-informatica-da-camara-de-serpa/"
     }
   ],
   "id": "2026-camara-municipal-de-serpa",
@@ -130,6 +135,9 @@
     "versao": 1
   },
   "setor": "autarquias",
-  "tipos_ataque": ["ransomware", "indisponibilidade"],
+  "tipos_ataque": [
+    "ransomware",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque à Câmara Municipal de Serpa"
 }

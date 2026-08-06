@@ -28,7 +28,10 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["identificacao", "laborais"],
+    "categorias": [
+      "identificacao",
+      "laborais"
+    ],
     "nota": "Entre a informação divulgada foram referidos dados de trabalhadores, além de notas de reuniões, informação sobre contraordenações ambientais, resultados de auditorias e registos de custos operacionais. A empresa não quantificou titulares afetados.",
     "titulares_declarados": null
   },
@@ -39,9 +42,15 @@
     "precisao": "mes"
   },
   "disputas": [],
-  "entidades_afetadas": ["navigator"],
+  "entidades_afetadas": [
+    "navigator"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["dupla-extorsao", "empresa-cotada", "industria-papeleira"],
+  "etiquetas": [
+    "dupla-extorsao",
+    "empresa-cotada",
+    "industria-papeleira"
+  ],
   "fontes": [
     {
       "data": "2026-04-16",
@@ -52,7 +61,7 @@
       "tipo": "noticia",
       "titulo": "Ciberataque expõe contratos e dados da Navigator na dark web",
       "url": "https://eco.sapo.pt/2026/04/16/ciberataque-expoe-contratos-e-dados-da-navigator-na-dark-web/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20260417053804/https://eco.sapo.pt/2026/04/16/ciberataque-expoe-contratos-e-dados-da-navigator-na-dark-web/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -64,7 +73,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático expõe dados da Navigator na \"darkweb\"",
       "url": "https://www.jornaldenegocios.pt/empresas/industria/detalhe/ataque-informatico-expoe-dados-da-navigator-na-darkweb",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20260416234524/https://www.jornaldenegocios.pt/empresas/industria/detalhe/ataque-informatico-expoe-dados-da-navigator-na-darkweb"
     },
     {
       "data": "2026-03-17",
@@ -98,7 +107,9 @@
     "resgate_pago": null,
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": "A empresa não revelou se houve pedido ou pagamento de resgate. Os dados acabaram publicados, o que é o desfecho habitual quando não há pagamento.",
-    "servicos_afetados": ["sistemas de informação da empresa"]
+    "servicos_afetados": [
+      "sistemas de informação da empresa"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -108,7 +119,10 @@
     "cnpd": null,
     "pj": null
   },
-  "relacionados": ["2022-tap", "2022-porto-de-lisboa"],
+  "relacionados": [
+    "2022-tap",
+    "2022-porto-de-lisboa"
+  ],
   "resumo": "Em março de 2026, a The Navigator Company foi alvo de um ataque de ransomware reivindicado pelo grupo SafePay, que a listou no seu site de extorsão a 17 de março. Em abril, parte dos dados e documentos da empresa foi exposta na dark web, incluindo contratos, dados de preços, documentos internos, dados de trabalhadores, notas de reuniões, informação sobre contraordenações ambientais, resultados de auditorias e registos de custos operacionais. A empresa confirmou ter identificado um incidente de cibersegurança e ativado os protocolos de resposta e contenção, sem revelar se houve pagamento de resgate.",
   "revisao": {
     "curador": "ss",
@@ -117,6 +131,9 @@
     "versao": 1
   },
   "setor": "industria",
-  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "ransomware",
+    "exfiltracao_dados"
+  ],
   "titulo": "Ciberataque à The Navigator Company"
 }

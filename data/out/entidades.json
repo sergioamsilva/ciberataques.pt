@@ -83,7 +83,8 @@
     "distrito": "Lisboa",
     "id": "ama",
     "incidentes": [
-      "2024-ama"
+      "2024-ama",
+      "2021-acessos-indevidos-a-sistemas-de-registo-e-identificacao"
     ],
     "incidentes_em_cascata": [],
     "nome": "Agência para a Modernização Administrativa, I.P.",
@@ -1009,6 +1010,24 @@
     "tipo": "entidade_publica",
     "url": "https://www.hgo.pt"
   },
+  "igfej": {
+    "chaves": [
+      "igfej",
+      "instituto de gestao financeira e equipamentos da justica"
+    ],
+    "distrito": "Lisboa",
+    "id": "igfej",
+    "incidentes": [],
+    "incidentes_em_cascata": [
+      "2021-acessos-indevidos-a-sistemas-de-registo-e-identificacao"
+    ],
+    "nome": "Instituto de Gestão Financeira e Equipamentos da Justiça, I.P.",
+    "nome_curto": "IGFEJ",
+    "nota": "Opera as plataformas informáticas da justiça, entre elas o Citius.",
+    "setor": "justica_defesa",
+    "tipo": "entidade_publica",
+    "url": "https://igfej.justica.gov.pt"
+  },
   "impresa": {
     "chaves": [
       "impresa",
@@ -1080,6 +1099,26 @@
     "setor": "educacao_investigacao",
     "tipo": "empresa",
     "url": "https://www.ipam.pt"
+  },
+  "irn": {
+    "chaves": [
+      "irn",
+      "instituto dos registos e do notariado",
+      "registos e notariado",
+      "cartao de cidadao",
+      "cartão de cidadão"
+    ],
+    "distrito": "Lisboa",
+    "id": "irn",
+    "incidentes": [
+      "2021-acessos-indevidos-a-sistemas-de-registo-e-identificacao"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Instituto dos Registos e do Notariado, I.P.",
+    "nome_curto": "IRN",
+    "setor": "administracao_publica",
+    "tipo": "entidade_publica",
+    "url": "https://irn.justica.gov.pt"
   },
   "junta-de-freguesia-de-agueda": {
     "chaves": [

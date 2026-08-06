@@ -1086,3 +1086,24 @@
   distrito: Portalegre
   url: https://www.cm-portalegre.pt
   chaves: [portalegre, camara municipal de portalegre, municipio de portalegre]
+
+- id: irn
+  nome: Instituto dos Registos e do Notariado, I.P.
+  nome_curto: IRN
+  setor: administracao_publica
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://irn.justica.gov.pt
+  chaves: [irn, instituto dos registos e do notariado, registos e notariado,
+           cartao de cidadao, cartão de cidadão]
+
+- id: igfej
+  nome: Instituto de Gestão Financeira e Equipamentos da Justiça, I.P.
+  nome_curto: IGFEJ
+  setor: justica_defesa
+  tipo: entidade_publica
+  distrito: Lisboa
+  url: https://igfej.justica.gov.pt
+  chaves: [igfej, instituto de gestao financeira e equipamentos da justica]
+  nota: >-
+    Opera as plataformas informáticas da justiça, entre elas o Citius.

@@ -34,7 +34,11 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["identificacao", "laborais", "saude"],
+    "categorias": [
+      "identificacao",
+      "laborais",
+      "saude"
+    ],
     "nota": "Foram divulgados vencimentos, faltas injustificadas, atestados médicos, cortes salariais e horas extraordinárias de trabalhadores. Os atestados médicos são dados de saúde, categoria especial ao abrigo do artigo 9.º do RGPD. O número de titulares não foi divulgado.",
     "titulares_declarados": null
   },
@@ -54,7 +58,9 @@
       "segundo": "LockBit 2.0"
     }
   ],
-  "entidades_afetadas": ["smtuc"],
+  "entidades_afetadas": [
+    "smtuc"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
   "etiquetas": [
     "transporte-publico",
@@ -73,7 +79,7 @@
       "tipo": "noticia",
       "titulo": "Hackers divulgam vencimentos, faltas e outros dados da rede de transportes de Coimbra depois de terem exigido resgate",
       "url": "https://cnnportugal.iol.pt/ciberataque/cibercrime/hackers-divulgam-vencimentos-faltas-e-outros-dados-da-rede-de-transportes-de-coimbra-depois-de-ter-exigido-resgate/20220510/627a67c30cf2ea4f0a49868a",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220510160137/https://cnnportugal.iol.pt/ciberataque/cibercrime/hackers-divulgam-vencimentos-faltas-e-outros-dados-da-rede-de-transportes-de-coimbra-depois-de-ter-exigido-resgate/20220510/627a67c30cf2ea4f0a49868a"
     },
     {
       "data": "2022-05-01",
@@ -107,7 +113,9 @@
     "cnpd": true,
     "pj": true
   },
-  "relacionados": ["2023-aguas-e-energia-do-porto"],
+  "relacionados": [
+    "2023-aguas-e-energia-do-porto"
+  ],
   "resumo": "Em abril de 2022, os Serviços Municipalizados de Transportes Urbanos de Coimbra foram alvo de um ciberataque com exfiltração de cerca de vinte gigabytes de informação. Os SMTUC descreveram o caso como tentativa de ciberataque contida de imediato e notificaram o Centro Nacional de Cibersegurança, a CNPD e a Polícia Judiciária. O grupo atacante deu oito dias para pagamento de resgate e, esgotado o prazo, publicou a 10 de maio parte dos dados, incluindo vencimentos, faltas injustificadas, atestados médicos, cortes salariais e horas extraordinárias de trabalhadores. Os serviços de transporte não foram comprometidos.",
   "revisao": {
     "curador": "ss",
@@ -116,6 +124,9 @@
     "versao": 1
   },
   "setor": "transportes",
-  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "ransomware",
+    "exfiltracao_dados"
+  ],
   "titulo": "Ciberataque aos SMTUC de Coimbra"
 }

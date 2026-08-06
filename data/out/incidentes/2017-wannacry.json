@@ -45,7 +45,9 @@
     "bpi",
     "caixa-geral-de-depositos"
   ],
-  "entidades_afetadas_em_cascata": ["edp"],
+  "entidades_afetadas_em_cascata": [
+    "edp"
+  ],
   "estado_confirmacao": "reportado_por_media",
   "etiquetas": [
     "campanha-mundial",
@@ -62,7 +64,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático de larga escala afecta empresas em Portugal",
       "url": "https://www.publico.pt/2017/05/12/tecnologia/noticia/ataque-informatico-internacional-afecta-empresas-e-hospitais-1771939",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20170513021403/https://www.publico.pt/2017/05/12/tecnologia/noticia/ataque-informatico-internacional-afecta-empresas-e-hospitais-1771939"
     },
     {
       "data": "2017-05-12",
@@ -73,7 +75,7 @@
       "tipo": "noticia",
       "titulo": "Ransomware atinge empresas em Portugal e Espanha",
       "url": "https://www.distribuicaohoje.com/pagamentos/ransomware-atinge-empresas-portugal-espanha/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20240222080619/https://www.distribuicaohoje.com/pagamentos/ransomware-atinge-empresas-portugal-espanha/"
     },
     {
       "data": "2017-05-13",
@@ -84,7 +86,7 @@
       "tipo": "noticia",
       "titulo": "Ataque informático. O que foi, como se espalhou, quem o travou",
       "url": "https://observador.pt/2017/05/13/ataque-informatico-o-que-foi-como-se-espalhou-quem-o-travou/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20170516183523/http://observador.pt/2017/05/13/ataque-informatico-o-que-foi-como-se-espalhou-quem-o-travou/"
     }
   ],
   "id": "2017-wannacry",
@@ -117,6 +119,9 @@
     "versao": 1
   },
   "setor": "tecnologia",
-  "tipos_ataque": ["ransomware", "indisponibilidade"],
+  "tipos_ataque": [
+    "ransomware",
+    "indisponibilidade"
+  ],
   "titulo": "WannaCry em Portugal"
 }

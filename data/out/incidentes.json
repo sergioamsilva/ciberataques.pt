@@ -1736,6 +1736,32 @@
   {
     "ano": 2021,
     "anos": [
+      2021,
+      2022,
+      2023
+    ],
+    "ator": null,
+    "data": "2021-11-01",
+    "entidades_afetadas": [
+      "irn",
+      "ama"
+    ],
+    "estado_confirmacao": "confirmado_por_regulador",
+    "id": "2021-acessos-indevidos-a-sistemas-de-registo-e-identificacao",
+    "n_fontes": 2,
+    "precisao_data": "mes",
+    "setor": "administracao_publica",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "insider",
+      "fraude",
+      "exposicao_credenciais"
+    ],
+    "titulo": "Acessos indevidos a sistemas de registo e criação de chaves móveis digitais"
+  },
+  {
+    "ano": 2021,
+    "anos": [
       2021
     ],
     "ator": null,

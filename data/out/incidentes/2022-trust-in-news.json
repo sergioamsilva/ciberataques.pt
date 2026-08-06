@@ -34,7 +34,11 @@
   ],
   "dados_pessoais": {
     "afetados": true,
-    "categorias": ["identificacao", "contacto", "laborais"],
+    "categorias": [
+      "identificacao",
+      "contacto",
+      "laborais"
+    ],
     "nota": "Foram divulgados dados pessoais de trabalhadores, jornalistas, prestadores de serviços e alguns clientes. A empresa não quantificou titulares afetados.",
     "titulares_declarados": null
   },
@@ -54,9 +58,15 @@
       "segundo": "Trust in News"
     }
   ],
-  "entidades_afetadas": ["trust-in-news"],
+  "entidades_afetadas": [
+    "trust-in-news"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["comunicacao-social", "dupla-extorsao", "dados-de-jornalistas"],
+  "etiquetas": [
+    "comunicacao-social",
+    "dupla-extorsao",
+    "dados-de-jornalistas"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -68,7 +78,7 @@
       "tipo": "noticia",
       "titulo": "Grupo da revista Visão alvo de tentativa de ciberataque",
       "url": "https://observador.pt/2022/02/09/grupo-da-revista-visao-alvo-de-tentativa-de-ciberataque/",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220209125430/https://observador.pt/2022/02/09/grupo-da-revista-visao-alvo-de-tentativa-de-ciberataque/"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -91,7 +101,7 @@
       "tipo": "noticia",
       "titulo": "Trust in News alvo de ataque ransomware: dados pessoais e sensíveis divulgados",
       "url": "https://tugatech.com.pt/t44211-trust-in-news-alvo-de-ataque-ransomware-dados-pessoais-e-sensiveis-divulgados",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220226110557/https://tugatech.com.pt/t44211-trust-in-news-alvo-de-ataque-ransomware-dados-pessoais-e-sensiveis-divulgados"
     },
     {
       "data": "2022-02-14",
@@ -126,7 +136,11 @@
     "cnpd": null,
     "pj": null
   },
-  "relacionados": ["2022-impresa", "2022-lusa", "2025-global-media"],
+  "relacionados": [
+    "2022-impresa",
+    "2022-lusa",
+    "2025-global-media"
+  ],
   "resumo": "Na madrugada de 9 de fevereiro de 2022, a Trust in News, detentora da Visão, da Caras e da Exame, foi alvo de um ataque informático que deixou a redação sem sistemas nem redes internas. A empresa assegurou que nenhum sistema crítico tinha sido comprometido. Dias depois, o grupo LockBit 2.0 confirmou a autoria e ameaçou publicar os ficheiros obtidos, tendo cumprido a ameaça a 26 de fevereiro com a divulgação de dados pessoais de trabalhadores, jornalistas, prestadores de serviços e alguns clientes.",
   "revisao": {
     "curador": "ss",
@@ -135,6 +149,9 @@
     "versao": 1
   },
   "setor": "media",
-  "tipos_ataque": ["ransomware", "exfiltracao_dados"],
+  "tipos_ataque": [
+    "ransomware",
+    "exfiltracao_dados"
+  ],
   "titulo": "Ciberataque à Trust in News (Visão, Caras e Exame)"
 }

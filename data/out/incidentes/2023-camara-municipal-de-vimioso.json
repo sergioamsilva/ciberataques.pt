@@ -48,9 +48,14 @@
       "segundo": "LockBit"
     }
   ],
-  "entidades_afetadas": ["camara-municipal-de-vimioso"],
+  "entidades_afetadas": [
+    "camara-municipal-de-vimioso"
+  ],
   "estado_confirmacao": "confirmado_pela_entidade",
-  "etiquetas": ["administracao-local", "municipio-pequeno"],
+  "etiquetas": [
+    "administracao-local",
+    "municipio-pequeno"
+  ],
   "fontes": [
     {
       "contem_declaracao_da_entidade": true,
@@ -62,7 +67,7 @@
       "tipo": "noticia",
       "titulo": "Vimioso alvo de ataque informático que provocou \"graves constrangimentos\"",
       "url": "https://www.noticiasaominuto.com/tech/2048541/vimioso-alvo-de-ataque-informatico-que-provocou-graves-constrangimentos",
-      "url_arquivo": null
+      "url_arquivo": "http://web.archive.org/web/20220815035812/https://www.noticiasaominuto.com/tech/2048541/vimioso-alvo-de-ataque-informatico-que-provocou-graves-constrangimentos"
     },
     {
       "contem_declaracao_da_entidade": true,
@@ -96,7 +101,9 @@
     "resgate_pago": null,
     "resgate_pedido_eur": null,
     "resgate_pedido_nota": "O presidente da câmara afirmou desconhecer qualquer pedido de resgate.",
-    "servicos_afetados": ["vários departamentos municipais"]
+    "servicos_afetados": [
+      "vários departamentos municipais"
+    ]
   },
   "notificacoes": {
     "anacom": null,
@@ -118,6 +125,9 @@
     "versao": 1
   },
   "setor": "autarquias",
-  "tipos_ataque": ["ransomware", "indisponibilidade"],
+  "tipos_ataque": [
+    "ransomware",
+    "indisponibilidade"
+  ],
   "titulo": "Ciberataque à Câmara Municipal de Vimioso"
 }

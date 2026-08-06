@@ -1,0 +1,131 @@
+{
+  "ator": {
+    "atribuicao_por": "autoridade",
+    "confianca": "alta",
+    "grupo": null,
+    "nota": "Um funcionário do Instituto de Gestão Financeira e Equipamentos da Justiça, condenado. Não é nomeado aqui: a política permite nomear condenados por decisão pública, mas o nome nada acrescenta a um registo cuja unidade é a entidade atingida."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2021-11-01",
+      "fonte": 0,
+      "texto": "Entre novembro de 2021 e junho de 2023, um funcionário da justiça usa credenciais de funcionários do Instituto dos Registos e do Notariado para aceder ao sistema informático interno e criar chaves móveis digitais.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2025-02-04",
+      "fonte": 0,
+      "texto": "O Juízo Central Criminal de Lisboa condena-o a nove anos e seis meses de prisão por noventa e dois crimes, entre eles abuso de poder, burla informática qualificada, falsidade informática agravada e acesso ilegítimo agravado.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2025-02-04",
+      "fonte": 0,
+      "texto": "O tribunal apura que nove cidadãos tiveram a identidade usada indevidamente e condena-o a pagar ao Estado 35 519,72 euros por perda das vantagens obtidas ilicitamente.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2026-07-27",
+      "fonte": 1,
+      "texto": "A condenação é confirmada em recurso.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": [
+      "identificacao",
+      "financeiros"
+    ],
+    "nota": "Nove cidadãos tiveram a identidade usada indevidamente, com acesso a dados pessoais e bancários e criação de chaves móveis digitais em seu nome.",
+    "titulares_declarados": 9
+  },
+  "data": {
+    "detecao": "2023-06-30",
+    "divulgacao": "2025-02-04",
+    "fim": "2023-06-30",
+    "inicio": "2021-11-01",
+    "precisao": "mes"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "irn",
+    "ama"
+  ],
+  "entidades_afetadas_em_cascata": [
+    "igfej"
+  ],
+  "estado_confirmacao": "confirmado_por_regulador",
+  "etiquetas": [
+    "condenacao-judicial",
+    "abuso-de-acesso-privilegiado",
+    "chave-movel-digital",
+    "identidade-digital"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2025-02-04",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Departamento Central de Investigação e Ação Penal",
+      "sha256": null,
+      "tipo": "regulador",
+      "titulo": "Abuso de poder. Burla informática qualificada. Acesso ilegítimo agravado. Condenação",
+      "url": "https://dciap.ministeriopublico.pt/destaque/abuso-de-poder-burla-informatica-qualificada-acesso-ilegitimo-agravado-condenacao-mp-juizo",
+      "url_arquivo": null
+    },
+    {
+      "data": "2026-07-27",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Jornal de Notícias",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Informático dos Tribunais condenado por roubar identidades para contrair empréstimos",
+      "url": "https://www.jn.pt/justica/artigo/informatico-dos-tribunais-condenado-por-roubar-identidades-para-contrair-emprestimos/17838802",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2021-acessos-indevidos-a-sistemas-de-registo-e-identificacao",
+  "impacto": {
+    "custo_declarado_eur": 35519,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": 9,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "sistema informático interno do IRN",
+      "sistema de ciclo de vida do Cartão de Cidadão",
+      "Chave Móvel Digital"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [
+    "2024-ama",
+    "2018-centro-hospitalar-barreiro-montijo"
+  ],
+  "resumo": "Entre novembro de 2021 e junho de 2023, um funcionário do Instituto de Gestão Financeira e Equipamentos da Justiça usou credenciais de funcionários do Instituto dos Registos e do Notariado para aceder ao sistema informático interno e criar chaves móveis digitais em nome de terceiros, contraindo empréstimos com as identidades assim obtidas. O Juízo Central Criminal de Lisboa condenou-o, a 4 de fevereiro de 2025, a nove anos e seis meses de prisão por noventa e dois crimes, entre eles abuso de poder, burla informática qualificada, falsidade informática agravada e acesso ilegítimo agravado, com nove cidadãos identificados como vítimas.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "A prova mais forte de todo o arquivo: uma condenação, confirmada em recurso, com a fonte primária a ser a página do próprio Departamento Central de Investigação e Ação Penal. Nenhum outro incidente aqui tem sentença.\n\nFoi encontrado no varrimento feito com o vocabulário judicial acrescentado à triagem — não existiria no registo sem essa correção, e é a melhor demonstração de que a cegueira valia a pena corrigir.\n\nO condenado não é nomeado. A política permite nomear pessoas condenadas por decisão judicial pública, mas a unidade deste registo é a entidade atingida, e o nome nada lhe acrescenta.\n\nSegundo caso de ameaça interna do arquivo, e o único em que o acesso privilegiado foi usado contra cidadãos e não contra a organização.",
+    "versao": 1
+  },
+  "setor": "administracao_publica",
+  "tipos_ataque": [
+    "insider",
+    "fraude",
+    "exposicao_credenciais"
+  ],
+  "titulo": "Acessos indevidos a sistemas de registo e criação de chaves móveis digitais"
+}

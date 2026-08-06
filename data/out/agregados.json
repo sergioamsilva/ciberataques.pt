@@ -1,7 +1,7 @@
 {
   "distribuicao_fontes_por_incidente": {
     "1": 41,
-    "2": 15,
+    "2": 16,
     "3": 18,
     "4": 6,
     "5": 5,
@@ -19,7 +19,7 @@
     "2018": 3,
     "2019": 2,
     "2020": 1,
-    "2021": 3,
+    "2021": 4,
     "2022": 21,
     "2023": 16,
     "2024": 10,
@@ -66,12 +66,12 @@
   "por_estado_confirmacao": {
     "alegado_pelo_atacante": 27,
     "confirmado_pela_entidade": 56,
-    "confirmado_por_regulador": 7,
+    "confirmado_por_regulador": 8,
     "noticiado_por_uma_fonte": 2,
     "reportado_por_media": 3
   },
   "por_setor": {
-    "administracao_publica": 8,
+    "administracao_publica": 9,
     "autarquias": 20,
     "banca_seguros": 1,
     "desporto": 2,
@@ -92,14 +92,14 @@
     "ddos": 4,
     "defacement": 3,
     "exfiltracao_dados": 21,
-    "exposicao_credenciais": 4,
-    "fraude": 2,
+    "exposicao_credenciais": 5,
+    "fraude": 3,
     "hacktivismo": 3,
     "indisponibilidade": 34,
-    "insider": 1,
+    "insider": 2,
     "intrusao": 33,
     "phishing_bec": 1,
     "ransomware": 54
   },
-  "total": 95
+  "total": 96
 }
