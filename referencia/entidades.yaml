@@ -129,7 +129,8 @@
   tipo: entidade_publica
   distrito: Lisboa
   url: https://www.seg-social.pt
-  chaves: [seguranca social, instituto da seguranca social, instituto de informatica, iss]
+  chaves: [seguranca social, instituto da seguranca social, instituto de informatica, iss,
+           seguranca social direta, ss direta]
 
 - id: sonae-mc
   nome: SONAE MC — Serviços Partilhados, S.A.
@@ -535,7 +536,8 @@
   tipo: entidade_publica
   distrito: Lisboa
   url: https://www.portaldasfinancas.gov.pt
-  chaves: [autoridade tributaria, autoridade tributaria e aduaneira, at, portal das financas, financas]
+  chaves: [autoridade tributaria, autoridade tributaria e aduaneira, at, portal das financas,
+           financas, e-fatura, efatura]
 
 - id: cofina-media
   nome: Cofina Media, S.A.
@@ -619,7 +621,14 @@
   setor: saude
   tipo: entidade_publica
   url: https://www.sns.gov.pt
-  chaves: [sns, servico nacional de saude, sns 24, spms]
+  chaves: [sns, servico nacional de saude, sns 24, spms, sico, pem, prvr, rnu,
+           registo de saude eletronico, rse, sistema de informacao dos certificados de obito,
+           prescricao eletronica de medicamentos]
+  nota: >-
+    Inclui como chaves as plataformas operadas pelos Serviços Partilhados do
+    Ministério da Saúde — SICO, PEM, PRVR, RNU e o Registo de Saúde Eletrónico.
+    A cobertura destes casos fala do nome da plataforma e quase nunca do da
+    entidade, e sem isto o incidente de 2024 no SICO não resolvia para ninguém.
 
 - id: cuf
   nome: CUF, S.A.

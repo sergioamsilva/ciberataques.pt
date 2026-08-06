@@ -166,7 +166,9 @@
       "autoridade tributaria e aduaneira",
       "at",
       "portal das financas",
-      "financas"
+      "financas",
+      "e-fatura",
+      "efatura"
     ],
     "distrito": "Lisboa",
     "id": "autoridade-tributaria",
@@ -1548,7 +1550,9 @@
       "seguranca social",
       "instituto da seguranca social",
       "instituto de informatica",
-      "iss"
+      "iss",
+      "seguranca social direta",
+      "ss direta"
     ],
     "distrito": "Lisboa",
     "id": "seguranca-social",
@@ -1659,11 +1663,20 @@
       "sns",
       "servico nacional de saude",
       "sns 24",
-      "spms"
+      "spms",
+      "sico",
+      "pem",
+      "prvr",
+      "rnu",
+      "registo de saude eletronico",
+      "rse",
+      "sistema de informacao dos certificados de obito",
+      "prescricao eletronica de medicamentos"
     ],
     "id": "sns",
     "incidentes": [
-      "2026-sns24-dados-de-utentes"
+      "2026-sns24-dados-de-utentes",
+      "2024-plataformas-clinicas-do-estado"
     ],
     "incidentes_em_cascata": [
       "2024-ama",
@@ -1671,6 +1684,7 @@
     ],
     "nome": "Serviço Nacional de Saúde",
     "nome_curto": "SNS",
+    "nota": "Inclui como chaves as plataformas operadas pelos Serviços Partilhados do Ministério da Saúde — SICO, PEM, PRVR, RNU e o Registo de Saúde Eletrónico. A cobertura destes casos fala do nome da plataforma e quase nunca do da entidade, e sem isto o incidente de 2024 no SICO não resolvia para ninguém.",
     "setor": "saude",
     "tipo": "entidade_publica",
     "url": "https://www.sns.gov.pt"

@@ -123,3 +123,16 @@ caminho correto e está por fazer.
 - **Uma entidade pode confirmar sem emitir comunicado.** A TAP confirmou o ataque de 2022
   por Twitter. Nestes casos, marcar `contem_declaracao_da_entidade: true` na notícia que
   reproduz a declaração, em vez de forçar o estado de confirmação para baixo.
+
+## Ministério Público e DGSI — candidatos a raspagem
+
+O Ministério Público não tem RSS: `ministeriopublico.pt/rss` e
+`dciap.ministeriopublico.pt/rss` devolvem 404. Tem páginas HTML em
+`dciap.ministeriopublico.pt/destaques`, que respondem 200 e são raspáveis.
+
+O DGSI publica acórdãos, que seriam a prova mais forte que esta escala reconhece —
+mais forte do que uma acusação, porque é decisão transitada.
+
+Ambos ficam na mesma gaveta da CNPD: trabalho de HTML e PDF, adiado por decisão de
+âmbito e não por falta de valor. Verificado a 2026-08-06.
+

@@ -91,7 +91,11 @@ def recolher() -> list[Item]:
                         texto=resumo,
                         fonte=fonte["id"],
                         obtido_em=agora,
-                        tipo_fonte="noticia",
+                        # O tipo vem do catálogo. A esmagadora maioria dos feeds é
+                        # comunicação social, mas a Polícia Judiciária publica em RSS
+                        # e o que ela diz é fonte de autoridade — o degrau mais alto
+                        # da escala de confiança deste registo.
+                        tipo_fonte=fonte.get("tipo_fonte", "noticia"),
                         extra={"feed": url_feed},
                     )
                 )

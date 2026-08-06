@@ -1,7 +1,7 @@
 {
   "distribuicao_fontes_por_incidente": {
     "1": 41,
-    "2": 14,
+    "2": 15,
     "3": 18,
     "4": 6,
     "5": 5,
@@ -21,7 +21,7 @@
     "2021": 3,
     "2022": 21,
     "2023": 16,
-    "2024": 9,
+    "2024": 10,
     "2025": 16,
     "2026": 17
   },
@@ -34,6 +34,7 @@
     "LockBit": 3,
     "LockBit 2.0": 2,
     "Net-DeViL e Sanfour 25": 1,
+    "PKN": 1,
     "Qilin": 3,
     "Ragnar Locker": 2,
     "RansomEXX": 1,
@@ -64,7 +65,7 @@
   "por_estado_confirmacao": {
     "alegado_pelo_atacante": 27,
     "confirmado_pela_entidade": 56,
-    "confirmado_por_regulador": 6,
+    "confirmado_por_regulador": 7,
     "noticiado_por_uma_fonte": 2,
     "reportado_por_media": 3
   },
@@ -79,7 +80,7 @@
     "justica_defesa": 3,
     "media": 4,
     "retalho": 4,
-    "saude": 9,
+    "saude": 10,
     "tecnologia": 6,
     "telecomunicacoes": 1,
     "transportes": 8,
@@ -89,9 +90,9 @@
     "cadeia_fornecimento": 3,
     "ddos": 4,
     "defacement": 3,
-    "exfiltracao_dados": 20,
-    "exposicao_credenciais": 3,
-    "fraude": 1,
+    "exfiltracao_dados": 21,
+    "exposicao_credenciais": 4,
+    "fraude": 2,
     "hacktivismo": 3,
     "indisponibilidade": 34,
     "insider": 1,
@@ -99,5 +100,5 @@
     "phishing_bec": 1,
     "ransomware": 54
   },
-  "total": 94
+  "total": 95
 }

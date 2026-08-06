@@ -1,0 +1,128 @@
+{
+  "ator": {
+    "atribuicao_por": "autoridade",
+    "confianca": "alta",
+    "grupo": "PKN",
+    "nota": "A atribuição é da investigação criminal. Segundo esta, o grupo tem origem em comunidades de jogos em linha."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2024-01-01",
+      "fonte": 0,
+      "texto": "Um grupo obtém acesso a plataformas internas da saúde usando credenciais roubadas de médicos, entre elas o Sistema de Informação dos Certificados de Óbito, a Prescrição Eletrónica de Medicamentos e o Portal de Requisição de Vinhetas e Receitas.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2024-01-01",
+      "fonte": 0,
+      "texto": "São emitidas certidões de óbito falsas e mais de trezentas e cinquenta receitas médicas falsas, com incidência em medicamentos controlados como ansiolíticos, antidepressivos e opiáceos. As credenciais de médicos eram também vendidas.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2025-07-31",
+      "fonte": 1,
+      "texto": "Três pessoas com idades entre os dezanove e os vinte anos ficam em prisão preventiva, num total de dezoito suspeitos identificados.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2025-07-31",
+      "fonte": 1,
+      "texto": "O Ministério Público imputa crimes de burla qualificada, falsidade informática, extorsão, ameaças e uso indevido de dados pessoais.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": [
+      "identificacao",
+      "saude",
+      "laborais"
+    ],
+    "nota": "Ficaram expostos dados de médicos, de doentes e de funcionários. Os certificados de óbito e as prescrições são dados de saúde, categoria especial ao abrigo do artigo 9.º do RGPD. Não há quantificação pública de titulares.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2024-01-01",
+    "divulgacao": "2025-07-31",
+    "inicio": "2024-01-01",
+    "precisao": "ano"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "sns"
+  ],
+  "estado_confirmacao": "confirmado_por_regulador",
+  "etiquetas": [
+    "credenciais-de-medicos",
+    "certidoes-de-obito",
+    "receitas-falsas",
+    "medicamentos-controlados",
+    "prisao-preventiva",
+    "plataformas-do-estado"
+  ],
+  "fontes": [
+    {
+      "data": "2025-07-31",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Pplware",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hackers atacaram o Ministério da Saúde e até passaram certidões de óbito",
+      "url": "https://pplware.sapo.pt/internet/hackers-atacaram-o-ministerio-da-saude-e-ate-passaram-certidoes-de-obito/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2025-07-31",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Pplware",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hackers atacaram o Ministério da Saúde e até passaram certidões de óbito — detenções e acusação",
+      "url": "https://pplware.sapo.pt/internet/hackers-atacaram-o-ministerio-da-saude-e-ate-passaram-certidoes-de-obito/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2024-plataformas-clinicas-do-estado",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "Sistema de Informação dos Certificados de Óbito (SICO)",
+      "Prescrição Eletrónica de Medicamentos (PEM)",
+      "Portal de Requisição de Vinhetas e Receitas (PRVR)"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [
+    "2026-sns24-dados-de-utentes"
+  ],
+  "resumo": "Em 2024, um grupo obteve acesso a plataformas internas da saúde usando credenciais roubadas de médicos, entre elas o Sistema de Informação dos Certificados de Óbito, a Prescrição Eletrónica de Medicamentos e o Portal de Requisição de Vinhetas e Receitas. Foram emitidas certidões de óbito falsas e mais de trezentas e cinquenta receitas médicas falsas, com incidência em medicamentos controlados, e as credenciais de médicos eram vendidas. Três pessoas ficaram em prisão preventiva, num total de dezoito suspeitos identificados, e o Ministério Público imputa burla qualificada, falsidade informática, extorsão, ameaças e uso indevido de dados pessoais.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "O caso que expôs a maior cegueira do pipeline. Não foi detetado porque chegou pela via judicial e não pela vítima: nenhuma entidade da saúde comunicou nada, e o que existe é acusação do Ministério Público. O léxico de triagem conhecia 'ataque informático' e 'ransomware' e não conhecia uma única das infrações da Lei do Cibercrime, que é a linguagem em que estes casos aparecem.\n\nÉ também dos mais bem sustentados do arquivo, precisamente por isso: detenções e acusação são o degrau mais alto desta escala.\n\nOs três detidos não são nomeados. A política proíbe nomear alegados atacantes não condenados, e prisão preventiva não é condenação.\n\nA entidade registada é o SNS, a que estão associadas as plataformas atingidas, operadas pelos Serviços Partilhados do Ministério da Saúde. A data de início é aproximada ao ano: a cobertura refere 2024 sem precisar quando começou, e o caso só se tornou público em julho de 2025 — que é outra razão de o pipeline nunca lhe ter chegado.",
+    "versao": 1
+  },
+  "setor": "saude",
+  "tipos_ataque": [
+    "fraude",
+    "exposicao_credenciais",
+    "exfiltracao_dados"
+  ],
+  "titulo": "Emissão de certidões de óbito e receitas falsas em plataformas do Ministério da Saúde"
+}

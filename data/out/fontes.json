@@ -1179,6 +1179,31 @@
     "url_arquivo": null
   },
   {
+    "data": "2025-07-31",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2024-plataformas-clinicas-do-estado",
+    "indice": 0,
+    "publicador": "Pplware",
+    "tipo": "noticia",
+    "titulo": "Hackers atacaram o Ministério da Saúde e até passaram certidões de óbito",
+    "url": "https://pplware.sapo.pt/internet/hackers-atacaram-o-ministerio-da-saude-e-ate-passaram-certidoes-de-obito/",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_de_autoridade": true,
+    "data": "2025-07-31",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2024-plataformas-clinicas-do-estado",
+    "indice": 1,
+    "publicador": "Pplware",
+    "tipo": "noticia",
+    "titulo": "Hackers atacaram o Ministério da Saúde e até passaram certidões de óbito — detenções e acusação",
+    "url": "https://pplware.sapo.pt/internet/hackers-atacaram-o-ministerio-da-saude-e-ate-passaram-certidoes-de-obito/",
+    "url_arquivo": null
+  },
+  {
     "data": "2023-12-25",
     "estado_ligacao": "morta",
     "excerto": null,

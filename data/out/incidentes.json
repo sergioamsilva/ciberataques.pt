@@ -905,6 +905,29 @@
     "titulo": "Portline listada em site de extorsão"
   },
   {
+    "ano": 2024,
+    "anos": [
+      2024
+    ],
+    "ator": "PKN",
+    "data": "2024-01-01",
+    "entidades_afetadas": [
+      "sns"
+    ],
+    "estado_confirmacao": "confirmado_por_regulador",
+    "id": "2024-plataformas-clinicas-do-estado",
+    "n_fontes": 2,
+    "precisao_data": "ano",
+    "setor": "saude",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "fraude",
+      "exposicao_credenciais",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Emissão de certidões de óbito e receitas falsas em plataformas do Ministério da Saúde"
+  },
+  {
     "ano": 2023,
     "anos": [
       2023

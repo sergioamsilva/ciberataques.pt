@@ -109,6 +109,16 @@ portugal_forte:
   - serviço nacional de saúde
   - diário da república
   - anacom
+  # Plataformas do Estado português. São nomes próprios sem equivalente noutro país,
+  # e por isso valem como marcador forte — ao contrário de "ministério da saúde",
+  # que existe em toda a lusofonia e ficou no léxico fraco.
+  - autenticação.gov
+  - chave móvel digital
+  - segurança social direta
+  - portal das finanças
+  - sns 24
+  - citius
+  - spms
   # A camada da freguesia. Faltava por inteiro, e são 3091 em Portugal: uma
   # notícia sobre a Junta de Freguesia de Águeda foi rejeitada com "sem marcador
   # português". A triagem sabia reconhecer instituições nacionais e não sabia
@@ -141,6 +151,27 @@ portugal:
   - instituto politécnico
   - centro hospitalar
   - direção-geral
+  # A administração central. Faltava por inteiro, tal como faltava a camada da
+  # freguesia: uma notícia sobre um ataque ao Ministério da Saúde, com três detidos e
+  # acusação do Ministério Público, era rejeitada por "sem marcador português".
+  #
+  # Fracos porque quase todos existem noutros países lusófonos com o mesmo nome. O
+  # que os torna utilizáveis é a combinação com o resto do léxico.
+  - ministério da saúde
+  - ministério da justiça
+  - ministério das finanças
+  - ministério da administração interna
+  - ministério da defesa nacional
+  - ministério da economia
+  - ministério da educação
+  - ministério do ambiente
+  - ministério da cultura
+  - ministério público
+  - assembleia da república
+  - presidência da república
+  - governo regional
+  - infarmed
+  - autoridade tributária e aduaneira
   # Marcadores fracos: existem noutros países lusófonos com outro significado, e
   # por isso não bastam sozinhos.
   - autarquia
@@ -183,6 +214,22 @@ fortes:
   - vítima de ransomware
   - reivindica o ataque
   - reivindicou o ataque
+  # Os nomes das infrações da Lei do Cibercrime (Lei 109/2009).
+  #
+  # São a linguagem em que estes casos aparecem quando chegam por via judicial, e o
+  # léxico não conhecia nenhum: o ataque de 2024 ao SICO e ao PRVR do Ministério da
+  # Saúde, com três detidos e acusação do Ministério Público, era invisível.
+  #
+  # Entram como fortes porque são inequivocamente computacionais — ao contrário do
+  # vocabulário processual, que está em `processo_judicial` e nunca basta sozinho.
+  - falsidade informática
+  - sabotagem informática
+  - acesso ilegítimo
+  - dano informático
+  - burla informática
+  - interceção ilegítima
+  - reprodução ilegítima de programa
+  - devassa por meio de informática
 
 # Os 308 concelhos de Portugal, menos um.
 #
@@ -511,3 +558,34 @@ concelhos:
   - Évora
   - Ílhavo
   - Óbidos
+
+# Vocabulário do processo penal.
+#
+# NUNCA é suficiente por si, e a distinção não é teórica: o feed da Polícia
+# Judiciária traz todo o crime — tráfico de estupefacientes, incêndios, homicídios —
+# e dos dez itens verificados nenhum era informático. Tratar "detido" ou "buscas"
+# como marcador de ataque encheria a fila de apreensões de cocaína, e a fadiga de
+# curadoria é o modo de falha mais provável deste projeto.
+#
+# Estes termos só somam pontuação quando há também um termo informático. Servem para
+# distinguir uma notícia de crime informático de um artigo genérico sobre segurança.
+processo_judicial:
+  - arguido
+  - arguidos
+  - detido
+  - detidos
+  - detenção
+  - prisão preventiva
+  - acusação
+  - acusados
+  - condenado
+  - condenados
+  - buscas
+  - inquérito
+  - ministério público
+  - polícia judiciária
+  - dciap
+  - unc3t
+  - ulic
+  - crime informático
+  - cibercrime

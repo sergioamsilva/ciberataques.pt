@@ -82,6 +82,9 @@ def triar(item: Item) -> Resultado:
     pt_fraco = _contem(tudo, lex["portugal"] + lex.get("concelhos", []))
     estrangeiro = _contem(tudo, lex["estrangeiro"])
     ruido = _contem(tudo, lex["ruido"])
+    # Contexto processual: arguidos, buscas, acusação. Ver a nota em triagem.yaml —
+    # só conta acompanhado de termo informático, e a regra está mais abaixo.
+    judicial = _contem(tudo, lex.get("processo_judicial", []))
 
     if not ataque:
         return Resultado(False, 0, "sem qualquer termo de ataque")
@@ -99,6 +102,11 @@ def triar(item: Item) -> Resultado:
 
     pontuacao = 0
     pontuacao += 4 if fortes else 0
+    # O vocabulário do processo penal soma, mas nunca abre a porta sozinho: a
+    # condição é haver já um termo de ataque, que a linha acima garante existir.
+    # Sem isto, o feed da Polícia Judiciária — que é quase todo tráfico, incêndios e
+    # homicídios — entrava inteiro na fila.
+    pontuacao += 2 if judicial else 0
     pontuacao += 2 if _contem(titulo, lex["ataque"]) else 1
     pontuacao += 2 if pt_forte else 0
     pontuacao += 1 if pt_fraco else 0
@@ -113,6 +121,8 @@ def triar(item: Item) -> Resultado:
         razoes.append(f"portugal: {pt_forte[0]}")
     elif pt_fraco:
         razoes.append(f"portugal (fraco): {pt_fraco[0]}")
+    if judicial:
+        razoes.append(f"processo: {judicial[0]}")
     if ruido:
         razoes.append(f"ruído: {ruido[0]}")
 

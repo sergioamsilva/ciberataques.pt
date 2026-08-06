@@ -323,3 +323,27 @@ fontes:
     dominios: [funchalnoticias.net]
     feeds:
       - https://funchalnoticias.net/feed/
+
+  # ------------------------------------------------------- fontes de autoridade
+  #
+  # A primeira fonte primária do catálogo. Tudo o resto é comunicação social a
+  # relatar o que outros disseram; isto é a própria autoridade a dizê-lo.
+  #
+  # Acrescentada depois de o ataque de 2024 ao SICO e ao PRVR do Ministério da
+  # Saúde nunca ter sido detetado. Esse caso trouxe três detidos em prisão
+  # preventiva e acusação do Ministério Público, ou seja, a prova mais forte que
+  # esta escala reconhece — e o registo era estruturalmente cego a ela.
+  #
+  # ATENÇÃO ao que este feed é: traz TODO o crime investigado pela PJ. Dos dez
+  # itens verificados a 2026-08-06, nenhum era informático — vinham tráfico de
+  # estupefacientes, incêndios e homicídios. É a triagem que o filtra, e é por isso
+  # que o vocabulário processual em `processo_judicial` nunca basta sozinho.
+  - id: policia-judiciaria
+    nome: Polícia Judiciária
+    metodo: rss
+    ativa: true
+    intervalo_s: 6
+    tipo_fonte: regulador
+    dominios: [policiajudiciaria.pt]
+    feeds:
+      - https://www.policiajudiciaria.pt/feed/
