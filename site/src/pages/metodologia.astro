@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import FontesPorIncidente from "../components/FontesPorIncidente.astro";
+import ContextoOficial from "../components/ContextoOficial.astro";
 import { taxonomia, agregados, nome, manifesto } from "../lib/dados";
 
 const tax = taxonomia();
@@ -134,6 +135,10 @@ const umaFonte = ag.distribuicao_fontes_por_incidente["1"] ?? 0;
       </p>
 
       <FontesPorIncidente />
+
+      <div class="mt-10">
+        <ContextoOficial />
+      </div>
 
       <div class="mt-6 border-l-2 border-[var(--color-acento)] pl-5">
         <p class="mono-etiqueta">O viés também é nosso</p>

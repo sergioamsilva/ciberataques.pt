@@ -24,6 +24,7 @@ from ingestao.comum import (  # noqa: E402
     carregar_taxonomia,
     escrever_json,
     ler_json,
+    ler_yaml,
 )
 
 
@@ -169,6 +170,24 @@ def construir(hoje: str | None = None) -> dict:
         for indice, fonte in enumerate(incidente["fontes"])
     ]
     escrever_json(DIR_OUT / "fontes.json", fontes)
+
+    # -------------------------------------------------------------------------
+    # Contexto oficial: o denominador, em ficheiro próprio.
+    #
+    # Vive separado de agregados.json de propósito. São contagens de outra
+    # entidade, com outro universo e outra metodologia, e a única coisa que não
+    # podem sofrer é serem somadas às nossas por distração de quem lê o JSON.
+    # Um ficheiro à parte torna a distinção estrutural em vez de documental.
+    contexto = ler_yaml(DIR_REFERENCIA / "cncs.yaml")
+    por_ano_registo = Counter(r["ano"] for r in resumos)
+    contexto["comparacao"] = {
+        str(ano): {
+            "cert_pt": dados["incidentes"],
+            "neste_registo": por_ano_registo.get(int(ano), 0),
+        }
+        for ano, dados in contexto["anos"].items()
+    }
+    escrever_json(DIR_OUT / "contexto.json", contexto)
 
     manifesto = {
         "construido_em": hoje or date.today().isoformat(),

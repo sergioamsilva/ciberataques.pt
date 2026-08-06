@@ -1,0 +1,93 @@
+# Incidentes registados pelo CERT.PT, por ano.
+#
+# Isto NÃO são incidentes deste registo, e nunca pode ser somado a eles. É o
+# denominador: o número oficial contra o qual a cobertura deste arquivo se torna
+# mensurável.
+#
+# O projeto afirma, na metodologia, que conta incidentes NOTICIADOS e não
+# incidentes OCORRIDOS. Sem um denominador isso é uma ressalva simpática que
+# ninguém pode verificar. Com ele, passa a ser uma diferença que qualquer leitor
+# vê: em 2024 o CERT.PT registou 2758 incidentes e este arquivo tem nove.
+#
+# O que o CERT.PT conta é diferente do que nós contamos, e a diferença tem de
+# acompanhar sempre o número:
+#
+#   - O CERT.PT regista incidentes reportados por, ou detetados junto de,
+#     entidades do ciberespaço de interesse nacional. Não os nomeia.
+#   - Este arquivo regista incidentes tornados públicos com a entidade
+#     identificada e com fonte citável.
+#
+# Um incidente pode estar num e não no outro por razões legítimas: a entidade
+# reportou ao CERT.PT e nunca comunicou publicamente (está lá, não está cá), ou
+# foi noticiado sem alguma vez ter sido reportado (está cá, não está lá).
+#
+# Cada valor é copiado à mão do relatório citado, com a linha onde aparece.
+# Não há raspagem: o sítio do CNCS está atrás de um WAF que bloqueia recolha
+# automática, e estes documentos mudam de formato entre edições.
+
+fonte:
+  nome: Observatório de Cibersegurança do CNCS
+  serie: Relatório Cibersegurança em Portugal — Riscos & Conflitos
+  url: https://www.cncs.gov.pt/pt/observatorio/
+  nota: >-
+    Os números são da Equipa de Resposta a Incidentes de Segurança Informática
+    Nacional (CERT.PT), publicados anualmente pelo Observatório de Cibersegurança
+    do Centro Nacional de Cibersegurança.
+
+anos:
+  2021:
+    incidentes: 1781
+    edicao: Riscos & Conflitos 2023
+    url: https://www.cncs.gov.pt/docs/rel-riscosconflitos2023-obcibercncs15m.pdf
+    citacao: >-
+      "O número de incidentes registados pelo CERT.PT aumentou 14%, de 1781 em
+      2021 para 2023 em 2022."
+
+  2022:
+    incidentes: 2023
+    variacao_percentual: 14
+    edicao: Riscos & Conflitos 2023
+    url: https://www.cncs.gov.pt/docs/rel-riscosconflitos2023-obcibercncs15m.pdf
+    citacao: >-
+      "O número de incidentes registados pelo CERT.PT aumentou 14%, de 1781 em
+      2021 para 2023 em 2022."
+    nota: >-
+      Os setores com mais incidentes foram a banca (19%, sobretudo clientes),
+      a administração pública e o ensino superior (7%).
+
+  2023:
+    incidentes: 2025
+    variacao_percentual: 0
+    edicao: Riscos & Conflitos 2024
+    url: https://www.cncs.gov.pt/docs/rel-riscosconflitos2024-obcibercncs15m.pdf
+    citacao: >-
+      "Em 2023, o CERT.PT registou 2025 incidentes de cibersegurança, apenas mais
+      dois do que o ano anterior."
+    nota: >-
+      O ano em que a contagem oficial estabilizou. Os prestadores de serviços de
+      internet foram o setor com mais incidentes registados (26%).
+
+  2024:
+    incidentes: 2758
+    variacao_percentual: 36
+    edicao: Riscos & Conflitos 2025
+    url: https://www.cncs.gov.pt/docs/rel-riscosconflitos2025-obcibercncs15m.pdf
+    citacao: >-
+      "O número de incidentes registados pelo CERT.PT aumentou 36% em 2024
+      atingindo os 2 758 incidentes."
+    nota: >-
+      Cerca de 78% ocorreram em entidades privadas. Subiram a energia e a
+      administração pública local e regional; a banca caiu do 3.º para o 9.º lugar,
+      com uma descida na ordem dos 69%.
+
+  2025:
+    incidentes: 3864
+    variacao_percentual: 40
+    edicao: Riscos & Conflitos 2026
+    url: https://www.publico.pt/2026/04/28/enter/noticia/incidentes-seguranca-informatica-portugal-aumentaram-40-2025-2172880
+    citacao: >-
+      O CERT.PT registou 3864 incidentes em 2025, um aumento de 40% face a 2024.
+    nota: >-
+      Valor noticiado a partir da apresentação do relatório. Substituir a ligação
+      pelo PDF da edição de 2026 do Riscos & Conflitos assim que estiver publicado
+      no sítio do Observatório.

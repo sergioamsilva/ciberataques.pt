@@ -300,3 +300,29 @@ export function documentados(): ResumoIncidente[] {
 export function alegacoes(): ResumoIncidente[] {
   return incidentes().filter(ehAlegacao);
 }
+
+export interface ContextoAno {
+  incidentes: number;
+  variacao_percentual?: number;
+  edicao: string;
+  url: string;
+  citacao: string;
+  nota?: string;
+}
+
+export interface Contexto {
+  fonte: { nome: string; serie: string; url: string; nota: string };
+  anos: Record<string, ContextoAno>;
+  comparacao: Record<string, { cert_pt: number; neste_registo: number }>;
+}
+
+/*
+ * O denominador oficial, do CERT.PT.
+ *
+ * Lê-se de contexto.json e não de agregados.json, e a separação é deliberada:
+ * são contagens de outra entidade, com outro universo, e a única coisa que não
+ * podem sofrer é serem somadas às nossas por distração.
+ */
+export function contexto(): Contexto {
+  return lerJson<Contexto>(OUT, "contexto.json");
+}

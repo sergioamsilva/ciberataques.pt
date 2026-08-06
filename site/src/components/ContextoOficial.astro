@@ -1,0 +1,115 @@
+---
+/*
+ * O denominador oficial ao lado do nosso número.
+ *
+ * A metodologia diz, e bem, que este arquivo conta incidentes NOTICIADOS e não
+ * incidentes OCORRIDOS. Sem um número oficial ao lado, isso é uma ressalva
+ * simpática que ninguém pode verificar. Com ele, é uma diferença que qualquer
+ * leitor vê: em 2024 o CERT.PT registou 2758 incidentes e este arquivo tem nove.
+ *
+ * A comparação é direcional e não aritmética, e o texto diz porquê: o CERT.PT
+ * conta o que lhe é reportado, sem nomear ninguém; nós contamos o que se tornou
+ * público com a entidade identificada. Um incidente pode estar num e não no outro
+ * por razões perfeitamente legítimas.
+ */
+import { contexto } from "../lib/dados";
+
+interface Props {
+  /** Um ano só, para a página de cronologia. Sem isto, mostra a série toda. */
+  ano?: number;
+}
+const { ano } = Astro.props;
+const ctx = contexto();
+
+const anos = Object.keys(ctx.comparacao)
+  .map(Number)
+  .sort((a, b) => b - a)
+  .filter((a) => ano === undefined || a === ano);
+
+if (anos.length === 0) return new Response(null, { status: 200 });
+
+const maximo = Math.max(...anos.map((a) => ctx.comparacao[String(a)].cert_pt), 1);
+---
+
+{anos.length > 0 && (
+  <section class="revelar contexto" aria-labelledby="h-contexto">
+    <h2 id="h-contexto" class="mono-etiqueta">
+      {ano ? `O que se sabe oficialmente sobre ${ano}` : "O denominador oficial"}
+    </h2>
+
+    <ol class="mt-4 divide-y divide-[var(--color-borda)] border-y border-[var(--color-borda)]" role="list">
+      {anos.map((a) => {
+        const c = ctx.comparacao[String(a)];
+        const d = ctx.anos[String(a)];
+        const cobertura = (c.neste_registo / c.cert_pt) * 100;
+        return (
+          <li class="py-4">
+            <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+              <span class="font-mono text-sm tabular-nums text-[var(--color-suave)]">{a}</span>
+              <span class="font-mono text-2xl tabular-nums text-[var(--color-tinta)]">
+                {c.cert_pt.toLocaleString("pt-PT")}
+              </span>
+              <span class="text-sm text-[var(--color-suave)]">
+                incidentes registados pelo CERT.PT
+              </span>
+            </div>
+
+            {/* Duas barras à mesma escala. A nossa quase não se vê, e é esse o ponto. */}
+            <div class="mt-2.5 space-y-1">
+              <span
+                class="barra-contexto block h-2 bg-[var(--color-tinta)]"
+                style={`width: ${(c.cert_pt / maximo) * 100}%`}
+                aria-hidden="true"
+              ></span>
+              <span
+                class="barra-contexto block h-2 bg-[var(--color-acento)]"
+                style={`width: ${Math.max(0.4, (c.neste_registo / maximo) * 100)}%`}
+                aria-hidden="true"
+              ></span>
+            </div>
+
+            <p class="mt-2 text-sm">
+              <span class="text-[var(--color-acento)]">
+                {c.neste_registo} {c.neste_registo === 1 ? "está documentado" : "estão documentados"} neste arquivo
+              </span>
+              <span class="text-[var(--color-suave)]">
+                {" "}— {cobertura < 1 ? "menos de 1" : cobertura.toFixed(0)}% do total oficial.
+              </span>
+            </p>
+
+            {!ano && d?.nota && (
+              <p class="mt-1.5 text-sm text-[var(--color-suave)]">{d.nota}</p>
+            )}
+          </li>
+        );
+      })}
+    </ol>
+
+    <p class="mt-4 max-w-2xl text-sm text-[var(--color-suave)]">
+      Os dois números não medem a mesma coisa e não se subtraem. O CERT.PT regista o
+      que lhe é reportado por entidades do ciberespaço de interesse nacional, e não
+      nomeia nenhuma; este arquivo regista o que se tornou público com a entidade
+      identificada e fonte citável. Um incidente pode estar num e não no outro: houve
+      quem reportasse sem nunca comunicar publicamente, e houve quem fosse notícia sem
+      alguma vez ter reportado. A diferença mede a distância entre o que acontece e o
+      que se chega a saber — e é essa distância que este arquivo existe para reduzir.
+    </p>
+    <p class="mt-2 text-sm">
+      <a href={ctx.fonte.url} rel="noopener">{ctx.fonte.nome}</a>,
+      <em> {ctx.fonte.serie}</em>.
+    </p>
+  </section>
+)}
+
+<style>
+  @media (prefers-reduced-motion: no-preference) {
+    :global(html.js) .contexto .barra-contexto {
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    :global(html.js) .contexto.visivel .barra-contexto {
+      transform: scaleX(1);
+    }
+  }
+</style>
