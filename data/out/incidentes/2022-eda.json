@@ -1,0 +1,126 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "A empresa não divulgou detalhes sobre a origem do ataque, invocando razões de segurança."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2022-05-16",
+      "fonte": 0,
+      "texto": "A EDA e as restantes associadas do grupo são alvo de um ataque informático, com causas e impactos ainda por analisar.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2022-05-16",
+      "fonte": 0,
+      "texto": "A empresa garante que os sistemas técnicos não foram afetados e que está assegurado o normal fornecimento de energia elétrica nos Açores, lamentando os inconvenientes ao nível do atendimento comercial. Indica ter notificado oportunamente as entidades competentes.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2022-05-18",
+      "fonte": 1,
+      "texto": "A empresa afirma não haver indícios de acesso a dados pessoais.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "Dois dias depois, a empresa afirmou não haver indícios de acesso a dados pessoais.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2022-05-16",
+    "divulgacao": "2022-05-16",
+    "inicio": "2022-05-16",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "eda"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "acores",
+    "regiao-autonoma",
+    "servico-essencial",
+    "operacao-nao-afetada"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-05-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Empresa de Eletricidade dos Açores alvo de ataque informático",
+      "url": "https://observador.pt/2022/05/16/empresa-de-eletricidade-dos-acores-alvo-de-ataque-informatico/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2022-05-18",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático à Eletricidade dos Açores \"sem indícios de acesso\" a dados pessoais",
+      "url": "https://observador.pt/2022/05/18/ataque-informatico-a-eletricidade-dos-acores-sem-indicios-de-acesso-a-dados-pessoais/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2022-05-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Renascença",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Empresa Eletricidade dos Açores alvo de ataque informático",
+      "url": "https://rr.sapo.pt/noticia/pais/2022/05/16/empresa-eletricidade-dos-acores-alvo-de-ataque-informatico/284379/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2022-eda",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "sistemas de informação do grupo",
+      "atendimento comercial"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2021-hospital-do-divino-espirito-santo",
+    "2023-aguas-e-energia-do-porto"
+  ],
+  "resumo": "A 16 de maio de 2022, a EDA — Eletricidade dos Açores e as restantes associadas do grupo foram alvo de um ataque informático. A empresa garantiu que os sistemas técnicos não foram afetados e que o fornecimento de energia elétrica nos Açores estava assegurado, com os inconvenientes limitados ao atendimento comercial, e afirmou dois dias depois não haver indícios de acesso a dados pessoais. Não divulgou detalhes sobre a origem do ataque, invocando razões de segurança.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "Segundo caso dos Açores. É um dos poucos do arquivo em que o operador de serviço essencial distingue explicitamente os sistemas técnicos dos de informação, e é a distinção que interessa a quem lê: as luzes não se apagaram. Fica como intrusão e não como ransomware — nenhuma fonte refere encriptação nem resgate, e a empresa recusou detalhar a origem.",
+    "versao": 1
+  },
+  "setor": "energia_agua",
+  "tipos_ataque": [
+    "intrusao"
+  ],
+  "titulo": "Ciberataque à Eletricidade dos Açores"
+}

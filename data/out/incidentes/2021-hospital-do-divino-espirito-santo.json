@@ -1,0 +1,124 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": null
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2021-06-24",
+      "fonte": 1,
+      "texto": "Um ataque informático bloqueia o sistema do hospital, que passa a funcionar com condicionantes resultantes da necessidade de o defender e de repelir ação maliciosa.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2021-06-28",
+      "fonte": 0,
+      "texto": "São desagendadas consultas e atrasadas ou canceladas análises. Os resultados de testes à covid-19 passam a ser inseridos manualmente, com doentes à espera há perto de 72 horas.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2021-06-28",
+      "fonte": 1,
+      "texto": "O secretário regional da Saúde caracteriza o caso como problema grave e explica que a prioridade foi notificar os casos positivos, estando em curso a recuperação dos negativos por notificar. O presidente do Governo dos Açores manifesta preocupação.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2021-06-28",
+      "fonte": 0,
+      "texto": "O caso fica nas mãos da Polícia Judiciária, que tenta recuperar o sistema e investigar a origem do ataque.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre comprometimento de dados de utentes. O que foi descrito foi o bloqueio dos sistemas.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2021-06-24",
+    "divulgacao": "2021-06-28",
+    "inicio": "2021-06-24",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "hospital-do-divino-espirito-santo"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "acores",
+    "regiao-autonoma",
+    "covid-19",
+    "cuidados-adiados"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2021-06-28",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "RTP",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Principal hospital dos Açores alvo de ciberataque",
+      "url": "https://www.rtp.pt/noticias/pais/principal-hospital-dos-acores-alvo-de-ciberataque_v1331034",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2021-06-28",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "TSF",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque a hospital de Ponta Delgada atrasa divulgação dos resultados de testes",
+      "url": "https://www.tsf.pt/sociedade/artigo/ciberataque-a-hospital-de-ponta-delgada-atrasa-divulgacao-dos-resultados-de-testes/13883360",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2021-hospital-do-divino-espirito-santo",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "sistema informático hospitalar",
+      "consultas",
+      "análises clínicas",
+      "notificação de resultados de testes à covid-19"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [
+    "2022-hospital-garcia-de-orta",
+    "2023-sesaram"
+  ],
+  "resumo": "A 24 de junho de 2021, um ataque informático bloqueou o sistema do Hospital do Divino Espírito Santo, em Ponta Delgada, o maior dos Açores. Foram desagendadas consultas e atrasadas ou canceladas análises, e os resultados de testes à covid-19 passaram a ser inseridos manualmente, com doentes à espera há perto de 72 horas. O secretário regional da Saúde caracterizou o caso como problema grave e a Polícia Judiciária investigou a origem do ataque.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-08-06",
+    "nota": "Primeiro incidente dos Açores no registo. Ocorreu em plena pandemia, e o dano mais concreto não foi informático: foram doentes à espera de resultados de testes durante perto de três dias. Classificado como intrusão e indisponibilidade, e não como ransomware — nenhuma fonte refere encriptação nem pedido de resgate.",
+    "versao": 1
+  },
+  "setor": "saude",
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
+  "titulo": "Ciberataque ao Hospital do Divino Espírito Santo, em Ponta Delgada"
+}

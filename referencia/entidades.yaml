@@ -928,3 +928,23 @@
   nota: >-
     Metalomecânica de sinalética e imagem corporativa, fundada em 1978, com sede em
     Rio de Mouro, Sintra.
+
+- id: hospital-do-divino-espirito-santo
+  nome: Hospital do Divino Espírito Santo de Ponta Delgada, E.P.E.R.A.
+  nome_curto: Hospital do Divino Espírito Santo
+  setor: saude
+  tipo: entidade_publica
+  distrito: Açores
+  url: https://www.hdes.pt
+  chaves: [hdes, hospital do divino espirito santo, divino espirito santo, hospital de ponta delgada]
+  nota: >-
+    O maior hospital dos Açores, em Ponta Delgada, na ilha de São Miguel.
+
+- id: eda
+  nome: EDA — Eletricidade dos Açores, S.A.
+  nome_curto: EDA
+  setor: energia_agua
+  tipo: empresa_publica
+  distrito: Açores
+  url: https://www.eda.pt
+  chaves: [eda, eletricidade dos acores, electricidade dos acores]

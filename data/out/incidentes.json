@@ -1266,6 +1266,24 @@
   {
     "ano": 2022,
     "ator": null,
+    "data": "2022-05-16",
+    "entidades_afetadas": [
+      "eda"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2022-eda",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "energia_agua",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao"
+    ],
+    "titulo": "Ciberataque à Eletricidade dos Açores"
+  },
+  {
+    "ano": 2022,
+    "ator": null,
     "data": "2022-05-12",
     "entidades_afetadas": [
       "lusa"
@@ -1473,6 +1491,25 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque à Universidade de Lisboa"
+  },
+  {
+    "ano": 2021,
+    "ator": null,
+    "data": "2021-06-24",
+    "entidades_afetadas": [
+      "hospital-do-divino-espirito-santo"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2021-hospital-do-divino-espirito-santo",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "saude",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque ao Hospital do Divino Espírito Santo, em Ponta Delgada"
   },
   {
     "ano": 2021,

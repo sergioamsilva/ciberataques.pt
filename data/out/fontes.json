@@ -2089,6 +2089,44 @@
     "url_arquivo": "http://web.archive.org/web/20220928184130/https://www.publico.pt/2022/09/28/sociedade/noticia/centro-ciberseguranca-confirma-ataques-rede-forcas-armadas-2022206"
   },
   {
+    "contem_declaracao_da_entidade": true,
+    "data": "2022-05-16",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2022-eda",
+    "indice": 0,
+    "publicador": "Observador",
+    "tipo": "noticia",
+    "titulo": "Empresa de Eletricidade dos Açores alvo de ataque informático",
+    "url": "https://observador.pt/2022/05/16/empresa-de-eletricidade-dos-acores-alvo-de-ataque-informatico/",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2022-05-18",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2022-eda",
+    "indice": 1,
+    "publicador": "Observador",
+    "tipo": "noticia",
+    "titulo": "Ataque informático à Eletricidade dos Açores \"sem indícios de acesso\" a dados pessoais",
+    "url": "https://observador.pt/2022/05/18/ataque-informatico-a-eletricidade-dos-acores-sem-indicios-de-acesso-a-dados-pessoais/",
+    "url_arquivo": null
+  },
+  {
+    "data": "2022-05-16",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2022-eda",
+    "indice": 2,
+    "publicador": "Renascença",
+    "tipo": "noticia",
+    "titulo": "Empresa Eletricidade dos Açores alvo de ataque informático",
+    "url": "https://rr.sapo.pt/noticia/pais/2022/05/16/empresa-eletricidade-dos-acores-alvo-de-ataque-informatico/284379/",
+    "url_arquivo": null
+  },
+  {
     "data": "2022-05-14",
     "estado_ligacao": "viva",
     "excerto": null,
@@ -2597,6 +2635,32 @@
     "titulo": "Universidade de Lisboa alvo de ataque informático. Hackers exigem resgate",
     "url": "https://www.publico.pt/2021/11/02/sociedade/noticia/universidade-lisboa-alvo-ataque-informatico-emails-seis-faculdades-suspensos-preventivamente-1983390",
     "url_arquivo": "http://web.archive.org/web/20211102195305/https://www.publico.pt/2021/11/02/sociedade/noticia/universidade-lisboa-alvo-ataque-informatico-emails-seis-faculdades-suspensos-preventivamente-1983390"
+  },
+  {
+    "contem_declaracao_de_autoridade": true,
+    "data": "2021-06-28",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2021-hospital-do-divino-espirito-santo",
+    "indice": 0,
+    "publicador": "RTP",
+    "tipo": "noticia",
+    "titulo": "Principal hospital dos Açores alvo de ciberataque",
+    "url": "https://www.rtp.pt/noticias/pais/principal-hospital-dos-acores-alvo-de-ciberataque_v1331034",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "data": "2021-06-28",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2021-hospital-do-divino-espirito-santo",
+    "indice": 1,
+    "publicador": "TSF",
+    "tipo": "noticia",
+    "titulo": "Ciberataque a hospital de Ponta Delgada atrasa divulgação dos resultados de testes",
+    "url": "https://www.tsf.pt/sociedade/artigo/ciberataque-a-hospital-de-ponta-delgada-atrasa-divulgacao-dos-resultados-de-testes/13883360",
+    "url_arquivo": null
   },
   {
     "contem_declaracao_da_entidade": true,
