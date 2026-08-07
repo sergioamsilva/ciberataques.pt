@@ -477,3 +477,78 @@ fontes:
       esta fonte ficou de fora desde o início — apesar de já ter dado quatro fontes ao
       registo. O caminho certo é /feed/, declarado no <link rel="alternate"> da
       página, e devolve 24 itens. Verificado a 2026-08-07.
+
+  # ------------------------- imprensa regional: os distritos que faltavam
+  #
+  # Os cinco feeds regionais originais cobriam Coimbra e Viseu. Os casos que
+  # escaparam vieram todos de fora dessa mancha: a Junta de Freguesia de Águeda pelo
+  # Notícias de Águeda, a burla de sessenta mil euros ao Ameixial pelo Ardina do
+  # Alentejo, a Câmara de Serpa pela Rádio Pax. Nenhum estava aqui.
+  #
+  # Feeds verificados a 2026-08-07. Fica de fora o Sul Informação, que devolve 403 a
+  # acessos automatizados, e o Diário de Trás-os-Montes, sem feed em /feed.
+  - id: noticias-de-agueda
+    nome: Notícias de Águeda
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    # O artigo redireciona para o subdomínio do SAPO. Ambos declarados: sem o
+    # segundo, a camada de rede recusa o destino do salto, como deve.
+    dominios: [noticiasdeagueda.pt, noticiasdeagueda.sapo.pt]
+    feeds: [https://noticiasdeagueda.pt/feed/]
+
+  - id: diario-de-aveiro
+    nome: Diário de Aveiro
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [diarioaveiro.pt]
+    feeds: [https://www.diarioaveiro.pt/feed/]
+
+  - id: ardina-do-alentejo
+    nome: Ardina do Alentejo
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [ardinadoalentejo.pt]
+    feeds: [https://ardinadoalentejo.pt/feed/]
+
+  - id: radio-pax
+    nome: Rádio Pax
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [radiopax.com]
+    feeds: [https://www.radiopax.com/feed/]
+
+  - id: correio-alentejo
+    nome: Correio Alentejo
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [correioalentejo.com]
+    feeds: [https://correioalentejo.com/feed/]
+
+  - id: o-setubalense
+    nome: O Setubalense
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [osetubalense.com]
+    feeds: [https://www.osetubalense.com/feed/]
+
+  - id: diario-de-leiria
+    nome: Diário de Leiria
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [diarioleiria.pt]
+    feeds: [https://www.diarioleiria.pt/feed/]
+
+  - id: noticias-de-coimbra
+    nome: Notícias de Coimbra
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [noticiasdecoimbra.pt]
+    feeds: [https://www.noticiasdecoimbra.pt/feed/]

@@ -209,12 +209,46 @@ O `robots.txt` não tem grupo para `*` e autoriza-nos. Bloqueia o `ECLI-Download
 `Crawl-delay: 10` ao Googlebot — recolhemos por descritor, poucas páginas, nunca os 762
 sitemaps.
 
-## Ministério Público — candidato a raspagem
+## Fontes tentadas e não viáveis
 
-Não tem RSS: `ministeriopublico.pt/rss` e `dciap.ministeriopublico.pt/rss` devolvem 404.
-Tem páginas HTML em `dciap.ministeriopublico.pt/destaques`, que respondem 200 e são
-raspáveis, com títulos que nomeiam as infrações — foi assim que se chegou à condenação
-do funcionário do IGFEJ. Fica por fazer.
+Três candidatos foram investigados a fundo a 2026-08-07 e não deram. Ficam aqui com o
+que se apurou, para não se repetir o trabalho — e porque a razão de cada um é diferente.
+
+### CMVM — aplicação OutSystems
+
+Seria a fonte certa para empresas cotadas, que têm dever de divulgar factos relevantes,
+e o registo já tem a Conduril, a Altice, a EDP, os CTT, a Sonae e a Navigator.
+
+`cmvm.pt` é uma aplicação OutSystems servida por JavaScript: o HTML entregue não tem
+uma única ligação. O sistema antigo em `web3.cmvm.pt/sdi/emitentes/` devolve 404. É o
+mesmo obstáculo que o plano do projeto já tinha anotado para o Diário da República.
+
+Exigiria um browser sem cabeça, que é uma dependência pesada para o retorno — os
+comunicados relevantes chegam à imprensa no mesmo dia.
+
+### Comunicados das autarquias — não há por onde os recolher
+
+Dois casos do registo vieram de sítios de câmaras, e o de Barrancos é justamente aquele
+em que os dois comunicados originais devolvem hoje 404. O valor seria alto.
+
+Medido sobre oito câmaras que já foram atacadas — Vinhais, Serpa, Barrancos, Santa
+Comba Dão, Gondomar, Loures, Coimbra e Moita, testando `/feed/`, `/rss`, `/noticias/rss`
+e `/?feed=rss2`: **uma tem feed.** Gondomar. É pior do que os três em dez medidos numa
+sondagem anterior.
+
+A conclusão é que os comunicados municipais não se descobrem por recolha: descobrem-se
+por notícia e preservam-se depois, que é o que `ingestao/arquivo.py` já faz.
+
+### DCIAP — sem listagem estável
+
+As páginas de caso existem em `/destaque/...` e são exatamente o que interessa: títulos
+que nomeiam as infrações, e foi por uma delas que se chegou à condenação do funcionário
+do IGFEJ. Mas não há por onde as listar. `/comunicados` devolve uma página sem
+ligações, `/destaques` traz cinco itens que são objetivos estratégicos, `/rss.xml` vem
+vazio, e a paginação com `?page=` não muda nada.
+
+Chega-se-lhes por motor de busca, e é assim que continua a ser: o DCIAP é fonte para
+citar quando se investiga um caso, não fonte para recolher.
 
 ## CNPD — o que a fonte dá, e o que não dá
 
