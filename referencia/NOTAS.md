@@ -184,12 +184,30 @@ que valida cada destino contra SSRF.
 A correção não é específica do CSM: qualquer sítio com esta configuração passa a
 funcionar.
 
-O `robots.txt` do CSM não tem grupo para `*`, pelo que o `urllib.robotparser` nos
-autoriza. Mas bloqueia explicitamente o `ECLI-Downloader` e dá `Crawl-delay: 10` ao
-Googlebot: o sinal é que não querem descarregamento em massa, e são perto de 1,9
-milhões de decisões em 762 sitemaps. A fonte fica declarada e **inativa** — quando
-houver parser, será para consultar à mão a partir de um caso concreto, nunca para
-varrer.
+Resolvido o certificado, faltavam dois obstáculos, e nenhum dá erro quando está errado:
+
+- **A pesquisa só funciona por GET.** O mesmo pedido por POST devolve 200, com JSON
+  válido e 343 876 registos: a base inteira, com o filtro ignorado em silêncio. É o
+  pior modo de falha possível — o que responde com sucesso e resultados errados.
+- **O campo é `filter_descriptors`.** O de pesquisa livre, `freesearch`, devolve zero
+  para termos que existem nos descritores.
+
+O que a base dá, medido a 2026-08-07: FALSIDADE INFORMÁTICA 59, ACESSO ILEGÍTIMO 49,
+BURLA INFORMÁTICA 108, DANO INFORMÁTICO 3, SABOTAGEM INFORMÁTICA 0.
+
+Parecem muitos e não são. De 73 acórdãos recolhidos, 22 passam a triagem e **nenhum é
+um ataque a uma organização** — são crimes contra pessoas singulares, violação de
+segredo bancário e doutrina sobre os elementos típicos das infrações. E os acórdãos são
+anonimizados: dizem "a ofendida" e "o Recorrente", não o nome de quem foi atingido.
+
+Por isso a fonte está ativa mas **fora da recolha automática**. É ferramenta de curador:
+invoca-se ao investigar um caso concreto, para procurar a decisão que o sustente. Pôr
+isto a alimentar a fila daria trinta por cento de ruído para rejeitar à mão, e a fadiga
+de curadoria é o modo de falha mais provável deste projeto.
+
+O `robots.txt` não tem grupo para `*` e autoriza-nos. Bloqueia o `ECLI-Downloader` e dá
+`Crawl-delay: 10` ao Googlebot — recolhemos por descritor, poucas páginas, nunca os 762
+sitemaps.
 
 ## Ministério Público — candidato a raspagem
 

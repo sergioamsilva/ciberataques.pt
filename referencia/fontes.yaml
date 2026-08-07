@@ -397,9 +397,10 @@ fontes:
     nome: Jurisprudência do Conselho Superior da Magistratura
     metodo: html
     tipo_fonte: regulador
-    ativa: false
+    ativa: true
     intervalo_s: 10
     dominios: [jurisprudencia.csm.org.pt]
     nota: >-
-      Desativada até haver parser. A pesquisa não é um GET simples: exige POST ou
-      JavaScript, e é esse o trabalho que falta.
+      Ativa desde 2026-08-07, com parser em ingestao/fontes/csm.py. A pesquisa é por
+      descritor e só funciona por GET — por POST o servidor responde 200 com a base
+      inteira, ignorando o filtro em silêncio.
