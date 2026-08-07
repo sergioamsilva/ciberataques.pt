@@ -157,3 +157,45 @@ class _RespostaFalsa:
 
 def _resposta_302(destino: str):
     return _RespostaFalsa(302, {"Location": destino})
+
+
+def teste_cadeia_incompleta_nao_desliga_a_verificacao():
+    """Uma cadeia incompleta repara-se, não se ignora.
+
+    A base de jurisprudência do CSM não envia o intermediário da Sectigo, e a
+    validação falha com "unable to get local issuer certificate". Os browsers
+    escondem isto indo buscar o elo em falta ao endereço declarado no próprio
+    certificado; o requests não o faz.
+
+    O remédio tinha uma versão fácil e errada — `verify=False` — que aceitaria
+    qualquer certificado, num projeto que valida cada destino contra SSRF. Este teste
+    existe para que ninguém a escolha por engano.
+    """
+    raiz = Path(__file__).resolve().parent.parent
+    fonte = (raiz / "ingestao" / "rede.py").read_text(encoding="utf-8")
+    assert "verify=False" not in fonte, (
+        "a verificação de certificado foi desligada em ingestao/rede.py. "
+        "Uma cadeia incompleta repara-se com _remendar_cadeia(), fornecendo o "
+        "intermediário em falta — nunca aceitando qualquer certificado."
+    )
+    assert "_remendar_cadeia" in fonte
+
+
+def teste_o_remendo_so_e_tentado_apos_falha():
+    """Ir buscar o intermediário a toda a gente seria um pedido a mais por anfitrião.
+
+    E, pior, esconderia problemas reais de certificado atrás de uma tentativa de
+    reparação. A primeira versão desta correção fazia-o: pedia o intermediário até a
+    anfitriões que não precisavam dele.
+    """
+    import ingestao.rede as rede
+
+    raiz = Path(__file__).resolve().parent.parent
+    fonte = (raiz / "ingestao" / "rede.py").read_text(encoding="utf-8")
+    i_erro = fonte.find("except requests.exceptions.SSLError")
+    i_remendo = fonte.find("remendo = _remendar_cadeia")
+    assert 0 < i_erro < i_remendo, (
+        "_remendar_cadeia() tem de ser chamada dentro do tratamento do erro de TLS, "
+        "e não antes do pedido"
+    )
+    assert isinstance(rede._INTERMEDIARIOS, dict)

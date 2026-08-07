@@ -143,24 +143,53 @@ caminho correto e está por fazer.
   por Twitter. Nestes casos, marcar `contem_declaracao_da_entidade: true` na notícia que
   reproduz a declaração, em vez de forçar o estado de confirmação para baixo.
 
-## DGSI — inacessível
+## Decisões judiciais: DGSI fora, CSM dentro
 
-Os acórdãos do DGSI seriam a prova mais forte que esta escala reconhece, mais forte do
-que uma acusação, porque são decisão judicial. Não é possível chegar lá a partir deste
-projeto, e a razão não é de desenho:
+Os acórdãos são a prova mais forte que esta escala reconhece, mais forte do que uma
+acusação, porque são decisão judicial. Há duas bases públicas, e falham de maneiras
+diferentes — a distinção importa porque uma é reparável e a outra não.
 
-- `www.dgsi.pt` resolve por DNS (91.198.182.101).
-- `http://www.dgsi.pt/` responde **301** para `https://www.dgsi.pt:443/`.
-- `https://www.dgsi.pt/` **expira sem resposta**, em TLS 1.0, TLS 1.2 e com o nível de
-  segurança de cifras reduzido. Não é negociação de TLS: é a ligação que não se
-  estabelece.
+### DGSI — a aplicação não responde
 
-Verificado a 2026-08-07. Pode ser bloqueio geográfico, filtragem de origem, ou
-indisponibilidade temporária. Vale a pena reverificar antes de dar por perdido — os
-motores de busca indexam o sítio, o que sugere que responde a partir de outras redes.
+A primeira leitura deste caso, escrita a 2026-08-06, dizia que "a ligação não se
+estabelece". Estava errada, e a medição em camadas mostra porquê:
+
+- `www.dgsi.pt` resolve por DNS (91.198.182.101) e o porto 443 está **aberto**.
+- O TLS estabelece-se em **0,03 s**, com o certificado de `justica.gov.pt` a validar
+  sem qualquer erro.
+- Depois disso, **25 segundos sem um único byte de resposta**.
+
+Ou seja: a rede está boa, o TLS está bom, e é a aplicação que não responde ao pedido
+HTTP. Pode ser filtragem por origem ou indisponibilidade — os motores de busca indexam
+o sítio, o que sugere que responde a partir de outras redes. Nada há a fazer do nosso
+lado senão reverificar de vez em quando.
 
 Quando estiver acessível, o descritor a percorrer é "crime de falsidade informática",
 que a 2026-08-07 tinha catorze acórdãos indexados de quatro tribunais, entre 2012 e 2026.
+
+### CSM — resolvido, e a correção serve a toda a gente
+
+`jurisprudencia.csm.org.pt` parecia igualmente inacessível, e não era. O servidor
+**não envia o certificado intermediário da Sectigo**, e a validação falha com "unable
+to get local issuer certificate". Os browsers escondem isto indo buscar o elo em falta
+ao endereço declarado no próprio certificado; o `requests` e o `curl` não o fazem.
+
+Está resolvido em `ingestao/rede.py`, e a forma como está resolvido é a parte que
+interessa: `_remendar_cadeia()` é chamada **apenas depois** de a verificação falhar,
+vai buscar o intermediário ao endereço que o certificado declara, e junta-o ao conjunto
+de confiança. **A verificação nunca é desligada.** Há dois testes a garanti-lo, porque
+a versão fácil e errada — `verify=False` — aceitaria qualquer certificado, num projeto
+que valida cada destino contra SSRF.
+
+A correção não é específica do CSM: qualquer sítio com esta configuração passa a
+funcionar.
+
+O `robots.txt` do CSM não tem grupo para `*`, pelo que o `urllib.robotparser` nos
+autoriza. Mas bloqueia explicitamente o `ECLI-Downloader` e dá `Crawl-delay: 10` ao
+Googlebot: o sinal é que não querem descarregamento em massa, e são perto de 1,9
+milhões de decisões em 762 sitemaps. A fonte fica declarada e **inativa** — quando
+houver parser, será para consultar à mão a partir de um caso concreto, nunca para
+varrer.
 
 ## Ministério Público — candidato a raspagem
 

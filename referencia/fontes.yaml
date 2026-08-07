@@ -371,3 +371,35 @@ fontes:
     dominios: [policiajudiciaria.pt]
     feeds:
       - https://www.policiajudiciaria.pt/feed/
+
+  # A jurisprudência dos tribunais superiores, pelo Conselho Superior da Magistratura.
+  #
+  # Entra desativada e declarada, que não é o mesmo que não existir: o domínio precisa
+  # de estar aqui para a camada de rede o aceitar, e o que falta é o parser.
+  #
+  # É a alternativa ao DGSI, que está inacessível — e a comparação vale a pena porque
+  # os dois falham de maneiras diferentes, apuradas a 2026-08-07:
+  #
+  #   O DGSI estabelece TLS em 0,03s, com o certificado a validar sem problema, e
+  #   depois fica 25 segundos sem devolver um único byte. É a aplicação que não
+  #   responde, não a rede.
+  #
+  #   O CSM respondia 200 e falhava na verificação do certificado, porque não envia o
+  #   intermediário da Sectigo. Está resolvido na camada de rede, sem desligar a
+  #   verificação: ver _remendar_cadeia() em ingestao/rede.py.
+  #
+  # Sobre o robots.txt: não tem grupo para `*`, pelo que o urllib.robotparser nos
+  # autoriza. Mas bloqueia explicitamente o `ECLI-Downloader` e dá `Crawl-delay: 10` ao
+  # Googlebot, e o sinal é claro — não querem descarregamento em massa. São perto de
+  # 1,9 milhões de decisões em 762 sitemaps. Quando houver parser, será para consultar
+  # à mão a partir de um caso concreto, nunca para varrer.
+  - id: csm-jurisprudencia
+    nome: Jurisprudência do Conselho Superior da Magistratura
+    metodo: html
+    tipo_fonte: regulador
+    ativa: false
+    intervalo_s: 10
+    dominios: [jurisprudencia.csm.org.pt]
+    nota: >-
+      Desativada até haver parser. A pesquisa não é um GET simples: exige POST ou
+      JavaScript, e é esse o trabalho que falta.

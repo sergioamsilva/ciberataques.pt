@@ -17,6 +17,9 @@ from __future__ import annotations
 
 import ipaddress
 import socket
+import ssl
+import subprocess
+import tempfile
 import time
 import urllib.robotparser
 from dataclasses import dataclass, field
@@ -271,6 +274,85 @@ def canonicalizar(url: str) -> str:
     )
 
 
+# Cadeias de certificados incompletas, por anfitrião. Ver _confianca_para().
+_INTERMEDIARIOS: dict[str, str | None] = {}
+
+
+def _remendar_cadeia(anfitriao: str) -> str | None:
+    """Tenta obter o intermediário que o servidor não enviou.
+
+    Só é chamada **depois** de a verificação normal falhar, e nunca antes: ir buscar
+    o intermediário a toda a gente seria um pedido a mais por anfitrião e esconderia
+    problemas reais de certificado atrás de uma tentativa de reparação.
+
+    Devolve o caminho de um conjunto que inclui o intermediário em falta, ou None se
+    não for possível repará-lo — caso em que o erro original se mantém, como deve.
+
+    Existe por causa de uma fonte concreta. A base de jurisprudência do Conselho
+    Superior da Magistratura não envia o intermediário da Sectigo, e a validação
+    falha com "unable to get local issuer certificate". Os browsers escondem isto
+    porque vão buscar o certificado em falta ao endereço declarado na extensão de
+    acesso à autoridade; o `requests` e o `curl` não o fazem.
+
+    A distinção que importa: isto **não desliga a verificação**. O certificado
+    continua a ser validado, e continua a ter de encadear até uma raiz de confiança
+    do sistema — apenas se fornece o elo que o servidor deixou de enviar. Desligar a
+    verificação seria aceitar qualquer certificado, e num projeto que valida cada
+    destino contra SSRF isso seria uma contradição.
+    """
+    if anfitriao in _INTERMEDIARIOS:
+        return _INTERMEDIARIOS[anfitriao]
+
+    _INTERMEDIARIOS[anfitriao] = None
+    try:
+        pem = ssl.get_server_certificate((anfitriao, 443), timeout=TEMPO_LIMITE)
+    except Exception:  # noqa: BLE001
+        return None
+
+    # O endereço onde a autoridade publica o certificado que assinou este.
+    try:
+        detalhes = subprocess.run(
+            ["openssl", "x509", "-noout", "-text"],
+            input=pem, capture_output=True, text=True, timeout=15,
+        ).stdout
+    except Exception:  # noqa: BLE001
+        return None
+
+    aia = None
+    for linha in detalhes.splitlines():
+        if "CA Issuers - URI:" in linha:
+            aia = linha.split("CA Issuers - URI:", 1)[1].strip()
+            break
+    if not aia:
+        return None
+
+    try:
+        bruto = requests.get(aia, timeout=TEMPO_LIMITE, headers={"User-Agent": AGENTE})
+        bruto.raise_for_status()
+        convertido = subprocess.run(
+            ["openssl", "x509", "-inform", "DER"],
+            input=bruto.content, capture_output=True, timeout=15,
+        )
+        intermediario = (
+            convertido.stdout.decode() if convertido.returncode == 0
+            else bruto.content.decode("ascii", "ignore")
+        )
+        if "BEGIN CERTIFICATE" not in intermediario:
+            return None
+
+        import certifi
+
+        destino = Path(tempfile.gettempdir()) / f"ciberataques-ca-{anfitriao}.pem"
+        destino.write_text(
+            intermediario.strip() + "\n" + Path(certifi.where()).read_text(),
+            encoding="utf-8",
+        )
+        _INTERMEDIARIOS[anfitriao] = str(destino)
+        return str(destino)
+    except Exception:  # noqa: BLE001
+        return None
+
+
 def obter(url: str, *, usar_cache: bool = True, aceitar: str | None = None) -> Resposta:
     """Descarrega um recurso, com todas as verificações aplicadas.
 
@@ -301,12 +383,29 @@ def obter(url: str, *, usar_cache: bool = True, aceitar: str | None = None) -> R
         for tentativa in range(TENTATIVAS):
             _esperar_a_vez(anfitriao)
             try:
-                resposta = requests.get(
-                    atual,
-                    headers=cabecalhos,
-                    timeout=TEMPO_LIMITE,
-                    allow_redirects=False,  # revalidamos cada salto à mão
-                )
+                confianca = _INTERMEDIARIOS.get(anfitriao) or True
+                try:
+                    resposta = requests.get(
+                        atual,
+                        headers=cabecalhos,
+                        timeout=TEMPO_LIMITE,
+                        allow_redirects=False,  # revalidamos cada salto à mão
+                        verify=confianca,
+                    )
+                except requests.exceptions.SSLError:
+                    # Uma cadeia incompleta é erro do servidor, não motivo para
+                    # desistir nem para aceitar qualquer certificado. Tenta-se obter
+                    # o elo em falta; se não der, o erro segue.
+                    remendo = _remendar_cadeia(anfitriao)
+                    if not remendo:
+                        raise
+                    resposta = requests.get(
+                        atual,
+                        headers=cabecalhos,
+                        timeout=TEMPO_LIMITE,
+                        allow_redirects=False,
+                        verify=remendo,
+                    )
                 break
             except requests.RequestException as erro:
                 ultimo_erro = erro
