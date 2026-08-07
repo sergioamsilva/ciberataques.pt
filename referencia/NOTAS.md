@@ -270,3 +270,30 @@ O índice dá, ainda assim, número, emissor, assunto e ligação — o suficien
 curador decidir, e para apanhar uma deliberação sobre violação de dados no dia em que
 aparecer. Não há robots.txt em cnpd.pt (404 verificado).
 
+## Os incidentes do CERT.PT não se podem ir buscar
+
+A pergunta é boa e a resposta é não, por três razões que se somam. Investigado a
+2026-08-07.
+
+**Por política.** O CNCS nunca nomeia as entidades. É a sua posição declarada, e é
+razoável: recebe notificações a título de confiança, e nomear quem reporta acabaria com
+o reporte. Os 2 758 incidentes de 2024 são anónimos por desenho — mesmo que os
+tivéssemos todos, não serviriam a um registo cuja unidade é a entidade identificada.
+
+**Por não haver dados abertos.** `dados.gov.pt` tem zero conjuntos do CNCS. Procurando
+por "cibersegurança" aparecem nove, todos inquéritos do INE sobre a postura das câmaras
+municipais; por "incidentes" aparecem três, e são de segurança do doente e de proteção
+civil.
+
+**Por bloqueio técnico.** `cncs.gov.pt` devolve 307 em ciclo a acessos automatizados —
+o WAF que o plano do projeto já tinha anotado.
+
+O que existe, e que já usamos, são os relatórios anuais em PDF do Observatório: é deles
+que vem `referencia/cncs.yaml`, e é isso que dá o denominador de cada ano nas páginas
+de cronologia.
+
+O que se pode melhorar sem contornar nada: os relatórios trazem desagregação por setor
+e por trimestre que hoje fica em nota de texto e não em campo. Estruturá-la daria um
+denominador por setor — poder dizer, na página da saúde, quantos incidentes o CERT.PT
+registou nesse setor nesse ano, contra os que aqui estão. É trabalho de leitura à mão
+dos PDF, como o resto do cncs.yaml.
