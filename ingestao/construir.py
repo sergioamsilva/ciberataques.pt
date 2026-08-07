@@ -202,6 +202,37 @@ def construir(hoje: str | None = None) -> dict:
         }
         for ano, dados in contexto["anos"].items()
     }
+
+    # A comparação por setor, ano a ano.
+    #
+    # É a medida de viés mais afiada que este site tem: diz, na página de um setor,
+    # que peso ele tem na contagem oficial e que peso tem aqui. Onde a diferença for
+    # grande, é cobertura que falta — não é o fenómeno que muda.
+    #
+    # A correspondência entre as taxonomias é aproximada e assumida como tal: o CERT.PT
+    # fala de "prestadores de serviços de internet" onde nós temos "tecnologia", e de
+    # "ensino superior" onde temos "educação e investigação".
+    por_setor_ano: dict[str, Counter] = defaultdict(Counter)
+    for r in resumos:
+        por_setor_ano[str(r["ano"])][r["setor"]] += 1
+
+    contexto["por_setor"] = {
+        str(ano): {
+            "origem": dados["setores"]["origem"],
+            "unidade": dados["setores"]["unidade"],
+            "nota": dados["setores"].get("nota"),
+            "setores": {
+                setor: {
+                    "percentagem_oficial": pct,
+                    "neste_registo": por_setor_ano[str(ano)].get(setor, 0),
+                    "total_do_ano_neste_registo": sum(por_setor_ano[str(ano)].values()),
+                }
+                for setor, pct in dados["setores"]["valores"].items()
+            },
+        }
+        for ano, dados in contexto["anos"].items()
+        if dados.get("setores")
+    }
     escrever_json(DIR_OUT / "contexto.json", contexto)
 
     manifesto = {

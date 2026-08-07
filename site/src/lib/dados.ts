@@ -436,3 +436,42 @@ export function amplitudeEmAnos(): number {
   if (anos.length === 0) return 0;
   return Math.max(...anos) - Math.min(...anos) + 1;
 }
+
+export interface SetorNoContexto {
+  ano: string;
+  origem: string;
+  nota?: string | null;
+  percentagem_oficial: number;
+  neste_registo: number;
+  total_do_ano_neste_registo: number;
+}
+
+/*
+ * O peso de um setor na contagem oficial, contra o peso que tem aqui.
+ *
+ * É a medida de viés mais afiada do site. O total anual já dizia que este arquivo é
+ * uma fração do que acontece; isto diz onde essa fração é mais fina — e a resposta
+ * não é uniforme. A banca vale entre 10% e 23% da contagem oficial e não tem um
+ * único incidente aqui, porque os ataques à banca são sobretudo phishing a clientes,
+ * que ninguém comunica como incidente de uma entidade nomeada.
+ */
+export function setorNoContexto(setor: string): SetorNoContexto[] {
+  const ctx = lerJson<{
+    por_setor: Record<
+      string,
+      {
+        origem: string;
+        nota?: string | null;
+        setores: Record<
+          string,
+          { percentagem_oficial: number; neste_registo: number; total_do_ano_neste_registo: number }
+        >;
+      }
+    >;
+  }>(OUT, "contexto.json");
+
+  return Object.entries(ctx.por_setor ?? {})
+    .filter(([, v]) => v.setores[setor])
+    .map(([ano, v]) => ({ ano, origem: v.origem, nota: v.nota, ...v.setores[setor] }))
+    .sort((a, b) => b.ano.localeCompare(a.ano));
+}

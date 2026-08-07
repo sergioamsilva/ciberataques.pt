@@ -52,8 +52,15 @@ anos:
       "O número de incidentes registados pelo CERT.PT aumentou 14%, de 1781 em
       2021 para 2023 em 2022."
     nota: >-
-      Os setores com mais incidentes foram a banca (19%, sobretudo clientes),
-      a administração pública e o ensino superior (7%).
+      Os setores com mais incidentes foram a banca (19%, sobretudo clientes), as
+      infraestruturas digitais (7%) e o ensino superior (7%).
+    setores:
+      origem: CERT.PT
+      unidade: percentagem dos incidentes do ano
+      valores:
+        banca_seguros: 19
+        tecnologia: 7
+        educacao_investigacao: 7
 
   2023:
     incidentes: 2025
@@ -65,7 +72,15 @@ anos:
       dois do que o ano anterior."
     nota: >-
       O ano em que a contagem oficial estabilizou. Os prestadores de serviços de
-      internet foram o setor com mais incidentes registados (26%).
+      internet foram o setor com mais incidentes registados (26%), seguidos da banca
+      (10%) e da saúde (8%). Os prestadores subiram 249% face a 2022 e a saúde 106%.
+    setores:
+      origem: CERT.PT
+      unidade: percentagem dos incidentes do ano
+      valores:
+        tecnologia: 26
+        banca_seguros: 10
+        saude: 8
 
   2024:
     incidentes: 2758
@@ -79,6 +94,29 @@ anos:
       Cerca de 78% ocorreram em entidades privadas. Subiram a energia e a
       administração pública local e regional; a banca caiu do 3.º para o 9.º lugar,
       com uma descida na ordem dos 69%.
+    setores:
+      # ATENÇÃO: estes valores NÃO são do CERT.PT. Para 2024 o relatório descreve os
+      # setores em palavras e não em percentagens, e inventar números a partir de
+      # "subiram" seria exatamente o que este projeto não faz.
+      #
+      # O que há com números é a distribuição das notificações de violação de dados
+      # à CNPD, que é outra coisa: mede o que as entidades comunicaram à autoridade
+      # de proteção de dados, e não o que o CERT.PT registou. Fica com a origem à
+      # vista, e o site apresenta-a como tal.
+      origem: CNPD — notificações de violação de dados pessoais
+      unidade: percentagem das notificações, separadas por setor público e privado
+      valores:
+        retalho: 33
+        banca_seguros: 23
+        saude: 9
+        autarquias: 32
+        administracao_publica: 27
+        educacao_investigacao: 27
+      nota: >-
+        As percentagens do setor privado (comércio e serviços, banca e seguros,
+        saúde) e as do público (administração local, administração central e
+        institutos, ensino superior) são calculadas sobre universos separados e não
+        somam cem entre si.
 
   2025:
     incidentes: 3864

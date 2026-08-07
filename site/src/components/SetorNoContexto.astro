@@ -1,0 +1,96 @@
+---
+/*
+ * Quanto pesa este setor lá fora, e quanto pesa aqui.
+ *
+ * Duas barras por ano, à mesma escala: a percentagem que o setor representa na
+ * contagem oficial, e a que representa neste arquivo. Onde a segunda é muito menor,
+ * é cobertura que falta — não é o fenómeno que muda.
+ *
+ * A correspondência entre taxonomias é aproximada, e está dito: o CERT.PT fala de
+ * "prestadores de serviços de internet" onde aqui há "tecnologia". Esconder isso
+ * daria uma comparação mais bonita e menos verdadeira.
+ */
+import { setorNoContexto } from "../lib/dados";
+
+interface Props {
+  setor: string;
+}
+const { setor } = Astro.props;
+const anos = setorNoContexto(setor);
+const pct = (n: number, t: number) => (t ? Math.round((n / t) * 100) : 0);
+---
+
+{anos.length > 0 && (
+  <section class="revelar contexto-setor mt-14" aria-labelledby="h-ctx-setor">
+    <h2 id="h-ctx-setor" class="regua pt-4 text-2xl">Quanto disto se sabe</h2>
+    <p class="mt-2 max-w-2xl text-sm text-[var(--color-suave)]">
+      O peso deste setor na contagem oficial, ao lado do peso que tem neste arquivo.
+      Onde a diferença é grande, é cobertura que falta — não é o fenómeno que muda.
+    </p>
+
+    <ol class="mt-6 divide-y divide-[var(--color-borda)] border-y border-[var(--color-borda)]" role="list">
+      {anos.map((a) => {
+        const meu = pct(a.neste_registo, a.total_do_ano_neste_registo);
+        return (
+          <li class="py-4">
+            <div class="flex flex-wrap items-baseline gap-x-3">
+              <span class="font-mono text-sm tabular-nums text-[var(--color-suave)]">{a.ano}</span>
+              <span class="mono-etiqueta">{a.origem}</span>
+            </div>
+
+            <div class="mt-3 space-y-2">
+              <div class="flex items-center gap-3">
+                <span class="w-24 shrink-0 font-mono text-xs tabular-nums text-[var(--color-suave)]">
+                  oficial
+                </span>
+                <span
+                  class="barra-ctx block h-2.5 bg-[var(--color-tinta)]"
+                  style={`width: ${Math.max(1, a.percentagem_oficial)}%`}
+                  aria-hidden="true"
+                ></span>
+                <span class="font-mono text-xs tabular-nums">{a.percentagem_oficial}%</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-24 shrink-0 font-mono text-xs tabular-nums text-[var(--color-suave)]">
+                  neste arquivo
+                </span>
+                <span
+                  class="barra-ctx block h-2.5 bg-[var(--color-acento)]"
+                  style={`width: ${Math.max(0.6, meu)}%`}
+                  aria-hidden="true"
+                ></span>
+                <span class="font-mono text-xs tabular-nums">
+                  {meu}% <span class="text-[var(--color-suave)]">({a.neste_registo} de {a.total_do_ano_neste_registo})</span>
+                </span>
+              </div>
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+
+    <p class="mt-4 max-w-2xl text-sm text-[var(--color-suave)]">
+      {/* O exemplo tem de ser fixo e não construído com o nome do setor da página:
+          escrito assim, a página da banca dizia que o CERT.PT lhe chama prestadores
+          de serviços de internet, o que é falso. */}
+      Os dois números não medem exatamente a mesma coisa, e a correspondência entre as
+      classificações é aproximada — o CERT.PT fala de prestadores de serviços de
+      internet onde este registo diz tecnologia, e de ensino superior onde diz educação
+      e investigação. Servem para comparar ordens de grandeza, não para subtrair.{" "}
+      <a href="/metodologia/#vies">O viés que herdamos</a>.
+    </p>
+  </section>
+)}
+
+<style>
+  @media (prefers-reduced-motion: no-preference) {
+    :global(html.js) .contexto-setor .barra-ctx {
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    :global(html.js) .contexto-setor.visivel .barra-ctx {
+      transform: scaleX(1);
+    }
+  }
+</style>

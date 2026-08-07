@@ -10,7 +10,16 @@
       "citacao": "\"O número de incidentes registados pelo CERT.PT aumentou 14%, de 1781 em 2021 para 2023 em 2022.\"",
       "edicao": "Riscos & Conflitos 2023",
       "incidentes": 2023,
-      "nota": "Os setores com mais incidentes foram a banca (19%, sobretudo clientes), a administração pública e o ensino superior (7%).",
+      "nota": "Os setores com mais incidentes foram a banca (19%, sobretudo clientes), as infraestruturas digitais (7%) e o ensino superior (7%).",
+      "setores": {
+        "origem": "CERT.PT",
+        "unidade": "percentagem dos incidentes do ano",
+        "valores": {
+          "banca_seguros": 19,
+          "educacao_investigacao": 7,
+          "tecnologia": 7
+        }
+      },
       "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2023-obcibercncs15m.pdf",
       "variacao_percentual": 14
     },
@@ -18,7 +27,16 @@
       "citacao": "\"Em 2023, o CERT.PT registou 2025 incidentes de cibersegurança, apenas mais dois do que o ano anterior.\"",
       "edicao": "Riscos & Conflitos 2024",
       "incidentes": 2025,
-      "nota": "O ano em que a contagem oficial estabilizou. Os prestadores de serviços de internet foram o setor com mais incidentes registados (26%).",
+      "nota": "O ano em que a contagem oficial estabilizou. Os prestadores de serviços de internet foram o setor com mais incidentes registados (26%), seguidos da banca (10%) e da saúde (8%). Os prestadores subiram 249% face a 2022 e a saúde 106%.",
+      "setores": {
+        "origem": "CERT.PT",
+        "unidade": "percentagem dos incidentes do ano",
+        "valores": {
+          "banca_seguros": 10,
+          "saude": 8,
+          "tecnologia": 26
+        }
+      },
       "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2024-obcibercncs15m.pdf",
       "variacao_percentual": 0
     },
@@ -27,6 +45,19 @@
       "edicao": "Riscos & Conflitos 2025",
       "incidentes": 2758,
       "nota": "Cerca de 78% ocorreram em entidades privadas. Subiram a energia e a administração pública local e regional; a banca caiu do 3.º para o 9.º lugar, com uma descida na ordem dos 69%.",
+      "setores": {
+        "nota": "As percentagens do setor privado (comércio e serviços, banca e seguros, saúde) e as do público (administração local, administração central e institutos, ensino superior) são calculadas sobre universos separados e não somam cem entre si.",
+        "origem": "CNPD — notificações de violação de dados pessoais",
+        "unidade": "percentagem das notificações, separadas por setor público e privado",
+        "valores": {
+          "administracao_publica": 27,
+          "autarquias": 32,
+          "banca_seguros": 23,
+          "educacao_investigacao": 27,
+          "retalho": 33,
+          "saude": 9
+        }
+      },
       "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2025-obcibercncs15m.pdf",
       "variacao_percentual": 36
     },
@@ -66,5 +97,88 @@
     "nota": "Os números são da Equipa de Resposta a Incidentes de Segurança Informática Nacional (CERT.PT), publicados anualmente pelo Observatório de Cibersegurança do Centro Nacional de Cibersegurança.",
     "serie": "Relatório Cibersegurança em Portugal — Riscos & Conflitos",
     "url": "https://www.cncs.gov.pt/pt/observatorio/"
+  },
+  "por_setor": {
+    "2022": {
+      "nota": null,
+      "origem": "CERT.PT",
+      "setores": {
+        "banca_seguros": {
+          "neste_registo": 1,
+          "percentagem_oficial": 19,
+          "total_do_ano_neste_registo": 21
+        },
+        "educacao_investigacao": {
+          "neste_registo": 1,
+          "percentagem_oficial": 7,
+          "total_do_ano_neste_registo": 21
+        },
+        "tecnologia": {
+          "neste_registo": 1,
+          "percentagem_oficial": 7,
+          "total_do_ano_neste_registo": 21
+        }
+      },
+      "unidade": "percentagem dos incidentes do ano"
+    },
+    "2023": {
+      "nota": null,
+      "origem": "CERT.PT",
+      "setores": {
+        "banca_seguros": {
+          "neste_registo": 0,
+          "percentagem_oficial": 10,
+          "total_do_ano_neste_registo": 16
+        },
+        "saude": {
+          "neste_registo": 1,
+          "percentagem_oficial": 8,
+          "total_do_ano_neste_registo": 16
+        },
+        "tecnologia": {
+          "neste_registo": 1,
+          "percentagem_oficial": 26,
+          "total_do_ano_neste_registo": 16
+        }
+      },
+      "unidade": "percentagem dos incidentes do ano"
+    },
+    "2024": {
+      "nota": "As percentagens do setor privado (comércio e serviços, banca e seguros, saúde) e as do público (administração local, administração central e institutos, ensino superior) são calculadas sobre universos separados e não somam cem entre si.",
+      "origem": "CNPD — notificações de violação de dados pessoais",
+      "setores": {
+        "administracao_publica": {
+          "neste_registo": 2,
+          "percentagem_oficial": 27,
+          "total_do_ano_neste_registo": 10
+        },
+        "autarquias": {
+          "neste_registo": 3,
+          "percentagem_oficial": 32,
+          "total_do_ano_neste_registo": 10
+        },
+        "banca_seguros": {
+          "neste_registo": 0,
+          "percentagem_oficial": 23,
+          "total_do_ano_neste_registo": 10
+        },
+        "educacao_investigacao": {
+          "neste_registo": 1,
+          "percentagem_oficial": 27,
+          "total_do_ano_neste_registo": 10
+        },
+        "retalho": {
+          "neste_registo": 1,
+          "percentagem_oficial": 33,
+          "total_do_ano_neste_registo": 10
+        },
+        "saude": {
+          "neste_registo": 1,
+          "percentagem_oficial": 9,
+          "total_do_ano_neste_registo": 10
+        }
+      },
+      "unidade": "percentagem das notificações, separadas por setor público e privado"
+    }
   }
 }
