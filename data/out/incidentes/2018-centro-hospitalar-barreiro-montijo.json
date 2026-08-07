@@ -5,7 +5,12 @@
     "grupo": null,
     "nota": "Não há atacante externo. O que a autoridade apurou foi o acesso a processos clínicos por profissionais que não deviam poder aceder-lhes, e a ausência de medidas que o impedissem."
   },
-  "correcoes": [],
+  "correcoes": [
+    {
+      "data": "2026-08-07",
+      "descricao": "Corrigido o valor da coima de 400 mil para 380 mil euros. O valor inicial, de julho de 2018, foi fixado em 380 mil pela CNPD a 10 de março de 2020, e era esse o valor em vigor à data desta revisão. Acrescentada a deliberação 984/2018 como fonte primária e a cobertura da revisão."
+    }
+  ],
   "cronologia": [
     {
       "data": "2018-06-01",
@@ -29,6 +34,18 @@
       "data": "2018-10-22",
       "fonte": 0,
       "texto": "O hospital anuncia que vai contestar judicialmente a coima, afirmando não concordar com o entendimento da autoridade.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2020-03-10",
+      "fonte": 4,
+      "texto": "A CNPD fixa a coima em 380 mil euros, considerando-a resposta justa ao nível de desrespeito demonstrado. Rejeita a alegação de dificuldades financeiras do hospital, por dever ser factualmente demonstrada e não meramente avançada como hipótese.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2020-03-20",
+      "fonte": 4,
+      "texto": "O conselho de administração do hospital informa ter interposto recurso, aguardando decisão judicial.",
       "tipo": "comunicado"
     }
   ],
@@ -93,11 +110,36 @@
       "titulo": "Hospital do Barreiro multado em 400 mil euros por não proteger dados clínicos dos doentes",
       "url": "https://www.jornaldenegocios.pt/economia/saude/detalhe/hospital-do-barreiro-multado-em-400-mil-euros-por-nao-proteger-dados-clinicos-dos-doentes",
       "url_arquivo": "http://web.archive.org/web/20181103214610/https://www.jornaldenegocios.pt/economia/saude/detalhe/hospital-do-barreiro-multado-em-400-mil-euros-por-nao-proteger-dados-clinicos-dos-doentes"
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2018-07-17",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Comissão Nacional de Proteção de Dados",
+      "sha256": null,
+      "tipo": "regulador",
+      "titulo": "Deliberação 984/2018 — Princípio da minimização, princípio da confidencialidade e medidas de segurança: aplicação de coima",
+      "url": "https://www.cnpd.pt/umbraco/surface/cnpdDecision/download/121680",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "contem_declaracao_de_autoridade": true,
+      "data": "2020-03-20",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Visão",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hospital do Barreiro multado em 380 mil euros pela comissão de proteção de dados",
+      "url": "https://visao.pt/atualidade/2020-03-20-hospital-do-barreiro-multado-em-380-mil-euros-pela-comissao-de-protecao-de-dados/",
+      "url_arquivo": null
     }
   ],
   "id": "2018-centro-hospitalar-barreiro-montijo",
   "impacto": {
-    "custo_declarado_eur": 400000,
+    "custo_declarado_eur": 380000,
     "duracao_horas": null,
     "pessoas_afetadas_declaradas": null,
     "resgate_pago": null,
@@ -119,9 +161,9 @@
   "resumo": "Em 2018 a Comissão Nacional de Proteção de Dados aplicou ao Centro Hospitalar Barreiro Montijo uma coima de 400 mil euros — a primeira coima por incumprimento do RGPD em Portugal. A autoridade apurou que o hospital permitia acesso indiscriminado a processos clínicos por profissionais que só deveriam aceder-lhes em casos específicos, sem medidas que o impedissem, e que existiam 985 contas ativas com perfil de médico num hospital com 296 médicos no quadro. O hospital contestou a coima judicialmente.",
   "revisao": {
     "curador": "ss",
-    "data": "2026-08-06",
-    "nota": "Não há atacante externo neste caso, e por isso ele testa a fronteira do registo. Entra porque a taxonomia prevê a ameaça interna como tipo próprio: o dano vem de quem tem acesso legítimo, e aqui vinha de contas legítimas a alcançar o que não deviam alcançar. É também o caso mais bem sustentado do arquivo inteiro em matéria de prova — uma deliberação de autoridade, e não uma notícia. Fica registada a contestação judicial do hospital; o desfecho do processo não foi apurado.",
-    "versao": 1
+    "data": "2026-08-07",
+    "nota": "Não há atacante externo neste caso, e por isso ele testa a fronteira do registo. Entra porque a taxonomia prevê a ameaça interna como tipo próprio: o dano vem de quem tem acesso legítimo, e aqui vinha de contas legítimas a alcançar o que não deviam alcançar. É também o caso mais bem sustentado do arquivo inteiro em matéria de prova — uma deliberação de autoridade, e não uma notícia. Fica registada a contestação judicial do hospital; o desfecho do processo não foi apurado.\n\nSegunda revisão, a partir da leitura do índice de decisões da CNPD. Duas coisas mudaram.\n\nA coima não são 400 mil euros: são 380 mil. O valor anunciado em 2018 foi fixado em 380 mil pela própria CNPD a 10 de março de 2020, depois de o hospital alegar dificuldades financeiras — alegação que a autoridade rejeitou por não ter sido factualmente demonstrada. O registo tinha o número que correu nos jornais em 2018 e não o que ficou.\n\nA deliberação 984/2018 entra como fonte primária, e a identificação merece ser dita: não foi feita lendo o documento, que é uma digitalização de vinte páginas sem camada de texto. Foi feita pelo assunto no índice da CNPD — minimização, confidencialidade e medidas de segurança, com aplicação de coima — que corresponde exatamente às duas infrações deste caso e é a única deliberação de 2018 nesses termos.",
+    "versao": 2
   },
   "setor": "saude",
   "tipos_ataque": [

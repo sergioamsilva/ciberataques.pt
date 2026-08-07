@@ -143,15 +143,49 @@ caminho correto e está por fazer.
   por Twitter. Nestes casos, marcar `contem_declaracao_da_entidade: true` na notícia que
   reproduz a declaração, em vez de forçar o estado de confirmação para baixo.
 
-## Ministério Público e DGSI — candidatos a raspagem
+## DGSI — inacessível
 
-O Ministério Público não tem RSS: `ministeriopublico.pt/rss` e
-`dciap.ministeriopublico.pt/rss` devolvem 404. Tem páginas HTML em
-`dciap.ministeriopublico.pt/destaques`, que respondem 200 e são raspáveis.
+Os acórdãos do DGSI seriam a prova mais forte que esta escala reconhece, mais forte do
+que uma acusação, porque são decisão judicial. Não é possível chegar lá a partir deste
+projeto, e a razão não é de desenho:
 
-O DGSI publica acórdãos, que seriam a prova mais forte que esta escala reconhece —
-mais forte do que uma acusação, porque é decisão transitada.
+- `www.dgsi.pt` resolve por DNS (91.198.182.101).
+- `http://www.dgsi.pt/` responde **301** para `https://www.dgsi.pt:443/`.
+- `https://www.dgsi.pt/` **expira sem resposta**, em TLS 1.0, TLS 1.2 e com o nível de
+  segurança de cifras reduzido. Não é negociação de TLS: é a ligação que não se
+  estabelece.
 
-Ambos ficam na mesma gaveta da CNPD: trabalho de HTML e PDF, adiado por decisão de
-âmbito e não por falta de valor. Verificado a 2026-08-06.
+Verificado a 2026-08-07. Pode ser bloqueio geográfico, filtragem de origem, ou
+indisponibilidade temporária. Vale a pena reverificar antes de dar por perdido — os
+motores de busca indexam o sítio, o que sugere que responde a partir de outras redes.
+
+Quando estiver acessível, o descritor a percorrer é "crime de falsidade informática",
+que a 2026-08-07 tinha catorze acórdãos indexados de quatro tribunais, entre 2012 e 2026.
+
+## Ministério Público — candidato a raspagem
+
+Não tem RSS: `ministeriopublico.pt/rss` e `dciap.ministeriopublico.pt/rss` devolvem 404.
+Tem páginas HTML em `dciap.ministeriopublico.pt/destaques`, que respondem 200 e são
+raspáveis, com títulos que nomeiam as infrações — foi assim que se chegou à condenação
+do funcionário do IGFEJ. Fica por fazer.
+
+## CNPD — o que a fonte dá, e o que não dá
+
+Ativa desde 2026-08-07, com parser em `ingestao/fontes/cnpd.py`. Lê o índice do
+histórico de decisões e **nunca os PDF**. Três coisas apuradas ao construí-la:
+
+- **Os PDF são digitalizações sem camada de texto.** A deliberação 984/2018 tem vinte
+  páginas de imagens JPX a 150 ppp em 7,7 MB, e o `pdftotext` extrai vinte bytes. Ler o
+  conteúdo exigiria reconhecimento ótico.
+- **Quase nada do que publica resulta de ataques.** Das trinta e três deliberações de
+  2018 a 2026, zero passam a triagem deste projeto — são videovigilância, avaliações de
+  impacto, protocolos entre entidades e comunicações não solicitadas. A CNPD é
+  autoridade de proteção de dados, não de cibersegurança.
+- **Não publica todas as suas decisões sancionatórias.** A revisão da coima ao Centro
+  Hospitalar Barreiro Montijo para 380 mil euros, decidida a 10 de março de 2020, não
+  consta da lista de deliberações.
+
+O índice dá, ainda assim, número, emissor, assunto e ligação — o suficiente para um
+curador decidir, e para apanhar uma deliberação sobre violação de dados no dia em que
+aparecer. Não há robots.txt em cnpd.pt (404 verificado).
 

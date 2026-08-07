@@ -28,7 +28,7 @@ from ingestao.fontes import Item, recolher_de  # noqa: E402
 from ingestao.triagem import triar_muitos  # noqa: E402
 
 VISTOS = DIR_BRUTO / "_vistos.json"
-FONTES_ATIVAS = ["rss_media", "ransomware_live"]
+FONTES_ATIVAS = ["rss_media", "ransomware_live", "cnpd"]
 
 
 def _vistos() -> set[str]:

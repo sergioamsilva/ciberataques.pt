@@ -55,6 +55,7 @@ class Item:
 REGISTO: dict[str, str] = {
     "rss_media": "ingestao.fontes.rss_media",
     "ransomware_live": "ingestao.fontes.ransomware_live",
+    "cnpd": "ingestao.fontes.cnpd",
 }
 
 

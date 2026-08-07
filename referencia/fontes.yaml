@@ -266,16 +266,40 @@ fontes:
       Desativado. Os feeds WordPress usados no iocRadar já não existem, e o portal
       está atrás de um WAF que devolve 307 em ciclo e 513 aos PDF. Exige Playwright.
 
+  # A autoridade de proteção de dados. Segunda fonte primária do catálogo, depois da
+  # Polícia Judiciária. Esteve desativada à espera de parser; passou a ativa a
+  # 2026-08-07, com o parser em ingestao/fontes/cnpd.py.
+  #
+  # O que dá e o que não dá, apurado ao construí-lo:
+  #
+  #   O índice do histórico de decisões é bem estruturado e legível — número, emissor,
+  #   assunto em uma linha e ligação. Mas os PDF das deliberações são DIGITALIZAÇÕES
+  #   SEM CAMADA DE TEXTO: a deliberação 984/2018 tem vinte páginas de imagens JPX em
+  #   7,7 MB, e o pdftotext extrai vinte bytes. Lemos o índice, e nunca os PDF.
+  #
+  #   E das trinta e três deliberações publicadas entre 2018 e 2026, quase nenhuma
+  #   resulta de um ataque: são videovigilância, avaliações de impacto, protocolos
+  #   entre entidades e comunicações não solicitadas. A CNPD é autoridade de proteção
+  #   de dados, não de cibersegurança, e a maior parte do que sanciona não tem
+  #   atacante nenhum.
+  #
+  #   Também não vê tudo o que a própria CNPD decide: a revisão da coima ao Centro
+  #   Hospitalar Barreiro Montijo para 380 mil euros, em março de 2020, não consta da
+  #   lista de deliberações publicadas.
+  #
+  # Fica ativa porque, quando uma violação de dados com origem em ataque É sancionada,
+  # esta é a fonte primária e vale mais do que qualquer notícia sobre ela. Intervalo
+  # largo: há poucas deliberações por ano e nada se ganha em olhar com frequência.
   - id: cnpd
     nome: Comissão Nacional de Proteção de Dados
     metodo: html
-    ativa: false
+    tipo_fonte: regulador
+    ativa: true
     intervalo_s: 10
     dominios: [cnpd.pt]
     nota: >-
-      Desativado até haver parser. Sem RSS nem API: deliberações em PDF listadas em
-      /decisoes/deliberacoes/. É a fonte de maior credibilidade do projeto, porque são
-      factos confirmados por regulador, e a que exige mais cuidado.
+      Não há robots.txt em cnpd.pt (404 verificado a 2026-08-07), pelo que não há
+      restrições declaradas. Ainda assim a recolha é pouco frequente e identificada.
 
   # -------------------------------------------- imprensa das regiões autónomas
   #

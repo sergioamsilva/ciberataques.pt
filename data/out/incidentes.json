@@ -1923,7 +1923,7 @@
     ],
     "estado_confirmacao": "confirmado_por_regulador",
     "id": "2018-centro-hospitalar-barreiro-montijo",
-    "n_fontes": 3,
+    "n_fontes": 5,
     "precisao_data": "mes",
     "setor": "saude",
     "tem_disputas": false,

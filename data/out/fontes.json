@@ -2879,6 +2879,33 @@
     "url_arquivo": "http://web.archive.org/web/20181103214610/https://www.jornaldenegocios.pt/economia/saude/detalhe/hospital-do-barreiro-multado-em-400-mil-euros-por-nao-proteger-dados-clinicos-dos-doentes"
   },
   {
+    "contem_declaracao_de_autoridade": true,
+    "data": "2018-07-17",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2018-centro-hospitalar-barreiro-montijo",
+    "indice": 3,
+    "publicador": "Comissão Nacional de Proteção de Dados",
+    "tipo": "regulador",
+    "titulo": "Deliberação 984/2018 — Princípio da minimização, princípio da confidencialidade e medidas de segurança: aplicação de coima",
+    "url": "https://www.cnpd.pt/umbraco/surface/cnpdDecision/download/121680",
+    "url_arquivo": null
+  },
+  {
+    "contem_declaracao_da_entidade": true,
+    "contem_declaracao_de_autoridade": true,
+    "data": "2020-03-20",
+    "estado_ligacao": "viva",
+    "excerto": null,
+    "incidente_id": "2018-centro-hospitalar-barreiro-montijo",
+    "indice": 4,
+    "publicador": "Visão",
+    "tipo": "noticia",
+    "titulo": "Hospital do Barreiro multado em 380 mil euros pela comissão de proteção de dados",
+    "url": "https://visao.pt/atualidade/2020-03-20-hospital-do-barreiro-multado-em-380-mil-euros-pela-comissao-de-protecao-de-dados/",
+    "url_arquivo": null
+  },
+  {
     "contem_declaracao_da_entidade": true,
     "data": "2018-02-23",
     "estado_ligacao": "viva",
