@@ -404,3 +404,76 @@ fontes:
       Ativa desde 2026-08-07, com parser em ingestao/fontes/csm.py. A pesquisa é por
       descritor e só funciona por GET — por POST o servidor responde 200 com a base
       inteira, ignorando o filtro em silêncio.
+
+  # ------------------------------- órgãos que já nos deram casos e não eram fontes
+  #
+  # Acrescentados a 2026-08-07, depois de uma medição simples e incómoda: 49 das 246
+  # fontes do registo — uma em cada cinco — vinham de domínios que não estavam no
+  # catálogo. Ou seja, um quinto do que sabemos entrou por alguém tropeçar nele, e não
+  # pela recolha.
+  #
+  # A Renascença é o caso mais claro: sete fontes no registo, órgão nacional, e nunca
+  # esteve aqui. O feed correto não é /rss nem /feed, que respondem 200 com zero
+  # itens — é /rssfeed-ultimas, declarado no <link rel="alternate"> da página.
+  - id: renascenca
+    nome: Renascença
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [rr.pt, rr.sapo.pt]
+    feeds:
+      - https://rr.pt/rssfeed-ultimas
+    nota: >-
+      /rss e /feed devolvem 200 com zero itens, o que é pior do que um 404 por não
+      dar erro. O caminho certo vem do <link rel="alternate"> da página.
+
+  - id: pplware
+    nome: Pplware
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [pplware.sapo.pt]
+    feeds:
+      - https://pplware.sapo.pt/feed/
+    nota: >-
+      Seis fontes no registo antes de ser catalogado, incluindo o ataque de 2016 ao
+      sistema de imagem do Hospital Garcia de Orta e o caso das plataformas clínicas
+      do Estado. Cobre casos técnicos que a imprensa generalista ignora.
+
+  # ---------------------------------------------------------- imprensa setorial
+  #
+  # Nova categoria, e a razão é de cobertura: a saúde é o setor com mais incidentes
+  # graves deste registo, e há imprensa que só cobre saúde. O mesmo para segurança
+  # informática. São os sítios onde um caso aparece antes de ser notícia nacional —
+  # ou em vez de o ser.
+  - id: healthnews
+    nome: HealthNews
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [healthnews.pt]
+    feeds:
+      - https://healthnews.pt/feed/
+
+  - id: security-magazine
+    nome: Security Magazine Portugal
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [securitymagazine.pt]
+    feeds:
+      - https://www.securitymagazine.pt/feed/
+
+  - id: tek-sapo
+    nome: SAPO Tek
+    metodo: rss
+    ativa: true
+    intervalo_s: 4
+    dominios: [tek.sapo.pt]
+    feeds:
+      - https://tek.sapo.pt/feed/
+    nota: >-
+      O plano do projeto dava tek.sapo.pt/rss como devolvendo corpo vazio, e por isso
+      esta fonte ficou de fora desde o início — apesar de já ter dado quatro fontes ao
+      registo. O caminho certo é /feed/, declarado no <link rel="alternate"> da
+      página, e devolve 24 itens. Verificado a 2026-08-07.
