@@ -296,12 +296,21 @@ export interface ContextoAno {
   url: string;
   citacao: string;
   nota?: string;
+  /* Antes e depois de 2020 o CERT.PT não conta a mesma coisa: a partir desse ano
+     as vulnerabilidades passaram a ser incidentes. Ver `quebra_de_serie`. */
+  base_de_contagem: "sem_vulnerabilidades" | "com_vulnerabilidades";
+  incidentes_sem_vulnerabilidades?: number;
+  quebra_de_serie?: boolean;
+  /* 2015 tem oito meses, não doze: é quando o CERT.PT começou a registar. */
+  ano_parcial?: boolean;
 }
 
 export interface Contexto {
   fonte: { nome: string; serie: string; url: string; nota: string };
   anos: Record<string, ContextoAno>;
   comparacao: Record<string, { cert_pt: number; neste_registo: number }>;
+  inicio_da_serie: { ano: number; desde: string; nota: string };
+  quebra_de_serie: { ano: number; motivo: string; citacao: string; edicao: string };
 }
 
 /*
@@ -430,6 +439,15 @@ export interface SetorNoContexto {
   percentagem_oficial: number;
   neste_registo: number;
   total_do_ano_neste_registo: number;
+  /* O nome da categoria na fonte, e o número absoluto que lhe corresponde. A
+     correspondência com os nossos setores é aproximada, e mostrá-la deixa o leitor
+     auditá-la em vez de ter de acreditar nela. */
+  categoria?: string;
+  numero?: number;
+  /* A base de cálculo da percentagem, quando a fonte a mudou entre anos. */
+  baseNota?: string | null;
+  /* Ressalva que vale só para este setor neste ano — nunca para os outros. */
+  notaDoSetor?: string | null;
 }
 
 /*
@@ -448,9 +466,17 @@ export function setorNoContexto(setor: string): SetorNoContexto[] {
       {
         origem: string;
         nota?: string | null;
+        base_nota?: string | null;
         setores: Record<
           string,
-          { percentagem_oficial: number; neste_registo: number; total_do_ano_neste_registo: number }
+          {
+            percentagem_oficial: number;
+            neste_registo: number;
+            total_do_ano_neste_registo: number;
+            categoria?: string;
+            numero?: number;
+            nota?: string | null;
+          }
         >;
       }
     >;
@@ -458,6 +484,17 @@ export function setorNoContexto(setor: string): SetorNoContexto[] {
 
   return Object.entries(ctx.por_setor ?? {})
     .filter(([, v]) => v.setores[setor])
-    .map(([ano, v]) => ({ ano, origem: v.origem, nota: v.nota, ...v.setores[setor] }))
+    /*
+     * Três notas distintas, e a distinção importa. A do ano vale para todos os
+     * setores; a do setor vale só para este; a da base explica por que razão as
+     * percentagens de anos diferentes não se comparam.
+     *
+     * Estiveram a partilhar o mesmo campo, e o resultado foi a página da saúde a
+     * explicar ao leitor a subida dos prestadores de serviços de internet.
+     */
+    .map(([ano, v]) => {
+      const { nota: notaDoSetor, ...valores } = v.setores[setor];
+      return { ano, origem: v.origem, nota: v.nota, baseNota: v.base_nota, notaDoSetor, ...valores };
+    })
     .sort((a, b) => b.ano.localeCompare(a.ano));
 }

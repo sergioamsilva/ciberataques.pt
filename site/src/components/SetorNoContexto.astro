@@ -6,9 +6,11 @@
  * contagem oficial, e a que representa neste arquivo. Onde a segunda é muito menor,
  * é cobertura que falta — não é o fenómeno que muda.
  *
- * A correspondência entre taxonomias é aproximada, e está dito: o CERT.PT fala de
- * "prestadores de serviços de internet" onde aqui há "tecnologia". Esconder isso
- * daria uma comparação mais bonita e menos verdadeira.
+ * A correspondência entre taxonomias é aproximada, e cada ano diz de que categoria
+ * da fonte veio o seu número. Antes havia aqui uma frase genérica a dar um exemplo
+ * fixo, e a frase envelheceu mal: continuava a dizer que "prestadores de serviços de
+ * internet" correspondia a "tecnologia" depois de a correspondência ter mudado.
+ * Mostrar a categoria de cada valor não envelhece, e deixa o leitor auditá-la.
  */
 import { setorNoContexto } from "../lib/dados";
 
@@ -36,6 +38,12 @@ const pct = (n: number, t: number) => (t ? Math.round((n / t) * 100) : 0);
             <div class="flex flex-wrap items-baseline gap-x-3">
               <span class="font-mono text-sm tabular-nums text-[var(--color-suave)]">{a.ano}</span>
               <span class="mono-etiqueta">{a.origem}</span>
+              {a.categoria && (
+                <span class="text-sm text-[var(--color-suave)]">
+                  categoria <span class="text-[var(--color-corpo)]">{a.categoria}</span>
+                  {a.numero !== undefined && <span> — {a.numero} incidentes</span>}
+                </span>
+              )}
             </div>
 
             <div class="mt-3 space-y-2">
@@ -64,19 +72,38 @@ const pct = (n: number, t: number) => (t ? Math.round((n / t) * 100) : 0);
                 </span>
               </div>
             </div>
+
+            {/* A ressalva da fonte fica junto do número que ela ressalva, e não
+                numa nota geral no fim: em 2023 a subida dos prestadores de serviços
+                de internet é, nas palavras do CERT.PT, em parte uma alteração
+                metodológica. Lida longe do 26%, essa informação não serve de nada.
+
+                A do setor primeiro, porque é a que fala deste número. A do ano só
+                depois, e nunca em vez dela: quando partilhavam campo, a página da
+                saúde acabava a explicar os prestadores de serviços de internet. */}
+            {a.notaDoSetor && (
+              <p class="mt-3 max-w-2xl text-sm text-[var(--color-suave)]">{a.notaDoSetor}</p>
+            )}
+            {a.nota && (
+              <p class="mt-2 max-w-2xl text-sm text-[var(--color-suave)]">{a.nota}</p>
+            )}
+            {/* A base de cálculo mudou entre edições do CERT.PT, o que torna as
+                percentagens de anos diferentes incomparáveis entre si. Sem isto, a
+                coluna "oficial" convida a uma leitura de tendência que os dados não
+                sustentam. */}
+            {a.baseNota && (
+              <p class="mt-2 max-w-2xl text-sm text-[var(--color-suave)]">{a.baseNota}</p>
+            )}
           </li>
         );
       })}
     </ol>
 
     <p class="mt-4 max-w-2xl text-sm text-[var(--color-suave)]">
-      {/* O exemplo tem de ser fixo e não construído com o nome do setor da página:
-          escrito assim, a página da banca dizia que o CERT.PT lhe chama prestadores
-          de serviços de internet, o que é falso. */}
-      Os dois números não medem exatamente a mesma coisa, e a correspondência entre as
-      classificações é aproximada — o CERT.PT fala de prestadores de serviços de
-      internet onde este registo diz tecnologia, e de ensino superior onde diz educação
-      e investigação. Servem para comparar ordens de grandeza, não para subtrair.{" "}
+      Os dois números não medem exatamente a mesma coisa. A classificação do CERT.PT
+      não é a nossa, e por isso cada ano mostra acima de que categoria da fonte saiu o
+      seu valor — é aproximada por construção, e serve para comparar ordens de
+      grandeza, não para subtrair.{" "}
       <a href="/metodologia/#vies">O viés que herdamos</a>.
     </p>
   </section>

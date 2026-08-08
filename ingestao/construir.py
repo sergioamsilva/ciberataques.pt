@@ -209,9 +209,10 @@ def construir(hoje: str | None = None) -> dict:
     # que peso ele tem na contagem oficial e que peso tem aqui. Onde a diferença for
     # grande, é cobertura que falta — não é o fenómeno que muda.
     #
-    # A correspondência entre as taxonomias é aproximada e assumida como tal: o CERT.PT
-    # fala de "prestadores de serviços de internet" onde nós temos "tecnologia", e de
-    # "ensino superior" onde temos "educação e investigação".
+    # A correspondência entre as taxonomias é aproximada e assumida como tal. Cada
+    # valor leva consigo o nome da categoria de onde saiu — ver `categorias_cert_pt`
+    # em referencia/cncs.yaml —, para que a aproximação seja visível e verificável em
+    # vez de ficar escondida numa nota de rodapé genérica.
     por_setor_ano: dict[str, Counter] = defaultdict(Counter)
     for r in resumos:
         por_setor_ano[str(r["ano"])][r["setor"]] += 1
@@ -221,11 +222,21 @@ def construir(hoje: str | None = None) -> dict:
             "origem": dados["setores"]["origem"],
             "unidade": dados["setores"]["unidade"],
             "nota": dados["setores"].get("nota"),
+            # A base sobre a qual a percentagem foi calculada mudou entre edições do
+            # CERT.PT, o que faz com que as percentagens de anos diferentes não se
+            # comparem. Vai para o site junto do número que ressalva.
+            "base_nota": dados["setores"].get("base_nota"),
             "setores": {
                 setor: {
                     "percentagem_oficial": pct,
                     "neste_registo": por_setor_ano[str(ano)].get(setor, 0),
                     "total_do_ano_neste_registo": sum(por_setor_ano[str(ano)].values()),
+                    # A categoria original, para o leitor poder auditar a
+                    # correspondência em vez de a ter de aceitar. Já esteve errada:
+                    # "tecnologia" saía de Infraestruturas Digitais num ano e de
+                    # Prestadores de Serviços de Internet no seguinte, o que fazia a
+                    # comparação entre anos medir categorias diferentes.
+                    **(dados["setores"].get("categorias_cert_pt", {}).get(setor, {})),
                 }
                 for setor, pct in dados["setores"]["valores"].items()
             },

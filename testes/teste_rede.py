@@ -85,7 +85,12 @@ def teste_catalogo_e_coerente():
     assert len(ids) == len(set(ids)), "há identificadores de fonte repetidos"
     for fonte in catalogo["fontes"]:
         assert fonte.get("dominios"), f"{fonte['id']} não declara domínios"
-        assert fonte["metodo"] in ("rss", "api", "html", "navegador")
+        # "arquivo" é o método de quem só se consegue ler pelas cópias arquivadas.
+        # Entrou com o CNCS: a origem está atrás de um WAF que recusa qualquer
+        # cliente automático, e os relatórios vêm da Wayback Machine. Declarar isto
+        # como método, e não como uma nota, evita que alguém volte a tentar o
+        # caminho direto por não saber que já foi tentado.
+        assert fonte["metodo"] in ("rss", "api", "html", "navegador", "arquivo")
         assert isinstance(fonte["ativa"], bool)
         if fonte["metodo"] == "rss" and fonte["ativa"]:
             assert fonte.get("feeds"), f"{fonte['id']} está ativa mas não tem feeds"

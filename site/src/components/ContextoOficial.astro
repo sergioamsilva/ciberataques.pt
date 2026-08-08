@@ -26,10 +26,34 @@ const anos = Object.keys(ctx.comparacao)
   .sort((a, b) => b - a)
   .filter((a) => ano === undefined || a === ano);
 
-if (anos.length === 0) return new Response(null, { status: 200 });
+/*
+ * Um ano do arquivo anterior a maio de 2015 não tem denominador nenhum, e a
+ * ausência tem de ser dita.
+ *
+ * Antes, a secção simplesmente não aparecia, e uma secção que falta lê-se como
+ * "não há nada a dizer" quando o que se passa é o contrário: não havia quem
+ * contasse. Este arquivo cobre desde 2012 e a série oficial começa três anos e
+ * meio depois — é informação sobre o país, não um buraco nos nossos dados.
+ */
+const antesDaSerie = ano !== undefined && anos.length === 0 && ano < ctx.inicio_da_serie.ano;
+
+if (anos.length === 0 && !antesDaSerie) return new Response(null, { status: 200 });
 
 const maximo = Math.max(...anos.map((a) => ctx.comparacao[String(a)].cert_pt), 1);
 ---
+
+{antesDaSerie && (
+  <section class="revelar" aria-labelledby="h-contexto">
+    <h2 id="h-contexto" class="mono-etiqueta">O que se sabe oficialmente sobre {ano}</h2>
+    <p class="mt-3 max-w-2xl text-sm leading-relaxed text-[var(--color-suave)]">
+      Nada. Não há contagem oficial de incidentes em Portugal para {ano}: a série do
+      CERT.PT começa em {ctx.inicio_da_serie.desde} de {ctx.inicio_da_serie.ano}, que
+      é quando a equipa começou a registar. Isso não quer dizer que {ano} tenha sido
+      um ano calmo — quer dizer que ninguém estava a contar, e que para este ano o
+      que este arquivo tem não se compara com nada.
+    </p>
+  </section>
+)}
 
 {anos.length > 0 && (
   <section class="revelar contexto" aria-labelledby="h-contexto">
@@ -52,7 +76,33 @@ const maximo = Math.max(...anos.map((a) => ctx.comparacao[String(a)].cert_pt), 1
               <span class="text-sm text-[var(--color-suave)]">
                 incidentes registados pelo CERT.PT
               </span>
+              {d?.ano_parcial && (
+                <span class="mono-etiqueta text-[var(--color-acento)]">
+                  ano parcial — desde {ctx.inicio_da_serie.desde}
+                </span>
+              )}
             </div>
+
+            {/*
+              A quebra de série, dita onde ela acontece.
+
+              O CNCS chama-lhe assim: em 2020 as vulnerabilidades passaram a contar
+              como incidentes. O salto de 754 para 1418 é, em boa parte, uma mudança
+              de definição — e o próprio relatório publica os dois valores por essa
+              razão. Sem isto à vista, a subida lê-se como um agravamento do país.
+            */}
+            {d?.quebra_de_serie && (
+              <p class="mt-2 border-l-2 border-[var(--color-acento)] pl-3 text-sm text-[var(--color-suave)]">
+                <strong class="text-[var(--color-corpo)]">Quebra de série.</strong>{" "}
+                A partir deste ano o CERT.PT passou a contar as vulnerabilidades como
+                incidentes, e os anos anteriores não as incluem. Na base antiga foram{" "}
+                <span class="font-mono tabular-nums">
+                  {d.incidentes_sem_vulnerabilidades?.toLocaleString("pt-PT")}
+                </span>{" "}
+                e não {c.cert_pt.toLocaleString("pt-PT")}: é esse o número que se
+                compara com {a - 1}.
+              </p>
+            )}
 
             {/* Duas barras à mesma escala. A nossa quase não se vê, e é esse o ponto. */}
             <div class="mt-2.5 space-y-1">

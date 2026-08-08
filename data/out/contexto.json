@@ -1,46 +1,195 @@
 {
   "anos": {
+    "2015": {
+      "ano_parcial": true,
+      "base_de_contagem": "sem_vulnerabilidades",
+      "citacao": "Tabela 1: \"2015 (desde maio) | 248 | N/A | out. (42)\".",
+      "edicao": "Riscos & Conflitos 2023",
+      "incidentes": 248,
+      "nota": "Oito meses e não doze: é o ano em que o CERT.PT começou a registar. Não se compara com nenhum outro ano da série.",
+      "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2023-obcibercncs.pdf"
+    },
+    "2016": {
+      "base_de_contagem": "sem_vulnerabilidades",
+      "citacao": "Tabela 1: \"2016 | 413 | N/A | fev. (56) | 1.º (135) | 1.º (243)\".",
+      "edicao": "Riscos & Conflitos 2023",
+      "incidentes": 413,
+      "nota": "Primeiro ano civil completo da série. Sem variação declarada, porque o ano anterior é parcial.",
+      "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2023-obcibercncs.pdf"
+    },
+    "2017": {
+      "base_de_contagem": "sem_vulnerabilidades",
+      "citacao": "Tabela 1: \"2017 | 501 | +21 | mar. (57) | 4.º (143) | 2.º (255)\".",
+      "edicao": "Riscos & Conflitos 2023",
+      "incidentes": 501,
+      "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2023-obcibercncs.pdf",
+      "variacao_percentual": 21
+    },
+    "2018": {
+      "base_de_contagem": "sem_vulnerabilidades",
+      "citacao": "Tabela 1: \"2018 | 599 | +20 | out. (68) | 2.º (169) | 1.º (301)\".",
+      "edicao": "Riscos & Conflitos 2023",
+      "incidentes": 599,
+      "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2023-obcibercncs.pdf",
+      "variacao_percentual": 20
+    },
+    "2019": {
+      "base_de_contagem": "sem_vulnerabilidades",
+      "citacao": "Tabela 1: \"2019 | 754 | +26 | set. (79) | 3.º (213) | 2.º (412)\".",
+      "edicao": "Riscos & Conflitos 2023",
+      "incidentes": 754,
+      "nota": "Último ano antes da quebra de série. É com este número, e não com o de 2020, que os anos anteriores se comparam.",
+      "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2023-obcibercncs.pdf",
+      "variacao_percentual": 26
+    },
+    "2020": {
+      "base_de_contagem": "com_vulnerabilidades",
+      "citacao": "\"Em 2020, o CERT.PT registou 1347 incidentes (sem contar com as vulnerabilidades), o que corresponde a um crescimento de 79% em relação a 2019. (…) Se as vulnerabilidades forem contabilizadas, o valor atinge os 1418 e o aumento corresponde a 88%.\"",
+      "edicao": "Riscos & Conflitos 2023",
+      "incidentes": 1418,
+      "incidentes_sem_vulnerabilidades": 1347,
+      "nota": "O ano da mudança de taxonomia. Guarda-se 1418 como valor da série, que é o que o CNCS leva para os anos seguintes, e 1347 como o valor comparável com 2019.",
+      "quebra_de_serie": true,
+      "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2023-obcibercncs.pdf",
+      "variacao_percentual": 88,
+      "variacao_percentual_sem_vulnerabilidades": 79
+    },
     "2021": {
-      "citacao": "\"O número de incidentes registados pelo CERT.PT aumentou 14%, de 1781 em 2021 para 2023 em 2022.\"",
+      "base_de_contagem": "com_vulnerabilidades",
+      "citacao": "Tabela 1: \"2021 | 1781 | +26 | nov. (222) | 4.º (497) | 2.º (934)\".",
       "edicao": "Riscos & Conflitos 2023",
       "incidentes": 1781,
-      "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2023-obcibercncs15m.pdf"
+      "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2023-obcibercncs.pdf",
+      "variacao_percentual": 26
     },
     "2022": {
-      "citacao": "\"O número de incidentes registados pelo CERT.PT aumentou 14%, de 1781 em 2021 para 2023 em 2022.\"",
-      "edicao": "Riscos & Conflitos 2023",
+      "base_de_contagem": "com_vulnerabilidades",
+      "citacao": "Tabela 1: \"2022 | 2023 | +14 | jan. (274) | 1.º (754) | 1.º (1239)\".",
+      "edicao": "Riscos & Conflitos 2024",
       "incidentes": 2023,
       "nota": "Os setores com mais incidentes foram a banca (19%, sobretudo clientes), as infraestruturas digitais (7%) e o ensino superior (7%).",
       "setores": {
+        "base_da_percentagem": "atribuicoes_setoriais",
+        "base_nota": "As percentagens deste ano são calculadas sobre a soma das atribuições por setor (cerca de 2850), que é superior aos 2023 incidentes do ano porque um incidente pode contar em mais do que um setor. Em 2023 o CERT.PT passou a calculá-las sobre o total do ano, pelo que as percentagens dos dois anos NÃO se comparam entre si. Os números absolutos comparam-se.",
+        "categorias_cert_pt": {
+          "autarquias": {
+            "categoria": "Administração Pública Local",
+            "numero": 129,
+            "percentagem": 5
+          },
+          "banca_seguros": {
+            "categoria": "Banca",
+            "numero": 542,
+            "percentagem": 19
+          },
+          "educacao_investigacao": {
+            "categoria": "Educação e Ciência, Tecnologia e Ensino Superior",
+            "numero": 202,
+            "percentagem": 7
+          },
+          "saude": {
+            "categoria": "Saúde",
+            "numero": 83,
+            "percentagem": 3
+          },
+          "tecnologia": {
+            "categoria": "Infraestruturas Digitais",
+            "numero": 205,
+            "percentagem": 7
+          },
+          "telecomunicacoes": {
+            "categoria": "Prestadores de Serviços de Internet",
+            "numero": 148,
+            "percentagem": 5
+          },
+          "transportes": {
+            "categoria": "Transportes",
+            "numero": 93,
+            "percentagem": 3
+          }
+        },
+        "nota": "O CERT.PT avisa que o total por setor é superior ao total de incidentes, porque um incidente pode contar em mais do que um setor. As percentagens não somam cem.",
         "origem": "CERT.PT",
-        "unidade": "percentagem dos incidentes do ano",
+        "unidade": "percentagem das atribuições setoriais do ano",
         "valores": {
+          "autarquias": 5,
           "banca_seguros": 19,
           "educacao_investigacao": 7,
-          "tecnologia": 7
+          "saude": 3,
+          "tecnologia": 7,
+          "telecomunicacoes": 5,
+          "transportes": 3
         }
       },
-      "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2023-obcibercncs15m.pdf",
+      "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2024-obcibercncs.pdf",
       "variacao_percentual": 14
     },
     "2023": {
-      "citacao": "\"Em 2023, o CERT.PT registou 2025 incidentes de cibersegurança, apenas mais dois do que o ano anterior.\"",
+      "base_de_contagem": "com_vulnerabilidades",
+      "citacao": "Tabela 1: \"2023 | 2025 | +0,1 | nov. (253) | 4.º (605) | 2.º (1080)\".",
       "edicao": "Riscos & Conflitos 2024",
       "incidentes": 2025,
-      "nota": "O ano em que a contagem oficial estabilizou. Os prestadores de serviços de internet foram o setor com mais incidentes registados (26%), seguidos da banca (10%) e da saúde (8%). Os prestadores subiram 249% face a 2022 e a saúde 106%.",
+      "nota": "O ano em que a contagem oficial estabilizou. Os prestadores de serviços de internet passaram a ser o setor com mais incidentes registados (26%), à frente da banca (10%) e da saúde (8%), que mais do que duplicou.",
       "setores": {
+        "base_da_percentagem": "total_do_ano",
+        "base_nota": "Base diferente da de 2022: aqui as percentagens saem dos 2025 incidentes do ano, e em 2022 saíam da soma das atribuições setoriais (cerca de 2850). Uma subida de \"3% para 8%\" na saúde é, em parte, a base a encolher — os números absolutos, 83 para 171, é que dizem o que mudou.",
+        "categorias_cert_pt": {
+          "autarquias": {
+            "categoria": "Administração Pública Local",
+            "numero": 111,
+            "percentagem": 5
+          },
+          "banca_seguros": {
+            "categoria": "Banca",
+            "numero": 197,
+            "percentagem": 10
+          },
+          "educacao_investigacao": {
+            "categoria": "Educação, Ciência, Tecnologia e Ensino Superior",
+            "categoria_anterior": "Educação e Ciência, Tecnologia e Ensino Superior",
+            "numero": 150,
+            "percentagem": 7
+          },
+          "saude": {
+            "categoria": "Saúde",
+            "numero": 171,
+            "percentagem": 8
+          },
+          "tecnologia": {
+            "categoria": "Infraestruturas Digitais",
+            "numero": 148,
+            "percentagem": 7
+          },
+          "telecomunicacoes": {
+            "categoria": "Prestadores de Serviços de Internet",
+            "nota": "A subida de 249% não é toda um aumento de ataques: o CERT.PT escreve que \"é explicado em parte por uma alteração metodológica numa das fontes de informação que passou a registar eventos deste tipo de uma forma mais sistemática\". Dos incidentes deste setor, 66% são tentativas de autenticação.",
+            "numero": 517,
+            "percentagem": 26
+          },
+          "transportes": {
+            "categoria": "Transportes",
+            "numero": 136,
+            "percentagem": 7
+          }
+        },
+        "nota": "O CERT.PT avisa que um incidente pode contar em mais do que um setor, pelo que as percentagens não somam cem.",
         "origem": "CERT.PT",
         "unidade": "percentagem dos incidentes do ano",
         "valores": {
+          "autarquias": 5,
           "banca_seguros": 10,
+          "educacao_investigacao": 7,
           "saude": 8,
-          "tecnologia": 26
+          "tecnologia": 7,
+          "telecomunicacoes": 26,
+          "transportes": 7
         }
       },
-      "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2024-obcibercncs15m.pdf",
-      "variacao_percentual": 0
+      "url": "https://www.cncs.gov.pt/docs/rel-riscosconflitos2024-obcibercncs.pdf",
+      "variacao_percentual": 0.1
     },
     "2024": {
+      "base_de_contagem": "com_vulnerabilidades",
       "citacao": "\"O número de incidentes registados pelo CERT.PT aumentou 36% em 2024 atingindo os 2 758 incidentes.\"",
       "edicao": "Riscos & Conflitos 2025",
       "incidentes": 2758,
@@ -62,15 +211,40 @@
       "variacao_percentual": 36
     },
     "2025": {
+      "base_de_contagem": "com_vulnerabilidades",
       "citacao": "O CERT.PT registou 3864 incidentes em 2025, um aumento de 40% face a 2024.",
       "edicao": "Riscos & Conflitos 2026",
       "incidentes": 3864,
-      "nota": "Maior subida da série. O valor foi noticiado a partir da apresentação pública do relatório, e não do PDF, que à data desta revisão ainda não estava disponível no sítio do Observatório.",
+      "nota": "Maior subida da série. O valor foi noticiado a partir da apresentação pública do relatório, e não do PDF, que à data desta revisão não estava disponível no sítio do Observatório nem arquivado na Wayback Machine.",
       "url": "https://www.publico.pt/2026/04/28/enter/noticia/incidentes-seguranca-informatica-portugal-aumentaram-40-2025-2172880",
       "variacao_percentual": 40
     }
   },
   "comparacao": {
+    "2015": {
+      "cert_pt": 248,
+      "neste_registo": 0
+    },
+    "2016": {
+      "cert_pt": 413,
+      "neste_registo": 1
+    },
+    "2017": {
+      "cert_pt": 501,
+      "neste_registo": 2
+    },
+    "2018": {
+      "cert_pt": 599,
+      "neste_registo": 3
+    },
+    "2019": {
+      "cert_pt": 754,
+      "neste_registo": 2
+    },
+    "2020": {
+      "cert_pt": 1418,
+      "neste_registo": 1
+    },
     "2021": {
       "cert_pt": 1781,
       "neste_registo": 4
@@ -98,52 +272,144 @@
     "serie": "Relatório Cibersegurança em Portugal — Riscos & Conflitos",
     "url": "https://www.cncs.gov.pt/pt/observatorio/"
   },
+  "inicio_da_serie": {
+    "ano": 2015,
+    "desde": "maio",
+    "nota": "A série do CERT.PT começa em maio de 2015. Antes disso não há contagem oficial de incidentes em Portugal — o que não significa que não tenha havido incidentes, significa que ninguém os contava. O ano de 2015 é, por isso, parcial: os 248 incidentes correspondem a oito meses e não a doze, e não se compara com 2016."
+  },
   "por_setor": {
     "2022": {
-      "nota": null,
+      "base_nota": "As percentagens deste ano são calculadas sobre a soma das atribuições por setor (cerca de 2850), que é superior aos 2023 incidentes do ano porque um incidente pode contar em mais do que um setor. Em 2023 o CERT.PT passou a calculá-las sobre o total do ano, pelo que as percentagens dos dois anos NÃO se comparam entre si. Os números absolutos comparam-se.",
+      "nota": "O CERT.PT avisa que o total por setor é superior ao total de incidentes, porque um incidente pode contar em mais do que um setor. As percentagens não somam cem.",
       "origem": "CERT.PT",
       "setores": {
+        "autarquias": {
+          "categoria": "Administração Pública Local",
+          "neste_registo": 3,
+          "numero": 129,
+          "percentagem": 5,
+          "percentagem_oficial": 5,
+          "total_do_ano_neste_registo": 20
+        },
         "banca_seguros": {
+          "categoria": "Banca",
           "neste_registo": 1,
+          "numero": 542,
+          "percentagem": 19,
           "percentagem_oficial": 19,
           "total_do_ano_neste_registo": 20
         },
         "educacao_investigacao": {
+          "categoria": "Educação e Ciência, Tecnologia e Ensino Superior",
           "neste_registo": 1,
+          "numero": 202,
+          "percentagem": 7,
           "percentagem_oficial": 7,
+          "total_do_ano_neste_registo": 20
+        },
+        "saude": {
+          "categoria": "Saúde",
+          "neste_registo": 2,
+          "numero": 83,
+          "percentagem": 3,
+          "percentagem_oficial": 3,
           "total_do_ano_neste_registo": 20
         },
         "tecnologia": {
+          "categoria": "Infraestruturas Digitais",
           "neste_registo": 0,
+          "numero": 205,
+          "percentagem": 7,
           "percentagem_oficial": 7,
+          "total_do_ano_neste_registo": 20
+        },
+        "telecomunicacoes": {
+          "categoria": "Prestadores de Serviços de Internet",
+          "neste_registo": 1,
+          "numero": 148,
+          "percentagem": 5,
+          "percentagem_oficial": 5,
+          "total_do_ano_neste_registo": 20
+        },
+        "transportes": {
+          "categoria": "Transportes",
+          "neste_registo": 3,
+          "numero": 93,
+          "percentagem": 3,
+          "percentagem_oficial": 3,
           "total_do_ano_neste_registo": 20
         }
       },
-      "unidade": "percentagem dos incidentes do ano"
+      "unidade": "percentagem das atribuições setoriais do ano"
     },
     "2023": {
-      "nota": null,
+      "base_nota": "Base diferente da de 2022: aqui as percentagens saem dos 2025 incidentes do ano, e em 2022 saíam da soma das atribuições setoriais (cerca de 2850). Uma subida de \"3% para 8%\" na saúde é, em parte, a base a encolher — os números absolutos, 83 para 171, é que dizem o que mudou.",
+      "nota": "O CERT.PT avisa que um incidente pode contar em mais do que um setor, pelo que as percentagens não somam cem.",
       "origem": "CERT.PT",
       "setores": {
+        "autarquias": {
+          "categoria": "Administração Pública Local",
+          "neste_registo": 6,
+          "numero": 111,
+          "percentagem": 5,
+          "percentagem_oficial": 5,
+          "total_do_ano_neste_registo": 10
+        },
         "banca_seguros": {
+          "categoria": "Banca",
           "neste_registo": 0,
+          "numero": 197,
+          "percentagem": 10,
           "percentagem_oficial": 10,
           "total_do_ano_neste_registo": 10
         },
+        "educacao_investigacao": {
+          "categoria": "Educação, Ciência, Tecnologia e Ensino Superior",
+          "categoria_anterior": "Educação e Ciência, Tecnologia e Ensino Superior",
+          "neste_registo": 0,
+          "numero": 150,
+          "percentagem": 7,
+          "percentagem_oficial": 7,
+          "total_do_ano_neste_registo": 10
+        },
         "saude": {
+          "categoria": "Saúde",
           "neste_registo": 1,
+          "numero": 171,
+          "percentagem": 8,
           "percentagem_oficial": 8,
           "total_do_ano_neste_registo": 10
         },
         "tecnologia": {
+          "categoria": "Infraestruturas Digitais",
           "neste_registo": 0,
+          "numero": 148,
+          "percentagem": 7,
+          "percentagem_oficial": 7,
+          "total_do_ano_neste_registo": 10
+        },
+        "telecomunicacoes": {
+          "categoria": "Prestadores de Serviços de Internet",
+          "neste_registo": 0,
+          "nota": "A subida de 249% não é toda um aumento de ataques: o CERT.PT escreve que \"é explicado em parte por uma alteração metodológica numa das fontes de informação que passou a registar eventos deste tipo de uma forma mais sistemática\". Dos incidentes deste setor, 66% são tentativas de autenticação.",
+          "numero": 517,
+          "percentagem": 26,
           "percentagem_oficial": 26,
+          "total_do_ano_neste_registo": 10
+        },
+        "transportes": {
+          "categoria": "Transportes",
+          "neste_registo": 0,
+          "numero": 136,
+          "percentagem": 7,
+          "percentagem_oficial": 7,
           "total_do_ano_neste_registo": 10
         }
       },
       "unidade": "percentagem dos incidentes do ano"
     },
     "2024": {
+      "base_nota": null,
       "nota": "As percentagens do setor privado (comércio e serviços, banca e seguros, saúde) e as do público (administração local, administração central e institutos, ensino superior) são calculadas sobre universos separados e não somam cem entre si.",
       "origem": "CNPD — notificações de violação de dados pessoais",
       "setores": {
@@ -180,5 +446,11 @@
       },
       "unidade": "percentagem das notificações, separadas por setor público e privado"
     }
+  },
+  "quebra_de_serie": {
+    "ano": 2020,
+    "citacao": "\"Quebra de série em 2020: devido a alterações na taxonomia utilizada pelo CERT.PT em 2020 (RNCSIRT, 2020), a partir desse ano passaram a ser contabilizadas as vulnerabilidades como incidentes. Os dados anteriores a 2020 não incluem as vulnerabilidades.\"",
+    "edicao": "Riscos & Conflitos 2023, nota da Tabela 1 e da Figura 2",
+    "motivo": "A partir de 2020 a taxonomia do CERT.PT passou a contabilizar as vulnerabilidades como incidentes (RNCSIRT, 2020). Os dados anteriores a 2020 não as incluem."
   }
 }
