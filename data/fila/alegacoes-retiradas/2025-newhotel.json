@@ -2,15 +2,15 @@
   "ator": {
     "atribuicao_por": "reivindicacao",
     "confianca": "baixa",
-    "grupo": "ransomhouse",
+    "grupo": "nova",
     "nota": "A atribuição assenta exclusivamente na reivindicação do próprio grupo."
   },
   "correcoes": [],
   "cronologia": [
     {
-      "data": "2025-12-03",
+      "data": "2025-04-28",
       "fonte": 0,
-      "texto": "O grupo ransomhouse lista Armis Group no seu site de extorsão.",
+      "texto": "O grupo nova lista NewHotel no seu site de extorsão.",
       "tipo": "reivindicacao"
     }
   ],
@@ -21,34 +21,35 @@
     "titulares_declarados": null
   },
   "data": {
-    "detecao": "2025-12-03",
-    "divulgacao": "2025-12-03",
-    "inicio": "2025-12-03",
+    "detecao": "2025-04-28",
+    "divulgacao": "2025-04-28",
+    "inicio": "2025-04-28",
     "precisao": "desconhecida"
   },
   "disputas": [],
   "entidades_afetadas": [
-    "armis-group"
+    "newhotel"
   ],
   "estado_confirmacao": "alegado_pelo_atacante",
   "etiquetas": [
     "sem-confirmacao",
-    "cadeia-de-fornecimento"
+    "cadeia-de-fornecimento",
+    "software-hoteleiro"
   ],
   "fontes": [
     {
-      "data": "2025-12-03",
+      "data": "2025-04-28",
       "estado_ligacao": "viva",
       "excerto": null,
       "publicador": "ransomware.live",
       "sha256": null,
       "tipo": "leak_site",
-      "titulo": "Armis Group listada no site de extorsão do grupo ransomhouse",
+      "titulo": "NewHotel listada no site de extorsão do grupo nova",
       "url": "https://www.ransomware.live/map/PT",
       "url_arquivo": null
     }
   ],
-  "id": "2025-armis-group",
+  "id": "2025-newhotel",
   "impacto": {
     "custo_declarado_eur": null,
     "duracao_horas": null,
@@ -58,6 +59,7 @@
     "resgate_pedido_nota": null,
     "servicos_afetados": []
   },
+  "motivo_retirada": "Deixou de ser registado por decisão editorial de 2026-08-08: uma listagem em site de extorsão, sem qualquer confirmação independente, não sustenta uma entrada neste arquivo. A decisão veio de uma verificação — nenhuma das vinte e sete alegações publicadas alguma vez ganhou fonte independente, o que desmentia a justificação de que subiriam a incidente documentado com o tempo. Volta a entrar se alguém independente confirmar.",
   "notificacoes": {
     "anacom": null,
     "banco_de_portugal": null,
@@ -67,11 +69,12 @@
     "pj": null
   },
   "relacionados": [
-    "2025-newhotel",
     "2023-zonesoft",
+    "2025-armis-group",
     "2025-ambisig"
   ],
-  "resumo": "A 3 de dezembro de 2025, o grupo de ransomware ransomhouse listou Armis Group — grupo tecnológico que desenvolve sistemas para transportes, organizações desportivas, banca, administração pública e indústria — no seu site de extorsão. A entidade não se pronunciou publicamente e não é conhecida confirmação por autoridade nem cobertura mediática do caso. Tudo o que existe é a alegação de quem diz tê-la atacado.",
+  "resumo": "A 28 de abril de 2025, o grupo de ransomware nova listou NewHotel — fabricante português de software de gestão hoteleira usado por hotéis em vários países — no seu site de extorsão. A entidade não se pronunciou publicamente e não é conhecida confirmação por autoridade nem cobertura mediática do caso. Tudo o que existe é a alegação de quem diz tê-la atacado.",
+  "retirado_em": "2026-08-08",
   "revisao": {
     "curador": "ss",
     "data": "2026-08-05",
@@ -82,5 +85,5 @@
   "tipos_ataque": [
     "ransomware"
   ],
-  "titulo": "Armis Group listada em site de extorsão"
+  "titulo": "NewHotel listada em site de extorsão"
 }

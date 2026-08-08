@@ -2,15 +2,15 @@
   "ator": {
     "atribuicao_por": "reivindicacao",
     "confianca": "baixa",
-    "grupo": "ranstreet",
+    "grupo": "ransomhouse",
     "nota": "A atribuição assenta exclusivamente na reivindicação do próprio grupo."
   },
   "correcoes": [],
   "cronologia": [
     {
-      "data": "2023-12-21",
+      "data": "2025-12-03",
       "fonte": 0,
-      "texto": "O grupo ranstreet lista Zonesoft no seu site de extorsão.",
+      "texto": "O grupo ransomhouse lista Armis Group no seu site de extorsão.",
       "tipo": "reivindicacao"
     }
   ],
@@ -21,35 +21,34 @@
     "titulares_declarados": null
   },
   "data": {
-    "detecao": "2023-12-21",
-    "divulgacao": "2023-12-21",
-    "inicio": "2023-12-21",
+    "detecao": "2025-12-03",
+    "divulgacao": "2025-12-03",
+    "inicio": "2025-12-03",
     "precisao": "desconhecida"
   },
   "disputas": [],
   "entidades_afetadas": [
-    "zonesoft"
+    "armis-group"
   ],
   "estado_confirmacao": "alegado_pelo_atacante",
   "etiquetas": [
     "sem-confirmacao",
-    "cadeia-de-fornecimento",
-    "software-de-faturacao"
+    "cadeia-de-fornecimento"
   ],
   "fontes": [
     {
-      "data": "2023-12-21",
+      "data": "2025-12-03",
       "estado_ligacao": "viva",
       "excerto": null,
       "publicador": "ransomware.live",
       "sha256": null,
       "tipo": "leak_site",
-      "titulo": "Zonesoft listada no site de extorsão do grupo ranstreet",
+      "titulo": "Armis Group listada no site de extorsão do grupo ransomhouse",
       "url": "https://www.ransomware.live/map/PT",
       "url_arquivo": null
     }
   ],
-  "id": "2023-zonesoft",
+  "id": "2025-armis-group",
   "impacto": {
     "custo_declarado_eur": null,
     "duracao_horas": null,
@@ -59,6 +58,7 @@
     "resgate_pedido_nota": null,
     "servicos_afetados": []
   },
+  "motivo_retirada": "Deixou de ser registado por decisão editorial de 2026-08-08: uma listagem em site de extorsão, sem qualquer confirmação independente, não sustenta uma entrada neste arquivo. A decisão veio de uma verificação — nenhuma das vinte e sete alegações publicadas alguma vez ganhou fonte independente, o que desmentia a justificação de que subiriam a incidente documentado com o tempo. Volta a entrar se alguém independente confirmar.",
   "notificacoes": {
     "anacom": null,
     "banco_de_portugal": null,
@@ -69,10 +69,11 @@
   },
   "relacionados": [
     "2025-newhotel",
-    "2025-armis-group",
+    "2023-zonesoft",
     "2025-ambisig"
   ],
-  "resumo": "A 21 de dezembro de 2023, o grupo de ransomware ranstreet listou Zonesoft — fabricante de software de faturação e de pontos de venda muito difundido na restauração e no comércio em Portugal — no seu site de extorsão. A entidade não se pronunciou publicamente e não é conhecida confirmação por autoridade nem cobertura mediática do caso. Tudo o que existe é a alegação de quem diz tê-la atacado.",
+  "resumo": "A 3 de dezembro de 2025, o grupo de ransomware ransomhouse listou Armis Group — grupo tecnológico que desenvolve sistemas para transportes, organizações desportivas, banca, administração pública e indústria — no seu site de extorsão. A entidade não se pronunciou publicamente e não é conhecida confirmação por autoridade nem cobertura mediática do caso. Tudo o que existe é a alegação de quem diz tê-la atacado.",
+  "retirado_em": "2026-08-08",
   "revisao": {
     "curador": "ss",
     "data": "2026-08-05",
@@ -83,5 +84,5 @@
   "tipos_ataque": [
     "ransomware"
   ],
-  "titulo": "Zonesoft listada em site de extorsão"
+  "titulo": "Armis Group listada em site de extorsão"
 }

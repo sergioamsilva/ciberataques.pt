@@ -3,8 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import IconeSetor from "../../components/IconeSetor.astro";
 import SetorNoContexto from "../../components/SetorNoContexto.astro";
 import CartaoIncidente from "../../components/CartaoIncidente.astro";
-import NotaAlegacoes from "../../components/NotaAlegacoes.astro";
-import { incidentes, nome, ehAlegacao } from "../../lib/dados";
+import { incidentes, nome } from "../../lib/dados";
 
 export function getStaticPaths() {
   const setores = [...new Set(incidentes().map((r) => r.setor))];
@@ -12,9 +11,7 @@ export function getStaticPaths() {
 }
 
 const { setor } = Astro.props as { setor: string };
-const doSetor = incidentes().filter((r) => r.setor === setor);
-const lista = doSetor.filter((r) => !ehAlegacao(r));
-const nAlegacoes = doSetor.length - lista.length;
+const lista = incidentes().filter((r) => r.setor === setor);
 const rotulo = nome("setores", setor);
 ---
 
@@ -39,7 +36,6 @@ const rotulo = nome("setores", setor);
     </header>
     <div class="mt-10">
       {lista.map((inc) => <CartaoIncidente incidente={inc} />)}
-      <NotaAlegacoes n={nAlegacoes} contexto="deste setor" />
     </div>
     <SetorNoContexto setor={setor} />
 

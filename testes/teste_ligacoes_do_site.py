@@ -53,3 +53,42 @@ def teste_nenhuma_ligacao_interna_aponta_para_o_vazio():
     assert not partidas, "ligações internas para páginas inexistentes:\n  " + "\n  ".join(
         f"{href} ← {', '.join(sorted(onde)[:3])}" for href, onde in sorted(partidas.items())[:20]
     )
+
+
+# --------------------------------------------------- ligações dentro do código
+
+def _exportacoes(caminho: Path) -> set[str]:
+    texto = caminho.read_text()
+    nomes = set(re.findall(r"^export\s+(?:async\s+)?function\s+(\w+)", texto, re.M))
+    nomes |= set(re.findall(r"^export\s+(?:const|let|type|interface)\s+(\w+)", texto, re.M))
+    return nomes
+
+
+def teste_nenhuma_pagina_importa_o_que_ja_nao_existe():
+    """Um import de um nome inexistente não faz o build de Astro falhar.
+
+    Descoberto ao retirar as alegações: `incidentes/index.astro` continuou a importar
+    `documentados` e `alegacoes` depois de as duas desaparecerem de `dados.ts`. O
+    site construiu sem uma queixa, porque o nome fica apenas `undefined` — e só
+    rebentaria no dia em que alguém voltasse a chamá-lo.
+
+    Sem verificação de tipos instalada, é isto que apanha o resíduo de uma remoção.
+    """
+    origem = RAIZ / "site" / "src"
+    modulos = {c.stem: _exportacoes(c) for c in (origem / "lib").glob("*.ts")}
+    problemas = []
+    for ficheiro in list(origem.rglob("*.astro")) + list(origem.rglob("*.ts")):
+        for nomes, modulo in re.findall(
+            r'import\s*\{([^}]+)\}\s*from\s*"([^"]+)"', ficheiro.read_text()
+        ):
+            alvo = modulo.rsplit("/", 1)[-1]
+            if alvo not in modulos:
+                continue
+            for nome in nomes.split(","):
+                nome = nome.strip().removeprefix("type ").split(" as ")[0].strip()
+                if nome and nome not in modulos[alvo]:
+                    problemas.append(
+                        f"{ficheiro.relative_to(origem)} importa '{nome}' de {alvo}, "
+                        "que não o exporta"
+                    )
+    assert not problemas, "\n".join(problemas)

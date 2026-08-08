@@ -1,9 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CartaoIncidente from "../../components/CartaoIncidente.astro";
-import NotaAlegacoes from "../../components/NotaAlegacoes.astro";
 import ContextoOficial from "../../components/ContextoOficial.astro";
-import { incidentes, agregados, ehAlegacao } from "../../lib/dados";
+import { incidentes, agregados } from "../../lib/dados";
 
 export function getStaticPaths() {
   const anos = [...new Set(incidentes().flatMap((r) => r.anos ?? [r.ano]))].sort((a, b) => b - a);
@@ -12,9 +11,7 @@ export function getStaticPaths() {
 
 const { ano } = Astro.props as { ano: number };
 /* Um incidente aparece em todos os anos que atravessa, e não só no primeiro. */
-const doAno = incidentes().filter((r) => (r.anos ?? [r.ano]).includes(ano));
-const lista = doAno.filter((r) => !ehAlegacao(r));
-const nAlegacoes = doAno.length - lista.length;
+const lista = incidentes().filter((r) => (r.anos ?? [r.ano]).includes(ano));
 const anos = Object.keys(agregados().por_ano).map(Number).sort((a, b) => b - a);
 const i = anos.indexOf(ano);
 ---
@@ -52,8 +49,6 @@ const i = anos.indexOf(ano);
           ano em que começou.
         </p>
       )}
-
-      <NotaAlegacoes n={nAlegacoes} contexto={`de ${ano}`} />
 
       <div class="mt-12">
         <ContextoOficial ano={ano} />

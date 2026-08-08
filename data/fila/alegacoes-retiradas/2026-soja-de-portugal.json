@@ -27,9 +27,15 @@
     "precisao": "desconhecida"
   },
   "disputas": [],
-  "entidades_afetadas": ["soja-de-portugal"],
+  "entidades_afetadas": [
+    "soja-de-portugal"
+  ],
   "estado_confirmacao": "alegado_pelo_atacante",
-  "etiquetas": ["sem-confirmacao", "sem-cobertura-mediatica", "agroalimentar"],
+  "etiquetas": [
+    "sem-confirmacao",
+    "sem-cobertura-mediatica",
+    "agroalimentar"
+  ],
   "fontes": [
     {
       "data": "2026-06-04",
@@ -53,6 +59,7 @@
     "resgate_pedido_nota": null,
     "servicos_afetados": []
   },
+  "motivo_retirada": "Deixou de ser registado por decisão editorial de 2026-08-08: uma listagem em site de extorsão, sem qualquer confirmação independente, não sustenta uma entrada neste arquivo. A decisão veio de uma verificação — nenhuma das vinte e sete alegações publicadas alguma vez ganhou fonte independente, o que desmentia a justificação de que subiriam a incidente documentado com o tempo. Volta a entrar se alguém independente confirmar.",
   "notificacoes": {
     "anacom": null,
     "banco_de_portugal": null,
@@ -61,8 +68,11 @@
     "cnpd": null,
     "pj": null
   },
-  "relacionados": ["2026-metro-mondego"],
+  "relacionados": [
+    "2026-metro-mondego"
+  ],
   "resumo": "A 4 de junho de 2026, o grupo de ransomware thegentlemen listou a Soja de Portugal no seu site de extorsão. A empresa não se pronunciou publicamente e não é conhecida cobertura mediática do caso nem confirmação por autoridade. Tudo o que existe é a alegação de quem diz ter atacado.",
+  "retirado_em": "2026-08-08",
   "revisao": {
     "curador": "ss",
     "data": "2026-08-05",
@@ -70,6 +80,8 @@
     "versao": 1
   },
   "setor": "industria",
-  "tipos_ataque": ["ransomware"],
+  "tipos_ataque": [
+    "ransomware"
+  ],
   "titulo": "Soja de Portugal listada em site de extorsão"
 }

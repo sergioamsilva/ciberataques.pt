@@ -1,6 +1,6 @@
 {
   "distribuicao_fontes_por_incidente": {
-    "1": 41,
+    "1": 14,
     "2": 16,
     "3": 17,
     "4": 6,
@@ -20,23 +20,21 @@
     "2019": 2,
     "2020": 1,
     "2021": 4,
-    "2022": 21,
-    "2023": 16,
-    "2024": 10,
-    "2025": 16,
-    "2026": 17
+    "2022": 20,
+    "2023": 10,
+    "2024": 7,
+    "2025": 4,
+    "2026": 12
   },
   "por_ator": {
-    "8base": 1,
     "Anonymous Portugal": 1,
-    "BrainCipher": 1,
     "HIVE": 1,
     "Lapsus$ Group": 1,
     "LockBit": 3,
     "LockBit 2.0": 2,
     "Net-DeViL e Sanfour 25": 1,
     "PKN": 1,
-    "Qilin": 3,
+    "Qilin": 2,
     "Ragnar Locker": 2,
     "RansomEXX": 1,
     "Rhysida": 1,
@@ -46,46 +44,29 @@
     "SlowGov09 e Outside The Law": 1,
     "WannaCry": 1,
     "Warlock": 1,
-    "akira": 3,
-    "darkrace": 1,
-    "devman": 1,
-    "everest": 1,
-    "lockbit3": 2,
-    "lockbit5": 1,
-    "medusa": 1,
-    "nitrogen": 1,
-    "nova": 2,
-    "play": 1,
-    "qilin": 4,
-    "ransomhouse": 1,
-    "ranstreet": 1,
-    "royal": 1,
-    "settra": 1,
-    "thegentlemen": 3
+    "thegentlemen": 1
   },
   "por_estado_confirmacao": {
-    "alegado_pelo_atacante": 27,
     "confirmado_pela_entidade": 56,
     "confirmado_por_regulador": 8,
     "noticiado_por_uma_fonte": 2,
     "reportado_por_media": 3
   },
   "por_setor": {
-    "administracao_publica": 9,
+    "administracao_publica": 8,
     "autarquias": 20,
     "banca_seguros": 1,
     "desporto": 2,
-    "educacao_investigacao": 8,
-    "energia_agua": 6,
-    "industria": 10,
+    "educacao_investigacao": 5,
+    "energia_agua": 5,
+    "industria": 3,
     "justica_defesa": 3,
     "media": 4,
-    "retalho": 4,
+    "retalho": 1,
     "saude": 10,
-    "tecnologia": 6,
+    "tecnologia": 1,
     "telecomunicacoes": 1,
-    "transportes": 8,
-    "turismo_hotelaria": 4
+    "transportes": 5
   },
   "por_tipo_ataque": {
     "cadeia_fornecimento": 3,
@@ -99,7 +80,7 @@
     "insider": 2,
     "intrusao": 33,
     "phishing_bec": 1,
-    "ransomware": 54
+    "ransomware": 27
   },
-  "total": 96
+  "total": 69
 }

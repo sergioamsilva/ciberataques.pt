@@ -59,6 +59,7 @@
     "resgate_pedido_nota": null,
     "servicos_afetados": []
   },
+  "motivo_retirada": "Deixou de ser registado por decisão editorial de 2026-08-08: uma listagem em site de extorsão, sem qualquer confirmação independente, não sustenta uma entrada neste arquivo. A decisão veio de uma verificação — nenhuma das vinte e sete alegações publicadas alguma vez ganhou fonte independente, o que desmentia a justificação de que subiriam a incidente documentado com o tempo. Volta a entrar se alguém independente confirmar.",
   "notificacoes": {
     "anacom": null,
     "banco_de_portugal": null,
@@ -71,6 +72,7 @@
     "2026-museu-do-caramulo"
   ],
   "resumo": "A 19 de dezembro de 2025, o grupo de ransomware nova listou SPZC — sindicato que representa trabalhadores da educação na Região Centro — no seu site de extorsão. A entidade não se pronunciou publicamente e não é conhecida confirmação por autoridade nem cobertura mediática do caso. Tudo o que existe é a alegação de quem diz tê-la atacado.",
+  "retirado_em": "2026-08-08",
   "revisao": {
     "curador": "ss",
     "data": "2026-08-05",

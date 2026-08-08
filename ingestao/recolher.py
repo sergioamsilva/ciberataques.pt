@@ -95,6 +95,37 @@ def _extraccao_de_leak_site(item: Item) -> dict:
     }
 
 
+def motivo_para_rejeitar(
+    tipo_fonte: str,
+    sugestao: dict | None,
+    e_incidente: bool | None,
+    extraccao: dict,
+) -> str | None:
+    """Porque é que este candidato não deve chegar à fila de curadoria, se não deve.
+
+    Duas razões, e a segunda é recente.
+
+    Uma listagem em site de extorsão não funda um incidente, e desde 8 de agosto de
+    2026 nem sequer chega à fila quando não há nada a que se ligar. Não é desconfiança
+    do tracker: é uma contagem. Das vinte e sete alegações que chegaram a ser
+    publicadas, nenhuma ganhou alguma vez fonte independente — o argumento de que
+    subiriam com o tempo não descrevia a realidade. Ver a política editorial 3.1.
+
+    A listagem com `sugestao_agrupamento` sobrevive, e é essa a diferença que
+    interessa: não vai fundar um incidente, vai juntar-se a um que já existe e que
+    alguém independente confirmou. Aí é corroboração — diz quem reivindicou e quando —
+    e vale o tempo de quem cura.
+    """
+    if tipo_fonte == "leak_site" and not sugestao:
+        return (
+            "listagem em site de extorsão sem incidente documentado a que se ligar; "
+            "uma alegação de atacante não sustenta uma entrada (política editorial 3.1)"
+        )
+    if e_incidente is False:
+        return extraccao.get("razao") or "não é incidente português"
+    return None
+
+
 def recolher(usar_llm: bool = True, max_llm: int | None = None) -> dict:
     garantir_dirs()
     vistos = _vistos() | _ja_na_fila()
@@ -189,9 +220,10 @@ def recolher(usar_llm: bool = True, max_llm: int | None = None) -> dict:
             "triado_em": agora,
         }
 
-        if e_incidente is False:
+        motivo = motivo_para_rejeitar(item.tipo_fonte, sugestao, e_incidente, extraccao)
+        if motivo:
             candidato["estado"] = "rejeitado"
-            candidato["motivo_rejeicao"] = extraccao.get("razao") or "não é incidente português"
+            candidato["motivo_rejeicao"] = motivo
             escrever_json(DIR_REJEITADOS / f"{candidato['id']}.json", candidato)
         else:
             escrever_json(DIR_CANDIDATOS / f"{candidato['id']}.json", candidato)

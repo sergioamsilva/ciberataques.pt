@@ -1,8 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CartaoIncidente from "../../components/CartaoIncidente.astro";
-import NotaAlegacoes from "../../components/NotaAlegacoes.astro";
-import { entidades, incidentes, nome, ehAlegacao } from "../../lib/dados";
+import { entidades, incidentes, nome } from "../../lib/dados";
 
 export function getStaticPaths() {
   return Object.values(entidades()).map((e) => ({ params: { id: e.id }, props: { entidade: e } }));
@@ -10,9 +9,7 @@ export function getStaticPaths() {
 
 const { entidade } = Astro.props;
 const todos = incidentes();
-const diretosTodos = todos.filter((r) => entidade.incidentes.includes(r.id));
-const diretos = diretosTodos.filter((r) => !ehAlegacao(r));
-const nAlegacoes = diretosTodos.length - diretos.length;
+const diretos = todos.filter((r) => entidade.incidentes.includes(r.id));
 const cascata = todos.filter((r) => entidade.incidentes_em_cascata.includes(r.id));
 
 const grafo = [
@@ -59,7 +56,6 @@ const grafo = [
         </h2>
         <div class="mt-2">
           {diretos.map((inc) => <CartaoIncidente incidente={inc} />)}
-          <NotaAlegacoes n={nAlegacoes} contexto="associadas a esta entidade" />
         </div>
       </section>
     )}

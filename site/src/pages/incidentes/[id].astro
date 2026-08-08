@@ -8,7 +8,6 @@ import Disputas from "../../components/Disputas.astro";
 import Explicador from "../../components/Explicador.astro";
 import {
   incidentes,
-  documentados,
   incidente as lerIncidente,
   entidades,
   formatarData,
@@ -19,8 +18,7 @@ import {
 } from "../../lib/dados";
 
 export function getStaticPaths() {
-  /* Só os documentados têm página. Ver ehAlegacao() em lib/dados.ts. */
-  return documentados().map((r) => ({ params: { id: r.id }, props: { resumo: r } }));
+  return incidentes().map((r) => ({ params: { id: r.id }, props: { resumo: r } }));
 }
 
 const { id } = Astro.params;

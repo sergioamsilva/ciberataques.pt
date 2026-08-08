@@ -77,19 +77,19 @@
     },
     "2022": {
       "cert_pt": 2023,
-      "neste_registo": 21
+      "neste_registo": 20
     },
     "2023": {
       "cert_pt": 2025,
-      "neste_registo": 16
+      "neste_registo": 10
     },
     "2024": {
       "cert_pt": 2758,
-      "neste_registo": 10
+      "neste_registo": 7
     },
     "2025": {
       "cert_pt": 3864,
-      "neste_registo": 16
+      "neste_registo": 4
     }
   },
   "fonte": {
@@ -106,17 +106,17 @@
         "banca_seguros": {
           "neste_registo": 1,
           "percentagem_oficial": 19,
-          "total_do_ano_neste_registo": 21
+          "total_do_ano_neste_registo": 20
         },
         "educacao_investigacao": {
           "neste_registo": 1,
           "percentagem_oficial": 7,
-          "total_do_ano_neste_registo": 21
+          "total_do_ano_neste_registo": 20
         },
         "tecnologia": {
-          "neste_registo": 1,
+          "neste_registo": 0,
           "percentagem_oficial": 7,
-          "total_do_ano_neste_registo": 21
+          "total_do_ano_neste_registo": 20
         }
       },
       "unidade": "percentagem dos incidentes do ano"
@@ -128,17 +128,17 @@
         "banca_seguros": {
           "neste_registo": 0,
           "percentagem_oficial": 10,
-          "total_do_ano_neste_registo": 16
+          "total_do_ano_neste_registo": 10
         },
         "saude": {
           "neste_registo": 1,
           "percentagem_oficial": 8,
-          "total_do_ano_neste_registo": 16
+          "total_do_ano_neste_registo": 10
         },
         "tecnologia": {
-          "neste_registo": 1,
+          "neste_registo": 0,
           "percentagem_oficial": 26,
-          "total_do_ano_neste_registo": 16
+          "total_do_ano_neste_registo": 10
         }
       },
       "unidade": "percentagem dos incidentes do ano"
@@ -150,32 +150,32 @@
         "administracao_publica": {
           "neste_registo": 2,
           "percentagem_oficial": 27,
-          "total_do_ano_neste_registo": 10
+          "total_do_ano_neste_registo": 7
         },
         "autarquias": {
           "neste_registo": 3,
           "percentagem_oficial": 32,
-          "total_do_ano_neste_registo": 10
+          "total_do_ano_neste_registo": 7
         },
         "banca_seguros": {
           "neste_registo": 0,
           "percentagem_oficial": 23,
-          "total_do_ano_neste_registo": 10
+          "total_do_ano_neste_registo": 7
         },
         "educacao_investigacao": {
           "neste_registo": 1,
           "percentagem_oficial": 27,
-          "total_do_ano_neste_registo": 10
+          "total_do_ano_neste_registo": 7
         },
         "retalho": {
-          "neste_registo": 1,
+          "neste_registo": 0,
           "percentagem_oficial": 33,
-          "total_do_ano_neste_registo": 10
+          "total_do_ano_neste_registo": 7
         },
         "saude": {
           "neste_registo": 1,
           "percentagem_oficial": 9,
-          "total_do_ano_neste_registo": 10
+          "total_do_ano_neste_registo": 7
         }
       },
       "unidade": "percentagem das notificações, separadas por setor público e privado"

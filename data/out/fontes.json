@@ -140,18 +140,6 @@
     "url_arquivo": null
   },
   {
-    "data": "2026-07-13",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2026-centro-cientifico-e-cultural-de-macau",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Centro Científico e Cultural de Macau listado no site de extorsão do grupo Qilin",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
     "contem_declaracao_da_entidade": true,
     "data": "2026-07-26",
     "estado_ligacao": "viva",
@@ -227,18 +215,6 @@
     "url_arquivo": null
   },
   {
-    "data": "2026-06-28",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2026-conduril",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Conduril listada no site de extorsão do grupo settra",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
     "contem_declaracao_da_entidade": true,
     "data": "2026-06-22",
     "estado_ligacao": "viva",
@@ -286,30 +262,6 @@
     "publicador": "ransomware.live",
     "tipo": "leak_site",
     "titulo": "Misericórdia de Santo Tirso listada no site de extorsão do grupo Qilin",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2026-06-04",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2026-soja-de-portugal",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Soja de Portugal listada no site de extorsão do grupo thegentlemen",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2026-06-03",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2026-meisa-sines",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "MEISA Sines listada no site de extorsão do grupo qilin",
     "url": "https://www.ransomware.live/map/PT",
     "url_arquivo": null
   },
@@ -581,78 +533,6 @@
     "url_arquivo": "http://web.archive.org/web/20260720164251/https://observador.pt/2026/06/17/camara-da-guarda-abre-concurso-para-infraestruturas-de-ciberseguranca-apos-ataque-informatico/"
   },
   {
-    "data": "2026-02-10",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2026-museu-do-caramulo",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Museu do Caramulo listada no site de extorsão do grupo thegentlemen",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2025-12-26",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2025-ambisig",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Ambisig listada no site de extorsão do grupo lockbit5",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2025-12-19",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2025-spzc",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "SPZC listada no site de extorsão do grupo nova",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2025-12-04",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2025-espaco-casa",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Espaço Casa listada no site de extorsão do grupo qilin",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2025-12-03",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2025-armis-group",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Armis Group listada no site de extorsão do grupo ransomhouse",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2025-11-20",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2025-cimertex",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Cimertex listada no site de extorsão do grupo qilin",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
     "contem_declaracao_da_entidade": true,
     "data": "2025-11-18",
     "estado_ligacao": "viva",
@@ -677,30 +557,6 @@
     "titulo": "Ataque informático à OesteCIM afeta plataformas digitais dos municípios do Oeste",
     "url": "https://observador.pt/2025/11/18/ataque-informatico-a-oestecim-afeta-plataformas-digitais-dos-municipios-do-oeste/",
     "url_arquivo": "http://web.archive.org/web/20251118184408/https://observador.pt/2025/11/18/ataque-informatico-a-oestecim-afeta-plataformas-digitais-dos-municipios-do-oeste/"
-  },
-  {
-    "data": "2025-07-20",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2025-elis-portugal",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Elis Portugal listada no site de extorsão do grupo devman",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2025-07-02",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2025-quinta-da-marinha",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Quinta da Marinha listada no site de extorsão do grupo qilin",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
   },
   {
     "contem_declaracao_da_entidade": true,
@@ -767,66 +623,6 @@
     "url_arquivo": "http://web.archive.org/web/20250628195621/https://sol.sapo.pt/2025/06/28/conselho-superior-da-magistratura-alvo-de-ataque-informatico/"
   },
   {
-    "data": "2025-05-08",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2025-selenis",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Selenis listada no site de extorsão do grupo akira",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2025-05-05",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2025-vale-do-lobo",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Vale do Lobo listada no site de extorsão do grupo BrainCipher",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2025-04-28",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2025-newhotel",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "NewHotel listada no site de extorsão do grupo nova",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2025-04-25",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2025-mar-de-ar-hotels",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "M'AR De AR Hotels listada no site de extorsão do grupo nitrogen",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2025-04-02",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2025-socarpor",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Socarpor listada no site de extorsão do grupo akira",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
     "contem_declaracao_da_entidade": true,
     "data": "2025-04-16",
     "estado_ligacao": "viva",
@@ -876,18 +672,6 @@
     "titulo": "Ataque informático afeta sites do JN e TSF",
     "url": "https://observador.pt/2025/03/30/ataque-informatico-afeta-sites-do-jornal-de-noticias-e-tsf/",
     "url_arquivo": "http://web.archive.org/web/20250330143328/https://observador.pt/2025/03/30/ataque-informatico-afeta-sites-do-jornal-de-noticias-e-tsf/"
-  },
-  {
-    "data": "2024-12-21",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2024-bebecar",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Bébécar listada no site de extorsão do grupo 8base",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
   },
   {
     "contem_declaracao_da_entidade": true,
@@ -1130,18 +914,6 @@
     "url_arquivo": "http://web.archive.org/web/20250709083103/https://www.publico.pt/2025/07/09/economia/noticia/portal-financas-passa-autenticacao-reforcada-codigo-sms-2139540"
   },
   {
-    "data": "2024-06-19",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2024-perfumes-e-companhia",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Perfumes & Companhia listada no site de extorsão do grupo akira",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
     "data": "2024-06-17",
     "estado_ligacao": "viva",
     "excerto": null,
@@ -1165,18 +937,6 @@
     "titulo": "Santa Comba Dão: Município foi alvo de ataque informático",
     "url": "https://alivefm.pt/santa-comba-dao-municipio-foi-alvo-de-ataque-informatico/",
     "url_arquivo": "http://web.archive.org/web/20250113101311/https://alivefm.pt/santa-comba-dao-municipio-foi-alvo-de-ataque-informatico/"
-  },
-  {
-    "data": "2024-02-05",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2024-portline",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Portline listada no site de extorsão do grupo lockbit3",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
   },
   {
     "data": "2025-07-31",
@@ -1225,30 +985,6 @@
     "tipo": "comunicado",
     "titulo": "Informação sobre o Ataque Informático à CMB (25.12.2023)",
     "url": "https://cm-barrancos.pt/11623/menu-216",
-    "url_arquivo": null
-  },
-  {
-    "data": "2023-12-21",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2023-zonesoft",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Zonesoft listada no site de extorsão do grupo ranstreet",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2023-11-07",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2023-ccdr-centro",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "CCDR-Centro listada no site de extorsão do grupo lockbit3",
-    "url": "https://www.ransomware.live/map/PT",
     "url_arquivo": null
   },
   {
@@ -1316,18 +1052,6 @@
     "url_arquivo": null
   },
   {
-    "data": "2023-08-14",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2023-agriloja",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Agriloja listada no site de extorsão do grupo everest",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
     "data": "2023-08-06",
     "estado_ligacao": "viva",
     "excerto": null,
@@ -1362,42 +1086,6 @@
     "titulo": "SESARAM continua a repor serviços fundamentais uma semana após ciberataque",
     "url": "https://healthnews.pt/2023/08/15/sesaram-continua-a-repor-servicos-fundamentais-uma-semana-apos-ciberataque/",
     "url_arquivo": "http://web.archive.org/web/20241209092233/https://healthnews.pt/2023/08/15/sesaram-continua-a-repor-servicos-fundamentais-uma-semana-apos-ciberataque/"
-  },
-  {
-    "data": "2023-07-03",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2023-luna-hotels",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Luna Hotels listada no site de extorsão do grupo medusa",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2023-06-21",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2023-luis-simoes",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Luís Simões listada no site de extorsão do grupo play",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2023-05-31",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2023-ert",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "ERT listada no site de extorsão do grupo darkrace",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
   },
   {
     "contem_declaracao_da_entidade": true,
@@ -1600,18 +1288,6 @@
     "publicador": "ransomware.live",
     "tipo": "leak_site",
     "titulo": "Águas e Energia do Porto listada no site de extorsão do grupo LockBit",
-    "url": "https://www.ransomware.live/map/PT",
-    "url_arquivo": null
-  },
-  {
-    "data": "2022-12-27",
-    "estado_ligacao": "viva",
-    "excerto": null,
-    "incidente_id": "2022-inforlandia",
-    "indice": 0,
-    "publicador": "ransomware.live",
-    "tipo": "leak_site",
-    "titulo": "Inforlandia listada no site de extorsão do grupo royal",
     "url": "https://www.ransomware.live/map/PT",
     "url_arquivo": null
   },

@@ -39,7 +39,7 @@ apenas uma cor: uma cor não se lê em voz alta nem sobrevive a um leitor de ecr
 2. **Confirmado por autoridade** — CNCS, CNPD, ANACOM, CMVM, Polícia Judiciária ou tribunal.
 3. **Reportado por vários órgãos** — pelo menos dois órgãos independentes.
 4. **Noticiado por uma única fonte** — sem corroboração.
-5. **Alegado pelo atacante** — vem de um site de extorsão, sem confirmação.
+5. **Alegado pelo atacante** — vem de um site de extorsão, sem confirmação. **Não é publicável**: ver 3.1.
 6. **Desmentido** — a entidade negou.
 
 Três regras sobre este campo:
@@ -52,38 +52,30 @@ Três regras sobre este campo:
 - **Nada sobe a "confirmado" por repetição.** Cinco órgãos a citar o mesmo comunicado do
   atacante continuam a ser uma alegação do atacante.
 
-### 3.1. Quando registamos uma alegação de atacante e mais nada
+### 3.1. Uma alegação de atacante nunca basta
 
-O nível 5 é o único em que publicamos o nome de uma entidade sem que ninguém, além de
-quem diz tê-la atacado, tenha confirmado o que quer que seja. Isso é grave o suficiente
-para exigir um segundo teste, além do da fonte: **o do interesse público**.
+**Uma listagem em site de extorsão, sozinha, não sustenta uma entrada neste arquivo.**
+Não importa se a entidade é pública, se é de setor crítico, ou se serve milhões de
+pessoas: sem uma fonte independente, o caso não entra.
 
-Registamos uma listagem em site de extorsão sem confirmação independente quando a
-entidade é uma destas:
+A regra mudou a 8 de agosto de 2026, e a razão é uma verificação. Durante algum tempo
+publicaram-se vinte e sete casos assim, com o argumento de que subiriam a incidente
+documentado quando aparecesse fonte independente. Foram-se contar: **nenhum subiu.**
+Zero em vinte e sete. O argumento que os justificava não descrevia o que acontecia.
 
-- **Entidade pública, ou que exerce função pública ou representativa** — administração
-  central e local, institutos, sindicatos, associações públicas, instituições culturais
-  abertas ao público.
-- **Entidade de setor crítico** na aceção dos anexos da NIS2 — energia, água,
-  transportes, saúde, banca, telecomunicações, infraestrutura portuária.
-- **Entidade que serve o público em escala** e trata por isso dados de muitas pessoas —
-  cadeias de retalho, grupos hoteleiros, resorts.
-- **Fornecedor de software ou serviços a muitas outras organizações**, em que o
-  comprometimento de um é risco para todos os clientes.
+O que acontecia, na prática, era vinte e sete empresas nomeadas ao lado da palavra
+extorsão, numa página indexável, com base apenas na palavra de quem diz tê-las atacado
+— e sem que nada disso viesse alguma vez a ser confirmado por ninguém.
 
-Não registamos a listagem de uma microempresa sem nenhuma destas características. O que
-pesa não é a dimensão em si: é que, para uma empresa de dez pessoas, a alegação de um
-criminoso passaria a ser o primeiro resultado permanente e pesquisável sobre o seu nome,
-sem que ninguém a tenha verificado e sem que ela tenha meios de o contrariar. O valor
-informativo para o público não justifica esse dano.
+Os que existiam foram retirados para `data/fila/alegacoes-retiradas/`, que é versionado
+e auditável. Não foram apagados: qualquer um volta a entrar no dia em que uma fonte
+independente o confirmar, e nessa altura entra pelo que essa fonte diz, não pelo que o
+atacante disse.
 
-As que ficam de fora não desaparecem: vão para `data/fila/rejeitados/`, que é versionado
-e auditável, com o motivo escrito. Se aparecer fonte independente, sobem.
-
-Quando a firma da entidade é composta por nomes de pessoas singulares — sociedades de
-advogados e de contabilistas, sobretudo — usamos o nome comercial tal como consta do
-registo, por ser o da pessoa coletiva, e não criamos entrada de entidade nem página
-indexável para as pessoas nomeadas nele.
+**As fontes de sites de extorsão continuam a existir no registo**, e é importante
+perceber a diferença. Dez incidentes confirmados pelas próprias entidades citam-nas
+como corroboração — dizem quem reivindicou, quando, e o que anunciou. Isso é útil e
+fica. O que deixou de existir é um incidente que assente só nelas.
 
 ## 4. Pessoas singulares
 
