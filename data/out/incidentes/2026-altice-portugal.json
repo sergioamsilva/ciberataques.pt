@@ -1,0 +1,149 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública nem reivindicação conhecida."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-09-14",
+      "fonte": 0,
+      "texto": "Primeiras perturbações na rede internacional da MEO, entre as 00h45 e as 02h55, repetidas entre as 17h30 e as 19h30 e entre as 22h45 e a 01h05 da madrugada seguinte, segundo a operadora.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2026-09-15",
+      "fonte": 3,
+      "texto": "A MEO comunica que a análise técnica confirmou um ataque distribuído de negação de serviço à sua infraestrutura de rede internacional, que não houve intrusão nem acesso a dados, e que o serviço está estabilizado.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-09-15",
+      "fonte": 0,
+      "texto": "A operadora indica ter comunicado o incidente ao Centro Nacional de Cibersegurança.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-09-15",
+      "fonte": 1,
+      "texto": "É noticiado que dados públicos de medição de rede apontavam para uma falha na gestão de rotas BGP, e não para um ataque externo. A MEO responde que as quebras de interligação BGP foram consequência da instabilidade provocada pelo ataque.",
+      "tipo": "divulgacao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "A MEO declara que não houve intrusão nem acesso a dados da empresa ou dos clientes. É declaração da entidade, não conclusão de autoridade.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "divulgacao": "2026-09-15",
+    "fim": "2026-09-15",
+    "inicio": "2026-09-14",
+    "precisao": "dia"
+  },
+  "disputas": [
+    {
+      "afirmacao": "Dados públicos de medição de rede apontavam para uma falha na gestão de rotas BGP, e não para um ataque externo, como causa das perturbações.",
+      "contestado_por": "MEO",
+      "fonte_afirmacao": 1,
+      "fonte_contestacao": 3,
+      "nota": "A operadora sustenta que a instabilidade nos encaminhamentos BGP foi consequência do ataque e não a sua causa, e que não foi identificado encaminhamento indevido. Nenhuma autoridade se pronunciou publicamente. Registamos as duas versões.",
+      "segundo": "leitura de dados públicos de medição de rede noticiada pelo SAPO Tek"
+    }
+  ],
+  "entidades_afetadas": [
+    "altice-portugal"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "servico-essencial",
+    "infraestrutura-critica"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-09-15",
+      "estado_ligacao": "viva",
+      "excerto": "Meo garante que \"não ocorreu qualquer intrusão nos sistemas, nem qualquer acesso ou comprometimento de dados da Meo ou dos seus clientes\".",
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Incidentes na Meo foram provocados por ataque de negação de serviço",
+      "url": "https://eco.sapo.pt/2026/09/15/incidentes-na-meo-foram-provocados-por-ataque-de-negacao-de-servico/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-09-15",
+      "estado_ligacao": "viva",
+      "excerto": "A MEO confirmou ter sido alvo de um ataque distribuído de negação de serviço (DDoS), que congestionou a sua rede internacional em períodos distintos durante o dia de ontem.",
+      "publicador": "SAPO Tek",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "MEO confirma que falhas de serviço se deveram a um \"ataque distribuído de negação de serviço\" (DDoS)",
+      "url": "https://tek.sapo.pt/noticias/internet/artigos/meo-diz-que-sofreu-ataque-em-massa-mas-dados-de-rede-apontam-para-falha-na-gestao-de-rotas-bgp/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-09-15",
+      "estado_ligacao": "viva",
+      "excerto": "A operadora confirmou que o ataque provocou congestionamento e degradação da sua rede internacional.",
+      "publicador": "Pplware",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "MEO foi alvo de um ataque de DDoS! Afinal que tipo de ataque é este?",
+      "url": "https://pplware.sapo.pt/internet/meo-foi-alvo-de-um-ataque-de-ddos-afinal-que-tipo-de-ataque-e-este/",
+      "url_arquivo": null
+    },
+    {
+      "data": "2026-09-15",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "MEO",
+      "sha256": null,
+      "tipo": "comunicado",
+      "titulo": "Comunicado: MEO esclarece ataque DDoS à sua rede internacional",
+      "url": "https://forum.meo.pt/internet-fixa-e-movel-11/comunicado-meo-esclarece-ataque-ddos-a-sua-rede-internacional-167882",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-altice-portugal",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "rede internacional da MEO",
+      "acesso de clientes a sítios e serviços dependentes de tráfego internacional"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": true,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A MEO atribuiu a um ataque distribuído de negação de serviço as falhas que afetaram a sua rede a 14 de setembro de 2026 e na madrugada seguinte, em três janelas: das 00h45 às 02h55, das 17h30 às 19h30 e das 22h45 à 01h05. Segundo a operadora, os elevados volumes de tráfego congestionaram e degradaram temporariamente a rede internacional, causando dificuldades a alguns clientes no acesso a sítios e serviços dependentes de tráfego internacional. A empresa afirma que não houve intrusão nem acesso a dados seus ou dos clientes, e comunicou o incidente ao Centro Nacional de Cibersegurança. Dados públicos de medição de rede apontavam para outro cenário, uma falha na gestão de rotas BGP; a MEO sustenta que a instabilidade BGP foi consequência do ataque e não a sua causa.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "Registado ao nível da Altice Portugal, que opera a marca MEO. O ataque é declaração da operadora e está contestado por leituras públicas de dados de rede: fica em disputas[] em vez de resolvido por nós. A peça do SAPO Tek foi editada no próprio dia: o endereço conserva o título original, que punha a versão da operadora em dúvida, e o título atual é o da confirmação. A contagem de queixas em plataformas de reporte de falhas não foi registada, por não ser número declarado pela entidade. O comunicado está publicado no fórum oficial de clientes da MEO, por conta identificada como administradora.",
+    "versao": 1
+  },
+  "setor": "telecomunicacoes",
+  "tipos_ataque": [
+    "ddos",
+    "indisponibilidade"
+  ],
+  "titulo": "Ataque de negação de serviço à rede internacional da MEO"
+}

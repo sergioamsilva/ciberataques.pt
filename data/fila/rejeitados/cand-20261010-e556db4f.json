@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "spacebears",
+        "texto": "Tomix / Grupo JOPER foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "spacebears",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-09-23",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Tomix / Grupo JOPER",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20261010-e556db4f",
+  "motivo_rejeicao": "listagem em site de extorsão sem incidente documentado a que se ligar; uma alegação de atacante não sustenta uma entrada (política editorial 3.1)",
+  "origem": {
+    "chave": "e556db4fcea21f65cfa9c83e49a1cdc05e07edaac6b976a7247cc81562e02f4f",
+    "data": "2026-09-23",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "330db9981434ad5fc65eac6b303e5e96f1265108b3f38010bd62db61e52fd184",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Tomix / Grupo JOPER listada em site de extorsão (spacebears)",
+  "triado_em": "2026-10-10T09:54:37+00:00"
+}

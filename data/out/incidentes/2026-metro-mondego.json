@@ -3,12 +3,17 @@
     "atribuicao_por": "reivindicacao",
     "confianca": "media",
     "grupo": "thegentlemen",
-    "nota": "A empresa não identificou o grupo. A atribuição assenta na listagem da Metro Mondego no site de extorsão do grupo thegentlemen, a 16 de julho de 2026, dez dias após o ataque e dez dias antes da comunicação pública da empresa. É uma reivindicação do próprio grupo, não uma atribuição por autoridade."
+    "nota": "A empresa não identificou o grupo. A atribuição assenta na listagem da Metro Mondego no site de extorsão do grupo thegentlemen, a 16 de julho de 2026, dez dias após o ataque e um dia antes da primeira comunicação pública da empresa. É uma reivindicação do próprio grupo, não uma atribuição por autoridade."
   },
   "correcoes": [
     {
       "data": "2026-08-05",
       "descricao": "Acrescentada a atribuição ao grupo thegentlemen, a partir da listagem no tracker público de sites de extorsão. O registo anterior indicava ator não identificado.",
+      "origem": "curadoria"
+    },
+    {
+      "data": "2026-10-10",
+      "descricao": "A primeira comunicação pública do ataque foi a 17 de julho de 2026, e não a 26 de julho, como o registo indicava. Corrigidas a data de divulgação e a nota sobre a atribuição, que dava a listagem no site de extorsão como dez dias anterior à comunicação da empresa; foi um dia.",
       "origem": "curadoria"
     }
   ],
@@ -18,6 +23,12 @@
       "fonte": 0,
       "texto": "A Metro Mondego é alvo de um ataque de ransomware que afeta parte dos sistemas internos, sem comprometer a operação do serviço de transporte.",
       "tipo": "ocorrencia"
+    },
+    {
+      "data": "2026-07-17",
+      "fonte": 6,
+      "texto": "A empresa torna público o ataque de ransomware de 6 de julho, que afetou parte dos sistemas internos sem comprometer a operação. Admite que os atacantes possam ter copiado informação, sem conseguir ainda dizer se inclui dados pessoais, e indica ter notificado o CNCS, a CNPD e as autoridades de investigação criminal.",
+      "tipo": "comunicado"
     },
     {
       "data": "2026-07-26",
@@ -49,7 +60,7 @@
   },
   "data": {
     "detecao": "2026-07-06",
-    "divulgacao": "2026-07-26",
+    "divulgacao": "2026-07-17",
     "inicio": "2026-07-06",
     "precisao": "dia"
   },
@@ -68,7 +79,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2026-07-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "referiu que os elementos disponíveis levam “a considerar provável que os atacantes tenham copiado informação que pode incluir dados pessoais“.",
       "publicador": "ECO",
       "sha256": null,
       "tipo": "noticia",
@@ -80,7 +91,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2026-07-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“A Metro Mondego acionou de imediato os seus procedimentos de resposta a incidentes, com o apoio de peritos externos em cibersegurança, e notificou o Centro Nacional de Cibersegurança",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -91,7 +102,7 @@
     {
       "data": "2026-07-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Dados pessoais dos titulares de passe personalizado poderão ter sido copiados durante o ataque informático de que a Metro Mondego foi alvo no passado dia 06, alertou hoje a empresa.",
       "publicador": "RTP",
       "sha256": null,
       "tipo": "noticia",
@@ -102,7 +113,7 @@
     {
       "data": "2026-07-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Embora tenha afetado parte dos seus sistemas internos, o incidente não comprometeu a operação do serviço de transporte, indica a Metro Mondego.",
       "publicador": "SAPO Tek",
       "sha256": null,
       "tipo": "noticia",
@@ -125,12 +136,24 @@
       "contem_declaracao_da_entidade": true,
       "data": "2026-07-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "A empresa reiterou que “os dados de pagamento com cartão bancário não foram afetados”, uma vez que “os pagamentos são processados em terminais autónomos, isolados dos sistemas atingidos”.",
       "publicador": "Diário de Viseu",
       "sha256": null,
       "tipo": "noticia",
       "titulo": "Dados pessoais poderão ter sido copiados durante ataque informático à Metro Mondego",
       "url": "https://www.diarioviseu.pt/2026/07/26/dados-pessoais-poderao-ter-sido-copiados-durante-ataque-informatico-a-metro-mondego/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-07-17",
+      "estado_ligacao": "viva",
+      "excerto": "A Metro Mondego afirmou hoje que foi alvo de um ataque informático a 06 de julho que afetou “parte dos seus sistemas internos”, mas sem comprometer a operação do serviço de transporte.",
+      "publicador": "Diário de Coimbra",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Metro Mondego foi alvo de ataque informático que afetou sistemas internos",
+      "url": "https://www.diariocoimbra.pt/2026/07/17/metro-mondego-foi-alvo-de-ataque-informatico-que-afetou-sistemas-internos/",
       "url_arquivo": null
     }
   ],
@@ -155,12 +178,12 @@
     "pj": true
   },
   "relacionados": [],
-  "resumo": "A Metro Mondego foi alvo de um ataque de ransomware a 6 de julho de 2026, que afetou parte dos sistemas internos sem comprometer a operação do serviço de transporte. A 26 de julho a empresa alertou que dados pessoais de titulares de passe personalizado poderão ter sido copiados, entre eles nome, endereço de correio eletrónico e número de telefone, com risco de receção de mensagens fraudulentas. O grupo responsável reivindicou publicamente o ataque e anunciou a intenção de divulgar a informação. A empresa notificou as autoridades competentes.",
+  "resumo": "A Metro Mondego foi alvo de um ataque de ransomware a 6 de julho de 2026, que afetou parte dos sistemas internos sem comprometer a operação do serviço de transporte, e tornou-o público a 17 de julho. A 26 de julho a empresa alertou que dados pessoais de titulares de passe personalizado poderão ter sido copiados, entre eles nome, endereço de correio eletrónico e número de telefone, com risco de receção de mensagens fraudulentas. O grupo responsável reivindicou publicamente o ataque e anunciou a intenção de divulgar a informação. A empresa notificou as autoridades competentes.",
   "revisao": {
     "curador": "ss",
-    "data": "2026-08-05",
-    "nota": "Incidente recente e em apuramento. Vinte dias entre a ocorrência e a comunicação pública. A segregação dos terminais de pagamento evitou o comprometimento de dados bancários, e é um detalhe de arquitetura raro na cobertura portuguesa. Rever quando a empresa confirmar que dados foram efetivamente copiados.",
-    "versao": 2
+    "data": "2026-10-10",
+    "nota": "Incidente em apuramento. A primeira comunicação pública foi a 17 de julho, onze dias após a ocorrência e não vinte, como a revisão anterior dizia. A segregação dos terminais de pagamento evitou o comprometimento de dados bancários, e é um detalhe de arquitetura raro na cobertura portuguesa. Reverificado a 2026-10-10: não se encontrou cobertura posterior a 26 de julho, nem confirmação de que dados foram efetivamente copiados ou publicados. Rever quando a empresa o confirmar.",
+    "versao": 3
   },
   "setor": "transportes",
   "tipos_ataque": [

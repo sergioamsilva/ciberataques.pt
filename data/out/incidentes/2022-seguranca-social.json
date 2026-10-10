@@ -107,7 +107,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2022-11-21",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“A Segurança Social foi alvo de um ciberataque que resultou numa intrusão intencional e maliciosa na sua rede informática.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -119,7 +119,7 @@
       "contem_declaracao_de_autoridade": true,
       "data": "2022-11-21",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "está a desenvolver todos os esforços, em estreita colaboração com o Centro Nacional de Cibersegurança, Polícia Judiciária e especialistas em cibersegurança, para garantir a segurança do sistema",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -130,7 +130,7 @@
     {
       "data": "2022-11-30",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Houve uma alegada violação de dados pessoais no ciberataque à Segurança Social, confirmou ao PÚBLICO a Comissão Nacional de Protecção de Dados (CNPD).",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -141,7 +141,7 @@
     {
       "data": "2023-01-11",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Os nomes de 14 mil trabalhadores da Segurança Social foram expostos, mas os dados de contribuintes e empresas não foram comprometidos",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -152,7 +152,7 @@
     {
       "data": "2023-01-11",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "a notificação à Comissão Nacional de Proteção de Dados deveu-se à exposição do nome dos funcionários nesse ataque. Foram comprometidas 14 mil contas.",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -174,7 +174,7 @@
     {
       "data": "2022-11-23",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“O ciberataque visava a destruição [de dados]”, explicou ao Expresso fonte bem colocada, sob a condição de anonimato, e recusando fornecer mais detalhes.",
       "publicador": "Expresso",
       "sha256": null,
       "tipo": "noticia",

@@ -1,0 +1,129 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-09-15",
+      "fonte": 0,
+      "texto": "Na madrugada de terça-feira é identificado um ataque de ransomware ao servidor de correio eletrónico da comunidade intermunicipal, que é totalmente isolado.",
+      "tipo": "detecao"
+    },
+    {
+      "data": "2026-09-16",
+      "fonte": 1,
+      "texto": "A comunidade intermunicipal torna o caso público: o sistema de cópias de segurança funcionou, a totalidade dos dados até à hora da infeção foi recuperada, e o incidente foi reportado às autoridades nos termos da legislação em vigor.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-09-16",
+      "fonte": 0,
+      "texto": "Apenas um servidor continua desligado da rede. Porto de Mós mantém-se sem correio eletrónico por prudência, e a migração para o Office 365, prevista para sexta-feira, é antecipada para esse dia.",
+      "tipo": "reposicao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "As fontes não referem acesso a dados pessoais nem exfiltração. O que a entidade declara é a recuperação da totalidade dos dados até à hora da infeção, o que diz respeito a perda de dados e não a cópia.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2026-09-15",
+    "divulgacao": "2026-09-16",
+    "inicio": "2026-09-15",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "cim-regiao-de-leiria"
+  ],
+  "entidades_afetadas_em_cascata": [
+    "camara-municipal-de-porto-de-mos"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "administracao-local",
+    "impacto-multimunicipal",
+    "correio-eletronico",
+    "copias-de-seguranca-funcionaram"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-09-16",
+      "estado_ligacao": "viva",
+      "excerto": "“Na madrugada de ontem [terça-feira] foi identificado um ataque de ‘ransomware’ (vírus malicioso) ao servidor de ‘email’ da CIM, tendo sido totalmente isolada”",
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "CIM de Leiria alvo de ataque informático. Apenas um dos dez municípios está desligado",
+      "url": "https://eco.sapo.pt/2026/09/16/cim-de-leiria-alvo-de-ataque-informatico-apenas-um-dos-dez-municipios-esta-desligado/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-09-16",
+      "estado_ligacao": "viva",
+      "excerto": "durante a noite foi identificado “o momento da infeção, o que permitiu recuperar a totalidade dos dados até essa hora”.",
+      "publicador": "Diário de Notícias",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Comunidade Intermunicipal da Região de Leiria alvo de ataque informático",
+      "url": "https://www.dn.pt/sociedade/comunidade-intermunicipal-da-regio-de-leiria-alvo-de-ataque-informtico",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-09-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Executive Digest",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Comunidade Intermunicipal da Região de Leiria alvo de ataque informático",
+      "url": "https://executivedigest.sapo.pt/comunidade-intermunicipal-da-regiao-de-leiria-alvo-de-ataque-informatico/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-cim-regiao-de-leiria",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "servidor de correio eletrónico da comunidade intermunicipal",
+      "correio eletrónico do município de Porto de Mós, desligado por prudência"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2025-oestecim"
+  ],
+  "resumo": "A Comunidade Intermunicipal da Região de Leiria identificou na madrugada de 15 de setembro de 2026 um ataque de ransomware ao seu servidor de correio eletrónico, que foi isolado. Segundo a comunidade intermunicipal, o sistema de cópias de segurança que serve os dez municípios funcionou, e a identificação do momento da infeção permitiu recuperar a totalidade dos dados até essa hora. Por prudência, o município de Porto de Mós ficou sem correio eletrónico, e a migração para o Office 365 foi antecipada. O incidente, de eventual caráter criminoso, foi reportado às autoridades.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "As três fontes reproduzem o mesmo despacho da Lusa, com declarações do secretário executivo da comunidade intermunicipal: valem como declaração da entidade, não como três apurações independentes. As autoridades notificadas não são identificadas, e por isso os campos de notificação ficam por preencher. O investimento em cibersegurança referido pela entidade não foi registado, por ser argumento sobre a resposta e não facto sobre o incidente.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": [
+    "ransomware"
+  ],
+  "titulo": "Ransomware no servidor de correio eletrónico da CIM da Região de Leiria"
+}

@@ -61,7 +61,7 @@
     {
       "data": "2022-02-08",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "A Vodafone foi alvo de uma disrupção na sua rede, iniciada na noite de 7 de fevereiro de 2022 devido a um ciberataque deliberado e malicioso com o objetivo de causar danos e perturbações.",
       "publicador": "Vodafone Portugal",
       "sha256": null,
       "tipo": "comunicado",
@@ -72,7 +72,7 @@
     {
       "data": "2022-02-08",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Entre os clientes afectados estão serviços essenciais como o INEM, bombeiros, hospitais e bancos — a rede Multibanco, por exemplo, esteve indisponível até à meia-noite de segunda-feira",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",

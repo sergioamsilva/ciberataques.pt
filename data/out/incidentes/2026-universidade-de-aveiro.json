@@ -9,9 +9,20 @@
     {
       "data": "2026-08-06",
       "descricao": "Acrescentado o comprometimento de pelo menos uma base de dados e as notificações à Polícia Judiciária e à CNPD, a partir da cobertura do Jornal de Notícias de 30 de julho. O registo anterior referia apenas contas de correio eletrónico e a notificação ao CNCS."
+    },
+    {
+      "data": "2026-10-10",
+      "descricao": "Acrescentado o ransomware aos tipos de ataque e antecipada a data de início para 20 de julho de 2026, a partir da descrição do CNCS reproduzida pela imprensa, que refere a notificação do CERT.PT nessa data.",
+      "origem": "curadoria"
     }
   ],
   "cronologia": [
+    {
+      "data": "2026-07-20",
+      "fonte": 6,
+      "texto": "Segundo fonte do Centro Nacional de Cibersegurança, o CERT.PT é notificado do incidente a 20 de julho, oito dias antes da data em que a universidade diz ter apurado a sua extensão.",
+      "tipo": "regulador"
+    },
     {
       "data": "2026-07-28",
       "fonte": 0,
@@ -41,6 +52,12 @@
       "fonte": 5,
       "texto": "Apura-se que o comprometimento abrangeu pelo menos uma base de dados, além das contas de correio eletrónico, e que foram notificados o Centro Nacional de Cibersegurança, a Polícia Judiciária e a Comissão Nacional de Proteção de Dados.",
       "tipo": "divulgacao"
+    },
+    {
+      "data": "2026-09-28",
+      "fonte": 6,
+      "texto": "É noticiada uma pergunta parlamentar ao Governo sobre o caso. Retoma-se a descrição do CNCS de um ataque de ransomware com exfiltração de caixas de correio eletrónico e de pelo menos uma base de dados; continua por saber que base de dados foi levada e quantos titulares foram afetados.",
+      "tipo": "divulgacao"
     }
   ],
   "dados_pessoais": {
@@ -50,13 +67,13 @@
       "contacto",
       "comunicacoes"
     ],
-    "nota": "Foi comprometido um número reduzido de contas de correio eletrónico e pelo menos uma base de dados, com exposição de dados pessoais e institucionais. O reitor sustenta que houve cópia de informação e não perda. A extensão do que foi copiado estava por apurar à data desta revisão, e a universidade não quantificou titulares afetados.",
+    "nota": "Foi comprometido um número reduzido de contas de correio eletrónico e pelo menos uma base de dados, com exposição de dados pessoais e institucionais; o CNCS descreveu exfiltração de informação de caixas de correio e de pelo menos uma base de dados. O reitor sustenta que houve cópia de informação e não perda. Toda a comunidade académica teve de mudar a palavra-passe. À data desta revisão continuava por divulgar que base de dados foi levada, que categorias de dados contém e quantos titulares foram afetados.",
     "titulares_declarados": null
   },
   "data": {
     "detecao": "2026-07-28",
     "divulgacao": "2026-07-29",
-    "inicio": "2026-07-28",
+    "inicio": "2026-07-20",
     "precisao": "desconhecida"
   },
   "disputas": [],
@@ -74,7 +91,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2026-07-29",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "a Universidade de Aveiro (UA) explica que detetou um “acesso indevido aos seus sistemas de informação”. O acesso “resultou na exposição de dados pessoais e institucionais”",
       "publicador": "SAPO Tek",
       "sha256": null,
       "tipo": "noticia",
@@ -86,7 +103,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2026-07-29",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Até à data não nos parece que tenha havido perda de informação. Houve foi cópia de informação e não sabemos a extensão”, disse o reitor.",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -97,7 +114,7 @@
     {
       "data": "2026-07-29",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "A UA diz que está a apurar a extensão da informação comprometida e a implementar todas as medidas necessárias para mitigar os impactos deste incidente.",
       "publicador": "RTP",
       "sha256": null,
       "tipo": "noticia",
@@ -120,7 +137,7 @@
     {
       "data": "2026-07-29",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "A UA repudia este ato criminoso, lamentando todos os constrangimentos que dele possam resultar, e diz que a situação foi já reportada às autoridades competentes",
       "publicador": "Diário de Coimbra",
       "sha256": null,
       "tipo": "noticia",
@@ -132,12 +149,25 @@
       "contem_declaracao_da_entidade": true,
       "data": "2026-07-30",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "O incidente, que foi participado a outras autoridades competentes, nomeadamente à Polícia Judiciária e à Comissão Nacional de Proteção de Dados, está a ser analisado.",
       "publicador": "Jornal de Notícias",
       "sha256": null,
       "tipo": "noticia",
       "titulo": "Piratas informáticos roubam base de dados da Universidade de Aveiro",
       "url": "https://www.jn.pt/justica/artigo/piratas-informaticos-roubam-base-de-dados-da-universidade-de-aveiro/18111434",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "contem_declaracao_de_autoridade": true,
+      "data": "2026-09-28",
+      "estado_ligacao": "viva",
+      "excerto": "A 30 de julho, fonte do CNCS precisou que o CERT.PT fora notificado a 20 de julho, que se tinha tratado de um ataque de ‘ransomware’ com exfiltração de informação de caixas de correio eletrónico",
+      "publicador": "Diário de Aveiro",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "BE questiona Governo sobre ciberataque à Universidade de Aveiro",
+      "url": "https://www.diarioaveiro.pt/2026/09/28/be-questiona-governo-sobre-ciberataque-a-universidade-de-aveiro/",
       "url_arquivo": null
     }
   ],
@@ -164,15 +194,16 @@
   "relacionados": [
     "2024-universidade-do-algarve"
   ],
-  "resumo": "A Universidade de Aveiro detetou a 28 de julho de 2026 um acesso indevido aos seus sistemas de informação, ocorrido dias antes, que comprometeu um número reduzido de contas de correio eletrónico e pelo menos uma base de dados, com exposição de dados pessoais e institucionais. A instituição só teve conhecimento do ataque por contacto dos próprios atacantes, que tinham extraído informação e procuravam chegar ao que descreveram como um acordo justo. O reitor indicou ter havido cópia de informação, e não perda, sem que a extensão estivesse apurada. O caso foi reportado às autoridades, e a comunidade académica foi alertada para contactos anormais que dele possam decorrer.",
+  "resumo": "A Universidade de Aveiro tornou público a 29 de julho de 2026 um acesso indevido aos seus sistemas de informação, cuja extensão diz ter apurado a 28 de julho, e que comprometeu um número reduzido de contas de correio eletrónico e pelo menos uma base de dados, com exposição de dados pessoais e institucionais. Segundo o Centro Nacional de Cibersegurança, tratou-se de um ataque de ransomware com exfiltração de informação, e o CERT.PT tinha sido notificado a 20 de julho. A instituição só teve conhecimento do ataque por contacto dos próprios atacantes, que procuravam chegar ao que descreveram como um acordo justo. O caso foi participado à Polícia Judiciária e à CNPD; à data desta revisão continuava por divulgar a extensão do que foi copiado.",
   "revisao": {
     "curador": "ss",
-    "data": "2026-08-06",
-    "nota": "Terceira revisão. Uma pesquisa apontava também o envolvimento do Serviço de Informações de Segurança; a leitura do artigo citado não o sustenta, e por isso não foi registado. O que se confirma é a notificação ao CNCS, à Polícia Judiciária e à CNPD. Continua por apurar a extensão do que foi copiado, a atribuição e a existência de pedido de resgate — sabe-se apenas que os atacantes procuraram contacto para chegar ao que descreveram como um acordo justo.",
-    "versao": 3
+    "data": "2026-10-10",
+    "nota": "Quarta revisão. A descrição do CNCS, reproduzida pela Lusa a 28 de setembro, qualifica o ataque como ransomware com exfiltração e data a notificação do CERT.PT a 20 de julho, oito dias antes da data de deteção comunicada pela universidade; a data de início passa a 20 de julho com precisão desconhecida, porque a intrusão pode ser anterior. A pergunta parlamentar que motivou a peça contém alegações do partido sobre o vetor de entrada e o estado da rede que nenhuma outra fonte sustenta, e por isso não foram registadas. Continua por apurar a extensão do que foi copiado, a atribuição e a existência de pedido de resgate.",
+    "versao": 4
   },
   "setor": "educacao_investigacao",
   "tipos_ataque": [
+    "ransomware",
     "intrusao",
     "exfiltracao_dados"
   ],

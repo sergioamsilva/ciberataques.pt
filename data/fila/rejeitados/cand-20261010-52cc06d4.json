@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "safepay",
+        "texto": "hbpro.pt foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "safepay",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-09-08",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "hbpro.pt",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20261010-52cc06d4",
+  "motivo_rejeicao": "listagem em site de extorsão sem incidente documentado a que se ligar; uma alegação de atacante não sustenta uma entrada (política editorial 3.1)",
+  "origem": {
+    "chave": "52cc06d46345a1e9572e89b865d5fb8a5f54557673079d8b9104b2a1cd2af74f",
+    "data": "2026-09-08",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "d5778c40d913d73037dc8d6155d7f2f5f938438d0abd89ef4b52182ae99984c5",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "hbpro.pt listada em site de extorsão (safepay)",
+  "triado_em": "2026-10-10T09:54:37+00:00"
+}

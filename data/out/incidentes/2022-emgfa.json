@@ -70,7 +70,7 @@
     {
       "data": "2022-09-08",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "O Estado-Maior-General das Forças Armadas foi alvo de um ciberataque “sem precedentes” que terá permitido o acesso de piratas informáticos a centenas de documentos secretos e confidenciais",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -81,7 +81,7 @@
     {
       "data": "2022-09-08",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Ainda segundo o DN, um primeiro inquérito terá já permitido concluir que não terão sido cumpridas regras de segurança restritas, definidas para a transmissão em segurança de documentos classificados.",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -103,7 +103,7 @@
     {
       "data": "2022-09-10",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Um funcionário do Estado-Maior-General das Forças Armadas (EMGFA) acedeu à sua área interna de trabalho através de uma rede considerada não segura e comprometeu as suas credenciais de acesso.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -138,7 +138,7 @@
       "contem_declaracao_de_autoridade": true,
       "data": "2022-09-28",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "O Centro Nacional de Cibersegurança (CNC) confirmou hoje “indícios de ataques informáticos à rede administrativa do Estado Maior General das Forças Armadas (EMGFA)”",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",

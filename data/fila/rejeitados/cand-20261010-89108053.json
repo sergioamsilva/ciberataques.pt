@@ -1,0 +1,21 @@
+{
+  "confianca_llm": null,
+  "estado": "rejeitado",
+  "extraccao": {},
+  "id": "cand-20261010-89108053",
+  "motivo_rejeicao": "sem incidente: exercício municipal de cibersegurança em Valongo, não um ataque.",
+  "origem": {
+    "chave": "89108053a13ca06f92a5fd605e78530f8afda26f01e7c0d0ce8394f761991eba",
+    "data": "2026-10-06",
+    "fonte": "security-magazine",
+    "publicador": "Security Magazine Portugal",
+    "sha256": "aff65e70ca9cbc4eafb202f24d1a791ec816ad8fdc63d71764309a7223797855",
+    "tipo_fonte": "noticia",
+    "url": "https://www.securitymagazine.pt/2026/10/06/valongo-organizou-primeiro-exercicio-municipal-de-ciberseguranca-e-resposta-a-emergencias-em-portugal/",
+    "url_canonica": "https://www.securitymagazine.pt/2026/10/06/valongo-organizou-primeiro-exercicio-municipal-de-ciberseguranca-e-resposta-a-emergencias-em-portugal"
+  },
+  "rejeitado_em": "2026-10-10",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Valongo organizou primeiro exercício municipal de cibersegurança e resposta a emergências em Portugal",
+  "triado_em": "2026-10-10T09:54:37+00:00"
+}

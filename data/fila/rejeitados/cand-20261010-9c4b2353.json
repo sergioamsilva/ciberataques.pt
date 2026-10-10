@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "blackwater",
+        "texto": "www.ptesm.com foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "blackwater",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-08-24",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "www.ptesm.com",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20261010-9c4b2353",
+  "motivo_rejeicao": "listagem em site de extorsão sem incidente documentado a que se ligar; uma alegação de atacante não sustenta uma entrada (política editorial 3.1)",
+  "origem": {
+    "chave": "9c4b23536f4477da7a5fb9ab4b7d50a4da8f352e671a6e75be2c091aea1152d8",
+    "data": "2026-08-24",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "3d2c5c69a044acfeb19b4da1d944293805f3cf1d7394f9c29dc61c6f3142fcb2",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "www.ptesm.com listada em site de extorsão (blackwater)",
+  "triado_em": "2026-10-10T09:54:37+00:00"
+}

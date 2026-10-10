@@ -38,7 +38,7 @@
     {
       "data": "2022-10-18",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“Efetivamente, fomos alvo de um ataque de ransomware. Ainda estamos a averiguar a totalidade das implicações",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -60,7 +60,7 @@
     {
       "data": "2022-10-18",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "A Universidade da Beira Interior (UBI), na Covilhã, foi vítima de um ataque informático com pedido de resgate, situação que está criar constrangimentos, mas que não pôs em causa as aulas",
       "publicador": "SAPO Tek",
       "sha256": null,
       "tipo": "noticia",

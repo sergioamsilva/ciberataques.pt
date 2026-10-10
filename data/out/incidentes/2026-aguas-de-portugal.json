@@ -42,6 +42,12 @@
       "fonte": 4,
       "texto": "Ao segundo dia após a divulgação, o grupo ainda não recuperou todos os sistemas. O restauro dos sistemas informáticos afetados decorre de forma gradual.",
       "tipo": "divulgacao"
+    },
+    {
+      "data": "2026-08-07",
+      "fonte": 5,
+      "texto": "A ministra do Ambiente e Energia afirma que o ataque ficou contido à parte administrativa, sem chegar a nenhum sistema público de fornecimento de água, e que já estava praticamente resolvido quando se tornou conhecido.",
+      "tipo": "divulgacao"
     }
   ],
   "dados_pessoais": {
@@ -94,7 +100,7 @@
     {
       "data": "2026-08-04",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "A empresa Águas de Portugal confirma que sofreu um ataque informático. A situação foi identificada na última sexta feira, mas o site da empresa ainda continua em baixo",
       "publicador": "RTP",
       "sha256": null,
       "tipo": "noticia",
@@ -118,13 +124,24 @@
       "contem_declaracao_da_entidade": true,
       "data": "2026-08-05",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“não existem evidências de acesso indevido a dados pessoais de clientes ou colaboradores, não tendo sido identificados indícios de acesso, divulgação ou exfiltração não autorizada de dados pessoais",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
       "titulo": "Águas de Portugal ainda não recuperou todos os sistemas após ciberataque \"de elevada complexidade\"",
       "url": "https://observador.pt/2026/08/05/aguas-de-portugal-sofreu-ciberataque-de-elevada-complexidade/",
       "url_arquivo": "http://web.archive.org/web/20260805200803/https://observador.pt/2026/08/05/aguas-de-portugal-sofreu-ciberataque-de-elevada-complexidade/"
+    },
+    {
+      "data": "2026-08-07",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ministra garante que ciberataque à Águas de Portugal não afetou fornecimento de água",
+      "url": "https://eco.sapo.pt/2026/08/07/ministra-garante-que-ciberataque-a-aguas-de-portugal-nao-afetou-fornecimento-de-agua/",
+      "url_arquivo": null
     }
   ],
   "id": "2026-aguas-de-portugal",
@@ -154,9 +171,9 @@
   "resumo": "O grupo Águas de Portugal confirmou a 4 de agosto de 2026 ter sido alvo de um ciberataque de elevada complexidade, ocorrido na sexta-feira anterior, que atingiu os sistemas de informação de todo o grupo e paralisou os canais de serviço e a gestão administrativa. Os sistemas críticos mantiveram-se operacionais e o abastecimento e a qualidade da água ficaram assegurados em todas as empresas do grupo. A recuperação decorre por fases e continuava incompleta ao segundo dia. O grupo declarou não haver evidências de acesso não autorizado a dados pessoais de clientes ou colaboradores. A gestão do incidente decorre em articulação com a Polícia Judiciária e o Centro Nacional de Cibersegurança.",
   "revisao": {
     "curador": "ss",
-    "data": "2026-08-05",
-    "nota": "Incidente em curso à data desta revisão: a recuperação decorria por fases e estava incompleta. A data de início é inferida das fontes, que referem a sexta-feira anterior a 4 de agosto sem a datarem explicitamente, e fica com precisão de semana. O tipo de ataque não foi divulgado, pelo que consta apenas como intrusão. A ausência de evidência de acesso a dados pessoais é declaração do grupo num caso ainda em investigação, e não conclusão de autoridade — o campo fica a false por ser o que a entidade afirma, com a ressalva na nota.",
-    "versao": 3
+    "data": "2026-10-10",
+    "nota": "Incidente em curso à data desta revisão: a recuperação decorria por fases e estava incompleta. A data de início é inferida das fontes, que referem a sexta-feira anterior a 4 de agosto sem a datarem explicitamente, e fica com precisão de semana. O tipo de ataque não foi divulgado, pelo que consta apenas como intrusão. A ausência de evidência de acesso a dados pessoais é declaração do grupo num caso ainda em investigação, e não conclusão de autoridade — o campo fica a false por ser o que a entidade afirma, com a ressalva na nota. Revisão de 2026-10-10: acrescentada a declaração da ministra do Ambiente e Energia de 7 de agosto. Não se encontrou atribuição, reivindicação, pedido de resgate, nem comunicação de reposição completa dos sistemas; a afirmação de que o caso estava praticamente resolvido é governamental e não da entidade, e não basta para dar o caso por encerrado.",
+    "versao": 4
   },
   "setor": "energia_agua",
   "tipos_ataque": [

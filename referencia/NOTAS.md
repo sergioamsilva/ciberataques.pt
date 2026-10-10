@@ -10,14 +10,23 @@ falhou. Não entram no registo enquanto não houver fonte que os sustente.
 
 | Caso | Estado da verificação |
 |---|---|
-| **Altice Portugal / HIVE, agosto de 2022** | Procura em publico.pt, eco.sapo.pt, observador.pt, tek.sapo.pt, dn.pt e jornaldenegocios.pt não devolveu cobertura datada deste incidente. O que aparece é o caso **Altice de abril de 2020** (associado ao CyberTeam, no mesmo período do ataque à EDP) e a condenação do autor em janeiro de 2022. Existe um artigo do Tek sobre uma "aplicação departamental" da Altice, mas sem data no URL. **Reverificar antes de semear, e separar cuidadosamente 2020 de 2022.** |
-| **Altice / Benfica 2020, caso "Zambrius"** | Pista forte e por explorar: autor condenado em janeiro de 2022 a seis anos de prisão por 28 crimes, com referência a acesso a dados de mais de 155 mil clientes. Fonte seria uma **decisão judicial**, o tipo de fonte mais forte de que dispomos. Falta datar os artigos do DN, que não trazem data no URL. Atenção à política editorial: não nomear a pessoa condenada sem confirmar que a decisão é pública e transitada. |
+| **Altice Portugal / HIVE, agosto de 2022** | Procura em publico.pt, eco.sapo.pt, observador.pt, tek.sapo.pt, dn.pt e jornaldenegocios.pt não devolveu cobertura datada deste incidente. O que aparece é o caso **Altice de abril de 2020** (associado ao CyberTeam, no mesmo período do ataque à EDP) e a condenação do autor em janeiro de 2022. Existe um artigo do Tek sobre uma "aplicação departamental" da Altice, mas sem data no URL. **Reverificar antes de semear, e separar cuidadosamente 2020 de 2022.** Atualização 2026-10-10: o artigo do Tek é de **7 de janeiro de 2022** (datePublished da página) e trata de uma alegada fuga por injeção de SQL partilhada no Twitter; a Altice respondeu que "nada de anormal se verifica" e o Tek diz que os dados vinham de uma aplicação periférica de vendas, encriptados. Fonte única e sem confirmação: **não semeado**. Também não é o caso HIVE de agosto. |
+| ~~**Altice / Benfica 2020, caso "Zambrius"**~~ | **RESOLVIDO** a 2026-10-10 em `2020-altice-portugal`: é o mesmo caso do ataque reivindicado pelo CyberTeam a 16 de abril de 2020. A decisão de janeiro de 2022 estava em recurso em 2023, pelo que o condenado não é nomeado nem por alcunha. Texto original: Pista forte e por explorar: autor condenado em janeiro de 2022 a seis anos de prisão por 28 crimes, com referência a acesso a dados de mais de 155 mil clientes. Fonte seria uma **decisão judicial**, o tipo de fonte mais forte de que dispomos. Falta datar os artigos do DN, que não trazem data no URL. Atenção à política editorial: não nomear a pessoa condenada sem confirmar que a decisão é pública e transitada. |
 | **Grupo Cofina, fevereiro de 2022** | Os próprios títulos usam "suspeita", "eventual" e "alegado". O Lapsus$ destacou uma publicação do Correio da Manhã no seu canal, mas **não reivindicou**. A ocorrência de ataque nunca foi confirmada. Se for semeado, tem de ser com estado `noticiado_por_uma_fonte` ou inferior, e a incerteza tem de estar no resumo. |
 | **Centro Hospitalar de Setúbal, 2021** | A informação provém de agregadores e referências secundárias, não de comunicado nem de cobertura nacional de referência. **Não semear sem fonte primária.** |
 | ~~**Millennium BCP, DDoS 2022**~~ | **RESOLVIDO.** Data confirmada: 3 de outubro de 2022, a partir das 14h. Registado em `2022-millennium-bcp`. |
 | **Câmara Municipal de Setúbal** | A coima de 170.000 € da CNPD (novembro de 2022) é por tratamento de dados de refugiados ucranianos. **Não é um ciberataque.** Se entrar no site, entra como deliberação regulatória, nunca como incidente. |
 | **Auchan, novembro de 2024** | A fuga é atribuída à casa-mãe francesa. O impacto em Portugal não está confirmado. |
 | **Nabeiro/Delta, EMEL, ANA, Fidelidade, DECO, Trivalor, ONI, ISCTE, IST, Novo Banco, Banco de Portugal, Jerónimo Martins** | Procura dedicada não encontrou qualquer incidente. Ausência de fonte não é prova de que nada aconteceu, mas também não é registo. |
+| **Câmara Municipal de Lisboa, março de 2017** | Só uma frase repetida em compilações de 2022 (DNoticias, Executive Digest): a câmara disse ter sido "alvo de ciberataques" por vírus ou tentativas de acesso. Sem data de ataque, sem impacto descrito, sem fonte de 2017 localizada. Não semeado. (verificado 2026-10-10) |
+| **Claranet, maio de 2017** | Não foi atacada: falou à Lusa como empresa de segurança, a comentar o WannaCry. |
+| **Assembleia da República, janeiro de 2022 (Lapsus$)** | O parlamento declarou não haver "qualquer evidência" de que o sítio tenha sido atacado. Seria `desmentido`, não incidente; não semeado. |
+| **Conforama, novembro de 2022** | Reivindicação do ALPHV/BlackCat contra a casa-mãe, noticiada pelo Le Parisien. Nenhuma fonte confirma impacto na operação portuguesa nem declaração da empresa. Mesmo caso que a Auchan. |
+| **Prosegur (2019), MediaMarkt (2021), Verlingue/Adelaïde (2021), Bimby/Vorwerk (2025), Louis Vuitton e Mango (2025), Revolut (2022), Lyca Mobile (2023)** | Entidades estrangeiras. Algumas notícias referem clientes portugueses, mas não há incidente numa entidade portuguesa. Fora do âmbito. |
+| **Vieira de Almeida, 2017–2018** | A PJ disse em julgamento (setembro de 2020) que a sociedade foi visada, e a VdA tinha admitido em janeiro de 2020 "uma situação de hacking ocorrida há mais de dois anos". Sem data, sem descrição do incidente, e o processo autónomo estava em segredo de justiça. Pista para reverificar quando houver decisão. |
+| **fogos.pt, julho–agosto de 2025** | Dois ataques DDoS de cinco e sete minutos, mitigados sem impacto. A única fonte é a Cloudflare, que os mitigou e os usa como caso comercial (política 2.1), reproduzida pelo Tek. Projeto cívico, não organização. Não semeado. |
+| **Perfumes & Companhia, Agriloja, Espaço Casa, Zonesoft, NewHotel, Armis, Inforlândia** (em `alegacoes-retiradas/`) | Procurada fonte independente a 2026-10-10: só trackers e agregadores que repetem a reivindicação (ransomware.live, Breachsense, Dexpose). Continuam retirados. |
+| **Banca e seguros, 2017–2024** | Procura dedicada (CGD, Montepio, Crédito Agrícola, Ageas, Tranquilidade, Lusitania, Allianz, Cofidis, Unicre, Banco CTT, Bankinter, EuroBic, DDoS do NoName057(16)) só devolveu phishing contra clientes, que não é ataque à entidade. O único caso novo do setor é `2025-generali-tranquilidade`. |
 
 ## Casos que NÃO são incidentes próprios
 
@@ -297,3 +306,31 @@ e por trimestre que hoje fica em nota de texto e não em campo. Estruturá-la da
 denominador por setor — poder dizer, na página da saúde, quantos incidentes o CERT.PT
 registou nesse setor nesse ano, contra os que aqui estão. É trabalho de leitura à mão
 dos PDF, como o resto do cncs.yaml.
+
+## Listagens de agosto a outubro de 2026 sem fonte independente
+
+Verificadas a 2026-10-10, uma a uma, em pt-PT e em inglês e nos sítios das próprias
+entidades. Em nenhuma havia notícia, comunicado ou declaração de autoridade: só
+trackers que repetem a reivindicação. Ficam rejeitadas pela secção 3.1, e voltam a
+entrar no dia em que uma fonte independente aparecer.
+
+| Listagem | Data, grupo | O que se apurou |
+|---|---|---|
+| Grupo Starfoods | 2026-08-12, majinahanashi | Grupo de restauração português. Só trackers. |
+| hbpro.pt | 2026-09-08, safepay | Integrador de TI de Alfragide. Só trackers. |
+| Ligue-se Grupo | 2026-09-26, thegentlemen | Grupo do Funchal que opera lojas Chip7. Provavelmente o mesmo caso que a listagem Chip7. Só trackers. |
+| Chip7 | 2026-09-07, thegentlemen | Rede de lojas de informática. Só trackers. |
+| "Directorate-General for Education" | 2026-08-28, Panzer | **Não é seguro que seja a DGE.** O domínio indicado pelos trackers é o da Direção-Geral de Estatísticas da Educação e Ciência (DGEEC); um terceiro analisou o da DGE. Nenhum comunicado de nenhuma das duas nem do ministério. Não atribuir a nenhuma sem fonte. |
+| ptesm.com | 2026-08-24, blackwater | **Fora de âmbito, muito provavelmente.** O tracker identifica uma empresa oleoquímica indonésia; o "PT" é a sigla de sociedade anónima indonésia, não o país. |
+| Brancoptica | 2026-09-26, thegentlemen | Cadeia de óticas do Cartaxo. Só trackers. |
+| Tomix / Grupo JOPER | 2026-09-23, spacebears | Fabricante de equipamento agrícola de Torres Vedras. O sítio tinha um aviso de encerramento temporário de 7 de agosto, anterior à listagem e sem motivo indicado: **não o ligar ao ataque.** |
+
+Duas destas listagens tiveram eco num sítio de tecnologia (TugaTech, sobre a DGEEC a
+28 de agosto e sobre a Ligue-se a 26 de setembro). As duas peças só relatam a
+reivindicação e dizem expressamente que não há confirmação: **não são fonte
+independente**, pela regra de que repetir o atacante não o corrobora. A listagem
+`icnavais.com` (LockBit5, 22 de agosto), que os trackers põem em Portugal, é de um
+estaleiro brasileiro: fora de âmbito.
+
+No caso `2026-sirp`, um semanário identificou o prestador atacado citando fonte não
+identificada. Não o nomeamos enquanto o SIRP ou a própria empresa não o confirmarem.

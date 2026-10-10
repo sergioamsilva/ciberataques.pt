@@ -1,0 +1,87 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Não há atribuição pública nem reivindicação conhecida nas fontes consultadas."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2020-12-02",
+      "fonte": 0,
+      "texto": "Em comunicado à CMVM, a Inapa informa que está a ser alvo de um ataque informático, que desligou os servidores e que foi confirmada uma violação de dados.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "A empresa confirmou uma violação de dados, sem precisar se envolvia dados pessoais nem a sua extensão.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "divulgacao": "2020-12-02",
+    "inicio": "2020-12-02",
+    "precisao": "semana"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "inapa"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "empresa-cotada",
+    "distribuicao"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2020-12-02",
+      "estado_ligacao": "viva",
+      "excerto": "A produtora de papel de impressão adiantou que, apesar dos “sistemas e informação críticos” terem sido preservados, foi confirmada uma violação de dados, cuja extensão ainda não é possível avaliar.",
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Inapa alvo de ataque informático com violação de dados",
+      "url": "https://observador.pt/2020/12/02/inapa-alvo-de-ataque-informatico-com-violacao-de-dados/",
+      "url_arquivo": "http://web.archive.org/web/20230924140535/https://observador.pt/2020/12/02/inapa-alvo-de-ataque-informatico-com-violacao-de-dados/",
+      "verificado_em": "2026-10-10"
+    }
+  ],
+  "id": "2020-inapa",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "sistemas informáticos corporativos",
+      "servidores, desligados temporariamente"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A 2 de dezembro de 2020, a Inapa comunicou ao mercado que estava a ser alvo de um ataque aos seus sistemas informáticos corporativos. A empresa isolou o ataque e desligou temporariamente os servidores para proteger o negócio, e embora os sistemas e a informação críticos tenham sido preservados, confirmou uma violação de dados cuja extensão ainda não era possível avaliar. Declarou estar a articular a sua ação com as autoridades competentes.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "Fonte única, mas reproduz o comunicado da própria empresa à CMVM, que não é recolhível diretamente (ver as fontes inviáveis em NOTAS.md). A notícia da Lusa chama-lhe produtora de papel; a Inapa é distribuidora, e é por isso que fica em retalho e distribuição. Precisão de semana porque o comunicado diz que o ataque estava em curso, sem dizer quando começou.",
+    "versao": 1
+  },
+  "setor": "retalho",
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
+  "titulo": "Ataque informático à Inapa"
+}

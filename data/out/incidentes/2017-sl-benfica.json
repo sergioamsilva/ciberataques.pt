@@ -3,7 +3,7 @@
     "atribuicao_por": "autoridade",
     "confianca": "media",
     "grupo": null,
-    "nota": "A autoria é matéria do processo judicial conhecido por Football Leaks, cujo julgamento relativo a estes factos decorria em 2025. Não identificamos o arguido: a política editorial não nomeia pessoas singulares enquanto não houver condenação transitada quanto aos factos em causa."
+    "nota": "A autoria é matéria do processo judicial conhecido por Football Leaks. Não identificamos o arguido: a política editorial não nomeia condenados nem alegados atacantes."
   },
   "correcoes": [],
   "cronologia": [
@@ -56,7 +56,7 @@
       "contem_declaracao_de_autoridade": true,
       "data": "2025-02-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "O director de tecnologia do Benfica em 2017 confirmou nesta quarta-feira, durante o julgamento do criador do Football Leaks, que o sistema informático do clube foi alvo de acessos indevidos",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -68,7 +68,7 @@
       "contem_declaracao_de_autoridade": true,
       "data": "2025-02-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "O responsável de tecnologia confirmou o acesso indevido a contas profissionais de várias figuras do Benfica",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -79,7 +79,7 @@
     {
       "data": "2025-02-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“Identificámos o acesso a diversos ficheiros internos de dados, bem como várias campanhas de phishing“",
       "publicador": "Renascença",
       "sha256": null,
       "tipo": "noticia",

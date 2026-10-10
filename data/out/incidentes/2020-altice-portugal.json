@@ -1,0 +1,165 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "CyberTeam",
+    "nota": "O grupo reivindicou o ataque nas redes sociais. O suspeito detido pela PJ foi condenado em primeira instância, com a MEO entre as vítimas. Não é nomeado: a política editorial não nomeia condenados."
+  },
+  "consequencias_regulatorias": [
+    {
+      "autoridade": "Tribunal de Lisboa",
+      "data": "2022-01-11",
+      "descricao": "Condenação em primeira instância a seis anos de prisão por crimes de acesso ilegítimo, dano informático, sabotagem e acesso indevido, com a MEO entre as vítimas.",
+      "fonte": 3,
+      "processo": null,
+      "tipo": "decisao_judicial",
+      "valor_eur": null
+    }
+  ],
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2020-04-16",
+      "fonte": 0,
+      "texto": "Antes das 7h, o grupo CyberTeam anuncia nas redes sociais ter atacado a antiga Portugal Telecom.",
+      "tipo": "reivindicacao"
+    },
+    {
+      "data": "2020-04-16",
+      "fonte": 1,
+      "texto": "A Altice Portugal confirma o ataque, afirma que as consequências foram praticamente nulas e que está a comunicar o caso às entidades competentes.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2020-04-29",
+      "fonte": 2,
+      "texto": "A Polícia Judiciária detém um suspeito de ataques informáticos a clubes, associações de árbitros e empresas privadas, incluindo a Altice.",
+      "tipo": "regulador"
+    },
+    {
+      "data": "2022-01-11",
+      "fonte": 3,
+      "texto": "O Tribunal de Lisboa condena o arguido em primeira instância a seis anos de prisão; entre as vítimas está a MEO.",
+      "tipo": "judicial"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "A empresa negou exposição de dados de clientes; a notícia da condenação refere acesso aos dados de 154 mil clientes. Ver as versões em confronto.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "divulgacao": "2020-04-16",
+    "inicio": "2020-04-16",
+    "precisao": "dia"
+  },
+  "disputas": [
+    {
+      "afirmacao": "O autor do ataque teve acesso aos dados pessoais de 154 mil clientes da MEO.",
+      "contestado_por": "Altice Portugal",
+      "fonte_afirmacao": 3,
+      "fonte_contestacao": 0,
+      "nota": "Em abril de 2020, a Altice declarou que as consequências foram nulas e que o grupo não teve sucesso. A fonte da condenação não reproduz o que a sentença deu como provado quanto a este ponto.",
+      "segundo": "Notícia da condenação em primeira instância (Postal, com base no Jornal de Notícias)"
+    }
+  ],
+  "entidades_afetadas": [
+    "altice-portugal"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "telecomunicacoes",
+    "decisao-judicial",
+    "versoes-divergentes"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2020-04-16",
+      "estado_ligacao": "viva",
+      "excerto": "A confirmação foi dada ao Observador pela própria empresa, que garante que “as consequências foram completamente nulas” e que não terá havido exposição pública dos dados dos clientes",
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "MP investiga ataque informático à EDP. Altice também foi alvo, mas diz que as consequências \"foram nulas\"",
+      "url": "https://observador.pt/2020/04/16/altice-alvo-de-ataque-cibernetico-empresa-diz-que-consequencias-foram-nulas/",
+      "url_arquivo": "http://web.archive.org/web/20250721233831/https://observador.pt/2020/04/16/altice-alvo-de-ataque-cibernetico-empresa-diz-que-consequencias-foram-nulas/",
+      "verificado_em": "2026-10-10"
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2020-04-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Altice alvo de ciberataque garante que consequências foram “praticamente nulas”",
+      "url": "https://eco.sapo.pt/2020/04/16/altice-alvo-de-ciberataque-garante-que-consequencias-foram-praticamente-nulas/",
+      "url_arquivo": "http://web.archive.org/web/20260430052523/https://eco.sapo.pt/2020/04/16/altice-alvo-de-ciberataque-garante-que-consequencias-foram-praticamente-nulas/",
+      "verificado_em": "2026-10-10"
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2020-04-30",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "DNoticias.pt",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "‘Hacker’ de 19 anos detido pela PJ colocado em prisão preventiva",
+      "url": "https://www.dnoticias.pt/2020/4/30/54427-hacker-de-19-anos-detido-pela-pj-colocado-em-prisao-preventiva/",
+      "url_arquivo": "http://web.archive.org/web/20211117190615/https://www.dnoticias.pt/2020/4/30/54427-hacker-de-19-anos-detido-pela-pj-colocado-em-prisao-preventiva",
+      "verificado_em": "2026-10-10"
+    },
+    {
+      "contem_declaracao_de_autoridade": true,
+      "data": "2022-01-12",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Postal do Algarve",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Pirata informático do Benfica e da Meo condenado a seis anos de prisão",
+      "url": "https://postal.pt/nacional/pirata-informatico-do-benfica-e-da-meo-condenado-a-seis-anos-de-prisao/",
+      "url_arquivo": null,
+      "verificado_em": "2026-10-10"
+    }
+  ],
+  "id": "2020-altice-portugal",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "plataforma da área residencial"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2020-edp"
+  ],
+  "resumo": "A 16 de abril de 2020, três dias depois do ataque à EDP, o grupo CyberTeam anunciou ter atacado a Altice Portugal. A empresa confirmou o ataque, disse que o grupo tentou aceder aos dados de uma plataforma da área residencial sem sucesso, que as consequências foram praticamente nulas, e que estava a comunicar o caso às entidades competentes. A 29 de abril a Polícia Judiciária deteve um suspeito de ataques a clubes, associações e empresas, incluindo a Altice. Em janeiro de 2022, o Tribunal de Lisboa condenou-o em primeira instância a seis anos de prisão, e segundo a mesma notícia o acesso aos sistemas da MEO deu-lhe acesso aos dados pessoais de 154 mil clientes, o que contradiz a versão inicial da empresa.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "Resolve a pista 'Altice / Benfica 2020' de referencia/NOTAS.md: o ataque reivindicado pelo CyberTeam em abril de 2020 e o processo que terminou na condenação de janeiro de 2022 são o mesmo caso. Distinto do alegado ataque HIVE de 2022, que continua por confirmar. Não se usa como fonte um especial do Observador de 2023 com mais detalhe (aplicação de vendas porta-a-porta afetada, mais de 155 mil clientes) porque o título identifica o condenado por alcunha, com a decisão ainda em recurso. A data da decisão é a 'terça-feira' referida na notícia de 12 de janeiro.",
+    "versao": 1
+  },
+  "setor": "telecomunicacoes",
+  "tipos_ataque": [
+    "intrusao"
+  ],
+  "titulo": "Ataque informático à Altice Portugal (MEO)"
+}

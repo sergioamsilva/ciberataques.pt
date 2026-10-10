@@ -1,0 +1,106 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Não há atribuição pública nem reivindicação conhecida nas fontes consultadas."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2020-12-18",
+      "fonte": 0,
+      "texto": "Os sistemas da empresa são alvo de um ataque informático, e os servidores são desligados para proteger as plataformas.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2020-12-20",
+      "fonte": 0,
+      "texto": "Fonte oficial confirma o ataque e afirma que as aplicações críticas estão repostas e os complexos fabris laboram normalmente.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre dados pessoais. A empresa declarou que a informação crítica foi preservada.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "divulgacao": "2020-12-20",
+    "inicio": "2020-12-18",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "navigator"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "empresa-cotada",
+    "industria-papel"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2020-12-20",
+      "estado_ligacao": "viva",
+      "excerto": "A The Navigator Company, com fábrica sediada em Setúbal, foi alvo de um ataque informático aos seus sistemas no final da passada semana, confirmou fonte oficial em resposta a O SETUBALENSE.",
+      "publicador": "O Setubalense",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "The Navigator Company alvo de ataque informático aos seus sistemas",
+      "url": "https://osetubalense.com/local/setubal/the-navigator-company-alvo-de-ataque-informatico-aos-seus-sistemas/",
+      "url_arquivo": "http://web.archive.org/web/20250118165634/https://osetubalense.com/local/setubal/the-navigator-company-alvo-de-ataque-informatico-aos-seus-sistemas/",
+      "verificado_em": "2026-10-10"
+    },
+    {
+      "data": "2026-04-16",
+      "estado_ligacao": "viva",
+      "excerto": "A Navigator já tinha sido alvo de um ataque semelhante em 2020, num ano em que também a EDP foi atingida por um ciberataque com divulgação de dados.",
+      "publicador": "Jornal de Negócios",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático expõe dados da Navigator na \"darkweb\"",
+      "url": "https://www.jornaldenegocios.pt/empresas/industria/detalhe/ataque-informatico-expoe-dados-da-navigator-na-darkweb",
+      "url_arquivo": "http://web.archive.org/web/20260417051258/https://www.jornaldenegocios.pt/empresas/industria/detalhe/ataque-informatico-expoe-dados-da-navigator-na-darkweb",
+      "verificado_em": "2026-10-10"
+    }
+  ],
+  "id": "2020-navigator",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "servidores e plataformas informáticas, desligados preventivamente"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2026-navigator"
+  ],
+  "resumo": "A 18 de dezembro de 2020, a The Navigator Company foi alvo de um ataque informático aos seus sistemas, confirmado por fonte oficial ao jornal O Setubalense. A empresa desligou de imediato os servidores para proteger a integridade das plataformas, e afirmou que toda a infraestrutura e a informação crítica foram preservadas, que as aplicações críticas estavam repostas e que os complexos fabris do grupo laboravam normalmente. Em 2026, ao noticiar um novo ataque, o Jornal de Negócios recordou que a empresa já tinha sido alvo de um ataque semelhante em 2020.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "Encontrado ao corrigir a ficha 2026-navigator, onde o artigo de O Setubalense estava citado por engano: a página traz data de publicação de 20 de dezembro de 2020 e já estava arquivada em janeiro de 2025. A 'passada sexta-feira' do artigo é 18 de dezembro. A segunda fonte só corrobora a existência de um ataque em 2020, sem detalhe.",
+    "versao": 1
+  },
+  "setor": "industria",
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
+  "titulo": "Ataque informático aos sistemas da The Navigator Company"
+}

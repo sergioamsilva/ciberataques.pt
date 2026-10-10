@@ -58,7 +58,7 @@
     {
       "data": "2017-05-12",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "A Polícia Judiciária, que está a investigar a situação, confirmou a existência de “ataques informáticos em larga escala em várias empresas portuguesas, sobretudo em operadores de comunicação”.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -80,7 +80,7 @@
     {
       "data": "2017-05-13",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "o WannaCry tem a capacidade de se mover dentro de uma rede por si mesmo, sem ser preciso nenhuma instrução específica para se expandir.",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",

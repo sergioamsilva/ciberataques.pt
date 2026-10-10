@@ -57,7 +57,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2023-02-13",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "foram \"desde logo, e como medida preventiva, interrompidos todos os serviços que pudessem ter sido afectados\"",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -68,7 +68,7 @@
     {
       "data": "2023-02-13",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“Informamos que o Grupo Visabeira foi vítima de um ciberataque aos seus sistemas informáticos, detetado hoje, por volta das 7h30 da manhã que resultou na perturbação dos nossos serviços“",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",

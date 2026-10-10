@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "thegentlemen",
+        "texto": "Brancoptica foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "thegentlemen",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-09-26",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Brancoptica",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20261010-ccb3fc93",
+  "motivo_rejeicao": "listagem em site de extorsão sem incidente documentado a que se ligar; uma alegação de atacante não sustenta uma entrada (política editorial 3.1)",
+  "origem": {
+    "chave": "ccb3fc93e69f9e5d2b6e80da516cf72c37f60f5770eeb151bd0ad368c58543aa",
+    "data": "2026-09-26",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "dd11926920e208735d2d076e7e601b3b1edb4ffd24fdec9e82c89778c2b17afc",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Brancoptica listada em site de extorsão (thegentlemen)",
+  "triado_em": "2026-10-10T09:54:37+00:00"
+}

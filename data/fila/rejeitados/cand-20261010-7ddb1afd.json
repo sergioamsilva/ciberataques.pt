@@ -1,0 +1,21 @@
+{
+  "confianca_llm": null,
+  "estado": "rejeitado",
+  "extraccao": {},
+  "id": "cand-20261010-7ddb1afd",
+  "motivo_rejeicao": "sem incidente: iniciativa europeia de reforço da cibersegurança na saúde.",
+  "origem": {
+    "chave": "7ddb1afd6979cf97e35723860c31277b1aa508fb90f23279a96592d444c4a1f0",
+    "data": "2026-09-17",
+    "fonte": "security-magazine",
+    "publicador": "Security Magazine Portugal",
+    "sha256": "231d734f35482e944da1e68c4106553770750fb8a90be53c9e2688b32359e85d",
+    "tipo_fonte": "noticia",
+    "url": "https://www.securitymagazine.pt/2026/09/17/iniciativa-europeia-medicyss-quer-reforcar-ciberseguranca-no-sector-da-saude/",
+    "url_canonica": "https://www.securitymagazine.pt/2026/09/17/iniciativa-europeia-medicyss-quer-reforcar-ciberseguranca-no-sector-da-saude"
+  },
+  "rejeitado_em": "2026-10-10",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Iniciativa europeia MEDICYSS quer reforçar cibersegurança no sector da saúde",
+  "triado_em": "2026-10-10T09:54:37+00:00"
+}

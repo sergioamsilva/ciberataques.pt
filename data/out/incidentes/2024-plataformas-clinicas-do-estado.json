@@ -21,13 +21,13 @@
     },
     {
       "data": "2025-07-31",
-      "fonte": 1,
+      "fonte": 0,
       "texto": "Três pessoas com idades entre os dezanove e os vinte anos ficam em prisão preventiva, num total de dezoito suspeitos identificados.",
       "tipo": "regulador"
     },
     {
       "data": "2025-07-31",
-      "fonte": 1,
+      "fonte": 0,
       "texto": "O Ministério Público imputa crimes de burla qualificada, falsidade informática, extorsão, ameaças e uso indevido de dados pessoais.",
       "tipo": "regulador"
     }
@@ -63,21 +63,10 @@
   ],
   "fontes": [
     {
-      "data": "2025-07-31",
-      "estado_ligacao": "viva",
-      "excerto": null,
-      "publicador": "Pplware",
-      "sha256": null,
-      "tipo": "noticia",
-      "titulo": "Hackers atacaram o Ministério da Saúde e até passaram certidões de óbito",
-      "url": "https://pplware.sapo.pt/internet/hackers-atacaram-o-ministerio-da-saude-e-ate-passaram-certidoes-de-obito/",
-      "url_arquivo": null
-    },
-    {
       "contem_declaracao_de_autoridade": true,
       "data": "2025-07-31",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Um grupo de hackers conseguiu obter acesso ilegal a plataformas internas, usando credenciais roubadas de médicos para emitir certidões de óbito e receitas médicas falsas.",
       "publicador": "Pplware",
       "sha256": null,
       "tipo": "noticia",

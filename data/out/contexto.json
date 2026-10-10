@@ -231,23 +231,23 @@
     },
     "2017": {
       "cert_pt": 501,
-      "neste_registo": 2
+      "neste_registo": 3
     },
     "2018": {
       "cert_pt": 599,
-      "neste_registo": 3
+      "neste_registo": 5
     },
     "2019": {
       "cert_pt": 754,
-      "neste_registo": 2
+      "neste_registo": 3
     },
     "2020": {
       "cert_pt": 1418,
-      "neste_registo": 1
+      "neste_registo": 6
     },
     "2021": {
       "cert_pt": 1781,
-      "neste_registo": 4
+      "neste_registo": 5
     },
     "2022": {
       "cert_pt": 2023,
@@ -263,7 +263,7 @@
     },
     "2025": {
       "cert_pt": 3864,
-      "neste_registo": 4
+      "neste_registo": 6
     }
   },
   "fonte": {

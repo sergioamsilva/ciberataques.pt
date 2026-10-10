@@ -101,7 +101,7 @@
     {
       "data": "2022-08-31",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Perante a alegação, a TAP afirma que “continua a adoptar medidas de contenção e remediação”.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -112,7 +112,7 @@
     {
       "data": "2022-09-13",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Questionada pelo PÚBLICO, a TAP reconhece que não foi possível evitar que alguns dados caíssem na mão dos piratas informáticos no ataque informático que ocorreu em Agosto.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -124,7 +124,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2022-09-13",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "A TAP está a alertar os clientes afectados pelo ataque informático à companhia, cujos dados foram publicados, de que esta divulgação “pode aumentar o risco do seu uso ilegítimo”",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -135,7 +135,7 @@
     {
       "data": "2022-09-20",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“Não negociámos nem negociaremos com estas pessoas. Continuamos a manter a posição de não interagir com hackers de forma alguma.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -158,7 +158,7 @@
     {
       "data": "2022-09-01",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "TAP was the target of a cyber-attack, now blocked. Operational integrity is guaranteed. No facts have been found that allow us to conclude that there has been improper access to customer data.",
       "publicador": "Security Affairs",
       "sha256": null,
       "tipo": "noticia",

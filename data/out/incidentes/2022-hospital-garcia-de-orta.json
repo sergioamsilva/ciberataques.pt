@@ -69,7 +69,7 @@
     {
       "data": "2022-04-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "O Hospital Garcia de Orta, em Almada, foi alvo de um ataque informático, avançou a RTP. A situação foi igualmente confirmada ao PÚBLICO pelo gabinete de imprensa da unidade hospitalar.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -92,7 +92,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2022-04-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Em comunicado enviado às redações, o Hospital Garcia de Orta assegurou esta terça-feira feira à noite que foi mantida “praticamente toda a atividade clínica”, com exceção das consultas externas.",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -103,7 +103,7 @@
     {
       "data": "2022-05-03",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "O hospital de Almada continua a funcionar em situação de contingência uma semana depois de ter sido alvo de um ataque informático",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -114,7 +114,7 @@
     {
       "data": "2022-05-16",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "O Sindicato dos Médicos da Zona Sul alertou esta segunda-feira que o ataque informático ao hospital de Almada, em Abril, está a colocar em risco os cuidados de saúde aos utentes",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -125,7 +125,7 @@
     {
       "data": "2022-05-31",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "há uma evolução “dia após dia” na recuperação do normal funcionamento dos serviços farmacêuticos do Hospital de Almada, um mês depois do ataque informático.",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -137,7 +137,7 @@
       "contem_declaracao_de_autoridade": true,
       "data": "2023-01-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Neste rol incluiu-se o ataque de que foi alvo o Hospital Garcia da Orta, em Almada, em Abril do ano passado, e a rede de laboratórios Germano de Sousa, em Fevereiro.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",

@@ -1,0 +1,21 @@
+{
+  "confianca_llm": null,
+  "estado": "rejeitado",
+  "extraccao": {},
+  "id": "cand-20261010-97e899eb",
+  "motivo_rejeicao": "fora de âmbito: suspeito de liderar o grupo KillSec, sem vítima portuguesa identificada; não nomeamos alegados atacantes.",
+  "origem": {
+    "chave": "97e899ebf117c968a1094aa62685b6294b0825b35fdf16e6fa2e13504e0b2b0d",
+    "data": "2026-10-02",
+    "fonte": "security-magazine",
+    "publicador": "Security Magazine Portugal",
+    "sha256": "606aa4603e46248354be98d225752fb830a0b1c00022797eff841c35c751dcaa",
+    "tipo_fonte": "noticia",
+    "url": "https://www.securitymagazine.pt/2026/10/02/adolescente-e-suspeito-de-liderar-o-grupo-de-ransomware-killsec/",
+    "url_canonica": "https://www.securitymagazine.pt/2026/10/02/adolescente-e-suspeito-de-liderar-o-grupo-de-ransomware-killsec"
+  },
+  "rejeitado_em": "2026-10-10",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Adolescente é suspeito de liderar o grupo de ransomware KillSec",
+  "triado_em": "2026-10-10T09:54:37+00:00"
+}

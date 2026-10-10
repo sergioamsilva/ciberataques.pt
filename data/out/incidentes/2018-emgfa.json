@@ -1,0 +1,107 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "O EMGFA não atribuiu o ataque a nenhuma organização ou Estado e designou o autor como uma ameaça persistente avançada. O Observador descreve-o como muito semelhante ao ataque sofrido pelo parlamento alemão."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2018-11-01",
+      "fonte": 0,
+      "texto": "A rede de correio eletrónico administrativo do EMGFA é alvo de um ataque, com exfiltração de cerca de 3,5 GB de mensagens.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2019-04-17",
+      "fonte": 1,
+      "texto": "O porta-voz das Forças Armadas confirma à Lusa o ataque, classifica-o como o mais complexo e grave até ao momento e garante que não houve informação sensível afetada.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Foram exfiltradas mensagens da rede administrativa. Não é público se continham dados pessoais.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "divulgacao": "2019-04-17",
+    "inicio": "2018-11-01",
+    "precisao": "mes"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "emgfa"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "defesa",
+    "divulgacao-tardia"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2019-04-17",
+      "estado_ligacao": "viva",
+      "excerto": "Os piratas acederam a 3,5Gb de informação de emails da rede informática onde não circula informação classificada, garante o EMGFA.",
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Forças Armadas foram alvo de um ataque informático",
+      "url": "https://observador.pt/2019/04/17/forcas-armadas-foram-alvo-de-um-ataque-informatico/",
+      "url_arquivo": "http://web.archive.org/web/20250724000351/https://observador.pt/2019/04/17/forcas-armadas-foram-alvo-de-um-ataque-informatico/",
+      "verificado_em": "2026-10-10"
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2019-04-17",
+      "estado_ligacao": "viva",
+      "excerto": "O ataque informático contra os sistemas de Defesa em novembro foi \"o mais complexo e grave até ao momento\", mas a resposta foi eficaz e \"não há informação sensível afetada\"",
+      "publicador": "Correio da Manhã",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático às Forças Armadas foi o mais grave mas não afetou informação sensível",
+      "url": "https://www.cmjornal.pt/portugal/detalhe/ataque-informatico-as-forcas-armadas-foi-o-mais-grave-mas-nao-afetou-informacao-sensivel",
+      "url_arquivo": "http://web.archive.org/web/20191023031904/https://www.cmjornal.pt/portugal/detalhe/ataque-informatico-as-forcas-armadas-foi-o-mais-grave-mas-nao-afetou-informacao-sensivel",
+      "verificado_em": "2026-10-10"
+    }
+  ],
+  "id": "2018-emgfa",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "rede de correio eletrónico administrativo do EMGFA"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2022-emgfa"
+  ],
+  "resumo": "Em novembro de 2018, a rede de correio eletrónico administrativo usada por militares e funcionários civis do Estado-Maior-General das Forças Armadas foi alvo de um ataque informático, com a exfiltração de cerca de 3,5 GB de mensagens. O caso só se tornou público em abril de 2019, quando o chefe do Estado-Maior-General o confirmou na RTP. O porta-voz classificou-o como o ataque mais complexo e grave até então, garantiu que a rede classificada não foi atingida e que não houve informação sensível afetada, e recusou atribuí-lo a qualquer organização ou Estado.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "Distinto do incidente de 2022 com documentos da NATO, que tem ficha própria. Divulgado cinco meses depois dos factos. A data de divulgação fica por preencher porque a emissão da RTP em que o caso foi confirmado não está datada nas fontes.",
+    "versao": 1
+  },
+  "setor": "justica_defesa",
+  "tipos_ataque": [
+    "intrusao",
+    "exfiltracao_dados"
+  ],
+  "titulo": "Exfiltração de correio eletrónico do Estado-Maior-General das Forças Armadas"
+}

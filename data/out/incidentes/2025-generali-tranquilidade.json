@@ -1,0 +1,124 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Não há atribuição pública nem reivindicação conhecida nas fontes consultadas."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2025-06-20",
+      "fonte": 2,
+      "texto": "A seguradora é alvo de um ataque informático, controlado no próprio dia segundo a empresa.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2025-06-24",
+      "fonte": 1,
+      "texto": "É noticiada a mensagem enviada aos clientes afetados, a informar de um acesso não autorizado aos seus dados.",
+      "tipo": "divulgacao"
+    },
+    {
+      "data": "2025-06-25",
+      "fonte": 0,
+      "texto": "A Generali Tranquilidade publica uma nota informativa sobre o acesso não autorizado e recomenda atenção a tentativas de phishing.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": [
+      "identificacao",
+      "contacto",
+      "fiscais"
+    ],
+    "nota": "Nome, número de contribuinte, contactos e data de nascimento, segundo a empresa. O número de clientes afetados não foi declarado.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "divulgacao": "2025-06-24",
+    "inicio": "2025-06-20",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "generali-tranquilidade"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "seguros",
+    "dados-de-clientes"
+  ],
+  "fontes": [
+    {
+      "data": "2025-06-25",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Generali Tranquilidade",
+      "sha256": null,
+      "tipo": "comunicado",
+      "titulo": "Nota informativa sobre segurança e proteção de dados",
+      "url": "https://www.generalitranquilidade.pt/generali-tranquilidade/sala-de-imprensa/press-release/2025/nota-informativa-sobre-seguranca-e-protecao-de-dados",
+      "url_arquivo": null,
+      "verificado_em": "2026-10-10"
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2025-06-24",
+      "estado_ligacao": "viva",
+      "excerto": "Em mensagem enviada aos segurados, a empresa informa que os dados expostos incluem nome, número de contribuinte, contactos e data de nascimento.",
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Dados de clientes da Generali Tranquilidade comprometidos em ciberataque",
+      "url": "https://www.publico.pt/2025/06/24/tecnologia/noticia/dados-clientes-generali-tranquilidade-comprometidos-ciberataque-2137713",
+      "url_arquivo": "http://web.archive.org/web/20260507225634/https://www.publico.pt/2025/06/24/tecnologia/noticia/dados-clientes-generali-tranquilidade-comprometidos-ciberataque-2137713",
+      "verificado_em": "2026-10-10"
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2025-06-24",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Dados de clientes da Generali Tranquilidade expostos em ciberataque",
+      "url": "https://eco.sapo.pt/2025/06/24/dados-de-clientes-da-generali-tranquilidade-expostos-em-ciberataque/",
+      "url_arquivo": "http://web.archive.org/web/20260504094857/https://eco.sapo.pt/2025/06/24/dados-de-clientes-da-generali-tranquilidade-expostos-em-ciberataque/",
+      "verificado_em": "2026-10-10"
+    }
+  ],
+  "id": "2025-generali-tranquilidade",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": []
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A 20 de junho de 2025, a seguradora Generali Tranquilidade foi alvo de um ataque informático que resultou em acessos indevidos a dados pessoais de clientes: nome, número de contribuinte, contactos e data de nascimento. A empresa informou os clientes afetados por email, publicou uma nota informativa e declarou que não houve qualquer indício de acesso a dados financeiros, de saúde, documentos pessoais ou palavras-passe. Afirmou ter alertado de imediato as autoridades competentes e ativado o plano de contingência, dando o incidente como controlado no próprio dia.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "Primeira seguradora do registo com incidente próprio. A data da nota informativa é a que a página da empresa indica (25-06-2025). Não foi localizada cópia da nota na Wayback Machine.",
+    "versao": 1
+  },
+  "setor": "banca_seguros",
+  "tipos_ataque": [
+    "intrusao"
+  ],
+  "titulo": "Acesso não autorizado a dados de clientes da Generali Tranquilidade"
+}

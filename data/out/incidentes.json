@@ -5,13 +5,79 @@
       2026
     ],
     "ator": null,
+    "data": "2026-10-06",
+    "entidades_afetadas": [
+      "sirp"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-sirp",
+    "n_fontes": 5,
+    "precisao_data": "desconhecida",
+    "setor": "justica_defesa",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "cadeia_fornecimento",
+      "intrusao",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Dados de candidaturas ao SIRP obtidos em ataque a prestador dos portais públicos"
+  },
+  {
+    "ano": 2026,
+    "anos": [
+      2026
+    ],
+    "ator": null,
+    "data": "2026-09-15",
+    "entidades_afetadas": [
+      "cim-regiao-de-leiria"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-cim-regiao-de-leiria",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "ransomware"
+    ],
+    "titulo": "Ransomware no servidor de correio eletrónico da CIM da Região de Leiria"
+  },
+  {
+    "ano": 2026,
+    "anos": [
+      2026
+    ],
+    "ator": null,
+    "data": "2026-09-14",
+    "entidades_afetadas": [
+      "altice-portugal"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2026-altice-portugal",
+    "n_fontes": 4,
+    "precisao_data": "dia",
+    "setor": "telecomunicacoes",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "ddos",
+      "indisponibilidade"
+    ],
+    "titulo": "Ataque de negação de serviço à rede internacional da MEO"
+  },
+  {
+    "ano": 2026,
+    "anos": [
+      2026
+    ],
+    "ator": null,
     "data": "2026-07-31",
     "entidades_afetadas": [
       "aguas-de-portugal"
     ],
     "estado_confirmacao": "confirmado_pela_entidade",
     "id": "2026-aguas-de-portugal",
-    "n_fontes": 5,
+    "n_fontes": 6,
     "precisao_data": "semana",
     "setor": "energia_agua",
     "tem_disputas": false,
@@ -26,17 +92,18 @@
       2026
     ],
     "ator": null,
-    "data": "2026-07-28",
+    "data": "2026-07-20",
     "entidades_afetadas": [
       "universidade-de-aveiro"
     ],
     "estado_confirmacao": "confirmado_pela_entidade",
     "id": "2026-universidade-de-aveiro",
-    "n_fontes": 6,
+    "n_fontes": 7,
     "precisao_data": "desconhecida",
     "setor": "educacao_investigacao",
     "tem_disputas": false,
     "tipos_ataque": [
+      "ransomware",
       "intrusao",
       "exfiltracao_dados"
     ],
@@ -54,7 +121,7 @@
     ],
     "estado_confirmacao": "confirmado_pela_entidade",
     "id": "2026-metro-mondego",
-    "n_fontes": 6,
+    "n_fontes": 7,
     "precisao_data": "dia",
     "setor": "transportes",
     "tem_disputas": false,
@@ -113,15 +180,15 @@
       2026
     ],
     "ator": null,
-    "data": "2026-05-21",
+    "data": "2026-05-19",
     "entidades_afetadas": [
       "sns",
       "uls-alto-minho"
     ],
     "estado_confirmacao": "confirmado_por_regulador",
     "id": "2026-sns24-dados-de-utentes",
-    "n_fontes": 7,
-    "precisao_data": "desconhecida",
+    "n_fontes": 8,
+    "precisao_data": "dia",
     "setor": "saude",
     "tem_disputas": true,
     "tipos_ataque": [
@@ -231,7 +298,7 @@
     ],
     "estado_confirmacao": "confirmado_pela_entidade",
     "id": "2026-navigator",
-    "n_fontes": 4,
+    "n_fontes": 3,
     "precisao_data": "mes",
     "setor": "industria",
     "tem_disputas": false,
@@ -313,6 +380,27 @@
     "anos": [
       2025
     ],
+    "ator": null,
+    "data": "2025-06-20",
+    "entidades_afetadas": [
+      "generali-tranquilidade"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2025-generali-tranquilidade",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "banca_seguros",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao"
+    ],
+    "titulo": "Acesso não autorizado a dados de clientes da Generali Tranquilidade"
+  },
+  {
+    "ano": 2025,
+    "anos": [
+      2025
+    ],
     "ator": "Warlock",
     "data": "2025-03-31",
     "entidades_afetadas": [
@@ -351,6 +439,27 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque aos grupos Global Media e Notícias Ilimitadas"
+  },
+  {
+    "ano": 2025,
+    "anos": [
+      2025
+    ],
+    "ator": null,
+    "data": "2025-03-13",
+    "entidades_afetadas": [
+      "camara-municipal-de-murca"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2025-camara-municipal-de-murca",
+    "n_fontes": 1,
+    "precisao_data": "dia",
+    "setor": "autarquias",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "indisponibilidade"
+    ],
+    "titulo": "Ciberataque à Câmara Municipal de Murça"
   },
   {
     "ano": 2024,
@@ -496,7 +605,7 @@
     ],
     "estado_confirmacao": "confirmado_por_regulador",
     "id": "2024-plataformas-clinicas-do-estado",
-    "n_fontes": 2,
+    "n_fontes": 1,
     "precisao_data": "ano",
     "setor": "saude",
     "tem_disputas": false,
@@ -1242,6 +1351,28 @@
       2021
     ],
     "ator": null,
+    "data": "2021-04-13",
+    "entidades_afetadas": [
+      "coindu"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2021-coindu",
+    "n_fontes": 1,
+    "precisao_data": "dia",
+    "setor": "industria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ataque informático ao grupo Coindu"
+  },
+  {
+    "ano": 2021,
+    "anos": [
+      2021
+    ],
+    "ator": null,
     "data": "2021-04-01",
     "entidades_afetadas": [
       "apametal"
@@ -1257,6 +1388,114 @@
       "indisponibilidade"
     ],
     "titulo": "Ataque de ransomware à Apametal"
+  },
+  {
+    "ano": 2020,
+    "anos": [
+      2020
+    ],
+    "ator": null,
+    "data": "2020-12-18",
+    "entidades_afetadas": [
+      "navigator"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2020-navigator",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "industria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ataque informático aos sistemas da The Navigator Company"
+  },
+  {
+    "ano": 2020,
+    "anos": [
+      2020
+    ],
+    "ator": null,
+    "data": "2020-12-02",
+    "entidades_afetadas": [
+      "inapa"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2020-inapa",
+    "n_fontes": 1,
+    "precisao_data": "semana",
+    "setor": "retalho",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ataque informático à Inapa"
+  },
+  {
+    "ano": 2020,
+    "anos": [
+      2020
+    ],
+    "ator": "CyberTeam",
+    "data": "2020-07-19",
+    "entidades_afetadas": [
+      "ministerio-da-saude"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2020-ministerio-da-saude",
+    "n_fontes": 3,
+    "precisao_data": "dia",
+    "setor": "saude",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "intrusao",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ataque informático ao Ministério da Saúde com divulgação de credenciais"
+  },
+  {
+    "ano": 2020,
+    "anos": [
+      2020
+    ],
+    "ator": null,
+    "data": "2020-06-23",
+    "entidades_afetadas": [
+      "estoril-sol"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2020-estoril-sol",
+    "n_fontes": 1,
+    "precisao_data": "dia",
+    "setor": "turismo_hotelaria",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "indisponibilidade"
+    ],
+    "titulo": "Tentativa de ataque informático à plataforma de jogo online da Estoril Sol"
+  },
+  {
+    "ano": 2020,
+    "anos": [
+      2020
+    ],
+    "ator": "CyberTeam",
+    "data": "2020-04-16",
+    "entidades_afetadas": [
+      "altice-portugal"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2020-altice-portugal",
+    "n_fontes": 4,
+    "precisao_data": "dia",
+    "setor": "telecomunicacoes",
+    "tem_disputas": true,
+    "tipos_ataque": [
+      "intrusao"
+    ],
+    "titulo": "Ataque informático à Altice Portugal (MEO)"
   },
   {
     "ano": 2020,
@@ -1322,6 +1561,73 @@
       "indisponibilidade"
     ],
     "titulo": "Ciberataque à Câmara Municipal de Vinhais"
+  },
+  {
+    "ano": 2019,
+    "anos": [
+      2019
+    ],
+    "ator": null,
+    "data": "2019-07-01",
+    "entidades_afetadas": [
+      "fundacao-champalimaud"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2019-fundacao-champalimaud",
+    "n_fontes": 2,
+    "precisao_data": "semana",
+    "setor": "saude",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "indisponibilidade"
+    ],
+    "titulo": "Ataque informático à Fundação Champalimaud"
+  },
+  {
+    "ano": 2018,
+    "anos": [
+      2018
+    ],
+    "ator": null,
+    "data": "2018-11-01",
+    "entidades_afetadas": [
+      "emgfa"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2018-emgfa",
+    "n_fontes": 2,
+    "precisao_data": "mes",
+    "setor": "justica_defesa",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "intrusao",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Exfiltração de correio eletrónico do Estado-Maior-General das Forças Armadas"
+  },
+  {
+    "ano": 2018,
+    "anos": [
+      2018
+    ],
+    "ator": null,
+    "data": "2018-10-01",
+    "entidades_afetadas": [
+      "plmj"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2018-plmj",
+    "n_fontes": 3,
+    "precisao_data": "mes",
+    "setor": "justica_defesa",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "phishing_bec",
+      "intrusao",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Intrusão nos sistemas da sociedade de advogados PLMJ"
   },
   {
     "ano": 2018,
@@ -1418,6 +1724,27 @@
       2017
     ],
     "ator": null,
+    "data": "2017-05-01",
+    "entidades_afetadas": [
+      "procuradoria-geral-da-republica"
+    ],
+    "estado_confirmacao": "confirmado_pela_entidade",
+    "id": "2017-procuradoria-geral-da-republica",
+    "n_fontes": 1,
+    "precisao_data": "mes",
+    "setor": "justica_defesa",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "indisponibilidade"
+    ],
+    "titulo": "Ataque informático aos sistemas do Ministério Público"
+  },
+  {
+    "ano": 2017,
+    "anos": [
+      2017
+    ],
+    "ator": null,
     "data": "2017-01-01",
     "entidades_afetadas": [
       "sl-benfica"
@@ -1487,6 +1814,30 @@
       "exposicao_credenciais"
     ],
     "titulo": "Exposição de dados de organismos do Estado por grupos hacktivistas"
+  },
+  {
+    "ano": 2014,
+    "anos": [
+      2014
+    ],
+    "ator": null,
+    "data": "2014-06-27",
+    "entidades_afetadas": [
+      "banco-bic-portugues",
+      "millennium-bcp"
+    ],
+    "estado_confirmacao": "reportado_por_media",
+    "id": "2014-ataques-hacktivistas-a-bancos",
+    "n_fontes": 2,
+    "precisao_data": "dia",
+    "setor": "banca_seguros",
+    "tem_disputas": false,
+    "tipos_ataque": [
+      "hacktivismo",
+      "indisponibilidade",
+      "exfiltracao_dados"
+    ],
+    "titulo": "Ataques hacktivistas a bancos portugueses na operação #OpSystemFailed"
   },
   {
     "ano": 2013,

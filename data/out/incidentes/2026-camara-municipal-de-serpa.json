@@ -69,7 +69,7 @@
     {
       "data": "2026-05-13",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "A reação foi imediata: os servidores foram desligados e o caso comunicado ao Ministério Público e à Comissão Nacional de Proteção de Dados.",
       "publicador": "Rádio Pax",
       "sha256": null,
       "tipo": "noticia",
@@ -92,7 +92,7 @@
     {
       "data": "2026-05-13",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "A Câmara de Serpa revelou, nesta quinta-feira, 28, que a sua infraestrutura informática foi alvo de um “ataque externo”, já reportado às autoridades competentes",
       "publicador": "Correio Alentejo",
       "sha256": null,
       "tipo": "noticia",

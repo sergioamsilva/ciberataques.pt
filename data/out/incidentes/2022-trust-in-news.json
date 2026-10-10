@@ -72,7 +72,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2022-02-09",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“Os sistemas de alerta e segurança foram imediatamente acionados e a situação está a ser avaliada, mas nenhum sistema crítico foi comprometido.",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -95,7 +95,7 @@
     {
       "data": "2022-02-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Por entre os dados encontra-se informação pessoal dos funcionários, jornalistas, fornecedores de serviços e de alguns clientes.",
       "publicador": "TugaTech",
       "sha256": null,
       "tipo": "noticia",

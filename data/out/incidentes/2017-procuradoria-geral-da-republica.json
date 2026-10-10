@@ -1,0 +1,85 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Não há atribuição pública nem reivindicação conhecida."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2017-05-19",
+      "fonte": 0,
+      "texto": "A procuradora-geral da República confirma que a paragem do sistema informático do Ministério Público se deveu a um ataque informático e que a normalidade está reposta.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "A procuradora-geral declarou que o ataque não atingiu bases de dados com informação sensível.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "divulgacao": "2017-05-19",
+    "inicio": "2017-05-01",
+    "precisao": "mes"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "procuradoria-geral-da-republica"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "justica"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2017-05-19",
+      "estado_ligacao": "viva",
+      "excerto": "A Procuradora-geral da República confirmou que a paragem do sistema informático do Ministério Público ficou a dever-se a um ataque informático, mas sublinhou que está reposta a normalidade.",
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ministério Público sofreu ataque informático, mas normalidade está reposta",
+      "url": "https://observador.pt/2017/05/19/ministerio-publico-sofreu-ataque-informatico-mas-normalidade-esta-reposta/",
+      "url_arquivo": "http://web.archive.org/web/20210509150350/https://observador.pt/2017/05/19/ministerio-publico-sofreu-ataque-informatico-mas-normalidade-esta-reposta/",
+      "verificado_em": "2026-10-10"
+    }
+  ],
+  "id": "2017-procuradoria-geral-da-republica",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "portal do Ministério Público",
+      "SIM, intranet do Ministério Público"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "Em maio de 2017, o sistema informático do Ministério Público foi abaixo na sequência de um ataque informático, afetando ligeiramente o portal e o chamado SIM, a intranet da instituição. A procuradora-geral da República confirmou o ataque a 19 de maio, garantindo que estava reposta a normalidade, que não foram atingidas bases de dados com informação sensível e que a atividade processual não foi afetada. As informações iniciais do Ministério Público referiam não haver certeza sobre se a paragem se devia a avaria ou a ataque.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "Uma única fonte, mas com a declaração da própria procuradora-geral, reproduzida pela Lusa. A data exata da paragem não é pública, pelo que a precisão é de mês. A notícia é de uma semana depois do WannaCry, mas nenhuma fonte liga os dois casos, e por isso não se ligam aqui.",
+    "versao": 1
+  },
+  "setor": "justica_defesa",
+  "tipos_ataque": [
+    "indisponibilidade"
+  ],
+  "titulo": "Ataque informático aos sistemas do Ministério Público"
+}

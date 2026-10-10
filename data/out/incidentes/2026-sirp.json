@@ -1,0 +1,168 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Sem atribuição pública. Os dados foram postos à venda num fórum de cibercrime por um vendedor não identificado. Não há reivindicação de grupo conhecido nem atribuição por autoridade."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2026-10-06",
+      "fonte": 0,
+      "texto": "É anunciada num fórum de cibercrime a venda de cerca de 120 GB de dados que o vendedor atribui ao domínio do SIRP. A análise de uma amostra por um sítio especializado aponta para dados de candidaturas a recrutamento.",
+      "tipo": "reivindicacao"
+    },
+    {
+      "data": "2026-10-08",
+      "fonte": 1,
+      "texto": "Fonte oficial do SIRP confirma que foram obtidos dados não classificados através de um ataque ao servidor de desenvolvimento, usado para testes, de um prestador contratado em 2025 para desenhar os portais públicos do SIRP, do SIS e do SIED.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-10-08",
+      "fonte": 2,
+      "texto": "O SIRP afirma não ter havido intrusão na sua infraestrutura e sistemas informáticos nem nos centros de dados do SIS e do SIED, e não existir evidência de comprometimento de informação classificada ou operacional.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2026-10-08",
+      "fonte": 1,
+      "texto": "Segundo o SIRP, a empresa atacada comunicou-lhe o incidente, foram tomadas medidas de mitigação e os factos foram participados à Procuradoria-Geral da República.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": [
+      "identificacao",
+      "contacto",
+      "fiscais",
+      "laborais"
+    ],
+    "nota": "O SIRP admite que a informação obtida poderá corresponder a alguns elementos de um conjunto limitado de candidaturas submetidas através do seu sítio, que a empresa terá transferido para uma instância sob a sua responsabilidade. As categorias registadas são as que a imprensa descreve a partir da análise de uma amostra feita por terceiros: identificação civil e fiscal, contactos, morada, formação e percurso profissional. O SIRP não quantificou titulares. O material poderá incluir também informação de sítios de dezenas de outras entidades, públicas e privadas, clientes do mesmo prestador.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "divulgacao": "2026-10-07",
+    "inicio": "2026-10-06",
+    "precisao": "desconhecida"
+  },
+  "disputas": [
+    {
+      "afirmacao": "O vendedor diz ter obtido 120 GB em 312 144 ficheiros, com 96 bases de dados e o código-fonte de 180 sítios, e indica como alvo o domínio do SIRP.",
+      "contestado_por": "SIRP",
+      "fonte_afirmacao": 0,
+      "fonte_contestacao": 1,
+      "nota": "O SIRP afirma que o seu sítio público não foi alvo de ciberataque, que não houve intrusão nos seus sistemas e que o que está em causa é o servidor de testes de um prestador. Não confirmou o volume anunciado.",
+      "segundo": "vendedor num fórum de cibercrime, citado pela imprensa"
+    }
+  ],
+  "entidades_afetadas": [
+    "sirp"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "administracao-central",
+    "seguranca-nacional",
+    "cadeia-de-fornecimento",
+    "fornecedor",
+    "em-desenvolvimento"
+  ],
+  "fontes": [
+    {
+      "data": "2026-10-07",
+      "estado_ligacao": "viva",
+      "excerto": "Importa, contudo, sublinhar que o ataque e a dimensão da alegada intrusão ainda não foram confirmados publicamente pelo SIRP.",
+      "publicador": "Pplware",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Alerta Portugal: hackers dizem ter roubado 120 GB de dados do SIRP",
+      "url": "https://pplware.sapo.pt/internet/alerta-portugal-hackers-dizem-ter-roubado-120-gb-de-dados-do-sirp/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-10-08",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "TSF",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque expõe dados não classificados das secretas portuguesas",
+      "url": "https://www.tsf.pt/sociedade/artigo/ciberataque-expoe-dados-nao-classificados-das-secretas-portuguesas/18134807",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-10-08",
+      "estado_ligacao": "viva",
+      "excerto": "Um ciberataque a uma empresa informática que trabalhou para o Sistema de Informações da República Portuguesa (SIRP) permitiu a piratas informáticos obter dados não classificados",
+      "publicador": "RTP",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque expõe na Internet dados não classificados das secretas portuguesas",
+      "url": "https://www.rtp.pt/noticias/pais/ciberataque-expoe-na-internet-dados-nao-classificados-das-secretas-portuguesas_n1770309",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-10-08",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Euronews",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque expõe dados pessoais ligados às secretas portuguesas",
+      "url": "https://pt.euronews.com/2026/10/08/ciberataque-expoe-dados-pessoais-ligados-as-secretas-portuguesas",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-10-09",
+      "estado_ligacao": "viva",
+      "excerto": "“Não houve qualquer intrusão na infraestrutura e sistemas informáticos do SIRP ou dos Centros de Dados do SIS e do SIED”, realça.",
+      "publicador": "SAPO Tek",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ataque informático terá exposto dados de candidatos às secretas portuguesas",
+      "url": "https://tek.sapo.pt/noticias/internet/artigos/ataque-informatico-tera-exposto-dados-de-candidatos-as-secretas-portuguesas/",
+      "url_arquivo": null
+    }
+  ],
+  "id": "2026-sirp",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "servidor de desenvolvimento de um prestador contratado para os portais públicos do SIRP, do SIS e do SIED"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "O Sistema de Informações da República Portuguesa confirmou a 8 de outubro de 2026 que foram obtidos dados não classificados seus através de um ataque ao servidor de desenvolvimento, usado para testes, de uma empresa contratada em 2025 para desenhar os portais públicos do SIRP, do SIS e do SIED. Os dados tinham sido postos à venda num fórum de cibercrime dias antes. Segundo o SIRP, o que está em causa poderão ser elementos de um conjunto limitado de candidaturas submetidas através do seu sítio, que o prestador transferiu para uma instância sob a sua responsabilidade, e o material poderá incluir informação de dezenas de outras entidades clientes do mesmo prestador. O SIRP afirma que não houve intrusão nos seus sistemas nem comprometimento de informação classificada, e que os factos foram participados à Procuradoria-Geral da República.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "Primeira revisão, dois dias após a confirmação. O ataque foi a um prestador e não aos sistemas do SIRP, e é assim que o resumo o diz: a entidade registada é a dona dos dados, que confirmou. Um semanário identificou o prestador citando fonte não identificada; não o nomeamos, porque nem o SIRP nem a empresa o confirmaram e as restantes fontes não o identificam. Os números do vendedor ficam em disputas[]. A data da intrusão não é pública: a data de início é a do anúncio de venda e tem precisão desconhecida. A participação foi à Procuradoria-Geral da República, que não tem campo próprio em notificacoes; a notificação à PJ e à CNPD não é referida nas fontes.",
+    "versao": 1
+  },
+  "setor": "justica_defesa",
+  "tipos_ataque": [
+    "cadeia_fornecimento",
+    "intrusao",
+    "exfiltracao_dados"
+  ],
+  "titulo": "Dados de candidaturas ao SIRP obtidos em ataque a prestador dos portais públicos"
+}

@@ -46,6 +46,8 @@
     "distrito": "Lisboa",
     "id": "altice-portugal",
     "incidentes": [
+      "2026-altice-portugal",
+      "2020-altice-portugal",
       "2017-wannacry"
     ],
     "incidentes_em_cascata": [],
@@ -133,6 +135,27 @@
     "setor": "administracao_publica",
     "tipo": "entidade_publica",
     "url": "https://www.portaldasfinancas.gov.pt"
+  },
+  "banco-bic-portugues": {
+    "chaves": [
+      "banco bic",
+      "bic",
+      "banco bic portugues",
+      "eurobic",
+      "netpay"
+    ],
+    "distrito": "Lisboa",
+    "id": "banco-bic-portugues",
+    "incidentes": [
+      "2014-ataques-hacktivistas-a-bancos"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Banco BIC Português, S.A.",
+    "nome_curto": "Banco BIC",
+    "nota": "Adquiriu o BPN em 2012 e passou a designar-se EuroBic em 2016. A Netpay, rede de aceitação de pagamentos, era fornecida pelo banco à data do ataque de 2014.",
+    "setor": "banca_seguros",
+    "tipo": "empresa",
+    "url": "https://www.eurobic.pt"
   },
   "bpi": {
     "chaves": [
@@ -354,6 +377,25 @@
     "tipo": "entidade_publica",
     "url": "https://www.cm-loures.pt"
   },
+  "camara-municipal-de-murca": {
+    "chaves": [
+      "murca",
+      "camara municipal de murca",
+      "municipio de murca",
+      "cm-murca.pt"
+    ],
+    "distrito": "Vila Real",
+    "id": "camara-municipal-de-murca",
+    "incidentes": [
+      "2025-camara-municipal-de-murca"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Município de Murça",
+    "nome_curto": "Câmara Municipal de Murça",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cm-murca.pt"
+  },
   "camara-municipal-de-odemira": {
     "chaves": [
       "camara municipal de odemira",
@@ -389,6 +431,24 @@
     "setor": "autarquias",
     "tipo": "entidade_publica",
     "url": "https://www.cm-portalegre.pt"
+  },
+  "camara-municipal-de-porto-de-mos": {
+    "chaves": [
+      "camara municipal de porto de mos",
+      "municipio de porto de mos",
+      "porto de mos"
+    ],
+    "distrito": "Leiria",
+    "id": "camara-municipal-de-porto-de-mos",
+    "incidentes": [],
+    "incidentes_em_cascata": [
+      "2026-cim-regiao-de-leiria"
+    ],
+    "nome": "Município de Porto de Mós",
+    "nome_curto": "Câmara Municipal de Porto de Mós",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.municipio-portodemos.pt"
   },
   "camara-municipal-de-santa-comba-dao": {
     "chaves": [
@@ -500,6 +560,27 @@
     "tipo": "entidade_publica",
     "url": "https://www.chbm.min-saude.pt"
   },
+  "cim-regiao-de-leiria": {
+    "chaves": [
+      "cim da regiao de leiria",
+      "cim de leiria",
+      "cim regiao de leiria",
+      "comunidade intermunicipal da regiao de leiria",
+      "cimrl"
+    ],
+    "distrito": "Leiria",
+    "id": "cim-regiao-de-leiria",
+    "incidentes": [
+      "2026-cim-regiao-de-leiria"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Comunidade Intermunicipal da Região de Leiria",
+    "nome_curto": "CIM da Região de Leiria",
+    "nota": "Integra dez municípios: Alvaiázere, Ansião, Batalha, Castanheira de Pera, Figueiró dos Vinhos, Leiria, Marinha Grande, Pedrógão Grande, Pombal e Porto de Mós.",
+    "setor": "autarquias",
+    "tipo": "entidade_publica",
+    "url": "https://www.cimregiaodeleiria.pt"
+  },
   "citius": {
     "chaves": [
       "citius"
@@ -515,6 +596,24 @@
     "nota": "Plataforma de tramitação eletrónica dos processos judiciais, gerida pelo Instituto de Gestão Financeira e Equipamentos da Justiça.",
     "setor": "justica_defesa",
     "tipo": "entidade_publica"
+  },
+  "coindu": {
+    "chaves": [
+      "coindu",
+      "grupo coindu",
+      "coindu couture"
+    ],
+    "distrito": "Braga",
+    "id": "coindu",
+    "incidentes": [
+      "2021-coindu"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Coindu — Componentes para a Indústria Automóvel, S.A.",
+    "nome_curto": "Coindu",
+    "setor": "industria",
+    "tipo": "empresa",
+    "url": "https://www.coindu.pt"
   },
   "conselho-superior-da-magistratura": {
     "chaves": [
@@ -665,7 +764,8 @@
     "distrito": "Lisboa",
     "id": "emgfa",
     "incidentes": [
-      "2022-emgfa"
+      "2022-emgfa",
+      "2018-emgfa"
     ],
     "incidentes_em_cascata": [],
     "nome": "Estado-Maior-General das Forças Armadas",
@@ -690,6 +790,25 @@
     "setor": "energia_agua",
     "tipo": "entidade_publica",
     "url": "https://www.ersar.pt"
+  },
+  "estoril-sol": {
+    "chaves": [
+      "estoril sol",
+      "estoril-sol",
+      "estoril sol digital",
+      "estorilsolcasinos"
+    ],
+    "distrito": "Lisboa",
+    "id": "estoril-sol",
+    "incidentes": [
+      "2020-estoril-sol"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Estoril-Sol, SGPS, S.A.",
+    "nome_curto": "Estoril Sol",
+    "setor": "turismo_hotelaria",
+    "tipo": "empresa",
+    "url": "https://www.estoril-sol.com"
   },
   "fc-porto": {
     "chaves": [
@@ -725,6 +844,45 @@
     "setor": "banca_seguros",
     "tipo": "empresa",
     "url": "https://www.fidelidade.pt"
+  },
+  "fundacao-champalimaud": {
+    "chaves": [
+      "fundacao champalimaud",
+      "champalimaud",
+      "centro clinico champalimaud",
+      "champalimaud foundation"
+    ],
+    "distrito": "Lisboa",
+    "id": "fundacao-champalimaud",
+    "incidentes": [
+      "2019-fundacao-champalimaud"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Fundação Champalimaud",
+    "nome_curto": "Fundação Champalimaud",
+    "setor": "saude",
+    "tipo": "associacao",
+    "url": "https://www.fchampalimaud.org"
+  },
+  "generali-tranquilidade": {
+    "chaves": [
+      "generali tranquilidade",
+      "generali",
+      "tranquilidade",
+      "generali seguros",
+      "seguradoras unidas"
+    ],
+    "distrito": "Lisboa",
+    "id": "generali-tranquilidade",
+    "incidentes": [
+      "2025-generali-tranquilidade"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Generali Seguros, S.A.",
+    "nome_curto": "Generali Tranquilidade",
+    "setor": "banca_seguros",
+    "tipo": "empresa",
+    "url": "https://www.generalitranquilidade.pt"
   },
   "germano-de-sousa": {
     "chaves": [
@@ -864,6 +1022,24 @@
     "setor": "media",
     "tipo": "empresa",
     "url": "https://www.impresa.pt"
+  },
+  "inapa": {
+    "chaves": [
+      "inapa",
+      "grupo inapa"
+    ],
+    "distrito": "Lisboa",
+    "id": "inapa",
+    "incidentes": [
+      "2020-inapa"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Inapa — Investimentos, Participações e Gestão, S.A.",
+    "nome_curto": "Inapa",
+    "nota": "Distribuidora de papel, embalagem e comunicação visual, cotada na Euronext Lisboa à data do ataque de 2020. Classificada em retalho, que na taxonomia abrange a distribuição.",
+    "setor": "retalho",
+    "tipo": "empresa",
+    "url": "https://www.inapa.com"
   },
   "inem": {
     "chaves": [
@@ -1019,7 +1195,8 @@
     "distrito": "Porto",
     "id": "millennium-bcp",
     "incidentes": [
-      "2022-millennium-bcp"
+      "2022-millennium-bcp",
+      "2014-ataques-hacktivistas-a-bancos"
     ],
     "incidentes_em_cascata": [],
     "nome": "Banco Comercial Português, S.A.",
@@ -1076,6 +1253,24 @@
     "setor": "administracao_publica",
     "tipo": "entidade_publica"
   },
+  "ministerio-da-saude": {
+    "chaves": [
+      "ministerio da saude",
+      "gabinete da ministra da saude"
+    ],
+    "distrito": "Lisboa",
+    "id": "ministerio-da-saude",
+    "incidentes": [
+      "2020-ministerio-da-saude"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Ministério da Saúde",
+    "nome_curto": "Ministério da Saúde",
+    "nota": "As plataformas operadas pelos Serviços Partilhados do Ministério da Saúde (SPMS) estão registadas na entidade sns.",
+    "setor": "saude",
+    "tipo": "entidade_publica",
+    "url": "https://www.sns.gov.pt"
+  },
   "ministerio-dos-negocios-estrangeiros": {
     "chaves": [
       "ministerio dos negocios estrangeiros",
@@ -1121,7 +1316,8 @@
     "distrito": "Setúbal",
     "id": "navigator",
     "incidentes": [
-      "2026-navigator"
+      "2026-navigator",
+      "2020-navigator"
     ],
     "incidentes_em_cascata": [],
     "nome": "The Navigator Company, S.A.",
@@ -1166,6 +1362,25 @@
     "setor": "autarquias",
     "tipo": "entidade_publica",
     "url": "https://oestecim.pt"
+  },
+  "plmj": {
+    "chaves": [
+      "plmj",
+      "plmj advogados",
+      "sociedade de advogados plmj"
+    ],
+    "distrito": "Lisboa",
+    "id": "plmj",
+    "incidentes": [
+      "2018-plmj"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "PLMJ Advogados, SP, RL",
+    "nome_curto": "PLMJ",
+    "nota": "Sociedade de advogados. Classificada em justica_defesa por ser o setor da taxonomia mais próximo da prestação de serviços jurídicos.",
+    "setor": "justica_defesa",
+    "tipo": "empresa",
+    "url": "https://www.plmj.com"
   },
   "policia-judiciaria": {
     "chaves": [
@@ -1214,6 +1429,7 @@
     "distrito": "Lisboa",
     "id": "procuradoria-geral-da-republica",
     "incidentes": [
+      "2017-procuradoria-geral-da-republica",
       "2014-exposicao-de-dados-do-estado",
       "2013-vaga-hacktivista-contra-o-estado"
     ],
@@ -1282,6 +1498,31 @@
     "tipo": "empresa",
     "url": "https://www.sibs.com"
   },
+  "sirp": {
+    "chaves": [
+      "sirp",
+      "sistema de informacoes da republica portuguesa",
+      "secretas",
+      "secretas portuguesas",
+      "servicos secretos",
+      "sis",
+      "sied",
+      "servico de informacoes de seguranca",
+      "servico de informacoes estrategicas de defesa"
+    ],
+    "distrito": "Lisboa",
+    "id": "sirp",
+    "incidentes": [
+      "2026-sirp"
+    ],
+    "incidentes_em_cascata": [],
+    "nome": "Sistema de Informações da República Portuguesa",
+    "nome_curto": "SIRP",
+    "nota": "Integra o SIS e o SIED. Registado ao nível do sistema porque é o SIRP quem fala publicamente pelos três serviços.",
+    "setor": "justica_defesa",
+    "tipo": "entidade_publica",
+    "url": "https://www.sirp.pt"
+  },
   "sl-benfica": {
     "chaves": [
       "benfica",
@@ -1340,7 +1581,8 @@
     ],
     "incidentes_em_cascata": [
       "2024-ama",
-      "2022-germano-de-sousa"
+      "2022-germano-de-sousa",
+      "2020-ministerio-da-saude"
     ],
     "nome": "Serviço Nacional de Saúde",
     "nome_curto": "SNS",

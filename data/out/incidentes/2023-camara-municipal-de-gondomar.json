@@ -76,7 +76,7 @@
     {
       "data": "2023-10-09",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "A câmara foi aconselhada pelas autoridades a não ceder à chantagem e agora os dados estão em leilão na dark web",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -89,7 +89,7 @@
       "contem_declaracao_de_autoridade": true,
       "data": "2023-11-01",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "O presidente da Câmara de Gondomar revelou que o ciberataque que o município sofreu em setembro foi o \"maior a uma instituição pública\" nacional",
       "publicador": "Jornal de Notícias",
       "sha256": null,
       "tipo": "noticia",

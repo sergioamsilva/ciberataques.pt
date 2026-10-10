@@ -80,7 +80,7 @@
     {
       "data": "2020-04-16",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "a empresa conseguiu proteger a informação mais sensível relacionada com os sistemas de gestão de redes e abastecimento e garante que o ataque não atingiu a plataforma de gestão dos clientes.",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -92,7 +92,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2020-05-07",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“A EDP não comenta informação que alegadamente se encontre na ‘dark web’”, lê-se num email da empresa enviado ao PÚBLICO",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",

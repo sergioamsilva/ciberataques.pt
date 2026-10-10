@@ -97,3 +97,6 @@ atores:
   # Grupo com origem em comunidades de jogos em linha, segundo a investigação. Não
   # consta do ATT&CK, procurado a 2026-08-06.
   PKN: {mitre: null}
+  # Grupo português que reivindicou ataques à Altice e ao Ministério da Saúde em 2020.
+  # Não consta da lista de grupos do ATT&CK, procurado a 2026-10-10.
+  CyberTeam: {mitre: null}

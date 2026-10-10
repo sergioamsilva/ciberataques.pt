@@ -5,7 +5,12 @@
     "grupo": "SafePay",
     "nota": "O grupo reivindicou o ataque no seu site de extorsão a 17 de março de 2026. Surgiu no final de 2024 e usa a tática de dupla extorsão: rouba os dados antes de encriptar os servidores e ameaça publicá-los se o resgate não for pago."
   },
-  "correcoes": [],
+  "correcoes": [
+    {
+      "data": "2026-10-10",
+      "descricao": "Retirada a fonte de O Setubalense, que estava citada nesta ficha mas descreve um ataque anterior à The Navigator Company: o artigo já estava arquivado na Wayback Machine em janeiro de 2025, mais de um ano antes do ataque de março de 2026. Não sustentava nenhum facto da cronologia, e o grau de confirmação mantém-se pela declaração da empresa ao Jornal de Negócios."
+    }
+  ],
   "cronologia": [
     {
       "data": "2026-03-17",
@@ -67,7 +72,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2026-04-16",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "a empresa confirmou ter identificado \"um incidente de cibersegurança\", tendo ativado de imediato mecanismos de resposta e articulado o caso com as autoridades competentes",
       "publicador": "Jornal de Negócios",
       "sha256": null,
       "tipo": "noticia",
@@ -84,18 +89,6 @@
       "tipo": "leak_site",
       "titulo": "The Navigator Company listada no site de extorsão do grupo SafePay",
       "url": "https://www.ransomware.live/map/PT",
-      "url_arquivo": null
-    },
-    {
-      "contem_declaracao_da_entidade": true,
-      "data": "2026-04-16",
-      "estado_ligacao": "viva",
-      "excerto": null,
-      "publicador": "O Setubalense",
-      "sha256": null,
-      "tipo": "noticia",
-      "titulo": "The Navigator Company alvo de ataque informático aos seus sistemas",
-      "url": "https://osetubalense.com/local/setubal/the-navigator-company-alvo-de-ataque-informatico-aos-seus-sistemas/",
       "url_arquivo": null
     }
   ],
@@ -126,9 +119,9 @@
   "resumo": "Em março de 2026, a The Navigator Company foi alvo de um ataque de ransomware reivindicado pelo grupo SafePay, que a listou no seu site de extorsão a 17 de março. Em abril, parte dos dados e documentos da empresa foi exposta na dark web, incluindo contratos, dados de preços, documentos internos, dados de trabalhadores, notas de reuniões, informação sobre contraordenações ambientais, resultados de auditorias e registos de custos operacionais. A empresa confirmou ter identificado um incidente de cibersegurança e ativado os protocolos de resposta e contenção, sem revelar se houve pagamento de resgate.",
   "revisao": {
     "curador": "ss",
-    "data": "2026-08-05",
+    "data": "2026-10-10",
     "nota": "Estava na fila de candidatos desde a primeira recolha, apanhado pelo módulo do tracker com o grupo SafePay corretamente identificado, e ficou por curar. A data de início é o mês, porque a reivindicação de 17 de março estabelece um limite superior mas não a data do acesso inicial. A publicação efetiva dos dados sugere que não houve pagamento, mas a empresa não o confirmou e por isso o campo fica a null.",
-    "versao": 1
+    "versao": 2
   },
   "setor": "industria",
   "tipos_ataque": [

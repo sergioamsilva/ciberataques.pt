@@ -58,7 +58,7 @@
     {
       "data": "2022-09-15",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "No caso dos “leões”, a informação foi confirmada por escrito ao PÚBLICO pelo clube, que diz estar a realizar esforços para repor a normalidade.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -70,7 +70,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2022-09-15",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Do lado do Porto, fonte do clube explicou que o problema foi semelhante: “São milhões de pedidos de acesso, que entopem o site, e fizeram com que este tenha ficado em baixo”.",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",

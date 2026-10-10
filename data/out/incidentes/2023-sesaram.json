@@ -45,7 +45,7 @@
     {
       "data": "2023-08-06",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "foi alvo de um ciberataque este domingo que provocou uma “disfunção na sua rede informática”, indicou a instituição, informando que a actividade clínica não urgente estará suspensa na segunda-feira.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -56,7 +56,7 @@
     {
       "data": "2023-09-09",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "o Sesaram salienta que o \"restabelecimento destas ligações foi possível devido ao trabalho ininterrupto desenvolvido pelo Núcleo de Informática e Tecnologias",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -67,7 +67,7 @@
     {
       "data": "2023-08-15",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "os serviços que são considerados fundamentais para os nossos profissionais e para os nossos utentes estão a ser gradualmente repostos com a máxima segurança",
       "publicador": "HealthNews",
       "sha256": null,
       "tipo": "noticia",

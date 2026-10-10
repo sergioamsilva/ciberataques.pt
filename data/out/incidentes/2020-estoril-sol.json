@@ -1,0 +1,92 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Não há atribuição pública nem reivindicação conhecida."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2020-06-23",
+      "fonte": 0,
+      "texto": "É detetada uma tentativa de ataque informático à plataforma online da Estoril Sol Digital, e os servidores são desligados.",
+      "tipo": "detecao"
+    },
+    {
+      "data": "2020-06-25",
+      "fonte": 0,
+      "texto": "A Estoril-Sol comunica o caso à CMVM e informa que a tentativa foi comunicada às autoridades competentes.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "A empresa não informou sobre eventual acesso a dados de jogadores.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2020-06-23",
+    "divulgacao": "2020-06-25",
+    "inicio": "2020-06-23",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "estoril-sol"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "empresa-cotada",
+    "jogo-online"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2020-06-25",
+      "estado_ligacao": "viva",
+      "excerto": "A Estoril-Sol detetou na terça-feira uma tentativa de ataque informático à plataforma “Estoril Sol Digital — Online Gaming Products and Services” e, por isso, decidiu desligar os servidores",
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Plataforma de jogo digital da Estoril-Sol alvo de tentativa de ataque informático",
+      "url": "https://observador.pt/2020/06/25/plataforma-de-jogo-digital-da-estoril-sol-alvo-de-tentativa-de-ataque-informatico/",
+      "url_arquivo": "http://web.archive.org/web/20260808225847/https://observador.pt/2020/06/25/plataforma-de-jogo-digital-da-estoril-sol-alvo-de-tentativa-de-ataque-informatico/",
+      "verificado_em": "2026-10-10"
+    }
+  ],
+  "id": "2020-estoril-sol",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "plataforma de jogo online Estoril Sol Digital, com servidores desligados"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A 23 de junho de 2020, a Estoril-Sol detetou uma tentativa de ataque informático à plataforma da sua participada Estoril Sol Digital, de jogo online, e decidiu desligar os servidores para proteger o sítio e a informação. A empresa comunicou o caso ao mercado a 25 de junho e informou que a tentativa foi comunicada às autoridades competentes, que estavam a acompanhar a situação.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "A empresa fala em tentativa de ataque e não confirma acesso, pelo que o tipo registado é a indisponibilidade que dela resultou, e não intrusão. Fonte única, que reproduz o comunicado da empresa à CMVM.",
+    "versao": 1
+  },
+  "setor": "turismo_hotelaria",
+  "tipos_ataque": [
+    "indisponibilidade"
+  ],
+  "titulo": "Tentativa de ataque informático à plataforma de jogo online da Estoril Sol"
+}

@@ -1,0 +1,138 @@
+{
+  "ator": {
+    "atribuicao_por": "reivindicacao",
+    "confianca": "media",
+    "grupo": "CyberTeam",
+    "nota": "O grupo reivindicou o ataque no Twitter. No mesmo dia publicou credenciais que diz serem de profissionais da Câmara Municipal de Lisboa, caso que não tem confirmação."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2020-07-19",
+      "fonte": 1,
+      "texto": "O grupo CyberTeam publica um ficheiro com nomes e palavras-passe de profissionais do SNS e reivindica o ataque.",
+      "tipo": "publicacao_dados"
+    },
+    {
+      "data": "2020-07-20",
+      "fonte": 0,
+      "texto": "Fonte da tutela confirma o ataque e que a SPMS e o Centro Nacional de Cibersegurança estão a analisar e a tratar a situação.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2020-07-21",
+      "fonte": 2,
+      "texto": "Segundo fontes do ministério, o ataque está a ser investigado pelo Centro Nacional de Cibersegurança, pela Polícia Judiciária e pela SPMS.",
+      "tipo": "regulador"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": [
+      "identificacao",
+      "credenciais"
+    ],
+    "nota": "Nomes e palavras-passe, provavelmente cifradas, de funcionários e profissionais de saúde. O número de titulares não foi declarado pelo ministério.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "divulgacao": "2020-07-20",
+    "inicio": "2020-07-19",
+    "precisao": "dia"
+  },
+  "disputas": [
+    {
+      "afirmacao": "O ficheiro publicado compila milhares de nomes e palavras-passe de profissionais de saúde de unidades públicas.",
+      "contestado_por": null,
+      "fonte_afirmacao": 1,
+      "fonte_contestacao": null,
+      "nota": "Volume avançado a partir do ficheiro do atacante, nunca confirmado pelo ministério.",
+      "segundo": "CyberTeam, segundo o Expresso citado pela Executive Digest"
+    }
+  ],
+  "entidades_afetadas": [
+    "ministerio-da-saude"
+  ],
+  "entidades_afetadas_em_cascata": [
+    "sns"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "saude-publica",
+    "credenciais-publicadas"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2020-07-20",
+      "estado_ligacao": "viva",
+      "excerto": "“A SPMS e as autoridades competentes, nomeadamente o Centro Nacional de Cibersegurança, encontram-se a analisar e a tratar da situação”, diz o Ministério da Saúde",
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ministério da Saúde alvo de ataque informático",
+      "url": "https://observador.pt/2020/07/20/ministerio-da-saude-alvo-de-ataque-informatico/",
+      "url_arquivo": "http://web.archive.org/web/20250403182026/https://observador.pt/2020/07/20/ministerio-da-saude-alvo-de-ataque-informatico/",
+      "verificado_em": "2026-10-10"
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2020-07-20",
+      "estado_ligacao": "viva",
+      "excerto": "Especialistas em cibersegurança alertam que tudo aponta para que estes códigos expostos correspondam à versão cifrada das passwords usadas pelos diferentes profissionais de saúde",
+      "publicador": "Executive Digest",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Milhares de médicos e enfermeiros do SNS vítimas de hackers. Passwords já circulam na internet",
+      "url": "https://executivedigest.sapo.pt/milhares-de-medicos-e-enfermeiros-do-sns-vitimas-de-hackers-passwords-ja-circulam-na-internet/",
+      "url_arquivo": "http://web.archive.org/web/20260710231817/https://executivedigest.sapo.pt/milhares-de-medicos-e-enfermeiros-do-sns-vitimas-de-hackers-passwords-ja-circulam-na-internet/",
+      "verificado_em": "2026-10-10"
+    },
+    {
+      "data": "2020-07-21",
+      "estado_ligacao": "viva",
+      "excerto": "Segundo fontes do Ministério, o ataque já está a ser investigado pelo Centro Nacional de Cibersegurança, a Polícia Judiciária e os Serviços Partilhados do Ministério da Saúde.",
+      "publicador": "SAPO Tek",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Hackers da CyberTeam roubaram contas de funcionários do Ministério da Saúde. O que já se sabe sobre o ataque?",
+      "url": "https://tek.sapo.pt/noticias/internet/artigos/hackers-da-cyberteam-fizeram-ataque-informatico-ao-ministerio-da-saude/",
+      "url_arquivo": "http://web.archive.org/web/20260711055124/https://tek.sapo.pt/noticias/internet/artigos/hackers-da-cyberteam-fizeram-ataque-informatico-ao-ministerio-da-saude/",
+      "verificado_em": "2026-10-10"
+    }
+  ],
+  "id": "2020-ministerio-da-saude",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": []
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2020-altice-portugal"
+  ],
+  "resumo": "A 19 de julho de 2020, o grupo CyberTeam publicou no Twitter um ficheiro com nomes e palavras-passe de funcionários do Ministério da Saúde e de profissionais do SNS, afirmando ter tido acesso ao sistema informático do ministério. No dia seguinte, a tutela confirmou o ataque e que os Serviços Partilhados do Ministério da Saúde e o Centro Nacional de Cibersegurança estavam a analisar e a tratar a situação, com a Polícia Judiciária a investigar. Especialistas citados na imprensa consideraram que as palavras-passe expostas seriam a versão cifrada, e não o texto original.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "O ministério não emitiu comunicado próprio: a confirmação é a resposta escrita enviada à Lusa e a do gabinete da ministra ao Expresso. Os dois órgãos que a reproduzem são independentes entre si. O SNS entra em cascata porque as credenciais são de profissionais das suas unidades; o ataque reivindicado é ao ministério.",
+    "versao": 1
+  },
+  "setor": "saude",
+  "tipos_ataque": [
+    "intrusao",
+    "exfiltracao_dados"
+  ],
+  "titulo": "Ataque informático ao Ministério da Saúde com divulgação de credenciais"
+}

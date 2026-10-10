@@ -63,7 +63,7 @@
     {
       "data": "2026-04-27",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Os CTT - Correios de Portugal confirmam o roubo de dados de clientes, mas garantem que não inclui informação financeira.",
       "publicador": "Renascença",
       "sha256": null,
       "tipo": "noticia",
@@ -75,7 +75,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2026-04-28",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Os CTT garantem ainda que “a informação em causa corresponde exclusivamente a dados de contacto para notificação de entregas,”",
       "publicador": "SAPO Tek",
       "sha256": null,
       "tipo": "noticia",

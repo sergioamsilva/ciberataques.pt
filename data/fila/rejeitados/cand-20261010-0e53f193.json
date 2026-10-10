@@ -1,0 +1,21 @@
+{
+  "confianca_llm": null,
+  "estado": "rejeitado",
+  "extraccao": {},
+  "id": "cand-20261010-0e53f193",
+  "motivo_rejeicao": "sem incidente: aprovação de procedimento para regulamento municipal de cibersegurança em Tomar.",
+  "origem": {
+    "chave": "0e53f19342e4481843ec63d2429fb89a5450a4333b0573e948040ab70146a9b1",
+    "data": "2026-10-03",
+    "fonte": "security-magazine",
+    "publicador": "Security Magazine Portugal",
+    "sha256": "cf35845662da98282db72eacc26980e8b0d708b8435b7b630155539f437faa36",
+    "tipo_fonte": "noticia",
+    "url": "https://www.securitymagazine.pt/2026/10/03/tomar-aprova-procedimento-para-elaborar-regulamento-de-ciberseguranca-municipal/",
+    "url_canonica": "https://www.securitymagazine.pt/2026/10/03/tomar-aprova-procedimento-para-elaborar-regulamento-de-ciberseguranca-municipal"
+  },
+  "rejeitado_em": "2026-10-10",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Tomar aprova procedimento para elaborar regulamento de cibersegurança municipal",
+  "triado_em": "2026-10-10T09:54:37+00:00"
+}

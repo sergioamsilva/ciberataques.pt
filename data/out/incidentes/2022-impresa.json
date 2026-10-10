@@ -67,7 +67,7 @@
     {
       "data": "2022-01-02",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“O grupo Impresa confirma que os sites do Expresso e da SIC, bem como algumas das suas páginas nas redes sociais, estão temporariamente indisponíveis, aparentemente alvo de um ataque informático",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -90,7 +90,7 @@
     {
       "data": "2022-01-04",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "A Polícia Judiciária (PJ) já está a investigar o ataque informático de que foram alvo os sites do jornal Expresso e da SIC, segundo confirmou o PÚBLICO.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -101,7 +101,7 @@
     {
       "data": "2022-01-05",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "terá destruído todos os arquivos de notícias armazenados nos respetivos servidores.",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",

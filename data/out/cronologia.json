@@ -6,31 +6,42 @@
     "2013-vaga-hacktivista-contra-o-estado"
   ],
   "2014": [
-    "2014-exposicao-de-dados-do-estado"
+    "2014-exposicao-de-dados-do-estado",
+    "2014-ataques-hacktivistas-a-bancos"
   ],
   "2016": [
     "2016-hospital-garcia-de-orta"
   ],
   "2017": [
     "2017-wannacry",
+    "2017-procuradoria-geral-da-republica",
     "2017-sl-benfica"
   ],
   "2018": [
+    "2018-emgfa",
+    "2018-plmj",
     "2018-cuf",
     "2018-centro-hospitalar-barreiro-montijo",
     "2018-junta-de-freguesia-de-sao-salvador-ilhavo"
   ],
   "2019": [
     "2019-junta-de-freguesia-de-bem-viver",
-    "2019-camara-municipal-de-vinhais"
+    "2019-camara-municipal-de-vinhais",
+    "2019-fundacao-champalimaud"
   ],
   "2020": [
+    "2020-navigator",
+    "2020-inapa",
+    "2020-ministerio-da-saude",
+    "2020-estoril-sol",
+    "2020-altice-portugal",
     "2020-edp"
   ],
   "2021": [
     "2021-acessos-indevidos-a-sistemas-de-registo-e-identificacao",
     "2021-universidade-de-lisboa",
     "2021-hospital-do-divino-espirito-santo",
+    "2021-coindu",
     "2021-apametal"
   ],
   "2022": [
@@ -79,10 +90,15 @@
   "2025": [
     "2025-oestecim",
     "2025-conselho-superior-da-magistratura",
+    "2025-generali-tranquilidade",
     "2025-ersar",
-    "2025-global-media"
+    "2025-global-media",
+    "2025-camara-municipal-de-murca"
   ],
   "2026": [
+    "2026-sirp",
+    "2026-cim-regiao-de-leiria",
+    "2026-altice-portugal",
     "2026-aguas-de-portugal",
     "2026-universidade-de-aveiro",
     "2026-metro-mondego",

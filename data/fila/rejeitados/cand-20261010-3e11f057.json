@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "majinahanashi",
+        "texto": "GRUPO STARFOODS foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "majinahanashi",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-08-12",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "GRUPO STARFOODS",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20261010-3e11f057",
+  "motivo_rejeicao": "listagem em site de extorsão sem incidente documentado a que se ligar; uma alegação de atacante não sustenta uma entrada (política editorial 3.1)",
+  "origem": {
+    "chave": "3e11f0579d64b63f1d33a482dc4d2914c6224f64e2e593d955a1c9c352f90c1e",
+    "data": "2026-08-12",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "50b80f4d079faf40afd5308463e82527286aed6e48a54bab2e178e3c539eb63e",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "GRUPO STARFOODS listada em site de extorsão (majinahanashi)",
+  "triado_em": "2026-10-10T09:54:37+00:00"
+}

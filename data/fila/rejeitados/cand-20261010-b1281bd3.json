@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "thegentlemen",
+        "texto": "Chip7 foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "thegentlemen",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-09-07",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Chip7",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20261010-b1281bd3",
+  "motivo_rejeicao": "listagem em site de extorsão sem incidente documentado a que se ligar; uma alegação de atacante não sustenta uma entrada (política editorial 3.1)",
+  "origem": {
+    "chave": "b1281bd3a9e0711de34b092b4de401c617de53a48979e0555a52178cf0021975",
+    "data": "2026-09-07",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "d465406dadf4d4634a7f4744d90ec88d998013b8f6a9c5f9836cf85c26f61779",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Chip7 listada em site de extorsão (thegentlemen)",
+  "triado_em": "2026-10-10T09:54:37+00:00"
+}

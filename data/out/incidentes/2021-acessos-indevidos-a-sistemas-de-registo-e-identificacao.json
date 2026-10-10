@@ -3,7 +3,7 @@
     "atribuicao_por": "autoridade",
     "confianca": "alta",
     "grupo": null,
-    "nota": "Um funcionário do Instituto de Gestão Financeira e Equipamentos da Justiça, condenado. Não é nomeado aqui: a política permite nomear condenados por decisão pública, mas o nome nada acrescenta a um registo cuja unidade é a entidade atingida."
+    "nota": "Um funcionário do Instituto de Gestão Financeira e Equipamentos da Justiça, condenado. Não é nomeado: a política editorial não nomeia condenados, e o nome nada acrescenta a um registo cuja unidade é a entidade atingida."
   },
   "correcoes": [],
   "cronologia": [
@@ -79,7 +79,7 @@
     {
       "data": "2026-07-27",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "O Tribunal de Lisboa condenou a nove anos e seis meses de prisão um técnico informático do Instituto de Gestão Financeira e Equipamentos da Justiça (IGFEJ)",
       "publicador": "Jornal de Notícias",
       "sha256": null,
       "tipo": "noticia",

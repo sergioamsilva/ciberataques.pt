@@ -74,7 +74,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2022-12-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "O Porto de Lisboa foi “alvo de um ataque informático” no domingo, 25 de Dezembro, mas o crime “não comprometeu a actividade operacional”, anunciou esta segunda-feira a administração.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -97,7 +97,7 @@
     {
       "data": "2022-12-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“A Administração do Porto de Lisboa (APL) está a trabalhar em permanência e estreita articulação com todas as entidades competentes, no sentido de garantir a segurança dos sistemas e respetivos dados”",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -108,7 +108,7 @@
     {
       "data": "2023-01-06",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "O grupo Lockbit apenas reivindicou a responsabilidade do ataque no dia 29 de Dezembro ao informar no seu site, na darkweb",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -119,7 +119,7 @@
     {
       "data": "2023-01-06",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“Há dados na dark web e um pedido de resgate”, admitiu à CNN Portugal fonte oficial da Administração do Porto de Lisboa",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",

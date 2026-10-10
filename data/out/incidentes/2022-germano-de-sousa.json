@@ -89,7 +89,7 @@
       "contem_declaracao_da_entidade": true,
       "data": "2022-02-10",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“Eles lançam centenas de vírus deste tipo e um entrou no nosso sistema. Felizmente temos tudo em duplicado e neste momento estamos a repor e a limpar tudo, estando a trabalhar normalmente”",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -100,7 +100,7 @@
     {
       "data": "2022-02-10",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "O acesso ao serviço de análises clínicas nas unidades CUF e a disponibilização de relatórios e resultados clínicos poderão sofrer constrangimentos”, avisa a CUF.",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -111,7 +111,7 @@
     {
       "data": "2022-02-11",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Os laboratórios de análises clínicas Germano de Sousa estão fechados ao público e só voltam a funcionar “em pleno” na segunda-feira",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -122,7 +122,7 @@
     {
       "data": "2022-02-14",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "“Informamos também que os dados de todos os nossos utentes não foram comprometidos”, sublinha o grupo.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",

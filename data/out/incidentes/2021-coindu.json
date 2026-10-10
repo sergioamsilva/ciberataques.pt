@@ -1,0 +1,93 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Não há reivindicação conhecida. Segundo o Público, o ataque terá começado na filial mexicana."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2021-04-13",
+      "fonte": 0,
+      "texto": "Na noite de terça-feira, o grupo é alvo de um ataque informático que afeta todas as unidades; os dados ficam encriptados e a produção para.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2021-04-16",
+      "fonte": 0,
+      "texto": "O responsável financeiro confirma ao Público o ataque e o regresso gradual ao trabalho, e garante que não haverá impacto nos clientes.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre dados pessoais. A administração referiu a encriptação dos dados, não a sua cópia.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "detecao": "2021-04-13",
+    "inicio": "2021-04-13",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "coindu"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "industria-automovel",
+    "paragem-de-producao"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2021-04-16",
+      "estado_ligacao": "viva",
+      "excerto": "limitou-se a confirmar que o grupo “foi alvo de um ciberataque na passada terça-feira à noite” e que esse ataque “afectou todas as unidades do grupo”.",
+      "publicador": "Público",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Ciberataque à Coindu “custou” 2,5 milhões de euros na produção",
+      "url": "https://www.publico.pt/2021/04/16/economia/noticia/ciberataque-coindu-custou-25-milhoes-euros-producao-1958913",
+      "url_arquivo": "http://web.archive.org/web/20240510145440/https://www.publico.pt/2021/04/16/economia/noticia/ciberataque-coindu-custou-25-milhoes-euros-producao-1958913",
+      "verificado_em": "2026-10-10"
+    }
+  ],
+  "id": "2021-coindu",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "produção em todas as unidades do grupo, com paragem total de dois dias",
+      "sistemas informáticos do grupo"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": false,
+    "cnpd": null,
+    "pj": true
+  },
+  "relacionados": [],
+  "resumo": "Na noite de 13 de abril de 2021, o grupo Coindu, fabricante de revestimentos têxteis para a indústria automóvel com sede em Famalicão, foi alvo de um ataque informático que afetou todas as unidades do grupo, em Portugal, na Roménia e no México. Segundo a administração, os dados da empresa ficaram encriptados, e a empresa desligou todo o circuito, deixando cerca de cinco mil pessoas sem acesso aos sistemas e parando a produção durante dois dias. A empresa apresentou queixa à Polícia Judiciária mas não notificou o Centro Nacional de Cibersegurança, o que a lei não lhe exigia. O Público estimou a quebra de produção em cerca de 2,5 milhões de euros.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "O valor de 2,5 milhões é uma estimativa do Público, não declarada pela empresa, e por isso não entra em custo_declarado_eur. Embora a administração descreva dados encriptados, nenhuma fonte refere pedido de resgate, pelo que não se classifica como ransomware. A não notificação ao CNCS foi confirmada pela assessoria do próprio centro ao Público.",
+    "versao": 1
+  },
+  "setor": "industria",
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
+  "titulo": "Ataque informático ao grupo Coindu"
+}

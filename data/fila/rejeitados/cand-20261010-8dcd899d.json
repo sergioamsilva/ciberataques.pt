@@ -1,0 +1,21 @@
+{
+  "confianca_llm": null,
+  "estado": "rejeitado",
+  "extraccao": {},
+  "id": "cand-20261010-8dcd899d",
+  "motivo_rejeicao": "sem incidente: análise genérica sobre risco cibernético e inteligência artificial.",
+  "origem": {
+    "chave": "8dcd899d2fe0b079734635abe56d750f1e1dea34324fe75237024d1f6603ad33",
+    "data": "2026-10-09",
+    "fonte": "security-magazine",
+    "publicador": "Security Magazine Portugal",
+    "sha256": "017e27a6fa7b6a90725a162539e9e1feb380e5d09a73ab757b4828a269d147b3",
+    "tipo_fonte": "noticia",
+    "url": "https://www.securitymagazine.pt/2026/10/09/inteligencia-artificial-esta-a-transformar-o-mapa-do-risco-cibernetico-das-empresas-portuguesas/",
+    "url_canonica": "https://www.securitymagazine.pt/2026/10/09/inteligencia-artificial-esta-a-transformar-o-mapa-do-risco-cibernetico-das-empresas-portuguesas"
+  },
+  "rejeitado_em": "2026-10-10",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Inteligência Artificial está a transformar o mapa do risco cibernético das empresas portuguesas",
+  "triado_em": "2026-10-10T09:54:37+00:00"
+}

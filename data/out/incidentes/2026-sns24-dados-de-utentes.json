@@ -5,8 +5,20 @@
     "grupo": null,
     "nota": "Sem atribuição pública. As autoridades suspeitam de ciberataque, com o profissional cujas credenciais foram usadas a ser tratado como vítima de roubo de credenciais e não como autor. Não o identificamos. A Polícia Judiciária admitiu a hipótese de terem sido usadas ferramentas de inteligência artificial para automatizar os acessos, dado o volume envolvido."
   },
-  "correcoes": [],
+  "correcoes": [
+    {
+      "data": "2026-10-10",
+      "descricao": "Data de início antecipada de 21 para 19 de maio de 2026, e notificação ao CNCS acrescentada, a partir das declarações dos Serviços Partilhados do Ministério da Saúde no Parlamento.",
+      "origem": "curadoria"
+    }
+  ],
   "cronologia": [
+    {
+      "data": "2026-05-19",
+      "fonte": 7,
+      "texto": "Primeiro acesso indevido aos dados, feito com as credenciais de um médico. As consultas seguintes passam a ser automatizadas, sem comportamento que indicie ação humana, segundo os Serviços Partilhados do Ministério da Saúde.",
+      "tipo": "ocorrencia"
+    },
     {
       "data": "2026-05-21",
       "fonte": 0,
@@ -48,6 +60,18 @@
       "fonte": 6,
       "texto": "As ações forenses prosseguem, conduzidas pelo Centro Nacional de Cibersegurança em conjunto com os Serviços Partilhados do Ministério da Saúde e em articulação com a Polícia Judiciária.",
       "tipo": "regulador"
+    },
+    {
+      "data": "2026-06-01",
+      "fonte": 7,
+      "texto": "É ativada a autenticação de dois fatores no Registo de Saúde Eletrónico, que até então tinha sido retirado da internet e ficado acessível apenas dentro da rede informática da saúde, como medida de contingência.",
+      "tipo": "reposicao"
+    },
+    {
+      "data": "2026-07-09",
+      "fonte": 7,
+      "texto": "Na comissão parlamentar de Saúde, o presidente dos Serviços Partilhados do Ministério da Saúde indica que só tomaram conhecimento do caso a 21 de maio, que os dados acedidos foram apenas de natureza administrativa, e que o incidente foi comunicado à Polícia Judiciária, ao Centro Nacional de Cibersegurança e à CNPD.",
+      "tipo": "comunicado"
     }
   ],
   "dados_pessoais": {
@@ -57,22 +81,22 @@
       "saude",
       "contacto"
     ],
-    "nota": "Foram referidos mais de cem mil utentes do SNS, adultos e crianças, de todo o país e ilhas. Há divergência pública sobre a natureza do que foi consultado: parte da cobertura refere fichas clínicas, e há indicação de que os acessos incidiram sobre registos administrativos e não clínicos. Ver as versões em confronto.",
+    "nota": "Foram referidos mais de cem mil utentes do SNS, adultos e crianças, de todo o país e ilhas. Há divergência pública sobre a natureza do que foi consultado: parte da cobertura refere fichas clínicas, e os Serviços Partilhados do Ministério da Saúde afirmaram no Parlamento que os dados acedidos foram apenas administrativos. A categoria de saúde mantém-se enquanto a divergência não for resolvida por autoridade. Ver as versões em confronto.",
     "titulares_declarados": 100000
   },
   "data": {
     "detecao": "2026-05-21",
     "divulgacao": "2026-05-22",
-    "inicio": "2026-05-21",
-    "precisao": "desconhecida"
+    "inicio": "2026-05-19",
+    "precisao": "dia"
   },
   "disputas": [
     {
       "afirmacao": "Os acessos indevidos incidiram sobre fichas e dados clínicos de menores.",
-      "contestado_por": null,
+      "contestado_por": "Serviços Partilhados do Ministério da Saúde",
       "fonte_afirmacao": 1,
-      "fonte_contestacao": null,
-      "nota": "Parte da cobertura descreve o acesso como sendo a dados clínicos. Outra indica que o comprometimento das credenciais resultou em acesso a registos administrativos, e não clínicos. A distinção é material para os titulares e não estava esclarecida à data desta revisão. Registamos as duas leituras em vez de escolher uma.",
+      "fonte_contestacao": 7,
+      "nota": "Parte da cobertura inicial descreveu o acesso como sendo a dados clínicos. Na comissão parlamentar de Saúde, a 9 de julho, o presidente dos Serviços Partilhados do Ministério da Saúde afirmou que os dados acedidos foram apenas de natureza administrativa, sem acesso a informação clínica. É a versão da entidade que opera os sistemas; não há conclusão de autoridade que a confirme ou desminta. Registamos as duas leituras em vez de escolher uma.",
       "segundo": "cobertura noticiosa inicial"
     }
   ],
@@ -93,7 +117,7 @@
       "contem_declaracao_de_autoridade": true,
       "data": "2026-05-22",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "A Polícia Judiciária (PJ) está a investigar o possível acesso ilegítimo às credenciais de um médico, o que terá comprometido dados pessoais de utentes do Serviço Nacional de Saúde (SNS)",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -104,7 +128,7 @@
     {
       "data": "2026-05-22",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "De acordo com a investigação, as autoridades suspeitam que seja um ataque informático, e o médico em questão pode ter sido alvo de roubo das próprias credenciais.",
       "publicador": "SOL",
       "sha256": null,
       "tipo": "noticia",
@@ -116,7 +140,7 @@
       "contem_declaracao_de_autoridade": true,
       "data": "2026-05-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "recebeu desde quinta-feira centenas de participações de acessos indevidos a dados de saúde, tendo denunciado ao Ministério Público a eventual prática de crimes",
       "publicador": "Observador",
       "sha256": null,
       "tipo": "noticia",
@@ -128,7 +152,7 @@
       "contem_declaracao_de_autoridade": true,
       "data": "2026-05-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "tendo denunciado ao Ministério Público a eventual prática de crimes e aberto um processo de averiguações.",
       "publicador": "Público",
       "sha256": null,
       "tipo": "noticia",
@@ -139,7 +163,7 @@
     {
       "data": "2026-05-26",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "atingiu, pelo menos, mais de 100.000 pessoas, comprometendo dados pessoais de crianças e adultos, segundo a PJ.",
       "publicador": "Diário de Leiria",
       "sha256": null,
       "tipo": "noticia",
@@ -163,12 +187,24 @@
       "contem_declaracao_de_autoridade": true,
       "data": "2026-06-01",
       "estado_ligacao": "viva",
-      "excerto": null,
+      "excerto": "Neste momento, “a situação está contida por ação da SPMS, com a desativação das contas associadas ao incidente”, garante o CNCS.",
       "publicador": "HealthNews",
       "sha256": null,
       "tipo": "noticia",
       "titulo": "Cibersegurança: investigação forense prossegue após acesso indevido a dados do SNS",
       "url": "https://healthnews.pt/2026/06/01/ciberseguranca-investigacao-forense-prossegue-apos-acesso-indevido-a-dados-do-sns/",
+      "url_arquivo": null
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2026-07-09",
+      "estado_ligacao": "viva",
+      "excerto": "Assegurou ainda que os dados acedidos foram apenas de natureza administrativa, não se registando o acesso às informações clínicas dos utentes.",
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Serviços do Ministério da Saúde só tiveram conhecimento de acesso indevido a dados de utentes dois dias depois",
+      "url": "https://observador.pt/2026/07/09/servicos-do-ministerio-da-saude-so-tiveram-conhecimento-de-acesso-indevido-a-dados-de-utentes-dois-dias-depois/",
       "url_arquivo": null
     }
   ],
@@ -182,26 +218,27 @@
     "resgate_pedido_nota": null,
     "servicos_afetados": [
       "portal do SNS 24",
-      "registos de utentes do Serviço Nacional de Saúde"
+      "registos de utentes do Serviço Nacional de Saúde",
+      "Registo de Saúde Eletrónico, retirado da internet até 1 de junho como medida de contingência"
     ]
   },
   "notificacoes": {
     "anacom": null,
     "banco_de_portugal": null,
     "cmvm": null,
-    "cncs": null,
+    "cncs": true,
     "cnpd": true,
     "pj": true
   },
   "relacionados": [
     "2024-portal-das-financas"
   ],
-  "resumo": "A partir de 21 de maio de 2026, pais de todo o país começaram a denunciar acessos indevidos às fichas dos filhos no portal do SNS 24. Apurou-se que os acessos tinham sido feitos com credenciais comprometidas de um médico da Unidade Local de Saúde do Alto Minho, tratado pelas autoridades como vítima de roubo de credenciais. Foram referidos mais de cem mil utentes afetados, adultos e crianças, de todo o país e ilhas. A Comissão Nacional de Proteção de Dados recebeu centenas de participações, abriu averiguações e denunciou ao Ministério Público a suspeita da prática de crimes. A Polícia Judiciária investiga o acesso ilegítimo às credenciais.",
+  "resumo": "A partir de 19 de maio de 2026 foram feitos acessos indevidos a dados de utentes do SNS com credenciais comprometidas de um médico da Unidade Local de Saúde do Alto Minho, tratado pelas autoridades como vítima de roubo de credenciais; as consultas passaram a ser automatizadas, e os Serviços Partilhados do Ministério da Saúde só tiveram conhecimento do caso a 21 de maio, depois de pedidos de explicação de utentes. Foram referidos mais de cem mil utentes afetados, adultos e crianças, de todo o país e ilhas. A Comissão Nacional de Proteção de Dados recebeu centenas de participações, abriu averiguações e denunciou ao Ministério Público a suspeita da prática de crimes, e a Polícia Judiciária investiga. O Registo de Saúde Eletrónico ficou fora da internet até à ativação da autenticação de dois fatores, a 1 de junho.",
   "revisao": {
     "curador": "ss",
-    "data": "2026-08-05",
-    "nota": "É o incidente com mais titulares afetados de todo o registo, e envolve dados de menores. Não identificamos o profissional cujas credenciais foram usadas: é pessoa singular e é tratado como vítima, não como autor. Há divergência pública sobre se os acessos incidiram sobre dados clínicos ou apenas administrativos, e a distinção é material para os titulares: fica registada em disputas[] em vez de resolvida por nós. A hipótese de uso de inteligência artificial para automatizar os acessos é da Polícia Judiciária e está registada como tal, não como facto estabelecido. Caso em desenvolvimento: a investigação forense prosseguia à data desta revisão.",
-    "versao": 2
+    "data": "2026-10-10",
+    "nota": "É o incidente com mais titulares afetados de todo o registo, e envolve dados de menores. Não identificamos o profissional cujas credenciais foram usadas: é pessoa singular e é tratado como vítima, não como autor. Há divergência pública sobre se os acessos incidiram sobre dados clínicos ou apenas administrativos, e a distinção é material para os titulares: fica registada em disputas[] em vez de resolvida por nós. A hipótese de uso de inteligência artificial para automatizar os acessos é da Polícia Judiciária e está registada como tal, não como facto estabelecido. Caso em desenvolvimento: a investigação forense prosseguia à data desta revisão. Revisão de 2026-10-10: acrescentada a audição parlamentar dos Serviços Partilhados do Ministério da Saúde (9 de julho), que data o primeiro acesso a 19 de maio, refere a notificação ao CNCS, a reposição do Registo de Saúde Eletrónico com autenticação de dois fatores a 1 de junho, e contesta que tenham sido acedidos dados clínicos. Não se encontrou conclusão da investigação, acusação, nem deliberação da CNPD: o caso continua em desenvolvimento.",
+    "versao": 3
   },
   "setor": "saude",
   "tipos_ataque": [

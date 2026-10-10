@@ -1,0 +1,40 @@
+{
+  "confianca_llm": 1.0,
+  "estado": "rejeitado",
+  "extraccao": {
+    "afirmacoes": [
+      {
+        "atribuida_a": "Panzer",
+        "texto": "Directorate-General for Education foi listada no site de extorsão."
+      }
+    ],
+    "ator_mencionado": "Panzer",
+    "confianca": 1.0,
+    "dados_pessoais_mencionados": null,
+    "data_ocorrencia": "2026-08-28",
+    "e_incidente_pt": null,
+    "entidade_mencionada": "Directorate-General for Education",
+    "excerto_chave": null,
+    "precisao_data": "dia",
+    "razao": "listagem em site de extorsão; exige confirmação independente",
+    "setor_sugerido": null,
+    "tipos_ataque": [
+      "ransomware"
+    ]
+  },
+  "id": "cand-20261010-8a5b8818",
+  "motivo_rejeicao": "listagem em site de extorsão sem incidente documentado a que se ligar; uma alegação de atacante não sustenta uma entrada (política editorial 3.1)",
+  "origem": {
+    "chave": "8a5b8818b257aba34704c8484f2516da21ceb73e6361f1d2ff8f5f80acf46b49",
+    "data": "2026-08-28",
+    "fonte": "ransomware_live",
+    "publicador": "ransomware.live",
+    "sha256": "140d5d35c27cef50db1f0a77aa5d311ff86b491ba377ed186539460230ca0a1a",
+    "tipo_fonte": "leak_site",
+    "url": "https://www.ransomware.live/map/PT",
+    "url_canonica": "https://www.ransomware.live/map/PT"
+  },
+  "sugestao_agrupamento": null,
+  "titulo_origem": "Directorate-General for Education listada em site de extorsão (Panzer)",
+  "triado_em": "2026-10-10T09:54:37+00:00"
+}

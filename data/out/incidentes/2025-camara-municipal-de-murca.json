@@ -1,0 +1,85 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Não há atribuição pública nem reivindicação conhecida."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2025-03-13",
+      "fonte": 0,
+      "texto": "A câmara informa, em comunicado, que foi alvo de um ataque informático, que acionou os procedimentos de segurança e notificou as entidades competentes.",
+      "tipo": "comunicado"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": null,
+    "categorias": [],
+    "nota": "Não há informação pública sobre dados pessoais.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "divulgacao": "2025-03-13",
+    "inicio": "2025-03-13",
+    "precisao": "dia"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "camara-municipal-de-murca"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "administracao-local",
+    "municipio-pequeno"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2025-03-13",
+      "estado_ligacao": "viva",
+      "excerto": "A Câmara de Murça foi nesta quinta-feira alvo de um ataque informático que está a impedir o acesso a diversas plataformas e serviços digitais, informou a autarquia.",
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Câmara de Murça alvo de ataque informático que está a condicionar serviços",
+      "url": "https://observador.pt/2025/03/13/camara-de-murca-alvo-de-ataque-informatico-que-esta-a-condicionar-servicos/",
+      "url_arquivo": "http://web.archive.org/web/20250724125211/https://observador.pt/2025/03/13/camara-de-murca-alvo-de-ataque-informatico-que-esta-a-condicionar-servicos/",
+      "verificado_em": "2026-10-10"
+    }
+  ],
+  "id": "2025-camara-municipal-de-murca",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "plataformas e serviços digitais do município"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "A 13 de março de 2025, a Câmara Municipal de Murça foi alvo de um ataque informático que impediu o acesso a diversas plataformas e serviços digitais do município. Em comunicado, a autarquia informou que acionou de imediato os procedimentos internos de segurança e notificou as entidades competentes, e que estava a trabalhar para restabelecer os serviços.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "O comunicado original está no sítio da câmara mas não foi possível obtê-lo; a fonte é a notícia da Lusa que o reproduz. Entra apesar de as autarquias serem o setor mais representado porque 2025 é um dos anos mais fracos do registo.",
+    "versao": 1
+  },
+  "setor": "autarquias",
+  "tipos_ataque": [
+    "indisponibilidade"
+  ],
+  "titulo": "Ciberataque à Câmara Municipal de Murça"
+}

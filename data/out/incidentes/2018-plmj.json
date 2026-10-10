@@ -1,0 +1,130 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "O processo judicial relativo a estes factos não é detalhado nesta ficha: todas as fontes encontradas que o noticiam identificam o condenado no título ou no endereço, e este registo não refere nomes de condenados."
+  },
+  "consequencias_regulatorias": [],
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2018-10-01",
+      "fonte": 2,
+      "texto": "Começam os acessos aos sistemas da PLMJ, a partir de um email falso em nome das Finanças, segundo o presidente do conselho de administração em tribunal.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2019-01-07",
+      "fonte": 0,
+      "texto": "A PLMJ declara que, na sequência de sucessivas tentativas de intrusão ilícitas, a segurança da sua rede foi recentemente comprometida, e que está a avaliar o impacto.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2020-09-16",
+      "fonte": 2,
+      "texto": "Em audiência do julgamento Football Leaks, o presidente do conselho de administração da PLMJ descreve a origem da intrusão.",
+      "tipo": "judicial"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": true,
+    "categorias": [
+      "comunicacoes"
+    ],
+    "nota": "Foi publicada correspondência de advogados da sociedade, incluindo sobre processos judiciais. A PLMJ não revelou, por razões de segurança, que informação foi retirada.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "divulgacao": "2019-01-07",
+    "inicio": "2018-10-01",
+    "precisao": "mes"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "plmj"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "football-leaks",
+    "advocacia"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2019-01-07",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "ECO",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "PLMJ alvo de ataque informático. Há duas semanas emails do e-toupeira foram revelados num blogue",
+      "url": "https://eco.sapo.pt/2019/01/07/plmj-alvo-de-pirataria-informatica/",
+      "url_arquivo": "http://web.archive.org/web/20260430011622/https://eco.sapo.pt/2019/01/07/plmj-alvo-de-pirataria-informatica/",
+      "verificado_em": "2026-10-10"
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2019-01-07",
+      "estado_ligacao": "viva",
+      "excerto": "na sequência de sucessivas tentativas de intrusão ilícitas, a segurança de rede da PLMJ foi recentemente comprometida",
+      "publicador": "Observador",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "PLMJ atacada por pirata informático que levou informação sobre processos",
+      "url": "https://observador.pt/2019/01/07/plmj-atacada-por-pirata-informatico-que-levou-informacao-sobre-processos/",
+      "url_arquivo": "http://web.archive.org/web/20220525201841/https://observador.pt/2019/01/07/plmj-atacada-por-pirata-informatico-que-levou-informacao-sobre-processos/",
+      "verificado_em": "2026-10-10"
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2020-09-16",
+      "estado_ligacao": "viva",
+      "excerto": null,
+      "publicador": "Record",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Football Leaks: Intrusão no escritório de advogados partiu de email falso das Finanças",
+      "url": "https://www.record.pt/futebol/football-leaks/detalhe/football-leaks-intrusao-no-escritorio-de-advogados-partiu-de-email-falso-das-financas",
+      "url_arquivo": "http://web.archive.org/web/20210723224701/https://www.record.pt/futebol/football-leaks/detalhe/football-leaks-intrusao-no-escritorio-de-advogados-partiu-de-email-falso-das-financas",
+      "verificado_em": "2026-10-10"
+    }
+  ],
+  "id": "2018-plmj",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": null,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": null,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": null,
+    "servicos_afetados": [
+      "rede informática e correio eletrónico da sociedade"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [
+    "2017-sl-benfica"
+  ],
+  "resumo": "A partir de outubro de 2018, os sistemas da sociedade de advogados PLMJ foram objeto de acessos ilegítimos, iniciados, segundo o presidente do conselho de administração em tribunal, por um email falso em nome das Finanças. Correspondência de advogados da sociedade foi depois publicada num blogue, e a 7 de janeiro de 2019 a PLMJ confirmou que, na sequência de sucessivas tentativas de intrusão, a segurança da sua rede tinha sido comprometida.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "Primeira sociedade de advogados do registo, classificada em justica_defesa por falta de setor mais próximo. Não se nomeiam os advogados cuja correspondência foi publicada. A data em que os emails começaram a ser publicados (cerca de duas semanas antes do comunicado, segundo o ECO) não entra na cronologia por não estar fixada com precisão nas fontes lidas.",
+    "versao": 1
+  },
+  "setor": "justica_defesa",
+  "tipos_ataque": [
+    "phishing_bec",
+    "intrusao",
+    "exfiltracao_dados"
+  ],
+  "titulo": "Intrusão nos sistemas da sociedade de advogados PLMJ"
+}

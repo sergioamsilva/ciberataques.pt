@@ -1,0 +1,111 @@
+{
+  "ator": {
+    "atribuicao_por": null,
+    "confianca": null,
+    "grupo": null,
+    "nota": "Não houve reivindicação conhecida. O Pplware considerou provável tratar-se de ransomware, mas é uma inferência do órgão e não uma informação da fundação."
+  },
+  "correcoes": [],
+  "cronologia": [
+    {
+      "data": "2019-07-01",
+      "fonte": 0,
+      "texto": "Começa o ataque, cerca de 48 horas antes da declaração pública da fundação.",
+      "tipo": "ocorrencia"
+    },
+    {
+      "data": "2019-07-03",
+      "fonte": 0,
+      "texto": "A fundação declara ter ultrapassado um ataque sem precedentes sem ceder a qualquer exigência dos atacantes, e que as autoridades judiciárias foram informadas.",
+      "tipo": "comunicado"
+    },
+    {
+      "data": "2019-07-04",
+      "fonte": 1,
+      "texto": "As operações estão repostas praticamente na totalidade, após 44 horas de mau funcionamento, com apoio técnico da Altice Portugal.",
+      "tipo": "reposicao"
+    }
+  ],
+  "dados_pessoais": {
+    "afetados": false,
+    "categorias": [],
+    "nota": "A fundação declarou que os mecanismos de mitigação e proteção evitaram qualquer violação dos dados pessoais dos doentes.",
+    "titulares_declarados": null
+  },
+  "data": {
+    "divulgacao": "2019-07-03",
+    "inicio": "2019-07-01",
+    "precisao": "semana"
+  },
+  "disputas": [],
+  "entidades_afetadas": [
+    "fundacao-champalimaud"
+  ],
+  "estado_confirmacao": "confirmado_pela_entidade",
+  "etiquetas": [
+    "saude-privada",
+    "resgate-recusado"
+  ],
+  "fontes": [
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2019-07-03",
+      "estado_ligacao": "viva",
+      "excerto": "A Fundação Champalimaud foi alvo de um ataque informático sem precedentes, mas conseguiu ultrapassar a situação sem ceder a qualquer exigência dos atacantes, divulgou hoje a instituição.",
+      "publicador": "Renascença",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Fundação Champalimaud vítima de ataque informático “sem precedentes”",
+      "url": "https://rr.pt/noticia/pais/2019/07/03/fundacao-champalimaud-vitima-de-ataque-informatico-sem-precedentes/156763/",
+      "url_arquivo": "http://web.archive.org/web/20190704172357/https://rr.sapo.pt/noticia/156763/fundacao-champalimaud-vitima-de-ataque-informatico-sem-precedentes",
+      "verificado_em": "2026-10-10"
+    },
+    {
+      "contem_declaracao_da_entidade": true,
+      "data": "2019-07-04",
+      "estado_ligacao": "viva",
+      "excerto": "Segundo informações da própria Fundação, os sistemas informáticos não estiveram a funcionar corretamente durante 44 horas.",
+      "publicador": "Pplware",
+      "sha256": null,
+      "tipo": "noticia",
+      "titulo": "Portugal: Fundação Champalimaud alvo de \"ataque informático sem precedentes\"",
+      "url": "https://pplware.sapo.pt/informacao/fundacao-champalimaud-ataque/",
+      "url_arquivo": "http://web.archive.org/web/20260615120107/https://pplware.sapo.pt/informacao/fundacao-champalimaud-ataque/",
+      "verificado_em": "2026-10-10"
+    }
+  ],
+  "id": "2019-fundacao-champalimaud",
+  "impacto": {
+    "custo_declarado_eur": null,
+    "duracao_horas": 44,
+    "pessoas_afetadas_declaradas": null,
+    "resgate_pago": false,
+    "resgate_pedido_eur": null,
+    "resgate_pedido_nota": "A fundação declarou não ter cedido a qualquer exigência dos atacantes, sem precisar o que foi exigido.",
+    "servicos_afetados": [
+      "sistemas informáticos da fundação"
+    ]
+  },
+  "notificacoes": {
+    "anacom": null,
+    "banco_de_portugal": null,
+    "cmvm": null,
+    "cncs": null,
+    "cnpd": null,
+    "pj": null
+  },
+  "relacionados": [],
+  "resumo": "No início de julho de 2019, a Fundação Champalimaud foi alvo de um ataque informático que descreveu como sem precedentes, e que deixou os seus sistemas sem funcionar normalmente durante 44 horas. A fundação declarou não ter cedido a qualquer exigência dos atacantes, que os mecanismos de proteção evitaram qualquer violação dos dados pessoais dos doentes, e que as autoridades judiciárias foram informadas. A recuperação contou com meios técnicos e operacionais disponibilizados pela Altice Portugal.",
+  "revisao": {
+    "curador": "ss",
+    "data": "2026-10-10",
+    "nota": "A cópia arquivada da Renascença é do endereço antigo em rr.sapo.pt, com o mesmo identificador de artigo (156763). A data de início é aproximada a partir das 'cerca de 48 horas' declaradas a 3 de julho, daí a precisão de semana.",
+    "versao": 1
+  },
+  "setor": "saude",
+  "tipos_ataque": [
+    "intrusao",
+    "indisponibilidade"
+  ],
+  "titulo": "Ataque informático à Fundação Champalimaud"
+}

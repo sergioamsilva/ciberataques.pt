@@ -1,0 +1,21 @@
+{
+  "confianca_llm": null,
+  "estado": "rejeitado",
+  "extraccao": {},
+  "id": "cand-20261010-50be71bf",
+  "motivo_rejeicao": "sem incidente: empresa aprovada num programa de verificação de cibersegurança.",
+  "origem": {
+    "chave": "50be71bffb81c3b76b6f67e627328c915cc5c31c84f9e72348cd7475765a802b",
+    "data": "2026-10-09",
+    "fonte": "security-magazine",
+    "publicador": "Security Magazine Portugal",
+    "sha256": "57cf87e1cf43a9afc7e37f1f2f9db5733ab00b255dd8f2f31116703673d2f1a4",
+    "tipo_fonte": "noticia",
+    "url": "https://www.securitymagazine.pt/2026/10/09/cybers3c-aprovada-no-programa-de-verificacao-de-ciberseguranca-da-anthropic/",
+    "url_canonica": "https://www.securitymagazine.pt/2026/10/09/cybers3c-aprovada-no-programa-de-verificacao-de-ciberseguranca-da-anthropic"
+  },
+  "rejeitado_em": "2026-10-10",
+  "sugestao_agrupamento": null,
+  "titulo_origem": "CyberS3c aprovada no programa de verificação de cibersegurança da Anthropic",
+  "triado_em": "2026-10-10T09:54:37+00:00"
+}

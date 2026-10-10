@@ -1,33 +1,34 @@
 {
   "distribuicao_fontes_por_incidente": {
-    "1": 14,
-    "2": 16,
-    "3": 17,
-    "4": 6,
+    "1": 20,
+    "2": 19,
+    "3": 22,
+    "4": 7,
     "5": 6,
-    "6": 3,
-    "7": 6,
-    "8": 1
+    "6": 2,
+    "7": 7,
+    "8": 2
   },
-  "incidentes_com_disputas": 12,
+  "incidentes_com_disputas": 16,
   "por_ano": {
     "2012": 1,
     "2013": 1,
-    "2014": 1,
+    "2014": 2,
     "2016": 1,
-    "2017": 2,
-    "2018": 3,
-    "2019": 2,
-    "2020": 1,
-    "2021": 4,
+    "2017": 3,
+    "2018": 5,
+    "2019": 3,
+    "2020": 6,
+    "2021": 5,
     "2022": 20,
     "2023": 10,
     "2024": 7,
-    "2025": 4,
-    "2026": 12
+    "2025": 6,
+    "2026": 15
   },
   "por_ator": {
     "Anonymous Portugal": 1,
+    "CyberTeam": 2,
     "HIVE": 1,
     "Lapsus$ Group": 1,
     "LockBit": 3,
@@ -47,40 +48,41 @@
     "thegentlemen": 1
   },
   "por_estado_confirmacao": {
-    "confirmado_pela_entidade": 56,
+    "confirmado_pela_entidade": 71,
     "confirmado_por_regulador": 8,
     "noticiado_por_uma_fonte": 2,
-    "reportado_por_media": 3
+    "reportado_por_media": 4
   },
   "por_setor": {
     "administracao_publica": 8,
-    "autarquias": 20,
-    "banca_seguros": 1,
+    "autarquias": 22,
+    "banca_seguros": 3,
     "desporto": 2,
     "educacao_investigacao": 5,
     "energia_agua": 5,
-    "industria": 3,
-    "justica_defesa": 3,
+    "industria": 5,
+    "justica_defesa": 7,
     "media": 4,
-    "retalho": 1,
-    "saude": 10,
+    "retalho": 2,
+    "saude": 12,
     "tecnologia": 1,
-    "telecomunicacoes": 1,
-    "transportes": 5
+    "telecomunicacoes": 3,
+    "transportes": 5,
+    "turismo_hotelaria": 1
   },
   "por_tipo_ataque": {
-    "cadeia_fornecimento": 3,
-    "ddos": 4,
+    "cadeia_fornecimento": 4,
+    "ddos": 5,
     "defacement": 3,
-    "exfiltracao_dados": 21,
+    "exfiltracao_dados": 26,
     "exposicao_credenciais": 5,
     "fraude": 3,
-    "hacktivismo": 3,
-    "indisponibilidade": 34,
+    "hacktivismo": 4,
+    "indisponibilidade": 43,
     "insider": 2,
-    "intrusao": 33,
-    "phishing_bec": 1,
-    "ransomware": 27
+    "intrusao": 43,
+    "phishing_bec": 2,
+    "ransomware": 29
   },
-  "total": 69
+  "total": 85
 }
