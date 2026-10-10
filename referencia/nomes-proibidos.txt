@@ -1,0 +1,11 @@
+# Nomes de pessoas condenadas que este registo nunca refere (política editorial, secção 4).
+#
+# Guardam-se só os SHA-256 do nome normalizado (minúsculas, sem acentos, só letras e
+# algarismos separados por um espaço), para que a lista não publique o que existe para
+# evitar. Para acrescentar um nome:
+#
+#   .venv/bin/python -c "from testes.teste_nomes_proibidos import hash_do_nome as h; print(h('Nome Apelido'))"
+#
+# O teste testes/teste_nomes_proibidos.py procura cada um em títulos, URLs, resumos,
+# notas e páginas do site, incluindo dentro de endereços (nomes separados por hífen num slug).
+c7eca2df7b9331ba1ff436ca89ccb6ec7b1098caa03763d87339ab37415c4a97

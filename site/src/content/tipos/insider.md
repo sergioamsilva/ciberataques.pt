@@ -116,5 +116,6 @@ disciplinar ou em tribunal de trabalho, sem comunicado nem notícia, e uma organ
 tem muito menos incentivo a divulgar que o problema veio de dentro. O do Barreiro só
 é público porque uma autoridade o tornou público.
 
-Quando existe decisão judicial pública, este registo pode nomear a pessoa condenada
-— é uma das três exceções da [política editorial](/metodologia/). Fora disso, nunca.
+Este registo não nomeia a pessoa condenada, nem aqui nem na ficha: a
+[política editorial](/metodologia/) não nomeia condenados, mesmo com decisão judicial
+pública.

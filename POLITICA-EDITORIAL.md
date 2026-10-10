@@ -79,12 +79,19 @@ fica. O que deixou de existir é um incidente que assente só nelas.
 
 ## 4. Pessoas singulares
 
-**Não nomeamos pessoas singulares.** Três exceções, e só três:
+**Não nomeamos pessoas singulares.** Uma exceção, e só uma:
 
 - Titulares de cargo a falar publicamente em nome da entidade, no exercício dessa função.
-- Pessoas condenadas por decisão judicial pública, e apenas quanto ao que a decisão declara.
-- Pessoas cuja identidade é o próprio objeto público do caso e já foi tornada pública por
-  autoridade judicial.
+
+**Nunca nomeamos condenados**, mesmo com decisão judicial pública e transitada. Até
+outubro de 2026 a regra admitia-o, "apenas quanto ao que a decisão declara". Deixou de
+admitir: a unidade deste registo é a entidade atingida, e o nome de quem a atacou não
+acrescenta nada ao que o registo documenta. Uma condenação cumpre-se; uma base de dados
+pesquisável e permanente não deixa de a lembrar.
+
+A regra estende-se ao que citamos. Se todas as fontes de um facto identificarem o
+condenado no título ou no endereço, o facto não entra, e a ficha di-lo. Alcunhas e
+pseudónimos não contam como nome para esta regra.
 
 Nunca nomeamos alegados atacantes não condenados. Nunca nomeamos vítimas individuais.
 Nunca nomeamos trabalhadores da entidade atacada. A presunção de inocência não é uma
