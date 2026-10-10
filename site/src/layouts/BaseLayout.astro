@@ -12,9 +12,22 @@ interface Props {
   atualizadoEm?: string;
   /** Nós adicionais para o @graph desta página. */
   grafo?: unknown[];
+  /** Imagem de pré-visualização (caminho absoluto no site). Por omissão, a do registo. */
+  imagem?: string;
+  /** Texto alternativo da imagem de pré-visualização. */
+  imagemAlt?: string;
 }
 
-const { titulo, descricao, noindex = false, atualizadoEm, grafo = [] } = Astro.props;
+const {
+  titulo,
+  descricao,
+  noindex = false,
+  atualizadoEm,
+  grafo = [],
+  imagem = "/og/padrao.png",
+  imagemAlt = "ciberataques.pt — registo público de ciberataques a entidades portuguesas",
+} = Astro.props;
+const urlImagem = new URL(imagem, Astro.site).href;
 
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const tituloCompleto = titulo === "ciberataques.pt"
@@ -69,7 +82,18 @@ const website = {
     <meta property="og:title" content={tituloCompleto} />
     <meta property="og:description" content={descricao} />
     <meta property="og:url" content={canonical} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={urlImagem} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={imagemAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:alt" content={imagemAlt} />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#fbfaf8" />
 
     {atualizadoEm && <meta name="date" content={atualizadoEm} />}
 

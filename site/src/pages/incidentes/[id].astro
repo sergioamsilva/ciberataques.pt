@@ -9,6 +9,7 @@ import Explicador from "../../components/Explicador.astro";
 import {
   incidentes,
   incidente as lerIncidente,
+  citacaoDoIncidente,
   entidades,
   formatarData,
   formatarNumero,
@@ -63,11 +64,17 @@ const tituloSeo =
  * Article e não NewsArticle: NewsArticle posicionaria o site como órgão de
  * comunicação social, enquadramento que atrai obrigações que não queremos.
  */
+const imagemOg = `/og/incidentes/${inc.id}.png`;
+
+const citacao = citacaoDoIncidente(inc);
+
 const grafo = [
   {
     "@type": "Article",
     "@id": `https://ciberataques.pt/incidentes/${inc.id}/#registo`,
+    mainEntityOfPage: `https://ciberataques.pt/incidentes/${inc.id}/`,
     headline: inc.titulo,
+    image: `https://ciberataques.pt${imagemOg}`,
     description: inc.resumo.slice(0, 300),
     datePublished: inc.data.divulgacao ?? inc.data.inicio,
     dateModified: inc.revisao.data,
@@ -213,6 +220,8 @@ const alternativos = [
   descricao={inc.resumo.slice(0, 200)}
   atualizadoEm={inc.revisao.data}
   grafo={grafo}
+  imagem={imagemOg}
+  imagemAlt={`${inc.titulo}. ${nome("estados_confirmacao", inc.estado_confirmacao)}, ${inc.fontes.length} fontes.`}
 >
   <article class="mx-auto max-w-6xl px-5 py-10" data-pagefind-body>
     {/* Metadados de pesquisa: invisíveis na página, indexados pelo Pagefind. */}
@@ -394,6 +403,18 @@ const alternativos = [
               <dd class="text-[var(--color-tinta)] tabular-nums">{inc.revisao.data}</dd>
             </div>
           </dl>
+          <div class="mt-5" data-pagefind-ignore>
+            <div class="flex items-baseline justify-between gap-3">
+              <h3 id="h-citar" class="mono-etiqueta">Citar este registo</h3>
+              <button type="button" class="mono-etiqueta so-com-js cursor-pointer hover:text-[var(--color-acento)]" data-copiar="citacao">
+                Copiar
+              </button>
+            </div>
+            <p id="citacao" class="mt-2 border-l-2 border-[var(--color-borda-forte)] pl-3 text-xs leading-relaxed">{citacao}</p>
+            <p class="mt-2 text-xs text-[var(--color-suave)]">
+              Acrescente a data de consulta. <a href="/dados/#h-citar">Outros formatos</a>.
+            </p>
+          </div>
           <p class="mt-4 text-sm text-[var(--color-suave)]">
             Encontrou um erro? <a href="/correcoes/">Como corrigimos</a>.
             Representa esta entidade? <a href="/direito-de-resposta/">Direito de resposta</a>.
@@ -403,3 +424,5 @@ const alternativos = [
     </div>
   </article>
 </BaseLayout>
+
+<script src="../../scripts/copiar.ts"></script>

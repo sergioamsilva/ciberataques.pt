@@ -102,10 +102,14 @@ const numeros = [
     */}
     <dl class="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
       {numeros.map((item) => (
-        <a href={item.d} class="revelar group regua block pt-3 no-underline">
+        <div class="revelar group regua relative pt-3">
           {/* Duas linhas reservadas para todos: um rótulo que quebra desalinhava a
-              base dos números, e são os números que se comparam entre si. */}
-          <dt class="mono-etiqueta block min-h-[2.4em] leading-[1.2]">{item.r}</dt>
+              base dos números, e são os números que se comparam entre si.
+              A ligação vive no <dt> (um <a> não pode ser filho de <dl>) e estende-se
+              ao bloco inteiro pelo ::after, para continuar a ser um alvo grande. */}
+          <dt class="mono-etiqueta block min-h-[2.4em] leading-[1.2]">
+            <a href={item.d} class="no-underline after:absolute after:inset-0">{item.r}</a>
+          </dt>
           <dd
             class="mt-1 font-mono text-5xl tabular-nums leading-none text-[var(--color-tinta)]"
             data-contar={item.n}
@@ -116,7 +120,7 @@ const numeros = [
             class="mt-3 block h-0.5 w-10 bg-[var(--color-acento)] transition-all duration-300 group-hover:w-full"
             aria-hidden="true"
           ></span>
-        </a>
+        </div>
       ))}
     </dl>
   </section>

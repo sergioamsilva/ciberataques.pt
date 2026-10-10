@@ -36,25 +36,29 @@ const total = Object.values(porAno).reduce((a, b) => a + b, 0);
     {todos.map((ano) => {
       const n = porAno[String(ano)] ?? 0;
       const altura = n === 0 ? 2 : Math.max(6, Math.round((n / maximo) * 120));
+      const Barra = n ? "a" : "span";
       return (
         <li class="group flex min-w-0 max-w-16 flex-1 flex-col items-center gap-2">
           <span class="font-mono text-[0.6875rem] tabular-nums text-[var(--color-suave)] group-hover:text-[var(--color-acento)]">
             {n || ""}
           </span>
-          <a
+          {/* Um ano sem registos não é ligação: um <a> sem href não pode levar
+              aria-label, e o texto oculto diz o mesmo a quem usa leitor de ecrã. */}
+          <Barra
             href={n ? `/cronologia/${ano}/` : undefined}
-            aria-label={`${ano}: ${n} ${n === 1 ? "incidente" : "incidentes"}`}
+            aria-label={n ? `${ano}: ${n} ${n === 1 ? "incidente" : "incidentes"}` : undefined}
             class:list={[
               "block w-full",
               n ? "cursor-pointer" : "pointer-events-none",
             ]}
           >
+            {!n && <span class="sr-only">{ano}: sem incidentes</span>}
             <span
               class="barra-ano block w-full bg-[var(--color-tinta)] transition-colors group-hover:bg-[var(--color-acento)]"
               style={`height: ${altura}px`}
               aria-hidden="true"
             ></span>
-          </a>
+          </Barra>
           <span class="font-mono text-[0.625rem] tabular-nums text-[var(--color-suave)]">
             {String(ano).slice(2)}
           </span>

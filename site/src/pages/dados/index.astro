@@ -1,14 +1,31 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { manifesto, agregados } from "../../lib/dados";
+import { manifesto, agregados, incidente, citacaoDoIncidente } from "../../lib/dados";
 
 const m = manifesto();
 const ag = agregados();
+
+/* Três formatos de citação do conjunto de dados, todos da mesma fonte de verdade. */
+const exemplo = citacaoDoIncidente(incidente("2022-vodafone-portugal"));
+const anoDados = m.construido_em.slice(0, 4);
+const citacaoTexto =
+  `ciberataques.pt (${anoDados}). Registo de ciberataques em Portugal [conjunto de dados], ` +
+  `versão de ${m.construido_em}. CC BY 4.0. https://ciberataques.pt/dados/`;
+const citacaoBibtex = `@misc{ciberataques_pt_${anoDados},
+  author       = {{ciberataques.pt}},
+  title        = {Registo de ciberataques em Portugal},
+  year         = {${anoDados}},
+  note         = {Conjunto de dados, vers\\~{a}o de ${m.construido_em}. CC BY 4.0},
+  howpublished = {\\url{https://ciberataques.pt/dados/}},
+  language     = {portuguese}
+}`;
 
 const grafo = [
   {
     "@type": "Dataset",
     name: "Registo de ciberataques em Portugal",
+    citation: citacaoTexto,
+    isAccessibleForFree: true,
     description:
       "Registo curado de ciberataques a entidades portuguesas, com fontes, cronologia e grau de confirmação por incidente.",
     url: "https://ciberataques.pt/dados/",
@@ -138,13 +155,33 @@ const ficheiros = [
 
     <section class="mt-12" aria-labelledby="h-citar">
       <h2 id="h-citar" class="regua pt-5 text-2xl">Como citar</h2>
-      <p class="mt-3 text-sm">
-        Cada incidente tem um identificador estável que nunca muda, e é a forma correta
-        de o referenciar num artigo ou num trabalho académico.
+      <p class="mt-3 text-sm leading-relaxed">
+        Cada incidente tem um identificador estável que nunca muda e um número de
+        versão que sobe a cada revisão. Cite os dois: a ficha que leu hoje pode ter mais
+        fontes amanhã, e o histórico do registo guarda cada versão. Todas as fichas têm,
+        na coluna lateral, a citação pronta a copiar.
       </p>
-      <pre class="mt-4 overflow-x-auto border border-[var(--color-borda)] bg-[var(--color-superficie)] p-4 font-mono text-xs leading-relaxed"><code>ciberataques.pt (consultado em {m.construido_em}).
-Registo de ciberataques em Portugal. Incidente 2022-vodafone-portugal.
-https://ciberataques.pt/incidentes/2022-vodafone-portugal/</code></pre>
+
+      <h3 class="mono-etiqueta mt-6">Um incidente</h3>
+      <pre class="mt-2 overflow-x-auto whitespace-pre-wrap border border-[var(--color-borda)] bg-[var(--color-superficie)] p-4 font-mono text-xs leading-relaxed"><code>{exemplo} Consultado em [data].</code></pre>
+
+      <div class="mt-6 flex items-baseline justify-between gap-3">
+        <h3 class="mono-etiqueta">O conjunto de dados</h3>
+        <button type="button" class="mono-etiqueta so-com-js cursor-pointer hover:text-[var(--color-acento)]" data-copiar="citacao-dados">Copiar</button>
+      </div>
+      <pre class="mt-2 overflow-x-auto whitespace-pre-wrap border border-[var(--color-borda)] bg-[var(--color-superficie)] p-4 font-mono text-xs leading-relaxed"><code id="citacao-dados">{citacaoTexto}</code></pre>
+
+      <div class="mt-6 flex items-baseline justify-between gap-3">
+        <h3 class="mono-etiqueta">BibTeX</h3>
+        <button type="button" class="mono-etiqueta so-com-js cursor-pointer hover:text-[var(--color-acento)]" data-copiar="citacao-bibtex">Copiar</button>
+      </div>
+      <pre tabindex="0" aria-label="Citação em BibTeX" class="mt-2 overflow-x-auto border border-[var(--color-borda)] bg-[var(--color-superficie)] p-4 font-mono text-xs leading-relaxed"><code id="citacao-bibtex">{citacaoBibtex}</code></pre>
+
+      <p class="mt-4 text-sm text-[var(--color-suave)]">
+        Para trabalho académico, prefira citar a versão dos dados com a data, e guarde
+        uma cópia do ficheiro que analisou: a exportação de hoje não será igual à de
+        daqui a um ano.
+      </p>
     </section>
 
     <section class="mt-12" aria-labelledby="h-licenca">
@@ -162,3 +199,5 @@ https://ciberataques.pt/incidentes/2022-vodafone-portugal/</code></pre>
     </section>
   </div>
 </BaseLayout>
+
+<script src="../../scripts/copiar.ts"></script>

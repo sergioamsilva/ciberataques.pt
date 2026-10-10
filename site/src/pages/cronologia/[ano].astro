@@ -33,7 +33,7 @@ const i = anos.indexOf(ano);
     </header>
 
     <div class="mt-10">
-      {lista.map((inc) => <CartaoIncidente incidente={inc} />)}
+      {lista.map((inc) => <CartaoIncidente incidente={inc} nivel={2} />)}
       {/*
         Um incidente plurianual aparece em todos os anos que atravessa, mas o
         cronograma da página inicial põe-lhe uma marca só, no ano em que começou.

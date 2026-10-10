@@ -101,6 +101,11 @@ o que foi verificado e não passou.
 `./deploy/publicar.sh` constrói, valida e faz rsync para o VPS. Recusa publicar se
 houver alterações não comprometidas no registo.
 
+Os redirecionamentos de identificadores que mudaram vivem fora da raiz pública, em
+`/etc/nginx/snippets/ciberataques-redirecionamentos.conf` (modelo em
+`deploy/redirecionamentos.conf`). As imagens de pré-visualização (`/og/`) e os ícones
+são gerados no build a partir de `site/src/lib/og.ts` e `site/src/lib/marca.ts`.
+
 ## Licenças
 
 Registo de incidentes sob **CC BY 4.0**. Código sob **MIT**. As fontes citadas

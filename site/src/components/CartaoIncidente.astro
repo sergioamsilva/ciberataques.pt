@@ -12,8 +12,11 @@ interface Props {
   incidente: ResumoIncidente;
   /** Filtros do Pagefind: só os aplicamos na listagem geral, para não duplicar o índice. */
   indexavel?: boolean;
+  /** Nível do título: 2 quando a lista vem logo a seguir ao h1 da página. */
+  nivel?: 2 | 3;
 }
-const { incidente: inc, indexavel = false } = Astro.props;
+const { incidente: inc, indexavel = false, nivel = 3 } = Astro.props;
+const Titulo = nivel === 2 ? "h2" : "h3";
 const todas = entidades();
 const alvos = inc.entidades_afetadas
   .map((e) => todas[e]?.nome_curto ?? todas[e]?.nome ?? e)
@@ -50,7 +53,7 @@ const filtros = indexavel
     </span>
   </div>
 
-  <h3 class="mt-2 text-xl">
+  <Titulo class="mt-2 text-xl">
     <a href={`/incidentes/${inc.id}/`} class="no-underline hover:underline">
       {inc.titulo}
       {/* A régua que cresce no hover: a micro-interação de marca do site. */}
@@ -59,7 +62,7 @@ const filtros = indexavel
         aria-hidden="true"
       ></span>
     </a>
-  </h3>
+  </Titulo>
 
   <p class="mt-1.5 text-sm text-[var(--color-suave)]">{alvos}</p>
 
@@ -76,7 +79,7 @@ const filtros = indexavel
     */}
     {inc.ator && (
       <li class="mono-etiqueta">
-        <span class="opacity-60">reivindicado por</span> {inc.ator}
+        reivindicado por <span class="text-[var(--color-corpo)]">{inc.ator}</span>
       </li>
     )}
     <li class="mono-etiqueta tabular-nums">

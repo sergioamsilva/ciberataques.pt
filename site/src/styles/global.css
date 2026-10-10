@@ -178,6 +178,15 @@
   }
 }
 
+/* Controlos que só fazem sentido com JavaScript (o botão "Copiar"). Sem ele, não
+   aparecem, em vez de aparecerem e não fazerem nada. */
+.so-com-js {
+  display: none;
+}
+html.js .so-com-js {
+  display: inline;
+}
+
 /* ---------------------------------------------------------------------------
    Movimento.
 

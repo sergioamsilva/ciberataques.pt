@@ -246,6 +246,19 @@ export function formatarData(iso: string, precisao = "dia"): string {
   return `${dia} de ${MESES[mes - 1]} de ${ano}`;
 }
 
+/*
+ * A citação de uma ficha. Leva identificador e versão porque a ficha muda: quem
+ * cita a v2 tem de poder provar o que lá estava, e o git guarda cada versão. A data
+ * de consulta fica a cargo de quem cita — a do build não é a da leitura.
+ */
+export function citacaoDoIncidente(inc: Incidente): string {
+  return (
+    `ciberataques.pt (${inc.revisao.data.slice(0, 4)}). «${inc.titulo}». ` +
+    `Registo de ciberataques em Portugal, incidente ${inc.id}, v${inc.revisao.versao} ` +
+    `(revisto em ${inc.revisao.data}). https://ciberataques.pt/incidentes/${inc.id}/`
+  );
+}
+
 export function formatarNumero(n: number): string {
   return n.toLocaleString("pt-PT");
 }

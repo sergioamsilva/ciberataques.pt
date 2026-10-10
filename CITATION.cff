@@ -1,0 +1,23 @@
+# Lido pelo GitHub ("Cite this repository"), pelo Zenodo e pelos gestores de
+# referências. A forma de citar um incidente concreto está em
+# https://ciberataques.pt/dados/#h-citar.
+cff-version: 1.2.0
+message: "Se usar este registo, cite-o assim. Para um incidente concreto, cite o identificador e a versão da ficha."
+type: dataset
+title: "Registo de ciberataques em Portugal"
+authors:
+  - name: "ciberataques.pt"
+url: "https://ciberataques.pt/"
+license: CC-BY-4.0
+abstract: >-
+  Registo público, curado e documentado de ciberataques a entidades portuguesas
+  desde 2012. Cada incidente indica as fontes que o sustentam e distingue o que a
+  entidade confirmou do que apenas foi noticiado.
+keywords:
+  - cibersegurança
+  - ciberataques
+  - Portugal
+  - incidentes
+  - ransomware
+languages:
+  - pt
