@@ -101,6 +101,13 @@ o que foi verificado e não passou.
 `./deploy/publicar.sh` constrói, valida e faz rsync para o VPS. Recusa publicar se
 houver alterações não comprometidas no registo.
 
+O site corre na infraestrutura partilhada dos sites irmãos: um proxy frontal termina
+o TLS (`deploy/nginx-frontal.conf`, em 185.95.221.12) e encaminha para o backend,
+onde o site é ficheiro estático na porta 8006 (`deploy/nginx.conf` e
+`deploy/cabecalhos.conf`). Nenhum dos dois regista acessos. O certificado emite-se
+no frontal com `sudo certbot --nginx --redirect -d ciberataques.pt -d
+www.ciberataques.pt`, depois de o DNS apontar para 185.95.221.12.
+
 Os redirecionamentos de identificadores que mudaram vivem fora da raiz pública, em
 `/etc/nginx/snippets/ciberataques-redirecionamentos.conf` (modelo em
 `deploy/redirecionamentos.conf`). As imagens de pré-visualização (`/og/`) e os ícones
