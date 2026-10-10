@@ -12,10 +12,12 @@ set -uo pipefail
 RAIZ="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$RAIZ"
 
-# Ajustar ao VPS antes da primeira publicação.
-DESTINO="${CIBERATAQUES_DESTINO:-utilizador@vps:/var/www/ciberataques/}"
-PORTA_SSH="${CIBERATAQUES_PORTA_SSH:-22}"
-CHAVE_SSH="${CIBERATAQUES_CHAVE_SSH:-$HOME/.ssh/ciberataques_deploy}"
+# Backend "sitesinternos" (192.168.200.151), alcançado pelo NAT de SSH do
+# 185.95.221.2. A topologia está descrita em deploy/nginx.conf. A autenticação é
+# pela chave SSH de quem publica; CIBERATAQUES_CHAVE_SSH escolhe outra.
+DESTINO="${CIBERATAQUES_DESTINO:-dinossauro@185.95.221.2:/var/www/ciberataques/}"
+PORTA_SSH="${CIBERATAQUES_PORTA_SSH:-2222}"
+SSH_CMD="ssh -p ${PORTA_SSH}${CIBERATAQUES_CHAVE_SSH:+ -i ${CIBERATAQUES_CHAVE_SSH}}"
 
 falhar() { echo -e "\033[31mFALHOU:\033[0m $1" >&2; exit 1; }
 
@@ -24,11 +26,11 @@ if [[ -n "$(git status --porcelain data/ referencia/)" ]]; then
 fi
 
 echo "==> Validar e construir"
-python atualizar.py --site || falhar "a construção não passou"
+"${RAIZ}/.venv/bin/python" atualizar.py --site || falhar "a construção não passou"
 
 echo "==> Enviar para o VPS"
 rsync -avz --delete --chmod=D755,F644 \
-  -e "ssh -p ${PORTA_SSH} -i ${CHAVE_SSH}" \
+  -e "${SSH_CMD}" \
   site/dist/ "${DESTINO}" || falhar "o rsync não terminou"
 
 echo "==> Verificar cabeçalhos"

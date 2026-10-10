@@ -1,0 +1,37 @@
+# Só validação. A recolha e a publicação correm no VPS, nunca aqui: o pipeline
+# nunca publica, e o GitHub Actions não agenda nada neste projeto.
+name: testes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Dependências
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install -r requirements.txt
+          npm ci --prefix site
+
+      - name: Registo, site e testes
+        run: .venv/bin/python atualizar.py --site
