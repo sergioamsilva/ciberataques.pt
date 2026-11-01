@@ -16,7 +16,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "astro": "7.3.5",
     "pagefind": "^1.5.2",
-    "satori": "0.33.4",
+    "satori": "0.33.5",
     "tailwindcss": "^4.3.3"
   },
   "private": true
